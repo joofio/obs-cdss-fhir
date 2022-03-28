@@ -1,0 +1,16 @@
+[
+  {
+    "id": "OBSCDSSInitializer",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/us/example/StructureDefinition/OBSCDSSInitializer",
+    "version": "0.1.0-test",
+    "name": "OBSCDSSInitializer"
+  },
+  {
+    "id": "xxexample.fhir.uv.myig",
+    "type": "ImplementationGuide",
+    "url": "http://xxsomewhere.org/fhir/myig/ImplementationGuide/xxexample.fhir.uv.myig",
+    "version": "0.1.0-test",
+    "name": "XXYourComputableMyIGNameHere"
+  }
+]
