@@ -128,12 +128,16 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 Attachment {[]} {[]}Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Resource]]}","Message part content","The communicated content (or for multi-part communications, one portion of the communication).","","","","","","","","","",,,,,"",,,,"CommunicationRequest.payload.content[x]",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Request.note"
 "CommunicationRequest.occurrence[x]","","timing
-","",0,1,"","","Y","Period {[]} {[]}
+","",1,1,"","","Y","dateTime {[]} {[]}
 ","When scheduled","The time when this communication is to occur.","","","","","","","","","",,,,,"","type:$this}
 ","",,"closed","CommunicationRequest.occurrence[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Request.occurrence[x]","FiveWs.planned"
 "CommunicationRequest.occurrence[x]","occurrencePeriod","timing
 ","",0,0,"","","Y","Period {[]} {[]}
+","When scheduled","The time when this communication is to occur.","","","","","","","","","",,,,,"",,,,"CommunicationRequest.occurrence[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Request.occurrence[x]","FiveWs.planned"
+"CommunicationRequest.occurrence[x]","occurrenceDateTime","timing
+","",1,1,"","","Y","dateTime {[]} {[]}
 ","When scheduled","The time when this communication is to occur.","","","","","","","","","",,,,,"",,,,"CommunicationRequest.occurrence[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Request.occurrence[x]","FiveWs.planned"
 "CommunicationRequest.authoredOn","","createdOn
