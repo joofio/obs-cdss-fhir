@@ -9,7 +9,7 @@ Parent: CommunicationRequest
 * category = #instruction
 
 * occurrencePeriod 0..0
-
+* occurrenceDateTime 1..1
 
 * about ^slicing.discriminator.type = #value
 * about ^slicing.discriminator.path = "type"
