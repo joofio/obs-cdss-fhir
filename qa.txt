@@ -1,0 +1,20 @@
+﻿XXYourComputableMyIGNameHere : Validation Results
+=========================================
+
+err = 2, warn = 4, info = 0
+IG Publisher Version: 1.1.113
+Generated Mon Mar 28 10:26:16 UTC 2022. FHIR version 4.0.1 for OBSCDSS.fhir.uv.myig#0.1.0-test (canonical = http://xxsomewhere.org/fhir/myig)
+ Build Errors : 1 / 1 / 0
+ /github/workspace/fsh-generated/resources/StructureDefinition-OBSCDSSInitializer : 2 / 3 / 1
+ /github/workspace/input/myig : 0 / 0 / 1
+</table>
+== n/a ==
+WARNING: ImplementationGuide.id: The Implementation Guide Resource id should be OBSCDSS.fhir.uv.myig
+ERROR: /github/workspace/output/toc.html#/html/body/div/div/div/div/div/div/table/tbody/tr/td/a at Line 132, column 1829: The link 'downloads.html' for "2 Downloads" cannot be resolved
+== fsh-generated/resources/StructureDefinition-OBSCDSSInitializer.json ==
+ERROR: StructureDefinition.where(url = 'http://hl7.org/fhir/us/example/StructureDefinition/OBSCDSSInitializer'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-OBSCDSSInitializer.json - the canonical URL (http://xxsomewhere.org/fhir/myig/StructureDefinition/OBSCDSSInitializer) does not match the URL (http://hl7.org/fhir/us/example/StructureDefinition/OBSCDSSInitializer)
+WARNING: StructureDefinition/OBSCDSSInitializer: StructureDefinition.snapshot.element[23].pattern.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided
+WARNING: StructureDefinition/OBSCDSSInitializer: StructureDefinition.differential.element[4].pattern.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided
+WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/example/StructureDefinition/OBSCDSSInitializer'): The Implementation Guide contains no examples for this profile
+ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-OBSCDSSInitializer: URL Mismatch http://xxsomewhere.org/fhir/myig/StructureDefinition/OBSCDSSInitializer vs http://hl7.org/fhir/us/example/StructureDefinition/OBSCDSSInitializer
+== input/myig.xml ==
