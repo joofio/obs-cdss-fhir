@@ -16,4 +16,3 @@ releaseLabel: ci-build
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 menu:
   Home: index.html
-  Artifacts: artifacts.html
