@@ -19,6 +19,7 @@ Parent: CommunicationRequest
 * about[ModelVersion] only Reference(Device)
 
 
+/*
 Profile: NestedComposition
 Title: "Medication nested"
 Description: "The profile for nesting data in composition's sections"
@@ -46,3 +47,4 @@ Id: nestedcomposition
 * section[MedRecordTreatment].section[MedRecordTreatmentLine].section contains     
     detailsRecord 0..* MS
 * section[MedRecordTreatment].section[MedRecordTreatmentLine].section[detailsRecord].entry only Reference(MedicationRequest or MedicationDispense or MedicationAdministration or MedicationStatement)
+*/
