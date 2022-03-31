@@ -39,11 +39,11 @@ Id: nestedcomposition
 * section[section].section ^slicing.rules = #open
 * section[section].section contains     
     subsection 0..* MS
-* section[section].section[subsection].entry only Reference(MedicationStatement)
+* section[section].section[subsection].entry only Reference(Patient)
 
 * section[section].section[subsection].section ^slicing.discriminator.type = #value
 * section[section].section[subsection].section ^slicing.discriminator.path = "type.coding.code"
 * section[section].section[subsection].section ^slicing.rules = #open
 * section[section].section[subsection].section contains     
     subsubsection 0..* MS
-* section[section].section[subsection].section[subsubsection].entry only Reference(MedicationRequest)
+* section[section].section[subsection].section[subsubsection].entry only Reference(Observation)
