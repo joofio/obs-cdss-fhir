@@ -31,19 +31,19 @@ Id: nestedcomposition
 * section ^slicing.discriminator.path = "type.coding.code"
 * section ^slicing.rules = #open
 * section contains
-    MedRecordTreatment 0..* MS 
-* section[MedRecordTreatment].entry only Reference(CarePlan)
+    section 0..* MS 
+* section[section].entry only Reference(CarePlan)
 
-* section[MedRecordTreatment].section ^slicing.discriminator.type = #value
-* section[MedRecordTreatment].section ^slicing.discriminator.path = "type.coding.code"
-* section[MedRecordTreatment].section ^slicing.rules = #open
-* section[MedRecordTreatment].section contains     
-    MedRecordTreatmentLine 0..* MS
-* section[MedRecordTreatment].section[MedRecordTreatmentLine].entry only Reference(MedicationStatement)
+* section[section].section ^slicing.discriminator.type = #value
+* section[section].section ^slicing.discriminator.path = "type.coding.code"
+* section[section].section ^slicing.rules = #open
+* section[section].section contains     
+    subsection 0..* MS
+* section[section].section[subsection].entry only Reference(MedicationStatement)
 
-* section[MedRecordTreatment].section[MedRecordTreatmentLine].section ^slicing.discriminator.type = #value
-* section[MedRecordTreatment].section[MedRecordTreatmentLine].section ^slicing.discriminator.path = "type.coding.code"
-* section[MedRecordTreatment].section[MedRecordTreatmentLine].section ^slicing.rules = #open
-* section[MedRecordTreatment].section[MedRecordTreatmentLine].section contains     
-    detailsRecord 0..* MS
-* section[MedRecordTreatment].section[MedRecordTreatmentLine].section[detailsRecord].entry only Reference(MedicationRequest or MedicationDispense or MedicationAdministration or MedicationStatement)
+* section[section].section[subsection].section ^slicing.discriminator.type = #value
+* section[section].section[subsection].section ^slicing.discriminator.path = "type.coding.code"
+* section[section].section[subsection].section ^slicing.rules = #open
+* section[section].section[subsection].section contains     
+    subsubsection 0..* MS
+* section[section].section[subsection].section[subsubsection].entry only Reference(MedicationRequest)
