@@ -21,7 +21,7 @@ Parent: CommunicationRequest
 
 
 Profile: NestedComposition
-Title: "Medication nested"
+Title: "composition nested"
 Description: "The profile for nesting data in composition's sections"
 Parent: Composition
 Id: nestedcomposition
