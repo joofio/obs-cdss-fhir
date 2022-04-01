@@ -28,21 +28,21 @@ Id: nestedcomposition
 
 
 * section ^slicing.discriminator.type = #value
-* section ^slicing.discriminator.path = "type.coding.code"
+* section ^slicing.discriminator.path = "code"
 * section ^slicing.rules = #open
 * section contains
     section 0..* MS 
 * section[section].entry only Reference(CarePlan)
 
 * section[section].section ^slicing.discriminator.type = #value
-* section[section].section ^slicing.discriminator.path = "type.coding.code"
+* section[section].section ^slicing.discriminator.path = "code"
 * section[section].section ^slicing.rules = #open
 * section[section].section contains     
     subsection 0..* MS
 * section[section].section[subsection].entry only Reference(Patient)
 
 * section[section].section[subsection].section ^slicing.discriminator.type = #value
-* section[section].section[subsection].section ^slicing.discriminator.path = "type.coding.code"
+* section[section].section[subsection].section ^slicing.discriminator.path = "code"
 * section[section].section[subsection].section ^slicing.rules = #open
 * section[section].section[subsection].section contains     
     subsubsection 0..* MS
