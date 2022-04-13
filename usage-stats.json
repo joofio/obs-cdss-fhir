@@ -8,7 +8,7 @@
     "Device": [
       {
         "url": "http://hl7.org/fhir/us/example/StructureDefinition/MLModel",
-        "title": "[Profile] - Communication Request"
+        "title": "[Profile] - Machine Learning Model"
       }
     ],
     "Communication": [
