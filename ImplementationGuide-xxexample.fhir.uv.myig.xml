@@ -12,7 +12,7 @@
   <title value="xxYour User Friendly Name for MyIG Here"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2022-03-29T08:34:27+00:00"/>
+  <date value="2022-04-13T16:38:37+00:00"/>
   <publisher value="xxxYour Work Group"/>
   <contact>
     <telecom>
@@ -223,6 +223,14 @@
         <valueString value="true"/>
       </extension>
     </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="excludelogbinaryformat"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
@@ -232,6 +240,26 @@
       </reference>
       <name value="[Profile] - Communication Request"/>
       <description value="The profile for asking for input for a certian CDSS case"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/MLModel"/>
+      </reference>
+      <name value="[Profile] - Communication Request"/>
+      <description value="The profile for asking for input for a certian CDSS case"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/OBSCDSSFinalizer"/>
+      </reference>
+      <name value="[Profile] - Communication"/>
+      <description value="The profile for sending the response for a certain CDSS case"/>
     </resource>
     <page>
       <nameUrl value="toc.html"/>

@@ -72,7 +72,7 @@ prior","",0,*,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/Stru
 ","Composite request this is part of","A shared identifier common to all requests that were authorized more or less simultaneously by a single author, representing the identifier of the requisition, prescription or similar form.","Requests are linked either by a ""basedOn"" relationship (i.e. one request is fulfilling another) or by having a common requisition.  Requests that are part of the same requisition are generally treated independently from the perspective of changing their state or maintaining them after initial creation.","","","","","","","","",,,,,"",,,,"CommunicationRequest.groupIdentifier",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Request.groupIdentifier",".inboundRelationship(typeCode=COMP].source[moodCode=INT].identifier"
 "CommunicationRequest.status","","","",1,1,"","Y","Y","code {[]} {[]}
-","draft | active | on-hold | revoked | completed | entered-in-error | unknown","The status of the proposal or order.","","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""completed""/>","","","",,"required","The status of the communication request.","http://hl7.org/fhir/ValueSet/request-status|4.0.1","",,,,"CommunicationRequest.status",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","draft | active | on-hold | revoked | completed | entered-in-error | unknown","The status of the proposal or order.","","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""in-progress""/>","","","",,"required","The status of the communication request.","http://hl7.org/fhir/ValueSet/request-status|4.0.1","",,,,"CommunicationRequest.status",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Request.status","FiveWs.status"
 "CommunicationRequest.statusReason","","Suspended Reason
 Cancelled Reason","",0,1,"","","","CodeableConcept {[]} {[]}
@@ -99,11 +99,11 @@ Cancelled Reason","",0,1,"","","","CodeableConcept {[]} {[]}
 ","",0,1,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Patient], CanonicalType[http://hl7.org/fhir/StructureDefinition/Group]]}
 ","Focus of message","The patient or group that is the focus of this communication request.","","","","","","","","","",,,,,"",,,,"CommunicationRequest.subject",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Request.subject","FiveWs.subject[x]","FiveWs.subject"
-"CommunicationRequest.about","","","",1,*,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Resource]]}
+"CommunicationRequest.about","","","",0,*,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Resource]]}
 ","Resources that pertain to this communication request","Other resources that pertain to this communication request and to which this communication request should be associated.","Don't use CommunicationRequest.about element when a more specific element exists, such as basedOn, reasonReference, or replaces.","","","","","","","","",,,,,"","value:type}
 ","",,"open","CommunicationRequest.about",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Request.supportingInfo","FiveWs.context"
-"CommunicationRequest.about","ModelVersion","","",1,1,"Y","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Device]]}
+"CommunicationRequest.about","ModelVersion","","",0,1,"Y","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Device]]}
 ","Resources that pertain to this communication request","Other resources that pertain to this communication request and to which this communication request should be associated.","Don't use CommunicationRequest.about element when a more specific element exists, such as basedOn, reasonReference, or replaces.","","","","","","","","",,,,,"",,,,"CommunicationRequest.about",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Request.supportingInfo","FiveWs.context"
 "CommunicationRequest.encounter","","","",0,1,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Encounter]]}
