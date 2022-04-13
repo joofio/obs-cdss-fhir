@@ -38,6 +38,7 @@ Parent: Device
 * meta.profile 1..*
 * identifier 1..* MS
 * status 1..1 MS
+* type from ml-type-vs (extensible)
 * type 1..1 MS
 * version.value 1..1 MS
 
