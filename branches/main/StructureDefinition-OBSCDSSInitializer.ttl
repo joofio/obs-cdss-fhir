@@ -26,7 +26,7 @@
   fhir:StructureDefinition.name [ fhir:value "OBSCDSSInitializer"];
   fhir:StructureDefinition.title [ fhir:value "[Profile] - Communication Request"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2022-04-13T16:38:37+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-04-13T16:44:13+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "xxxYour Work Group"];
   fhir:StructureDefinition.contact [
      fhir:index 0;

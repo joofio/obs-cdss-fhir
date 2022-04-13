@@ -22,9 +22,9 @@
   <url value="http://hl7.org/fhir/us/example/StructureDefinition/MLModel"/>
   <version value="0.1.0-test"/>
   <name value="MLModel"/>
-  <title value="[Profile] - Communication Request"/>
+  <title value="[Profile] - Machine Learning Model"/>
   <status value="active"/>
-  <date value="2022-04-13T16:38:37+00:00"/>
+  <date value="2022-04-13T16:44:13+00:00"/>
   <publisher value="xxxYour Work Group"/>
   <contact>
     <telecom>
@@ -32,7 +32,7 @@
       <value value="http://xxhl7.org/Special/committees/[something]"/>
     </telecom>
   </contact>
-  <description value="The profile for asking for input for a certian CDSS case"/>
+  <description value="The profile for Defining Machine Learning Models for CDSS"/>
   <jurisdiction>
     <coding>
       <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
