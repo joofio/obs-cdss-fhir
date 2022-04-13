@@ -11,7 +11,7 @@
   "title": "xxYour User Friendly Name for MyIG Here",
   "status": "draft",
   "experimental": false,
-  "date": "2022-04-13T16:44:13+00:00",
+  "date": "2022-04-13T17:02:09+00:00",
   "publisher": "xxxYour Work Group",
   "contact": [
     {
@@ -372,6 +372,19 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/ml-type-cs"
+        },
+        "name": "Machine Learning Models code system",
+        "description": "Machine Learning Models code system"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "StructureDefinition:resource"
           }
         ],
@@ -380,6 +393,19 @@
         },
         "name": "[Profile] - Communication Request",
         "description": "The profile for asking for input for a certian CDSS case"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/ml-type-vs"
+        },
+        "name": "Machine Learning Models value set",
+        "description": "Machine Learning Models value set"
       },
       {
         "extension": [

@@ -1,5 +1,12 @@
 [
   {
+    "id": "ml-type-cs",
+    "type": "CodeSystem",
+    "url": "http://hl7.org/fhir/us/example/CodeSystem/ml-type-cs",
+    "version": "0.1.0-test",
+    "name": "MlTypesCS"
+  },
+  {
     "id": "MLModel",
     "type": "StructureDefinition",
     "url": "http://hl7.org/fhir/us/example/StructureDefinition/MLModel",
@@ -19,6 +26,13 @@
     "url": "http://hl7.org/fhir/us/example/StructureDefinition/OBSCDSSInitializer",
     "version": "0.1.0-test",
     "name": "OBSCDSSInitializer"
+  },
+  {
+    "id": "ml-type-vs",
+    "type": "ValueSet",
+    "url": "http://hl7.org/fhir/us/example/ValueSet/ml-type-vs",
+    "version": "0.1.0-test",
+    "name": "MlTypesVS"
   },
   {
     "id": "xxexample.fhir.uv.myig",

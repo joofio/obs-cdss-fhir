@@ -1,17 +1,24 @@
 ﻿XXYourComputableMyIGNameHere : Validation Results
 =========================================
 
-err = 6, warn = 8, info = 2
+err = 10, warn = 9, info = 2
 IG Publisher Version: 1.1.115
-Generated Wed Apr 13 16:44:35 UTC 2022. FHIR version 4.0.1 for OBSCDSS.fhir.uv.myig#0.1.0-test (canonical = http://xxsomewhere.org/fhir/myig)
- Build Errors : 28 / 1 / 0
+Generated Wed Apr 13 17:02:32 UTC 2022. FHIR version 4.0.1 for OBSCDSS.fhir.uv.myig#0.1.0-test (canonical = http://xxsomewhere.org/fhir/myig)
+ Build Errors : 38 / 1 / 0
+ /github/workspace/fsh-generated/resources/CodeSystem-ml-type-cs : 2 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-MLModel : 2 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-OBSCDSSFinalizer : 2 / 3 / 2
  /github/workspace/fsh-generated/resources/StructureDefinition-OBSCDSSInitializer : 2 / 3 / 2
+ /github/workspace/fsh-generated/resources/ValueSet-ml-type-vs : 2 / 0 / 1
  /github/workspace/input/myig : 0 / 0 / 1
 </table>
 == n/a ==
 WARNING: ImplementationGuide.id: The Implementation Guide Resource id should be OBSCDSS.fhir.uv.myig
+ERROR: /github/workspace/output/CodeSystem-ml-type-cs.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 141, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-ml-type-cs.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 137, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-ml-type-cs.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 139, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-ml-type-cs.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 139, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-ml-type-cs.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 139, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-MLModel-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 141, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-MLModel-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 141, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-MLModel-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 141, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
@@ -36,10 +43,19 @@ ERROR: /github/workspace/output/StructureDefinition-OBSCDSSInitializer.profile.h
 ERROR: /github/workspace/output/StructureDefinition-OBSCDSSInitializer.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 145, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-OBSCDSSInitializer.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 145, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-OBSCDSSInitializer.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 145, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-ml-type-vs.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 141, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-ml-type-vs.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 137, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-ml-type-vs.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 139, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-ml-type-vs.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 139, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-ml-type-vs.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 139, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
 ERROR: /github/workspace/output/artifacts.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 137, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
 ERROR: /github/workspace/output/index.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 137, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
 ERROR: /github/workspace/output/toc.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 137, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
 ERROR: /github/workspace/output/toc.html#/html/body/div/div/div/div/div/div/table/tbody/tr/td/a at Line 177, column 1829: The link 'downloads.html' for "2 Downloads" cannot be resolved
+== fsh-generated/resources/CodeSystem-ml-type-cs.json ==
+ERROR: CodeSystem.where(url = 'http://hl7.org/fhir/us/example/CodeSystem/ml-type-cs'): Conformance resource /github/workspace/fsh-generated/resources/CodeSystem-ml-type-cs.json - the canonical URL (http://xxsomewhere.org/fhir/myig/CodeSystem/ml-type-cs) does not match the URL (http://hl7.org/fhir/us/example/CodeSystem/ml-type-cs)
+WARNING: CodeSystem/ml-type-cs: CodeSystem: HL7 Defined CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+ERROR: /github/workspace/fsh-generated/resources/CodeSystem-ml-type-cs: URL Mismatch http://xxsomewhere.org/fhir/myig/CodeSystem/ml-type-cs vs http://hl7.org/fhir/us/example/CodeSystem/ml-type-cs
 == fsh-generated/resources/StructureDefinition-MLModel.json ==
 ERROR: StructureDefinition.where(url = 'http://hl7.org/fhir/us/example/StructureDefinition/MLModel'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-MLModel.json - the canonical URL (http://xxsomewhere.org/fhir/myig/StructureDefinition/MLModel) does not match the URL (http://hl7.org/fhir/us/example/StructureDefinition/MLModel)
 WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/example/StructureDefinition/MLModel'): The Implementation Guide contains no examples for this profile
@@ -58,4 +74,7 @@ WARNING: StructureDefinition/OBSCDSSInitializer: StructureDefinition.differentia
 INFORMATION: StructureDefinition/OBSCDSSInitializer: StructureDefinition.snapshot.element[23].pattern.ofType(CodeableConcept): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users) 
 WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/example/StructureDefinition/OBSCDSSInitializer'): The Implementation Guide contains no examples for this profile
 ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-OBSCDSSInitializer: URL Mismatch http://xxsomewhere.org/fhir/myig/StructureDefinition/OBSCDSSInitializer vs http://hl7.org/fhir/us/example/StructureDefinition/OBSCDSSInitializer
+== fsh-generated/resources/ValueSet-ml-type-vs.json ==
+ERROR: ValueSet.where(url = 'http://hl7.org/fhir/us/example/ValueSet/ml-type-vs'): Conformance resource /github/workspace/fsh-generated/resources/ValueSet-ml-type-vs.json - the canonical URL (http://xxsomewhere.org/fhir/myig/ValueSet/ml-type-vs) does not match the URL (http://hl7.org/fhir/us/example/ValueSet/ml-type-vs)
+ERROR: /github/workspace/fsh-generated/resources/ValueSet-ml-type-vs: URL Mismatch http://xxsomewhere.org/fhir/myig/ValueSet/ml-type-vs vs http://hl7.org/fhir/us/example/ValueSet/ml-type-vs
 == input/myig.xml ==
