@@ -1,5 +1,19 @@
 [
   {
+    "id": "MLModel",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/us/example/StructureDefinition/MLModel",
+    "version": "0.1.0-test",
+    "name": "MLModel"
+  },
+  {
+    "id": "OBSCDSSFinalizer",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/us/example/StructureDefinition/OBSCDSSFinalizer",
+    "version": "0.1.0-test",
+    "name": "OBSCDSSFinalizer"
+  },
+  {
     "id": "OBSCDSSInitializer",
     "type": "StructureDefinition",
     "url": "http://hl7.org/fhir/us/example/StructureDefinition/OBSCDSSInitializer",

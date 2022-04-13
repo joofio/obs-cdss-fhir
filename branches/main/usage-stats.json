@@ -5,6 +5,18 @@
   "jurisdiction": "001",
   "extensions": [],
   "profiles": {
+    "Device": [
+      {
+        "url": "http://hl7.org/fhir/us/example/StructureDefinition/MLModel",
+        "title": "[Profile] - Communication Request"
+      }
+    ],
+    "Communication": [
+      {
+        "url": "http://hl7.org/fhir/us/example/StructureDefinition/OBSCDSSFinalizer",
+        "title": "[Profile] - Communication"
+      }
+    ],
     "CommunicationRequest": [
       {
         "url": "http://hl7.org/fhir/us/example/StructureDefinition/OBSCDSSInitializer",

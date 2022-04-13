@@ -1,6 +1,8 @@
 {
   "version": "0.1.0-test",
-  "fhirVersion": "[4.0.1]",
-  "date": "20220329083319",
+  "fhirVersion": [
+    "4.0.1"
+  ],
+  "date": "20220413163801",
   "name": "OBSCDSS.fhir.uv.myig"
 }

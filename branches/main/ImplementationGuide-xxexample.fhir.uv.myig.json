@@ -11,7 +11,7 @@
   "title": "xxYour User Friendly Name for MyIG Here",
   "status": "draft",
   "experimental": false,
-  "date": "2022-03-29T08:34:27+00:00",
+  "date": "2022-04-13T16:38:37+00:00",
   "publisher": "xxxYour Work Group",
   "contact": [
     {
@@ -352,6 +352,19 @@
           }
         ],
         "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
+      },
+      {
+        "extension": [
+          {
+            "url": "code",
+            "valueString": "excludelogbinaryformat"
+          },
+          {
+            "url": "value",
+            "valueString": "true"
+          }
+        ],
+        "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
       }
     ],
     "resource": [
@@ -367,6 +380,32 @@
         },
         "name": "[Profile] - Communication Request",
         "description": "The profile for asking for input for a certian CDSS case"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/MLModel"
+        },
+        "name": "[Profile] - Communication Request",
+        "description": "The profile for asking for input for a certian CDSS case"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/OBSCDSSFinalizer"
+        },
+        "name": "[Profile] - Communication",
+        "description": "The profile for sending the response for a certain CDSS case"
       }
     ],
     "page": {
