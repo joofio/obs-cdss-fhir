@@ -18,8 +18,8 @@ Parent: CommunicationRequest
 * about[ModelVersion] only Reference(Device)
 
 Profile: OBSCDSSFinalizer
-Title: "[Profile] - Communication Request"
-Description: "The profile for asking for input for a certian CDSS case"
+Title: "[Profile] - Communication"
+Description: "The profile for sending the response for a certain CDSS case"
 Parent: Communication
 * meta.profile 1..*
 * identifier MS
@@ -29,6 +29,18 @@ Parent: Communication
 * sent 1..1
 * received 1..1
 * sender 1..1 MS
+* payload.contentCodeableconcept 1..1 MS
+
+Profile: MLModel
+Title: "[Profile] - Communication Request"
+Description: "The profile for asking for input for a certian CDSS case"
+Parent: Device
+* meta.profile 1..*
+* identifier MS
+* displayName 1..1 MS
+* status 1..1 MS
+* type 1..* MS
+* version.value 1..1 MS
 
 
 Profile: NestedComposition
