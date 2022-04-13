@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="ml-type-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system http://hl7.org/fhir/us/example/CodeSystem/ml-type-cs defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">DT<a name="ml-type-cs-DT"> </a></td><td>Decision Trees</td><td>Decision Trees</td></tr><tr><td style="white-space:nowrap">RF<a name="ml-type-cs-RF"> </a></td><td>Random Forests</td><td>Random Forests</td></tr><tr><td style="white-space:nowrap">XGBOOST<a name="ml-type-cs-XGBOOST"> </a></td><td>Extreme Gradient Boosting</td><td>Extreme Gradient Boosting</td></tr><tr><td style="white-space:nowrap">LGBM<a name="ml-type-cs-LGBM"> </a></td><td>Light Gradient Boosting</td><td>Light Gradient Boosting</td></tr><tr><td style="white-space:nowrap">BAYES<a name="ml-type-cs-BAYES"> </a></td><td>Bayesian</td><td>Bayesian</td></tr></table></div>
+  </text>
+  <url value="http://hl7.org/fhir/us/example/CodeSystem/ml-type-cs"/>
+  <version value="0.1.0-test"/>
+  <name value="MlTypesCS"/>
+  <title value="Machine Learning Models code system"/>
+  <status value="active"/>
+  <date value="2022-04-13T17:02:09+00:00"/>
+  <publisher value="xxxYour Work Group"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://xxhl7.org/Special/committees/[something]"/>
+    </telecom>
+  </contact>
+  <description value="Machine Learning Models code system"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+    </coding>
+  </jurisdiction>
+  <content value="complete"/>
+  <count value="5"/>
+  <concept>
+    <code value="DT"/>
+    <display value="Decision Trees"/>
+    <definition value="Decision Trees"/>
+  </concept>
+  <concept>
+    <code value="RF"/>
+    <display value="Random Forests"/>
+    <definition value="Random Forests"/>
+  </concept>
+  <concept>
+    <code value="XGBOOST"/>
+    <display value="Extreme Gradient Boosting"/>
+    <definition value="Extreme Gradient Boosting"/>
+  </concept>
+  <concept>
+    <code value="LGBM"/>
+    <display value="Light Gradient Boosting"/>
+    <definition value="Light Gradient Boosting"/>
+  </concept>
+  <concept>
+    <code value="BAYES"/>
+    <display value="Bayesian"/>
+    <definition value="Bayesian"/>
+  </concept>
+</CodeSystem>

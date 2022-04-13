@@ -1,8 +1,77 @@
 {
   "resourceType" : "Bundle",
-  "id" : "42fb32b1-429e-4641-b3bb-04d2c7cab0df",
+  "id" : "d699f53a-eca7-4721-b126-68ba7e6305af",
   "meta" : {
-    "lastUpdated" : "2022-04-13T16:44:13.799+00:00"
+    "lastUpdated" : "2022-04-13T17:02:09.254+00:00"
   },
-  "type" : "collection"
+  "type" : "collection",
+  "entry" : [{
+    "fullUrl" : "http://hl7.org/fhir/us/example/ValueSet/ml-type-vs",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "ml-type-vs",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 5 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-ml-type-cs.html\">Machine Learning Models code system v0.1.0-test (CodeSystem)</a></p><p>All codes in this table are from the system <a href=\"CodeSystem-ml-type-cs.html\"><code>http://hl7.org/fhir/us/example/CodeSystem/ml-type-cs</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-us-example-CodeSystem-ml-type-cs-DT\"> </a>  <a href=\"CodeSystem-ml-type-cs.html#ml-type-cs-DT\">DT</a></td><td>Decision Trees</td><td>Decision Trees</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-us-example-CodeSystem-ml-type-cs-RF\"> </a>  <a href=\"CodeSystem-ml-type-cs.html#ml-type-cs-RF\">RF</a></td><td>Random Forests</td><td>Random Forests</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-us-example-CodeSystem-ml-type-cs-XGBOOST\"> </a>  <a href=\"CodeSystem-ml-type-cs.html#ml-type-cs-XGBOOST\">XGBOOST</a></td><td>Extreme Gradient Boosting</td><td>Extreme Gradient Boosting</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-us-example-CodeSystem-ml-type-cs-LGBM\"> </a>  <a href=\"CodeSystem-ml-type-cs.html#ml-type-cs-LGBM\">LGBM</a></td><td>Light Gradient Boosting</td><td>Light Gradient Boosting</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-us-example-CodeSystem-ml-type-cs-BAYES\"> </a>  <a href=\"CodeSystem-ml-type-cs.html#ml-type-cs-BAYES\">BAYES</a></td><td>Bayesian</td><td>Bayesian</td></tr></table></div>"
+      },
+      "url" : "http://hl7.org/fhir/us/example/ValueSet/ml-type-vs",
+      "version" : "0.1.0-test",
+      "name" : "MlTypesVS",
+      "title" : "Machine Learning Models value set",
+      "status" : "active",
+      "date" : "2022-04-13T17:02:09+00:00",
+      "publisher" : "xxxYour Work Group",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "http://xxhl7.org/Special/committees/[something]"
+        }]
+      }],
+      "description" : "Machine Learning Models value set",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:9500a3b1-111c-4fd6-9d94-05351867cb5a",
+        "timestamp" : "2022-04-13T17:02:24+00:00",
+        "total" : 5,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://hl7.org/fhir/us/example/CodeSystem/ml-type-cs|0.1.0-test"
+        }],
+        "contains" : [{
+          "system" : "http://hl7.org/fhir/us/example/CodeSystem/ml-type-cs",
+          "code" : "DT",
+          "display" : "Decision Trees"
+        },
+        {
+          "system" : "http://hl7.org/fhir/us/example/CodeSystem/ml-type-cs",
+          "code" : "RF",
+          "display" : "Random Forests"
+        },
+        {
+          "system" : "http://hl7.org/fhir/us/example/CodeSystem/ml-type-cs",
+          "code" : "XGBOOST",
+          "display" : "Extreme Gradient Boosting"
+        },
+        {
+          "system" : "http://hl7.org/fhir/us/example/CodeSystem/ml-type-cs",
+          "code" : "LGBM",
+          "display" : "Light Gradient Boosting"
+        },
+        {
+          "system" : "http://hl7.org/fhir/us/example/CodeSystem/ml-type-cs",
+          "code" : "BAYES",
+          "display" : "Bayesian"
+        }]
+      }
+    }
+  }]
 }
