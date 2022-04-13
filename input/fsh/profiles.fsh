@@ -1,11 +1,10 @@
-
 Profile: OBSCDSSInitializer
 Title: "[Profile] - Communication Request"
 Description: "The profile for asking for input for a certian CDSS case"
 Parent: CommunicationRequest
 * meta.profile 1..*
 * identifier MS
-* status = #completed
+* status = #in-progress
 * category = #instruction
 
 * occurrencePeriod 0..0
@@ -15,9 +14,21 @@ Parent: CommunicationRequest
 * about ^slicing.discriminator.path = "type"
 * about ^slicing.rules = #open
 * about contains
-    ModelVersion 1..1 MS 
+    ModelVersion 0..1 MS 
 * about[ModelVersion] only Reference(Device)
 
+Profile: OBSCDSSFinalizer
+Title: "[Profile] - Communication Request"
+Description: "The profile for asking for input for a certian CDSS case"
+Parent: Communication
+* meta.profile 1..*
+* identifier MS
+* status = #completed
+* category = #instruction
+* inResponseTo 0..1 MS
+* sent 1..1
+* received 1..1
+* sender 1..1 MS
 
 
 Profile: NestedComposition
@@ -27,23 +38,26 @@ Parent: Composition
 Id: nestedcomposition
 
 
-* section ^slicing.discriminator.type = #value
-* section ^slicing.discriminator.path = "code"
+* section ^slicing.discriminator.type = #pattern
+* section ^slicing.discriminator.path = "code.coding.code"
 * section ^slicing.rules = #open
 * section contains
-    section 0..* MS 
-* section[section].entry only Reference(CarePlan)
+    section1 1..1 MS 
+* section[section1].entry only Reference(CarePlan)
+* section[section1].code = http://loinc.org#33728-7 // "Size.maximum dimension in Tumor"
 
-* section[section].section ^slicing.discriminator.type = #value
-* section[section].section ^slicing.discriminator.path = "code"
-* section[section].section ^slicing.rules = #open
-* section[section].section contains     
-    subsection 0..* MS
-* section[section].section[subsection].entry only Reference(Patient)
+* section[section1].section ^slicing.discriminator.type = #pattern
+* section[section1].section ^slicing.discriminator.path = "code.coding.code"
+* section[section1].section ^slicing.rules = #open
+* section[section1].section contains     
+    subsection 1..1 MS
+* section[section1].section[subsection].entry only Reference(Patient)
+* section[section1].section[subsection].code = http://loinc.org#33728-7 // "Size.maximum dimension in Tumor"
 
-* section[section].section[subsection].section ^slicing.discriminator.type = #value
-* section[section].section[subsection].section ^slicing.discriminator.path = "code"
-* section[section].section[subsection].section ^slicing.rules = #open
-* section[section].section[subsection].section contains     
-    subsubsection 0..* MS
-* section[section].section[subsection].section[subsubsection].entry only Reference(Observation)
+* section[section1].section[subsection].section ^slicing.discriminator.type = #pattern
+* section[section1].section[subsection].section ^slicing.discriminator.path = "code.coding.code"
+* section[section1].section[subsection].section ^slicing.rules = #open
+* section[section1].section[subsection].section contains     
+    subsubsection 1..1 MS
+* section[section1].section[subsection].section[subsubsection].entry only Reference(Observation)
+* section[section1].section[subsection].section[subsubsection].code = http://loinc.org#33728-7 // "Size.maximum dimension in Tumor"
