@@ -32,8 +32,8 @@ Parent: Communication
 * payload.contentString 1..1 MS
 
 Profile: MLModel
-Title: "[Profile] - Communication Request"
-Description: "The profile for asking for input for a certian CDSS case"
+Title: "[Profile] - Machine Learning Model"
+Description: "The profile for Defining Machine Learning Models for CDSS"
 Parent: Device
 * meta.profile 1..*
 * identifier 1..* MS
