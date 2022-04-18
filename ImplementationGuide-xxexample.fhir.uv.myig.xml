@@ -12,7 +12,7 @@
   <title value="xxYour User Friendly Name for MyIG Here"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2022-04-18T14:20:50+00:00"/>
+  <date value="2022-04-18T14:45:03+00:00"/>
   <publisher value="xxxYour Work Group"/>
   <contact>
     <telecom>
@@ -288,6 +288,11 @@
       <page>
         <nameUrl value="index.html"/>
         <title value="MyIG Home Page"/>
+        <generation value="html"/>
+      </page>
+      <page>
+        <nameUrl value="workflow.html"/>
+        <title value="CDS Workflow"/>
         <generation value="markdown"/>
       </page>
       <page>

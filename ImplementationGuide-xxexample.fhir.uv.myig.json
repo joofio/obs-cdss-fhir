@@ -11,7 +11,7 @@
   "title": "xxYour User Friendly Name for MyIG Here",
   "status": "draft",
   "experimental": false,
-  "date": "2022-04-18T14:20:50+00:00",
+  "date": "2022-04-18T14:45:03+00:00",
   "publisher": "xxxYour Work Group",
   "contact": [
     {
@@ -442,6 +442,11 @@
         {
           "nameUrl": "index.html",
           "title": "MyIG Home Page",
+          "generation": "html"
+        },
+        {
+          "nameUrl": "workflow.html",
+          "title": "CDS Workflow",
           "generation": "markdown"
         },
         {
