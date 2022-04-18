@@ -49,9 +49,13 @@
       <page>
         <nameUrl value="index.html"/>
         <title value="MyIG Home Page"/>
+        <generation value="html"/>
+      </page>
+      <page>
+        <nameUrl value="workflow.html"/>
+        <title value="CDS Workflow"/>
         <generation value="markdown"/>
       </page>
-
     <!-- change history page -->
    <!--   <page>
         <nameUrl value="changes.html"/>
