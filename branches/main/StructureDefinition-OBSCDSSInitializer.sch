@@ -10,6 +10,12 @@
     single schematron that validates contained resources (if you have any) 
   -->
   <sch:pattern>
+    <sch:title>f:CommunicationRequest</sch:title>
+    <sch:rule context="f:CommunicationRequest">
+      <sch:assert test="count(f:payload) &gt;= 1">payload: minimum cardinality of 'payload' is 1</sch:assert>
+    </sch:rule>
+  </sch:pattern>
+  <sch:pattern>
     <sch:title>CommunicationRequest</sch:title>
     <sch:rule context="f:CommunicationRequest">
       <sch:assert test="not(parent::f:contained and f:contained)">If the resource is contained in another resource, it SHALL NOT contain nested Resources (inherited)</sch:assert>
@@ -212,6 +218,9 @@
   <sch:pattern>
     <sch:title>CommunicationRequest.payload.content[x] 1</sch:title>
     <sch:rule context="f:CommunicationRequest/f:payload/f:content[x]">
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
     </sch:rule>
   </sch:pattern>

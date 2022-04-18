@@ -28,6 +28,13 @@
     "name": "OBSCDSSInitializer"
   },
   {
+    "id": "Parameter1",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/us/example/StructureDefinition/Parameter1",
+    "version": "0.1.0-test",
+    "name": "Parameter1"
+  },
+  {
     "id": "ml-type-vs",
     "type": "ValueSet",
     "url": "http://hl7.org/fhir/us/example/ValueSet/ml-type-vs",

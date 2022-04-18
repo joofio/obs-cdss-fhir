@@ -1,14 +1,15 @@
 ﻿XXYourComputableMyIGNameHere : Validation Results
 =========================================
 
-err = 10, warn = 9, info = 2
+err = 12, warn = 10, info = 2
 IG Publisher Version: 1.1.115
-Generated Mon Apr 18 14:45:20 UTC 2022. FHIR version 4.0.1 for OBSCDSS.fhir.uv.myig#0.1.0-test (canonical = http://xxsomewhere.org/fhir/myig)
- Build Errors : 39 / 1 / 0
+Generated Mon Apr 18 14:59:15 UTC 2022. FHIR version 4.0.1 for OBSCDSS.fhir.uv.myig#0.1.0-test (canonical = http://xxsomewhere.org/fhir/myig)
+ Build Errors : 47 / 1 / 0
  /github/workspace/fsh-generated/resources/CodeSystem-ml-type-cs : 2 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-MLModel : 2 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-OBSCDSSFinalizer : 2 / 3 / 2
  /github/workspace/fsh-generated/resources/StructureDefinition-OBSCDSSInitializer : 2 / 3 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-Parameter1 : 2 / 1 / 1
  /github/workspace/fsh-generated/resources/ValueSet-ml-type-vs : 2 / 0 / 1
  /github/workspace/input/myig : 0 / 0 / 1
 </table>
@@ -43,6 +44,14 @@ ERROR: /github/workspace/output/StructureDefinition-OBSCDSSInitializer.profile.h
 ERROR: /github/workspace/output/StructureDefinition-OBSCDSSInitializer.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 147, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-OBSCDSSInitializer.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 147, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-OBSCDSSInitializer.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 147, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-Parameter1-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-Parameter1-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-Parameter1-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-Parameter1.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-Parameter1.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-Parameter1.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 147, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-Parameter1.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 147, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-Parameter1.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 147, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-ml-type-vs.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-ml-type-vs.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 139, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-ml-type-vs.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 141, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
@@ -75,6 +84,10 @@ WARNING: StructureDefinition/OBSCDSSInitializer: StructureDefinition.differentia
 INFORMATION: StructureDefinition/OBSCDSSInitializer: StructureDefinition.snapshot.element[23].pattern.ofType(CodeableConcept): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users) 
 WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/example/StructureDefinition/OBSCDSSInitializer'): The Implementation Guide contains no examples for this profile
 ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-OBSCDSSInitializer: URL Mismatch http://xxsomewhere.org/fhir/myig/StructureDefinition/OBSCDSSInitializer vs http://hl7.org/fhir/us/example/StructureDefinition/OBSCDSSInitializer
+== fsh-generated/resources/StructureDefinition-Parameter1.json ==
+ERROR: StructureDefinition.where(url = 'http://hl7.org/fhir/us/example/StructureDefinition/Parameter1'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-Parameter1.json - the canonical URL (http://xxsomewhere.org/fhir/myig/StructureDefinition/Parameter1) does not match the URL (http://hl7.org/fhir/us/example/StructureDefinition/Parameter1)
+WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/example/StructureDefinition/Parameter1'): The Implementation Guide contains no examples for this profile
+ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-Parameter1: URL Mismatch http://xxsomewhere.org/fhir/myig/StructureDefinition/Parameter1 vs http://hl7.org/fhir/us/example/StructureDefinition/Parameter1
 == fsh-generated/resources/ValueSet-ml-type-vs.json ==
 ERROR: ValueSet.where(url = 'http://hl7.org/fhir/us/example/ValueSet/ml-type-vs'): Conformance resource /github/workspace/fsh-generated/resources/ValueSet-ml-type-vs.json - the canonical URL (http://xxsomewhere.org/fhir/myig/ValueSet/ml-type-vs) does not match the URL (http://hl7.org/fhir/us/example/ValueSet/ml-type-vs)
 ERROR: /github/workspace/fsh-generated/resources/ValueSet-ml-type-vs: URL Mismatch http://xxsomewhere.org/fhir/myig/ValueSet/ml-type-vs vs http://hl7.org/fhir/us/example/ValueSet/ml-type-vs
