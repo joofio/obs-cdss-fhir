@@ -22,6 +22,12 @@
         "url": "http://hl7.org/fhir/us/example/StructureDefinition/OBSCDSSInitializer",
         "title": "[Profile] - Communication Request"
       }
+    ],
+    "Parameters": [
+      {
+        "url": "http://hl7.org/fhir/us/example/StructureDefinition/Parameter1",
+        "title": "[Profile] - parameter1"
+      }
     ]
   },
   "usage": {

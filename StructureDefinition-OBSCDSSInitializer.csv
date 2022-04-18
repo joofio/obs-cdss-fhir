@@ -109,7 +109,7 @@ Cancelled Reason","",0,1,"","","","CodeableConcept {[]} {[]}
 "CommunicationRequest.encounter","","","",0,1,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Encounter]]}
 ","Encounter created as part of","The Encounter during which this CommunicationRequest was created or to which the creation of this record is tightly associated.","This will typically be the encounter the event occurred within, but some activities may be initiated prior to or after the official completion of an encounter but still be tied to the context of the encounter.","","","","","","","","",,,,,"",,,,"CommunicationRequest.encounter",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Request.context","FiveWs.context"
-"CommunicationRequest.payload","","","",0,*,"","","","BackboneElement {[]} {[]}
+"CommunicationRequest.payload","","","",1,*,"Y","","","BackboneElement {[]} {[]}
 ","Message payload","Text, attachment(s), or resource(s) to be communicated to the recipient.","","","","","","","","","",,,,,"",,,,"CommunicationRequest.payload",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "CommunicationRequest.payload.id","","","",0,1,"","","","string {[]} {[]}
@@ -124,8 +124,18 @@ user contentmodifiers","",0,*,"","Y","Y","Extension {[]} {[]}
 
 Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension).","","","","","","","",,,,,"",,,,"BackboneElement.modifierExtension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","N/A"
-"CommunicationRequest.payload.content[x]","","","",1,1,"","","","string {[]} {[]}
-Attachment {[]} {[]}Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Resource]]}","Message part content","The communicated content (or for multi-part communications, one portion of the communication).","","","","","","","","","",,,,,"",,,,"CommunicationRequest.payload.content[x]",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"CommunicationRequest.payload.content[x]","","","",1,1,"","","","Reference {[]} {[]}
+","Message part content","The communicated content (or for multi-part communications, one portion of the communication).","","","","","","","","","",,,,,"","type:$this}
+","",,"closed","CommunicationRequest.payload.content[x]",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Request.note"
+"CommunicationRequest.payload.content[x]","contentAttachment","","",0,0,"","","","Attachment {[]} {[]}
+","Message part content","The communicated content (or for multi-part communications, one portion of the communication).","","","","","","","","","",,,,,"",,,,"CommunicationRequest.payload.content[x]",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Request.note"
+"CommunicationRequest.payload.content[x]","contentString","","",0,0,"","","","string {[]} {[]}
+","Message part content","The communicated content (or for multi-part communications, one portion of the communication).","","","","","","","","","",,,,,"",,,,"CommunicationRequest.payload.content[x]",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Request.note"
+"CommunicationRequest.payload.content[x]","contentReference","","",1,1,"Y","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Parameters]]}
+","Message part content","The communicated content (or for multi-part communications, one portion of the communication).","","","","","","","","","",,,,,"",,,,"CommunicationRequest.payload.content[x]",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Request.note"
 "CommunicationRequest.occurrence[x]","","timing
 ","",1,1,"","","Y","dateTime {[]} {[]}

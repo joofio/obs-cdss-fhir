@@ -11,7 +11,7 @@
   "title": "xxYour User Friendly Name for MyIG Here",
   "status": "draft",
   "experimental": false,
-  "date": "2022-04-18T14:45:03+00:00",
+  "date": "2022-04-18T14:58:53+00:00",
   "publisher": "xxxYour Work Group",
   "contact": [
     {
@@ -380,6 +380,19 @@
         },
         "name": "Machine Learning Models code system",
         "description": "Machine Learning Models code system"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/Parameter1"
+        },
+        "name": "[Profile] - parameter1",
+        "description": "Inputs for machine learning model"
       },
       {
         "extension": [
