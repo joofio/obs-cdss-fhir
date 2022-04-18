@@ -16,6 +16,11 @@ Parent: CommunicationRequest
 * about contains
     ModelVersion 0..1 MS 
 * about[ModelVersion] only Reference(Device)
+* payload 1..*  MS
+* payload.contentAttachment 0..0
+* payload.contentString 0..0
+* payload.contentReference  only Reference(Parameters) 
+* payload.contentReference 1..1 MS
 
 Profile: OBSCDSSFinalizer
 Title: "[Profile] - Communication"
@@ -42,6 +47,15 @@ Parent: Device
 * type 1..1 MS
 * version.value 1..1 MS
 
+Profile: Parameter1
+Parent: Parameters
+
+Title: "[Profile] - parameter1"
+Description: "Inputs for machine learning model"
+
+* parameter.name = "parameter1"
+* parameter.value[x] only Coding
+* parameter.value[x] 1..1 MS
 /*
 Profile: NestedComposition
 Title: "composition nested"
