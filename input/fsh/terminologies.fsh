@@ -1,6 +1,3 @@
-// @Name: Local Code Systems
-
-// Define a local code system
 CodeSystem: MlTypesCS
 Id:         ml-type-cs
 Title:     "Machine Learning Models code system"
@@ -21,11 +18,34 @@ Description: "Machine Learning Models code system"
 * #BAYES
     "Bayesian"
     "Bayesian"
-// truncated (you get the idea)
 
 
 ValueSet: MlTypesVS
-Id:         ml-type-vs
-Title:     "Machine Learning Models value set"
+Id: ml-type-vs
+Title: "Machine Learning Models value set"
 Description: "Machine Learning Models value set"
 * include codes from system ml-type-cs
+
+
+CodeSystem: MLResponseCS
+Id: ml-response-cs
+Title: "Machine Learning Models code system"
+Description: "Machine Learning Models code system"
+
+* #OK
+    "Level Ok"
+    "Level Ok"
+* #WARN
+    "Warning level 1"
+    "Warning level 1"
+* #NOK
+    "Error level"
+    "Error level"
+
+ValueSet: MLResponseVS
+Id: ml-response-vs
+Title: "Machine Learning Models value set"
+Description: "Machine Learning Models value set"
+* include codes from system ml-response-cs
+
+
