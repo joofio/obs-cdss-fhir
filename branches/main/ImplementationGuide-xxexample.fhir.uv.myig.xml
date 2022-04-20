@@ -12,7 +12,7 @@
   <title value="xxYour User Friendly Name for MyIG Here"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2022-04-18T14:58:53+00:00"/>
+  <date value="2022-04-20T08:29:01+00:00"/>
   <publisher value="xxxYour Work Group"/>
   <contact>
     <telecom>
@@ -243,13 +243,33 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/ml-response-vs"/>
+      </reference>
+      <name value="Machine Learning Models value set"/>
+      <description value="Machine Learning Models value set"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
         <reference value="StructureDefinition/Parameter1"/>
       </reference>
-      <name value="[Profile] - parameter1"/>
+      <name value="[Profile] - Machine Learning Parameters"/>
       <description value="Inputs for machine learning model"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/ml-response-cs"/>
+      </reference>
+      <name value="Machine Learning Models code system"/>
+      <description value="Machine Learning Models code system"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -258,7 +278,7 @@
       <reference>
         <reference value="StructureDefinition/OBSCDSSInitializer"/>
       </reference>
-      <name value="[Profile] - Communication Request"/>
+      <name value="[Profile] - Ask for prediction"/>
       <description value="The profile for asking for input for a certian CDSS case"/>
     </resource>
     <resource>
@@ -288,7 +308,7 @@
       <reference>
         <reference value="StructureDefinition/OBSCDSSFinalizer"/>
       </reference>
-      <name value="[Profile] - Communication"/>
+      <name value="[Profile] - Prediction"/>
       <description value="The profile for sending the response for a certain CDSS case"/>
     </resource>
     <page>

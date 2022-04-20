@@ -24,9 +24,9 @@
   fhir:StructureDefinition.url [ fhir:value "http://hl7.org/fhir/us/example/StructureDefinition/OBSCDSSFinalizer"];
   fhir:StructureDefinition.version [ fhir:value "0.1.0-test"];
   fhir:StructureDefinition.name [ fhir:value "OBSCDSSFinalizer"];
-  fhir:StructureDefinition.title [ fhir:value "[Profile] - Communication"];
+  fhir:StructureDefinition.title [ fhir:value "[Profile] - Prediction"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2022-04-18T14:58:53+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-04-20T08:29:01+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "xxxYour Work Group"];
   fhir:StructureDefinition.contact [
      fhir:index 0;

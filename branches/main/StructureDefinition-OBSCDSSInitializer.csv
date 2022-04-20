@@ -100,10 +100,6 @@ Cancelled Reason","",0,1,"","","","CodeableConcept {[]} {[]}
 ","Focus of message","The patient or group that is the focus of this communication request.","","","","","","","","","",,,,,"",,,,"CommunicationRequest.subject",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Request.subject","FiveWs.subject[x]","FiveWs.subject"
 "CommunicationRequest.about","","","",0,*,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Resource]]}
-","Resources that pertain to this communication request","Other resources that pertain to this communication request and to which this communication request should be associated.","Don't use CommunicationRequest.about element when a more specific element exists, such as basedOn, reasonReference, or replaces.","","","","","","","","",,,,,"","value:type}
-","",,"open","CommunicationRequest.about",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-","Request.supportingInfo","FiveWs.context"
-"CommunicationRequest.about","ModelVersion","","",0,1,"Y","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Device]]}
 ","Resources that pertain to this communication request","Other resources that pertain to this communication request and to which this communication request should be associated.","Don't use CommunicationRequest.about element when a more specific element exists, such as basedOn, reasonReference, or replaces.","","","","","","","","",,,,,"",,,,"CommunicationRequest.about",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Request.supportingInfo","FiveWs.context"
 "CommunicationRequest.encounter","","","",0,1,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Encounter]]}

@@ -1,11 +1,118 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="1e48eb45-aa02-4a0b-b9a8-2bb3b206ac99"/>
+  <id value="497b7311-5779-45f7-bd3d-33622c376b33"/>
   <meta>
-    <lastUpdated value="2022-04-18T14:58:53.354+00:00"/>
+    <lastUpdated value="2022-04-20T08:29:01.065+00:00"/>
   </meta>
   <type value="collection"/>
+  <entry>
+    <fullUrl value="http://hl7.org/fhir/us/example/ValueSet/ml-response-vs"/>
+    <resource>
+      <ValueSet>
+        <id value="ml-response-vs"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 3 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-ml-response-cs.html">Machine Learning Models code system v0.1.0-test (CodeSystem)</a>
+            </p>
+            <p>All codes in this table are from the system 
+              <a href="CodeSystem-ml-response-cs.html">
+                <code>http://hl7.org/fhir/us/example/CodeSystem/ml-response-cs</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-us-example-CodeSystem-ml-response-cs-OK"> </a>  
+                  <a href="CodeSystem-ml-response-cs.html#ml-response-cs-OK">OK</a>
+                </td>
+                <td>Level Ok</td>
+                <td>Level Ok</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-us-example-CodeSystem-ml-response-cs-WARN"> </a>  
+                  <a href="CodeSystem-ml-response-cs.html#ml-response-cs-WARN">WARN</a>
+                </td>
+                <td>Warning level 1</td>
+                <td>Warning level 1</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---hl7.org-fhir-us-example-CodeSystem-ml-response-cs-NOK"> </a>  
+                  <a href="CodeSystem-ml-response-cs.html#ml-response-cs-NOK">NOK</a>
+                </td>
+                <td>Error level</td>
+                <td>Error level</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://hl7.org/fhir/us/example/ValueSet/ml-response-vs"/>
+        <version value="0.1.0-test"/>
+        <name value="MLResponseVS"/>
+        <title value="Machine Learning Models value set"/>
+        <status value="active"/>
+        <date value="2022-04-20T08:29:01+00:00"/>
+        <publisher value="xxxYour Work Group"/>
+        <contact>
+          <telecom>
+            <system value="url"/>
+            <value value="http://xxhl7.org/Special/committees/[something]"/>
+          </telecom>
+        </contact>
+        <description value="Machine Learning Models value set"/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="001"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:ccd9bde8-2b63-4407-8a30-36e6d4572d47"/>
+          <timestamp value="2022-04-20T08:29:12+00:00"/>
+          <total value="3"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://hl7.org/fhir/us/example/CodeSystem/ml-response-cs|0.1.0-test"/>
+          </parameter>
+          <contains>
+            <system value="http://hl7.org/fhir/us/example/CodeSystem/ml-response-cs"/>
+            <code value="OK"/>
+            <display value="Level Ok"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/us/example/CodeSystem/ml-response-cs"/>
+            <code value="WARN"/>
+            <display value="Warning level 1"/>
+          </contains>
+          <contains>
+            <system value="http://hl7.org/fhir/us/example/CodeSystem/ml-response-cs"/>
+            <code value="NOK"/>
+            <display value="Error level"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
   <entry>
     <fullUrl value="http://hl7.org/fhir/us/example/ValueSet/ml-type-vs"/>
     <resource>
@@ -83,7 +190,7 @@
         <name value="MlTypesVS"/>
         <title value="Machine Learning Models value set"/>
         <status value="active"/>
-        <date value="2022-04-18T14:58:53+00:00"/>
+        <date value="2022-04-20T08:29:01+00:00"/>
         <publisher value="xxxYour Work Group"/>
         <contact>
           <telecom>
@@ -99,8 +206,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:96d7be5b-226b-4835-9f09-b635487f5cc3"/>
-          <timestamp value="2022-04-18T14:59:07+00:00"/>
+          <identifier value="urn:uuid:646744e2-5634-41c4-a0d1-b313a499b44d"/>
+          <timestamp value="2022-04-20T08:29:14+00:00"/>
           <total value="5"/>
           <parameter>
             <name value="excludeNested"/>

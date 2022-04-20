@@ -11,7 +11,7 @@
   "title": "xxYour User Friendly Name for MyIG Here",
   "status": "draft",
   "experimental": false,
-  "date": "2022-04-18T14:58:53+00:00",
+  "date": "2022-04-20T08:29:01+00:00",
   "publisher": "xxxYour Work Group",
   "contact": [
     {
@@ -385,14 +385,40 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/ml-response-vs"
+        },
+        "name": "Machine Learning Models value set",
+        "description": "Machine Learning Models value set"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "StructureDefinition:resource"
           }
         ],
         "reference": {
           "reference": "StructureDefinition/Parameter1"
         },
-        "name": "[Profile] - parameter1",
+        "name": "[Profile] - Machine Learning Parameters",
         "description": "Inputs for machine learning model"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/ml-response-cs"
+        },
+        "name": "Machine Learning Models code system",
+        "description": "Machine Learning Models code system"
       },
       {
         "extension": [
@@ -404,7 +430,7 @@
         "reference": {
           "reference": "StructureDefinition/OBSCDSSInitializer"
         },
-        "name": "[Profile] - Communication Request",
+        "name": "[Profile] - Ask for prediction",
         "description": "The profile for asking for input for a certian CDSS case"
       },
       {
@@ -443,7 +469,7 @@
         "reference": {
           "reference": "StructureDefinition/OBSCDSSFinalizer"
         },
-        "name": "[Profile] - Communication",
+        "name": "[Profile] - Prediction",
         "description": "The profile for sending the response for a certain CDSS case"
       }
     ],

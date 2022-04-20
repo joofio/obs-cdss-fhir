@@ -14,19 +14,19 @@
     "Communication": [
       {
         "url": "http://hl7.org/fhir/us/example/StructureDefinition/OBSCDSSFinalizer",
-        "title": "[Profile] - Communication"
+        "title": "[Profile] - Prediction"
       }
     ],
     "CommunicationRequest": [
       {
         "url": "http://hl7.org/fhir/us/example/StructureDefinition/OBSCDSSInitializer",
-        "title": "[Profile] - Communication Request"
+        "title": "[Profile] - Ask for prediction"
       }
     ],
     "Parameters": [
       {
         "url": "http://hl7.org/fhir/us/example/StructureDefinition/Parameter1",
-        "title": "[Profile] - parameter1"
+        "title": "[Profile] - Machine Learning Parameters"
       }
     ]
   },

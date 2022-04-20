@@ -1,0 +1,43 @@
+{
+  "resourceType": "ValueSet",
+  "id": "ml-response-vs",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-ml-response-cs.html\"><code>http://hl7.org/fhir/us/example/CodeSystem/ml-response-cs</code></a></li></ul></div>"
+  },
+  "url": "http://hl7.org/fhir/us/example/ValueSet/ml-response-vs",
+  "version": "0.1.0-test",
+  "name": "MLResponseVS",
+  "title": "Machine Learning Models value set",
+  "status": "active",
+  "date": "2022-04-20T08:29:01+00:00",
+  "publisher": "xxxYour Work Group",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://xxhl7.org/Special/committees/[something]"
+        }
+      ]
+    }
+  ],
+  "description": "Machine Learning Models value set",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "001"
+        }
+      ]
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "http://hl7.org/fhir/us/example/CodeSystem/ml-response-cs"
+      }
+    ]
+  }
+}

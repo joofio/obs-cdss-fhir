@@ -1,25 +1,25 @@
 {
   "resourceType" : "Bundle",
-  "id" : "1e48eb45-aa02-4a0b-b9a8-2bb3b206ac99",
+  "id" : "497b7311-5779-45f7-bd3d-33622c376b33",
   "meta" : {
-    "lastUpdated" : "2022-04-18T14:58:53.354+00:00"
+    "lastUpdated" : "2022-04-20T08:29:01.065+00:00"
   },
   "type" : "collection",
   "entry" : [{
-    "fullUrl" : "http://hl7.org/fhir/us/example/ValueSet/ml-type-vs",
+    "fullUrl" : "http://hl7.org/fhir/us/example/ValueSet/ml-response-vs",
     "resource" : {
       "resourceType" : "ValueSet",
-      "id" : "ml-type-vs",
+      "id" : "ml-response-vs",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 5 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-ml-type-cs.html\">Machine Learning Models code system v0.1.0-test (CodeSystem)</a></p><p>All codes in this table are from the system <a href=\"CodeSystem-ml-type-cs.html\"><code>http://hl7.org/fhir/us/example/CodeSystem/ml-type-cs</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-us-example-CodeSystem-ml-type-cs-DT\"> </a>  <a href=\"CodeSystem-ml-type-cs.html#ml-type-cs-DT\">DT</a></td><td>Decision Trees</td><td>Decision Trees</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-us-example-CodeSystem-ml-type-cs-RF\"> </a>  <a href=\"CodeSystem-ml-type-cs.html#ml-type-cs-RF\">RF</a></td><td>Random Forests</td><td>Random Forests</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-us-example-CodeSystem-ml-type-cs-XGBOOST\"> </a>  <a href=\"CodeSystem-ml-type-cs.html#ml-type-cs-XGBOOST\">XGBOOST</a></td><td>Extreme Gradient Boosting</td><td>Extreme Gradient Boosting</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-us-example-CodeSystem-ml-type-cs-LGBM\"> </a>  <a href=\"CodeSystem-ml-type-cs.html#ml-type-cs-LGBM\">LGBM</a></td><td>Light Gradient Boosting</td><td>Light Gradient Boosting</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-us-example-CodeSystem-ml-type-cs-BAYES\"> </a>  <a href=\"CodeSystem-ml-type-cs.html#ml-type-cs-BAYES\">BAYES</a></td><td>Bayesian</td><td>Bayesian</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 3 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-ml-response-cs.html\">Machine Learning Models code system v0.1.0-test (CodeSystem)</a></p><p>All codes in this table are from the system <a href=\"CodeSystem-ml-response-cs.html\"><code>http://hl7.org/fhir/us/example/CodeSystem/ml-response-cs</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-us-example-CodeSystem-ml-response-cs-OK\"> </a>  <a href=\"CodeSystem-ml-response-cs.html#ml-response-cs-OK\">OK</a></td><td>Level Ok</td><td>Level Ok</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-us-example-CodeSystem-ml-response-cs-WARN\"> </a>  <a href=\"CodeSystem-ml-response-cs.html#ml-response-cs-WARN\">WARN</a></td><td>Warning level 1</td><td>Warning level 1</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-us-example-CodeSystem-ml-response-cs-NOK\"> </a>  <a href=\"CodeSystem-ml-response-cs.html#ml-response-cs-NOK\">NOK</a></td><td>Error level</td><td>Error level</td></tr></table></div>"
       },
-      "url" : "http://hl7.org/fhir/us/example/ValueSet/ml-type-vs",
+      "url" : "http://hl7.org/fhir/us/example/ValueSet/ml-response-vs",
       "version" : "0.1.0-test",
-      "name" : "MlTypesVS",
+      "name" : "MLResponseVS",
       "title" : "Machine Learning Models value set",
       "status" : "active",
-      "date" : "2022-04-18T14:58:53+00:00",
+      "date" : "2022-04-20T08:29:01+00:00",
       "publisher" : "xxxYour Work Group",
       "contact" : [{
         "telecom" : [{
@@ -35,8 +35,67 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:96d7be5b-226b-4835-9f09-b635487f5cc3",
-        "timestamp" : "2022-04-18T14:59:07+00:00",
+        "identifier" : "urn:uuid:ccd9bde8-2b63-4407-8a30-36e6d4572d47",
+        "timestamp" : "2022-04-20T08:29:12+00:00",
+        "total" : 3,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://hl7.org/fhir/us/example/CodeSystem/ml-response-cs|0.1.0-test"
+        }],
+        "contains" : [{
+          "system" : "http://hl7.org/fhir/us/example/CodeSystem/ml-response-cs",
+          "code" : "OK",
+          "display" : "Level Ok"
+        },
+        {
+          "system" : "http://hl7.org/fhir/us/example/CodeSystem/ml-response-cs",
+          "code" : "WARN",
+          "display" : "Warning level 1"
+        },
+        {
+          "system" : "http://hl7.org/fhir/us/example/CodeSystem/ml-response-cs",
+          "code" : "NOK",
+          "display" : "Error level"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://hl7.org/fhir/us/example/ValueSet/ml-type-vs",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "ml-type-vs",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 5 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-ml-type-cs.html\">Machine Learning Models code system v0.1.0-test (CodeSystem)</a></p><p>All codes in this table are from the system <a href=\"CodeSystem-ml-type-cs.html\"><code>http://hl7.org/fhir/us/example/CodeSystem/ml-type-cs</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-us-example-CodeSystem-ml-type-cs-DT\"> </a>  <a href=\"CodeSystem-ml-type-cs.html#ml-type-cs-DT\">DT</a></td><td>Decision Trees</td><td>Decision Trees</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-us-example-CodeSystem-ml-type-cs-RF\"> </a>  <a href=\"CodeSystem-ml-type-cs.html#ml-type-cs-RF\">RF</a></td><td>Random Forests</td><td>Random Forests</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-us-example-CodeSystem-ml-type-cs-XGBOOST\"> </a>  <a href=\"CodeSystem-ml-type-cs.html#ml-type-cs-XGBOOST\">XGBOOST</a></td><td>Extreme Gradient Boosting</td><td>Extreme Gradient Boosting</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-us-example-CodeSystem-ml-type-cs-LGBM\"> </a>  <a href=\"CodeSystem-ml-type-cs.html#ml-type-cs-LGBM\">LGBM</a></td><td>Light Gradient Boosting</td><td>Light Gradient Boosting</td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---hl7.org-fhir-us-example-CodeSystem-ml-type-cs-BAYES\"> </a>  <a href=\"CodeSystem-ml-type-cs.html#ml-type-cs-BAYES\">BAYES</a></td><td>Bayesian</td><td>Bayesian</td></tr></table></div>"
+      },
+      "url" : "http://hl7.org/fhir/us/example/ValueSet/ml-type-vs",
+      "version" : "0.1.0-test",
+      "name" : "MlTypesVS",
+      "title" : "Machine Learning Models value set",
+      "status" : "active",
+      "date" : "2022-04-20T08:29:01+00:00",
+      "publisher" : "xxxYour Work Group",
+      "contact" : [{
+        "telecom" : [{
+          "system" : "url",
+          "value" : "http://xxhl7.org/Special/committees/[something]"
+        }]
+      }],
+      "description" : "Machine Learning Models value set",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code" : "001"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:646744e2-5634-41c4-a0d1-b313a499b44d",
+        "timestamp" : "2022-04-20T08:29:14+00:00",
         "total" : 5,
         "parameter" : [{
           "name" : "excludeNested",
