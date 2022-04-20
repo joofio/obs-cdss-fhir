@@ -11,7 +11,7 @@
   "title": "xxYour User Friendly Name for MyIG Here",
   "status": "draft",
   "experimental": false,
-  "date": "2022-04-20T08:41:13+00:00",
+  "date": "2022-04-20T08:59:23+00:00",
   "publisher": "xxxYour Work Group",
   "contact": [
     {
@@ -391,8 +391,8 @@
         "reference": {
           "reference": "ValueSet/ml-response-vs"
         },
-        "name": "Machine Learning Models value set",
-        "description": "Machine Learning Models value set"
+        "name": "Model Responses value set",
+        "description": "Model Responses value set"
       },
       {
         "extension": [
@@ -404,8 +404,8 @@
         "reference": {
           "reference": "CodeSystem/ml-response-cs"
         },
-        "name": "Machine Learning Models code system",
-        "description": "Machine Learning Models code system"
+        "name": "Model Responses Code System",
+        "description": "Model Responses Code System"
       },
       {
         "extension": [
@@ -417,7 +417,7 @@
         "reference": {
           "reference": "StructureDefinition/OBSCDSSInitializer"
         },
-        "name": "[Profile] - Ask for prediction",
+        "name": "Request for prediction",
         "description": "The profile for asking for input for a certian CDSS case"
       },
       {
@@ -443,7 +443,7 @@
         "reference": {
           "reference": "StructureDefinition/MLModel"
         },
-        "name": "[Profile] - Machine Learning Model",
+        "name": "Machine Learning Model",
         "description": "The profile for Defining Machine Learning Models for CDSS"
       },
       {
@@ -456,7 +456,7 @@
         "reference": {
           "reference": "StructureDefinition/MLParameter"
         },
-        "name": "[Profile] - Machine Learning Parameters",
+        "name": "Machine Learning Parameters",
         "description": "Inputs for machine learning model"
       },
       {
@@ -469,7 +469,7 @@
         "reference": {
           "reference": "StructureDefinition/OBSCDSSFinalizer"
         },
-        "name": "[Profile] - Prediction",
+        "name": "Prediction",
         "description": "The profile for sending the response for a certain CDSS case"
       }
     ],

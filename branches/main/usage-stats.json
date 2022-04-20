@@ -8,25 +8,25 @@
     "Device": [
       {
         "url": "http://hl7.org/fhir/us/example/StructureDefinition/MLModel",
-        "title": "[Profile] - Machine Learning Model"
+        "title": "Machine Learning Model"
       }
     ],
     "Parameters": [
       {
         "url": "http://hl7.org/fhir/us/example/StructureDefinition/MLParameter",
-        "title": "[Profile] - Machine Learning Parameters"
+        "title": "Machine Learning Parameters"
       }
     ],
     "Communication": [
       {
         "url": "http://hl7.org/fhir/us/example/StructureDefinition/OBSCDSSFinalizer",
-        "title": "[Profile] - Prediction"
+        "title": "Prediction"
       }
     ],
     "CommunicationRequest": [
       {
         "url": "http://hl7.org/fhir/us/example/StructureDefinition/OBSCDSSInitializer",
-        "title": "[Profile] - Ask for prediction"
+        "title": "Request for prediction"
       }
     ]
   },

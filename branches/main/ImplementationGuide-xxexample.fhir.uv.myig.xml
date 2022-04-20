@@ -12,7 +12,7 @@
   <title value="xxYour User Friendly Name for MyIG Here"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2022-04-20T08:41:13+00:00"/>
+  <date value="2022-04-20T08:59:23+00:00"/>
   <publisher value="xxxYour Work Group"/>
   <contact>
     <telecom>
@@ -248,8 +248,8 @@
       <reference>
         <reference value="ValueSet/ml-response-vs"/>
       </reference>
-      <name value="Machine Learning Models value set"/>
-      <description value="Machine Learning Models value set"/>
+      <name value="Model Responses value set"/>
+      <description value="Model Responses value set"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -258,8 +258,8 @@
       <reference>
         <reference value="CodeSystem/ml-response-cs"/>
       </reference>
-      <name value="Machine Learning Models code system"/>
-      <description value="Machine Learning Models code system"/>
+      <name value="Model Responses Code System"/>
+      <description value="Model Responses Code System"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -268,7 +268,7 @@
       <reference>
         <reference value="StructureDefinition/OBSCDSSInitializer"/>
       </reference>
-      <name value="[Profile] - Ask for prediction"/>
+      <name value="Request for prediction"/>
       <description value="The profile for asking for input for a certian CDSS case"/>
     </resource>
     <resource>
@@ -288,7 +288,7 @@
       <reference>
         <reference value="StructureDefinition/MLModel"/>
       </reference>
-      <name value="[Profile] - Machine Learning Model"/>
+      <name value="Machine Learning Model"/>
       <description value="The profile for Defining Machine Learning Models for CDSS"/>
     </resource>
     <resource>
@@ -298,7 +298,7 @@
       <reference>
         <reference value="StructureDefinition/MLParameter"/>
       </reference>
-      <name value="[Profile] - Machine Learning Parameters"/>
+      <name value="Machine Learning Parameters"/>
       <description value="Inputs for machine learning model"/>
     </resource>
     <resource>
@@ -308,7 +308,7 @@
       <reference>
         <reference value="StructureDefinition/OBSCDSSFinalizer"/>
       </reference>
-      <name value="[Profile] - Prediction"/>
+      <name value="Prediction"/>
       <description value="The profile for sending the response for a certain CDSS case"/>
     </resource>
     <page>

@@ -18,9 +18,9 @@
   "url": "http://hl7.org/fhir/us/example/StructureDefinition/MLModel",
   "version": "0.1.0-test",
   "name": "MLModel",
-  "title": "[Profile] - Machine Learning Model",
+  "title": "Machine Learning Model",
   "status": "active",
-  "date": "2022-04-20T08:41:13+00:00",
+  "date": "2022-04-20T08:59:23+00:00",
   "publisher": "xxxYour Work Group",
   "contact": [
     {
