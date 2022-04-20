@@ -19,9 +19,9 @@
   <url value="http://hl7.org/fhir/us/example/StructureDefinition/MLParameter"/>
   <version value="0.1.0-test"/>
   <name value="MLParameter"/>
-  <title value="[Profile] - Machine Learning Parameters"/>
+  <title value="Machine Learning Parameters"/>
   <status value="active"/>
-  <date value="2022-04-20T08:41:13+00:00"/>
+  <date value="2022-04-20T08:59:23+00:00"/>
   <publisher value="xxxYour Work Group"/>
   <contact>
     <telecom>

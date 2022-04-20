@@ -8,9 +8,9 @@
   <url value="http://hl7.org/fhir/us/example/ValueSet/ml-response-vs"/>
   <version value="0.1.0-test"/>
   <name value="MLResponseVS"/>
-  <title value="Machine Learning Models value set"/>
+  <title value="Model Responses value set"/>
   <status value="active"/>
-  <date value="2022-04-20T08:41:13+00:00"/>
+  <date value="2022-04-20T08:59:23+00:00"/>
   <publisher value="xxxYour Work Group"/>
   <contact>
     <telecom>
@@ -18,7 +18,7 @@
       <value value="http://xxhl7.org/Special/committees/[something]"/>
     </telecom>
   </contact>
-  <description value="Machine Learning Models value set"/>
+  <description value="Model Responses value set"/>
   <jurisdiction>
     <coding>
       <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>

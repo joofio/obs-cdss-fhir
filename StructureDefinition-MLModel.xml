@@ -22,9 +22,9 @@
   <url value="http://hl7.org/fhir/us/example/StructureDefinition/MLModel"/>
   <version value="0.1.0-test"/>
   <name value="MLModel"/>
-  <title value="[Profile] - Machine Learning Model"/>
+  <title value="Machine Learning Model"/>
   <status value="active"/>
-  <date value="2022-04-20T08:41:13+00:00"/>
+  <date value="2022-04-20T08:59:23+00:00"/>
   <publisher value="xxxYour Work Group"/>
   <contact>
     <telecom>
