@@ -15,7 +15,7 @@ Parent: CommunicationRequest
 * payload 1..*  MS
 * payload.contentAttachment 0..0
 * payload.contentString 0..0
-* payload.contentReference  only Reference(Parameters) 
+* payload.contentReference  only Reference(MLParameter) 
 * payload.contentReference 1..1 MS
 
 Profile: OBSCDSSFinalizer
@@ -47,15 +47,16 @@ Parent: Device
 * type 1..1 MS
 * version.value 1..1 MS
 
-Profile: Parameter1
+Profile: MLParameter
 Parent: Parameters
-
 Title: "[Profile] - Machine Learning Parameters"
 Description: "Inputs for machine learning model"
 
-* parameter.name = "parameter1"
-* parameter.value[x] only Coding
+* parameter.name 1..1 MS
+* parameter.value[x] only Coding or integer
 * parameter.value[x] 1..1 MS
+* parameter.part 0..0 
+* parameter.resource 0..0 
 
 /*
 Profile: NestedComposition
