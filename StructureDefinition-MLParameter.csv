@@ -26,15 +26,15 @@ user contentmodifiers","",0,*,"","Y","Y","Extension {[]} {[]}
 
 Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension).","","","","","","","",,,,,"",,,,"BackboneElement.modifierExtension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","N/A"
-"Parameters.parameter.name","","","",1,1,"","","Y","string {[]} {[]}
-","Name from the definition","The name of the parameter (reference to the operation definition).","","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""parameter1""/>","","","",,,,,"",,,,"Parameters.parameter.name",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"Parameters.parameter.name","","","",1,1,"Y","","Y","string {[]} {[]}
+","Name from the definition","The name of the parameter (reference to the operation definition).","","","","","","","","","",,,,,"",,,,"Parameters.parameter.name",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"Parameters.parameter.value[x]","","","",1,1,"Y","","Y","Coding {[]} {[]}
-","If parameter is a data type","If the parameter is a data type.","","","","","","","","","",,,,,"",,,,"Parameters.parameter.value[x]",0,1,"inv-1
+"Parameters.parameter.value[x]","","","",1,1,"Y","","Y","integer {[]} {[]}
+Coding {[]} {[]}","If parameter is a data type","If the parameter is a data type.","","","","","","","","","",,,,,"",,,,"Parameters.parameter.value[x]",0,1,"inv-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"Parameters.parameter.resource","","","",0,1,"","","Y","Resource {[]} {[]}
+"Parameters.parameter.resource","","","",0,0,"","","Y","Resource {[]} {[]}
 ","If parameter is a whole resource","If the parameter is a whole resource.","When resolving references in resources, the operation definition may specify how references may be resolved between parameters. If a reference cannot be resolved between the parameters, the application should fall back to it's general resource resolution methods.","","","","","","","","",,,,,"",,,,"Parameters.parameter.resource",0,1,"inv-1
 ",""
-"Parameters.parameter.part","","","",0,*,"","","Y","","Named part of a multi-part parameter","A named part of a multi-part parameter.","Only one level of nested parameters is allowed.","","","","","","","","",,,,,"",,,,"Parameters.parameter.part",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"Parameters.parameter.part","","","",0,0,"","","Y","","Named part of a multi-part parameter","A named part of a multi-part parameter.","Only one level of nested parameters is allowed.","","","","","","","","",,,,,"",,,,"Parameters.parameter.part",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "

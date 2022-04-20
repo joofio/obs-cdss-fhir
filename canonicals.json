@@ -21,6 +21,13 @@
     "name": "MLModel"
   },
   {
+    "id": "MLParameter",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/us/example/StructureDefinition/MLParameter",
+    "version": "0.1.0-test",
+    "name": "MLParameter"
+  },
+  {
     "id": "OBSCDSSFinalizer",
     "type": "StructureDefinition",
     "url": "http://hl7.org/fhir/us/example/StructureDefinition/OBSCDSSFinalizer",
@@ -33,13 +40,6 @@
     "url": "http://hl7.org/fhir/us/example/StructureDefinition/OBSCDSSInitializer",
     "version": "0.1.0-test",
     "name": "OBSCDSSInitializer"
-  },
-  {
-    "id": "Parameter1",
-    "type": "StructureDefinition",
-    "url": "http://hl7.org/fhir/us/example/StructureDefinition/Parameter1",
-    "version": "0.1.0-test",
-    "name": "Parameter1"
   },
   {
     "id": "ml-response-vs",
