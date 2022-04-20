@@ -29,8 +29,8 @@ Description: "Machine Learning Models value set"
 
 CodeSystem: MLResponseCS
 Id: ml-response-cs
-Title: "Machine Learning Models code system"
-Description: "Machine Learning Models code system"
+Title:  "Model Responses Code System"
+Description: "Model Responses Code System"
 
 * #OK
     "Level Ok"
@@ -44,8 +44,8 @@ Description: "Machine Learning Models code system"
 
 ValueSet: MLResponseVS
 Id: ml-response-vs
-Title: "Machine Learning Models value set"
-Description: "Machine Learning Models value set"
+Title: "Model Responses value set"
+Description:  "Model Responses value set"
 * include codes from system ml-response-cs
 
 

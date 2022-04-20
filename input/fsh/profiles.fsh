@@ -1,5 +1,5 @@
 Profile: OBSCDSSInitializer
-Title: "[Profile] - Ask for prediction"
+Title: "Request for prediction"
 Description: "The profile for asking for input for a certian CDSS case"
 Parent: CommunicationRequest
 
@@ -19,7 +19,7 @@ Parent: CommunicationRequest
 * payload.contentReference 1..1 MS
 
 Profile: OBSCDSSFinalizer
-Title: "[Profile] - Prediction"
+Title: "Prediction"
 Description: "The profile for sending the response for a certain CDSS case"
 Parent: Communication
 
@@ -37,7 +37,7 @@ Parent: Communication
 //* payload.contentCodeableConcept from ml-response-vs
 
 Profile: MLModel
-Title: "[Profile] - Machine Learning Model"
+Title: "Machine Learning Model"
 Description: "The profile for Defining Machine Learning Models for CDSS"
 Parent: Device
 * meta.profile 1..*
@@ -49,7 +49,7 @@ Parent: Device
 
 Profile: MLParameter
 Parent: Parameters
-Title: "[Profile] - Machine Learning Parameters"
+Title: "Machine Learning Parameters"
 Description: "Inputs for machine learning model"
 
 * parameter.name 1..1 MS
