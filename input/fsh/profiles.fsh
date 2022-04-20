@@ -57,7 +57,7 @@ Description: "Inputs for machine learning model"
 * parameter.value[x] only Coding
 * parameter.value[x] 1..1 MS
 
-
+/*
 Profile: NestedComposition
 Title: "composition nested"
 Description: "The profile for nesting data in composition's sections"
@@ -88,4 +88,4 @@ Id: nestedcomposition
     subsubsection 1..1 MS
 * section[section1].section[subsection].section[subsubsection].entry only Reference(Observation)
 * section[section1].section[subsection].section[subsubsection].code = http://loinc.org#33728-7 // "Size.maximum dimension in Tumor"
-
+*/
