@@ -18,9 +18,9 @@
   "url": "http://hl7.org/fhir/us/example/StructureDefinition/OBSCDSSFinalizer",
   "version": "0.1.0-test",
   "name": "OBSCDSSFinalizer",
-  "title": "[Profile] - Communication",
+  "title": "[Profile] - Prediction",
   "status": "active",
-  "date": "2022-04-18T14:58:53+00:00",
+  "date": "2022-04-20T08:29:01+00:00",
   "publisher": "xxxYour Work Group",
   "contact": [
     {

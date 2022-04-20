@@ -18,7 +18,7 @@
   fhir:ImplementationGuide.title [ fhir:value "xxYour User Friendly Name for MyIG Here"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
   fhir:ImplementationGuide.experimental [ fhir:value "false"^^xsd:boolean];
-  fhir:ImplementationGuide.date [ fhir:value "2022-04-18T14:58:53+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2022-04-20T08:29:01+00:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "xxxYour Work Group"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -363,16 +363,42 @@
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://xxsomewhere.org/fhir/myig/ValueSet/ml-response-vs>;
+         fhir:Reference.reference [ fhir:value "ValueSet/ml-response-vs" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Machine Learning Models value set" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Machine Learning Models value set" ]
+     ], [
+       fhir:index 2;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
          fhir:link <http://xxsomewhere.org/fhir/myig/StructureDefinition/Parameter1>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/Parameter1" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "[Profile] - parameter1" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "[Profile] - Machine Learning Parameters" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Inputs for machine learning model" ]
      ], [
-       fhir:index 2;
+       fhir:index 3;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://xxsomewhere.org/fhir/myig/CodeSystem/ml-response-cs>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/ml-response-cs" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Machine Learning Models code system" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Machine Learning Models code system" ]
+     ], [
+       fhir:index 4;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -382,10 +408,10 @@
          fhir:link <http://xxsomewhere.org/fhir/myig/StructureDefinition/OBSCDSSInitializer>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/OBSCDSSInitializer" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "[Profile] - Communication Request" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "[Profile] - Ask for prediction" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "The profile for asking for input for a certian CDSS case" ]
      ], [
-       fhir:index 3;
+       fhir:index 5;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -398,7 +424,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Machine Learning Models value set" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Machine Learning Models value set" ]
      ], [
-       fhir:index 4;
+       fhir:index 6;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -411,7 +437,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "[Profile] - Machine Learning Model" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "The profile for Defining Machine Learning Models for CDSS" ]
      ], [
-       fhir:index 5;
+       fhir:index 7;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -421,7 +447,7 @@
          fhir:link <http://xxsomewhere.org/fhir/myig/StructureDefinition/OBSCDSSFinalizer>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/OBSCDSSFinalizer" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "[Profile] - Communication" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "[Profile] - Prediction" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "The profile for sending the response for a certain CDSS case" ]
      ];
      fhir:ImplementationGuide.definition.page [

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="ml-response-cs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system http://hl7.org/fhir/us/example/CodeSystem/ml-response-cs defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">OK<a name="ml-response-cs-OK"> </a></td><td>Level Ok</td><td>Level Ok</td></tr><tr><td style="white-space:nowrap">WARN<a name="ml-response-cs-WARN"> </a></td><td>Warning level 1</td><td>Warning level 1</td></tr><tr><td style="white-space:nowrap">NOK<a name="ml-response-cs-NOK"> </a></td><td>Error level</td><td>Error level</td></tr></table></div>
+  </text>
+  <url value="http://hl7.org/fhir/us/example/CodeSystem/ml-response-cs"/>
+  <version value="0.1.0-test"/>
+  <name value="MLResponseCS"/>
+  <title value="Machine Learning Models code system"/>
+  <status value="active"/>
+  <date value="2022-04-20T08:29:01+00:00"/>
+  <publisher value="xxxYour Work Group"/>
+  <contact>
+    <telecom>
+      <system value="url"/>
+      <value value="http://xxhl7.org/Special/committees/[something]"/>
+    </telecom>
+  </contact>
+  <description value="Machine Learning Models code system"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+    </coding>
+  </jurisdiction>
+  <content value="complete"/>
+  <count value="3"/>
+  <concept>
+    <code value="OK"/>
+    <display value="Level Ok"/>
+    <definition value="Level Ok"/>
+  </concept>
+  <concept>
+    <code value="WARN"/>
+    <display value="Warning level 1"/>
+    <definition value="Warning level 1"/>
+  </concept>
+  <concept>
+    <code value="NOK"/>
+    <display value="Error level"/>
+    <definition value="Error level"/>
+  </concept>
+</CodeSystem>

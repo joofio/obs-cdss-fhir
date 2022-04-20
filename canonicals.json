@@ -1,5 +1,12 @@
 [
   {
+    "id": "ml-response-cs",
+    "type": "CodeSystem",
+    "url": "http://hl7.org/fhir/us/example/CodeSystem/ml-response-cs",
+    "version": "0.1.0-test",
+    "name": "MLResponseCS"
+  },
+  {
     "id": "ml-type-cs",
     "type": "CodeSystem",
     "url": "http://hl7.org/fhir/us/example/CodeSystem/ml-type-cs",
@@ -33,6 +40,13 @@
     "url": "http://hl7.org/fhir/us/example/StructureDefinition/Parameter1",
     "version": "0.1.0-test",
     "name": "Parameter1"
+  },
+  {
+    "id": "ml-response-vs",
+    "type": "ValueSet",
+    "url": "http://hl7.org/fhir/us/example/ValueSet/ml-response-vs",
+    "version": "0.1.0-test",
+    "name": "MLResponseVS"
   },
   {
     "id": "ml-type-vs",

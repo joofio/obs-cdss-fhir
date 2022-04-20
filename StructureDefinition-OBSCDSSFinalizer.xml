@@ -28,9 +28,9 @@
   <url value="http://hl7.org/fhir/us/example/StructureDefinition/OBSCDSSFinalizer"/>
   <version value="0.1.0-test"/>
   <name value="OBSCDSSFinalizer"/>
-  <title value="[Profile] - Communication"/>
+  <title value="[Profile] - Prediction"/>
   <status value="active"/>
-  <date value="2022-04-18T14:58:53+00:00"/>
+  <date value="2022-04-20T08:29:01+00:00"/>
   <publisher value="xxxYour Work Group"/>
   <contact>
     <telecom>
