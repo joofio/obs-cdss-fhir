@@ -11,6 +11,12 @@
         "title": "[Profile] - Machine Learning Model"
       }
     ],
+    "Parameters": [
+      {
+        "url": "http://hl7.org/fhir/us/example/StructureDefinition/MLParameter",
+        "title": "[Profile] - Machine Learning Parameters"
+      }
+    ],
     "Communication": [
       {
         "url": "http://hl7.org/fhir/us/example/StructureDefinition/OBSCDSSFinalizer",
@@ -21,12 +27,6 @@
       {
         "url": "http://hl7.org/fhir/us/example/StructureDefinition/OBSCDSSInitializer",
         "title": "[Profile] - Ask for prediction"
-      }
-    ],
-    "Parameters": [
-      {
-        "url": "http://hl7.org/fhir/us/example/StructureDefinition/Parameter1",
-        "title": "[Profile] - Machine Learning Parameters"
       }
     ]
   },

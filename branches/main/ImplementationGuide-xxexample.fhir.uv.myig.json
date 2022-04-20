@@ -11,7 +11,7 @@
   "title": "xxYour User Friendly Name for MyIG Here",
   "status": "draft",
   "experimental": false,
-  "date": "2022-04-20T08:29:01+00:00",
+  "date": "2022-04-20T08:41:13+00:00",
   "publisher": "xxxYour Work Group",
   "contact": [
     {
@@ -398,19 +398,6 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/Parameter1"
-        },
-        "name": "[Profile] - Machine Learning Parameters",
-        "description": "Inputs for machine learning model"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "CodeSystem"
           }
         ],
@@ -458,6 +445,19 @@
         },
         "name": "[Profile] - Machine Learning Model",
         "description": "The profile for Defining Machine Learning Models for CDSS"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/MLParameter"
+        },
+        "name": "[Profile] - Machine Learning Parameters",
+        "description": "Inputs for machine learning model"
       },
       {
         "extension": [
