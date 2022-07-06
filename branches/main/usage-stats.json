@@ -14,7 +14,7 @@
     "Parameters": [
       {
         "url": "http://hl7.org/fhir/us/example/StructureDefinition/MLParameter",
-        "title": "Machine Learning Parameters"
+        "title": "Machine Learning Parameters for obstetrics"
       }
     ],
     "Communication": [
