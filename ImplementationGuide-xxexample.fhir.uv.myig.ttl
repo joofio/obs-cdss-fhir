@@ -18,7 +18,7 @@
   fhir:ImplementationGuide.title [ fhir:value "xxYour User Friendly Name for MyIG Here"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
   fhir:ImplementationGuide.experimental [ fhir:value "false"^^xsd:boolean];
-  fhir:ImplementationGuide.date [ fhir:value "2022-04-20T08:59:23+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2022-07-06T15:59:32+00:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "xxxYour Work Group"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -42,6 +42,16 @@
   fhir:ImplementationGuide.fhirVersion [
      fhir:value "4.0.1";
      fhir:index 0
+  ];
+  fhir:ImplementationGuide.dependsOn [
+     fhir:index 0;
+     fhir:Element.id [ fhir:value "hl7tx" ];
+     fhir:ImplementationGuide.dependsOn.uri [
+       fhir:value "http://terminology.hl7.org/ImplementationGuide/hl7.terminology";
+       fhir:link <http://terminology.hl7.org/ImplementationGuide/hl7.terminology>
+     ];
+     fhir:ImplementationGuide.dependsOn.packageId [ fhir:value "hl7.terminology.r4" ];
+     fhir:ImplementationGuide.dependsOn.version [ fhir:value "3.1.0" ]
   ];
   fhir:ImplementationGuide.definition [
      fhir:Element.extension [
@@ -350,29 +360,16 @@
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://xxsomewhere.org/fhir/myig/CodeSystem/ml-type-cs>;
-         fhir:Reference.reference [ fhir:value "CodeSystem/ml-type-cs" ]
+         fhir:link <http://xxsomewhere.org/fhir/myig/StructureDefinition/MLModel>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/MLModel" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Machine Learning Models code system" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Machine Learning Models code system" ]
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Machine Learning Model" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "The profile for Defining Machine Learning Models for CDSS" ]
      ], [
        fhir:index 1;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "ValueSet" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://xxsomewhere.org/fhir/myig/ValueSet/ml-response-vs>;
-         fhir:Reference.reference [ fhir:value "ValueSet/ml-response-vs" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Model Responses value set" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Model Responses value set" ]
-     ], [
-       fhir:index 2;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -384,6 +381,19 @@
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Model Responses Code System" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Model Responses Code System" ]
+     ], [
+       fhir:index 2;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://xxsomewhere.org/fhir/myig/ValueSet/ml-response-vs>;
+         fhir:Reference.reference [ fhir:value "ValueSet/ml-response-vs" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Model Responses value set" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Model Responses value set" ]
      ], [
        fhir:index 3;
        fhir:Element.extension [
@@ -402,29 +412,16 @@
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://xxsomewhere.org/fhir/myig/ValueSet/ml-type-vs>;
-         fhir:Reference.reference [ fhir:value "ValueSet/ml-type-vs" ]
+         fhir:link <http://xxsomewhere.org/fhir/myig/CodeSystem/ml-type-cs>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/ml-type-cs" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Machine Learning Models value set" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Machine Learning Models value set" ]
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Machine Learning Models code system" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Machine Learning Models code system" ]
      ], [
        fhir:index 5;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://xxsomewhere.org/fhir/myig/StructureDefinition/MLModel>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/MLModel" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Machine Learning Model" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "The profile for Defining Machine Learning Models for CDSS" ]
-     ], [
-       fhir:index 6;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -434,10 +431,10 @@
          fhir:link <http://xxsomewhere.org/fhir/myig/StructureDefinition/MLParameter>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/MLParameter" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Machine Learning Parameters" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Machine Learning Parameters for obstetrics" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Inputs for machine learning model" ]
      ], [
-       fhir:index 7;
+       fhir:index 6;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -449,6 +446,41 @@
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Prediction" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "The profile for sending the response for a certain CDSS case" ]
+     ], [
+       fhir:index 7;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://xxsomewhere.org/fhir/myig/ValueSet/ml-type-vs>;
+         fhir:Reference.reference [ fhir:value "ValueSet/ml-type-vs" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Machine Learning Models value set" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Machine Learning Models value set" ]
+     ], [
+       fhir:index 8;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CommunicationRequest" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://xxsomewhere.org/fhir/myig/CommunicationRequest/OBSCDSSInitializerExample>;
+         fhir:Reference.reference [ fhir:value "CommunicationRequest/OBSCDSSInitializerExample" ]
+       ]
+     ], [
+       fhir:index 9;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Parameters" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://xxsomewhere.org/fhir/myig/Parameters/MLParameterExample>;
+         fhir:Reference.reference [ fhir:value "Parameters/MLParameterExample" ]
+       ]
      ];
      fhir:ImplementationGuide.definition.page [
        fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "toc.html" ];

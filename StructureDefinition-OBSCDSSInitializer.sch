@@ -12,7 +12,10 @@
   <sch:pattern>
     <sch:title>f:CommunicationRequest</sch:title>
     <sch:rule context="f:CommunicationRequest">
+      <sch:assert test="count(f:identifier) &gt;= 1">identifier: minimum cardinality of 'identifier' is 1</sch:assert>
+      <sch:assert test="count(f:identifier) &lt;= 1">identifier: maximum cardinality of 'identifier' is 1</sch:assert>
       <sch:assert test="count(f:payload) &gt;= 1">payload: minimum cardinality of 'payload' is 1</sch:assert>
+      <sch:assert test="count(f:payload) &lt;= 1">payload: maximum cardinality of 'payload' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
