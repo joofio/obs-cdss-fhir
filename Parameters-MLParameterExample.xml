@@ -163,23 +163,23 @@
     <name value="ESTIMATIVA_PESO_ECO_38"/>
   </parameter>
   <parameter>
-    <name value="part_mcdt_ctgs"/>
+    <name value="part.mcdt.ctgs"/>
     <valueInteger value="0"/>
   </parameter>
   <parameter>
-    <name value="apres_feto_34"/>
+    <name value="apres.feto.34"/>
     <valueInteger value="0"/>
   </parameter>
   <parameter>
-    <name value="tparto_rpm"/>
+    <name value="tparto.rpm"/>
     <valueInteger value="0"/>
   </parameter>
   <parameter>
-    <name value="rn_ucin"/>
+    <name value="rn.ucin"/>
     <valueInteger value="0"/>
   </parameter>
   <parameter>
-    <name value="part_vig"/>
+    <name value="part.vig"/>
     <valueInteger value="0"/>
   </parameter>
   <parameter>
@@ -187,47 +187,47 @@
     <valueInteger value="0"/>
   </parameter>
   <parameter>
-    <name value="tparto_esp"/>
+    <name value="tparto.esp"/>
     <valueInteger value="1"/>
   </parameter>
   <parameter>
-    <name value="apres_feto_34_pelve"/>
+    <name value="apres.feto.34.pelve"/>
     <valueInteger value="0"/>
   </parameter>
   <parameter>
-    <name value="parto_comp"/>
+    <name value="parto.comp"/>
     <valueInteger value="0"/>
   </parameter>
   <parameter>
-    <name value="ciru_laqt"/>
+    <name value="ciru.laqt"/>
     <valueInteger value="0"/>
   </parameter>
   <parameter>
-    <name value="puer_comp_cica"/>
+    <name value="puer.comp.cica"/>
     <valueInteger value="0"/>
   </parameter>
   <parameter>
-    <name value="tparto_rpm_espo"/>
+    <name value="tparto.rpm.espo"/>
     <valueInteger value="0"/>
   </parameter>
   <parameter>
-    <name value="grav_plac"/>
+    <name value="grav.plac"/>
     <valueInteger value="0"/>
   </parameter>
   <parameter>
-    <name value="parto_23P"/>
+    <name value="parto.23P"/>
     <valueInteger value="0"/>
   </parameter>
   <parameter>
-    <name value="card_dhta"/>
+    <name value="card.dhta"/>
     <valueInteger value="0"/>
   </parameter>
   <parameter>
-    <name value="parto_comp_cervical"/>
+    <name value="parto.comp.cervical"/>
     <valueInteger value="0"/>
   </parameter>
   <parameter>
-    <name value="part_aep"/>
+    <name value="part.aep"/>
     <valueInteger value="1"/>
   </parameter>
 </Parameters>

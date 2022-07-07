@@ -165,23 +165,23 @@
       "name": "ESTIMATIVA_PESO_ECO_38"
     },
     {
-      "name": "part_mcdt_ctgs",
+      "name": "part.mcdt.ctgs",
       "valueInteger": 0
     },
     {
-      "name": "apres_feto_34",
+      "name": "apres.feto.34",
       "valueInteger": 0
     },
     {
-      "name": "tparto_rpm",
+      "name": "tparto.rpm",
       "valueInteger": 0
     },
     {
-      "name": "rn_ucin",
+      "name": "rn.ucin",
       "valueInteger": 0
     },
     {
-      "name": "part_vig",
+      "name": "part.vig",
       "valueInteger": 0
     },
     {
@@ -189,47 +189,47 @@
       "valueInteger": 0
     },
     {
-      "name": "tparto_esp",
+      "name": "tparto.esp",
       "valueInteger": 1
     },
     {
-      "name": "apres_feto_34_pelve",
+      "name": "apres.feto.34.pelve",
       "valueInteger": 0
     },
     {
-      "name": "parto_comp",
+      "name": "parto.comp",
       "valueInteger": 0
     },
     {
-      "name": "ciru_laqt",
+      "name": "ciru.laqt",
       "valueInteger": 0
     },
     {
-      "name": "puer_comp_cica",
+      "name": "puer.comp.cica",
       "valueInteger": 0
     },
     {
-      "name": "tparto_rpm_espo",
+      "name": "tparto.rpm.espo",
       "valueInteger": 0
     },
     {
-      "name": "grav_plac",
+      "name": "grav.plac",
       "valueInteger": 0
     },
     {
-      "name": "parto_23P",
+      "name": "parto.23P",
       "valueInteger": 0
     },
     {
-      "name": "card_dhta",
+      "name": "card.dhta",
       "valueInteger": 0
     },
     {
-      "name": "parto_comp_cervical",
+      "name": "parto.comp.cervical",
       "valueInteger": 0
     },
     {
-      "name": "part_aep",
+      "name": "part.aep",
       "valueInteger": 1
     }
   ]
