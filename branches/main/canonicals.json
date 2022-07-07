@@ -28,6 +28,13 @@
     "name": "MLParameter"
   },
   {
+    "id": "MessageForRequest",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/us/example/StructureDefinition/MessageForRequest",
+    "version": "0.1.0-test",
+    "name": "MessageForRequest"
+  },
+  {
     "id": "OBSCDSSFinalizer",
     "type": "StructureDefinition",
     "url": "http://hl7.org/fhir/us/example/StructureDefinition/OBSCDSSFinalizer",

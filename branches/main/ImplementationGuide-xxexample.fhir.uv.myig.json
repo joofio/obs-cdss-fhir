@@ -11,7 +11,7 @@
   "title": "xxYour User Friendly Name for MyIG Here",
   "status": "draft",
   "experimental": false,
-  "date": "2022-07-06T15:59:32+00:00",
+  "date": "2022-07-07T15:44:13+00:00",
   "publisher": "xxxYour Work Group",
   "contact": [
     {
@@ -406,6 +406,17 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Bundle"
+          }
+        ],
+        "reference": {
+          "reference": "Bundle/MessageForRequestExample"
+        }
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "ValueSet"
           }
         ],
@@ -453,6 +464,19 @@
         },
         "name": "Machine Learning Parameters for obstetrics",
         "description": "Inputs for machine learning model"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/MessageForRequest"
+        },
+        "name": "Message for request",
+        "description": "The message for requesting a certain CDSS case"
       },
       {
         "extension": [

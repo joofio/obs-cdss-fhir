@@ -174,23 +174,23 @@
      fhir:Parameters.parameter.name [ fhir:value "ESTIMATIVA_PESO_ECO_38" ]
   ], [
      fhir:index 32;
-     fhir:Parameters.parameter.name [ fhir:value "part_mcdt_ctgs" ];
+     fhir:Parameters.parameter.name [ fhir:value "part.mcdt.ctgs" ];
      fhir:Parameters.parameter.valueInteger [ fhir:value "0"^^xsd:integer ]
   ], [
      fhir:index 33;
-     fhir:Parameters.parameter.name [ fhir:value "apres_feto_34" ];
+     fhir:Parameters.parameter.name [ fhir:value "apres.feto.34" ];
      fhir:Parameters.parameter.valueInteger [ fhir:value "0"^^xsd:integer ]
   ], [
      fhir:index 34;
-     fhir:Parameters.parameter.name [ fhir:value "tparto_rpm" ];
+     fhir:Parameters.parameter.name [ fhir:value "tparto.rpm" ];
      fhir:Parameters.parameter.valueInteger [ fhir:value "0"^^xsd:integer ]
   ], [
      fhir:index 35;
-     fhir:Parameters.parameter.name [ fhir:value "rn_ucin" ];
+     fhir:Parameters.parameter.name [ fhir:value "rn.ucin" ];
      fhir:Parameters.parameter.valueInteger [ fhir:value "0"^^xsd:integer ]
   ], [
      fhir:index 36;
-     fhir:Parameters.parameter.name [ fhir:value "part_vig" ];
+     fhir:Parameters.parameter.name [ fhir:value "part.vig" ];
      fhir:Parameters.parameter.valueInteger [ fhir:value "0"^^xsd:integer ]
   ], [
      fhir:index 37;
@@ -198,47 +198,47 @@
      fhir:Parameters.parameter.valueInteger [ fhir:value "0"^^xsd:integer ]
   ], [
      fhir:index 38;
-     fhir:Parameters.parameter.name [ fhir:value "tparto_esp" ];
+     fhir:Parameters.parameter.name [ fhir:value "tparto.esp" ];
      fhir:Parameters.parameter.valueInteger [ fhir:value "1"^^xsd:integer ]
   ], [
      fhir:index 39;
-     fhir:Parameters.parameter.name [ fhir:value "apres_feto_34_pelve" ];
+     fhir:Parameters.parameter.name [ fhir:value "apres.feto.34.pelve" ];
      fhir:Parameters.parameter.valueInteger [ fhir:value "0"^^xsd:integer ]
   ], [
      fhir:index 40;
-     fhir:Parameters.parameter.name [ fhir:value "parto_comp" ];
+     fhir:Parameters.parameter.name [ fhir:value "parto.comp" ];
      fhir:Parameters.parameter.valueInteger [ fhir:value "0"^^xsd:integer ]
   ], [
      fhir:index 41;
-     fhir:Parameters.parameter.name [ fhir:value "ciru_laqt" ];
+     fhir:Parameters.parameter.name [ fhir:value "ciru.laqt" ];
      fhir:Parameters.parameter.valueInteger [ fhir:value "0"^^xsd:integer ]
   ], [
      fhir:index 42;
-     fhir:Parameters.parameter.name [ fhir:value "puer_comp_cica" ];
+     fhir:Parameters.parameter.name [ fhir:value "puer.comp.cica" ];
      fhir:Parameters.parameter.valueInteger [ fhir:value "0"^^xsd:integer ]
   ], [
      fhir:index 43;
-     fhir:Parameters.parameter.name [ fhir:value "tparto_rpm_espo" ];
+     fhir:Parameters.parameter.name [ fhir:value "tparto.rpm.espo" ];
      fhir:Parameters.parameter.valueInteger [ fhir:value "0"^^xsd:integer ]
   ], [
      fhir:index 44;
-     fhir:Parameters.parameter.name [ fhir:value "grav_plac" ];
+     fhir:Parameters.parameter.name [ fhir:value "grav.plac" ];
      fhir:Parameters.parameter.valueInteger [ fhir:value "0"^^xsd:integer ]
   ], [
      fhir:index 45;
-     fhir:Parameters.parameter.name [ fhir:value "parto_23P" ];
+     fhir:Parameters.parameter.name [ fhir:value "parto.23P" ];
      fhir:Parameters.parameter.valueInteger [ fhir:value "0"^^xsd:integer ]
   ], [
      fhir:index 46;
-     fhir:Parameters.parameter.name [ fhir:value "card_dhta" ];
+     fhir:Parameters.parameter.name [ fhir:value "card.dhta" ];
      fhir:Parameters.parameter.valueInteger [ fhir:value "0"^^xsd:integer ]
   ], [
      fhir:index 47;
-     fhir:Parameters.parameter.name [ fhir:value "parto_comp_cervical" ];
+     fhir:Parameters.parameter.name [ fhir:value "parto.comp.cervical" ];
      fhir:Parameters.parameter.valueInteger [ fhir:value "0"^^xsd:integer ]
   ], [
      fhir:index 48;
-     fhir:Parameters.parameter.name [ fhir:value "part_aep" ];
+     fhir:Parameters.parameter.name [ fhir:value "part.aep" ];
      fhir:Parameters.parameter.valueInteger [ fhir:value "1"^^xsd:integer ]
   ] .
 
