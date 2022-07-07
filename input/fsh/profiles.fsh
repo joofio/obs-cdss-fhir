@@ -18,6 +18,24 @@ Parent: CommunicationRequest
 * payload.contentReference  only Reference(MLParameter) 
 * payload.contentReference 1..1 MS
 
+Profile: MessageForRequest
+Parent: Bundle
+Title: "Message for request"
+Description: "The message for requesting a certain CDSS case"
+
+* identifier MS
+* type = #message
+* timestamp 1..1 MS
+* entry 2..2 MS
+* entry ^slicing.discriminator.type = #value
+* entry ^slicing.discriminator.path = "name"
+* entry ^slicing.rules = #open
+* entry contains request 1..1 MS and  parameter 1..1 MS  
+
+* entry[request].resource only OBSCDSSInitializer
+
+* entry[parameter].resource only MLParameter
+
 Profile: OBSCDSSFinalizer
 Title: "Prediction"
 Description: "The profile for sending the response for a certain CDSS case"
@@ -55,10 +73,8 @@ Description: "Inputs for machine learning model"
 * parameter.part 0..0 
 * parameter.resource 0..0 
 * parameter ^slicing.discriminator.type = #value
-* parameter ^slicing.discriminator.path = "type"
+* parameter ^slicing.discriminator.path = "name"
 * parameter ^slicing.rules = #open
-* parameter ^slicing.ordered = false   // can be omitted, since false is the default
-* parameter ^slicing.description = "Slice based on the component.code pattern"
 * parameter contains
     APRESENTACAO_31 1..1 MS and  APRESENTACAO_28 1..1 MS and 
     ESTIMATIVA_PESO_ECO_39 1..1 MS and APRESENTACAO_30 1..1 MS and 
@@ -157,10 +173,8 @@ Description: "Inputs for machine learning model"
 * parameter[APRESENTACAO_ADMISSAO].name =  "APRESENTACAO_ADMISSAO"
 * parameter[APRESENTACAO_ADMISSAO].value[x] only Coding
 
-
 * parameter[BISHOP_EXTINCAO].name =  "BISHOP_EXTINCAO"
 * parameter[BISHOP_EXTINCAO].value[x] only Coding
-
 
 * parameter[APRESENTACAO_27].name =  "APRESENTACAO_27"
 * parameter[APRESENTACAO_27].value[x] only Coding
@@ -168,10 +182,8 @@ Description: "Inputs for machine learning model"
 * parameter[ESTIMATIVA_PESO_ECO_33].name =  "ESTIMATIVA_PESO_ECO_33"
 * parameter[ESTIMATIVA_PESO_ECO_33].value[x] only integer
 
-
 * parameter[CESARIANAS_ANTERIOR].name =  "CESARIANAS_ANTERIOR"
 * parameter[CESARIANAS_ANTERIOR].value[x] only integer
-
 
 * parameter[APRESENTACAO_36].name =  "APRESENTACAO_36"
 * parameter[APRESENTACAO_36].value[x] only Coding
@@ -185,63 +197,62 @@ Description: "Inputs for machine learning model"
 * parameter[ESTIMATIVA_PESO_ECO_38].name =  "ESTIMATIVA_PESO_ECO_38"
 * parameter[ESTIMATIVA_PESO_ECO_38].value[x] only integer
 
-* parameter[part_mcdt_ctgs].name =  "part_mcdt_ctgs"
+* parameter[part_mcdt_ctgs].name =  "part.mcdt.ctgs"
 * parameter[part_mcdt_ctgs].value[x] only integer
 
-* parameter[apres_feto_34].name =  "apres_feto_34"
+* parameter[apres_feto_34].name =  "apres.feto.34"
 * parameter[apres_feto_34].value[x] only integer
 
-* parameter[tparto_rpm].name =  "tparto_rpm"
+* parameter[tparto_rpm].name =  "tparto.rpm"
 * parameter[tparto_rpm].value[x] only integer
 
-* parameter[rn_ucin].name =  "rn_ucin"
+* parameter[rn_ucin].name =  "rn.ucin"
 * parameter[rn_ucin].value[x] only integer
 
-* parameter[part_vig].name =  "part_vig"
+* parameter[part_vig].name =  "part.vig"
 * parameter[part_vig].value[x] only integer
 
 * parameter[grav_feto_altcf].name =  "grav_feto_altcf"
 * parameter[grav_feto_altcf].value[x] only integer
 
-* parameter[tparto_esp].name =  "tparto_esp"
+* parameter[tparto_esp].name =  "tparto.esp"
 * parameter[tparto_esp].value[x] only integer
 
-
-* parameter[apres_feto_34_pelve].name =  "apres_feto_34_pelve"
+* parameter[apres_feto_34_pelve].name =  "apres.feto.34.pelve"
 * parameter[apres_feto_34_pelve].value[x] only integer
 
-
-* parameter[parto_comp].name =  "parto_comp"
+* parameter[parto_comp].name =  "parto.comp"
 * parameter[parto_comp].value[x] only integer
 
-* parameter[ciru_laqt].name =  "ciru_laqt"
+* parameter[ciru_laqt].name =  "ciru.laqt"
 * parameter[ciru_laqt].value[x] only integer
 
-* parameter[puer_comp_cica].name =  "puer_comp_cica"
+* parameter[puer_comp_cica].name =  "puer.comp.cica"
 * parameter[puer_comp_cica].value[x] only integer
 
-* parameter[tparto_rpm_espo].name =  "tparto_rpm_espo"
+* parameter[tparto_rpm_espo].name =  "tparto.rpm.espo"
 * parameter[tparto_rpm_espo].value[x] only integer
 
-* parameter[grav_plac].name =  "grav_plac"
+* parameter[grav_plac].name =  "grav.plac"
 * parameter[grav_plac].value[x] only integer
 
-* parameter[parto_23P].name =  "parto_23P"
+* parameter[parto_23P].name =  "parto.23P"
 * parameter[parto_23P].value[x] only integer
 
-* parameter[card_dhta].name =  "card_dhta"
+* parameter[card_dhta].name =  "card.dhta"
 * parameter[card_dhta].value[x] only integer
 
-* parameter[parto_comp_cervical].name =  "parto_comp_cervical"
+* parameter[parto_comp_cervical].name =  "parto.comp.cervical"
 * parameter[parto_comp_cervical].value[x] only integer
 
-* parameter[part_aep].name =  "part_aep"
+* parameter[part_aep].name =  "part.aep"
 * parameter[part_aep].value[x] only integer
 
 
 Instance: MLParameterExample
 InstanceOf: MLParameter
-Description: "Example of Patient"
+Description: "Example of MlParameter - Obstetrics"
+Title: "Example of MlParameter - Obstetrics"
 
 * parameter[APRESENTACAO_31].valueCoding = #cefálica
 * parameter[APRESENTACAO_28].valueCoding = #None
@@ -296,7 +307,8 @@ Description: "Example of Patient"
 
 Instance: OBSCDSSInitializerExample
 InstanceOf: OBSCDSSInitializer
-Description: "Example of Patient"
+Description: "Example of Request for prediction"
+Title: "Example of Request for prediction"
 
 * meta.profile = "http://hl7.org/fhir/StructureDefinition/obscdss-initializer"
 
@@ -304,3 +316,15 @@ Description: "Example of Patient"
 * occurrenceDateTime = "2020-01-01T00:00:00Z"
 * payload.contentReference = Reference(MLParameterExample)
 
+
+
+
+Instance: MessageForRequestExample
+InstanceOf: MessageForRequest
+Description: "Example of Request for MessageForRequest"
+Title: "Example of Request for MessageForRequest"
+
+* timestamp = "2020-01-01T00:00:00Z"
+* entry[request].resource = OBSCDSSInitializerExample
+
+* entry[parameter].resource = MLParameterExample
