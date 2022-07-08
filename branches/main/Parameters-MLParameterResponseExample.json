@@ -1,0 +1,29 @@
+{
+  "resourceType": "Parameters",
+  "id": "MLParameterResponseExample",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/us/example/StructureDefinition/MLParameterResponse"
+    ]
+  },
+  "parameter": [
+    {
+      "name": "result",
+      "valueCoding": {
+        "code": "Vaginal"
+      }
+    },
+    {
+      "name": "outcome",
+      "valueCoding": {
+        "code": "None"
+      }
+    },
+    {
+      "name": "decision",
+      "valueCoding": {
+        "code": "None"
+      }
+    }
+  ]
+}

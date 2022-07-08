@@ -1,0 +1,270 @@
+{
+  "resourceType": "Parameters",
+  "id": "MLParameterRequestExample",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/us/example/StructureDefinition/MLParameterRequest"
+    ]
+  },
+  "parameter": [
+    {
+      "name": "APRESENTACAO_31",
+      "valueCoding": {
+        "code": "cefálica"
+      }
+    },
+    {
+      "name": "APRESENTACAO_28",
+      "valueCoding": {
+        "code": "None"
+      }
+    },
+    {
+      "name": "ESTIMATIVA_PESO_ECO_39"
+    },
+    {
+      "name": "APRESENTACAO_30",
+      "valueCoding": {
+        "code": "None"
+      }
+    },
+    {
+      "name": "APRESENTACAO_37",
+      "valueCoding": {
+        "code": "None"
+      }
+    },
+    {
+      "name": "GRUPO_ROBSON",
+      "valueCoding": {
+        "code": "1"
+      }
+    },
+    {
+      "name": "BISHOP_SCORE",
+      "valueCoding": {
+        "code": "None"
+      }
+    },
+    {
+      "name": "PESO_INICIAL",
+      "valueInteger": 57
+    },
+    {
+      "name": "ESTIMATIVA_PESO_ECO_32"
+    },
+    {
+      "name": "IDADE_MATERNA",
+      "valueInteger": 36
+    },
+    {
+      "name": "APRESENTACAO_35",
+      "valueCoding": {
+        "code": "None"
+      }
+    },
+    {
+      "name": "IMC",
+      "valueDecimal": 19.7
+    },
+    {
+      "name": "APRESENTACAO_32",
+      "valueCoding": {
+        "code": "None"
+      }
+    },
+    {
+      "name": "APRESENTACAO_26",
+      "valueCoding": {
+        "code": "None"
+      }
+    },
+    {
+      "name": "ESTIMATIVA_PESO_ECO_24"
+    },
+    {
+      "name": "APRESENTACAO_34",
+      "valueCoding": {
+        "code": "None"
+      }
+    },
+    {
+      "name": "ESTIMATIVA_PESO_ECO_40"
+    },
+    {
+      "name": "APRESENTACAO_33",
+      "valueCoding": {
+        "code": "None"
+      }
+    },
+    {
+      "name": "APRESENTACAO_NO_PARTO",
+      "valueCoding": {
+        "code": "Cefálica de vértice"
+      }
+    },
+    {
+      "name": "NUMERO_CONSULTAS_PRE_NATAL",
+      "valueInteger": 14
+    },
+    {
+      "name": "APRESENTACAO_38",
+      "valueCoding": {
+        "code": "None"
+      }
+    },
+    {
+      "name": "APRESENTACAO_29",
+      "valueCoding": {
+        "code": "None"
+      }
+    },
+    {
+      "name": "ESTIMATIVA_PESO_ECO_41"
+    },
+    {
+      "name": "APRESENTACAO_ADMISSAO",
+      "valueCoding": {
+        "code": "-1"
+      }
+    },
+    {
+      "name": "BISHOP_EXTINCAO",
+      "valueCoding": {
+        "code": "None"
+      }
+    },
+    {
+      "name": "APRESENTACAO_27",
+      "valueCoding": {
+        "code": "None"
+      }
+    },
+    {
+      "name": "ESTIMATIVA_PESO_ECO_33"
+    },
+    {
+      "name": "CESARIANAS_ANTERIOR"
+    },
+    {
+      "name": "APRESENTACAO_36",
+      "valueCoding": {
+        "code": "None"
+      }
+    },
+    {
+      "name": "ESTIMATIVA_PESO_ECO_37"
+    },
+    {
+      "name": "TRAB_PARTO_ENTRADA_ESPONTANEO",
+      "valueCoding": {
+        "code": "None"
+      }
+    },
+    {
+      "name": "ESTIMATIVA_PESO_ECO_38"
+    },
+    {
+      "name": "part.mcdt.ctgs",
+      "valueCoding": {
+        "code": "0"
+      }
+    },
+    {
+      "name": "apres.feto.34",
+      "valueCoding": {
+        "code": "0"
+      }
+    },
+    {
+      "name": "tparto.rpm",
+      "valueCoding": {
+        "code": "0"
+      }
+    },
+    {
+      "name": "rn.ucin",
+      "valueCoding": {
+        "code": "0"
+      }
+    },
+    {
+      "name": "part.vig",
+      "valueCoding": {
+        "code": "0"
+      }
+    },
+    {
+      "name": "grav.feto.altcf",
+      "valueCoding": {
+        "code": "0"
+      }
+    },
+    {
+      "name": "tparto.esp",
+      "valueCoding": {
+        "code": "1"
+      }
+    },
+    {
+      "name": "apres.feto.34.pelve",
+      "valueCoding": {
+        "code": "0"
+      }
+    },
+    {
+      "name": "parto.comp",
+      "valueCoding": {
+        "code": "0"
+      }
+    },
+    {
+      "name": "ciru.laqt",
+      "valueCoding": {
+        "code": "0"
+      }
+    },
+    {
+      "name": "puer.comp.cica",
+      "valueCoding": {
+        "code": "0"
+      }
+    },
+    {
+      "name": "tparto.rpm.espo",
+      "valueCoding": {
+        "code": "0"
+      }
+    },
+    {
+      "name": "grav.plac",
+      "valueCoding": {
+        "code": "0"
+      }
+    },
+    {
+      "name": "parto.23P",
+      "valueCoding": {
+        "code": "0"
+      }
+    },
+    {
+      "name": "card.dhta",
+      "valueCoding": {
+        "code": "0"
+      }
+    },
+    {
+      "name": "parto.comp.cervical",
+      "valueCoding": {
+        "code": "0"
+      }
+    },
+    {
+      "name": "part.aep",
+      "valueCoding": {
+        "code": "1"
+      }
+    }
+  ]
+}

@@ -11,7 +11,7 @@
   "title": "xxYour User Friendly Name for MyIG Here",
   "status": "draft",
   "experimental": false,
-  "date": "2022-07-08T12:00:34+00:00",
+  "date": "2022-07-08T18:36:24+00:00",
   "publisher": "xxxYour Work Group",
   "contact": [
     {
@@ -384,6 +384,19 @@
           }
         ],
         "reference": {
+          "reference": "StructureDefinition/MLParameterResponse"
+        },
+        "name": "Machine Learning Parameters for obstetrics",
+        "description": "Outputs for machine learning model"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
           "reference": "StructureDefinition/MLModel"
         },
         "name": "Machine Learning Model",
@@ -406,17 +419,6 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Bundle"
-          }
-        ],
-        "reference": {
-          "reference": "Bundle/MessageForRequestExample"
-        }
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "ValueSet"
           }
         ],
@@ -425,6 +427,17 @@
         },
         "name": "Model Responses value set",
         "description": "Model Responses value set"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Bundle"
+          }
+        ],
+        "reference": {
+          "reference": "Bundle/MessageForCDSSRequest"
+        }
       },
       {
         "extension": [
@@ -456,14 +469,23 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource"
+            "valueString": "MessageHeader"
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/MLParameter"
-        },
-        "name": "Machine Learning Parameters for obstetrics",
-        "description": "Inputs for machine learning model"
+          "reference": "MessageHeader/MessageHeaderCDSSExampleResponse"
+        }
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Parameters"
+          }
+        ],
+        "reference": {
+          "reference": "Parameters/MLParameterRequestExample"
+        }
       },
       {
         "extension": [
@@ -477,6 +499,30 @@
         },
         "name": "Message for request",
         "description": "The message for requesting a certain CDSS case"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "MessageHeader"
+          }
+        ],
+        "reference": {
+          "reference": "MessageHeader/MessageHeaderCDSSExampleRequest"
+        }
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/MLParameterRequest"
+        },
+        "name": "Machine Learning Parameters for obstetrics",
+        "description": "Inputs for machine learning model"
       },
       {
         "extension": [
@@ -519,12 +565,71 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Device"
+          }
+        ],
+        "reference": {
+          "reference": "Device/sss"
+        }
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "Parameters"
           }
         ],
         "reference": {
-          "reference": "Parameters/MLParameterExample"
+          "reference": "Parameters/MLParameterResponseExample"
         }
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/MessageForCDSS"
+        },
+        "name": "Message for response",
+        "description": "The message for response"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Communication"
+          }
+        ],
+        "reference": {
+          "reference": "Communication/sss"
+        }
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Bundle"
+          }
+        ],
+        "reference": {
+          "reference": "Bundle/MessageForCDSSResponse"
+        }
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/MessageHeaderCDSS"
+        },
+        "name": "Message for response",
+        "description": "The message for response"
       }
     ],
     "page": {
