@@ -1,0 +1,50 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://xxsomewhere.org/fhir/myig/Communication/sss> a fhir:Communication;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "sss"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://hl7.org/fhir/us/example/StructureDefinition/OBSCDSSFinalizer";
+       fhir:index 0;
+       fhir:link <http://hl7.org/fhir/us/example/StructureDefinition/OBSCDSSFinalizer>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"sss\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-OBSCDSSFinalizer.html\">Prediction</a></p></div><p><b>status</b>: completed</p><p><b>category</b>: instruction <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#instruction)</span></p><p><b>sent</b>: 2020-01-01 12:00:00+0000</p><p><b>received</b>: 2020-01-01 12:00:00+0000</p><p><b>sender</b>: <a href=\"Device-sss.html\">Device/sss</a></p><h3>Payloads</h3><table class=\"grid\"><tr><td>-</td><td><b>Content[x]</b></td></tr><tr><td>*</td><td><a href=\"Parameters-MLParameterResponseExample.html\">Parameters/MLParameterResponseExample</a></td></tr></table></div>"
+  ];
+  fhir:Communication.status [ fhir:value "completed"];
+  fhir:Communication.category [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.code [ fhir:value "instruction" ]
+     ]
+  ];
+  fhir:Communication.sent [ fhir:value "2020-01-01T00:00:00Z"^^xsd:dateTime];
+  fhir:Communication.received [ fhir:value "2020-01-01T00:00:00Z"^^xsd:dateTime];
+  fhir:Communication.sender [
+     fhir:link <http://xxsomewhere.org/fhir/myig/Device/sss>;
+     fhir:Reference.reference [ fhir:value "Device/sss" ]
+  ];
+  fhir:Communication.payload [
+     fhir:index 0;
+     fhir:Communication.payload.contentReference [
+       fhir:link <http://xxsomewhere.org/fhir/myig/Parameters/MLParameterResponseExample>;
+       fhir:Reference.reference [ fhir:value "Parameters/MLParameterResponseExample" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://xxsomewhere.org/fhir/myig/Communication/sss.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

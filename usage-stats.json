@@ -13,14 +13,28 @@
     ],
     "Parameters": [
       {
-        "url": "http://hl7.org/fhir/us/example/StructureDefinition/MLParameter",
+        "url": "http://hl7.org/fhir/us/example/StructureDefinition/MLParameterRequest",
+        "title": "Machine Learning Parameters for obstetrics"
+      },
+      {
+        "url": "http://hl7.org/fhir/us/example/StructureDefinition/MLParameterResponse",
         "title": "Machine Learning Parameters for obstetrics"
       }
     ],
     "Bundle": [
       {
+        "url": "http://hl7.org/fhir/us/example/StructureDefinition/MessageForCDSS",
+        "title": "Message for response"
+      },
+      {
         "url": "http://hl7.org/fhir/us/example/StructureDefinition/MessageForRequest",
         "title": "Message for request"
+      }
+    ],
+    "MessageHeader": [
+      {
+        "url": "http://hl7.org/fhir/us/example/StructureDefinition/MessageHeaderCDSS",
+        "title": "Message for response"
       }
     ],
     "Communication": [
@@ -54,6 +68,9 @@
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-category": [
       "StructureDefinition"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name": [
+      "StructureDefinition.snapshot.element"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
       "StructureDefinition.snapshot.element.type"

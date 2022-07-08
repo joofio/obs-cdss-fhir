@@ -21,11 +21,25 @@
     "name": "MLModel"
   },
   {
-    "id": "MLParameter",
+    "id": "MLParameterRequest",
     "type": "StructureDefinition",
-    "url": "http://hl7.org/fhir/us/example/StructureDefinition/MLParameter",
+    "url": "http://hl7.org/fhir/us/example/StructureDefinition/MLParameterRequest",
     "version": "0.1.0-test",
-    "name": "MLParameter"
+    "name": "MLParameterRequest"
+  },
+  {
+    "id": "MLParameterResponse",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/us/example/StructureDefinition/MLParameterResponse",
+    "version": "0.1.0-test",
+    "name": "MLParameterResponse"
+  },
+  {
+    "id": "MessageForCDSS",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/us/example/StructureDefinition/MessageForCDSS",
+    "version": "0.1.0-test",
+    "name": "MessageForCDSS"
   },
   {
     "id": "MessageForRequest",
@@ -33,6 +47,13 @@
     "url": "http://hl7.org/fhir/us/example/StructureDefinition/MessageForRequest",
     "version": "0.1.0-test",
     "name": "MessageForRequest"
+  },
+  {
+    "id": "MessageHeaderCDSS",
+    "type": "StructureDefinition",
+    "url": "http://hl7.org/fhir/us/example/StructureDefinition/MessageHeaderCDSS",
+    "version": "0.1.0-test",
+    "name": "MessageHeaderCDSS"
   },
   {
     "id": "OBSCDSSFinalizer",

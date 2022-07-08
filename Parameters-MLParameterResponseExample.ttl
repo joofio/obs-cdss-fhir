@@ -1,0 +1,44 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://xxsomewhere.org/fhir/myig/Parameters/MLParameterResponseExample> a fhir:Parameters;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "MLParameterResponseExample"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://hl7.org/fhir/us/example/StructureDefinition/MLParameterResponse";
+       fhir:index 0;
+       fhir:link <http://hl7.org/fhir/us/example/StructureDefinition/MLParameterResponse>
+     ]
+  ];
+  fhir:Parameters.parameter [
+     fhir:index 0;
+     fhir:Parameters.parameter.name [ fhir:value "result" ];
+     fhir:Parameters.parameter.valueCoding [
+       fhir:Coding.code [ fhir:value "Vaginal" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:Parameters.parameter.name [ fhir:value "outcome" ];
+     fhir:Parameters.parameter.valueCoding [
+       fhir:Coding.code [ fhir:value "None" ]
+     ]
+  ], [
+     fhir:index 2;
+     fhir:Parameters.parameter.name [ fhir:value "decision" ];
+     fhir:Parameters.parameter.valueCoding [
+       fhir:Coding.code [ fhir:value "None" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://xxsomewhere.org/fhir/myig/Parameters/MLParameterResponseExample.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

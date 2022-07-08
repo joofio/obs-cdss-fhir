@@ -1,19 +1,28 @@
 ﻿XXYourComputableMyIGNameHere : Validation Results
 =========================================
 
-err = 53, warn = 86, info = 4
+err = 93, warn = 107, info = 8
 IG Publisher Version: 1.1.122
-Generated Fri Jul 08 12:01:10 UTC 2022. FHIR version 4.0.1 for OBSCDSS.fhir.uv.myig#0.1.0-test (canonical = http://xxsomewhere.org/fhir/myig)
- Build Errors : 83 / 4 / 0
- /github/workspace/fsh-generated/resources/Bundle-MessageForRequestExample : 21 / 37 / 7
+Generated Fri Jul 08 18:37:04 UTC 2022. FHIR version 4.0.1 for OBSCDSS.fhir.uv.myig#0.1.0-test (canonical = http://xxsomewhere.org/fhir/myig)
+ Build Errors : 143 / 10 / 0
+ /github/workspace/fsh-generated/resources/Bundle-MessageForCDSSRequest : 25 / 40 / 10
+ /github/workspace/fsh-generated/resources/Bundle-MessageForCDSSResponse : 19 / 7 / 10
  /github/workspace/fsh-generated/resources/CodeSystem-ml-response-cs : 2 / 1 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-ml-type-cs : 2 / 1 / 1
+ /github/workspace/fsh-generated/resources/Communication-sss : 4 / 1 / 1
  /github/workspace/fsh-generated/resources/CommunicationRequest-OBSCDSSInitializerExample : 2 / 1 / 1
- /github/workspace/fsh-generated/resources/Parameters-MLParameterExample : 9 / 36 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-MLModel : 2 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-MLParameter : 2 / 0 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-MessageForRequest : 2 / 0 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-OBSCDSSFinalizer : 2 / 3 / 2
+ /github/workspace/fsh-generated/resources/Device-sss : 1 / 0 / 1
+ /github/workspace/fsh-generated/resources/MessageHeader-MessageHeaderCDSSExampleRequest : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/MessageHeader-MessageHeaderCDSSExampleResponse : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/Parameters-MLParameterRequestExample : 9 / 36 / 1
+ /github/workspace/fsh-generated/resources/Parameters-MLParameterResponseExample : 0 / 3 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-MLModel : 2 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-MLParameterRequest : 2 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-MLParameterResponse : 2 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-MessageForCDSS : 2 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-MessageForRequest : 2 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-MessageHeaderCDSS : 2 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-OBSCDSSFinalizer : 2 / 2 / 2
  /github/workspace/fsh-generated/resources/StructureDefinition-OBSCDSSInitializer : 2 / 2 / 2
  /github/workspace/fsh-generated/resources/ValueSet-ml-response-vs : 2 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-ml-type-vs : 2 / 0 / 1
@@ -21,17 +30,34 @@ Generated Fri Jul 08 12:01:10 UTC 2022. FHIR version 4.0.1 for OBSCDSS.fhir.uv.m
 </table>
 == n/a ==
 WARNING: ImplementationGuide.id: The Implementation Guide Resource id should be OBSCDSS.fhir.uv.myig
-ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Bundle/MessageForRequestExample.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Bundle/MessageForRequestExample.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Bundle/MessageForCDSSRequest.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Bundle/MessageForCDSSRequest.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource MessageHeader/MessageHeaderCDSSExampleResponse.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MessageHeader/MessageHeaderCDSSExampleResponse.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Parameters/MLParameterRequestExample.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Parameters/MLParameterRequestExample.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource MessageHeader/MessageHeaderCDSSExampleRequest.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MessageHeader/MessageHeaderCDSSExampleRequest.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource CommunicationRequest/OBSCDSSInitializerExample.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CommunicationRequest/OBSCDSSInitializerExample.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Parameters/MLParameterExample.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Parameters/MLParameterExample.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-ERROR: /github/workspace/output/Bundle-MessageForRequestExample.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/Bundle-MessageForRequestExample.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 139, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/Bundle-MessageForRequestExample.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 141, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/Bundle-MessageForRequestExample.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 141, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/Bundle-MessageForRequestExample.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 141, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Device/sss.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Device/sss.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Parameters/MLParameterResponseExample.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Parameters/MLParameterResponseExample.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Communication/sss.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Communication/sss.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Bundle/MessageForCDSSResponse.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Bundle/MessageForCDSSResponse.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: /github/workspace/output/Bundle-MessageForCDSSRequest.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/Bundle-MessageForCDSSRequest.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 139, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/Bundle-MessageForCDSSRequest.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 141, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/Bundle-MessageForCDSSRequest.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 141, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/Bundle-MessageForCDSSRequest.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 141, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/Bundle-MessageForCDSSResponse.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/Bundle-MessageForCDSSResponse.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 139, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/Bundle-MessageForCDSSResponse.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 141, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/Bundle-MessageForCDSSResponse.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 141, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/Bundle-MessageForCDSSResponse.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 141, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
 ERROR: /github/workspace/output/CodeSystem-ml-response-cs.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
 ERROR: /github/workspace/output/CodeSystem-ml-response-cs.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 139, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
 ERROR: /github/workspace/output/CodeSystem-ml-response-cs.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 141, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
@@ -42,16 +68,41 @@ ERROR: /github/workspace/output/CodeSystem-ml-type-cs.html#/html/body/div/div/na
 ERROR: /github/workspace/output/CodeSystem-ml-type-cs.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 141, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
 ERROR: /github/workspace/output/CodeSystem-ml-type-cs.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 141, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
 ERROR: /github/workspace/output/CodeSystem-ml-type-cs.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 141, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/Communication-sss.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/Communication-sss.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 139, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/Communication-sss.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 141, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/Communication-sss.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 141, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/Communication-sss.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 141, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
 ERROR: /github/workspace/output/CommunicationRequest-OBSCDSSInitializerExample.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
 ERROR: /github/workspace/output/CommunicationRequest-OBSCDSSInitializerExample.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 139, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
 ERROR: /github/workspace/output/CommunicationRequest-OBSCDSSInitializerExample.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 141, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
 ERROR: /github/workspace/output/CommunicationRequest-OBSCDSSInitializerExample.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 141, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
 ERROR: /github/workspace/output/CommunicationRequest-OBSCDSSInitializerExample.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 141, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/Parameters-MLParameterExample.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/Parameters-MLParameterExample.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 139, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/Parameters-MLParameterExample.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 141, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/Parameters-MLParameterExample.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 141, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/Parameters-MLParameterExample.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 141, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/Device-sss.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/Device-sss.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 139, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/Device-sss.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 141, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/Device-sss.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 141, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/Device-sss.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 141, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/MessageHeader-MessageHeaderCDSSExampleRequest.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/MessageHeader-MessageHeaderCDSSExampleRequest.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 139, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/MessageHeader-MessageHeaderCDSSExampleRequest.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 141, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/MessageHeader-MessageHeaderCDSSExampleRequest.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 141, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/MessageHeader-MessageHeaderCDSSExampleRequest.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 141, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/MessageHeader-MessageHeaderCDSSExampleResponse.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/MessageHeader-MessageHeaderCDSSExampleResponse.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 139, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/MessageHeader-MessageHeaderCDSSExampleResponse.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 141, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/MessageHeader-MessageHeaderCDSSExampleResponse.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 141, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/MessageHeader-MessageHeaderCDSSExampleResponse.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 141, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/Parameters-MLParameterRequestExample.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/Parameters-MLParameterRequestExample.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 139, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/Parameters-MLParameterRequestExample.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 141, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/Parameters-MLParameterRequestExample.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 141, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/Parameters-MLParameterRequestExample.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 141, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/Parameters-MLParameterResponseExample.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/Parameters-MLParameterResponseExample.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 139, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/Parameters-MLParameterResponseExample.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 141, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/Parameters-MLParameterResponseExample.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 141, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/Parameters-MLParameterResponseExample.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 141, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-MLModel-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-MLModel-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-MLModel-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
@@ -60,14 +111,30 @@ ERROR: /github/workspace/output/StructureDefinition-MLModel.profile.history.html
 ERROR: /github/workspace/output/StructureDefinition-MLModel.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 147, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-MLModel.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 147, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-MLModel.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 147, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-MLParameter-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-MLParameter-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-MLParameter-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-MLParameter.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-MLParameter.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-MLParameter.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 147, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-MLParameter.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 147, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-MLParameter.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 147, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-MLParameterRequest-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-MLParameterRequest-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-MLParameterRequest-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-MLParameterRequest.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-MLParameterRequest.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-MLParameterRequest.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 147, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-MLParameterRequest.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 147, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-MLParameterRequest.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 147, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-MLParameterResponse-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-MLParameterResponse-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-MLParameterResponse-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-MLParameterResponse.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-MLParameterResponse.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-MLParameterResponse.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 147, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-MLParameterResponse.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 147, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-MLParameterResponse.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 147, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-MessageForCDSS-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-MessageForCDSS-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-MessageForCDSS-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-MessageForCDSS.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-MessageForCDSS.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-MessageForCDSS.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 147, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-MessageForCDSS.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 147, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-MessageForCDSS.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 147, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-MessageForRequest-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-MessageForRequest-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-MessageForRequest-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
@@ -76,6 +143,14 @@ ERROR: /github/workspace/output/StructureDefinition-MessageForRequest.profile.hi
 ERROR: /github/workspace/output/StructureDefinition-MessageForRequest.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 147, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-MessageForRequest.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 147, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-MessageForRequest.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 147, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-MessageHeaderCDSS-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-MessageHeaderCDSS-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-MessageHeaderCDSS-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-MessageHeaderCDSS.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-MessageHeaderCDSS.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-MessageHeaderCDSS.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 147, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-MessageHeaderCDSS.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 147, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-MessageHeaderCDSS.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 147, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-OBSCDSSFinalizer-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-OBSCDSSFinalizer-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-OBSCDSSFinalizer-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
@@ -107,67 +182,105 @@ ERROR: /github/workspace/output/index.html#/html/body/div/div/nav/div/div/ul/li/
 ERROR: /github/workspace/output/toc.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 139, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
 ERROR: /github/workspace/output/toc.html#/html/body/div/div/div/div/div/div/table/tbody/tr/td/a at Line 179, column 2425: The link 'downloads.html' for "3 Downloads" cannot be resolved
 ERROR: /github/workspace/output/workflow.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 139, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-== fsh-generated/resources/Bundle-MessageForRequestExample.json ==
-ERROR: Bundle/MessageForRequestExample: Bundle: bdl-12: 'A message must have a MessageHeader as the first resource' Rule 'A message must have a MessageHeader as the first resource' Failed
-ERROR: Bundle/MessageForRequestExample: Bundle.entry[0]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: name in profile http://hl7.org/fhir/us/example/StructureDefinition/MessageForRequest on element Bundle.entry:request, looking in profile http://hl7.org/fhir/us/example/StructureDefinition/MessageForRequest (@char 1)
-ERROR: Bundle/MessageForRequestExample: Bundle.entry[1]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: name in profile http://hl7.org/fhir/us/example/StructureDefinition/MessageForRequest on element Bundle.entry:request, looking in profile http://hl7.org/fhir/us/example/StructureDefinition/MessageForRequest (@char 1)
-ERROR: Bundle/MessageForRequestExample: Bundle.entry[0]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: name in profile http://hl7.org/fhir/us/example/StructureDefinition/MessageForRequest on element Bundle.entry:parameter, looking in profile http://hl7.org/fhir/us/example/StructureDefinition/MessageForRequest (@char 1)
-ERROR: Bundle/MessageForRequestExample: Bundle.entry[1]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: name in profile http://hl7.org/fhir/us/example/StructureDefinition/MessageForRequest on element Bundle.entry:parameter, looking in profile http://hl7.org/fhir/us/example/StructureDefinition/MessageForRequest (@char 1)
-INFORMATION: Bundle/MessageForRequestExample: Bundle: Bundle.entry:request: Unable to check minimum required (Bundle.entry) due to lack of slicing validation (from http://hl7.org/fhir/us/example/StructureDefinition/MessageForRequest)
-INFORMATION: Bundle/MessageForRequestExample: Bundle: Bundle.entry:parameter: Unable to check minimum required (Bundle.entry) due to lack of slicing validation (from http://hl7.org/fhir/us/example/StructureDefinition/MessageForRequest)
-ERROR: Bundle/MessageForRequestExample: Bundle.entry[0].resource.ofType(CommunicationRequest).meta.profile[1]: Canonical URL 'http://hl7.org/fhir/StructureDefinition/obscdss-initializer' does not resolve
-ERROR: Bundle/MessageForRequestExample: Bundle.entry[0].resource.ofType(CommunicationRequest).status: The value provided ('in-progress') is not in the value set 'RequestStatus' (http://hl7.org/fhir/ValueSet/request-status|4.0.1), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/request-status#in-progress in http://hl7.org/fhir/request-status)
-ERROR: Bundle/MessageForRequestExample: Bundle.entry[0]: Bundle entry missing fullUrl
-ERROR: Bundle/MessageForRequestExample: Bundle.entry[0].resource.ofType(CommunicationRequest).payload[0].content.ofType(Reference): Relative Reference appears inside Bundle whose entry is missing a fullUrl
-WARNING: Bundle/MessageForRequestExample: Bundle.entry[0].resource.ofType(CommunicationRequest).meta.profile[1]: Profile reference 'http://hl7.org/fhir/StructureDefinition/obscdss-initializer' has not been checked because it is unknown, and the validator is set to not fetch unknown profiles
-WARNING: Bundle/MessageForRequestExample: Bundle.entry[1].resource.ofType(Parameters).parameter[0].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-WARNING: Bundle/MessageForRequestExample: Bundle.entry[1].resource.ofType(Parameters).parameter[1].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-ERROR: Bundle/MessageForRequestExample: Bundle.entry[1].resource.ofType(Parameters).parameter[2]: inv-1: 'A parameter must have one and only one of (value, resource, part)' Rule 'A parameter must have one and only one of (value, resource, part)' Failed
-WARNING: Bundle/MessageForRequestExample: Bundle.entry[1].resource.ofType(Parameters).parameter[3].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-WARNING: Bundle/MessageForRequestExample: Bundle.entry[1].resource.ofType(Parameters).parameter[4].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-WARNING: Bundle/MessageForRequestExample: Bundle.entry[1].resource.ofType(Parameters).parameter[5].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-WARNING: Bundle/MessageForRequestExample: Bundle.entry[1].resource.ofType(Parameters).parameter[6].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-ERROR: Bundle/MessageForRequestExample: Bundle.entry[1].resource.ofType(Parameters).parameter[8]: inv-1: 'A parameter must have one and only one of (value, resource, part)' Rule 'A parameter must have one and only one of (value, resource, part)' Failed
-WARNING: Bundle/MessageForRequestExample: Bundle.entry[1].resource.ofType(Parameters).parameter[10].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-WARNING: Bundle/MessageForRequestExample: Bundle.entry[1].resource.ofType(Parameters).parameter[12].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-WARNING: Bundle/MessageForRequestExample: Bundle.entry[1].resource.ofType(Parameters).parameter[13].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-ERROR: Bundle/MessageForRequestExample: Bundle.entry[1].resource.ofType(Parameters).parameter[14]: inv-1: 'A parameter must have one and only one of (value, resource, part)' Rule 'A parameter must have one and only one of (value, resource, part)' Failed
-WARNING: Bundle/MessageForRequestExample: Bundle.entry[1].resource.ofType(Parameters).parameter[15].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-ERROR: Bundle/MessageForRequestExample: Bundle.entry[1].resource.ofType(Parameters).parameter[16]: inv-1: 'A parameter must have one and only one of (value, resource, part)' Rule 'A parameter must have one and only one of (value, resource, part)' Failed
-WARNING: Bundle/MessageForRequestExample: Bundle.entry[1].resource.ofType(Parameters).parameter[17].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-WARNING: Bundle/MessageForRequestExample: Bundle.entry[1].resource.ofType(Parameters).parameter[18].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-WARNING: Bundle/MessageForRequestExample: Bundle.entry[1].resource.ofType(Parameters).parameter[20].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-WARNING: Bundle/MessageForRequestExample: Bundle.entry[1].resource.ofType(Parameters).parameter[21].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-ERROR: Bundle/MessageForRequestExample: Bundle.entry[1].resource.ofType(Parameters).parameter[22]: inv-1: 'A parameter must have one and only one of (value, resource, part)' Rule 'A parameter must have one and only one of (value, resource, part)' Failed
-WARNING: Bundle/MessageForRequestExample: Bundle.entry[1].resource.ofType(Parameters).parameter[23].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-WARNING: Bundle/MessageForRequestExample: Bundle.entry[1].resource.ofType(Parameters).parameter[24].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-WARNING: Bundle/MessageForRequestExample: Bundle.entry[1].resource.ofType(Parameters).parameter[25].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-ERROR: Bundle/MessageForRequestExample: Bundle.entry[1].resource.ofType(Parameters).parameter[26]: inv-1: 'A parameter must have one and only one of (value, resource, part)' Rule 'A parameter must have one and only one of (value, resource, part)' Failed
-ERROR: Bundle/MessageForRequestExample: Bundle.entry[1].resource.ofType(Parameters).parameter[27]: inv-1: 'A parameter must have one and only one of (value, resource, part)' Rule 'A parameter must have one and only one of (value, resource, part)' Failed
-WARNING: Bundle/MessageForRequestExample: Bundle.entry[1].resource.ofType(Parameters).parameter[28].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-ERROR: Bundle/MessageForRequestExample: Bundle.entry[1].resource.ofType(Parameters).parameter[29]: inv-1: 'A parameter must have one and only one of (value, resource, part)' Rule 'A parameter must have one and only one of (value, resource, part)' Failed
-WARNING: Bundle/MessageForRequestExample: Bundle.entry[1].resource.ofType(Parameters).parameter[30].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-ERROR: Bundle/MessageForRequestExample: Bundle.entry[1].resource.ofType(Parameters).parameter[31]: inv-1: 'A parameter must have one and only one of (value, resource, part)' Rule 'A parameter must have one and only one of (value, resource, part)' Failed
-WARNING: Bundle/MessageForRequestExample: Bundle.entry[1].resource.ofType(Parameters).parameter[32].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-WARNING: Bundle/MessageForRequestExample: Bundle.entry[1].resource.ofType(Parameters).parameter[33].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-WARNING: Bundle/MessageForRequestExample: Bundle.entry[1].resource.ofType(Parameters).parameter[34].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-WARNING: Bundle/MessageForRequestExample: Bundle.entry[1].resource.ofType(Parameters).parameter[35].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-WARNING: Bundle/MessageForRequestExample: Bundle.entry[1].resource.ofType(Parameters).parameter[36].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-WARNING: Bundle/MessageForRequestExample: Bundle.entry[1].resource.ofType(Parameters).parameter[37].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-WARNING: Bundle/MessageForRequestExample: Bundle.entry[1].resource.ofType(Parameters).parameter[38].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-WARNING: Bundle/MessageForRequestExample: Bundle.entry[1].resource.ofType(Parameters).parameter[39].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-WARNING: Bundle/MessageForRequestExample: Bundle.entry[1].resource.ofType(Parameters).parameter[40].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-WARNING: Bundle/MessageForRequestExample: Bundle.entry[1].resource.ofType(Parameters).parameter[41].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-WARNING: Bundle/MessageForRequestExample: Bundle.entry[1].resource.ofType(Parameters).parameter[42].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-WARNING: Bundle/MessageForRequestExample: Bundle.entry[1].resource.ofType(Parameters).parameter[43].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-WARNING: Bundle/MessageForRequestExample: Bundle.entry[1].resource.ofType(Parameters).parameter[44].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-WARNING: Bundle/MessageForRequestExample: Bundle.entry[1].resource.ofType(Parameters).parameter[45].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-WARNING: Bundle/MessageForRequestExample: Bundle.entry[1].resource.ofType(Parameters).parameter[46].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-WARNING: Bundle/MessageForRequestExample: Bundle.entry[1].resource.ofType(Parameters).parameter[47].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-WARNING: Bundle/MessageForRequestExample: Bundle.entry[1].resource.ofType(Parameters).parameter[48].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-ERROR: Bundle/MessageForRequestExample: Bundle.entry[1].resource: The first entry in a message must be a MessageHeader
-ERROR: Bundle/MessageForRequestExample: Bundle.entry[0]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry  
-ERROR: Bundle/MessageForRequestExample: Bundle.entry[1]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry  
+== fsh-generated/resources/Bundle-MessageForCDSSRequest.json ==
+ERROR: Bundle/MessageForCDSSRequest: Bundle.entry[0]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: name in profile http://hl7.org/fhir/us/example/StructureDefinition/MessageForCDSS on element Bundle.entry:messageheader, looking in profile http://hl7.org/fhir/us/example/StructureDefinition/MessageForCDSS (@char 1)
+ERROR: Bundle/MessageForCDSSRequest: Bundle.entry[1]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: name in profile http://hl7.org/fhir/us/example/StructureDefinition/MessageForCDSS on element Bundle.entry:messageheader, looking in profile http://hl7.org/fhir/us/example/StructureDefinition/MessageForCDSS (@char 1)
+ERROR: Bundle/MessageForCDSSRequest: Bundle.entry[2]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: name in profile http://hl7.org/fhir/us/example/StructureDefinition/MessageForCDSS on element Bundle.entry:messageheader, looking in profile http://hl7.org/fhir/us/example/StructureDefinition/MessageForCDSS (@char 1)
+ERROR: Bundle/MessageForCDSSRequest: Bundle.entry[0]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: name in profile http://hl7.org/fhir/us/example/StructureDefinition/MessageForCDSS on element Bundle.entry:request, looking in profile http://hl7.org/fhir/us/example/StructureDefinition/MessageForCDSS (@char 1)
+ERROR: Bundle/MessageForCDSSRequest: Bundle.entry[1]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: name in profile http://hl7.org/fhir/us/example/StructureDefinition/MessageForCDSS on element Bundle.entry:request, looking in profile http://hl7.org/fhir/us/example/StructureDefinition/MessageForCDSS (@char 1)
+ERROR: Bundle/MessageForCDSSRequest: Bundle.entry[2]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: name in profile http://hl7.org/fhir/us/example/StructureDefinition/MessageForCDSS on element Bundle.entry:request, looking in profile http://hl7.org/fhir/us/example/StructureDefinition/MessageForCDSS (@char 1)
+ERROR: Bundle/MessageForCDSSRequest: Bundle.entry[0]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: name in profile http://hl7.org/fhir/us/example/StructureDefinition/MessageForCDSS on element Bundle.entry:parameter, looking in profile http://hl7.org/fhir/us/example/StructureDefinition/MessageForCDSS (@char 1)
+ERROR: Bundle/MessageForCDSSRequest: Bundle.entry[1]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: name in profile http://hl7.org/fhir/us/example/StructureDefinition/MessageForCDSS on element Bundle.entry:parameter, looking in profile http://hl7.org/fhir/us/example/StructureDefinition/MessageForCDSS (@char 1)
+ERROR: Bundle/MessageForCDSSRequest: Bundle.entry[2]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: name in profile http://hl7.org/fhir/us/example/StructureDefinition/MessageForCDSS on element Bundle.entry:parameter, looking in profile http://hl7.org/fhir/us/example/StructureDefinition/MessageForCDSS (@char 1)
+INFORMATION: Bundle/MessageForCDSSRequest: Bundle: Bundle.entry:messageheader: Unable to check minimum required (Bundle.entry) due to lack of slicing validation (from http://hl7.org/fhir/us/example/StructureDefinition/MessageForCDSS)
+INFORMATION: Bundle/MessageForCDSSRequest: Bundle: Bundle.entry:request: Unable to check minimum required (Bundle.entry) due to lack of slicing validation (from http://hl7.org/fhir/us/example/StructureDefinition/MessageForCDSS)
+INFORMATION: Bundle/MessageForCDSSRequest: Bundle: Bundle.entry:parameter: Unable to check minimum required (Bundle.entry) due to lack of slicing validation (from http://hl7.org/fhir/us/example/StructureDefinition/MessageForCDSS)
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[0].resource.ofType(MessageHeader).event.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+ERROR: Bundle/MessageForCDSSRequest: Bundle.entry[1].resource.ofType(CommunicationRequest).meta.profile[1]: Canonical URL 'http://hl7.org/fhir/StructureDefinition/obscdss-initializer' does not resolve
+ERROR: Bundle/MessageForCDSSRequest: Bundle.entry[1].resource.ofType(CommunicationRequest).status: The value provided ('in-progress') is not in the value set 'RequestStatus' (http://hl7.org/fhir/ValueSet/request-status|4.0.1), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/request-status#in-progress in http://hl7.org/fhir/request-status)
+ERROR: Bundle/MessageForCDSSRequest: Bundle.entry[1]: Bundle entry missing fullUrl
+ERROR: Bundle/MessageForCDSSRequest: Bundle.entry[1].resource.ofType(CommunicationRequest).payload[0].content.ofType(Reference): Relative Reference appears inside Bundle whose entry is missing a fullUrl
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[1].resource.ofType(CommunicationRequest).meta.profile[1]: Profile reference 'http://hl7.org/fhir/StructureDefinition/obscdss-initializer' has not been checked because it is unknown, and the validator is set to not fetch unknown profiles
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[2].resource.ofType(Parameters).parameter[0].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[2].resource.ofType(Parameters).parameter[1].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+ERROR: Bundle/MessageForCDSSRequest: Bundle.entry[2].resource.ofType(Parameters).parameter[2]: inv-1: 'A parameter must have one and only one of (value, resource, part)' Rule 'A parameter must have one and only one of (value, resource, part)' Failed
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[2].resource.ofType(Parameters).parameter[3].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[2].resource.ofType(Parameters).parameter[4].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[2].resource.ofType(Parameters).parameter[5].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[2].resource.ofType(Parameters).parameter[6].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+ERROR: Bundle/MessageForCDSSRequest: Bundle.entry[2].resource.ofType(Parameters).parameter[8]: inv-1: 'A parameter must have one and only one of (value, resource, part)' Rule 'A parameter must have one and only one of (value, resource, part)' Failed
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[2].resource.ofType(Parameters).parameter[10].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[2].resource.ofType(Parameters).parameter[12].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[2].resource.ofType(Parameters).parameter[13].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+ERROR: Bundle/MessageForCDSSRequest: Bundle.entry[2].resource.ofType(Parameters).parameter[14]: inv-1: 'A parameter must have one and only one of (value, resource, part)' Rule 'A parameter must have one and only one of (value, resource, part)' Failed
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[2].resource.ofType(Parameters).parameter[15].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+ERROR: Bundle/MessageForCDSSRequest: Bundle.entry[2].resource.ofType(Parameters).parameter[16]: inv-1: 'A parameter must have one and only one of (value, resource, part)' Rule 'A parameter must have one and only one of (value, resource, part)' Failed
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[2].resource.ofType(Parameters).parameter[17].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[2].resource.ofType(Parameters).parameter[18].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[2].resource.ofType(Parameters).parameter[20].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[2].resource.ofType(Parameters).parameter[21].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+ERROR: Bundle/MessageForCDSSRequest: Bundle.entry[2].resource.ofType(Parameters).parameter[22]: inv-1: 'A parameter must have one and only one of (value, resource, part)' Rule 'A parameter must have one and only one of (value, resource, part)' Failed
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[2].resource.ofType(Parameters).parameter[23].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[2].resource.ofType(Parameters).parameter[24].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[2].resource.ofType(Parameters).parameter[25].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+ERROR: Bundle/MessageForCDSSRequest: Bundle.entry[2].resource.ofType(Parameters).parameter[26]: inv-1: 'A parameter must have one and only one of (value, resource, part)' Rule 'A parameter must have one and only one of (value, resource, part)' Failed
+ERROR: Bundle/MessageForCDSSRequest: Bundle.entry[2].resource.ofType(Parameters).parameter[27]: inv-1: 'A parameter must have one and only one of (value, resource, part)' Rule 'A parameter must have one and only one of (value, resource, part)' Failed
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[2].resource.ofType(Parameters).parameter[28].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+ERROR: Bundle/MessageForCDSSRequest: Bundle.entry[2].resource.ofType(Parameters).parameter[29]: inv-1: 'A parameter must have one and only one of (value, resource, part)' Rule 'A parameter must have one and only one of (value, resource, part)' Failed
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[2].resource.ofType(Parameters).parameter[30].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+ERROR: Bundle/MessageForCDSSRequest: Bundle.entry[2].resource.ofType(Parameters).parameter[31]: inv-1: 'A parameter must have one and only one of (value, resource, part)' Rule 'A parameter must have one and only one of (value, resource, part)' Failed
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[2].resource.ofType(Parameters).parameter[32].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[2].resource.ofType(Parameters).parameter[33].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[2].resource.ofType(Parameters).parameter[34].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[2].resource.ofType(Parameters).parameter[35].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[2].resource.ofType(Parameters).parameter[36].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[2].resource.ofType(Parameters).parameter[37].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[2].resource.ofType(Parameters).parameter[38].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[2].resource.ofType(Parameters).parameter[39].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[2].resource.ofType(Parameters).parameter[40].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[2].resource.ofType(Parameters).parameter[41].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[2].resource.ofType(Parameters).parameter[42].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[2].resource.ofType(Parameters).parameter[43].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[2].resource.ofType(Parameters).parameter[44].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[2].resource.ofType(Parameters).parameter[45].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[2].resource.ofType(Parameters).parameter[46].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[2].resource.ofType(Parameters).parameter[47].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[2].resource.ofType(Parameters).parameter[48].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[2]: Entry  isn't reachable by traversing from first Bundle entry
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[3]: Entry  isn't reachable by traversing from first Bundle entry
+ERROR: Bundle/MessageForCDSSRequest: Bundle.entry[0]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry  
+ERROR: Bundle/MessageForCDSSRequest: Bundle.entry[1]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry  
+ERROR: Bundle/MessageForCDSSRequest: Bundle.entry[2]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry  
+== fsh-generated/resources/Bundle-MessageForCDSSResponse.json ==
+ERROR: Bundle/MessageForCDSSResponse: Bundle.entry[0]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: name in profile http://hl7.org/fhir/us/example/StructureDefinition/MessageForCDSS on element Bundle.entry:messageheader, looking in profile http://hl7.org/fhir/us/example/StructureDefinition/MessageForCDSS (@char 1)
+ERROR: Bundle/MessageForCDSSResponse: Bundle.entry[1]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: name in profile http://hl7.org/fhir/us/example/StructureDefinition/MessageForCDSS on element Bundle.entry:messageheader, looking in profile http://hl7.org/fhir/us/example/StructureDefinition/MessageForCDSS (@char 1)
+ERROR: Bundle/MessageForCDSSResponse: Bundle.entry[2]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: name in profile http://hl7.org/fhir/us/example/StructureDefinition/MessageForCDSS on element Bundle.entry:messageheader, looking in profile http://hl7.org/fhir/us/example/StructureDefinition/MessageForCDSS (@char 1)
+ERROR: Bundle/MessageForCDSSResponse: Bundle.entry[0]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: name in profile http://hl7.org/fhir/us/example/StructureDefinition/MessageForCDSS on element Bundle.entry:request, looking in profile http://hl7.org/fhir/us/example/StructureDefinition/MessageForCDSS (@char 1)
+ERROR: Bundle/MessageForCDSSResponse: Bundle.entry[1]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: name in profile http://hl7.org/fhir/us/example/StructureDefinition/MessageForCDSS on element Bundle.entry:request, looking in profile http://hl7.org/fhir/us/example/StructureDefinition/MessageForCDSS (@char 1)
+ERROR: Bundle/MessageForCDSSResponse: Bundle.entry[2]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: name in profile http://hl7.org/fhir/us/example/StructureDefinition/MessageForCDSS on element Bundle.entry:request, looking in profile http://hl7.org/fhir/us/example/StructureDefinition/MessageForCDSS (@char 1)
+ERROR: Bundle/MessageForCDSSResponse: Bundle.entry[0]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: name in profile http://hl7.org/fhir/us/example/StructureDefinition/MessageForCDSS on element Bundle.entry:parameter, looking in profile http://hl7.org/fhir/us/example/StructureDefinition/MessageForCDSS (@char 1)
+ERROR: Bundle/MessageForCDSSResponse: Bundle.entry[1]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: name in profile http://hl7.org/fhir/us/example/StructureDefinition/MessageForCDSS on element Bundle.entry:parameter, looking in profile http://hl7.org/fhir/us/example/StructureDefinition/MessageForCDSS (@char 1)
+ERROR: Bundle/MessageForCDSSResponse: Bundle.entry[2]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: name in profile http://hl7.org/fhir/us/example/StructureDefinition/MessageForCDSS on element Bundle.entry:parameter, looking in profile http://hl7.org/fhir/us/example/StructureDefinition/MessageForCDSS (@char 1)
+INFORMATION: Bundle/MessageForCDSSResponse: Bundle: Bundle.entry:messageheader: Unable to check minimum required (Bundle.entry) due to lack of slicing validation (from http://hl7.org/fhir/us/example/StructureDefinition/MessageForCDSS)
+INFORMATION: Bundle/MessageForCDSSResponse: Bundle: Bundle.entry:request: Unable to check minimum required (Bundle.entry) due to lack of slicing validation (from http://hl7.org/fhir/us/example/StructureDefinition/MessageForCDSS)
+INFORMATION: Bundle/MessageForCDSSResponse: Bundle: Bundle.entry:parameter: Unable to check minimum required (Bundle.entry) due to lack of slicing validation (from http://hl7.org/fhir/us/example/StructureDefinition/MessageForCDSS)
+WARNING: Bundle/MessageForCDSSResponse: Bundle.entry[0].resource.ofType(MessageHeader).event.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+WARNING: Bundle/MessageForCDSSResponse: Bundle.entry[1].resource.ofType(Communication).category[0].coding[0]: A code with no system has no defined meaning. A system should be provided
+ERROR: Bundle/MessageForCDSSResponse: Bundle.entry[1]: Bundle entry missing fullUrl
+ERROR: Bundle/MessageForCDSSResponse: Bundle.entry[1].resource.ofType(Communication).sender: Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/MessageForCDSSResponse: Bundle.entry[1].resource.ofType(Communication).payload[0].content.ofType(Reference): Relative Reference appears inside Bundle whose entry is missing a fullUrl
+ERROR: Bundle/MessageForCDSSResponse: Bundle.entry[1].resource.ofType(Communication).payload[0].content.ofType(Reference): This element does not match any known slice  defined in the profile http://hl7.org/fhir/us/example/StructureDefinition/OBSCDSSFinalizer and slicing is CLOSED: Bundle.entry[1].resource.ofType(Communication).payload[0].content.ofType(Reference): Does not match slice 'contentString' (discriminator: ($this is string))
+ERROR: Bundle/MessageForCDSSResponse: Bundle.entry[1].resource.ofType(Communication).payload[0]: Communication.payload.content[x]:contentString: minimum required = 1, but only found 0 (from http://hl7.org/fhir/us/example/StructureDefinition/OBSCDSSFinalizer)
+ERROR: Bundle/MessageForCDSSResponse: Bundle.entry[1].resource.ofType(Communication).payload[0].content.ofType(Reference): The Profile 'http://hl7.org/fhir/us/example/StructureDefinition/OBSCDSSFinalizer' definition allows for the type string but found type Reference
+ERROR: Bundle/MessageForCDSSResponse: Bundle.entry[1].resource.ofType(Communication).payload[0].content.ofType(Reference).reference: This element is not allowed by the profile http://hl7.org/fhir/StructureDefinition/string
+WARNING: Bundle/MessageForCDSSResponse: Bundle.entry[2].resource.ofType(Parameters).parameter[0].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+WARNING: Bundle/MessageForCDSSResponse: Bundle.entry[2].resource.ofType(Parameters).parameter[1].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+WARNING: Bundle/MessageForCDSSResponse: Bundle.entry[2].resource.ofType(Parameters).parameter[2].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+WARNING: Bundle/MessageForCDSSResponse: Bundle.entry[2]: Entry  isn't reachable by traversing from first Bundle entry
+WARNING: Bundle/MessageForCDSSResponse: Bundle.entry[3]: Entry  isn't reachable by traversing from first Bundle entry
+ERROR: Bundle/MessageForCDSSResponse: Bundle.entry[0]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry  
+ERROR: Bundle/MessageForCDSSResponse: Bundle.entry[1]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry  
+ERROR: Bundle/MessageForCDSSResponse: Bundle.entry[2]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry  
 == fsh-generated/resources/CodeSystem-ml-response-cs.json ==
 ERROR: CodeSystem.where(url = 'http://hl7.org/fhir/us/example/CodeSystem/ml-response-cs'): Conformance resource /github/workspace/fsh-generated/resources/CodeSystem-ml-response-cs.json - the canonical URL (http://xxsomewhere.org/fhir/myig/CodeSystem/ml-response-cs) does not match the URL (http://hl7.org/fhir/us/example/CodeSystem/ml-response-cs)
 WARNING: CodeSystem/ml-response-cs: CodeSystem: HL7 Defined CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
@@ -176,77 +289,101 @@ ERROR: /github/workspace/fsh-generated/resources/CodeSystem-ml-response-cs: URL 
 ERROR: CodeSystem.where(url = 'http://hl7.org/fhir/us/example/CodeSystem/ml-type-cs'): Conformance resource /github/workspace/fsh-generated/resources/CodeSystem-ml-type-cs.json - the canonical URL (http://xxsomewhere.org/fhir/myig/CodeSystem/ml-type-cs) does not match the URL (http://hl7.org/fhir/us/example/CodeSystem/ml-type-cs)
 WARNING: CodeSystem/ml-type-cs: CodeSystem: HL7 Defined CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
 ERROR: /github/workspace/fsh-generated/resources/CodeSystem-ml-type-cs: URL Mismatch http://xxsomewhere.org/fhir/myig/CodeSystem/ml-type-cs vs http://hl7.org/fhir/us/example/CodeSystem/ml-type-cs
+== fsh-generated/resources/Communication-sss.json ==
+WARNING: Communication/sss: Communication.category[0].coding[0]: A code with no system has no defined meaning. A system should be provided
+ERROR: Communication/sss: Communication.payload[0].content.ofType(Reference): This element does not match any known slice  defined in the profile http://hl7.org/fhir/us/example/StructureDefinition/OBSCDSSFinalizer and slicing is CLOSED: Communication.payload[0].content.ofType(Reference): Does not match slice 'contentString' (discriminator: ($this is string))
+ERROR: Communication/sss: Communication.payload[0]: Communication.payload.content[x]:contentString: minimum required = 1, but only found 0 (from http://hl7.org/fhir/us/example/StructureDefinition/OBSCDSSFinalizer)
+ERROR: Communication/sss: Communication.payload[0].content.ofType(Reference): The Profile 'http://hl7.org/fhir/us/example/StructureDefinition/OBSCDSSFinalizer' definition allows for the type string but found type Reference
+ERROR: Communication/sss: Communication.payload[0].content.ofType(Reference).reference: This element is not allowed by the profile http://hl7.org/fhir/StructureDefinition/string
 == fsh-generated/resources/CommunicationRequest-OBSCDSSInitializerExample.json ==
 ERROR: CommunicationRequest/OBSCDSSInitializerExample: CommunicationRequest.meta.profile[1]: Canonical URL 'http://hl7.org/fhir/StructureDefinition/obscdss-initializer' does not resolve
 ERROR: CommunicationRequest/OBSCDSSInitializerExample: CommunicationRequest.status: The value provided ('in-progress') is not in the value set 'RequestStatus' (http://hl7.org/fhir/ValueSet/request-status|4.0.1), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/request-status#in-progress in http://hl7.org/fhir/request-status)
 WARNING: CommunicationRequest/OBSCDSSInitializerExample: CommunicationRequest.meta.profile[1]: Profile reference 'http://hl7.org/fhir/StructureDefinition/obscdss-initializer' has not been checked because it is unknown, and the validator is set to not fetch unknown profiles
-== fsh-generated/resources/Parameters-MLParameterExample.json ==
-WARNING: Parameters/MLParameterExample: Parameters.parameter[0].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-WARNING: Parameters/MLParameterExample: Parameters.parameter[1].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-ERROR: Parameters/MLParameterExample: Parameters.parameter[2]: inv-1: 'A parameter must have one and only one of (value, resource, part)' Rule 'A parameter must have one and only one of (value, resource, part)' Failed
-WARNING: Parameters/MLParameterExample: Parameters.parameter[3].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-WARNING: Parameters/MLParameterExample: Parameters.parameter[4].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-WARNING: Parameters/MLParameterExample: Parameters.parameter[5].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-WARNING: Parameters/MLParameterExample: Parameters.parameter[6].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-ERROR: Parameters/MLParameterExample: Parameters.parameter[8]: inv-1: 'A parameter must have one and only one of (value, resource, part)' Rule 'A parameter must have one and only one of (value, resource, part)' Failed
-WARNING: Parameters/MLParameterExample: Parameters.parameter[10].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-WARNING: Parameters/MLParameterExample: Parameters.parameter[12].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-WARNING: Parameters/MLParameterExample: Parameters.parameter[13].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-ERROR: Parameters/MLParameterExample: Parameters.parameter[14]: inv-1: 'A parameter must have one and only one of (value, resource, part)' Rule 'A parameter must have one and only one of (value, resource, part)' Failed
-WARNING: Parameters/MLParameterExample: Parameters.parameter[15].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-ERROR: Parameters/MLParameterExample: Parameters.parameter[16]: inv-1: 'A parameter must have one and only one of (value, resource, part)' Rule 'A parameter must have one and only one of (value, resource, part)' Failed
-WARNING: Parameters/MLParameterExample: Parameters.parameter[17].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-WARNING: Parameters/MLParameterExample: Parameters.parameter[18].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-WARNING: Parameters/MLParameterExample: Parameters.parameter[20].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-WARNING: Parameters/MLParameterExample: Parameters.parameter[21].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-ERROR: Parameters/MLParameterExample: Parameters.parameter[22]: inv-1: 'A parameter must have one and only one of (value, resource, part)' Rule 'A parameter must have one and only one of (value, resource, part)' Failed
-WARNING: Parameters/MLParameterExample: Parameters.parameter[23].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-WARNING: Parameters/MLParameterExample: Parameters.parameter[24].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-WARNING: Parameters/MLParameterExample: Parameters.parameter[25].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-ERROR: Parameters/MLParameterExample: Parameters.parameter[26]: inv-1: 'A parameter must have one and only one of (value, resource, part)' Rule 'A parameter must have one and only one of (value, resource, part)' Failed
-ERROR: Parameters/MLParameterExample: Parameters.parameter[27]: inv-1: 'A parameter must have one and only one of (value, resource, part)' Rule 'A parameter must have one and only one of (value, resource, part)' Failed
-WARNING: Parameters/MLParameterExample: Parameters.parameter[28].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-ERROR: Parameters/MLParameterExample: Parameters.parameter[29]: inv-1: 'A parameter must have one and only one of (value, resource, part)' Rule 'A parameter must have one and only one of (value, resource, part)' Failed
-WARNING: Parameters/MLParameterExample: Parameters.parameter[30].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-ERROR: Parameters/MLParameterExample: Parameters.parameter[31]: inv-1: 'A parameter must have one and only one of (value, resource, part)' Rule 'A parameter must have one and only one of (value, resource, part)' Failed
-WARNING: Parameters/MLParameterExample: Parameters.parameter[32].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-WARNING: Parameters/MLParameterExample: Parameters.parameter[33].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-WARNING: Parameters/MLParameterExample: Parameters.parameter[34].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-WARNING: Parameters/MLParameterExample: Parameters.parameter[35].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-WARNING: Parameters/MLParameterExample: Parameters.parameter[36].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-WARNING: Parameters/MLParameterExample: Parameters.parameter[37].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-WARNING: Parameters/MLParameterExample: Parameters.parameter[38].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-WARNING: Parameters/MLParameterExample: Parameters.parameter[39].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-WARNING: Parameters/MLParameterExample: Parameters.parameter[40].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-WARNING: Parameters/MLParameterExample: Parameters.parameter[41].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-WARNING: Parameters/MLParameterExample: Parameters.parameter[42].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-WARNING: Parameters/MLParameterExample: Parameters.parameter[43].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-WARNING: Parameters/MLParameterExample: Parameters.parameter[44].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-WARNING: Parameters/MLParameterExample: Parameters.parameter[45].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-WARNING: Parameters/MLParameterExample: Parameters.parameter[46].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-WARNING: Parameters/MLParameterExample: Parameters.parameter[47].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-WARNING: Parameters/MLParameterExample: Parameters.parameter[48].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+== fsh-generated/resources/Device-sss.json ==
+ERROR: Device/sss: Device.status: The value provided ('completed') is not in the value set 'FHIRDeviceStatus' (http://hl7.org/fhir/ValueSet/device-status|4.0.1), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/device-status#completed in http://hl7.org/fhir/device-status)
+== fsh-generated/resources/MessageHeader-MessageHeaderCDSSExampleRequest.json ==
+WARNING: MessageHeader/MessageHeaderCDSSExampleRequest: MessageHeader.event.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+== fsh-generated/resources/MessageHeader-MessageHeaderCDSSExampleResponse.json ==
+WARNING: MessageHeader/MessageHeaderCDSSExampleResponse: MessageHeader.event.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+== fsh-generated/resources/Parameters-MLParameterRequestExample.json ==
+WARNING: Parameters/MLParameterRequestExample: Parameters.parameter[0].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+WARNING: Parameters/MLParameterRequestExample: Parameters.parameter[1].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+ERROR: Parameters/MLParameterRequestExample: Parameters.parameter[2]: inv-1: 'A parameter must have one and only one of (value, resource, part)' Rule 'A parameter must have one and only one of (value, resource, part)' Failed
+WARNING: Parameters/MLParameterRequestExample: Parameters.parameter[3].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+WARNING: Parameters/MLParameterRequestExample: Parameters.parameter[4].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+WARNING: Parameters/MLParameterRequestExample: Parameters.parameter[5].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+WARNING: Parameters/MLParameterRequestExample: Parameters.parameter[6].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+ERROR: Parameters/MLParameterRequestExample: Parameters.parameter[8]: inv-1: 'A parameter must have one and only one of (value, resource, part)' Rule 'A parameter must have one and only one of (value, resource, part)' Failed
+WARNING: Parameters/MLParameterRequestExample: Parameters.parameter[10].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+WARNING: Parameters/MLParameterRequestExample: Parameters.parameter[12].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+WARNING: Parameters/MLParameterRequestExample: Parameters.parameter[13].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+ERROR: Parameters/MLParameterRequestExample: Parameters.parameter[14]: inv-1: 'A parameter must have one and only one of (value, resource, part)' Rule 'A parameter must have one and only one of (value, resource, part)' Failed
+WARNING: Parameters/MLParameterRequestExample: Parameters.parameter[15].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+ERROR: Parameters/MLParameterRequestExample: Parameters.parameter[16]: inv-1: 'A parameter must have one and only one of (value, resource, part)' Rule 'A parameter must have one and only one of (value, resource, part)' Failed
+WARNING: Parameters/MLParameterRequestExample: Parameters.parameter[17].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+WARNING: Parameters/MLParameterRequestExample: Parameters.parameter[18].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+WARNING: Parameters/MLParameterRequestExample: Parameters.parameter[20].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+WARNING: Parameters/MLParameterRequestExample: Parameters.parameter[21].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+ERROR: Parameters/MLParameterRequestExample: Parameters.parameter[22]: inv-1: 'A parameter must have one and only one of (value, resource, part)' Rule 'A parameter must have one and only one of (value, resource, part)' Failed
+WARNING: Parameters/MLParameterRequestExample: Parameters.parameter[23].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+WARNING: Parameters/MLParameterRequestExample: Parameters.parameter[24].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+WARNING: Parameters/MLParameterRequestExample: Parameters.parameter[25].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+ERROR: Parameters/MLParameterRequestExample: Parameters.parameter[26]: inv-1: 'A parameter must have one and only one of (value, resource, part)' Rule 'A parameter must have one and only one of (value, resource, part)' Failed
+ERROR: Parameters/MLParameterRequestExample: Parameters.parameter[27]: inv-1: 'A parameter must have one and only one of (value, resource, part)' Rule 'A parameter must have one and only one of (value, resource, part)' Failed
+WARNING: Parameters/MLParameterRequestExample: Parameters.parameter[28].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+ERROR: Parameters/MLParameterRequestExample: Parameters.parameter[29]: inv-1: 'A parameter must have one and only one of (value, resource, part)' Rule 'A parameter must have one and only one of (value, resource, part)' Failed
+WARNING: Parameters/MLParameterRequestExample: Parameters.parameter[30].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+ERROR: Parameters/MLParameterRequestExample: Parameters.parameter[31]: inv-1: 'A parameter must have one and only one of (value, resource, part)' Rule 'A parameter must have one and only one of (value, resource, part)' Failed
+WARNING: Parameters/MLParameterRequestExample: Parameters.parameter[32].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+WARNING: Parameters/MLParameterRequestExample: Parameters.parameter[33].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+WARNING: Parameters/MLParameterRequestExample: Parameters.parameter[34].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+WARNING: Parameters/MLParameterRequestExample: Parameters.parameter[35].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+WARNING: Parameters/MLParameterRequestExample: Parameters.parameter[36].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+WARNING: Parameters/MLParameterRequestExample: Parameters.parameter[37].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+WARNING: Parameters/MLParameterRequestExample: Parameters.parameter[38].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+WARNING: Parameters/MLParameterRequestExample: Parameters.parameter[39].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+WARNING: Parameters/MLParameterRequestExample: Parameters.parameter[40].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+WARNING: Parameters/MLParameterRequestExample: Parameters.parameter[41].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+WARNING: Parameters/MLParameterRequestExample: Parameters.parameter[42].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+WARNING: Parameters/MLParameterRequestExample: Parameters.parameter[43].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+WARNING: Parameters/MLParameterRequestExample: Parameters.parameter[44].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+WARNING: Parameters/MLParameterRequestExample: Parameters.parameter[45].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+WARNING: Parameters/MLParameterRequestExample: Parameters.parameter[46].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+WARNING: Parameters/MLParameterRequestExample: Parameters.parameter[47].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+WARNING: Parameters/MLParameterRequestExample: Parameters.parameter[48].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+== fsh-generated/resources/Parameters-MLParameterResponseExample.json ==
+WARNING: Parameters/MLParameterResponseExample: Parameters.parameter[0].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+WARNING: Parameters/MLParameterResponseExample: Parameters.parameter[1].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+WARNING: Parameters/MLParameterResponseExample: Parameters.parameter[2].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
 == fsh-generated/resources/StructureDefinition-MLModel.json ==
 ERROR: StructureDefinition.where(url = 'http://hl7.org/fhir/us/example/StructureDefinition/MLModel'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-MLModel.json - the canonical URL (http://xxsomewhere.org/fhir/myig/StructureDefinition/MLModel) does not match the URL (http://hl7.org/fhir/us/example/StructureDefinition/MLModel)
-WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/example/StructureDefinition/MLModel'): The Implementation Guide contains no examples for this profile
 ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-MLModel: URL Mismatch http://xxsomewhere.org/fhir/myig/StructureDefinition/MLModel vs http://hl7.org/fhir/us/example/StructureDefinition/MLModel
-== fsh-generated/resources/StructureDefinition-MLParameter.json ==
-ERROR: StructureDefinition.where(url = 'http://hl7.org/fhir/us/example/StructureDefinition/MLParameter'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-MLParameter.json - the canonical URL (http://xxsomewhere.org/fhir/myig/StructureDefinition/MLParameter) does not match the URL (http://hl7.org/fhir/us/example/StructureDefinition/MLParameter)
-ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-MLParameter: URL Mismatch http://xxsomewhere.org/fhir/myig/StructureDefinition/MLParameter vs http://hl7.org/fhir/us/example/StructureDefinition/MLParameter
+== fsh-generated/resources/StructureDefinition-MLParameterRequest.json ==
+ERROR: StructureDefinition.where(url = 'http://hl7.org/fhir/us/example/StructureDefinition/MLParameterRequest'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-MLParameterRequest.json - the canonical URL (http://xxsomewhere.org/fhir/myig/StructureDefinition/MLParameterRequest) does not match the URL (http://hl7.org/fhir/us/example/StructureDefinition/MLParameterRequest)
+ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-MLParameterRequest: URL Mismatch http://xxsomewhere.org/fhir/myig/StructureDefinition/MLParameterRequest vs http://hl7.org/fhir/us/example/StructureDefinition/MLParameterRequest
+== fsh-generated/resources/StructureDefinition-MLParameterResponse.json ==
+ERROR: StructureDefinition.where(url = 'http://hl7.org/fhir/us/example/StructureDefinition/MLParameterResponse'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-MLParameterResponse.json - the canonical URL (http://xxsomewhere.org/fhir/myig/StructureDefinition/MLParameterResponse) does not match the URL (http://hl7.org/fhir/us/example/StructureDefinition/MLParameterResponse)
+ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-MLParameterResponse: URL Mismatch http://xxsomewhere.org/fhir/myig/StructureDefinition/MLParameterResponse vs http://hl7.org/fhir/us/example/StructureDefinition/MLParameterResponse
+== fsh-generated/resources/StructureDefinition-MessageForCDSS.json ==
+ERROR: StructureDefinition.where(url = 'http://hl7.org/fhir/us/example/StructureDefinition/MessageForCDSS'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-MessageForCDSS.json - the canonical URL (http://xxsomewhere.org/fhir/myig/StructureDefinition/MessageForCDSS) does not match the URL (http://hl7.org/fhir/us/example/StructureDefinition/MessageForCDSS)
+ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-MessageForCDSS: URL Mismatch http://xxsomewhere.org/fhir/myig/StructureDefinition/MessageForCDSS vs http://hl7.org/fhir/us/example/StructureDefinition/MessageForCDSS
 == fsh-generated/resources/StructureDefinition-MessageForRequest.json ==
 ERROR: StructureDefinition.where(url = 'http://hl7.org/fhir/us/example/StructureDefinition/MessageForRequest'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-MessageForRequest.json - the canonical URL (http://xxsomewhere.org/fhir/myig/StructureDefinition/MessageForRequest) does not match the URL (http://hl7.org/fhir/us/example/StructureDefinition/MessageForRequest)
+WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/example/StructureDefinition/MessageForRequest'): The Implementation Guide contains no examples for this profile
 ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-MessageForRequest: URL Mismatch http://xxsomewhere.org/fhir/myig/StructureDefinition/MessageForRequest vs http://hl7.org/fhir/us/example/StructureDefinition/MessageForRequest
+== fsh-generated/resources/StructureDefinition-MessageHeaderCDSS.json ==
+ERROR: StructureDefinition.where(url = 'http://hl7.org/fhir/us/example/StructureDefinition/MessageHeaderCDSS'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-MessageHeaderCDSS.json - the canonical URL (http://xxsomewhere.org/fhir/myig/StructureDefinition/MessageHeaderCDSS) does not match the URL (http://hl7.org/fhir/us/example/StructureDefinition/MessageHeaderCDSS)
+ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-MessageHeaderCDSS: URL Mismatch http://xxsomewhere.org/fhir/myig/StructureDefinition/MessageHeaderCDSS vs http://hl7.org/fhir/us/example/StructureDefinition/MessageHeaderCDSS
 == fsh-generated/resources/StructureDefinition-OBSCDSSFinalizer.json ==
 ERROR: StructureDefinition.where(url = 'http://hl7.org/fhir/us/example/StructureDefinition/OBSCDSSFinalizer'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-OBSCDSSFinalizer.json - the canonical URL (http://xxsomewhere.org/fhir/myig/StructureDefinition/OBSCDSSFinalizer) does not match the URL (http://hl7.org/fhir/us/example/StructureDefinition/OBSCDSSFinalizer)
 WARNING: StructureDefinition/OBSCDSSFinalizer: StructureDefinition.snapshot.element[25].pattern.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided
-WARNING: StructureDefinition/OBSCDSSFinalizer: StructureDefinition.differential.element[5].pattern.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided
+WARNING: StructureDefinition/OBSCDSSFinalizer: StructureDefinition.differential.element[4].pattern.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided
 INFORMATION: StructureDefinition/OBSCDSSFinalizer: StructureDefinition.snapshot.element[25].pattern.ofType(CodeableConcept): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users) 
-WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/example/StructureDefinition/OBSCDSSFinalizer'): The Implementation Guide contains no examples for this profile
 ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-OBSCDSSFinalizer: URL Mismatch http://xxsomewhere.org/fhir/myig/StructureDefinition/OBSCDSSFinalizer vs http://hl7.org/fhir/us/example/StructureDefinition/OBSCDSSFinalizer
 == fsh-generated/resources/StructureDefinition-OBSCDSSInitializer.json ==
 ERROR: StructureDefinition.where(url = 'http://hl7.org/fhir/us/example/StructureDefinition/OBSCDSSInitializer'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-OBSCDSSInitializer.json - the canonical URL (http://xxsomewhere.org/fhir/myig/StructureDefinition/OBSCDSSInitializer) does not match the URL (http://hl7.org/fhir/us/example/StructureDefinition/OBSCDSSInitializer)
 WARNING: StructureDefinition/OBSCDSSInitializer: StructureDefinition.snapshot.element[23].pattern.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided
-WARNING: StructureDefinition/OBSCDSSInitializer: StructureDefinition.differential.element[4].pattern.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided
+WARNING: StructureDefinition/OBSCDSSInitializer: StructureDefinition.differential.element[3].pattern.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided
 INFORMATION: StructureDefinition/OBSCDSSInitializer: StructureDefinition.snapshot.element[23].pattern.ofType(CodeableConcept): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users) 
 ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-OBSCDSSInitializer: URL Mismatch http://xxsomewhere.org/fhir/myig/StructureDefinition/OBSCDSSInitializer vs http://hl7.org/fhir/us/example/StructureDefinition/OBSCDSSInitializer
 == fsh-generated/resources/ValueSet-ml-response-vs.json ==
