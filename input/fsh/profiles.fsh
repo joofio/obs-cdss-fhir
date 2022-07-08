@@ -4,7 +4,7 @@ Description: "The profile for asking for input for a certian CDSS case"
 Parent: CommunicationRequest
 
 * meta.profile 1..*
-* identifier 1..1 MS
+//* identifier 1..1 MS
 
 * status = #in-progress 
 * category = #instruction 
@@ -15,7 +15,7 @@ Parent: CommunicationRequest
 * payload 1..1  MS
 * payload.contentAttachment 0..0
 * payload.contentString 0..0
-* payload.contentReference  only Reference(MLParameter) 
+* payload.contentReference  only Reference(MLParameterRequest) 
 * payload.contentReference 1..1 MS
 
 Profile: MessageForRequest
@@ -26,15 +26,17 @@ Description: "The message for requesting a certain CDSS case"
 * identifier MS
 * type = #message
 * timestamp 1..1 MS
-* entry 2..2 MS
+* entry 3..3 MS
 * entry ^slicing.discriminator.type = #value
 * entry ^slicing.discriminator.path = "name"
 * entry ^slicing.rules = #open
-* entry contains request 1..1 MS and  parameter 1..1 MS  
+* entry contains messageheader 1..1 MS and request 1..1 MS and  parameter 1..1 MS  
+
+* entry[messageheader].resource only MessageHeaderCDSS
 
 * entry[request].resource only OBSCDSSInitializer
 
-* entry[parameter].resource only MLParameter
+* entry[parameter].resource only MLParameterRequest
 
 Profile: OBSCDSSFinalizer
 Title: "Prediction"
@@ -42,13 +44,14 @@ Description: "The profile for sending the response for a certain CDSS case"
 Parent: Communication
 
 * meta.profile 1..*
-* identifier MS
+//* identifier 1..1 MS
 * status = #completed
 * category = #instruction
 * inResponseTo 0..1 MS
 * sent 1..1
 * received 1..1
 * sender 1..1 MS
+* sender only Reference(MLModel)
 * payload.contentString 1..1 MS
 
 //* payload.contentCodeableConcept 1..1 MS
@@ -65,7 +68,7 @@ Parent: Device
 * type 1..1 MS
 * version.value 1..1 MS
 
-Profile: MLParameter
+Profile: MLParameterRequest
 Parent: Parameters
 Title: "Machine Learning Parameters for obstetrics"
 Description: "Inputs for machine learning model"
@@ -249,82 +252,55 @@ Description: "Inputs for machine learning model"
 * parameter[part_aep].value[x] only Coding
 
 
-Instance: MLParameterExample
-InstanceOf: MLParameter
-Description: "Example of MlParameter - Obstetrics"
-Title: "Example of MlParameter - Obstetrics"
+Profile: MLParameterResponse
+Parent: Parameters
+Title: "Machine Learning Parameters for obstetrics"
+Description: "Outputs for machine learning model"
+* parameter 2..3 MS
+* parameter.part 0..0 
+* parameter.resource 0..0 
+* parameter ^slicing.discriminator.type = #value
+* parameter ^slicing.discriminator.path = "name"
+* parameter ^slicing.rules = #open
+* parameter contains
+    result 1..1 MS and  outcome 1..1 MS  and decision 0..1 MS 
 
-* parameter[APRESENTACAO_31].valueCoding = #cefálica
-* parameter[APRESENTACAO_28].valueCoding = #None
-//* parameter[ESTIMATIVA_PESO_ECO_39].valueInteger = 
-* parameter[APRESENTACAO_30].valueCoding = #None
-* parameter[APRESENTACAO_37].valueCoding = #None
-* parameter[GRUPO_ROBSON].valueCoding = #1
-* parameter[BISHOP_SCORE].valueCoding = #None
-* parameter[PESO_INICIAL].valueInteger = 57
-//* parameter[ESTIMATIVA_PESO_ECO_32].valueInteger = 
-* parameter[IDADE_MATERNA].valueInteger = 36
-* parameter[APRESENTACAO_35].valueCoding = #None
-* parameter[IMC].valueDecimal = 19.7
-* parameter[APRESENTACAO_32].valueCoding = #None
-* parameter[APRESENTACAO_26].valueCoding = #None
-//* parameter[ESTIMATIVA_PESO_ECO_24].valueInteger
-* parameter[APRESENTACAO_34].valueCoding = #None
-//* parameter[ESTIMATIVA_PESO_ECO_40].valueInteger
-* parameter[APRESENTACAO_33].valueCoding = #None
-* parameter[APRESENTACAO_NO_PARTO].valueCoding = #"Cefálica de vértice"
-* parameter[NUMERO_CONSULTAS_PRE_NATAL].valueInteger = 14
-* parameter[APRESENTACAO_38].valueCoding = #None
-* parameter[APRESENTACAO_29].valueCoding = #None
-//* parameter[ESTIMATIVA_PESO_ECO_41].valueInteger
-* parameter[APRESENTACAO_ADMISSAO].valueCoding = #-1
-* parameter[BISHOP_EXTINCAO].valueCoding = #None
-* parameter[APRESENTACAO_27].valueCoding = #None
-//* parameter[ESTIMATIVA_PESO_ECO_33].valueInteger
-//* parameter[CESARIANAS_ANTERIOR].valueInteger
-* parameter[APRESENTACAO_36].valueCoding = #None
-//* parameter[ESTIMATIVA_PESO_ECO_37].valueInteger
-* parameter[TRAB_PARTO_ENTRADA_ESPONTANEO].valueCoding = #None
-//* parameter[ESTIMATIVA_PESO_ECO_38].valueInteger
-* parameter[part_mcdt_ctgs].valueCoding = #0
-* parameter[apres_feto_34].valueCoding = #0
-* parameter[tparto_rpm].valueCoding = #0
-* parameter[rn_ucin].valueCoding = #0
-* parameter[part_vig].valueCoding = #0
-* parameter[grav_feto_altcf].valueCoding = #0
-* parameter[tparto_esp].valueCoding = #1
-* parameter[apres_feto_34_pelve].valueCoding = #0
-* parameter[parto_comp].valueCoding = #0
-* parameter[ciru_laqt].valueCoding = #0
-* parameter[puer_comp_cica].valueCoding = #0
-* parameter[tparto_rpm_espo].valueCoding = #0
-* parameter[grav_plac].valueCoding = #0
-* parameter[parto_23P].valueCoding = #0
-* parameter[card_dhta].valueCoding = #0
-* parameter[parto_comp_cervical].valueCoding = #0
-* parameter[part_aep].valueCoding = #1
+* parameter[result].name =  "result"
+* parameter[result].value[x] only Coding
+
+* parameter[outcome].name =  "outcome"
+* parameter[outcome].value[x] only Coding
+
+* parameter[decision].name =  "decision"
+* parameter[decision].value[x] only Coding
 
 
-Instance: OBSCDSSInitializerExample
-InstanceOf: OBSCDSSInitializer
-Description: "Example of Request for prediction"
-Title: "Example of Request for prediction"
+Profile: MessageForCDSS
+Parent: Bundle
+Title: "Message for response"
+Description: "The message for response"
 
-* meta.profile = "http://hl7.org/fhir/StructureDefinition/obscdss-initializer"
+* identifier MS
+* type = #message
+* timestamp 1..1 MS
+* entry 3..3 MS
+* entry ^slicing.discriminator.type = #value
+* entry ^slicing.discriminator.path = "name"
+* entry ^slicing.rules = #open
+* entry contains messageheader 1..1 MS and request 1..1 MS and  parameter 1..1 MS  
 
-* identifier.value = "OBSCDSSInitializerExample"
-* occurrenceDateTime = "2020-01-01T00:00:00Z"
-* payload.contentReference = Reference(MLParameterExample)
+* entry[messageheader].resource only MessageHeaderCDSS
 
+* entry[request].resource only OBSCDSSInitializer or OBSCDSSFinalizer
 
+* entry[parameter].resource only MLParameterRequest or MLParameterResponse
 
+Profile: MessageHeaderCDSS
+Parent: MessageHeader
+Title: "Message for response"
+Description: "The message for response"
 
-Instance: MessageForRequestExample
-InstanceOf: MessageForRequest
-Description: "Example of Request for MessageForRequest"
-Title: "Example of Request for MessageForRequest"
-
-* timestamp = "2020-01-01T00:00:00Z"
-* entry[request].resource = OBSCDSSInitializerExample
-
-* entry[parameter].resource = MLParameterExample
+* eventCoding 1..1
+* destination.name 1..1 MS
+* destination.endpoint 1..1 MS
+* source.name 1..1 MS
