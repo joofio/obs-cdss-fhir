@@ -198,55 +198,55 @@ Description: "Inputs for machine learning model"
 * parameter[ESTIMATIVA_PESO_ECO_38].value[x] only integer
 
 * parameter[part_mcdt_ctgs].name =  "part.mcdt.ctgs"
-* parameter[part_mcdt_ctgs].value[x] only integer
+* parameter[part_mcdt_ctgs].value[x] only Coding
 
 * parameter[apres_feto_34].name =  "apres.feto.34"
-* parameter[apres_feto_34].value[x] only integer
+* parameter[apres_feto_34].value[x] only Coding
 
 * parameter[tparto_rpm].name =  "tparto.rpm"
-* parameter[tparto_rpm].value[x] only integer
+* parameter[tparto_rpm].value[x] only Coding
 
 * parameter[rn_ucin].name =  "rn.ucin"
-* parameter[rn_ucin].value[x] only integer
+* parameter[rn_ucin].value[x] only Coding
 
 * parameter[part_vig].name =  "part.vig"
-* parameter[part_vig].value[x] only integer
+* parameter[part_vig].value[x] only Coding
 
-* parameter[grav_feto_altcf].name =  "grav_feto_altcf"
-* parameter[grav_feto_altcf].value[x] only integer
+* parameter[grav_feto_altcf].name =  "grav.feto.altcf"
+* parameter[grav_feto_altcf].value[x] only Coding
 
 * parameter[tparto_esp].name =  "tparto.esp"
-* parameter[tparto_esp].value[x] only integer
+* parameter[tparto_esp].value[x] only Coding
 
 * parameter[apres_feto_34_pelve].name =  "apres.feto.34.pelve"
-* parameter[apres_feto_34_pelve].value[x] only integer
+* parameter[apres_feto_34_pelve].value[x] only Coding
 
 * parameter[parto_comp].name =  "parto.comp"
-* parameter[parto_comp].value[x] only integer
+* parameter[parto_comp].value[x] only Coding
 
 * parameter[ciru_laqt].name =  "ciru.laqt"
-* parameter[ciru_laqt].value[x] only integer
+* parameter[ciru_laqt].value[x] only Coding
 
 * parameter[puer_comp_cica].name =  "puer.comp.cica"
-* parameter[puer_comp_cica].value[x] only integer
+* parameter[puer_comp_cica].value[x] only Coding
 
 * parameter[tparto_rpm_espo].name =  "tparto.rpm.espo"
-* parameter[tparto_rpm_espo].value[x] only integer
+* parameter[tparto_rpm_espo].value[x] only Coding
 
 * parameter[grav_plac].name =  "grav.plac"
-* parameter[grav_plac].value[x] only integer
+* parameter[grav_plac].value[x] only Coding
 
 * parameter[parto_23P].name =  "parto.23P"
-* parameter[parto_23P].value[x] only integer
+* parameter[parto_23P].value[x] only Coding
 
 * parameter[card_dhta].name =  "card.dhta"
-* parameter[card_dhta].value[x] only integer
+* parameter[card_dhta].value[x] only Coding
 
 * parameter[parto_comp_cervical].name =  "parto.comp.cervical"
-* parameter[parto_comp_cervical].value[x] only integer
+* parameter[parto_comp_cervical].value[x] only Coding
 
 * parameter[part_aep].name =  "part.aep"
-* parameter[part_aep].value[x] only integer
+* parameter[part_aep].value[x] only Coding
 
 
 Instance: MLParameterExample
@@ -256,7 +256,7 @@ Title: "Example of MlParameter - Obstetrics"
 
 * parameter[APRESENTACAO_31].valueCoding = #cefálica
 * parameter[APRESENTACAO_28].valueCoding = #None
-//* parameter[ESTIMATIVA_PESO_ECO_39].valueInteger = Null
+//* parameter[ESTIMATIVA_PESO_ECO_39].valueInteger = 
 * parameter[APRESENTACAO_30].valueCoding = #None
 * parameter[APRESENTACAO_37].valueCoding = #None
 * parameter[GRUPO_ROBSON].valueCoding = #1
@@ -268,7 +268,7 @@ Title: "Example of MlParameter - Obstetrics"
 * parameter[IMC].valueDecimal = 19.7
 * parameter[APRESENTACAO_32].valueCoding = #None
 * parameter[APRESENTACAO_26].valueCoding = #None
-//* parameter[ESTIMATIVA_PESO_ECO_24].valueInteger = Null
+//* parameter[ESTIMATIVA_PESO_ECO_24].valueInteger
 * parameter[APRESENTACAO_34].valueCoding = #None
 //* parameter[ESTIMATIVA_PESO_ECO_40].valueInteger
 * parameter[APRESENTACAO_33].valueCoding = #None
@@ -286,23 +286,23 @@ Title: "Example of MlParameter - Obstetrics"
 //* parameter[ESTIMATIVA_PESO_ECO_37].valueInteger
 * parameter[TRAB_PARTO_ENTRADA_ESPONTANEO].valueCoding = #None
 //* parameter[ESTIMATIVA_PESO_ECO_38].valueInteger
-* parameter[part_mcdt_ctgs].valueInteger = 0
-* parameter[apres_feto_34].valueInteger = 0
-* parameter[tparto_rpm].valueInteger = 0
-* parameter[rn_ucin].valueInteger = 0
-* parameter[part_vig].valueInteger = 0
-* parameter[grav_feto_altcf].valueInteger = 0
-* parameter[tparto_esp].valueInteger = 1
-* parameter[apres_feto_34_pelve].valueInteger = 0
-* parameter[parto_comp].valueInteger = 0
-* parameter[ciru_laqt].valueInteger = 0
-* parameter[puer_comp_cica].valueInteger = 0
-* parameter[tparto_rpm_espo].valueInteger = 0
-* parameter[grav_plac].valueInteger = 0
-* parameter[parto_23P].valueInteger = 0
-* parameter[card_dhta].valueInteger = 0
-* parameter[parto_comp_cervical].valueInteger = 0
-* parameter[part_aep].valueInteger = 1
+* parameter[part_mcdt_ctgs].valueCoding = #0
+* parameter[apres_feto_34].valueCoding = #0
+* parameter[tparto_rpm].valueCoding = #0
+* parameter[rn_ucin].valueCoding = #0
+* parameter[part_vig].valueCoding = #0
+* parameter[grav_feto_altcf].valueCoding = #0
+* parameter[tparto_esp].valueCoding = #1
+* parameter[apres_feto_34_pelve].valueCoding = #0
+* parameter[parto_comp].valueCoding = #0
+* parameter[ciru_laqt].valueCoding = #0
+* parameter[puer_comp_cica].valueCoding = #0
+* parameter[tparto_rpm_espo].valueCoding = #0
+* parameter[grav_plac].valueCoding = #0
+* parameter[parto_23P].valueCoding = #0
+* parameter[card_dhta].valueCoding = #0
+* parameter[parto_comp_cervical].valueCoding = #0
+* parameter[part_aep].valueCoding = #1
 
 
 Instance: OBSCDSSInitializerExample
