@@ -197,71 +197,105 @@
         </parameter>
         <parameter>
           <name value="part.mcdt.ctgs"/>
-          <valueInteger value="0"/>
+          <valueCoding>
+            <code value="0"/>
+          </valueCoding>
         </parameter>
         <parameter>
           <name value="apres.feto.34"/>
-          <valueInteger value="0"/>
+          <valueCoding>
+            <code value="0"/>
+          </valueCoding>
         </parameter>
         <parameter>
           <name value="tparto.rpm"/>
-          <valueInteger value="0"/>
+          <valueCoding>
+            <code value="0"/>
+          </valueCoding>
         </parameter>
         <parameter>
           <name value="rn.ucin"/>
-          <valueInteger value="0"/>
+          <valueCoding>
+            <code value="0"/>
+          </valueCoding>
         </parameter>
         <parameter>
           <name value="part.vig"/>
-          <valueInteger value="0"/>
+          <valueCoding>
+            <code value="0"/>
+          </valueCoding>
         </parameter>
         <parameter>
-          <name value="grav_feto_altcf"/>
-          <valueInteger value="0"/>
+          <name value="grav.feto.altcf"/>
+          <valueCoding>
+            <code value="0"/>
+          </valueCoding>
         </parameter>
         <parameter>
           <name value="tparto.esp"/>
-          <valueInteger value="1"/>
+          <valueCoding>
+            <code value="1"/>
+          </valueCoding>
         </parameter>
         <parameter>
           <name value="apres.feto.34.pelve"/>
-          <valueInteger value="0"/>
+          <valueCoding>
+            <code value="0"/>
+          </valueCoding>
         </parameter>
         <parameter>
           <name value="parto.comp"/>
-          <valueInteger value="0"/>
+          <valueCoding>
+            <code value="0"/>
+          </valueCoding>
         </parameter>
         <parameter>
           <name value="ciru.laqt"/>
-          <valueInteger value="0"/>
+          <valueCoding>
+            <code value="0"/>
+          </valueCoding>
         </parameter>
         <parameter>
           <name value="puer.comp.cica"/>
-          <valueInteger value="0"/>
+          <valueCoding>
+            <code value="0"/>
+          </valueCoding>
         </parameter>
         <parameter>
           <name value="tparto.rpm.espo"/>
-          <valueInteger value="0"/>
+          <valueCoding>
+            <code value="0"/>
+          </valueCoding>
         </parameter>
         <parameter>
           <name value="grav.plac"/>
-          <valueInteger value="0"/>
+          <valueCoding>
+            <code value="0"/>
+          </valueCoding>
         </parameter>
         <parameter>
           <name value="parto.23P"/>
-          <valueInteger value="0"/>
+          <valueCoding>
+            <code value="0"/>
+          </valueCoding>
         </parameter>
         <parameter>
           <name value="card.dhta"/>
-          <valueInteger value="0"/>
+          <valueCoding>
+            <code value="0"/>
+          </valueCoding>
         </parameter>
         <parameter>
           <name value="parto.comp.cervical"/>
-          <valueInteger value="0"/>
+          <valueCoding>
+            <code value="0"/>
+          </valueCoding>
         </parameter>
         <parameter>
           <name value="part.aep"/>
-          <valueInteger value="1"/>
+          <valueCoding>
+            <code value="1"/>
+          </valueCoding>
         </parameter>
       </Parameters>
     </resource>
