@@ -166,71 +166,105 @@
     },
     {
       "name": "part.mcdt.ctgs",
-      "valueInteger": 0
+      "valueCoding": {
+        "code": "0"
+      }
     },
     {
       "name": "apres.feto.34",
-      "valueInteger": 0
+      "valueCoding": {
+        "code": "0"
+      }
     },
     {
       "name": "tparto.rpm",
-      "valueInteger": 0
+      "valueCoding": {
+        "code": "0"
+      }
     },
     {
       "name": "rn.ucin",
-      "valueInteger": 0
+      "valueCoding": {
+        "code": "0"
+      }
     },
     {
       "name": "part.vig",
-      "valueInteger": 0
+      "valueCoding": {
+        "code": "0"
+      }
     },
     {
-      "name": "grav_feto_altcf",
-      "valueInteger": 0
+      "name": "grav.feto.altcf",
+      "valueCoding": {
+        "code": "0"
+      }
     },
     {
       "name": "tparto.esp",
-      "valueInteger": 1
+      "valueCoding": {
+        "code": "1"
+      }
     },
     {
       "name": "apres.feto.34.pelve",
-      "valueInteger": 0
+      "valueCoding": {
+        "code": "0"
+      }
     },
     {
       "name": "parto.comp",
-      "valueInteger": 0
+      "valueCoding": {
+        "code": "0"
+      }
     },
     {
       "name": "ciru.laqt",
-      "valueInteger": 0
+      "valueCoding": {
+        "code": "0"
+      }
     },
     {
       "name": "puer.comp.cica",
-      "valueInteger": 0
+      "valueCoding": {
+        "code": "0"
+      }
     },
     {
       "name": "tparto.rpm.espo",
-      "valueInteger": 0
+      "valueCoding": {
+        "code": "0"
+      }
     },
     {
       "name": "grav.plac",
-      "valueInteger": 0
+      "valueCoding": {
+        "code": "0"
+      }
     },
     {
       "name": "parto.23P",
-      "valueInteger": 0
+      "valueCoding": {
+        "code": "0"
+      }
     },
     {
       "name": "card.dhta",
-      "valueInteger": 0
+      "valueCoding": {
+        "code": "0"
+      }
     },
     {
       "name": "parto.comp.cervical",
-      "valueInteger": 0
+      "valueCoding": {
+        "code": "0"
+      }
     },
     {
       "name": "part.aep",
-      "valueInteger": 1
+      "valueCoding": {
+        "code": "1"
+      }
     }
   ]
 }

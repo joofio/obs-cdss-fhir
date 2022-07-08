@@ -1,15 +1,15 @@
 ﻿XXYourComputableMyIGNameHere : Validation Results
 =========================================
 
-err = 53, warn = 52, info = 4
+err = 53, warn = 86, info = 4
 IG Publisher Version: 1.1.122
-Generated Thu Jul 07 15:44:49 UTC 2022. FHIR version 4.0.1 for OBSCDSS.fhir.uv.myig#0.1.0-test (canonical = http://xxsomewhere.org/fhir/myig)
+Generated Fri Jul 08 12:01:10 UTC 2022. FHIR version 4.0.1 for OBSCDSS.fhir.uv.myig#0.1.0-test (canonical = http://xxsomewhere.org/fhir/myig)
  Build Errors : 83 / 4 / 0
- /github/workspace/fsh-generated/resources/Bundle-MessageForRequestExample : 21 / 20 / 7
+ /github/workspace/fsh-generated/resources/Bundle-MessageForRequestExample : 21 / 37 / 7
  /github/workspace/fsh-generated/resources/CodeSystem-ml-response-cs : 2 / 1 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-ml-type-cs : 2 / 1 / 1
  /github/workspace/fsh-generated/resources/CommunicationRequest-OBSCDSSInitializerExample : 2 / 1 / 1
- /github/workspace/fsh-generated/resources/Parameters-MLParameterExample : 9 / 19 / 1
+ /github/workspace/fsh-generated/resources/Parameters-MLParameterExample : 9 / 36 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-MLModel : 2 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-MLParameter : 2 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-MessageForRequest : 2 / 0 / 1
@@ -148,6 +148,23 @@ WARNING: Bundle/MessageForRequestExample: Bundle.entry[1].resource.ofType(Parame
 ERROR: Bundle/MessageForRequestExample: Bundle.entry[1].resource.ofType(Parameters).parameter[29]: inv-1: 'A parameter must have one and only one of (value, resource, part)' Rule 'A parameter must have one and only one of (value, resource, part)' Failed
 WARNING: Bundle/MessageForRequestExample: Bundle.entry[1].resource.ofType(Parameters).parameter[30].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
 ERROR: Bundle/MessageForRequestExample: Bundle.entry[1].resource.ofType(Parameters).parameter[31]: inv-1: 'A parameter must have one and only one of (value, resource, part)' Rule 'A parameter must have one and only one of (value, resource, part)' Failed
+WARNING: Bundle/MessageForRequestExample: Bundle.entry[1].resource.ofType(Parameters).parameter[32].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+WARNING: Bundle/MessageForRequestExample: Bundle.entry[1].resource.ofType(Parameters).parameter[33].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+WARNING: Bundle/MessageForRequestExample: Bundle.entry[1].resource.ofType(Parameters).parameter[34].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+WARNING: Bundle/MessageForRequestExample: Bundle.entry[1].resource.ofType(Parameters).parameter[35].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+WARNING: Bundle/MessageForRequestExample: Bundle.entry[1].resource.ofType(Parameters).parameter[36].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+WARNING: Bundle/MessageForRequestExample: Bundle.entry[1].resource.ofType(Parameters).parameter[37].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+WARNING: Bundle/MessageForRequestExample: Bundle.entry[1].resource.ofType(Parameters).parameter[38].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+WARNING: Bundle/MessageForRequestExample: Bundle.entry[1].resource.ofType(Parameters).parameter[39].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+WARNING: Bundle/MessageForRequestExample: Bundle.entry[1].resource.ofType(Parameters).parameter[40].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+WARNING: Bundle/MessageForRequestExample: Bundle.entry[1].resource.ofType(Parameters).parameter[41].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+WARNING: Bundle/MessageForRequestExample: Bundle.entry[1].resource.ofType(Parameters).parameter[42].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+WARNING: Bundle/MessageForRequestExample: Bundle.entry[1].resource.ofType(Parameters).parameter[43].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+WARNING: Bundle/MessageForRequestExample: Bundle.entry[1].resource.ofType(Parameters).parameter[44].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+WARNING: Bundle/MessageForRequestExample: Bundle.entry[1].resource.ofType(Parameters).parameter[45].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+WARNING: Bundle/MessageForRequestExample: Bundle.entry[1].resource.ofType(Parameters).parameter[46].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+WARNING: Bundle/MessageForRequestExample: Bundle.entry[1].resource.ofType(Parameters).parameter[47].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+WARNING: Bundle/MessageForRequestExample: Bundle.entry[1].resource.ofType(Parameters).parameter[48].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
 ERROR: Bundle/MessageForRequestExample: Bundle.entry[1].resource: The first entry in a message must be a MessageHeader
 ERROR: Bundle/MessageForRequestExample: Bundle.entry[0]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry  
 ERROR: Bundle/MessageForRequestExample: Bundle.entry[1]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry  
@@ -192,6 +209,23 @@ WARNING: Parameters/MLParameterExample: Parameters.parameter[28].value.ofType(Co
 ERROR: Parameters/MLParameterExample: Parameters.parameter[29]: inv-1: 'A parameter must have one and only one of (value, resource, part)' Rule 'A parameter must have one and only one of (value, resource, part)' Failed
 WARNING: Parameters/MLParameterExample: Parameters.parameter[30].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
 ERROR: Parameters/MLParameterExample: Parameters.parameter[31]: inv-1: 'A parameter must have one and only one of (value, resource, part)' Rule 'A parameter must have one and only one of (value, resource, part)' Failed
+WARNING: Parameters/MLParameterExample: Parameters.parameter[32].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+WARNING: Parameters/MLParameterExample: Parameters.parameter[33].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+WARNING: Parameters/MLParameterExample: Parameters.parameter[34].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+WARNING: Parameters/MLParameterExample: Parameters.parameter[35].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+WARNING: Parameters/MLParameterExample: Parameters.parameter[36].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+WARNING: Parameters/MLParameterExample: Parameters.parameter[37].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+WARNING: Parameters/MLParameterExample: Parameters.parameter[38].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+WARNING: Parameters/MLParameterExample: Parameters.parameter[39].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+WARNING: Parameters/MLParameterExample: Parameters.parameter[40].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+WARNING: Parameters/MLParameterExample: Parameters.parameter[41].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+WARNING: Parameters/MLParameterExample: Parameters.parameter[42].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+WARNING: Parameters/MLParameterExample: Parameters.parameter[43].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+WARNING: Parameters/MLParameterExample: Parameters.parameter[44].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+WARNING: Parameters/MLParameterExample: Parameters.parameter[45].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+WARNING: Parameters/MLParameterExample: Parameters.parameter[46].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+WARNING: Parameters/MLParameterExample: Parameters.parameter[47].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+WARNING: Parameters/MLParameterExample: Parameters.parameter[48].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
 == fsh-generated/resources/StructureDefinition-MLModel.json ==
 ERROR: StructureDefinition.where(url = 'http://hl7.org/fhir/us/example/StructureDefinition/MLModel'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-MLModel.json - the canonical URL (http://xxsomewhere.org/fhir/myig/StructureDefinition/MLModel) does not match the URL (http://hl7.org/fhir/us/example/StructureDefinition/MLModel)
 WARNING: StructureDefinition.where(url = 'http://hl7.org/fhir/us/example/StructureDefinition/MLModel'): The Implementation Guide contains no examples for this profile
