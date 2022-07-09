@@ -3,6 +3,7 @@ Instance: MLParameterRequestExample
 InstanceOf: MLParameterRequest
 Description: "Example of MlParameter - Obstetrics"
 Title: "Example of MlParameter - Obstetrics"
+Usage: #example
 
 * parameter[APRESENTACAO_31].valueCoding = #cefálica
 * parameter[APRESENTACAO_28].valueCoding = #None
@@ -59,6 +60,7 @@ Instance: OBSCDSSInitializerExample
 InstanceOf: OBSCDSSInitializer
 Description: "Example of Request for prediction"
 Title: "Example of Request for prediction"
+Usage: #example
 
 * meta.profile = "http://hl7.org/fhir/StructureDefinition/obscdss-initializer"
 
@@ -70,6 +72,7 @@ Instance: MessageHeaderCDSSExampleRequest
 InstanceOf: MessageHeaderCDSS
 Description: "Example of Request for MessageForRequest"
 Title: "Example of Request for MessageForRequest"
+Usage: #example
 
 * eventCoding = #obs-cds
 * destination.name = "CDSS-System"
@@ -83,6 +86,7 @@ Instance: MessageForCDSSRequest
 InstanceOf: MessageForCDSS
 Description: "Example of Request for MessageForRequest"
 Title: "Example of Request for MessageForRequest"
+Usage: #example
 
 * timestamp = "2020-01-01T00:00:00Z"
 
@@ -99,6 +103,7 @@ Instance: PredictionExample
 InstanceOf: OBSCDSSFinalizer
 Description: "Example of Request for MessageForRequest"
 Title: "Example of Request for MessageForRequest"
+Usage: #example
 
 * sent = "2020-01-01T00:00:00Z"
 * id = "sss"
@@ -113,6 +118,7 @@ Instance: MLModelExample
 InstanceOf: MLModel
 Description: "Example of Request for MessageForRequest"
 Title: "Example of Request for MessageForRequest"
+Usage: #example
 
 * id = "sss"
 * identifier.value = "sss"
@@ -125,6 +131,7 @@ Instance: MessageHeaderCDSSExampleResponse
 InstanceOf: MessageHeaderCDSS
 Description: "Example of response for MessageForRequest"
 Title: "Example of response for CDSS"
+Usage: #example
 
 * eventCoding = #obs-cds
 * destination.name = "Requester"
@@ -137,6 +144,7 @@ Instance: MLParameterResponseExample
 InstanceOf: MLParameterResponse
 Description: "Example of MlParameter - Obstetrics"
 Title: "Example of MlParameter - Obstetrics"
+Usage: #example
 
 * parameter[result].valueCoding = #Vaginal
 * parameter[outcome].valueCoding = #None
@@ -147,9 +155,9 @@ Instance: MessageForCDSSResponse
 InstanceOf: MessageForCDSS
 Description: "Example of Request for MessageForRequest"
 Title: "Example of Request for MessageForRequest"
+Usage: #example
 
 * timestamp = "2020-01-01T00:00:00Z"
 * entry[messageheader].resource = MessageHeaderCDSSExampleResponse 
 * entry[request].resource = PredictionExample
-
 * entry[parameter].resource = MLParameterResponseExample
