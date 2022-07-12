@@ -6,7 +6,7 @@ Parent: CommunicationRequest
 * meta.profile 1..*
 //* identifier 1..1 MS
 
-* status = #in-progress 
+* status = #active 
 * category = #instruction 
 
 * occurrencePeriod 0..0
