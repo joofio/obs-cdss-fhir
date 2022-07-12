@@ -72,7 +72,7 @@ Profile: MLParameterRequest
 Parent: Parameters
 Title: "Machine Learning Parameters for obstetrics"
 Description: "Inputs for machine learning model"
-* parameter 49..49 MS
+* parameter 49..* MS
 * parameter.part 0..0 
 * parameter.resource 0..0 
 * parameter ^slicing.discriminator.type = #value
@@ -103,7 +103,7 @@ Description: "Inputs for machine learning model"
     puer_comp_cica 1..1 MS and tparto_rpm_espo 1..1 MS and
     grav_plac 1..1 MS and parto_23P 1..1 MS and
     card_dhta 1..1 MS and  parto_comp_cervical 1..1 MS and
-    part_aep 1..1 MS 
+    part_aep 1..1 MS and TIPO_PARTO 0..1 MS
 * parameter[APRESENTACAO_31].name =  "APRESENTACAO_31"
 * parameter[APRESENTACAO_31].value[x] only Coding
 
@@ -250,6 +250,9 @@ Description: "Inputs for machine learning model"
 
 * parameter[part_aep].name =  "part.aep"
 * parameter[part_aep].value[x] only Coding
+
+* parameter[TIPO_PARTO].name =  "TIPO_PARTO"
+* parameter[TIPO_PARTO].value[x] only Coding
 
 
 Profile: MLParameterResponse
