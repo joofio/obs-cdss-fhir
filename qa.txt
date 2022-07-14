@@ -3,7 +3,7 @@
 
 err = 91, warn = 107, info = 8
 IG Publisher Version: 1.1.125
-Generated Thu Jul 14 16:00:23 UTC 2022. FHIR version 4.0.1 for OBSCDSS.fhir.uv.myig#0.1.0-test (canonical = http://xxsomewhere.org/fhir/myig)
+Generated Thu Jul 14 16:28:42 UTC 2022. FHIR version 4.0.1 for OBSCDSS.fhir.uv.myig#0.1.0-test (canonical = http://xxsomewhere.org/fhir/myig)
  Build Errors : 143 / 10 / 0
  /github/workspace/fsh-generated/resources/Bundle-MessageForCDSSRequest : 24 / 40 / 10
  /github/workspace/fsh-generated/resources/Bundle-MessageForCDSSResponse : 19 / 7 / 10

@@ -26,7 +26,7 @@
   fhir:StructureDefinition.name [ fhir:value "OBSCDSSInitializer"];
   fhir:StructureDefinition.title [ fhir:value "Request for prediction"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2022-07-14T15:59:36+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-07-14T16:27:57+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "xxxYour Work Group"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
