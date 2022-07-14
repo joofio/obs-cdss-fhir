@@ -111,7 +111,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Parameters.parameter:ESTIMATIVA_PESO_ECO_39.name","Parameters.parameter.name","","","",1,1,"","","Y","string {[]} {[]}
 ","Name from the definition","The name of the parameter (reference to the operation definition).","","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""ESTIMATIVA_PESO_ECO_39""/>","","","",,,,,"",,,,"Parameters.parameter.name",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"Parameters.parameter:ESTIMATIVA_PESO_ECO_39.value[x]","Parameters.parameter.value[x]","","","",0,1,"","","Y","integer {[]} {[]}
+"Parameters.parameter:ESTIMATIVA_PESO_ECO_39.value[x]","Parameters.parameter.value[x]","","","",0,1,"","","Y","decimal {[]} {[]}
 ","If parameter is a data type","If the parameter is a data type.","","","","","","","","","",,,,,"",,,,"Parameters.parameter.value[x]",0,1,"inv-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
@@ -273,7 +273,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Parameters.parameter:ESTIMATIVA_PESO_ECO_32.name","Parameters.parameter.name","","","",1,1,"","","Y","string {[]} {[]}
 ","Name from the definition","The name of the parameter (reference to the operation definition).","","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""ESTIMATIVA_PESO_ECO_32""/>","","","",,,,,"",,,,"Parameters.parameter.name",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"Parameters.parameter:ESTIMATIVA_PESO_ECO_32.value[x]","Parameters.parameter.value[x]","","","",0,1,"","","Y","integer {[]} {[]}
+"Parameters.parameter:ESTIMATIVA_PESO_ECO_32.value[x]","Parameters.parameter.value[x]","","","",0,1,"","","Y","decimal {[]} {[]}
 ","If parameter is a data type","If the parameter is a data type.","","","","","","","","","",,,,,"",,,,"Parameters.parameter.value[x]",0,1,"inv-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
@@ -435,7 +435,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Parameters.parameter:ESTIMATIVA_PESO_ECO_24.name","Parameters.parameter.name","","","",1,1,"","","Y","string {[]} {[]}
 ","Name from the definition","The name of the parameter (reference to the operation definition).","","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""ESTIMATIVA_PESO_ECO_24""/>","","","",,,,,"",,,,"Parameters.parameter.name",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"Parameters.parameter:ESTIMATIVA_PESO_ECO_24.value[x]","Parameters.parameter.value[x]","","","",0,1,"","","Y","integer {[]} {[]}
+"Parameters.parameter:ESTIMATIVA_PESO_ECO_24.value[x]","Parameters.parameter.value[x]","","","",0,1,"","","Y","decimal {[]} {[]}
 ","If parameter is a data type","If the parameter is a data type.","","","","","","","","","",,,,,"",,,,"Parameters.parameter.value[x]",0,1,"inv-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
@@ -489,7 +489,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Parameters.parameter:ESTIMATIVA_PESO_ECO_40.name","Parameters.parameter.name","","","",1,1,"","","Y","string {[]} {[]}
 ","Name from the definition","The name of the parameter (reference to the operation definition).","","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""ESTIMATIVA_PESO_ECO_40""/>","","","",,,,,"",,,,"Parameters.parameter.name",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"Parameters.parameter:ESTIMATIVA_PESO_ECO_40.value[x]","Parameters.parameter.value[x]","","","",0,1,"","","Y","integer {[]} {[]}
+"Parameters.parameter:ESTIMATIVA_PESO_ECO_40.value[x]","Parameters.parameter.value[x]","","","",0,1,"","","Y","decimal {[]} {[]}
 ","If parameter is a data type","If the parameter is a data type.","","","","","","","","","",,,,,"",,,,"Parameters.parameter.value[x]",0,1,"inv-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
@@ -651,7 +651,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Parameters.parameter:ESTIMATIVA_PESO_ECO_41.name","Parameters.parameter.name","","","",1,1,"","","Y","string {[]} {[]}
 ","Name from the definition","The name of the parameter (reference to the operation definition).","","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""ESTIMATIVA_PESO_ECO_41""/>","","","",,,,,"",,,,"Parameters.parameter.name",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"Parameters.parameter:ESTIMATIVA_PESO_ECO_41.value[x]","Parameters.parameter.value[x]","","","",0,1,"","","Y","integer {[]} {[]}
+"Parameters.parameter:ESTIMATIVA_PESO_ECO_41.value[x]","Parameters.parameter.value[x]","","","",0,1,"","","Y","decimal {[]} {[]}
 ","If parameter is a data type","If the parameter is a data type.","","","","","","","","","",,,,,"",,,,"Parameters.parameter.value[x]",0,1,"inv-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
@@ -759,7 +759,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Parameters.parameter:ESTIMATIVA_PESO_ECO_33.name","Parameters.parameter.name","","","",1,1,"","","Y","string {[]} {[]}
 ","Name from the definition","The name of the parameter (reference to the operation definition).","","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""ESTIMATIVA_PESO_ECO_33""/>","","","",,,,,"",,,,"Parameters.parameter.name",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"Parameters.parameter:ESTIMATIVA_PESO_ECO_33.value[x]","Parameters.parameter.value[x]","","","",0,1,"","","Y","integer {[]} {[]}
+"Parameters.parameter:ESTIMATIVA_PESO_ECO_33.value[x]","Parameters.parameter.value[x]","","","",0,1,"","","Y","decimal {[]} {[]}
 ","If parameter is a data type","If the parameter is a data type.","","","","","","","","","",,,,,"",,,,"Parameters.parameter.value[x]",0,1,"inv-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
@@ -840,7 +840,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Parameters.parameter:ESTIMATIVA_PESO_ECO_37.name","Parameters.parameter.name","","","",1,1,"","","Y","string {[]} {[]}
 ","Name from the definition","The name of the parameter (reference to the operation definition).","","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""ESTIMATIVA_PESO_ECO_37""/>","","","",,,,,"",,,,"Parameters.parameter.name",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"Parameters.parameter:ESTIMATIVA_PESO_ECO_37.value[x]","Parameters.parameter.value[x]","","","",0,1,"","","Y","integer {[]} {[]}
+"Parameters.parameter:ESTIMATIVA_PESO_ECO_37.value[x]","Parameters.parameter.value[x]","","","",0,1,"","","Y","decimal {[]} {[]}
 ","If parameter is a data type","If the parameter is a data type.","","","","","","","","","",,,,,"",,,,"Parameters.parameter.value[x]",0,1,"inv-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
@@ -894,7 +894,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Parameters.parameter:ESTIMATIVA_PESO_ECO_38.name","Parameters.parameter.name","","","",1,1,"","","Y","string {[]} {[]}
 ","Name from the definition","The name of the parameter (reference to the operation definition).","","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""ESTIMATIVA_PESO_ECO_38""/>","","","",,,,,"",,,,"Parameters.parameter.name",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"Parameters.parameter:ESTIMATIVA_PESO_ECO_38.value[x]","Parameters.parameter.value[x]","","","",0,1,"","","Y","integer {[]} {[]}
+"Parameters.parameter:ESTIMATIVA_PESO_ECO_38.value[x]","Parameters.parameter.value[x]","","","",0,1,"","","Y","decimal {[]} {[]}
 ","If parameter is a data type","If the parameter is a data type.","","","","","","","","","",,,,,"",,,,"Parameters.parameter.value[x]",0,1,"inv-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
