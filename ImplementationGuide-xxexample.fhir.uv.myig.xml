@@ -12,7 +12,7 @@
   <title value="xxYour User Friendly Name for MyIG Here"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2022-07-09T09:32:33+00:00"/>
+  <date value="2022-07-14T15:59:36+00:00"/>
   <publisher value="xxxYour Work Group"/>
   <contact>
     <telecom>
@@ -238,43 +238,11 @@
     </extension>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
+        <valueString value="Communication"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/MLParameterResponse"/>
+        <reference value="Communication/sss"/>
       </reference>
-      <name value="Machine Learning Parameters for obstetrics"/>
-      <description value="Outputs for machine learning model"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/MLModel"/>
-      </reference>
-      <name value="Machine Learning Model"/>
-      <description value="The profile for Defining Machine Learning Models for CDSS"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/ml-response-cs"/>
-      </reference>
-      <name value="Model Responses Code System"/>
-      <description value="Model Responses Code System"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/ml-response-vs"/>
-      </reference>
-      <name value="Model Responses value set"/>
-      <description value="Model Responses value set"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -282,60 +250,6 @@
       </extension>
       <reference>
         <reference value="Bundle/MessageForCDSSRequest"/>
-      </reference>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/OBSCDSSInitializer"/>
-      </reference>
-      <name value="Request for prediction"/>
-      <description value="The profile for asking for input for a certian CDSS case"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/ml-type-cs"/>
-      </reference>
-      <name value="Machine Learning Models code system"/>
-      <description value="Machine Learning Models code system"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="MessageHeader"/>
-      </extension>
-      <reference>
-        <reference value="MessageHeader/MessageHeaderCDSSExampleResponse"/>
-      </reference>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Parameters"/>
-      </extension>
-      <reference>
-        <reference value="Parameters/MLParameterRequestExample"/>
-      </reference>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/MessageForRequest"/>
-      </reference>
-      <name value="Message for request"/>
-      <description value="The message for requesting a certain CDSS case"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="MessageHeader"/>
-      </extension>
-      <reference>
-        <reference value="MessageHeader/MessageHeaderCDSSExampleRequest"/>
       </reference>
     </resource>
     <resource>
@@ -353,43 +267,17 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/OBSCDSSFinalizer"/>
+        <reference value="StructureDefinition/MessageForRequest"/>
       </reference>
-      <name value="Prediction"/>
-      <description value="The profile for sending the response for a certain CDSS case"/>
+      <name value="Message for request"/>
+      <description value="The message for requesting a certain CDSS case"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
+        <valueString value="MessageHeader"/>
       </extension>
       <reference>
-        <reference value="ValueSet/ml-type-vs"/>
-      </reference>
-      <name value="Machine Learning Models value set"/>
-      <description value="Machine Learning Models value set"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CommunicationRequest"/>
-      </extension>
-      <reference>
-        <reference value="CommunicationRequest/OBSCDSSInitializerExample"/>
-      </reference>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Device"/>
-      </extension>
-      <reference>
-        <reference value="Device/sss"/>
-      </reference>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Parameters"/>
-      </extension>
-      <reference>
-        <reference value="Parameters/MLParameterResponseExample"/>
+        <reference value="MessageHeader/MessageHeaderCDSSExampleResponse"/>
       </reference>
     </resource>
     <resource>
@@ -404,10 +292,30 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Communication"/>
+        <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="Communication/sss"/>
+        <reference value="ValueSet/ml-type-vs"/>
+      </reference>
+      <name value="Machine Learning Models value set"/>
+      <description value="Machine Learning Models value set"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/ml-response-cs"/>
+      </reference>
+      <name value="Model Responses Code System"/>
+      <description value="Model Responses Code System"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Parameters"/>
+      </extension>
+      <reference>
+        <reference value="Parameters/MLParameterResponseExample"/>
       </reference>
     </resource>
     <resource>
@@ -423,10 +331,102 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/OBSCDSSInitializer"/>
+      </reference>
+      <name value="Request for prediction"/>
+      <description value="The profile for asking for input for a certian CDSS case"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MessageHeader"/>
+      </extension>
+      <reference>
+        <reference value="MessageHeader/MessageHeaderCDSSExampleRequest"/>
+      </reference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/ml-response-vs"/>
+      </reference>
+      <name value="Model Responses value set"/>
+      <description value="Model Responses value set"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/OBSCDSSFinalizer"/>
+      </reference>
+      <name value="Prediction"/>
+      <description value="The profile for sending the response for a certain CDSS case"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/MessageHeaderCDSS"/>
       </reference>
       <name value="Message for response"/>
       <description value="The message for response"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/MLModel"/>
+      </reference>
+      <name value="Machine Learning Model"/>
+      <description value="The profile for Defining Machine Learning Models for CDSS"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/ml-type-cs"/>
+      </reference>
+      <name value="Machine Learning Models code system"/>
+      <description value="Machine Learning Models code system"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Parameters"/>
+      </extension>
+      <reference>
+        <reference value="Parameters/MLParameterRequestExample"/>
+      </reference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CommunicationRequest"/>
+      </extension>
+      <reference>
+        <reference value="CommunicationRequest/OBSCDSSInitializerExample"/>
+      </reference>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/MLParameterResponse"/>
+      </reference>
+      <name value="Machine Learning Parameters for obstetrics"/>
+      <description value="Outputs for machine learning model"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Device"/>
+      </extension>
+      <reference>
+        <reference value="Device/sss"/>
+      </reference>
     </resource>
     <page>
       <nameUrl value="toc.html"/>
