@@ -111,7 +111,7 @@ Description: "Inputs for machine learning model"
 * parameter[APRESENTACAO_28].value[x] only Coding
 
 * parameter[ESTIMATIVA_PESO_ECO_39].name =  "ESTIMATIVA_PESO_ECO_39"
-* parameter[ESTIMATIVA_PESO_ECO_39].value[x] only integer
+* parameter[ESTIMATIVA_PESO_ECO_39].value[x] only decimal
 
 * parameter[APRESENTACAO_30].name =  "APRESENTACAO_30"
 * parameter[APRESENTACAO_30].value[x] only Coding
@@ -129,7 +129,7 @@ Description: "Inputs for machine learning model"
 * parameter[PESO_INICIAL].value[x] only integer
 
 * parameter[ESTIMATIVA_PESO_ECO_32].name =  "ESTIMATIVA_PESO_ECO_32"
-* parameter[ESTIMATIVA_PESO_ECO_32].value[x] only integer
+* parameter[ESTIMATIVA_PESO_ECO_32].value[x] only decimal
 
 * parameter[IDADE_MATERNA].name =  "IDADE_MATERNA"
 * parameter[IDADE_MATERNA].value[x] only integer
@@ -147,13 +147,13 @@ Description: "Inputs for machine learning model"
 * parameter[APRESENTACAO_26].value[x] only Coding
 
 * parameter[ESTIMATIVA_PESO_ECO_24].name =  "ESTIMATIVA_PESO_ECO_24"
-* parameter[ESTIMATIVA_PESO_ECO_24].value[x] only integer
+* parameter[ESTIMATIVA_PESO_ECO_24].value[x] only decimal
 
 * parameter[APRESENTACAO_34].name =  "APRESENTACAO_34"
 * parameter[APRESENTACAO_34].value[x] only Coding
 
 * parameter[ESTIMATIVA_PESO_ECO_40].name =  "ESTIMATIVA_PESO_ECO_40"
-* parameter[ESTIMATIVA_PESO_ECO_40].value[x] only integer
+* parameter[ESTIMATIVA_PESO_ECO_40].value[x] only decimal
 
 * parameter[APRESENTACAO_33].name =  "APRESENTACAO_33"
 * parameter[APRESENTACAO_33].value[x] only Coding
@@ -171,7 +171,7 @@ Description: "Inputs for machine learning model"
 * parameter[APRESENTACAO_29].value[x] only Coding
 
 * parameter[ESTIMATIVA_PESO_ECO_41].name =  "ESTIMATIVA_PESO_ECO_41"
-* parameter[ESTIMATIVA_PESO_ECO_41].value[x] only integer
+* parameter[ESTIMATIVA_PESO_ECO_41].value[x] only decimal
 
 * parameter[APRESENTACAO_ADMISSAO].name =  "APRESENTACAO_ADMISSAO"
 * parameter[APRESENTACAO_ADMISSAO].value[x] only Coding
@@ -183,7 +183,7 @@ Description: "Inputs for machine learning model"
 * parameter[APRESENTACAO_27].value[x] only Coding
 
 * parameter[ESTIMATIVA_PESO_ECO_33].name =  "ESTIMATIVA_PESO_ECO_33"
-* parameter[ESTIMATIVA_PESO_ECO_33].value[x] only integer
+* parameter[ESTIMATIVA_PESO_ECO_33].value[x] only decimal
 
 * parameter[CESARIANAS_ANTERIOR].name =  "CESARIANAS_ANTERIOR"
 * parameter[CESARIANAS_ANTERIOR].value[x] only integer
@@ -192,13 +192,13 @@ Description: "Inputs for machine learning model"
 * parameter[APRESENTACAO_36].value[x] only Coding
 
 * parameter[ESTIMATIVA_PESO_ECO_37].name =  "ESTIMATIVA_PESO_ECO_37"
-* parameter[ESTIMATIVA_PESO_ECO_37].value[x] only integer
+* parameter[ESTIMATIVA_PESO_ECO_37].value[x] only decimal
 
 * parameter[TRAB_PARTO_ENTRADA_ESPONTANEO].name =  "TRAB_PARTO_ENTRADA_ESPONTANEO"
 * parameter[TRAB_PARTO_ENTRADA_ESPONTANEO].value[x] only Coding
 
 * parameter[ESTIMATIVA_PESO_ECO_38].name =  "ESTIMATIVA_PESO_ECO_38"
-* parameter[ESTIMATIVA_PESO_ECO_38].value[x] only integer
+* parameter[ESTIMATIVA_PESO_ECO_38].value[x] only decimal
 
 * parameter[part_mcdt_ctgs].name =  "part.mcdt.ctgs"
 * parameter[part_mcdt_ctgs].value[x] only Coding
