@@ -11,7 +11,7 @@
   "title": "xxYour User Friendly Name for MyIG Here",
   "status": "draft",
   "experimental": false,
-  "date": "2022-07-09T09:32:33+00:00",
+  "date": "2022-07-14T15:59:36+00:00",
   "publisher": "xxxYour Work Group",
   "contact": [
     {
@@ -380,53 +380,12 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource"
+            "valueString": "Communication"
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/MLParameterResponse"
-        },
-        "name": "Machine Learning Parameters for obstetrics",
-        "description": "Outputs for machine learning model"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/MLModel"
-        },
-        "name": "Machine Learning Model",
-        "description": "The profile for Defining Machine Learning Models for CDSS"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "CodeSystem"
-          }
-        ],
-        "reference": {
-          "reference": "CodeSystem/ml-response-cs"
-        },
-        "name": "Model Responses Code System",
-        "description": "Model Responses Code System"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/ml-response-vs"
-        },
-        "name": "Model Responses value set",
-        "description": "Model Responses value set"
+          "reference": "Communication/sss"
+        }
       },
       {
         "extension": [
@@ -437,78 +396,6 @@
         ],
         "reference": {
           "reference": "Bundle/MessageForCDSSRequest"
-        }
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/OBSCDSSInitializer"
-        },
-        "name": "Request for prediction",
-        "description": "The profile for asking for input for a certian CDSS case"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "CodeSystem"
-          }
-        ],
-        "reference": {
-          "reference": "CodeSystem/ml-type-cs"
-        },
-        "name": "Machine Learning Models code system",
-        "description": "Machine Learning Models code system"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "MessageHeader"
-          }
-        ],
-        "reference": {
-          "reference": "MessageHeader/MessageHeaderCDSSExampleResponse"
-        }
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Parameters"
-          }
-        ],
-        "reference": {
-          "reference": "Parameters/MLParameterRequestExample"
-        }
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/MessageForRequest"
-        },
-        "name": "Message for request",
-        "description": "The message for requesting a certain CDSS case"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "MessageHeader"
-          }
-        ],
-        "reference": {
-          "reference": "MessageHeader/MessageHeaderCDSSExampleRequest"
         }
       },
       {
@@ -532,55 +419,20 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/OBSCDSSFinalizer"
+          "reference": "StructureDefinition/MessageForRequest"
         },
-        "name": "Prediction",
-        "description": "The profile for sending the response for a certain CDSS case"
+        "name": "Message for request",
+        "description": "The message for requesting a certain CDSS case"
       },
       {
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
+            "valueString": "MessageHeader"
           }
         ],
         "reference": {
-          "reference": "ValueSet/ml-type-vs"
-        },
-        "name": "Machine Learning Models value set",
-        "description": "Machine Learning Models value set"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "CommunicationRequest"
-          }
-        ],
-        "reference": {
-          "reference": "CommunicationRequest/OBSCDSSInitializerExample"
-        }
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Device"
-          }
-        ],
-        "reference": {
-          "reference": "Device/sss"
-        }
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Parameters"
-          }
-        ],
-        "reference": {
-          "reference": "Parameters/MLParameterResponseExample"
+          "reference": "MessageHeader/MessageHeaderCDSSExampleResponse"
         }
       },
       {
@@ -600,11 +452,37 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Communication"
+            "valueString": "ValueSet"
           }
         ],
         "reference": {
-          "reference": "Communication/sss"
+          "reference": "ValueSet/ml-type-vs"
+        },
+        "name": "Machine Learning Models value set",
+        "description": "Machine Learning Models value set"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/ml-response-cs"
+        },
+        "name": "Model Responses Code System",
+        "description": "Model Responses Code System"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Parameters"
+          }
+        ],
+        "reference": {
+          "reference": "Parameters/MLParameterResponseExample"
         }
       },
       {
@@ -626,10 +504,132 @@
           }
         ],
         "reference": {
+          "reference": "StructureDefinition/OBSCDSSInitializer"
+        },
+        "name": "Request for prediction",
+        "description": "The profile for asking for input for a certian CDSS case"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "MessageHeader"
+          }
+        ],
+        "reference": {
+          "reference": "MessageHeader/MessageHeaderCDSSExampleRequest"
+        }
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/ml-response-vs"
+        },
+        "name": "Model Responses value set",
+        "description": "Model Responses value set"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/OBSCDSSFinalizer"
+        },
+        "name": "Prediction",
+        "description": "The profile for sending the response for a certain CDSS case"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
           "reference": "StructureDefinition/MessageHeaderCDSS"
         },
         "name": "Message for response",
         "description": "The message for response"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/MLModel"
+        },
+        "name": "Machine Learning Model",
+        "description": "The profile for Defining Machine Learning Models for CDSS"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/ml-type-cs"
+        },
+        "name": "Machine Learning Models code system",
+        "description": "Machine Learning Models code system"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Parameters"
+          }
+        ],
+        "reference": {
+          "reference": "Parameters/MLParameterRequestExample"
+        }
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CommunicationRequest"
+          }
+        ],
+        "reference": {
+          "reference": "CommunicationRequest/OBSCDSSInitializerExample"
+        }
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/MLParameterResponse"
+        },
+        "name": "Machine Learning Parameters for obstetrics",
+        "description": "Outputs for machine learning model"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Device"
+          }
+        ],
+        "reference": {
+          "reference": "Device/sss"
+        }
       }
     ],
     "page": {

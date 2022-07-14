@@ -1,16 +1,16 @@
 ﻿XXYourComputableMyIGNameHere : Validation Results
 =========================================
 
-err = 93, warn = 107, info = 8
-IG Publisher Version: 1.1.122
-Generated Sat Jul 09 09:33:11 UTC 2022. FHIR version 4.0.1 for OBSCDSS.fhir.uv.myig#0.1.0-test (canonical = http://xxsomewhere.org/fhir/myig)
+err = 91, warn = 107, info = 8
+IG Publisher Version: 1.1.125
+Generated Thu Jul 14 16:00:23 UTC 2022. FHIR version 4.0.1 for OBSCDSS.fhir.uv.myig#0.1.0-test (canonical = http://xxsomewhere.org/fhir/myig)
  Build Errors : 143 / 10 / 0
- /github/workspace/fsh-generated/resources/Bundle-MessageForCDSSRequest : 25 / 40 / 10
+ /github/workspace/fsh-generated/resources/Bundle-MessageForCDSSRequest : 24 / 40 / 10
  /github/workspace/fsh-generated/resources/Bundle-MessageForCDSSResponse : 19 / 7 / 10
  /github/workspace/fsh-generated/resources/CodeSystem-ml-response-cs : 2 / 1 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-ml-type-cs : 2 / 1 / 1
  /github/workspace/fsh-generated/resources/Communication-sss : 4 / 1 / 1
- /github/workspace/fsh-generated/resources/CommunicationRequest-OBSCDSSInitializerExample : 2 / 1 / 1
+ /github/workspace/fsh-generated/resources/CommunicationRequest-OBSCDSSInitializerExample : 1 / 1 / 1
  /github/workspace/fsh-generated/resources/Device-sss : 1 / 0 / 1
  /github/workspace/fsh-generated/resources/MessageHeader-MessageHeaderCDSSExampleRequest : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/MessageHeader-MessageHeaderCDSSExampleResponse : 0 / 1 / 1
@@ -30,24 +30,24 @@ Generated Sat Jul 09 09:33:11 UTC 2022. FHIR version 4.0.1 for OBSCDSS.fhir.uv.m
 </table>
 == n/a ==
 WARNING: ImplementationGuide.id: The Implementation Guide Resource id should be OBSCDSS.fhir.uv.myig
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Communication/sss.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Communication/sss.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Bundle/MessageForCDSSRequest.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Bundle/MessageForCDSSRequest.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource MessageHeader/MessageHeaderCDSSExampleResponse.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MessageHeader/MessageHeaderCDSSExampleResponse.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Parameters/MLParameterRequestExample.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Parameters/MLParameterRequestExample.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Parameters/MLParameterResponseExample.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Parameters/MLParameterResponseExample.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Bundle/MessageForCDSSResponse.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Bundle/MessageForCDSSResponse.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource MessageHeader/MessageHeaderCDSSExampleRequest.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MessageHeader/MessageHeaderCDSSExampleRequest.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Parameters/MLParameterRequestExample.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Parameters/MLParameterRequestExample.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource CommunicationRequest/OBSCDSSInitializerExample.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CommunicationRequest/OBSCDSSInitializerExample.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Device/sss.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Device/sss.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Parameters/MLParameterResponseExample.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Parameters/MLParameterResponseExample.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Communication/sss.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Communication/sss.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Bundle/MessageForCDSSResponse.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Bundle/MessageForCDSSResponse.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: /github/workspace/output/Bundle-MessageForCDSSRequest.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
 ERROR: /github/workspace/output/Bundle-MessageForCDSSRequest.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 139, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
 ERROR: /github/workspace/output/Bundle-MessageForCDSSRequest.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 141, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
@@ -197,7 +197,6 @@ INFORMATION: Bundle/MessageForCDSSRequest: Bundle: Bundle.entry:request: Unable 
 INFORMATION: Bundle/MessageForCDSSRequest: Bundle: Bundle.entry:parameter: Unable to check minimum required (Bundle.entry) due to lack of slicing validation (from http://hl7.org/fhir/us/example/StructureDefinition/MessageForCDSS)
 WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[0].resource.ofType(MessageHeader).event.ofType(Coding): A code with no system has no defined meaning. A system should be provided
 ERROR: Bundle/MessageForCDSSRequest: Bundle.entry[1].resource.ofType(CommunicationRequest).meta.profile[1]: Canonical URL 'http://hl7.org/fhir/StructureDefinition/obscdss-initializer' does not resolve
-ERROR: Bundle/MessageForCDSSRequest: Bundle.entry[1].resource.ofType(CommunicationRequest).status: The value provided ('in-progress') is not in the value set 'RequestStatus' (http://hl7.org/fhir/ValueSet/request-status|4.0.1), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/request-status#in-progress in http://hl7.org/fhir/request-status)
 ERROR: Bundle/MessageForCDSSRequest: Bundle.entry[1]: Bundle entry missing fullUrl
 ERROR: Bundle/MessageForCDSSRequest: Bundle.entry[1].resource.ofType(CommunicationRequest).payload[0].content.ofType(Reference): Relative Reference appears inside Bundle whose entry is missing a fullUrl
 WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[1].resource.ofType(CommunicationRequest).meta.profile[1]: Profile reference 'http://hl7.org/fhir/StructureDefinition/obscdss-initializer' has not been checked because it is unknown, and the validator is set to not fetch unknown profiles
@@ -297,7 +296,6 @@ ERROR: Communication/sss: Communication.payload[0].content.ofType(Reference): Th
 ERROR: Communication/sss: Communication.payload[0].content.ofType(Reference).reference: This element is not allowed by the profile http://hl7.org/fhir/StructureDefinition/string
 == fsh-generated/resources/CommunicationRequest-OBSCDSSInitializerExample.json ==
 ERROR: CommunicationRequest/OBSCDSSInitializerExample: CommunicationRequest.meta.profile[1]: Canonical URL 'http://hl7.org/fhir/StructureDefinition/obscdss-initializer' does not resolve
-ERROR: CommunicationRequest/OBSCDSSInitializerExample: CommunicationRequest.status: The value provided ('in-progress') is not in the value set 'RequestStatus' (http://hl7.org/fhir/ValueSet/request-status|4.0.1), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/request-status#in-progress in http://hl7.org/fhir/request-status)
 WARNING: CommunicationRequest/OBSCDSSInitializerExample: CommunicationRequest.meta.profile[1]: Profile reference 'http://hl7.org/fhir/StructureDefinition/obscdss-initializer' has not been checked because it is unknown, and the validator is set to not fetch unknown profiles
 == fsh-generated/resources/Device-sss.json ==
 ERROR: Device/sss: Device.status: The value provided ('completed') is not in the value set 'FHIRDeviceStatus' (http://hl7.org/fhir/ValueSet/device-status|4.0.1), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/device-status#completed in http://hl7.org/fhir/device-status)
