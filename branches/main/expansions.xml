@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="8ed9bfae-a1b5-4b07-b844-a62b5302a9da"/>
+  <id value="c270513a-f51c-4f14-94c5-648b8105d2e8"/>
   <meta>
-    <lastUpdated value="2022-07-14T16:27:57.470+00:00"/>
+    <lastUpdated value="2022-07-15T07:25:18.472+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
-    <fullUrl value="http://hl7.org/fhir/us/example/ValueSet/ml-type-vs"/>
+    <fullUrl value="https://joofio.github.io/obs-cdss-fhir//ValueSet/ml-type-vs"/>
     <resource>
       <ValueSet>
         <id value="ml-type-vs"/>
@@ -20,7 +20,7 @@
             </p>
             <p>All codes in this table are from the system 
               <a href="CodeSystem-ml-type-cs.html">
-                <code>http://hl7.org/fhir/us/example/CodeSystem/ml-type-cs</code>
+                <code>https://joofio.github.io/obs-cdss-fhir//CodeSystem/ml-type-cs</code>
               </a>
             </p>
             <table class="codes">
@@ -37,7 +37,7 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-us-example-CodeSystem-ml-type-cs-DT"> </a>  
+                  <a name="https---joofio.github.io-obs-cdss-fhir--CodeSystem-ml-type-cs-DT"> </a>  
                   <a href="CodeSystem-ml-type-cs.html#ml-type-cs-DT">DT</a>
                 </td>
                 <td>Decision Trees</td>
@@ -45,7 +45,7 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-us-example-CodeSystem-ml-type-cs-RF"> </a>  
+                  <a name="https---joofio.github.io-obs-cdss-fhir--CodeSystem-ml-type-cs-RF"> </a>  
                   <a href="CodeSystem-ml-type-cs.html#ml-type-cs-RF">RF</a>
                 </td>
                 <td>Random Forests</td>
@@ -53,7 +53,7 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-us-example-CodeSystem-ml-type-cs-XGBOOST"> </a>  
+                  <a name="https---joofio.github.io-obs-cdss-fhir--CodeSystem-ml-type-cs-XGBOOST"> </a>  
                   <a href="CodeSystem-ml-type-cs.html#ml-type-cs-XGBOOST">XGBOOST</a>
                 </td>
                 <td>Extreme Gradient Boosting</td>
@@ -61,7 +61,7 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-us-example-CodeSystem-ml-type-cs-LGBM"> </a>  
+                  <a name="https---joofio.github.io-obs-cdss-fhir--CodeSystem-ml-type-cs-LGBM"> </a>  
                   <a href="CodeSystem-ml-type-cs.html#ml-type-cs-LGBM">LGBM</a>
                 </td>
                 <td>Light Gradient Boosting</td>
@@ -69,7 +69,7 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-us-example-CodeSystem-ml-type-cs-BAYES"> </a>  
+                  <a name="https---joofio.github.io-obs-cdss-fhir--CodeSystem-ml-type-cs-BAYES"> </a>  
                   <a href="CodeSystem-ml-type-cs.html#ml-type-cs-BAYES">BAYES</a>
                 </td>
                 <td>Bayesian</td>
@@ -78,12 +78,12 @@
             </table>
           </div>
         </text>
-        <url value="http://hl7.org/fhir/us/example/ValueSet/ml-type-vs"/>
+        <url value="https://joofio.github.io/obs-cdss-fhir//ValueSet/ml-type-vs"/>
         <version value="0.1.0-test"/>
         <name value="MlTypesVS"/>
         <title value="Machine Learning Models value set"/>
         <status value="active"/>
-        <date value="2022-07-14T16:27:57+00:00"/>
+        <date value="2022-07-15T07:25:18+00:00"/>
         <publisher value="xxxYour Work Group"/>
         <contact>
           <telecom>
@@ -99,8 +99,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:0f19ae79-2a12-4a6f-902f-3bc2d379febd"/>
-          <timestamp value="2022-07-14T16:28:21+00:00"/>
+          <identifier value="urn:uuid:01eef5e1-97e7-445d-8ffe-eaf954c4be8f"/>
+          <timestamp value="2022-07-15T07:25:45+00:00"/>
           <total value="5"/>
           <parameter>
             <name value="excludeNested"/>
@@ -108,30 +108,30 @@
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="http://hl7.org/fhir/us/example/CodeSystem/ml-type-cs|0.1.0-test"/>
+            <valueUri value="https://joofio.github.io/obs-cdss-fhir//CodeSystem/ml-type-cs|0.1.0-test"/>
           </parameter>
           <contains>
-            <system value="http://hl7.org/fhir/us/example/CodeSystem/ml-type-cs"/>
+            <system value="https://joofio.github.io/obs-cdss-fhir//CodeSystem/ml-type-cs"/>
             <code value="DT"/>
             <display value="Decision Trees"/>
           </contains>
           <contains>
-            <system value="http://hl7.org/fhir/us/example/CodeSystem/ml-type-cs"/>
+            <system value="https://joofio.github.io/obs-cdss-fhir//CodeSystem/ml-type-cs"/>
             <code value="RF"/>
             <display value="Random Forests"/>
           </contains>
           <contains>
-            <system value="http://hl7.org/fhir/us/example/CodeSystem/ml-type-cs"/>
+            <system value="https://joofio.github.io/obs-cdss-fhir//CodeSystem/ml-type-cs"/>
             <code value="XGBOOST"/>
             <display value="Extreme Gradient Boosting"/>
           </contains>
           <contains>
-            <system value="http://hl7.org/fhir/us/example/CodeSystem/ml-type-cs"/>
+            <system value="https://joofio.github.io/obs-cdss-fhir//CodeSystem/ml-type-cs"/>
             <code value="LGBM"/>
             <display value="Light Gradient Boosting"/>
           </contains>
           <contains>
-            <system value="http://hl7.org/fhir/us/example/CodeSystem/ml-type-cs"/>
+            <system value="https://joofio.github.io/obs-cdss-fhir//CodeSystem/ml-type-cs"/>
             <code value="BAYES"/>
             <display value="Bayesian"/>
           </contains>
@@ -140,7 +140,7 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://hl7.org/fhir/us/example/ValueSet/ml-response-vs"/>
+    <fullUrl value="https://joofio.github.io/obs-cdss-fhir//ValueSet/ml-response-vs"/>
     <resource>
       <ValueSet>
         <id value="ml-response-vs"/>
@@ -153,7 +153,7 @@
             </p>
             <p>All codes in this table are from the system 
               <a href="CodeSystem-ml-response-cs.html">
-                <code>http://hl7.org/fhir/us/example/CodeSystem/ml-response-cs</code>
+                <code>https://joofio.github.io/obs-cdss-fhir//CodeSystem/ml-response-cs</code>
               </a>
             </p>
             <table class="codes">
@@ -170,7 +170,7 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-us-example-CodeSystem-ml-response-cs-OK"> </a>  
+                  <a name="https---joofio.github.io-obs-cdss-fhir--CodeSystem-ml-response-cs-OK"> </a>  
                   <a href="CodeSystem-ml-response-cs.html#ml-response-cs-OK">OK</a>
                 </td>
                 <td>Level Ok</td>
@@ -178,7 +178,7 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-us-example-CodeSystem-ml-response-cs-WARN"> </a>  
+                  <a name="https---joofio.github.io-obs-cdss-fhir--CodeSystem-ml-response-cs-WARN"> </a>  
                   <a href="CodeSystem-ml-response-cs.html#ml-response-cs-WARN">WARN</a>
                 </td>
                 <td>Warning level 1</td>
@@ -186,7 +186,7 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---hl7.org-fhir-us-example-CodeSystem-ml-response-cs-NOK"> </a>  
+                  <a name="https---joofio.github.io-obs-cdss-fhir--CodeSystem-ml-response-cs-NOK"> </a>  
                   <a href="CodeSystem-ml-response-cs.html#ml-response-cs-NOK">NOK</a>
                 </td>
                 <td>Error level</td>
@@ -195,12 +195,12 @@
             </table>
           </div>
         </text>
-        <url value="http://hl7.org/fhir/us/example/ValueSet/ml-response-vs"/>
+        <url value="https://joofio.github.io/obs-cdss-fhir//ValueSet/ml-response-vs"/>
         <version value="0.1.0-test"/>
         <name value="MLResponseVS"/>
         <title value="Model Responses value set"/>
         <status value="active"/>
-        <date value="2022-07-14T16:27:57+00:00"/>
+        <date value="2022-07-15T07:25:18+00:00"/>
         <publisher value="xxxYour Work Group"/>
         <contact>
           <telecom>
@@ -216,8 +216,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:e1eac482-882c-4992-a52b-3db61901b5bb"/>
-          <timestamp value="2022-07-14T16:28:22+00:00"/>
+          <identifier value="urn:uuid:6c82fd5c-2e50-4505-837f-f598d1113ceb"/>
+          <timestamp value="2022-07-15T07:25:45+00:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
@@ -225,20 +225,20 @@
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="http://hl7.org/fhir/us/example/CodeSystem/ml-response-cs|0.1.0-test"/>
+            <valueUri value="https://joofio.github.io/obs-cdss-fhir//CodeSystem/ml-response-cs|0.1.0-test"/>
           </parameter>
           <contains>
-            <system value="http://hl7.org/fhir/us/example/CodeSystem/ml-response-cs"/>
+            <system value="https://joofio.github.io/obs-cdss-fhir//CodeSystem/ml-response-cs"/>
             <code value="OK"/>
             <display value="Level Ok"/>
           </contains>
           <contains>
-            <system value="http://hl7.org/fhir/us/example/CodeSystem/ml-response-cs"/>
+            <system value="https://joofio.github.io/obs-cdss-fhir//CodeSystem/ml-response-cs"/>
             <code value="WARN"/>
             <display value="Warning level 1"/>
           </contains>
           <contains>
-            <system value="http://hl7.org/fhir/us/example/CodeSystem/ml-response-cs"/>
+            <system value="https://joofio.github.io/obs-cdss-fhir//CodeSystem/ml-response-cs"/>
             <code value="NOK"/>
             <display value="Error level"/>
           </contains>

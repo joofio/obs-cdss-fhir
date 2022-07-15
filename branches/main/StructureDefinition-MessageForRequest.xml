@@ -22,12 +22,12 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category">
     <valueCode value="not-classified"/>
   </extension>
-  <url value="http://hl7.org/fhir/us/example/StructureDefinition/MessageForRequest"/>
+  <url value="https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MessageForRequest"/>
   <version value="0.1.0-test"/>
   <name value="MessageForRequest"/>
   <title value="Message for request"/>
   <status value="active"/>
-  <date value="2022-07-14T16:27:57+00:00"/>
+  <date value="2022-07-15T07:25:18+00:00"/>
   <publisher value="xxxYour Work Group"/>
   <contact>
     <telecom>
@@ -1783,7 +1783,7 @@
       </base>
       <type>
         <code value="MessageHeader"/>
-        <profile value="http://hl7.org/fhir/us/example/StructureDefinition/MessageHeaderCDSS"/>
+        <profile value="https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MessageHeaderCDSS"/>
       </type>
       <constraint>
         <key value="dom-2"/>
@@ -2801,7 +2801,7 @@
       </base>
       <type>
         <code value="CommunicationRequest"/>
-        <profile value="http://hl7.org/fhir/us/example/StructureDefinition/OBSCDSSInitializer"/>
+        <profile value="https://joofio.github.io/obs-cdss-fhir//StructureDefinition/OBSCDSSInitializer"/>
       </type>
       <constraint>
         <key value="dom-2"/>
@@ -3816,7 +3816,7 @@
       </base>
       <type>
         <code value="Parameters"/>
-        <profile value="http://hl7.org/fhir/us/example/StructureDefinition/MLParameterRequest"/>
+        <profile value="https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MLParameterRequest"/>
       </type>
       <isModifier value="false"/>
       <isSummary value="false"/>
@@ -4646,7 +4646,7 @@
       <path value="Bundle.entry.resource"/>
       <type>
         <code value="MessageHeader"/>
-        <profile value="http://hl7.org/fhir/us/example/StructureDefinition/MessageHeaderCDSS"/>
+        <profile value="https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MessageHeaderCDSS"/>
       </type>
     </element>
     <element id="Bundle.entry:request">
@@ -4660,7 +4660,7 @@
       <path value="Bundle.entry.resource"/>
       <type>
         <code value="CommunicationRequest"/>
-        <profile value="http://hl7.org/fhir/us/example/StructureDefinition/OBSCDSSInitializer"/>
+        <profile value="https://joofio.github.io/obs-cdss-fhir//StructureDefinition/OBSCDSSInitializer"/>
       </type>
     </element>
     <element id="Bundle.entry:parameter">
@@ -4674,7 +4674,7 @@
       <path value="Bundle.entry.resource"/>
       <type>
         <code value="Parameters"/>
-        <profile value="http://hl7.org/fhir/us/example/StructureDefinition/MLParameterRequest"/>
+        <profile value="https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MLParameterRequest"/>
       </type>
     </element>
   </differential>

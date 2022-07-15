@@ -3,7 +3,7 @@
 <Device xmlns="http://hl7.org/fhir">
   <id value="sss"/>
   <meta>
-    <profile value="http://hl7.org/fhir/us/example/StructureDefinition/MLModel"/>
+    <profile value="https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MLModel"/>
   </meta>
   <text>
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "sss" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-MLModel.html">Machine Learning Model</a></p></div><p><b>identifier</b>: id: sss</p><p><b>status</b>: completed</p><p><b>type</b>: Light Gradient Boosting <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-ml-type-cs.html">Machine Learning Models code system</a>#LGBM)</span></p><h3>Versions</h3><table class="grid"><tr><td>-</td><td><b>Value</b></td></tr><tr><td>*</td><td>1</td></tr></table></div>
@@ -14,7 +14,7 @@
   <status value="completed"/>
   <type>
     <coding>
-      <system value="http://hl7.org/fhir/us/example/CodeSystem/ml-type-cs"/>
+      <system value="https://joofio.github.io/obs-cdss-fhir//CodeSystem/ml-type-cs"/>
       <code value="LGBM"/>
     </coding>
   </type>

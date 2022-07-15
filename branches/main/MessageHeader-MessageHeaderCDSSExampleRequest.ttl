@@ -10,9 +10,9 @@
   fhir:Resource.id [ fhir:value "MessageHeaderCDSSExampleRequest"];
   fhir:Resource.meta [
      fhir:Meta.profile [
-       fhir:value "http://hl7.org/fhir/us/example/StructureDefinition/MessageHeaderCDSS";
+       fhir:value "https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MessageHeaderCDSS";
        fhir:index 0;
-       fhir:link <http://hl7.org/fhir/us/example/StructureDefinition/MessageHeaderCDSS>
+       fhir:link <https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MessageHeaderCDSS>
      ]
   ];
   fhir:DomainResource.text [

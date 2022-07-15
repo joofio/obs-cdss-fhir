@@ -15,12 +15,12 @@
       "valueCode": "not-classified"
     }
   ],
-  "url": "http://hl7.org/fhir/us/example/StructureDefinition/MessageForRequest",
+  "url": "https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MessageForRequest",
   "version": "0.1.0-test",
   "name": "MessageForRequest",
   "title": "Message for request",
   "status": "active",
-  "date": "2022-07-14T16:27:57+00:00",
+  "date": "2022-07-15T07:25:18+00:00",
   "publisher": "xxxYour Work Group",
   "contact": [
     {
@@ -2156,7 +2156,7 @@
           {
             "code": "MessageHeader",
             "profile": [
-              "http://hl7.org/fhir/us/example/StructureDefinition/MessageHeaderCDSS"
+              "https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MessageHeaderCDSS"
             ]
           }
         ],
@@ -3402,7 +3402,7 @@
           {
             "code": "CommunicationRequest",
             "profile": [
-              "http://hl7.org/fhir/us/example/StructureDefinition/OBSCDSSInitializer"
+              "https://joofio.github.io/obs-cdss-fhir//StructureDefinition/OBSCDSSInitializer"
             ]
           }
         ],
@@ -4645,7 +4645,7 @@
           {
             "code": "Parameters",
             "profile": [
-              "http://hl7.org/fhir/us/example/StructureDefinition/MLParameterRequest"
+              "https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MLParameterRequest"
             ]
           }
         ],
@@ -5674,7 +5674,7 @@
           {
             "code": "MessageHeader",
             "profile": [
-              "http://hl7.org/fhir/us/example/StructureDefinition/MessageHeaderCDSS"
+              "https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MessageHeaderCDSS"
             ]
           }
         ]
@@ -5694,7 +5694,7 @@
           {
             "code": "CommunicationRequest",
             "profile": [
-              "http://hl7.org/fhir/us/example/StructureDefinition/OBSCDSSInitializer"
+              "https://joofio.github.io/obs-cdss-fhir//StructureDefinition/OBSCDSSInitializer"
             ]
           }
         ]
@@ -5714,7 +5714,7 @@
           {
             "code": "Parameters",
             "profile": [
-              "http://hl7.org/fhir/us/example/StructureDefinition/MLParameterRequest"
+              "https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MLParameterRequest"
             ]
           }
         ]

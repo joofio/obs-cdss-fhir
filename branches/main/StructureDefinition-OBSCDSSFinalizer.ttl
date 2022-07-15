@@ -21,12 +21,12 @@
      fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category" ];
      fhir:Extension.valueCode [ fhir:value "patient" ]
   ];
-  fhir:StructureDefinition.url [ fhir:value "http://hl7.org/fhir/us/example/StructureDefinition/OBSCDSSFinalizer"];
+  fhir:StructureDefinition.url [ fhir:value "https://joofio.github.io/obs-cdss-fhir//StructureDefinition/OBSCDSSFinalizer"];
   fhir:StructureDefinition.version [ fhir:value "0.1.0-test"];
   fhir:StructureDefinition.name [ fhir:value "OBSCDSSFinalizer"];
   fhir:StructureDefinition.title [ fhir:value "Prediction"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2022-07-14T16:27:57+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-07-15T07:25:18+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "xxxYour Work Group"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -1731,9 +1731,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
          fhir:ElementDefinition.type.targetProfile [
-           fhir:value "http://hl7.org/fhir/us/example/StructureDefinition/MLModel";
+           fhir:value "https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MLModel";
            fhir:index 0;
-           fhir:link <http://hl7.org/fhir/us/example/StructureDefinition/MLModel>
+           fhir:link <https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MLModel>
          ]
        ];
        fhir:ElementDefinition.constraint [
@@ -2219,9 +2219,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Reference" ];
          fhir:ElementDefinition.type.targetProfile [
-           fhir:value "http://hl7.org/fhir/us/example/StructureDefinition/MLModel";
+           fhir:value "https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MLModel";
            fhir:index 0;
-           fhir:link <http://hl7.org/fhir/us/example/StructureDefinition/MLModel>
+           fhir:link <https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MLModel>
          ]
        ];
        fhir:ElementDefinition.mustSupport [ fhir:value "true"^^xsd:boolean ]

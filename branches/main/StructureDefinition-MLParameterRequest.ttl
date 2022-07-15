@@ -17,12 +17,12 @@
      fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-category" ];
      fhir:Extension.valueString [ fhir:value "Foundation.Other" ]
   ];
-  fhir:StructureDefinition.url [ fhir:value "http://hl7.org/fhir/us/example/StructureDefinition/MLParameterRequest"];
+  fhir:StructureDefinition.url [ fhir:value "https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MLParameterRequest"];
   fhir:StructureDefinition.version [ fhir:value "0.1.0-test"];
   fhir:StructureDefinition.name [ fhir:value "MLParameterRequest"];
   fhir:StructureDefinition.title [ fhir:value "Machine Learning Parameters for obstetrics"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2022-07-14T16:27:57+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-07-15T07:25:18+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "xxxYour Work Group"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
