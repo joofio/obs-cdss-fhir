@@ -3,7 +3,7 @@
   "id": "MLParameterResponseExample",
   "meta": {
     "profile": [
-      "https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MLParameterResponse"
+      "https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MLParameterResponse"
     ]
   },
   "parameter": [

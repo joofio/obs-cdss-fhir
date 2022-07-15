@@ -19,12 +19,12 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category">
     <valueCode value="business"/>
   </extension>
-  <url value="https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MLModel"/>
+  <url value="https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MLModel"/>
   <version value="0.1.0-test"/>
   <name value="MLModel"/>
   <title value="Machine Learning Model"/>
   <status value="active"/>
-  <date value="2022-07-15T07:32:14+00:00"/>
+  <date value="2022-07-15T07:33:23+00:00"/>
   <publisher value="xxxYour Work Group"/>
   <contact>
     <telecom>
@@ -1645,7 +1645,7 @@
       <isSummary value="false"/>
       <binding>
         <strength value="extensible"/>
-        <valueSet value="https://joofio.github.io/obs-cdss-fhir//ValueSet/ml-type-vs"/>
+        <valueSet value="https://joofio.github.io/obs-cdss-fhir/ValueSet/ml-type-vs"/>
       </binding>
     </element>
     <element id="Device.specialization">
@@ -2543,7 +2543,7 @@
       <mustSupport value="true"/>
       <binding>
         <strength value="extensible"/>
-        <valueSet value="https://joofio.github.io/obs-cdss-fhir//ValueSet/ml-type-vs"/>
+        <valueSet value="https://joofio.github.io/obs-cdss-fhir/ValueSet/ml-type-vs"/>
       </binding>
     </element>
     <element id="Device.version.value">

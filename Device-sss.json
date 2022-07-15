@@ -3,7 +3,7 @@
   "id": "sss",
   "meta": {
     "profile": [
-      "https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MLModel"
+      "https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MLModel"
     ]
   },
   "text": {
@@ -19,7 +19,7 @@
   "type": {
     "coding": [
       {
-        "system": "https://joofio.github.io/obs-cdss-fhir//CodeSystem/ml-type-cs",
+        "system": "https://joofio.github.io/obs-cdss-fhir/CodeSystem/ml-type-cs",
         "code": "LGBM"
       }
     ]

@@ -3,7 +3,7 @@
 <CommunicationRequest xmlns="http://hl7.org/fhir">
   <id value="OBSCDSSInitializerExample"/>
   <meta>
-    <profile value="https://joofio.github.io/obs-cdss-fhir//StructureDefinition/OBSCDSSInitializer"/>
+    <profile value="https://joofio.github.io/obs-cdss-fhir/StructureDefinition/OBSCDSSInitializer"/>
     <profile value="http://hl7.org/fhir/StructureDefinition/obscdss-initializer"/>
   </meta>
   <text>

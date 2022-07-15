@@ -7,45 +7,45 @@
   "profiles": {
     "Device": [
       {
-        "url": "https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MLModel",
+        "url": "https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MLModel",
         "title": "Machine Learning Model"
       }
     ],
     "Parameters": [
       {
-        "url": "https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MLParameterRequest",
+        "url": "https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MLParameterRequest",
         "title": "Machine Learning Parameters for obstetrics"
       },
       {
-        "url": "https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MLParameterResponse",
+        "url": "https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MLParameterResponse",
         "title": "Machine Learning Parameters for obstetrics"
       }
     ],
     "Bundle": [
       {
-        "url": "https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MessageForCDSS",
+        "url": "https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageForCDSS",
         "title": "Message for response"
       },
       {
-        "url": "https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MessageForRequest",
+        "url": "https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageForRequest",
         "title": "Message for request"
       }
     ],
     "MessageHeader": [
       {
-        "url": "https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MessageHeaderCDSS",
+        "url": "https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageHeaderCDSS",
         "title": "Message for response"
       }
     ],
     "Communication": [
       {
-        "url": "https://joofio.github.io/obs-cdss-fhir//StructureDefinition/OBSCDSSFinalizer",
+        "url": "https://joofio.github.io/obs-cdss-fhir/StructureDefinition/OBSCDSSFinalizer",
         "title": "Prediction"
       }
     ],
     "CommunicationRequest": [
       {
-        "url": "https://joofio.github.io/obs-cdss-fhir//StructureDefinition/OBSCDSSInitializer",
+        "url": "https://joofio.github.io/obs-cdss-fhir/StructureDefinition/OBSCDSSInitializer",
         "title": "Request for prediction"
       }
     ]

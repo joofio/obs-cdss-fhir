@@ -10,14 +10,14 @@
   fhir:Resource.id [ fhir:value "ml-type-vs"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-ml-type-cs.html\"><code>https://joofio.github.io/obs-cdss-fhir//CodeSystem/ml-type-cs</code></a></li></ul></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-ml-type-cs.html\"><code>https://joofio.github.io/obs-cdss-fhir/CodeSystem/ml-type-cs</code></a></li></ul></div>"
   ];
-  fhir:ValueSet.url [ fhir:value "https://joofio.github.io/obs-cdss-fhir//ValueSet/ml-type-vs"];
+  fhir:ValueSet.url [ fhir:value "https://joofio.github.io/obs-cdss-fhir/ValueSet/ml-type-vs"];
   fhir:ValueSet.version [ fhir:value "0.1.0-test"];
   fhir:ValueSet.name [ fhir:value "MlTypesVS"];
   fhir:ValueSet.title [ fhir:value "Machine Learning Models value set"];
   fhir:ValueSet.status [ fhir:value "active"];
-  fhir:ValueSet.date [ fhir:value "2022-07-15T07:32:14+00:00"^^xsd:dateTime];
+  fhir:ValueSet.date [ fhir:value "2022-07-15T07:33:23+00:00"^^xsd:dateTime];
   fhir:ValueSet.publisher [ fhir:value "xxxYour Work Group"];
   fhir:ValueSet.contact [
      fhir:index 0;
@@ -39,7 +39,7 @@
   fhir:ValueSet.compose [
      fhir:ValueSet.compose.include [
        fhir:index 0;
-       fhir:ValueSet.compose.include.system [ fhir:value "https://joofio.github.io/obs-cdss-fhir//CodeSystem/ml-type-cs" ]
+       fhir:ValueSet.compose.include.system [ fhir:value "https://joofio.github.io/obs-cdss-fhir/CodeSystem/ml-type-cs" ]
      ]
   ] .
 

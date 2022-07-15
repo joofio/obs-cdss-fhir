@@ -3,7 +3,7 @@
   "id": "MessageHeaderCDSSExampleRequest",
   "meta": {
     "profile": [
-      "https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MessageHeaderCDSS"
+      "https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageHeaderCDSS"
     ]
   },
   "text": {

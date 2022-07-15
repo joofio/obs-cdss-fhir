@@ -3,7 +3,7 @@
 <Parameters xmlns="http://hl7.org/fhir">
   <id value="MLParameterResponseExample"/>
   <meta>
-    <profile value="https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MLParameterResponse"/>
+    <profile value="https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MLParameterResponse"/>
   </meta>
   <parameter>
     <name value="result"/>

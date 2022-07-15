@@ -10,9 +10,9 @@
   fhir:Resource.id [ fhir:value "MessageForCDSSResponse"];
   fhir:Resource.meta [
      fhir:Meta.profile [
-       fhir:value "https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MessageForCDSS";
+       fhir:value "https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageForCDSS";
        fhir:index 0;
-       fhir:link <https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MessageForCDSS>
+       fhir:link <https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageForCDSS>
      ]
   ];
   fhir:Bundle.type [ fhir:value "message"];
@@ -24,9 +24,9 @@
        fhir:Resource.id [ fhir:value "MessageHeaderCDSSExampleResponse" ];
        fhir:Resource.meta [
          fhir:Meta.profile [
-           fhir:value "https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MessageHeaderCDSS";
+           fhir:value "https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageHeaderCDSS";
            fhir:index 0;
-           fhir:link <https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MessageHeaderCDSS>
+           fhir:link <https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageHeaderCDSS>
          ]
        ];
        fhir:DomainResource.text [
@@ -53,9 +53,9 @@
        fhir:Resource.id [ fhir:value "sss" ];
        fhir:Resource.meta [
          fhir:Meta.profile [
-           fhir:value "https://joofio.github.io/obs-cdss-fhir//StructureDefinition/OBSCDSSFinalizer";
+           fhir:value "https://joofio.github.io/obs-cdss-fhir/StructureDefinition/OBSCDSSFinalizer";
            fhir:index 0;
-           fhir:link <https://joofio.github.io/obs-cdss-fhir//StructureDefinition/OBSCDSSFinalizer>
+           fhir:link <https://joofio.github.io/obs-cdss-fhir/StructureDefinition/OBSCDSSFinalizer>
          ]
        ];
        fhir:DomainResource.text [
@@ -91,9 +91,9 @@
        fhir:Resource.id [ fhir:value "MLParameterResponseExample" ];
        fhir:Resource.meta [
          fhir:Meta.profile [
-           fhir:value "https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MLParameterResponse";
+           fhir:value "https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MLParameterResponse";
            fhir:index 0;
-           fhir:link <https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MLParameterResponse>
+           fhir:link <https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MLParameterResponse>
          ]
        ];
        fhir:Parameters.parameter [

@@ -10,9 +10,9 @@
   fhir:Resource.id [ fhir:value "MessageForCDSSRequest"];
   fhir:Resource.meta [
      fhir:Meta.profile [
-       fhir:value "https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MessageForCDSS";
+       fhir:value "https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageForCDSS";
        fhir:index 0;
-       fhir:link <https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MessageForCDSS>
+       fhir:link <https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageForCDSS>
      ]
   ];
   fhir:Bundle.type [ fhir:value "message"];
@@ -24,9 +24,9 @@
        fhir:Resource.id [ fhir:value "MessageHeaderCDSSExampleRequest" ];
        fhir:Resource.meta [
          fhir:Meta.profile [
-           fhir:value "https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MessageHeaderCDSS";
+           fhir:value "https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageHeaderCDSS";
            fhir:index 0;
-           fhir:link <https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MessageHeaderCDSS>
+           fhir:link <https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageHeaderCDSS>
          ]
        ];
        fhir:DomainResource.text [
@@ -53,9 +53,9 @@
        fhir:Resource.id [ fhir:value "OBSCDSSInitializerExample" ];
        fhir:Resource.meta [
          fhir:Meta.profile [
-           fhir:value "https://joofio.github.io/obs-cdss-fhir//StructureDefinition/OBSCDSSInitializer";
+           fhir:value "https://joofio.github.io/obs-cdss-fhir/StructureDefinition/OBSCDSSInitializer";
            fhir:index 0;
-           fhir:link <https://joofio.github.io/obs-cdss-fhir//StructureDefinition/OBSCDSSInitializer>
+           fhir:link <https://joofio.github.io/obs-cdss-fhir/StructureDefinition/OBSCDSSInitializer>
          ], [
            fhir:value "http://hl7.org/fhir/StructureDefinition/obscdss-initializer";
            fhir:index 1;
@@ -87,9 +87,9 @@
        fhir:Resource.id [ fhir:value "MLParameterRequestExample" ];
        fhir:Resource.meta [
          fhir:Meta.profile [
-           fhir:value "https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MLParameterRequest";
+           fhir:value "https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MLParameterRequest";
            fhir:index 0;
-           fhir:link <https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MLParameterRequest>
+           fhir:link <https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MLParameterRequest>
          ]
        ];
        fhir:Parameters.parameter [

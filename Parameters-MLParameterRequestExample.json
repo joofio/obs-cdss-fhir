@@ -3,7 +3,7 @@
   "id": "MLParameterRequestExample",
   "meta": {
     "profile": [
-      "https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MLParameterRequest"
+      "https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MLParameterRequest"
     ]
   },
   "parameter": [

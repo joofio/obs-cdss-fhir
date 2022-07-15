@@ -3,7 +3,7 @@
 <Bundle xmlns="http://hl7.org/fhir">
   <id value="MessageForCDSSRequest"/>
   <meta>
-    <profile value="https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MessageForCDSS"/>
+    <profile value="https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageForCDSS"/>
   </meta>
   <type value="message"/>
   <timestamp value="2020-01-01T00:00:00Z"/>
@@ -12,7 +12,7 @@
       <MessageHeader>
         <id value="MessageHeaderCDSSExampleRequest"/>
         <meta>
-          <profile value="https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MessageHeaderCDSS"/>
+          <profile value="https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageHeaderCDSS"/>
         </meta>
         <text>
           <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "MessageHeaderCDSSExampleRequest" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-MessageHeaderCDSS.html">Message for response</a></p></div><p><b>event</b>: obs-cds (Details: [not stated] code obs-cds = 'obs-cds', stated as 'null')</p><h3>Destinations</h3><table class="grid"><tr><td>-</td><td><b>Name</b></td><td><b>Endpoint</b></td></tr><tr><td>*</td><td>CDSS-System</td><td><code>127.0.0.1</code></td></tr></table><h3>Sources</h3><table class="grid"><tr><td>-</td><td><b>Name</b></td><td><b>Endpoint</b></td></tr><tr><td>*</td><td>request-system</td><td><code>127.0.0.1</code></td></tr></table></div>
@@ -36,7 +36,7 @@
       <CommunicationRequest>
         <id value="OBSCDSSInitializerExample"/>
         <meta>
-          <profile value="https://joofio.github.io/obs-cdss-fhir//StructureDefinition/OBSCDSSInitializer"/>
+          <profile value="https://joofio.github.io/obs-cdss-fhir/StructureDefinition/OBSCDSSInitializer"/>
           <profile value="http://hl7.org/fhir/StructureDefinition/obscdss-initializer"/>
         </meta>
         <text>
@@ -60,7 +60,7 @@
       <Parameters>
         <id value="MLParameterRequestExample"/>
         <meta>
-          <profile value="https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MLParameterRequest"/>
+          <profile value="https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MLParameterRequest"/>
         </meta>
         <parameter>
           <name value="APRESENTACAO_31"/>

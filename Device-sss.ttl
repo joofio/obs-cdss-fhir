@@ -10,9 +10,9 @@
   fhir:Resource.id [ fhir:value "sss"];
   fhir:Resource.meta [
      fhir:Meta.profile [
-       fhir:value "https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MLModel";
+       fhir:value "https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MLModel";
        fhir:index 0;
-       fhir:link <https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MLModel>
+       fhir:link <https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MLModel>
      ]
   ];
   fhir:DomainResource.text [
@@ -27,7 +27,7 @@
   fhir:Device.type [
      fhir:CodeableConcept.coding [
        fhir:index 0;
-       fhir:Coding.system [ fhir:value "https://joofio.github.io/obs-cdss-fhir//CodeSystem/ml-type-cs" ];
+       fhir:Coding.system [ fhir:value "https://joofio.github.io/obs-cdss-fhir/CodeSystem/ml-type-cs" ];
        fhir:Coding.code [ fhir:value "LGBM" ]
      ]
   ];
