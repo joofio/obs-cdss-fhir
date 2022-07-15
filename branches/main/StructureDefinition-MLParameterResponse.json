@@ -11,12 +11,12 @@
       "valueString": "Foundation.Other"
     }
   ],
-  "url": "https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MLParameterResponse",
+  "url": "https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MLParameterResponse",
   "version": "0.1.0-test",
   "name": "MLParameterResponse",
   "title": "Machine Learning Parameters for obstetrics",
   "status": "active",
-  "date": "2022-07-15T07:32:14+00:00",
+  "date": "2022-07-15T07:33:23+00:00",
   "publisher": "xxxYour Work Group",
   "contact": [
     {

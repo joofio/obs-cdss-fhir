@@ -9,84 +9,84 @@
   {
     "id": "ml-response-cs",
     "type": "CodeSystem",
-    "url": "https://joofio.github.io/obs-cdss-fhir//CodeSystem/ml-response-cs",
+    "url": "https://joofio.github.io/obs-cdss-fhir/CodeSystem/ml-response-cs",
     "version": "0.1.0-test",
     "name": "MLResponseCS"
   },
   {
     "id": "ml-type-cs",
     "type": "CodeSystem",
-    "url": "https://joofio.github.io/obs-cdss-fhir//CodeSystem/ml-type-cs",
+    "url": "https://joofio.github.io/obs-cdss-fhir/CodeSystem/ml-type-cs",
     "version": "0.1.0-test",
     "name": "MlTypesCS"
   },
   {
     "id": "MLModel",
     "type": "StructureDefinition",
-    "url": "https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MLModel",
+    "url": "https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MLModel",
     "version": "0.1.0-test",
     "name": "MLModel"
   },
   {
     "id": "MLParameterRequest",
     "type": "StructureDefinition",
-    "url": "https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MLParameterRequest",
+    "url": "https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MLParameterRequest",
     "version": "0.1.0-test",
     "name": "MLParameterRequest"
   },
   {
     "id": "MLParameterResponse",
     "type": "StructureDefinition",
-    "url": "https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MLParameterResponse",
+    "url": "https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MLParameterResponse",
     "version": "0.1.0-test",
     "name": "MLParameterResponse"
   },
   {
     "id": "MessageForCDSS",
     "type": "StructureDefinition",
-    "url": "https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MessageForCDSS",
+    "url": "https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageForCDSS",
     "version": "0.1.0-test",
     "name": "MessageForCDSS"
   },
   {
     "id": "MessageForRequest",
     "type": "StructureDefinition",
-    "url": "https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MessageForRequest",
+    "url": "https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageForRequest",
     "version": "0.1.0-test",
     "name": "MessageForRequest"
   },
   {
     "id": "MessageHeaderCDSS",
     "type": "StructureDefinition",
-    "url": "https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MessageHeaderCDSS",
+    "url": "https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageHeaderCDSS",
     "version": "0.1.0-test",
     "name": "MessageHeaderCDSS"
   },
   {
     "id": "OBSCDSSFinalizer",
     "type": "StructureDefinition",
-    "url": "https://joofio.github.io/obs-cdss-fhir//StructureDefinition/OBSCDSSFinalizer",
+    "url": "https://joofio.github.io/obs-cdss-fhir/StructureDefinition/OBSCDSSFinalizer",
     "version": "0.1.0-test",
     "name": "OBSCDSSFinalizer"
   },
   {
     "id": "OBSCDSSInitializer",
     "type": "StructureDefinition",
-    "url": "https://joofio.github.io/obs-cdss-fhir//StructureDefinition/OBSCDSSInitializer",
+    "url": "https://joofio.github.io/obs-cdss-fhir/StructureDefinition/OBSCDSSInitializer",
     "version": "0.1.0-test",
     "name": "OBSCDSSInitializer"
   },
   {
     "id": "ml-response-vs",
     "type": "ValueSet",
-    "url": "https://joofio.github.io/obs-cdss-fhir//ValueSet/ml-response-vs",
+    "url": "https://joofio.github.io/obs-cdss-fhir/ValueSet/ml-response-vs",
     "version": "0.1.0-test",
     "name": "MLResponseVS"
   },
   {
     "id": "ml-type-vs",
     "type": "ValueSet",
-    "url": "https://joofio.github.io/obs-cdss-fhir//ValueSet/ml-type-vs",
+    "url": "https://joofio.github.io/obs-cdss-fhir/ValueSet/ml-type-vs",
     "version": "0.1.0-test",
     "name": "MlTypesVS"
   }

@@ -3,7 +3,7 @@
   "id": "OBSCDSSInitializerExample",
   "meta": {
     "profile": [
-      "https://joofio.github.io/obs-cdss-fhir//StructureDefinition/OBSCDSSInitializer",
+      "https://joofio.github.io/obs-cdss-fhir/StructureDefinition/OBSCDSSInitializer",
       "http://hl7.org/fhir/StructureDefinition/obscdss-initializer"
     ]
   },

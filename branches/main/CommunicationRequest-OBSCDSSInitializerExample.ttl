@@ -10,9 +10,9 @@
   fhir:Resource.id [ fhir:value "OBSCDSSInitializerExample"];
   fhir:Resource.meta [
      fhir:Meta.profile [
-       fhir:value "https://joofio.github.io/obs-cdss-fhir//StructureDefinition/OBSCDSSInitializer";
+       fhir:value "https://joofio.github.io/obs-cdss-fhir/StructureDefinition/OBSCDSSInitializer";
        fhir:index 0;
-       fhir:link <https://joofio.github.io/obs-cdss-fhir//StructureDefinition/OBSCDSSInitializer>
+       fhir:link <https://joofio.github.io/obs-cdss-fhir/StructureDefinition/OBSCDSSInitializer>
      ], [
        fhir:value "http://hl7.org/fhir/StructureDefinition/obscdss-initializer";
        fhir:index 1;

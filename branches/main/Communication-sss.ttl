@@ -10,9 +10,9 @@
   fhir:Resource.id [ fhir:value "sss"];
   fhir:Resource.meta [
      fhir:Meta.profile [
-       fhir:value "https://joofio.github.io/obs-cdss-fhir//StructureDefinition/OBSCDSSFinalizer";
+       fhir:value "https://joofio.github.io/obs-cdss-fhir/StructureDefinition/OBSCDSSFinalizer";
        fhir:index 0;
-       fhir:link <https://joofio.github.io/obs-cdss-fhir//StructureDefinition/OBSCDSSFinalizer>
+       fhir:link <https://joofio.github.io/obs-cdss-fhir/StructureDefinition/OBSCDSSFinalizer>
      ]
   ];
   fhir:DomainResource.text [

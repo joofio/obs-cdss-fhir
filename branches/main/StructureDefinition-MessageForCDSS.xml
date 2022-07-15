@@ -24,12 +24,12 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category">
     <valueCode value="not-classified"/>
   </extension>
-  <url value="https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MessageForCDSS"/>
+  <url value="https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageForCDSS"/>
   <version value="0.1.0-test"/>
   <name value="MessageForCDSS"/>
   <title value="Message for response"/>
   <status value="active"/>
-  <date value="2022-07-15T07:32:14+00:00"/>
+  <date value="2022-07-15T07:33:23+00:00"/>
   <publisher value="xxxYour Work Group"/>
   <contact>
     <telecom>
@@ -1785,7 +1785,7 @@
       </base>
       <type>
         <code value="MessageHeader"/>
-        <profile value="https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MessageHeaderCDSS"/>
+        <profile value="https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageHeaderCDSS"/>
       </type>
       <constraint>
         <key value="dom-2"/>
@@ -2803,11 +2803,11 @@
       </base>
       <type>
         <code value="CommunicationRequest"/>
-        <profile value="https://joofio.github.io/obs-cdss-fhir//StructureDefinition/OBSCDSSInitializer"/>
+        <profile value="https://joofio.github.io/obs-cdss-fhir/StructureDefinition/OBSCDSSInitializer"/>
       </type>
       <type>
         <code value="Communication"/>
-        <profile value="https://joofio.github.io/obs-cdss-fhir//StructureDefinition/OBSCDSSFinalizer"/>
+        <profile value="https://joofio.github.io/obs-cdss-fhir/StructureDefinition/OBSCDSSFinalizer"/>
       </type>
       <isModifier value="false"/>
       <isSummary value="true"/>
@@ -3768,8 +3768,8 @@
       </base>
       <type>
         <code value="Parameters"/>
-        <profile value="https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MLParameterRequest"/>
-        <profile value="https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MLParameterResponse"/>
+        <profile value="https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MLParameterRequest"/>
+        <profile value="https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MLParameterResponse"/>
       </type>
       <isModifier value="false"/>
       <isSummary value="false"/>
@@ -4599,7 +4599,7 @@
       <path value="Bundle.entry.resource"/>
       <type>
         <code value="MessageHeader"/>
-        <profile value="https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MessageHeaderCDSS"/>
+        <profile value="https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageHeaderCDSS"/>
       </type>
     </element>
     <element id="Bundle.entry:request">
@@ -4613,11 +4613,11 @@
       <path value="Bundle.entry.resource"/>
       <type>
         <code value="CommunicationRequest"/>
-        <profile value="https://joofio.github.io/obs-cdss-fhir//StructureDefinition/OBSCDSSInitializer"/>
+        <profile value="https://joofio.github.io/obs-cdss-fhir/StructureDefinition/OBSCDSSInitializer"/>
       </type>
       <type>
         <code value="Communication"/>
-        <profile value="https://joofio.github.io/obs-cdss-fhir//StructureDefinition/OBSCDSSFinalizer"/>
+        <profile value="https://joofio.github.io/obs-cdss-fhir/StructureDefinition/OBSCDSSFinalizer"/>
       </type>
     </element>
     <element id="Bundle.entry:parameter">
@@ -4631,8 +4631,8 @@
       <path value="Bundle.entry.resource"/>
       <type>
         <code value="Parameters"/>
-        <profile value="https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MLParameterRequest"/>
-        <profile value="https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MLParameterResponse"/>
+        <profile value="https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MLParameterRequest"/>
+        <profile value="https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MLParameterResponse"/>
       </type>
     </element>
   </differential>

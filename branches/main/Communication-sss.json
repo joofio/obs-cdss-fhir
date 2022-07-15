@@ -3,7 +3,7 @@
   "id": "sss",
   "meta": {
     "profile": [
-      "https://joofio.github.io/obs-cdss-fhir//StructureDefinition/OBSCDSSFinalizer"
+      "https://joofio.github.io/obs-cdss-fhir/StructureDefinition/OBSCDSSFinalizer"
     ]
   },
   "text": {

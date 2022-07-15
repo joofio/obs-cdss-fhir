@@ -25,12 +25,12 @@
   <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category">
     <valueCode value="patient"/>
   </extension>
-  <url value="https://joofio.github.io/obs-cdss-fhir//StructureDefinition/OBSCDSSInitializer"/>
+  <url value="https://joofio.github.io/obs-cdss-fhir/StructureDefinition/OBSCDSSInitializer"/>
   <version value="0.1.0-test"/>
   <name value="OBSCDSSInitializer"/>
   <title value="Request for prediction"/>
   <status value="active"/>
-  <date value="2022-07-15T07:32:14+00:00"/>
+  <date value="2022-07-15T07:33:23+00:00"/>
   <publisher value="xxxYour Work Group"/>
   <contact>
     <telecom>
@@ -1374,7 +1374,7 @@
       </base>
       <type>
         <code value="Reference"/>
-        <targetProfile value="https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MLParameterRequest"/>
+        <targetProfile value="https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MLParameterRequest"/>
       </type>
       <constraint>
         <key value="ele-1"/>
@@ -1833,7 +1833,7 @@
       <max value="1"/>
       <type>
         <code value="Reference"/>
-        <targetProfile value="https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MLParameterRequest"/>
+        <targetProfile value="https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MLParameterRequest"/>
       </type>
       <mustSupport value="true"/>
     </element>
