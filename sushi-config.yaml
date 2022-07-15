@@ -3,7 +3,7 @@
 # │  supported properties, see: https://fshschool.org/docs/sushi/configuration/                    │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: obs.cdss.ig
-canonical: https://joofio.github.io/obs-cdss-fhir/
+canonical: https://joofio.github.io/obs-cdss-fhir
 name: OBSCDSS
 status: draft
 version: 0.1.0
