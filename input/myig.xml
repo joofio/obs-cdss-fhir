@@ -8,8 +8,8 @@
   <url value="http://xxsomewhere.org/fhir/myig/ImplementationGuide/xxexample.fhir.uv.myig"/>
   <!-- This version will propagate to all artifacts unless the "propagate-version" extension is overridden -->
   <version value="0.1.0-test"/>
-  <name value="XXYourComputableMyIGNameHere"/>
-  <title value="xxYour User Friendly Name for MyIG Here"/>
+  <name value="obs-cds-ig"/>
+  <title value="Obstetrics CDSS IG"/>
   <status value="draft"/>
   <experimental value="false"/>
   <publisher value="xxxYour Work Group"/>

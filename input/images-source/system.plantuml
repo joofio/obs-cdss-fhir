@@ -1,6 +1,6 @@
 @startuml
-Requester -> CDSS: Decision Request with parameters (CommunicationRequest)
-CDSS --> Requester: Prediction (Communication)
+Requester -> CDSS: Decision Request with parameters (Message1)
+CDSS --> Requester: Prediction (Message2)
 
 
 @enduml
