@@ -4,7 +4,7 @@
     "type": "ImplementationGuide",
     "url": "http://xxsomewhere.org/fhir/myig/ImplementationGuide/xxexample.fhir.uv.myig",
     "version": "0.1.0-test",
-    "name": "XXYourComputableMyIGNameHere"
+    "name": "obs-cds-ig"
   },
   {
     "id": "ml-response-cs",
