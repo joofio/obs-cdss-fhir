@@ -1,6 +1,6 @@
 ﻿<!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<!-- broken links = errors = 91, warn = 107, info = 8, 134 -->
+<!-- broken links = errors = 91, warn = 105, info = 10, 134 -->
 <head>
   <title>XXYourComputableMyIGNameHere : Validation Results</title>
   <link href="fhir.css" rel="stylesheet"/>
@@ -36,7 +36,7 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for XXYourComputableMyIGNameHere</h1>
- <p>Generated Thu Jul 14 16:28:41 UTC 2022, FHIR version 4.0.1 for OBSCDSS.fhir.uv.myig#0.1.0-test (canonical = <a href="http://xxsomewhere.org/fhir/myig">http://xxsomewhere.org/fhir/myig</a> (<a href="http://xxsomewhere.org/fhir/myig/history.html">history</a>)). See <a href="qa.min.html">Errors Only</a></p>
+ <p>Generated Fri Jul 15 07:26:04 UTC 2022, FHIR version 4.0.1 for OBSCDSS.fhir.uv.myig#0.1.0-test (canonical = <a href="http://xxsomewhere.org/fhir/myig">http://xxsomewhere.org/fhir/myig</a> (<a href="http://xxsomewhere.org/fhir/myig/history.html">history</a>)). See <a href="qa.min.html">Errors Only</a></p>
 <table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
  <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.1.125</span></td></tr>
  <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = OBSCDSS.fhir.uv.myig, Canonical = http://xxsomewhere.org/fhir/myig</td></tr>
@@ -54,7 +54,7 @@
  <tr><td>R5 Dependencies:</td><td><span style="color: grey">(none)</span></td></tr>
  <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at http://xxsomewhere.org/fhir/myig (Problem #1 with package-list.json at http://xxsomewhere.org/fhir/myig: xxsomewhere.org)</td></tr>
  <tr><td>IPA Comparison:</td><td> n/a</td></tr>
- <tr><td>Summary:</td><td> errors = 91, warn = 107, info = 8, broken links = 134</td></tr>
+ <tr><td>Summary:</td><td> errors = 91, warn = 105, info = 10, broken links = 134</td></tr>
 </table>
  <table class="grid">
    <tr>
@@ -70,10 +70,10 @@
      <td><a href="#_github_workspace_fsh-generated_resources_Bundle-MessageForCDSSResponse"><b>/github/workspace/fsh-generated/resources/Bundle-MessageForCDSSResponse</b></a></td><td><b>19</b></td><td><b>7</b></td><td><b>3</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><a href="#_github_workspace_fsh-generated_resources_CodeSystem-ml-response-cs"><b>/github/workspace/fsh-generated/resources/CodeSystem-ml-response-cs</b></a></td><td><b>2</b></td><td><b>1</b></td><td><b>0</b></td>
+     <td><a href="#_github_workspace_fsh-generated_resources_CodeSystem-ml-response-cs"><b>/github/workspace/fsh-generated/resources/CodeSystem-ml-response-cs</b></a></td><td><b>2</b></td><td><b>0</b></td><td><b>1</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><a href="#_github_workspace_fsh-generated_resources_CodeSystem-ml-type-cs"><b>/github/workspace/fsh-generated/resources/CodeSystem-ml-type-cs</b></a></td><td><b>2</b></td><td><b>1</b></td><td><b>0</b></td>
+     <td><a href="#_github_workspace_fsh-generated_resources_CodeSystem-ml-type-cs"><b>/github/workspace/fsh-generated/resources/CodeSystem-ml-type-cs</b></a></td><td><b>2</b></td><td><b>0</b></td><td><b>1</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><a href="#_github_workspace_fsh-generated_resources_Communication-sss"><b>/github/workspace/fsh-generated/resources/Communication-sss</b></a></td><td><b>4</b></td><td><b>1</b></td><td><b>0</b></td>
@@ -605,40 +605,40 @@
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>Bundle.entry[0] (l12/c6)</b></td><td><b>error</b></td><td title="SLICING_CANNOT_BE_EVALUATED"><b>Slicing cannot be evaluated: Unable to resolve discriminator in definitions: name in profile http://hl7.org/fhir/us/example/StructureDefinition/MessageForCDSS on element Bundle.entry:messageheader, looking in profile http://hl7.org/fhir/us/example/StructureDefinition/MessageForCDSS (@char 1)</b></td>
+     <td><b>Bundle.entry[0] (l12/c6)</b></td><td><b>error</b></td><td title="SLICING_CANNOT_BE_EVALUATED"><b>Slicing cannot be evaluated: Unable to resolve discriminator in definitions: name in profile https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MessageForCDSS on element Bundle.entry:messageheader, looking in profile https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MessageForCDSS (@char 1)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>Bundle.entry[1] (l36/c6)</b></td><td><b>error</b></td><td title="SLICING_CANNOT_BE_EVALUATED"><b>Slicing cannot be evaluated: Unable to resolve discriminator in definitions: name in profile http://hl7.org/fhir/us/example/StructureDefinition/MessageForCDSS on element Bundle.entry:messageheader, looking in profile http://hl7.org/fhir/us/example/StructureDefinition/MessageForCDSS (@char 1)</b></td>
+     <td><b>Bundle.entry[1] (l36/c6)</b></td><td><b>error</b></td><td title="SLICING_CANNOT_BE_EVALUATED"><b>Slicing cannot be evaluated: Unable to resolve discriminator in definitions: name in profile https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MessageForCDSS on element Bundle.entry:messageheader, looking in profile https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MessageForCDSS (@char 1)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>Bundle.entry[2] (l62/c6)</b></td><td><b>error</b></td><td title="SLICING_CANNOT_BE_EVALUATED"><b>Slicing cannot be evaluated: Unable to resolve discriminator in definitions: name in profile http://hl7.org/fhir/us/example/StructureDefinition/MessageForCDSS on element Bundle.entry:messageheader, looking in profile http://hl7.org/fhir/us/example/StructureDefinition/MessageForCDSS (@char 1)</b></td>
+     <td><b>Bundle.entry[2] (l62/c6)</b></td><td><b>error</b></td><td title="SLICING_CANNOT_BE_EVALUATED"><b>Slicing cannot be evaluated: Unable to resolve discriminator in definitions: name in profile https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MessageForCDSS on element Bundle.entry:messageheader, looking in profile https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MessageForCDSS (@char 1)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>Bundle.entry[0] (l12/c6)</b></td><td><b>error</b></td><td title="SLICING_CANNOT_BE_EVALUATED"><b>Slicing cannot be evaluated: Unable to resolve discriminator in definitions: name in profile http://hl7.org/fhir/us/example/StructureDefinition/MessageForCDSS on element Bundle.entry:request, looking in profile http://hl7.org/fhir/us/example/StructureDefinition/MessageForCDSS (@char 1)</b></td>
+     <td><b>Bundle.entry[0] (l12/c6)</b></td><td><b>error</b></td><td title="SLICING_CANNOT_BE_EVALUATED"><b>Slicing cannot be evaluated: Unable to resolve discriminator in definitions: name in profile https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MessageForCDSS on element Bundle.entry:request, looking in profile https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MessageForCDSS (@char 1)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>Bundle.entry[1] (l36/c6)</b></td><td><b>error</b></td><td title="SLICING_CANNOT_BE_EVALUATED"><b>Slicing cannot be evaluated: Unable to resolve discriminator in definitions: name in profile http://hl7.org/fhir/us/example/StructureDefinition/MessageForCDSS on element Bundle.entry:request, looking in profile http://hl7.org/fhir/us/example/StructureDefinition/MessageForCDSS (@char 1)</b></td>
+     <td><b>Bundle.entry[1] (l36/c6)</b></td><td><b>error</b></td><td title="SLICING_CANNOT_BE_EVALUATED"><b>Slicing cannot be evaluated: Unable to resolve discriminator in definitions: name in profile https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MessageForCDSS on element Bundle.entry:request, looking in profile https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MessageForCDSS (@char 1)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>Bundle.entry[2] (l62/c6)</b></td><td><b>error</b></td><td title="SLICING_CANNOT_BE_EVALUATED"><b>Slicing cannot be evaluated: Unable to resolve discriminator in definitions: name in profile http://hl7.org/fhir/us/example/StructureDefinition/MessageForCDSS on element Bundle.entry:request, looking in profile http://hl7.org/fhir/us/example/StructureDefinition/MessageForCDSS (@char 1)</b></td>
+     <td><b>Bundle.entry[2] (l62/c6)</b></td><td><b>error</b></td><td title="SLICING_CANNOT_BE_EVALUATED"><b>Slicing cannot be evaluated: Unable to resolve discriminator in definitions: name in profile https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MessageForCDSS on element Bundle.entry:request, looking in profile https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MessageForCDSS (@char 1)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>Bundle.entry[0] (l12/c6)</b></td><td><b>error</b></td><td title="SLICING_CANNOT_BE_EVALUATED"><b>Slicing cannot be evaluated: Unable to resolve discriminator in definitions: name in profile http://hl7.org/fhir/us/example/StructureDefinition/MessageForCDSS on element Bundle.entry:parameter, looking in profile http://hl7.org/fhir/us/example/StructureDefinition/MessageForCDSS (@char 1)</b></td>
+     <td><b>Bundle.entry[0] (l12/c6)</b></td><td><b>error</b></td><td title="SLICING_CANNOT_BE_EVALUATED"><b>Slicing cannot be evaluated: Unable to resolve discriminator in definitions: name in profile https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MessageForCDSS on element Bundle.entry:parameter, looking in profile https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MessageForCDSS (@char 1)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>Bundle.entry[1] (l36/c6)</b></td><td><b>error</b></td><td title="SLICING_CANNOT_BE_EVALUATED"><b>Slicing cannot be evaluated: Unable to resolve discriminator in definitions: name in profile http://hl7.org/fhir/us/example/StructureDefinition/MessageForCDSS on element Bundle.entry:parameter, looking in profile http://hl7.org/fhir/us/example/StructureDefinition/MessageForCDSS (@char 1)</b></td>
+     <td><b>Bundle.entry[1] (l36/c6)</b></td><td><b>error</b></td><td title="SLICING_CANNOT_BE_EVALUATED"><b>Slicing cannot be evaluated: Unable to resolve discriminator in definitions: name in profile https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MessageForCDSS on element Bundle.entry:parameter, looking in profile https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MessageForCDSS (@char 1)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>Bundle.entry[2] (l62/c6)</b></td><td><b>error</b></td><td title="SLICING_CANNOT_BE_EVALUATED"><b>Slicing cannot be evaluated: Unable to resolve discriminator in definitions: name in profile http://hl7.org/fhir/us/example/StructureDefinition/MessageForCDSS on element Bundle.entry:parameter, looking in profile http://hl7.org/fhir/us/example/StructureDefinition/MessageForCDSS (@char 1)</b></td>
+     <td><b>Bundle.entry[2] (l62/c6)</b></td><td><b>error</b></td><td title="SLICING_CANNOT_BE_EVALUATED"><b>Slicing cannot be evaluated: Unable to resolve discriminator in definitions: name in profile https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MessageForCDSS on element Bundle.entry:parameter, looking in profile https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MessageForCDSS (@char 1)</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>Bundle (l1/c2)</b></td><td><b>information</b></td><td title="Validation_VAL_Profile_NoCheckMin"><b>Bundle.entry:messageheader: Unable to check minimum required (Bundle.entry) due to lack of slicing validation (from http://hl7.org/fhir/us/example/StructureDefinition/MessageForCDSS)</b></td>
+     <td><b>Bundle (l1/c2)</b></td><td><b>information</b></td><td title="Validation_VAL_Profile_NoCheckMin"><b>Bundle.entry:messageheader: Unable to check minimum required (Bundle.entry) due to lack of slicing validation (from https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MessageForCDSS)</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>Bundle (l1/c2)</b></td><td><b>information</b></td><td title="Validation_VAL_Profile_NoCheckMin"><b>Bundle.entry:request: Unable to check minimum required (Bundle.entry) due to lack of slicing validation (from http://hl7.org/fhir/us/example/StructureDefinition/MessageForCDSS)</b></td>
+     <td><b>Bundle (l1/c2)</b></td><td><b>information</b></td><td title="Validation_VAL_Profile_NoCheckMin"><b>Bundle.entry:request: Unable to check minimum required (Bundle.entry) due to lack of slicing validation (from https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MessageForCDSS)</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>Bundle (l1/c2)</b></td><td><b>information</b></td><td title="Validation_VAL_Profile_NoCheckMin"><b>Bundle.entry:parameter: Unable to check minimum required (Bundle.entry) due to lack of slicing validation (from http://hl7.org/fhir/us/example/StructureDefinition/MessageForCDSS)</b></td>
+     <td><b>Bundle (l1/c2)</b></td><td><b>information</b></td><td title="Validation_VAL_Profile_NoCheckMin"><b>Bundle.entry:parameter: Unable to check minimum required (Bundle.entry) due to lack of slicing validation (from https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MessageForCDSS)</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>Bundle.entry[0].resource.ofType(MessageHeader).event.ofType(Coding) (l23/c10)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
@@ -816,40 +816,40 @@
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>Bundle.entry[0] (l12/c6)</b></td><td><b>error</b></td><td title="SLICING_CANNOT_BE_EVALUATED"><b>Slicing cannot be evaluated: Unable to resolve discriminator in definitions: name in profile http://hl7.org/fhir/us/example/StructureDefinition/MessageForCDSS on element Bundle.entry:messageheader, looking in profile http://hl7.org/fhir/us/example/StructureDefinition/MessageForCDSS (@char 1)</b></td>
+     <td><b>Bundle.entry[0] (l12/c6)</b></td><td><b>error</b></td><td title="SLICING_CANNOT_BE_EVALUATED"><b>Slicing cannot be evaluated: Unable to resolve discriminator in definitions: name in profile https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MessageForCDSS on element Bundle.entry:messageheader, looking in profile https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MessageForCDSS (@char 1)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>Bundle.entry[1] (l36/c6)</b></td><td><b>error</b></td><td title="SLICING_CANNOT_BE_EVALUATED"><b>Slicing cannot be evaluated: Unable to resolve discriminator in definitions: name in profile http://hl7.org/fhir/us/example/StructureDefinition/MessageForCDSS on element Bundle.entry:messageheader, looking in profile http://hl7.org/fhir/us/example/StructureDefinition/MessageForCDSS (@char 1)</b></td>
+     <td><b>Bundle.entry[1] (l36/c6)</b></td><td><b>error</b></td><td title="SLICING_CANNOT_BE_EVALUATED"><b>Slicing cannot be evaluated: Unable to resolve discriminator in definitions: name in profile https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MessageForCDSS on element Bundle.entry:messageheader, looking in profile https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MessageForCDSS (@char 1)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>Bundle.entry[2] (l69/c6)</b></td><td><b>error</b></td><td title="SLICING_CANNOT_BE_EVALUATED"><b>Slicing cannot be evaluated: Unable to resolve discriminator in definitions: name in profile http://hl7.org/fhir/us/example/StructureDefinition/MessageForCDSS on element Bundle.entry:messageheader, looking in profile http://hl7.org/fhir/us/example/StructureDefinition/MessageForCDSS (@char 1)</b></td>
+     <td><b>Bundle.entry[2] (l69/c6)</b></td><td><b>error</b></td><td title="SLICING_CANNOT_BE_EVALUATED"><b>Slicing cannot be evaluated: Unable to resolve discriminator in definitions: name in profile https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MessageForCDSS on element Bundle.entry:messageheader, looking in profile https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MessageForCDSS (@char 1)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>Bundle.entry[0] (l12/c6)</b></td><td><b>error</b></td><td title="SLICING_CANNOT_BE_EVALUATED"><b>Slicing cannot be evaluated: Unable to resolve discriminator in definitions: name in profile http://hl7.org/fhir/us/example/StructureDefinition/MessageForCDSS on element Bundle.entry:request, looking in profile http://hl7.org/fhir/us/example/StructureDefinition/MessageForCDSS (@char 1)</b></td>
+     <td><b>Bundle.entry[0] (l12/c6)</b></td><td><b>error</b></td><td title="SLICING_CANNOT_BE_EVALUATED"><b>Slicing cannot be evaluated: Unable to resolve discriminator in definitions: name in profile https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MessageForCDSS on element Bundle.entry:request, looking in profile https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MessageForCDSS (@char 1)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>Bundle.entry[1] (l36/c6)</b></td><td><b>error</b></td><td title="SLICING_CANNOT_BE_EVALUATED"><b>Slicing cannot be evaluated: Unable to resolve discriminator in definitions: name in profile http://hl7.org/fhir/us/example/StructureDefinition/MessageForCDSS on element Bundle.entry:request, looking in profile http://hl7.org/fhir/us/example/StructureDefinition/MessageForCDSS (@char 1)</b></td>
+     <td><b>Bundle.entry[1] (l36/c6)</b></td><td><b>error</b></td><td title="SLICING_CANNOT_BE_EVALUATED"><b>Slicing cannot be evaluated: Unable to resolve discriminator in definitions: name in profile https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MessageForCDSS on element Bundle.entry:request, looking in profile https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MessageForCDSS (@char 1)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>Bundle.entry[2] (l69/c6)</b></td><td><b>error</b></td><td title="SLICING_CANNOT_BE_EVALUATED"><b>Slicing cannot be evaluated: Unable to resolve discriminator in definitions: name in profile http://hl7.org/fhir/us/example/StructureDefinition/MessageForCDSS on element Bundle.entry:request, looking in profile http://hl7.org/fhir/us/example/StructureDefinition/MessageForCDSS (@char 1)</b></td>
+     <td><b>Bundle.entry[2] (l69/c6)</b></td><td><b>error</b></td><td title="SLICING_CANNOT_BE_EVALUATED"><b>Slicing cannot be evaluated: Unable to resolve discriminator in definitions: name in profile https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MessageForCDSS on element Bundle.entry:request, looking in profile https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MessageForCDSS (@char 1)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>Bundle.entry[0] (l12/c6)</b></td><td><b>error</b></td><td title="SLICING_CANNOT_BE_EVALUATED"><b>Slicing cannot be evaluated: Unable to resolve discriminator in definitions: name in profile http://hl7.org/fhir/us/example/StructureDefinition/MessageForCDSS on element Bundle.entry:parameter, looking in profile http://hl7.org/fhir/us/example/StructureDefinition/MessageForCDSS (@char 1)</b></td>
+     <td><b>Bundle.entry[0] (l12/c6)</b></td><td><b>error</b></td><td title="SLICING_CANNOT_BE_EVALUATED"><b>Slicing cannot be evaluated: Unable to resolve discriminator in definitions: name in profile https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MessageForCDSS on element Bundle.entry:parameter, looking in profile https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MessageForCDSS (@char 1)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>Bundle.entry[1] (l36/c6)</b></td><td><b>error</b></td><td title="SLICING_CANNOT_BE_EVALUATED"><b>Slicing cannot be evaluated: Unable to resolve discriminator in definitions: name in profile http://hl7.org/fhir/us/example/StructureDefinition/MessageForCDSS on element Bundle.entry:parameter, looking in profile http://hl7.org/fhir/us/example/StructureDefinition/MessageForCDSS (@char 1)</b></td>
+     <td><b>Bundle.entry[1] (l36/c6)</b></td><td><b>error</b></td><td title="SLICING_CANNOT_BE_EVALUATED"><b>Slicing cannot be evaluated: Unable to resolve discriminator in definitions: name in profile https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MessageForCDSS on element Bundle.entry:parameter, looking in profile https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MessageForCDSS (@char 1)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>Bundle.entry[2] (l69/c6)</b></td><td><b>error</b></td><td title="SLICING_CANNOT_BE_EVALUATED"><b>Slicing cannot be evaluated: Unable to resolve discriminator in definitions: name in profile http://hl7.org/fhir/us/example/StructureDefinition/MessageForCDSS on element Bundle.entry:parameter, looking in profile http://hl7.org/fhir/us/example/StructureDefinition/MessageForCDSS (@char 1)</b></td>
+     <td><b>Bundle.entry[2] (l69/c6)</b></td><td><b>error</b></td><td title="SLICING_CANNOT_BE_EVALUATED"><b>Slicing cannot be evaluated: Unable to resolve discriminator in definitions: name in profile https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MessageForCDSS on element Bundle.entry:parameter, looking in profile https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MessageForCDSS (@char 1)</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>Bundle (l1/c2)</b></td><td><b>information</b></td><td title="Validation_VAL_Profile_NoCheckMin"><b>Bundle.entry:messageheader: Unable to check minimum required (Bundle.entry) due to lack of slicing validation (from http://hl7.org/fhir/us/example/StructureDefinition/MessageForCDSS)</b></td>
+     <td><b>Bundle (l1/c2)</b></td><td><b>information</b></td><td title="Validation_VAL_Profile_NoCheckMin"><b>Bundle.entry:messageheader: Unable to check minimum required (Bundle.entry) due to lack of slicing validation (from https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MessageForCDSS)</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>Bundle (l1/c2)</b></td><td><b>information</b></td><td title="Validation_VAL_Profile_NoCheckMin"><b>Bundle.entry:request: Unable to check minimum required (Bundle.entry) due to lack of slicing validation (from http://hl7.org/fhir/us/example/StructureDefinition/MessageForCDSS)</b></td>
+     <td><b>Bundle (l1/c2)</b></td><td><b>information</b></td><td title="Validation_VAL_Profile_NoCheckMin"><b>Bundle.entry:request: Unable to check minimum required (Bundle.entry) due to lack of slicing validation (from https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MessageForCDSS)</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>Bundle (l1/c2)</b></td><td><b>information</b></td><td title="Validation_VAL_Profile_NoCheckMin"><b>Bundle.entry:parameter: Unable to check minimum required (Bundle.entry) due to lack of slicing validation (from http://hl7.org/fhir/us/example/StructureDefinition/MessageForCDSS)</b></td>
+     <td><b>Bundle (l1/c2)</b></td><td><b>information</b></td><td title="Validation_VAL_Profile_NoCheckMin"><b>Bundle.entry:parameter: Unable to check minimum required (Bundle.entry) due to lack of slicing validation (from https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MessageForCDSS)</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>Bundle.entry[0].resource.ofType(MessageHeader).event.ofType(Coding) (l23/c10)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
@@ -867,13 +867,13 @@
      <td><b>Bundle.entry[1].resource.ofType(Communication).payload[0].content.ofType(Reference)</b></td><td><b>error</b></td><td title="Bundle_BUNDLE_FullUrl_Missing"><b>Relative Reference appears inside Bundle whose entry is missing a fullUrl</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>Bundle.entry[1].resource.ofType(Communication).payload[0].content.ofType(Reference) (l64/c14)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_NotSlice"><b>This element does not match any known slice  defined in the profile http://hl7.org/fhir/us/example/StructureDefinition/OBSCDSSFinalizer and slicing is CLOSED: Bundle.entry[1].resource.ofType(Communication).payload[0].content.ofType(Reference): Does not match slice 'contentString' (discriminator: ($this is string))</b></td>
+     <td><b>Bundle.entry[1].resource.ofType(Communication).payload[0].content.ofType(Reference) (l64/c14)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_NotSlice"><b>This element does not match any known slice  defined in the profile https://joofio.github.io/obs-cdss-fhir//StructureDefinition/OBSCDSSFinalizer and slicing is CLOSED: Bundle.entry[1].resource.ofType(Communication).payload[0].content.ofType(Reference): Does not match slice 'contentString' (discriminator: ($this is string))</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>Bundle.entry[1].resource.ofType(Communication).payload[0] (l61/c12)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_Minimum"><b>Communication.payload.content[x]:contentString: minimum required = 1, but only found 0 (from http://hl7.org/fhir/us/example/StructureDefinition/OBSCDSSFinalizer)</b></td>
+     <td><b>Bundle.entry[1].resource.ofType(Communication).payload[0] (l61/c12)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_Minimum"><b>Communication.payload.content[x]:contentString: minimum required = 1, but only found 0 (from https://joofio.github.io/obs-cdss-fhir//StructureDefinition/OBSCDSSFinalizer)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>Bundle.entry[1].resource.ofType(Communication).payload[0].content.ofType(Reference) (l61/c12)</b></td><td><b>error</b></td><td title="Extension_PROF_Type"><b>The Profile 'http://hl7.org/fhir/us/example/StructureDefinition/OBSCDSSFinalizer' definition allows for the type string but found type Reference</b></td>
+     <td><b>Bundle.entry[1].resource.ofType(Communication).payload[0].content.ofType(Reference) (l61/c12)</b></td><td><b>error</b></td><td title="Extension_PROF_Type"><b>The Profile 'https://joofio.github.io/obs-cdss-fhir//StructureDefinition/OBSCDSSFinalizer' definition allows for the type string but found type Reference</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Bundle.entry[1].resource.ofType(Communication).payload[0].content.ofType(Reference).reference (l64/c14)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_NotAllowed"><b>This element is not allowed by the profile http://hl7.org/fhir/StructureDefinition/string</b></td>
@@ -913,13 +913,13 @@
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>CodeSystem.where(url = 'http://hl7.org/fhir/us/example/CodeSystem/ml-response-cs')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource /github/workspace/fsh-generated/resources/CodeSystem-ml-response-cs.json - the canonical URL (http://xxsomewhere.org/fhir/myig/CodeSystem/ml-response-cs) does not match the URL (http://hl7.org/fhir/us/example/CodeSystem/ml-response-cs)</b></td>
+     <td><b>CodeSystem.where(url = 'https://joofio.github.io/obs-cdss-fhir//CodeSystem/ml-response-cs')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource /github/workspace/fsh-generated/resources/CodeSystem-ml-response-cs.json - the canonical URL (http://xxsomewhere.org/fhir/myig/CodeSystem/ml-response-cs) does not match the URL (https://joofio.github.io/obs-cdss-fhir//CodeSystem/ml-response-cs)</b></td>
    </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>CodeSystem</b></td><td><b>warning</b></td><td title=""><b>HL7 Defined CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly</b></td>
+   <tr style="background-color: #ffffe6">
+     <td><b>CodeSystem</b></td><td><b>information</b></td><td title=""><b>CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>fsh-generated/resources/CodeSystem-ml-response-cs</b></td><td><b>error</b></td><td title=""><b>URL Mismatch http://xxsomewhere.org/fhir/myig/CodeSystem/ml-response-cs vs http://hl7.org/fhir/us/example/CodeSystem/ml-response-cs</b></td>
+     <td><b>fsh-generated/resources/CodeSystem-ml-response-cs</b></td><td><b>error</b></td><td title=""><b>URL Mismatch http://xxsomewhere.org/fhir/myig/CodeSystem/ml-response-cs vs https://joofio.github.io/obs-cdss-fhir//CodeSystem/ml-response-cs</b></td>
    </tr>
 </table>
 <hr/>
@@ -932,13 +932,13 @@
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>CodeSystem.where(url = 'http://hl7.org/fhir/us/example/CodeSystem/ml-type-cs')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource /github/workspace/fsh-generated/resources/CodeSystem-ml-type-cs.json - the canonical URL (http://xxsomewhere.org/fhir/myig/CodeSystem/ml-type-cs) does not match the URL (http://hl7.org/fhir/us/example/CodeSystem/ml-type-cs)</b></td>
+     <td><b>CodeSystem.where(url = 'https://joofio.github.io/obs-cdss-fhir//CodeSystem/ml-type-cs')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource /github/workspace/fsh-generated/resources/CodeSystem-ml-type-cs.json - the canonical URL (http://xxsomewhere.org/fhir/myig/CodeSystem/ml-type-cs) does not match the URL (https://joofio.github.io/obs-cdss-fhir//CodeSystem/ml-type-cs)</b></td>
    </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>CodeSystem</b></td><td><b>warning</b></td><td title=""><b>HL7 Defined CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly</b></td>
+   <tr style="background-color: #ffffe6">
+     <td><b>CodeSystem</b></td><td><b>information</b></td><td title=""><b>CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>fsh-generated/resources/CodeSystem-ml-type-cs</b></td><td><b>error</b></td><td title=""><b>URL Mismatch http://xxsomewhere.org/fhir/myig/CodeSystem/ml-type-cs vs http://hl7.org/fhir/us/example/CodeSystem/ml-type-cs</b></td>
+     <td><b>fsh-generated/resources/CodeSystem-ml-type-cs</b></td><td><b>error</b></td><td title=""><b>URL Mismatch http://xxsomewhere.org/fhir/myig/CodeSystem/ml-type-cs vs https://joofio.github.io/obs-cdss-fhir//CodeSystem/ml-type-cs</b></td>
    </tr>
 </table>
 <hr/>
@@ -954,13 +954,13 @@
      <td><b>Communication.category[0].coding[0] (l14/c10)</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>Communication.payload[0].content.ofType(Reference) (l28/c8)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_NotSlice"><b>This element does not match any known slice  defined in the profile http://hl7.org/fhir/us/example/StructureDefinition/OBSCDSSFinalizer and slicing is CLOSED: Communication.payload[0].content.ofType(Reference): Does not match slice 'contentString' (discriminator: ($this is string))</b></td>
+     <td><b>Communication.payload[0].content.ofType(Reference) (l28/c8)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_NotSlice"><b>This element does not match any known slice  defined in the profile https://joofio.github.io/obs-cdss-fhir//StructureDefinition/OBSCDSSFinalizer and slicing is CLOSED: Communication.payload[0].content.ofType(Reference): Does not match slice 'contentString' (discriminator: ($this is string))</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>Communication.payload[0] (l25/c6)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_Minimum"><b>Communication.payload.content[x]:contentString: minimum required = 1, but only found 0 (from http://hl7.org/fhir/us/example/StructureDefinition/OBSCDSSFinalizer)</b></td>
+     <td><b>Communication.payload[0] (l25/c6)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_Minimum"><b>Communication.payload.content[x]:contentString: minimum required = 1, but only found 0 (from https://joofio.github.io/obs-cdss-fhir//StructureDefinition/OBSCDSSFinalizer)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>Communication.payload[0].content.ofType(Reference) (l25/c6)</b></td><td><b>error</b></td><td title="Extension_PROF_Type"><b>The Profile 'http://hl7.org/fhir/us/example/StructureDefinition/OBSCDSSFinalizer' definition allows for the type string but found type Reference</b></td>
+     <td><b>Communication.payload[0].content.ofType(Reference) (l25/c6)</b></td><td><b>error</b></td><td title="Extension_PROF_Type"><b>The Profile 'https://joofio.github.io/obs-cdss-fhir//StructureDefinition/OBSCDSSFinalizer' definition allows for the type string but found type Reference</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Communication.payload[0].content.ofType(Reference).reference (l28/c8)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_NotAllowed"><b>This element is not allowed by the profile http://hl7.org/fhir/StructureDefinition/string</b></td>
@@ -1195,10 +1195,10 @@
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition.where(url = 'http://hl7.org/fhir/us/example/StructureDefinition/MLModel')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-MLModel.json - the canonical URL (http://xxsomewhere.org/fhir/myig/StructureDefinition/MLModel) does not match the URL (http://hl7.org/fhir/us/example/StructureDefinition/MLModel)</b></td>
+     <td><b>StructureDefinition.where(url = 'https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MLModel')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-MLModel.json - the canonical URL (http://xxsomewhere.org/fhir/myig/StructureDefinition/MLModel) does not match the URL (https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MLModel)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>fsh-generated/resources/StructureDefinition-MLModel</b></td><td><b>error</b></td><td title=""><b>URL Mismatch http://xxsomewhere.org/fhir/myig/StructureDefinition/MLModel vs http://hl7.org/fhir/us/example/StructureDefinition/MLModel</b></td>
+     <td><b>fsh-generated/resources/StructureDefinition-MLModel</b></td><td><b>error</b></td><td title=""><b>URL Mismatch http://xxsomewhere.org/fhir/myig/StructureDefinition/MLModel vs https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MLModel</b></td>
    </tr>
 </table>
 <hr/>
@@ -1211,10 +1211,10 @@
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition.where(url = 'http://hl7.org/fhir/us/example/StructureDefinition/MLParameterRequest')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-MLParameterRequest.json - the canonical URL (http://xxsomewhere.org/fhir/myig/StructureDefinition/MLParameterRequest) does not match the URL (http://hl7.org/fhir/us/example/StructureDefinition/MLParameterRequest)</b></td>
+     <td><b>StructureDefinition.where(url = 'https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MLParameterRequest')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-MLParameterRequest.json - the canonical URL (http://xxsomewhere.org/fhir/myig/StructureDefinition/MLParameterRequest) does not match the URL (https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MLParameterRequest)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>fsh-generated/resources/StructureDefinition-MLParameterRequest</b></td><td><b>error</b></td><td title=""><b>URL Mismatch http://xxsomewhere.org/fhir/myig/StructureDefinition/MLParameterRequest vs http://hl7.org/fhir/us/example/StructureDefinition/MLParameterRequest</b></td>
+     <td><b>fsh-generated/resources/StructureDefinition-MLParameterRequest</b></td><td><b>error</b></td><td title=""><b>URL Mismatch http://xxsomewhere.org/fhir/myig/StructureDefinition/MLParameterRequest vs https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MLParameterRequest</b></td>
    </tr>
 </table>
 <hr/>
@@ -1227,10 +1227,10 @@
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition.where(url = 'http://hl7.org/fhir/us/example/StructureDefinition/MLParameterResponse')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-MLParameterResponse.json - the canonical URL (http://xxsomewhere.org/fhir/myig/StructureDefinition/MLParameterResponse) does not match the URL (http://hl7.org/fhir/us/example/StructureDefinition/MLParameterResponse)</b></td>
+     <td><b>StructureDefinition.where(url = 'https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MLParameterResponse')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-MLParameterResponse.json - the canonical URL (http://xxsomewhere.org/fhir/myig/StructureDefinition/MLParameterResponse) does not match the URL (https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MLParameterResponse)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>fsh-generated/resources/StructureDefinition-MLParameterResponse</b></td><td><b>error</b></td><td title=""><b>URL Mismatch http://xxsomewhere.org/fhir/myig/StructureDefinition/MLParameterResponse vs http://hl7.org/fhir/us/example/StructureDefinition/MLParameterResponse</b></td>
+     <td><b>fsh-generated/resources/StructureDefinition-MLParameterResponse</b></td><td><b>error</b></td><td title=""><b>URL Mismatch http://xxsomewhere.org/fhir/myig/StructureDefinition/MLParameterResponse vs https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MLParameterResponse</b></td>
    </tr>
 </table>
 <hr/>
@@ -1243,10 +1243,10 @@
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition.where(url = 'http://hl7.org/fhir/us/example/StructureDefinition/MessageForCDSS')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-MessageForCDSS.json - the canonical URL (http://xxsomewhere.org/fhir/myig/StructureDefinition/MessageForCDSS) does not match the URL (http://hl7.org/fhir/us/example/StructureDefinition/MessageForCDSS)</b></td>
+     <td><b>StructureDefinition.where(url = 'https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MessageForCDSS')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-MessageForCDSS.json - the canonical URL (http://xxsomewhere.org/fhir/myig/StructureDefinition/MessageForCDSS) does not match the URL (https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MessageForCDSS)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>fsh-generated/resources/StructureDefinition-MessageForCDSS</b></td><td><b>error</b></td><td title=""><b>URL Mismatch http://xxsomewhere.org/fhir/myig/StructureDefinition/MessageForCDSS vs http://hl7.org/fhir/us/example/StructureDefinition/MessageForCDSS</b></td>
+     <td><b>fsh-generated/resources/StructureDefinition-MessageForCDSS</b></td><td><b>error</b></td><td title=""><b>URL Mismatch http://xxsomewhere.org/fhir/myig/StructureDefinition/MessageForCDSS vs https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MessageForCDSS</b></td>
    </tr>
 </table>
 <hr/>
@@ -1259,13 +1259,13 @@
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition.where(url = 'http://hl7.org/fhir/us/example/StructureDefinition/MessageForRequest')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-MessageForRequest.json - the canonical URL (http://xxsomewhere.org/fhir/myig/StructureDefinition/MessageForRequest) does not match the URL (http://hl7.org/fhir/us/example/StructureDefinition/MessageForRequest)</b></td>
+     <td><b>StructureDefinition.where(url = 'https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MessageForRequest')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-MessageForRequest.json - the canonical URL (http://xxsomewhere.org/fhir/myig/StructureDefinition/MessageForRequest) does not match the URL (https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MessageForRequest)</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition.where(url = 'http://hl7.org/fhir/us/example/StructureDefinition/MessageForRequest')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+     <td><b>StructureDefinition.where(url = 'https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MessageForRequest')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>fsh-generated/resources/StructureDefinition-MessageForRequest</b></td><td><b>error</b></td><td title=""><b>URL Mismatch http://xxsomewhere.org/fhir/myig/StructureDefinition/MessageForRequest vs http://hl7.org/fhir/us/example/StructureDefinition/MessageForRequest</b></td>
+     <td><b>fsh-generated/resources/StructureDefinition-MessageForRequest</b></td><td><b>error</b></td><td title=""><b>URL Mismatch http://xxsomewhere.org/fhir/myig/StructureDefinition/MessageForRequest vs https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MessageForRequest</b></td>
    </tr>
 </table>
 <hr/>
@@ -1278,10 +1278,10 @@
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition.where(url = 'http://hl7.org/fhir/us/example/StructureDefinition/MessageHeaderCDSS')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-MessageHeaderCDSS.json - the canonical URL (http://xxsomewhere.org/fhir/myig/StructureDefinition/MessageHeaderCDSS) does not match the URL (http://hl7.org/fhir/us/example/StructureDefinition/MessageHeaderCDSS)</b></td>
+     <td><b>StructureDefinition.where(url = 'https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MessageHeaderCDSS')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-MessageHeaderCDSS.json - the canonical URL (http://xxsomewhere.org/fhir/myig/StructureDefinition/MessageHeaderCDSS) does not match the URL (https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MessageHeaderCDSS)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>fsh-generated/resources/StructureDefinition-MessageHeaderCDSS</b></td><td><b>error</b></td><td title=""><b>URL Mismatch http://xxsomewhere.org/fhir/myig/StructureDefinition/MessageHeaderCDSS vs http://hl7.org/fhir/us/example/StructureDefinition/MessageHeaderCDSS</b></td>
+     <td><b>fsh-generated/resources/StructureDefinition-MessageHeaderCDSS</b></td><td><b>error</b></td><td title=""><b>URL Mismatch http://xxsomewhere.org/fhir/myig/StructureDefinition/MessageHeaderCDSS vs https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MessageHeaderCDSS</b></td>
    </tr>
 </table>
 <hr/>
@@ -1294,7 +1294,7 @@
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition.where(url = 'http://hl7.org/fhir/us/example/StructureDefinition/OBSCDSSFinalizer')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-OBSCDSSFinalizer.json - the canonical URL (http://xxsomewhere.org/fhir/myig/StructureDefinition/OBSCDSSFinalizer) does not match the URL (http://hl7.org/fhir/us/example/StructureDefinition/OBSCDSSFinalizer)</b></td>
+     <td><b>StructureDefinition.where(url = 'https://joofio.github.io/obs-cdss-fhir//StructureDefinition/OBSCDSSFinalizer')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-OBSCDSSFinalizer.json - the canonical URL (http://xxsomewhere.org/fhir/myig/StructureDefinition/OBSCDSSFinalizer) does not match the URL (https://joofio.github.io/obs-cdss-fhir//StructureDefinition/OBSCDSSFinalizer)</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>StructureDefinition.snapshot.element[25].pattern.ofType(CodeableConcept).coding[0]</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
@@ -1306,7 +1306,7 @@
      <td><b>StructureDefinition.snapshot.element[25].pattern.ofType(CodeableConcept)</b></td><td><b>information</b></td><td title=""><b>The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users) </b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>fsh-generated/resources/StructureDefinition-OBSCDSSFinalizer</b></td><td><b>error</b></td><td title=""><b>URL Mismatch http://xxsomewhere.org/fhir/myig/StructureDefinition/OBSCDSSFinalizer vs http://hl7.org/fhir/us/example/StructureDefinition/OBSCDSSFinalizer</b></td>
+     <td><b>fsh-generated/resources/StructureDefinition-OBSCDSSFinalizer</b></td><td><b>error</b></td><td title=""><b>URL Mismatch http://xxsomewhere.org/fhir/myig/StructureDefinition/OBSCDSSFinalizer vs https://joofio.github.io/obs-cdss-fhir//StructureDefinition/OBSCDSSFinalizer</b></td>
    </tr>
 </table>
 <hr/>
@@ -1319,7 +1319,7 @@
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition.where(url = 'http://hl7.org/fhir/us/example/StructureDefinition/OBSCDSSInitializer')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-OBSCDSSInitializer.json - the canonical URL (http://xxsomewhere.org/fhir/myig/StructureDefinition/OBSCDSSInitializer) does not match the URL (http://hl7.org/fhir/us/example/StructureDefinition/OBSCDSSInitializer)</b></td>
+     <td><b>StructureDefinition.where(url = 'https://joofio.github.io/obs-cdss-fhir//StructureDefinition/OBSCDSSInitializer')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-OBSCDSSInitializer.json - the canonical URL (http://xxsomewhere.org/fhir/myig/StructureDefinition/OBSCDSSInitializer) does not match the URL (https://joofio.github.io/obs-cdss-fhir//StructureDefinition/OBSCDSSInitializer)</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>StructureDefinition.snapshot.element[23].pattern.ofType(CodeableConcept).coding[0]</b></td><td><b>warning</b></td><td title="TERMINOLOGY_TX_SYSTEM_NO_CODE"><b>A code with no system has no defined meaning. A system should be provided</b></td>
@@ -1331,7 +1331,7 @@
      <td><b>StructureDefinition.snapshot.element[23].pattern.ofType(CodeableConcept)</b></td><td><b>information</b></td><td title=""><b>The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users) </b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>fsh-generated/resources/StructureDefinition-OBSCDSSInitializer</b></td><td><b>error</b></td><td title=""><b>URL Mismatch http://xxsomewhere.org/fhir/myig/StructureDefinition/OBSCDSSInitializer vs http://hl7.org/fhir/us/example/StructureDefinition/OBSCDSSInitializer</b></td>
+     <td><b>fsh-generated/resources/StructureDefinition-OBSCDSSInitializer</b></td><td><b>error</b></td><td title=""><b>URL Mismatch http://xxsomewhere.org/fhir/myig/StructureDefinition/OBSCDSSInitializer vs https://joofio.github.io/obs-cdss-fhir//StructureDefinition/OBSCDSSInitializer</b></td>
    </tr>
 </table>
 <hr/>
@@ -1344,10 +1344,10 @@
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>ValueSet.where(url = 'http://hl7.org/fhir/us/example/ValueSet/ml-response-vs')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource /github/workspace/fsh-generated/resources/ValueSet-ml-response-vs.json - the canonical URL (http://xxsomewhere.org/fhir/myig/ValueSet/ml-response-vs) does not match the URL (http://hl7.org/fhir/us/example/ValueSet/ml-response-vs)</b></td>
+     <td><b>ValueSet.where(url = 'https://joofio.github.io/obs-cdss-fhir//ValueSet/ml-response-vs')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource /github/workspace/fsh-generated/resources/ValueSet-ml-response-vs.json - the canonical URL (http://xxsomewhere.org/fhir/myig/ValueSet/ml-response-vs) does not match the URL (https://joofio.github.io/obs-cdss-fhir//ValueSet/ml-response-vs)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>fsh-generated/resources/ValueSet-ml-response-vs</b></td><td><b>error</b></td><td title=""><b>URL Mismatch http://xxsomewhere.org/fhir/myig/ValueSet/ml-response-vs vs http://hl7.org/fhir/us/example/ValueSet/ml-response-vs</b></td>
+     <td><b>fsh-generated/resources/ValueSet-ml-response-vs</b></td><td><b>error</b></td><td title=""><b>URL Mismatch http://xxsomewhere.org/fhir/myig/ValueSet/ml-response-vs vs https://joofio.github.io/obs-cdss-fhir//ValueSet/ml-response-vs</b></td>
    </tr>
 </table>
 <hr/>
@@ -1360,10 +1360,10 @@
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>ValueSet.where(url = 'http://hl7.org/fhir/us/example/ValueSet/ml-type-vs')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource /github/workspace/fsh-generated/resources/ValueSet-ml-type-vs.json - the canonical URL (http://xxsomewhere.org/fhir/myig/ValueSet/ml-type-vs) does not match the URL (http://hl7.org/fhir/us/example/ValueSet/ml-type-vs)</b></td>
+     <td><b>ValueSet.where(url = 'https://joofio.github.io/obs-cdss-fhir//ValueSet/ml-type-vs')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource /github/workspace/fsh-generated/resources/ValueSet-ml-type-vs.json - the canonical URL (http://xxsomewhere.org/fhir/myig/ValueSet/ml-type-vs) does not match the URL (https://joofio.github.io/obs-cdss-fhir//ValueSet/ml-type-vs)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>fsh-generated/resources/ValueSet-ml-type-vs</b></td><td><b>error</b></td><td title=""><b>URL Mismatch http://xxsomewhere.org/fhir/myig/ValueSet/ml-type-vs vs http://hl7.org/fhir/us/example/ValueSet/ml-type-vs</b></td>
+     <td><b>fsh-generated/resources/ValueSet-ml-type-vs</b></td><td><b>error</b></td><td title=""><b>URL Mismatch http://xxsomewhere.org/fhir/myig/ValueSet/ml-type-vs vs https://joofio.github.io/obs-cdss-fhir//ValueSet/ml-type-vs</b></td>
    </tr>
 </table>
 <hr/>
@@ -1449,10 +1449,10 @@
 <h2>Extension_PROF_Type</h2>
  <table class="grid">
    <tr style="background-color: #ffeeee">
-     <td><a href="Bundle-MessageForCDSSResponse.html">fsh-generated/resources/Bundle-MessageForCDSSResponse.json</a></td><td><b>The Profile 'http://hl7.org/fhir/us/example/StructureDefinition/OBSCDSSFinalizer' definition allows for the type string but found type Reference</b></td>
+     <td><a href="Bundle-MessageForCDSSResponse.html">fsh-generated/resources/Bundle-MessageForCDSSResponse.json</a></td><td><b>The Profile 'https://joofio.github.io/obs-cdss-fhir//StructureDefinition/OBSCDSSFinalizer' definition allows for the type string but found type Reference</b></td>
    </tr>
    <tr style="background-color: #ffeeee">
-     <td><a href="Communication-sss.html">fsh-generated/resources/Communication-sss.json</a></td><td><b>The Profile 'http://hl7.org/fhir/us/example/StructureDefinition/OBSCDSSFinalizer' definition allows for the type string but found type Reference</b></td>
+     <td><a href="Communication-sss.html">fsh-generated/resources/Communication-sss.json</a></td><td><b>The Profile 'https://joofio.github.io/obs-cdss-fhir//StructureDefinition/OBSCDSSFinalizer' definition allows for the type string but found type Reference</b></td>
    </tr>
 </table>
 <hr/>
@@ -1460,40 +1460,40 @@
 <h2>RESOURCE_CANONICAL_MISMATCH</h2>
  <table class="grid">
    <tr style="background-color: #ffeeee">
-     <td><a href="CodeSystem-ml-response-cs.html">fsh-generated/resources/CodeSystem-ml-response-cs.json</a></td><td><b>Conformance resource /github/workspace/fsh-generated/resources/CodeSystem-ml-response-cs.json - the canonical URL (http://xxsomewhere.org/fhir/myig/CodeSystem/ml-response-cs) does not match the URL (http://hl7.org/fhir/us/example/CodeSystem/ml-response-cs)</b></td>
+     <td><a href="CodeSystem-ml-response-cs.html">fsh-generated/resources/CodeSystem-ml-response-cs.json</a></td><td><b>Conformance resource /github/workspace/fsh-generated/resources/CodeSystem-ml-response-cs.json - the canonical URL (http://xxsomewhere.org/fhir/myig/CodeSystem/ml-response-cs) does not match the URL (https://joofio.github.io/obs-cdss-fhir//CodeSystem/ml-response-cs)</b></td>
    </tr>
    <tr style="background-color: #ffeeee">
-     <td><a href="CodeSystem-ml-type-cs.html">fsh-generated/resources/CodeSystem-ml-type-cs.json</a></td><td><b>Conformance resource /github/workspace/fsh-generated/resources/CodeSystem-ml-type-cs.json - the canonical URL (http://xxsomewhere.org/fhir/myig/CodeSystem/ml-type-cs) does not match the URL (http://hl7.org/fhir/us/example/CodeSystem/ml-type-cs)</b></td>
+     <td><a href="CodeSystem-ml-type-cs.html">fsh-generated/resources/CodeSystem-ml-type-cs.json</a></td><td><b>Conformance resource /github/workspace/fsh-generated/resources/CodeSystem-ml-type-cs.json - the canonical URL (http://xxsomewhere.org/fhir/myig/CodeSystem/ml-type-cs) does not match the URL (https://joofio.github.io/obs-cdss-fhir//CodeSystem/ml-type-cs)</b></td>
    </tr>
    <tr style="background-color: #ffeeee">
-     <td><a href="StructureDefinition-MLModel.html">fsh-generated/resources/StructureDefinition-MLModel.json</a></td><td><b>Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-MLModel.json - the canonical URL (http://xxsomewhere.org/fhir/myig/StructureDefinition/MLModel) does not match the URL (http://hl7.org/fhir/us/example/StructureDefinition/MLModel)</b></td>
+     <td><a href="StructureDefinition-MLModel.html">fsh-generated/resources/StructureDefinition-MLModel.json</a></td><td><b>Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-MLModel.json - the canonical URL (http://xxsomewhere.org/fhir/myig/StructureDefinition/MLModel) does not match the URL (https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MLModel)</b></td>
    </tr>
    <tr style="background-color: #ffeeee">
-     <td><a href="StructureDefinition-MLParameterRequest.html">fsh-generated/resources/StructureDefinition-MLParameterRequest.json</a></td><td><b>Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-MLParameterRequest.json - the canonical URL (http://xxsomewhere.org/fhir/myig/StructureDefinition/MLParameterRequest) does not match the URL (http://hl7.org/fhir/us/example/StructureDefinition/MLParameterRequest)</b></td>
+     <td><a href="StructureDefinition-MLParameterRequest.html">fsh-generated/resources/StructureDefinition-MLParameterRequest.json</a></td><td><b>Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-MLParameterRequest.json - the canonical URL (http://xxsomewhere.org/fhir/myig/StructureDefinition/MLParameterRequest) does not match the URL (https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MLParameterRequest)</b></td>
    </tr>
    <tr style="background-color: #ffeeee">
-     <td><a href="StructureDefinition-MLParameterResponse.html">fsh-generated/resources/StructureDefinition-MLParameterResponse.json</a></td><td><b>Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-MLParameterResponse.json - the canonical URL (http://xxsomewhere.org/fhir/myig/StructureDefinition/MLParameterResponse) does not match the URL (http://hl7.org/fhir/us/example/StructureDefinition/MLParameterResponse)</b></td>
+     <td><a href="StructureDefinition-MLParameterResponse.html">fsh-generated/resources/StructureDefinition-MLParameterResponse.json</a></td><td><b>Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-MLParameterResponse.json - the canonical URL (http://xxsomewhere.org/fhir/myig/StructureDefinition/MLParameterResponse) does not match the URL (https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MLParameterResponse)</b></td>
    </tr>
    <tr style="background-color: #ffeeee">
-     <td><a href="StructureDefinition-MessageForCDSS.html">fsh-generated/resources/StructureDefinition-MessageForCDSS.json</a></td><td><b>Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-MessageForCDSS.json - the canonical URL (http://xxsomewhere.org/fhir/myig/StructureDefinition/MessageForCDSS) does not match the URL (http://hl7.org/fhir/us/example/StructureDefinition/MessageForCDSS)</b></td>
+     <td><a href="StructureDefinition-MessageForCDSS.html">fsh-generated/resources/StructureDefinition-MessageForCDSS.json</a></td><td><b>Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-MessageForCDSS.json - the canonical URL (http://xxsomewhere.org/fhir/myig/StructureDefinition/MessageForCDSS) does not match the URL (https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MessageForCDSS)</b></td>
    </tr>
    <tr style="background-color: #ffeeee">
-     <td><a href="StructureDefinition-MessageForRequest.html">fsh-generated/resources/StructureDefinition-MessageForRequest.json</a></td><td><b>Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-MessageForRequest.json - the canonical URL (http://xxsomewhere.org/fhir/myig/StructureDefinition/MessageForRequest) does not match the URL (http://hl7.org/fhir/us/example/StructureDefinition/MessageForRequest)</b></td>
+     <td><a href="StructureDefinition-MessageForRequest.html">fsh-generated/resources/StructureDefinition-MessageForRequest.json</a></td><td><b>Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-MessageForRequest.json - the canonical URL (http://xxsomewhere.org/fhir/myig/StructureDefinition/MessageForRequest) does not match the URL (https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MessageForRequest)</b></td>
    </tr>
    <tr style="background-color: #ffeeee">
-     <td><a href="StructureDefinition-MessageHeaderCDSS.html">fsh-generated/resources/StructureDefinition-MessageHeaderCDSS.json</a></td><td><b>Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-MessageHeaderCDSS.json - the canonical URL (http://xxsomewhere.org/fhir/myig/StructureDefinition/MessageHeaderCDSS) does not match the URL (http://hl7.org/fhir/us/example/StructureDefinition/MessageHeaderCDSS)</b></td>
+     <td><a href="StructureDefinition-MessageHeaderCDSS.html">fsh-generated/resources/StructureDefinition-MessageHeaderCDSS.json</a></td><td><b>Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-MessageHeaderCDSS.json - the canonical URL (http://xxsomewhere.org/fhir/myig/StructureDefinition/MessageHeaderCDSS) does not match the URL (https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MessageHeaderCDSS)</b></td>
    </tr>
    <tr style="background-color: #ffeeee">
-     <td><a href="StructureDefinition-OBSCDSSFinalizer.html">fsh-generated/resources/StructureDefinition-OBSCDSSFinalizer.json</a></td><td><b>Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-OBSCDSSFinalizer.json - the canonical URL (http://xxsomewhere.org/fhir/myig/StructureDefinition/OBSCDSSFinalizer) does not match the URL (http://hl7.org/fhir/us/example/StructureDefinition/OBSCDSSFinalizer)</b></td>
+     <td><a href="StructureDefinition-OBSCDSSFinalizer.html">fsh-generated/resources/StructureDefinition-OBSCDSSFinalizer.json</a></td><td><b>Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-OBSCDSSFinalizer.json - the canonical URL (http://xxsomewhere.org/fhir/myig/StructureDefinition/OBSCDSSFinalizer) does not match the URL (https://joofio.github.io/obs-cdss-fhir//StructureDefinition/OBSCDSSFinalizer)</b></td>
    </tr>
    <tr style="background-color: #ffeeee">
-     <td><a href="StructureDefinition-OBSCDSSInitializer.html">fsh-generated/resources/StructureDefinition-OBSCDSSInitializer.json</a></td><td><b>Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-OBSCDSSInitializer.json - the canonical URL (http://xxsomewhere.org/fhir/myig/StructureDefinition/OBSCDSSInitializer) does not match the URL (http://hl7.org/fhir/us/example/StructureDefinition/OBSCDSSInitializer)</b></td>
+     <td><a href="StructureDefinition-OBSCDSSInitializer.html">fsh-generated/resources/StructureDefinition-OBSCDSSInitializer.json</a></td><td><b>Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-OBSCDSSInitializer.json - the canonical URL (http://xxsomewhere.org/fhir/myig/StructureDefinition/OBSCDSSInitializer) does not match the URL (https://joofio.github.io/obs-cdss-fhir//StructureDefinition/OBSCDSSInitializer)</b></td>
    </tr>
    <tr style="background-color: #ffeeee">
-     <td><a href="ValueSet-ml-response-vs.html">fsh-generated/resources/ValueSet-ml-response-vs.json</a></td><td><b>Conformance resource /github/workspace/fsh-generated/resources/ValueSet-ml-response-vs.json - the canonical URL (http://xxsomewhere.org/fhir/myig/ValueSet/ml-response-vs) does not match the URL (http://hl7.org/fhir/us/example/ValueSet/ml-response-vs)</b></td>
+     <td><a href="ValueSet-ml-response-vs.html">fsh-generated/resources/ValueSet-ml-response-vs.json</a></td><td><b>Conformance resource /github/workspace/fsh-generated/resources/ValueSet-ml-response-vs.json - the canonical URL (http://xxsomewhere.org/fhir/myig/ValueSet/ml-response-vs) does not match the URL (https://joofio.github.io/obs-cdss-fhir//ValueSet/ml-response-vs)</b></td>
    </tr>
    <tr style="background-color: #ffeeee">
-     <td><a href="ValueSet-ml-type-vs.html">fsh-generated/resources/ValueSet-ml-type-vs.json</a></td><td><b>Conformance resource /github/workspace/fsh-generated/resources/ValueSet-ml-type-vs.json - the canonical URL (http://xxsomewhere.org/fhir/myig/ValueSet/ml-type-vs) does not match the URL (http://hl7.org/fhir/us/example/ValueSet/ml-type-vs)</b></td>
+     <td><a href="ValueSet-ml-type-vs.html">fsh-generated/resources/ValueSet-ml-type-vs.json</a></td><td><b>Conformance resource /github/workspace/fsh-generated/resources/ValueSet-ml-type-vs.json - the canonical URL (http://xxsomewhere.org/fhir/myig/ValueSet/ml-type-vs) does not match the URL (https://joofio.github.io/obs-cdss-fhir//ValueSet/ml-type-vs)</b></td>
    </tr>
 </table>
 <hr/>
@@ -1501,58 +1501,58 @@
 <h2>SLICING_CANNOT_BE_EVALUATED</h2>
  <table class="grid">
    <tr style="background-color: #ffeeee">
-     <td><a href="Bundle-MessageForCDSSRequest.html">fsh-generated/resources/Bundle-MessageForCDSSRequest.json</a></td><td><b>Slicing cannot be evaluated: Unable to resolve discriminator in definitions: name in profile http://hl7.org/fhir/us/example/StructureDefinition/MessageForCDSS on element Bundle.entry:messageheader, looking in profile http://hl7.org/fhir/us/example/StructureDefinition/MessageForCDSS (@char 1)</b></td>
+     <td><a href="Bundle-MessageForCDSSRequest.html">fsh-generated/resources/Bundle-MessageForCDSSRequest.json</a></td><td><b>Slicing cannot be evaluated: Unable to resolve discriminator in definitions: name in profile https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MessageForCDSS on element Bundle.entry:messageheader, looking in profile https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MessageForCDSS (@char 1)</b></td>
    </tr>
    <tr style="background-color: #ffeeee">
-     <td><a href="Bundle-MessageForCDSSRequest.html">fsh-generated/resources/Bundle-MessageForCDSSRequest.json</a></td><td><b>Slicing cannot be evaluated: Unable to resolve discriminator in definitions: name in profile http://hl7.org/fhir/us/example/StructureDefinition/MessageForCDSS on element Bundle.entry:messageheader, looking in profile http://hl7.org/fhir/us/example/StructureDefinition/MessageForCDSS (@char 1)</b></td>
+     <td><a href="Bundle-MessageForCDSSRequest.html">fsh-generated/resources/Bundle-MessageForCDSSRequest.json</a></td><td><b>Slicing cannot be evaluated: Unable to resolve discriminator in definitions: name in profile https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MessageForCDSS on element Bundle.entry:messageheader, looking in profile https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MessageForCDSS (@char 1)</b></td>
    </tr>
    <tr style="background-color: #ffeeee">
-     <td><a href="Bundle-MessageForCDSSRequest.html">fsh-generated/resources/Bundle-MessageForCDSSRequest.json</a></td><td><b>Slicing cannot be evaluated: Unable to resolve discriminator in definitions: name in profile http://hl7.org/fhir/us/example/StructureDefinition/MessageForCDSS on element Bundle.entry:messageheader, looking in profile http://hl7.org/fhir/us/example/StructureDefinition/MessageForCDSS (@char 1)</b></td>
+     <td><a href="Bundle-MessageForCDSSRequest.html">fsh-generated/resources/Bundle-MessageForCDSSRequest.json</a></td><td><b>Slicing cannot be evaluated: Unable to resolve discriminator in definitions: name in profile https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MessageForCDSS on element Bundle.entry:messageheader, looking in profile https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MessageForCDSS (@char 1)</b></td>
    </tr>
    <tr style="background-color: #ffeeee">
-     <td><a href="Bundle-MessageForCDSSRequest.html">fsh-generated/resources/Bundle-MessageForCDSSRequest.json</a></td><td><b>Slicing cannot be evaluated: Unable to resolve discriminator in definitions: name in profile http://hl7.org/fhir/us/example/StructureDefinition/MessageForCDSS on element Bundle.entry:request, looking in profile http://hl7.org/fhir/us/example/StructureDefinition/MessageForCDSS (@char 1)</b></td>
+     <td><a href="Bundle-MessageForCDSSRequest.html">fsh-generated/resources/Bundle-MessageForCDSSRequest.json</a></td><td><b>Slicing cannot be evaluated: Unable to resolve discriminator in definitions: name in profile https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MessageForCDSS on element Bundle.entry:request, looking in profile https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MessageForCDSS (@char 1)</b></td>
    </tr>
    <tr style="background-color: #ffeeee">
-     <td><a href="Bundle-MessageForCDSSRequest.html">fsh-generated/resources/Bundle-MessageForCDSSRequest.json</a></td><td><b>Slicing cannot be evaluated: Unable to resolve discriminator in definitions: name in profile http://hl7.org/fhir/us/example/StructureDefinition/MessageForCDSS on element Bundle.entry:request, looking in profile http://hl7.org/fhir/us/example/StructureDefinition/MessageForCDSS (@char 1)</b></td>
+     <td><a href="Bundle-MessageForCDSSRequest.html">fsh-generated/resources/Bundle-MessageForCDSSRequest.json</a></td><td><b>Slicing cannot be evaluated: Unable to resolve discriminator in definitions: name in profile https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MessageForCDSS on element Bundle.entry:request, looking in profile https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MessageForCDSS (@char 1)</b></td>
    </tr>
    <tr style="background-color: #ffeeee">
-     <td><a href="Bundle-MessageForCDSSRequest.html">fsh-generated/resources/Bundle-MessageForCDSSRequest.json</a></td><td><b>Slicing cannot be evaluated: Unable to resolve discriminator in definitions: name in profile http://hl7.org/fhir/us/example/StructureDefinition/MessageForCDSS on element Bundle.entry:request, looking in profile http://hl7.org/fhir/us/example/StructureDefinition/MessageForCDSS (@char 1)</b></td>
+     <td><a href="Bundle-MessageForCDSSRequest.html">fsh-generated/resources/Bundle-MessageForCDSSRequest.json</a></td><td><b>Slicing cannot be evaluated: Unable to resolve discriminator in definitions: name in profile https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MessageForCDSS on element Bundle.entry:request, looking in profile https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MessageForCDSS (@char 1)</b></td>
    </tr>
    <tr style="background-color: #ffeeee">
-     <td><a href="Bundle-MessageForCDSSRequest.html">fsh-generated/resources/Bundle-MessageForCDSSRequest.json</a></td><td><b>Slicing cannot be evaluated: Unable to resolve discriminator in definitions: name in profile http://hl7.org/fhir/us/example/StructureDefinition/MessageForCDSS on element Bundle.entry:parameter, looking in profile http://hl7.org/fhir/us/example/StructureDefinition/MessageForCDSS (@char 1)</b></td>
+     <td><a href="Bundle-MessageForCDSSRequest.html">fsh-generated/resources/Bundle-MessageForCDSSRequest.json</a></td><td><b>Slicing cannot be evaluated: Unable to resolve discriminator in definitions: name in profile https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MessageForCDSS on element Bundle.entry:parameter, looking in profile https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MessageForCDSS (@char 1)</b></td>
    </tr>
    <tr style="background-color: #ffeeee">
-     <td><a href="Bundle-MessageForCDSSRequest.html">fsh-generated/resources/Bundle-MessageForCDSSRequest.json</a></td><td><b>Slicing cannot be evaluated: Unable to resolve discriminator in definitions: name in profile http://hl7.org/fhir/us/example/StructureDefinition/MessageForCDSS on element Bundle.entry:parameter, looking in profile http://hl7.org/fhir/us/example/StructureDefinition/MessageForCDSS (@char 1)</b></td>
+     <td><a href="Bundle-MessageForCDSSRequest.html">fsh-generated/resources/Bundle-MessageForCDSSRequest.json</a></td><td><b>Slicing cannot be evaluated: Unable to resolve discriminator in definitions: name in profile https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MessageForCDSS on element Bundle.entry:parameter, looking in profile https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MessageForCDSS (@char 1)</b></td>
    </tr>
    <tr style="background-color: #ffeeee">
-     <td><a href="Bundle-MessageForCDSSRequest.html">fsh-generated/resources/Bundle-MessageForCDSSRequest.json</a></td><td><b>Slicing cannot be evaluated: Unable to resolve discriminator in definitions: name in profile http://hl7.org/fhir/us/example/StructureDefinition/MessageForCDSS on element Bundle.entry:parameter, looking in profile http://hl7.org/fhir/us/example/StructureDefinition/MessageForCDSS (@char 1)</b></td>
+     <td><a href="Bundle-MessageForCDSSRequest.html">fsh-generated/resources/Bundle-MessageForCDSSRequest.json</a></td><td><b>Slicing cannot be evaluated: Unable to resolve discriminator in definitions: name in profile https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MessageForCDSS on element Bundle.entry:parameter, looking in profile https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MessageForCDSS (@char 1)</b></td>
    </tr>
    <tr style="background-color: #ffeeee">
-     <td><a href="Bundle-MessageForCDSSResponse.html">fsh-generated/resources/Bundle-MessageForCDSSResponse.json</a></td><td><b>Slicing cannot be evaluated: Unable to resolve discriminator in definitions: name in profile http://hl7.org/fhir/us/example/StructureDefinition/MessageForCDSS on element Bundle.entry:messageheader, looking in profile http://hl7.org/fhir/us/example/StructureDefinition/MessageForCDSS (@char 1)</b></td>
+     <td><a href="Bundle-MessageForCDSSResponse.html">fsh-generated/resources/Bundle-MessageForCDSSResponse.json</a></td><td><b>Slicing cannot be evaluated: Unable to resolve discriminator in definitions: name in profile https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MessageForCDSS on element Bundle.entry:messageheader, looking in profile https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MessageForCDSS (@char 1)</b></td>
    </tr>
    <tr style="background-color: #ffeeee">
-     <td><a href="Bundle-MessageForCDSSResponse.html">fsh-generated/resources/Bundle-MessageForCDSSResponse.json</a></td><td><b>Slicing cannot be evaluated: Unable to resolve discriminator in definitions: name in profile http://hl7.org/fhir/us/example/StructureDefinition/MessageForCDSS on element Bundle.entry:messageheader, looking in profile http://hl7.org/fhir/us/example/StructureDefinition/MessageForCDSS (@char 1)</b></td>
+     <td><a href="Bundle-MessageForCDSSResponse.html">fsh-generated/resources/Bundle-MessageForCDSSResponse.json</a></td><td><b>Slicing cannot be evaluated: Unable to resolve discriminator in definitions: name in profile https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MessageForCDSS on element Bundle.entry:messageheader, looking in profile https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MessageForCDSS (@char 1)</b></td>
    </tr>
    <tr style="background-color: #ffeeee">
-     <td><a href="Bundle-MessageForCDSSResponse.html">fsh-generated/resources/Bundle-MessageForCDSSResponse.json</a></td><td><b>Slicing cannot be evaluated: Unable to resolve discriminator in definitions: name in profile http://hl7.org/fhir/us/example/StructureDefinition/MessageForCDSS on element Bundle.entry:messageheader, looking in profile http://hl7.org/fhir/us/example/StructureDefinition/MessageForCDSS (@char 1)</b></td>
+     <td><a href="Bundle-MessageForCDSSResponse.html">fsh-generated/resources/Bundle-MessageForCDSSResponse.json</a></td><td><b>Slicing cannot be evaluated: Unable to resolve discriminator in definitions: name in profile https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MessageForCDSS on element Bundle.entry:messageheader, looking in profile https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MessageForCDSS (@char 1)</b></td>
    </tr>
    <tr style="background-color: #ffeeee">
-     <td><a href="Bundle-MessageForCDSSResponse.html">fsh-generated/resources/Bundle-MessageForCDSSResponse.json</a></td><td><b>Slicing cannot be evaluated: Unable to resolve discriminator in definitions: name in profile http://hl7.org/fhir/us/example/StructureDefinition/MessageForCDSS on element Bundle.entry:request, looking in profile http://hl7.org/fhir/us/example/StructureDefinition/MessageForCDSS (@char 1)</b></td>
+     <td><a href="Bundle-MessageForCDSSResponse.html">fsh-generated/resources/Bundle-MessageForCDSSResponse.json</a></td><td><b>Slicing cannot be evaluated: Unable to resolve discriminator in definitions: name in profile https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MessageForCDSS on element Bundle.entry:request, looking in profile https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MessageForCDSS (@char 1)</b></td>
    </tr>
    <tr style="background-color: #ffeeee">
-     <td><a href="Bundle-MessageForCDSSResponse.html">fsh-generated/resources/Bundle-MessageForCDSSResponse.json</a></td><td><b>Slicing cannot be evaluated: Unable to resolve discriminator in definitions: name in profile http://hl7.org/fhir/us/example/StructureDefinition/MessageForCDSS on element Bundle.entry:request, looking in profile http://hl7.org/fhir/us/example/StructureDefinition/MessageForCDSS (@char 1)</b></td>
+     <td><a href="Bundle-MessageForCDSSResponse.html">fsh-generated/resources/Bundle-MessageForCDSSResponse.json</a></td><td><b>Slicing cannot be evaluated: Unable to resolve discriminator in definitions: name in profile https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MessageForCDSS on element Bundle.entry:request, looking in profile https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MessageForCDSS (@char 1)</b></td>
    </tr>
    <tr style="background-color: #ffeeee">
-     <td><a href="Bundle-MessageForCDSSResponse.html">fsh-generated/resources/Bundle-MessageForCDSSResponse.json</a></td><td><b>Slicing cannot be evaluated: Unable to resolve discriminator in definitions: name in profile http://hl7.org/fhir/us/example/StructureDefinition/MessageForCDSS on element Bundle.entry:request, looking in profile http://hl7.org/fhir/us/example/StructureDefinition/MessageForCDSS (@char 1)</b></td>
+     <td><a href="Bundle-MessageForCDSSResponse.html">fsh-generated/resources/Bundle-MessageForCDSSResponse.json</a></td><td><b>Slicing cannot be evaluated: Unable to resolve discriminator in definitions: name in profile https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MessageForCDSS on element Bundle.entry:request, looking in profile https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MessageForCDSS (@char 1)</b></td>
    </tr>
    <tr style="background-color: #ffeeee">
-     <td><a href="Bundle-MessageForCDSSResponse.html">fsh-generated/resources/Bundle-MessageForCDSSResponse.json</a></td><td><b>Slicing cannot be evaluated: Unable to resolve discriminator in definitions: name in profile http://hl7.org/fhir/us/example/StructureDefinition/MessageForCDSS on element Bundle.entry:parameter, looking in profile http://hl7.org/fhir/us/example/StructureDefinition/MessageForCDSS (@char 1)</b></td>
+     <td><a href="Bundle-MessageForCDSSResponse.html">fsh-generated/resources/Bundle-MessageForCDSSResponse.json</a></td><td><b>Slicing cannot be evaluated: Unable to resolve discriminator in definitions: name in profile https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MessageForCDSS on element Bundle.entry:parameter, looking in profile https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MessageForCDSS (@char 1)</b></td>
    </tr>
    <tr style="background-color: #ffeeee">
-     <td><a href="Bundle-MessageForCDSSResponse.html">fsh-generated/resources/Bundle-MessageForCDSSResponse.json</a></td><td><b>Slicing cannot be evaluated: Unable to resolve discriminator in definitions: name in profile http://hl7.org/fhir/us/example/StructureDefinition/MessageForCDSS on element Bundle.entry:parameter, looking in profile http://hl7.org/fhir/us/example/StructureDefinition/MessageForCDSS (@char 1)</b></td>
+     <td><a href="Bundle-MessageForCDSSResponse.html">fsh-generated/resources/Bundle-MessageForCDSSResponse.json</a></td><td><b>Slicing cannot be evaluated: Unable to resolve discriminator in definitions: name in profile https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MessageForCDSS on element Bundle.entry:parameter, looking in profile https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MessageForCDSS (@char 1)</b></td>
    </tr>
    <tr style="background-color: #ffeeee">
-     <td><a href="Bundle-MessageForCDSSResponse.html">fsh-generated/resources/Bundle-MessageForCDSSResponse.json</a></td><td><b>Slicing cannot be evaluated: Unable to resolve discriminator in definitions: name in profile http://hl7.org/fhir/us/example/StructureDefinition/MessageForCDSS on element Bundle.entry:parameter, looking in profile http://hl7.org/fhir/us/example/StructureDefinition/MessageForCDSS (@char 1)</b></td>
+     <td><a href="Bundle-MessageForCDSSResponse.html">fsh-generated/resources/Bundle-MessageForCDSSResponse.json</a></td><td><b>Slicing cannot be evaluated: Unable to resolve discriminator in definitions: name in profile https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MessageForCDSS on element Bundle.entry:parameter, looking in profile https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MessageForCDSS (@char 1)</b></td>
    </tr>
 </table>
 <hr/>
@@ -1859,10 +1859,10 @@
 <h2>Validation_VAL_Profile_Minimum</h2>
  <table class="grid">
    <tr style="background-color: #ffeeee">
-     <td><a href="Bundle-MessageForCDSSResponse.html">fsh-generated/resources/Bundle-MessageForCDSSResponse.json</a></td><td><b>Communication.payload.content[x]:contentString: minimum required = 1, but only found 0 (from http://hl7.org/fhir/us/example/StructureDefinition/OBSCDSSFinalizer)</b></td>
+     <td><a href="Bundle-MessageForCDSSResponse.html">fsh-generated/resources/Bundle-MessageForCDSSResponse.json</a></td><td><b>Communication.payload.content[x]:contentString: minimum required = 1, but only found 0 (from https://joofio.github.io/obs-cdss-fhir//StructureDefinition/OBSCDSSFinalizer)</b></td>
    </tr>
    <tr style="background-color: #ffeeee">
-     <td><a href="Communication-sss.html">fsh-generated/resources/Communication-sss.json</a></td><td><b>Communication.payload.content[x]:contentString: minimum required = 1, but only found 0 (from http://hl7.org/fhir/us/example/StructureDefinition/OBSCDSSFinalizer)</b></td>
+     <td><a href="Communication-sss.html">fsh-generated/resources/Communication-sss.json</a></td><td><b>Communication.payload.content[x]:contentString: minimum required = 1, but only found 0 (from https://joofio.github.io/obs-cdss-fhir//StructureDefinition/OBSCDSSFinalizer)</b></td>
    </tr>
 </table>
 <hr/>
@@ -1870,22 +1870,22 @@
 <h2>Validation_VAL_Profile_NoCheckMin</h2>
  <table class="grid">
    <tr style="background-color: #fffff2">
-     <td><a href="Bundle-MessageForCDSSRequest.html">fsh-generated/resources/Bundle-MessageForCDSSRequest.json</a></td><td><b>Bundle.entry:messageheader: Unable to check minimum required (Bundle.entry) due to lack of slicing validation (from http://hl7.org/fhir/us/example/StructureDefinition/MessageForCDSS)</b></td>
+     <td><a href="Bundle-MessageForCDSSRequest.html">fsh-generated/resources/Bundle-MessageForCDSSRequest.json</a></td><td><b>Bundle.entry:messageheader: Unable to check minimum required (Bundle.entry) due to lack of slicing validation (from https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MessageForCDSS)</b></td>
    </tr>
    <tr style="background-color: #fffff2">
-     <td><a href="Bundle-MessageForCDSSRequest.html">fsh-generated/resources/Bundle-MessageForCDSSRequest.json</a></td><td><b>Bundle.entry:request: Unable to check minimum required (Bundle.entry) due to lack of slicing validation (from http://hl7.org/fhir/us/example/StructureDefinition/MessageForCDSS)</b></td>
+     <td><a href="Bundle-MessageForCDSSRequest.html">fsh-generated/resources/Bundle-MessageForCDSSRequest.json</a></td><td><b>Bundle.entry:request: Unable to check minimum required (Bundle.entry) due to lack of slicing validation (from https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MessageForCDSS)</b></td>
    </tr>
    <tr style="background-color: #fffff2">
-     <td><a href="Bundle-MessageForCDSSRequest.html">fsh-generated/resources/Bundle-MessageForCDSSRequest.json</a></td><td><b>Bundle.entry:parameter: Unable to check minimum required (Bundle.entry) due to lack of slicing validation (from http://hl7.org/fhir/us/example/StructureDefinition/MessageForCDSS)</b></td>
+     <td><a href="Bundle-MessageForCDSSRequest.html">fsh-generated/resources/Bundle-MessageForCDSSRequest.json</a></td><td><b>Bundle.entry:parameter: Unable to check minimum required (Bundle.entry) due to lack of slicing validation (from https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MessageForCDSS)</b></td>
    </tr>
    <tr style="background-color: #fffff2">
-     <td><a href="Bundle-MessageForCDSSResponse.html">fsh-generated/resources/Bundle-MessageForCDSSResponse.json</a></td><td><b>Bundle.entry:messageheader: Unable to check minimum required (Bundle.entry) due to lack of slicing validation (from http://hl7.org/fhir/us/example/StructureDefinition/MessageForCDSS)</b></td>
+     <td><a href="Bundle-MessageForCDSSResponse.html">fsh-generated/resources/Bundle-MessageForCDSSResponse.json</a></td><td><b>Bundle.entry:messageheader: Unable to check minimum required (Bundle.entry) due to lack of slicing validation (from https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MessageForCDSS)</b></td>
    </tr>
    <tr style="background-color: #fffff2">
-     <td><a href="Bundle-MessageForCDSSResponse.html">fsh-generated/resources/Bundle-MessageForCDSSResponse.json</a></td><td><b>Bundle.entry:request: Unable to check minimum required (Bundle.entry) due to lack of slicing validation (from http://hl7.org/fhir/us/example/StructureDefinition/MessageForCDSS)</b></td>
+     <td><a href="Bundle-MessageForCDSSResponse.html">fsh-generated/resources/Bundle-MessageForCDSSResponse.json</a></td><td><b>Bundle.entry:request: Unable to check minimum required (Bundle.entry) due to lack of slicing validation (from https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MessageForCDSS)</b></td>
    </tr>
    <tr style="background-color: #fffff2">
-     <td><a href="Bundle-MessageForCDSSResponse.html">fsh-generated/resources/Bundle-MessageForCDSSResponse.json</a></td><td><b>Bundle.entry:parameter: Unable to check minimum required (Bundle.entry) due to lack of slicing validation (from http://hl7.org/fhir/us/example/StructureDefinition/MessageForCDSS)</b></td>
+     <td><a href="Bundle-MessageForCDSSResponse.html">fsh-generated/resources/Bundle-MessageForCDSSResponse.json</a></td><td><b>Bundle.entry:parameter: Unable to check minimum required (Bundle.entry) due to lack of slicing validation (from https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MessageForCDSS)</b></td>
    </tr>
 </table>
 <hr/>
@@ -1904,10 +1904,10 @@
 <h2>Validation_VAL_Profile_NotSlice</h2>
  <table class="grid">
    <tr style="background-color: #ffeeee">
-     <td><a href="Bundle-MessageForCDSSResponse.html">fsh-generated/resources/Bundle-MessageForCDSSResponse.json</a></td><td><b>This element does not match any known slice  defined in the profile http://hl7.org/fhir/us/example/StructureDefinition/OBSCDSSFinalizer and slicing is CLOSED: Bundle.entry[1].resource.ofType(Communication).payload[0].content.ofType(Reference): Does not match slice 'contentString' (discriminator: ($this is string))</b></td>
+     <td><a href="Bundle-MessageForCDSSResponse.html">fsh-generated/resources/Bundle-MessageForCDSSResponse.json</a></td><td><b>This element does not match any known slice  defined in the profile https://joofio.github.io/obs-cdss-fhir//StructureDefinition/OBSCDSSFinalizer and slicing is CLOSED: Bundle.entry[1].resource.ofType(Communication).payload[0].content.ofType(Reference): Does not match slice 'contentString' (discriminator: ($this is string))</b></td>
    </tr>
    <tr style="background-color: #ffeeee">
-     <td><a href="Communication-sss.html">fsh-generated/resources/Communication-sss.json</a></td><td><b>This element does not match any known slice  defined in the profile http://hl7.org/fhir/us/example/StructureDefinition/OBSCDSSFinalizer and slicing is CLOSED: Communication.payload[0].content.ofType(Reference): Does not match slice 'contentString' (discriminator: ($this is string))</b></td>
+     <td><a href="Communication-sss.html">fsh-generated/resources/Communication-sss.json</a></td><td><b>This element does not match any known slice  defined in the profile https://joofio.github.io/obs-cdss-fhir//StructureDefinition/OBSCDSSFinalizer and slicing is CLOSED: Communication.payload[0].content.ofType(Reference): Does not match slice 'contentString' (discriminator: ($this is string))</b></td>
    </tr>
 </table>
 </body>

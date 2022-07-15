@@ -21,12 +21,12 @@
      fhir:Extension.url [ fhir:value "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category" ];
      fhir:Extension.valueCode [ fhir:value "not-classified" ]
   ];
-  fhir:StructureDefinition.url [ fhir:value "http://hl7.org/fhir/us/example/StructureDefinition/MessageForCDSS"];
+  fhir:StructureDefinition.url [ fhir:value "https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MessageForCDSS"];
   fhir:StructureDefinition.version [ fhir:value "0.1.0-test"];
   fhir:StructureDefinition.name [ fhir:value "MessageForCDSS"];
   fhir:StructureDefinition.title [ fhir:value "Message for response"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2022-07-14T16:27:57+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-07-15T07:25:18+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "xxxYour Work Group"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -2309,9 +2309,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "MessageHeader" ];
          fhir:ElementDefinition.type.profile [
-           fhir:value "http://hl7.org/fhir/us/example/StructureDefinition/MessageHeaderCDSS";
+           fhir:value "https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MessageHeaderCDSS";
            fhir:index 0;
-           fhir:link <http://hl7.org/fhir/us/example/StructureDefinition/MessageHeaderCDSS>
+           fhir:link <https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MessageHeaderCDSS>
          ]
        ];
        fhir:ElementDefinition.constraint [
@@ -3647,17 +3647,17 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "CommunicationRequest" ];
          fhir:ElementDefinition.type.profile [
-           fhir:value "http://hl7.org/fhir/us/example/StructureDefinition/OBSCDSSInitializer";
+           fhir:value "https://joofio.github.io/obs-cdss-fhir//StructureDefinition/OBSCDSSInitializer";
            fhir:index 0;
-           fhir:link <http://hl7.org/fhir/us/example/StructureDefinition/OBSCDSSInitializer>
+           fhir:link <https://joofio.github.io/obs-cdss-fhir//StructureDefinition/OBSCDSSInitializer>
          ]
        ], [
          fhir:index 1;
          fhir:ElementDefinition.type.code [ fhir:value "Communication" ];
          fhir:ElementDefinition.type.profile [
-           fhir:value "http://hl7.org/fhir/us/example/StructureDefinition/OBSCDSSFinalizer";
+           fhir:value "https://joofio.github.io/obs-cdss-fhir//StructureDefinition/OBSCDSSFinalizer";
            fhir:index 0;
-           fhir:link <http://hl7.org/fhir/us/example/StructureDefinition/OBSCDSSFinalizer>
+           fhir:link <https://joofio.github.io/obs-cdss-fhir//StructureDefinition/OBSCDSSFinalizer>
          ]
        ];
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
@@ -4916,13 +4916,13 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Parameters" ];
          fhir:ElementDefinition.type.profile [
-           fhir:value "http://hl7.org/fhir/us/example/StructureDefinition/MLParameterRequest";
+           fhir:value "https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MLParameterRequest";
            fhir:index 0;
-           fhir:link <http://hl7.org/fhir/us/example/StructureDefinition/MLParameterRequest>
+           fhir:link <https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MLParameterRequest>
          ], [
-           fhir:value "http://hl7.org/fhir/us/example/StructureDefinition/MLParameterResponse";
+           fhir:value "https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MLParameterResponse";
            fhir:index 1;
-           fhir:link <http://hl7.org/fhir/us/example/StructureDefinition/MLParameterResponse>
+           fhir:link <https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MLParameterResponse>
          ]
        ];
        fhir:ElementDefinition.isModifier [ fhir:value "false"^^xsd:boolean ];
@@ -6004,9 +6004,9 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "MessageHeader" ];
          fhir:ElementDefinition.type.profile [
-           fhir:value "http://hl7.org/fhir/us/example/StructureDefinition/MessageHeaderCDSS";
+           fhir:value "https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MessageHeaderCDSS";
            fhir:index 0;
-           fhir:link <http://hl7.org/fhir/us/example/StructureDefinition/MessageHeaderCDSS>
+           fhir:link <https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MessageHeaderCDSS>
          ]
        ]
      ], [
@@ -6025,17 +6025,17 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "CommunicationRequest" ];
          fhir:ElementDefinition.type.profile [
-           fhir:value "http://hl7.org/fhir/us/example/StructureDefinition/OBSCDSSInitializer";
+           fhir:value "https://joofio.github.io/obs-cdss-fhir//StructureDefinition/OBSCDSSInitializer";
            fhir:index 0;
-           fhir:link <http://hl7.org/fhir/us/example/StructureDefinition/OBSCDSSInitializer>
+           fhir:link <https://joofio.github.io/obs-cdss-fhir//StructureDefinition/OBSCDSSInitializer>
          ]
        ], [
          fhir:index 1;
          fhir:ElementDefinition.type.code [ fhir:value "Communication" ];
          fhir:ElementDefinition.type.profile [
-           fhir:value "http://hl7.org/fhir/us/example/StructureDefinition/OBSCDSSFinalizer";
+           fhir:value "https://joofio.github.io/obs-cdss-fhir//StructureDefinition/OBSCDSSFinalizer";
            fhir:index 0;
-           fhir:link <http://hl7.org/fhir/us/example/StructureDefinition/OBSCDSSFinalizer>
+           fhir:link <https://joofio.github.io/obs-cdss-fhir//StructureDefinition/OBSCDSSFinalizer>
          ]
        ]
      ], [
@@ -6054,13 +6054,13 @@
          fhir:index 0;
          fhir:ElementDefinition.type.code [ fhir:value "Parameters" ];
          fhir:ElementDefinition.type.profile [
-           fhir:value "http://hl7.org/fhir/us/example/StructureDefinition/MLParameterRequest";
+           fhir:value "https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MLParameterRequest";
            fhir:index 0;
-           fhir:link <http://hl7.org/fhir/us/example/StructureDefinition/MLParameterRequest>
+           fhir:link <https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MLParameterRequest>
          ], [
-           fhir:value "http://hl7.org/fhir/us/example/StructureDefinition/MLParameterResponse";
+           fhir:value "https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MLParameterResponse";
            fhir:index 1;
-           fhir:link <http://hl7.org/fhir/us/example/StructureDefinition/MLParameterResponse>
+           fhir:link <https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MLParameterResponse>
          ]
        ]
      ]

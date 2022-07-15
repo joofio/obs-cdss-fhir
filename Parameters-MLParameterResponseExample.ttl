@@ -10,9 +10,9 @@
   fhir:Resource.id [ fhir:value "MLParameterResponseExample"];
   fhir:Resource.meta [
      fhir:Meta.profile [
-       fhir:value "http://hl7.org/fhir/us/example/StructureDefinition/MLParameterResponse";
+       fhir:value "https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MLParameterResponse";
        fhir:index 0;
-       fhir:link <http://hl7.org/fhir/us/example/StructureDefinition/MLParameterResponse>
+       fhir:link <https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MLParameterResponse>
      ]
   ];
   fhir:Parameters.parameter [

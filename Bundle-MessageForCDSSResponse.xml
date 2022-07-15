@@ -3,7 +3,7 @@
 <Bundle xmlns="http://hl7.org/fhir">
   <id value="MessageForCDSSResponse"/>
   <meta>
-    <profile value="http://hl7.org/fhir/us/example/StructureDefinition/MessageForCDSS"/>
+    <profile value="https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MessageForCDSS"/>
   </meta>
   <type value="message"/>
   <timestamp value="2020-01-01T00:00:00Z"/>
@@ -12,7 +12,7 @@
       <MessageHeader>
         <id value="MessageHeaderCDSSExampleResponse"/>
         <meta>
-          <profile value="http://hl7.org/fhir/us/example/StructureDefinition/MessageHeaderCDSS"/>
+          <profile value="https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MessageHeaderCDSS"/>
         </meta>
         <text>
           <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "MessageHeaderCDSSExampleResponse" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-MessageHeaderCDSS.html">Message for response</a></p></div><p><b>event</b>: obs-cds (Details: [not stated] code obs-cds = 'obs-cds', stated as 'null')</p><h3>Destinations</h3><table class="grid"><tr><td>-</td><td><b>Name</b></td><td><b>Endpoint</b></td></tr><tr><td>*</td><td>Requester</td><td><code>127.0.0.1</code></td></tr></table><h3>Sources</h3><table class="grid"><tr><td>-</td><td><b>Name</b></td><td><b>Endpoint</b></td></tr><tr><td>*</td><td>CDSS-system</td><td><code>127.0.0.1</code></td></tr></table></div>
@@ -36,7 +36,7 @@
       <Communication>
         <id value="sss"/>
         <meta>
-          <profile value="http://hl7.org/fhir/us/example/StructureDefinition/OBSCDSSFinalizer"/>
+          <profile value="https://joofio.github.io/obs-cdss-fhir//StructureDefinition/OBSCDSSFinalizer"/>
         </meta>
         <text>
           <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource "sss" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-OBSCDSSFinalizer.html">Prediction</a></p></div><p><b>status</b>: completed</p><p><b>category</b>: instruction <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ([not stated]#instruction)</span></p><p><b>sent</b>: 2020-01-01 12:00:00+0000</p><p><b>received</b>: 2020-01-01 12:00:00+0000</p><p><b>sender</b>: <a href="Device-sss.html">Device/sss</a></p><h3>Payloads</h3><table class="grid"><tr><td>-</td><td><b>Content[x]</b></td></tr><tr><td>*</td><td><a href="#Parameters_MLParameterResponseExample">See above (Parameters/MLParameterResponseExample)</a></td></tr></table></div>
@@ -65,7 +65,7 @@
       <Parameters>
         <id value="MLParameterResponseExample"/>
         <meta>
-          <profile value="http://hl7.org/fhir/us/example/StructureDefinition/MLParameterResponse"/>
+          <profile value="https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MLParameterResponse"/>
         </meta>
         <parameter>
           <name value="result"/>

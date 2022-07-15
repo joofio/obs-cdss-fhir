@@ -3,14 +3,14 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="ml-response-vs"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <a href="CodeSystem-ml-response-cs.html"><code>http://hl7.org/fhir/us/example/CodeSystem/ml-response-cs</code></a></li></ul></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <a href="CodeSystem-ml-response-cs.html"><code>https://joofio.github.io/obs-cdss-fhir//CodeSystem/ml-response-cs</code></a></li></ul></div>
   </text>
-  <url value="http://hl7.org/fhir/us/example/ValueSet/ml-response-vs"/>
+  <url value="https://joofio.github.io/obs-cdss-fhir//ValueSet/ml-response-vs"/>
   <version value="0.1.0-test"/>
   <name value="MLResponseVS"/>
   <title value="Model Responses value set"/>
   <status value="active"/>
-  <date value="2022-07-14T16:27:57+00:00"/>
+  <date value="2022-07-15T07:25:18+00:00"/>
   <publisher value="xxxYour Work Group"/>
   <contact>
     <telecom>
@@ -27,7 +27,7 @@
   </jurisdiction>
   <compose>
     <include>
-      <system value="http://hl7.org/fhir/us/example/CodeSystem/ml-response-cs"/>
+      <system value="https://joofio.github.io/obs-cdss-fhir//CodeSystem/ml-response-cs"/>
     </include>
   </compose>
 </ValueSet>

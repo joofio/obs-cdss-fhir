@@ -3,7 +3,7 @@
   "id": "MessageForCDSSRequest",
   "meta": {
     "profile": [
-      "http://hl7.org/fhir/us/example/StructureDefinition/MessageForCDSS"
+      "https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MessageForCDSS"
     ]
   },
   "type": "message",
@@ -15,7 +15,7 @@
         "id": "MessageHeaderCDSSExampleRequest",
         "meta": {
           "profile": [
-            "http://hl7.org/fhir/us/example/StructureDefinition/MessageHeaderCDSS"
+            "https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MessageHeaderCDSS"
           ]
         },
         "text": {
@@ -43,7 +43,7 @@
         "id": "OBSCDSSInitializerExample",
         "meta": {
           "profile": [
-            "http://hl7.org/fhir/us/example/StructureDefinition/OBSCDSSInitializer",
+            "https://joofio.github.io/obs-cdss-fhir//StructureDefinition/OBSCDSSInitializer",
             "http://hl7.org/fhir/StructureDefinition/obscdss-initializer"
           ]
         },
@@ -73,7 +73,7 @@
         "id": "MLParameterRequestExample",
         "meta": {
           "profile": [
-            "http://hl7.org/fhir/us/example/StructureDefinition/MLParameterRequest"
+            "https://joofio.github.io/obs-cdss-fhir//StructureDefinition/MLParameterRequest"
           ]
         },
         "parameter": [
