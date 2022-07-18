@@ -91,7 +91,7 @@ Usage: #example
 * timestamp = "2020-01-01T00:00:00Z"
 
 * entry[messageheader].resource = MessageHeaderCDSSExampleRequest 
-* entry[request].resource = OBSCDSSInitializerExample
+* entry[content].resource = OBSCDSSInitializerExample
 * entry[parameter].resource = MLParameterRequestExample
 
 
@@ -147,7 +147,7 @@ Title: "Example of MlParameter - Obstetrics"
 Usage: #example
 
 * parameter[result].valueCoding = #Vaginal
-* parameter[outcome].valueCoding = #None
+* parameter[outcome].valueString = "{'Cesariana': '37.23 %', 'Vaginal': '62.77 %'}"
 * parameter[decision].valueCoding = #None
 
 
@@ -159,5 +159,5 @@ Usage: #example
 
 * timestamp = "2020-01-01T00:00:00Z"
 * entry[messageheader].resource = MessageHeaderCDSSExampleResponse 
-* entry[request].resource = PredictionExample
+* entry[content].resource = PredictionExample
 * entry[parameter].resource = MLParameterResponseExample

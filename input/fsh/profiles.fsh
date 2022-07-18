@@ -1,5 +1,5 @@
 Profile: OBSCDSSInitializer
-Title: "Request for prediction"
+Title: "Prediction Request Meta Information"
 Description: "The profile for asking for input for a certian CDSS case"
 Parent: CommunicationRequest
 
@@ -18,28 +18,9 @@ Parent: CommunicationRequest
 * payload.contentReference  only Reference(MLParameterRequest) 
 * payload.contentReference 1..1 MS
 
-Profile: MessageForRequest
-Parent: Bundle
-Title: "Message for request"
-Description: "The message for requesting a certain CDSS case"
-
-* identifier MS
-* type = #message
-* timestamp 1..1 MS
-* entry 3..3 MS
-* entry ^slicing.discriminator.type = #value
-* entry ^slicing.discriminator.path = "name"
-* entry ^slicing.rules = #open
-* entry contains messageheader 1..1 MS and request 1..1 MS and  parameter 1..1 MS  
-
-* entry[messageheader].resource only MessageHeaderCDSS
-
-* entry[request].resource only OBSCDSSInitializer
-
-* entry[parameter].resource only MLParameterRequest
 
 Profile: OBSCDSSFinalizer
-Title: "Prediction"
+Title: "Prediction Meta Information"
 Description: "The profile for sending the response for a certain CDSS case"
 Parent: Communication
 
@@ -72,38 +53,38 @@ Profile: MLParameterRequest
 Parent: Parameters
 Title: "Machine Learning Parameters for obstetrics"
 Description: "Inputs for machine learning model"
-* parameter 49..* MS
+* parameter 0..* MS
 * parameter.part 0..0 
 * parameter.resource 0..0 
 * parameter ^slicing.discriminator.type = #value
 * parameter ^slicing.discriminator.path = "name"
 * parameter ^slicing.rules = #open
 * parameter contains
-    APRESENTACAO_31 1..1 MS and  APRESENTACAO_28 1..1 MS and 
-    ESTIMATIVA_PESO_ECO_39 1..1 MS and APRESENTACAO_30 1..1 MS and 
-    APRESENTACAO_37 1..1 MS and GRUPO_ROBSON 1..1 MS and 
-    BISHOP_SCORE 1..1 MS and PESO_INICIAL 1..1 MS and 
-    ESTIMATIVA_PESO_ECO_32 1..1 MS and IDADE_MATERNA 1..1 MS and 
-    APRESENTACAO_35 1..1 MS and IMC 1..1 MS and 
-    APRESENTACAO_32 1..1 MS and APRESENTACAO_26 1..1 MS and 
-    ESTIMATIVA_PESO_ECO_24 1..1 MS and APRESENTACAO_34 1..1 MS and 
-    ESTIMATIVA_PESO_ECO_40 1..1 MS and APRESENTACAO_33 1..1 MS and 
-    APRESENTACAO_NO_PARTO 1..1 MS and NUMERO_CONSULTAS_PRE_NATAL 1..1 MS and 
-    APRESENTACAO_38 1..1 MS and APRESENTACAO_29 1..1 MS and 
-    ESTIMATIVA_PESO_ECO_41 1..1 MS and APRESENTACAO_ADMISSAO 1..1 MS and 
-    BISHOP_EXTINCAO 1..1 MS and APRESENTACAO_27 1..1 MS and 
-    ESTIMATIVA_PESO_ECO_33 1..1 MS and CESARIANAS_ANTERIOR 1..1 MS and 
-    APRESENTACAO_36 1..1 MS and  ESTIMATIVA_PESO_ECO_37 1..1 MS and 
-    TRAB_PARTO_ENTRADA_ESPONTANEO 1..1 MS and ESTIMATIVA_PESO_ECO_38 1..1 MS and 
-    part_mcdt_ctgs 1..1 MS and apres_feto_34 1..1 MS and 
-    tparto_rpm 1..1 MS and rn_ucin 1..1 MS and
-    part_vig 1..1 MS and grav_feto_altcf 1..1 MS and
-    tparto_esp 1..1 MS and apres_feto_34_pelve 1..1 MS and
-    parto_comp 1..1 MS and ciru_laqt 1..1 MS and
-    puer_comp_cica 1..1 MS and tparto_rpm_espo 1..1 MS and
-    grav_plac 1..1 MS and parto_23P 1..1 MS and
-    card_dhta 1..1 MS and  parto_comp_cervical 1..1 MS and
-    part_aep 1..1 MS and TIPO_PARTO 0..1 MS
+    APRESENTACAO_31 0..1 MS and  APRESENTACAO_28 0..1 MS and 
+    ESTIMATIVA_PESO_ECO_39 0..1 MS and APRESENTACAO_30 0..1 MS and 
+    APRESENTACAO_37 0..1 MS and GRUPO_ROBSON 0..1 MS and 
+    BISHOP_SCORE 0..1 MS and PESO_INICIAL 0..1 MS and 
+    ESTIMATIVA_PESO_ECO_32 0..1 MS and IDADE_MATERNA 0..1 MS and 
+    APRESENTACAO_35 0..1 MS and IMC 0..1 MS and 
+    APRESENTACAO_32 0..1 MS and APRESENTACAO_26 0..1 MS and 
+    ESTIMATIVA_PESO_ECO_24 0..1 MS and APRESENTACAO_34 0..1 MS and 
+    ESTIMATIVA_PESO_ECO_40 0..1 MS and APRESENTACAO_33 0..1 MS and 
+    APRESENTACAO_NO_PARTO 0..1 MS and NUMERO_CONSULTAS_PRE_NATAL 0..1 MS and 
+    APRESENTACAO_38 0..1 MS and APRESENTACAO_29 0..1 MS and 
+    ESTIMATIVA_PESO_ECO_41 0..1 MS and APRESENTACAO_ADMISSAO 0..1 MS and 
+    BISHOP_EXTINCAO 0..1 MS and APRESENTACAO_27 0..1 MS and 
+    ESTIMATIVA_PESO_ECO_33 0..1 MS and CESARIANAS_ANTERIOR 0..1 MS and 
+    APRESENTACAO_36 0..1 MS and  ESTIMATIVA_PESO_ECO_37 0..1 MS and 
+    TRAB_PARTO_ENTRADA_ESPONTANEO 0..1 MS and ESTIMATIVA_PESO_ECO_38 0..1 MS and 
+    part_mcdt_ctgs 0..1 MS and apres_feto_34 0..1 MS and 
+    tparto_rpm 0..1 MS and rn_ucin 0..1 MS and
+    part_vig 0..1 MS and grav_feto_altcf 0..1 MS and
+    tparto_esp 0..1 MS and apres_feto_34_pelve 0..1 MS and
+    parto_comp 0..1 MS and ciru_laqt 0..1 MS and
+    puer_comp_cica 0..1 MS and tparto_rpm_espo 0..1 MS and
+    grav_plac 0..1 MS and parto_23P 0..1 MS and
+    card_dhta 0..1 MS and  parto_comp_cervical 0..1 MS and
+    part_aep 0..1 MS and TIPO_PARTO 0..1 MS
 * parameter[APRESENTACAO_31].name =  "APRESENTACAO_31"
 * parameter[APRESENTACAO_31].value[x] only Coding
 
@@ -257,7 +238,7 @@ Description: "Inputs for machine learning model"
 
 Profile: MLParameterResponse
 Parent: Parameters
-Title: "Machine Learning Parameters for obstetrics"
+Title: "Machine Learning CDSS Response parameters"
 Description: "Outputs for machine learning model"
 * parameter 2..3 MS
 * parameter.part 0..0 
@@ -269,19 +250,19 @@ Description: "Outputs for machine learning model"
     result 1..1 MS and  outcome 1..1 MS  and decision 0..1 MS 
 
 * parameter[result].name =  "result"
-* parameter[result].value[x] only Coding
+* parameter[result].value[x] only Coding //expected
 
 * parameter[outcome].name =  "outcome"
-* parameter[outcome].value[x] only Coding
+* parameter[outcome].value[x] only string //percentage
 
 * parameter[decision].name =  "decision"
-* parameter[decision].value[x] only Coding
+* parameter[decision].value[x] only Coding //warning
 
 
 Profile: MessageForCDSS
 Parent: Bundle
-Title: "Message for response"
-Description: "The message for response"
+Title: "Message bundle for request or response "
+Description: "The message for response or request, containing the prediction/input parameters and Communication/CommunicationRequest"
 
 * identifier MS
 * type = #message
@@ -290,18 +271,18 @@ Description: "The message for response"
 * entry ^slicing.discriminator.type = #value
 * entry ^slicing.discriminator.path = "name"
 * entry ^slicing.rules = #open
-* entry contains messageheader 1..1 MS and request 1..1 MS and  parameter 1..1 MS  
+* entry contains messageheader 1..1 MS and content 1..1 MS and  parameter 1..1 MS  
 
 * entry[messageheader].resource only MessageHeaderCDSS
 
-* entry[request].resource only OBSCDSSInitializer or OBSCDSSFinalizer
+* entry[content].resource only OBSCDSSInitializer or OBSCDSSFinalizer
 
 * entry[parameter].resource only MLParameterRequest or MLParameterResponse
 
 Profile: MessageHeaderCDSS
 Parent: MessageHeader
-Title: "Message for response"
-Description: "The message for response"
+Title: "Message Header for request and response"
+Description: "Message Header for request and response"
 
 * eventCoding 1..1
 * destination.name 1..1 MS
