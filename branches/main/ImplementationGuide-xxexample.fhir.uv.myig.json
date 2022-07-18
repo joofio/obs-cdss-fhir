@@ -11,7 +11,7 @@
   "title": "Obstetrics CDSS IG",
   "status": "draft",
   "experimental": false,
-  "date": "2022-07-15T07:33:23+00:00",
+  "date": "2022-07-18T07:59:46+00:00",
   "publisher": "xxxYour Work Group",
   "contact": [
     {
@@ -415,19 +415,6 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/MessageForRequest"
-        },
-        "name": "Message for request",
-        "description": "The message for requesting a certain CDSS case"
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "MessageHeader"
           }
         ],
@@ -445,8 +432,8 @@
         "reference": {
           "reference": "StructureDefinition/MessageForCDSS"
         },
-        "name": "Message for response",
-        "description": "The message for response"
+        "name": "Message bundle for request or response ",
+        "description": "The message for response or request, containing the prediction/input parameters and Communication/CommunicationRequest"
       },
       {
         "extension": [
@@ -506,7 +493,7 @@
         "reference": {
           "reference": "StructureDefinition/OBSCDSSInitializer"
         },
-        "name": "Request for prediction",
+        "name": "Prediction Request Meta Information",
         "description": "The profile for asking for input for a certian CDSS case"
       },
       {
@@ -543,7 +530,7 @@
         "reference": {
           "reference": "StructureDefinition/OBSCDSSFinalizer"
         },
-        "name": "Prediction",
+        "name": "Prediction Meta Information",
         "description": "The profile for sending the response for a certain CDSS case"
       },
       {
@@ -556,8 +543,8 @@
         "reference": {
           "reference": "StructureDefinition/MessageHeaderCDSS"
         },
-        "name": "Message for response",
-        "description": "The message for response"
+        "name": "Message Header for request and response",
+        "description": "Message Header for request and response"
       },
       {
         "extension": [
@@ -617,7 +604,7 @@
         "reference": {
           "reference": "StructureDefinition/MLParameterResponse"
         },
-        "name": "Machine Learning Parameters for obstetrics",
+        "name": "Machine Learning CDSS Response parameters",
         "description": "Outputs for machine learning model"
       },
       {

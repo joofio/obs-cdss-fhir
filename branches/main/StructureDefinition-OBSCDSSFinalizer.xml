@@ -27,9 +27,9 @@
   <url value="https://joofio.github.io/obs-cdss-fhir/StructureDefinition/OBSCDSSFinalizer"/>
   <version value="0.1.0-test"/>
   <name value="OBSCDSSFinalizer"/>
-  <title value="Prediction"/>
+  <title value="Prediction Meta Information"/>
   <status value="active"/>
-  <date value="2022-07-15T07:33:23+00:00"/>
+  <date value="2022-07-18T07:59:46+00:00"/>
   <publisher value="xxxYour Work Group"/>
   <contact>
     <telecom>

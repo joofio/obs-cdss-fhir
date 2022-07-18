@@ -24,9 +24,7 @@
   ], [
      fhir:index 1;
      fhir:Parameters.parameter.name [ fhir:value "outcome" ];
-     fhir:Parameters.parameter.valueCoding [
-       fhir:Coding.code [ fhir:value "None" ]
-     ]
+     fhir:Parameters.parameter.valueString [ fhir:value "{'Cesariana': '37.23 %', 'Vaginal': '62.77 %'}" ]
   ], [
      fhir:index 2;
      fhir:Parameters.parameter.name [ fhir:value "decision" ];

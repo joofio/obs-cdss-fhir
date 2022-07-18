@@ -24,9 +24,9 @@
   fhir:StructureDefinition.url [ fhir:value "https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageHeaderCDSS"];
   fhir:StructureDefinition.version [ fhir:value "0.1.0-test"];
   fhir:StructureDefinition.name [ fhir:value "MessageHeaderCDSS"];
-  fhir:StructureDefinition.title [ fhir:value "Message for response"];
+  fhir:StructureDefinition.title [ fhir:value "Message Header for request and response"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2022-07-15T07:33:23+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-07-18T07:59:46+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "xxxYour Work Group"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -36,7 +36,7 @@
        fhir:ContactPoint.value [ fhir:value "http://xxhl7.org/Special/committees/[something]" ]
      ]
   ];
-  fhir:StructureDefinition.description [ fhir:value "The message for response"];
+  fhir:StructureDefinition.description [ fhir:value "Message Header for request and response"];
   fhir:StructureDefinition.jurisdiction [
      fhir:index 0;
      fhir:CodeableConcept.coding [

@@ -11,7 +11,7 @@
 "Parameters.language","Parameters.language","","","",0,1,"","","","code {[]} {[]}
 ","Language of the resource content","The base language in which the resource is written.","Language is provided to support indexing and accessibility (typically, services such as text to speech use the language tag). The html language tag in the narrative applies  to the narrative. The language tag on the resource may be used to specify the language of other presentations generated from the data in the resource. Not all the content has to be in the base language. The Resource.language should not be assumed to apply to the narrative automatically. If a language is specified, it should it also be specified on the div element in the html (see rules in HTML5 for information about the relationship between xml:lang and the html lang attribute).","","","","","","","","",,"preferred","A human language.","http://hl7.org/fhir/ValueSet/languages","",,,,"Resource.language",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"Parameters.parameter","Parameters.parameter","","","",49,*,"Y","","Y","BackboneElement {[]} {[]}
+"Parameters.parameter","Parameters.parameter","","","",0,*,"Y","","Y","BackboneElement {[]} {[]}
 ","Operation Parameter","A parameter passed to or received from the operation.","","","","","","","","","",,,,,"","value:name}
 ","",,"open","Parameters.parameter",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 inv-1:A parameter must have one and only one of (value, resource, part) {(part.exists() and value.empty() and resource.empty()) or (part.empty() and (value.exists() xor resource.exists()))}"
@@ -39,7 +39,7 @@ boolean {[]} {[]}canonical {[]} {[]}code {[]} {[]}date {[]} {[]}dateTime {[]} {[
 ",""
 "Parameters.parameter.part","Parameters.parameter.part","","","",0,0,"","","Y","","Named part of a multi-part parameter","A named part of a multi-part parameter.","Only one level of nested parameters is allowed.","","","","","","","","",,,,,"",,,,"Parameters.parameter.part",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"Parameters.parameter:APRESENTACAO_31","Parameters.parameter","APRESENTACAO_31","","",1,1,"Y","","Y","BackboneElement {[]} {[]}
+"Parameters.parameter:APRESENTACAO_31","Parameters.parameter","APRESENTACAO_31","","",0,1,"Y","","Y","BackboneElement {[]} {[]}
 ","Operation Parameter","A parameter passed to or received from the operation.","","","","","","","","","",,,,,"",,,,"Parameters.parameter",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 inv-1:A parameter must have one and only one of (value, resource, part) {(part.exists() and value.empty() and resource.empty()) or (part.empty() and (value.exists() xor resource.exists()))}"
 "Parameters.parameter:APRESENTACAO_31.id","Parameters.parameter.id","","","",0,1,"","","","string {[]} {[]}
@@ -66,7 +66,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ",""
 "Parameters.parameter:APRESENTACAO_31.part","Parameters.parameter.part","","","",0,*,"","","Y","","Named part of a multi-part parameter","A named part of a multi-part parameter.","Only one level of nested parameters is allowed.","","","","","","","","",,,,,"",,,,"Parameters.parameter.part",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"Parameters.parameter:APRESENTACAO_28","Parameters.parameter","APRESENTACAO_28","","",1,1,"Y","","Y","BackboneElement {[]} {[]}
+"Parameters.parameter:APRESENTACAO_28","Parameters.parameter","APRESENTACAO_28","","",0,1,"Y","","Y","BackboneElement {[]} {[]}
 ","Operation Parameter","A parameter passed to or received from the operation.","","","","","","","","","",,,,,"",,,,"Parameters.parameter",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 inv-1:A parameter must have one and only one of (value, resource, part) {(part.exists() and value.empty() and resource.empty()) or (part.empty() and (value.exists() xor resource.exists()))}"
 "Parameters.parameter:APRESENTACAO_28.id","Parameters.parameter.id","","","",0,1,"","","","string {[]} {[]}
@@ -93,7 +93,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ",""
 "Parameters.parameter:APRESENTACAO_28.part","Parameters.parameter.part","","","",0,*,"","","Y","","Named part of a multi-part parameter","A named part of a multi-part parameter.","Only one level of nested parameters is allowed.","","","","","","","","",,,,,"",,,,"Parameters.parameter.part",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"Parameters.parameter:ESTIMATIVA_PESO_ECO_39","Parameters.parameter","ESTIMATIVA_PESO_ECO_39","","",1,1,"Y","","Y","BackboneElement {[]} {[]}
+"Parameters.parameter:ESTIMATIVA_PESO_ECO_39","Parameters.parameter","ESTIMATIVA_PESO_ECO_39","","",0,1,"Y","","Y","BackboneElement {[]} {[]}
 ","Operation Parameter","A parameter passed to or received from the operation.","","","","","","","","","",,,,,"",,,,"Parameters.parameter",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 inv-1:A parameter must have one and only one of (value, resource, part) {(part.exists() and value.empty() and resource.empty()) or (part.empty() and (value.exists() xor resource.exists()))}"
 "Parameters.parameter:ESTIMATIVA_PESO_ECO_39.id","Parameters.parameter.id","","","",0,1,"","","","string {[]} {[]}
@@ -120,7 +120,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ",""
 "Parameters.parameter:ESTIMATIVA_PESO_ECO_39.part","Parameters.parameter.part","","","",0,*,"","","Y","","Named part of a multi-part parameter","A named part of a multi-part parameter.","Only one level of nested parameters is allowed.","","","","","","","","",,,,,"",,,,"Parameters.parameter.part",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"Parameters.parameter:APRESENTACAO_30","Parameters.parameter","APRESENTACAO_30","","",1,1,"Y","","Y","BackboneElement {[]} {[]}
+"Parameters.parameter:APRESENTACAO_30","Parameters.parameter","APRESENTACAO_30","","",0,1,"Y","","Y","BackboneElement {[]} {[]}
 ","Operation Parameter","A parameter passed to or received from the operation.","","","","","","","","","",,,,,"",,,,"Parameters.parameter",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 inv-1:A parameter must have one and only one of (value, resource, part) {(part.exists() and value.empty() and resource.empty()) or (part.empty() and (value.exists() xor resource.exists()))}"
 "Parameters.parameter:APRESENTACAO_30.id","Parameters.parameter.id","","","",0,1,"","","","string {[]} {[]}
@@ -147,7 +147,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ",""
 "Parameters.parameter:APRESENTACAO_30.part","Parameters.parameter.part","","","",0,*,"","","Y","","Named part of a multi-part parameter","A named part of a multi-part parameter.","Only one level of nested parameters is allowed.","","","","","","","","",,,,,"",,,,"Parameters.parameter.part",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"Parameters.parameter:APRESENTACAO_37","Parameters.parameter","APRESENTACAO_37","","",1,1,"Y","","Y","BackboneElement {[]} {[]}
+"Parameters.parameter:APRESENTACAO_37","Parameters.parameter","APRESENTACAO_37","","",0,1,"Y","","Y","BackboneElement {[]} {[]}
 ","Operation Parameter","A parameter passed to or received from the operation.","","","","","","","","","",,,,,"",,,,"Parameters.parameter",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 inv-1:A parameter must have one and only one of (value, resource, part) {(part.exists() and value.empty() and resource.empty()) or (part.empty() and (value.exists() xor resource.exists()))}"
 "Parameters.parameter:APRESENTACAO_37.id","Parameters.parameter.id","","","",0,1,"","","","string {[]} {[]}
@@ -174,7 +174,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ",""
 "Parameters.parameter:APRESENTACAO_37.part","Parameters.parameter.part","","","",0,*,"","","Y","","Named part of a multi-part parameter","A named part of a multi-part parameter.","Only one level of nested parameters is allowed.","","","","","","","","",,,,,"",,,,"Parameters.parameter.part",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"Parameters.parameter:GRUPO_ROBSON","Parameters.parameter","GRUPO_ROBSON","","",1,1,"Y","","Y","BackboneElement {[]} {[]}
+"Parameters.parameter:GRUPO_ROBSON","Parameters.parameter","GRUPO_ROBSON","","",0,1,"Y","","Y","BackboneElement {[]} {[]}
 ","Operation Parameter","A parameter passed to or received from the operation.","","","","","","","","","",,,,,"",,,,"Parameters.parameter",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 inv-1:A parameter must have one and only one of (value, resource, part) {(part.exists() and value.empty() and resource.empty()) or (part.empty() and (value.exists() xor resource.exists()))}"
 "Parameters.parameter:GRUPO_ROBSON.id","Parameters.parameter.id","","","",0,1,"","","","string {[]} {[]}
@@ -201,7 +201,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ",""
 "Parameters.parameter:GRUPO_ROBSON.part","Parameters.parameter.part","","","",0,*,"","","Y","","Named part of a multi-part parameter","A named part of a multi-part parameter.","Only one level of nested parameters is allowed.","","","","","","","","",,,,,"",,,,"Parameters.parameter.part",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"Parameters.parameter:BISHOP_SCORE","Parameters.parameter","BISHOP_SCORE","","",1,1,"Y","","Y","BackboneElement {[]} {[]}
+"Parameters.parameter:BISHOP_SCORE","Parameters.parameter","BISHOP_SCORE","","",0,1,"Y","","Y","BackboneElement {[]} {[]}
 ","Operation Parameter","A parameter passed to or received from the operation.","","","","","","","","","",,,,,"",,,,"Parameters.parameter",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 inv-1:A parameter must have one and only one of (value, resource, part) {(part.exists() and value.empty() and resource.empty()) or (part.empty() and (value.exists() xor resource.exists()))}"
 "Parameters.parameter:BISHOP_SCORE.id","Parameters.parameter.id","","","",0,1,"","","","string {[]} {[]}
@@ -228,7 +228,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ",""
 "Parameters.parameter:BISHOP_SCORE.part","Parameters.parameter.part","","","",0,*,"","","Y","","Named part of a multi-part parameter","A named part of a multi-part parameter.","Only one level of nested parameters is allowed.","","","","","","","","",,,,,"",,,,"Parameters.parameter.part",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"Parameters.parameter:PESO_INICIAL","Parameters.parameter","PESO_INICIAL","","",1,1,"Y","","Y","BackboneElement {[]} {[]}
+"Parameters.parameter:PESO_INICIAL","Parameters.parameter","PESO_INICIAL","","",0,1,"Y","","Y","BackboneElement {[]} {[]}
 ","Operation Parameter","A parameter passed to or received from the operation.","","","","","","","","","",,,,,"",,,,"Parameters.parameter",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 inv-1:A parameter must have one and only one of (value, resource, part) {(part.exists() and value.empty() and resource.empty()) or (part.empty() and (value.exists() xor resource.exists()))}"
 "Parameters.parameter:PESO_INICIAL.id","Parameters.parameter.id","","","",0,1,"","","","string {[]} {[]}
@@ -255,7 +255,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ",""
 "Parameters.parameter:PESO_INICIAL.part","Parameters.parameter.part","","","",0,*,"","","Y","","Named part of a multi-part parameter","A named part of a multi-part parameter.","Only one level of nested parameters is allowed.","","","","","","","","",,,,,"",,,,"Parameters.parameter.part",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"Parameters.parameter:ESTIMATIVA_PESO_ECO_32","Parameters.parameter","ESTIMATIVA_PESO_ECO_32","","",1,1,"Y","","Y","BackboneElement {[]} {[]}
+"Parameters.parameter:ESTIMATIVA_PESO_ECO_32","Parameters.parameter","ESTIMATIVA_PESO_ECO_32","","",0,1,"Y","","Y","BackboneElement {[]} {[]}
 ","Operation Parameter","A parameter passed to or received from the operation.","","","","","","","","","",,,,,"",,,,"Parameters.parameter",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 inv-1:A parameter must have one and only one of (value, resource, part) {(part.exists() and value.empty() and resource.empty()) or (part.empty() and (value.exists() xor resource.exists()))}"
 "Parameters.parameter:ESTIMATIVA_PESO_ECO_32.id","Parameters.parameter.id","","","",0,1,"","","","string {[]} {[]}
@@ -282,7 +282,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ",""
 "Parameters.parameter:ESTIMATIVA_PESO_ECO_32.part","Parameters.parameter.part","","","",0,*,"","","Y","","Named part of a multi-part parameter","A named part of a multi-part parameter.","Only one level of nested parameters is allowed.","","","","","","","","",,,,,"",,,,"Parameters.parameter.part",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"Parameters.parameter:IDADE_MATERNA","Parameters.parameter","IDADE_MATERNA","","",1,1,"Y","","Y","BackboneElement {[]} {[]}
+"Parameters.parameter:IDADE_MATERNA","Parameters.parameter","IDADE_MATERNA","","",0,1,"Y","","Y","BackboneElement {[]} {[]}
 ","Operation Parameter","A parameter passed to or received from the operation.","","","","","","","","","",,,,,"",,,,"Parameters.parameter",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 inv-1:A parameter must have one and only one of (value, resource, part) {(part.exists() and value.empty() and resource.empty()) or (part.empty() and (value.exists() xor resource.exists()))}"
 "Parameters.parameter:IDADE_MATERNA.id","Parameters.parameter.id","","","",0,1,"","","","string {[]} {[]}
@@ -309,7 +309,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ",""
 "Parameters.parameter:IDADE_MATERNA.part","Parameters.parameter.part","","","",0,*,"","","Y","","Named part of a multi-part parameter","A named part of a multi-part parameter.","Only one level of nested parameters is allowed.","","","","","","","","",,,,,"",,,,"Parameters.parameter.part",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"Parameters.parameter:APRESENTACAO_35","Parameters.parameter","APRESENTACAO_35","","",1,1,"Y","","Y","BackboneElement {[]} {[]}
+"Parameters.parameter:APRESENTACAO_35","Parameters.parameter","APRESENTACAO_35","","",0,1,"Y","","Y","BackboneElement {[]} {[]}
 ","Operation Parameter","A parameter passed to or received from the operation.","","","","","","","","","",,,,,"",,,,"Parameters.parameter",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 inv-1:A parameter must have one and only one of (value, resource, part) {(part.exists() and value.empty() and resource.empty()) or (part.empty() and (value.exists() xor resource.exists()))}"
 "Parameters.parameter:APRESENTACAO_35.id","Parameters.parameter.id","","","",0,1,"","","","string {[]} {[]}
@@ -336,7 +336,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ",""
 "Parameters.parameter:APRESENTACAO_35.part","Parameters.parameter.part","","","",0,*,"","","Y","","Named part of a multi-part parameter","A named part of a multi-part parameter.","Only one level of nested parameters is allowed.","","","","","","","","",,,,,"",,,,"Parameters.parameter.part",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"Parameters.parameter:IMC","Parameters.parameter","IMC","","",1,1,"Y","","Y","BackboneElement {[]} {[]}
+"Parameters.parameter:IMC","Parameters.parameter","IMC","","",0,1,"Y","","Y","BackboneElement {[]} {[]}
 ","Operation Parameter","A parameter passed to or received from the operation.","","","","","","","","","",,,,,"",,,,"Parameters.parameter",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 inv-1:A parameter must have one and only one of (value, resource, part) {(part.exists() and value.empty() and resource.empty()) or (part.empty() and (value.exists() xor resource.exists()))}"
 "Parameters.parameter:IMC.id","Parameters.parameter.id","","","",0,1,"","","","string {[]} {[]}
@@ -363,7 +363,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ",""
 "Parameters.parameter:IMC.part","Parameters.parameter.part","","","",0,*,"","","Y","","Named part of a multi-part parameter","A named part of a multi-part parameter.","Only one level of nested parameters is allowed.","","","","","","","","",,,,,"",,,,"Parameters.parameter.part",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"Parameters.parameter:APRESENTACAO_32","Parameters.parameter","APRESENTACAO_32","","",1,1,"Y","","Y","BackboneElement {[]} {[]}
+"Parameters.parameter:APRESENTACAO_32","Parameters.parameter","APRESENTACAO_32","","",0,1,"Y","","Y","BackboneElement {[]} {[]}
 ","Operation Parameter","A parameter passed to or received from the operation.","","","","","","","","","",,,,,"",,,,"Parameters.parameter",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 inv-1:A parameter must have one and only one of (value, resource, part) {(part.exists() and value.empty() and resource.empty()) or (part.empty() and (value.exists() xor resource.exists()))}"
 "Parameters.parameter:APRESENTACAO_32.id","Parameters.parameter.id","","","",0,1,"","","","string {[]} {[]}
@@ -390,7 +390,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ",""
 "Parameters.parameter:APRESENTACAO_32.part","Parameters.parameter.part","","","",0,*,"","","Y","","Named part of a multi-part parameter","A named part of a multi-part parameter.","Only one level of nested parameters is allowed.","","","","","","","","",,,,,"",,,,"Parameters.parameter.part",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"Parameters.parameter:APRESENTACAO_26","Parameters.parameter","APRESENTACAO_26","","",1,1,"Y","","Y","BackboneElement {[]} {[]}
+"Parameters.parameter:APRESENTACAO_26","Parameters.parameter","APRESENTACAO_26","","",0,1,"Y","","Y","BackboneElement {[]} {[]}
 ","Operation Parameter","A parameter passed to or received from the operation.","","","","","","","","","",,,,,"",,,,"Parameters.parameter",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 inv-1:A parameter must have one and only one of (value, resource, part) {(part.exists() and value.empty() and resource.empty()) or (part.empty() and (value.exists() xor resource.exists()))}"
 "Parameters.parameter:APRESENTACAO_26.id","Parameters.parameter.id","","","",0,1,"","","","string {[]} {[]}
@@ -417,7 +417,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ",""
 "Parameters.parameter:APRESENTACAO_26.part","Parameters.parameter.part","","","",0,*,"","","Y","","Named part of a multi-part parameter","A named part of a multi-part parameter.","Only one level of nested parameters is allowed.","","","","","","","","",,,,,"",,,,"Parameters.parameter.part",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"Parameters.parameter:ESTIMATIVA_PESO_ECO_24","Parameters.parameter","ESTIMATIVA_PESO_ECO_24","","",1,1,"Y","","Y","BackboneElement {[]} {[]}
+"Parameters.parameter:ESTIMATIVA_PESO_ECO_24","Parameters.parameter","ESTIMATIVA_PESO_ECO_24","","",0,1,"Y","","Y","BackboneElement {[]} {[]}
 ","Operation Parameter","A parameter passed to or received from the operation.","","","","","","","","","",,,,,"",,,,"Parameters.parameter",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 inv-1:A parameter must have one and only one of (value, resource, part) {(part.exists() and value.empty() and resource.empty()) or (part.empty() and (value.exists() xor resource.exists()))}"
 "Parameters.parameter:ESTIMATIVA_PESO_ECO_24.id","Parameters.parameter.id","","","",0,1,"","","","string {[]} {[]}
@@ -444,7 +444,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ",""
 "Parameters.parameter:ESTIMATIVA_PESO_ECO_24.part","Parameters.parameter.part","","","",0,*,"","","Y","","Named part of a multi-part parameter","A named part of a multi-part parameter.","Only one level of nested parameters is allowed.","","","","","","","","",,,,,"",,,,"Parameters.parameter.part",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"Parameters.parameter:APRESENTACAO_34","Parameters.parameter","APRESENTACAO_34","","",1,1,"Y","","Y","BackboneElement {[]} {[]}
+"Parameters.parameter:APRESENTACAO_34","Parameters.parameter","APRESENTACAO_34","","",0,1,"Y","","Y","BackboneElement {[]} {[]}
 ","Operation Parameter","A parameter passed to or received from the operation.","","","","","","","","","",,,,,"",,,,"Parameters.parameter",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 inv-1:A parameter must have one and only one of (value, resource, part) {(part.exists() and value.empty() and resource.empty()) or (part.empty() and (value.exists() xor resource.exists()))}"
 "Parameters.parameter:APRESENTACAO_34.id","Parameters.parameter.id","","","",0,1,"","","","string {[]} {[]}
@@ -471,7 +471,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ",""
 "Parameters.parameter:APRESENTACAO_34.part","Parameters.parameter.part","","","",0,*,"","","Y","","Named part of a multi-part parameter","A named part of a multi-part parameter.","Only one level of nested parameters is allowed.","","","","","","","","",,,,,"",,,,"Parameters.parameter.part",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"Parameters.parameter:ESTIMATIVA_PESO_ECO_40","Parameters.parameter","ESTIMATIVA_PESO_ECO_40","","",1,1,"Y","","Y","BackboneElement {[]} {[]}
+"Parameters.parameter:ESTIMATIVA_PESO_ECO_40","Parameters.parameter","ESTIMATIVA_PESO_ECO_40","","",0,1,"Y","","Y","BackboneElement {[]} {[]}
 ","Operation Parameter","A parameter passed to or received from the operation.","","","","","","","","","",,,,,"",,,,"Parameters.parameter",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 inv-1:A parameter must have one and only one of (value, resource, part) {(part.exists() and value.empty() and resource.empty()) or (part.empty() and (value.exists() xor resource.exists()))}"
 "Parameters.parameter:ESTIMATIVA_PESO_ECO_40.id","Parameters.parameter.id","","","",0,1,"","","","string {[]} {[]}
@@ -498,7 +498,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ",""
 "Parameters.parameter:ESTIMATIVA_PESO_ECO_40.part","Parameters.parameter.part","","","",0,*,"","","Y","","Named part of a multi-part parameter","A named part of a multi-part parameter.","Only one level of nested parameters is allowed.","","","","","","","","",,,,,"",,,,"Parameters.parameter.part",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"Parameters.parameter:APRESENTACAO_33","Parameters.parameter","APRESENTACAO_33","","",1,1,"Y","","Y","BackboneElement {[]} {[]}
+"Parameters.parameter:APRESENTACAO_33","Parameters.parameter","APRESENTACAO_33","","",0,1,"Y","","Y","BackboneElement {[]} {[]}
 ","Operation Parameter","A parameter passed to or received from the operation.","","","","","","","","","",,,,,"",,,,"Parameters.parameter",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 inv-1:A parameter must have one and only one of (value, resource, part) {(part.exists() and value.empty() and resource.empty()) or (part.empty() and (value.exists() xor resource.exists()))}"
 "Parameters.parameter:APRESENTACAO_33.id","Parameters.parameter.id","","","",0,1,"","","","string {[]} {[]}
@@ -525,7 +525,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ",""
 "Parameters.parameter:APRESENTACAO_33.part","Parameters.parameter.part","","","",0,*,"","","Y","","Named part of a multi-part parameter","A named part of a multi-part parameter.","Only one level of nested parameters is allowed.","","","","","","","","",,,,,"",,,,"Parameters.parameter.part",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"Parameters.parameter:APRESENTACAO_NO_PARTO","Parameters.parameter","APRESENTACAO_NO_PARTO","","",1,1,"Y","","Y","BackboneElement {[]} {[]}
+"Parameters.parameter:APRESENTACAO_NO_PARTO","Parameters.parameter","APRESENTACAO_NO_PARTO","","",0,1,"Y","","Y","BackboneElement {[]} {[]}
 ","Operation Parameter","A parameter passed to or received from the operation.","","","","","","","","","",,,,,"",,,,"Parameters.parameter",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 inv-1:A parameter must have one and only one of (value, resource, part) {(part.exists() and value.empty() and resource.empty()) or (part.empty() and (value.exists() xor resource.exists()))}"
 "Parameters.parameter:APRESENTACAO_NO_PARTO.id","Parameters.parameter.id","","","",0,1,"","","","string {[]} {[]}
@@ -552,7 +552,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ",""
 "Parameters.parameter:APRESENTACAO_NO_PARTO.part","Parameters.parameter.part","","","",0,*,"","","Y","","Named part of a multi-part parameter","A named part of a multi-part parameter.","Only one level of nested parameters is allowed.","","","","","","","","",,,,,"",,,,"Parameters.parameter.part",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"Parameters.parameter:NUMERO_CONSULTAS_PRE_NATAL","Parameters.parameter","NUMERO_CONSULTAS_PRE_NATAL","","",1,1,"Y","","Y","BackboneElement {[]} {[]}
+"Parameters.parameter:NUMERO_CONSULTAS_PRE_NATAL","Parameters.parameter","NUMERO_CONSULTAS_PRE_NATAL","","",0,1,"Y","","Y","BackboneElement {[]} {[]}
 ","Operation Parameter","A parameter passed to or received from the operation.","","","","","","","","","",,,,,"",,,,"Parameters.parameter",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 inv-1:A parameter must have one and only one of (value, resource, part) {(part.exists() and value.empty() and resource.empty()) or (part.empty() and (value.exists() xor resource.exists()))}"
 "Parameters.parameter:NUMERO_CONSULTAS_PRE_NATAL.id","Parameters.parameter.id","","","",0,1,"","","","string {[]} {[]}
@@ -579,7 +579,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ",""
 "Parameters.parameter:NUMERO_CONSULTAS_PRE_NATAL.part","Parameters.parameter.part","","","",0,*,"","","Y","","Named part of a multi-part parameter","A named part of a multi-part parameter.","Only one level of nested parameters is allowed.","","","","","","","","",,,,,"",,,,"Parameters.parameter.part",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"Parameters.parameter:APRESENTACAO_38","Parameters.parameter","APRESENTACAO_38","","",1,1,"Y","","Y","BackboneElement {[]} {[]}
+"Parameters.parameter:APRESENTACAO_38","Parameters.parameter","APRESENTACAO_38","","",0,1,"Y","","Y","BackboneElement {[]} {[]}
 ","Operation Parameter","A parameter passed to or received from the operation.","","","","","","","","","",,,,,"",,,,"Parameters.parameter",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 inv-1:A parameter must have one and only one of (value, resource, part) {(part.exists() and value.empty() and resource.empty()) or (part.empty() and (value.exists() xor resource.exists()))}"
 "Parameters.parameter:APRESENTACAO_38.id","Parameters.parameter.id","","","",0,1,"","","","string {[]} {[]}
@@ -606,7 +606,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ",""
 "Parameters.parameter:APRESENTACAO_38.part","Parameters.parameter.part","","","",0,*,"","","Y","","Named part of a multi-part parameter","A named part of a multi-part parameter.","Only one level of nested parameters is allowed.","","","","","","","","",,,,,"",,,,"Parameters.parameter.part",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"Parameters.parameter:APRESENTACAO_29","Parameters.parameter","APRESENTACAO_29","","",1,1,"Y","","Y","BackboneElement {[]} {[]}
+"Parameters.parameter:APRESENTACAO_29","Parameters.parameter","APRESENTACAO_29","","",0,1,"Y","","Y","BackboneElement {[]} {[]}
 ","Operation Parameter","A parameter passed to or received from the operation.","","","","","","","","","",,,,,"",,,,"Parameters.parameter",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 inv-1:A parameter must have one and only one of (value, resource, part) {(part.exists() and value.empty() and resource.empty()) or (part.empty() and (value.exists() xor resource.exists()))}"
 "Parameters.parameter:APRESENTACAO_29.id","Parameters.parameter.id","","","",0,1,"","","","string {[]} {[]}
@@ -633,7 +633,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ",""
 "Parameters.parameter:APRESENTACAO_29.part","Parameters.parameter.part","","","",0,*,"","","Y","","Named part of a multi-part parameter","A named part of a multi-part parameter.","Only one level of nested parameters is allowed.","","","","","","","","",,,,,"",,,,"Parameters.parameter.part",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"Parameters.parameter:ESTIMATIVA_PESO_ECO_41","Parameters.parameter","ESTIMATIVA_PESO_ECO_41","","",1,1,"Y","","Y","BackboneElement {[]} {[]}
+"Parameters.parameter:ESTIMATIVA_PESO_ECO_41","Parameters.parameter","ESTIMATIVA_PESO_ECO_41","","",0,1,"Y","","Y","BackboneElement {[]} {[]}
 ","Operation Parameter","A parameter passed to or received from the operation.","","","","","","","","","",,,,,"",,,,"Parameters.parameter",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 inv-1:A parameter must have one and only one of (value, resource, part) {(part.exists() and value.empty() and resource.empty()) or (part.empty() and (value.exists() xor resource.exists()))}"
 "Parameters.parameter:ESTIMATIVA_PESO_ECO_41.id","Parameters.parameter.id","","","",0,1,"","","","string {[]} {[]}
@@ -660,7 +660,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ",""
 "Parameters.parameter:ESTIMATIVA_PESO_ECO_41.part","Parameters.parameter.part","","","",0,*,"","","Y","","Named part of a multi-part parameter","A named part of a multi-part parameter.","Only one level of nested parameters is allowed.","","","","","","","","",,,,,"",,,,"Parameters.parameter.part",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"Parameters.parameter:APRESENTACAO_ADMISSAO","Parameters.parameter","APRESENTACAO_ADMISSAO","","",1,1,"Y","","Y","BackboneElement {[]} {[]}
+"Parameters.parameter:APRESENTACAO_ADMISSAO","Parameters.parameter","APRESENTACAO_ADMISSAO","","",0,1,"Y","","Y","BackboneElement {[]} {[]}
 ","Operation Parameter","A parameter passed to or received from the operation.","","","","","","","","","",,,,,"",,,,"Parameters.parameter",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 inv-1:A parameter must have one and only one of (value, resource, part) {(part.exists() and value.empty() and resource.empty()) or (part.empty() and (value.exists() xor resource.exists()))}"
 "Parameters.parameter:APRESENTACAO_ADMISSAO.id","Parameters.parameter.id","","","",0,1,"","","","string {[]} {[]}
@@ -687,7 +687,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ",""
 "Parameters.parameter:APRESENTACAO_ADMISSAO.part","Parameters.parameter.part","","","",0,*,"","","Y","","Named part of a multi-part parameter","A named part of a multi-part parameter.","Only one level of nested parameters is allowed.","","","","","","","","",,,,,"",,,,"Parameters.parameter.part",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"Parameters.parameter:BISHOP_EXTINCAO","Parameters.parameter","BISHOP_EXTINCAO","","",1,1,"Y","","Y","BackboneElement {[]} {[]}
+"Parameters.parameter:BISHOP_EXTINCAO","Parameters.parameter","BISHOP_EXTINCAO","","",0,1,"Y","","Y","BackboneElement {[]} {[]}
 ","Operation Parameter","A parameter passed to or received from the operation.","","","","","","","","","",,,,,"",,,,"Parameters.parameter",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 inv-1:A parameter must have one and only one of (value, resource, part) {(part.exists() and value.empty() and resource.empty()) or (part.empty() and (value.exists() xor resource.exists()))}"
 "Parameters.parameter:BISHOP_EXTINCAO.id","Parameters.parameter.id","","","",0,1,"","","","string {[]} {[]}
@@ -714,7 +714,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ",""
 "Parameters.parameter:BISHOP_EXTINCAO.part","Parameters.parameter.part","","","",0,*,"","","Y","","Named part of a multi-part parameter","A named part of a multi-part parameter.","Only one level of nested parameters is allowed.","","","","","","","","",,,,,"",,,,"Parameters.parameter.part",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"Parameters.parameter:APRESENTACAO_27","Parameters.parameter","APRESENTACAO_27","","",1,1,"Y","","Y","BackboneElement {[]} {[]}
+"Parameters.parameter:APRESENTACAO_27","Parameters.parameter","APRESENTACAO_27","","",0,1,"Y","","Y","BackboneElement {[]} {[]}
 ","Operation Parameter","A parameter passed to or received from the operation.","","","","","","","","","",,,,,"",,,,"Parameters.parameter",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 inv-1:A parameter must have one and only one of (value, resource, part) {(part.exists() and value.empty() and resource.empty()) or (part.empty() and (value.exists() xor resource.exists()))}"
 "Parameters.parameter:APRESENTACAO_27.id","Parameters.parameter.id","","","",0,1,"","","","string {[]} {[]}
@@ -741,7 +741,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ",""
 "Parameters.parameter:APRESENTACAO_27.part","Parameters.parameter.part","","","",0,*,"","","Y","","Named part of a multi-part parameter","A named part of a multi-part parameter.","Only one level of nested parameters is allowed.","","","","","","","","",,,,,"",,,,"Parameters.parameter.part",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"Parameters.parameter:ESTIMATIVA_PESO_ECO_33","Parameters.parameter","ESTIMATIVA_PESO_ECO_33","","",1,1,"Y","","Y","BackboneElement {[]} {[]}
+"Parameters.parameter:ESTIMATIVA_PESO_ECO_33","Parameters.parameter","ESTIMATIVA_PESO_ECO_33","","",0,1,"Y","","Y","BackboneElement {[]} {[]}
 ","Operation Parameter","A parameter passed to or received from the operation.","","","","","","","","","",,,,,"",,,,"Parameters.parameter",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 inv-1:A parameter must have one and only one of (value, resource, part) {(part.exists() and value.empty() and resource.empty()) or (part.empty() and (value.exists() xor resource.exists()))}"
 "Parameters.parameter:ESTIMATIVA_PESO_ECO_33.id","Parameters.parameter.id","","","",0,1,"","","","string {[]} {[]}
@@ -768,7 +768,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ",""
 "Parameters.parameter:ESTIMATIVA_PESO_ECO_33.part","Parameters.parameter.part","","","",0,*,"","","Y","","Named part of a multi-part parameter","A named part of a multi-part parameter.","Only one level of nested parameters is allowed.","","","","","","","","",,,,,"",,,,"Parameters.parameter.part",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"Parameters.parameter:CESARIANAS_ANTERIOR","Parameters.parameter","CESARIANAS_ANTERIOR","","",1,1,"Y","","Y","BackboneElement {[]} {[]}
+"Parameters.parameter:CESARIANAS_ANTERIOR","Parameters.parameter","CESARIANAS_ANTERIOR","","",0,1,"Y","","Y","BackboneElement {[]} {[]}
 ","Operation Parameter","A parameter passed to or received from the operation.","","","","","","","","","",,,,,"",,,,"Parameters.parameter",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 inv-1:A parameter must have one and only one of (value, resource, part) {(part.exists() and value.empty() and resource.empty()) or (part.empty() and (value.exists() xor resource.exists()))}"
 "Parameters.parameter:CESARIANAS_ANTERIOR.id","Parameters.parameter.id","","","",0,1,"","","","string {[]} {[]}
@@ -795,7 +795,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ",""
 "Parameters.parameter:CESARIANAS_ANTERIOR.part","Parameters.parameter.part","","","",0,*,"","","Y","","Named part of a multi-part parameter","A named part of a multi-part parameter.","Only one level of nested parameters is allowed.","","","","","","","","",,,,,"",,,,"Parameters.parameter.part",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"Parameters.parameter:APRESENTACAO_36","Parameters.parameter","APRESENTACAO_36","","",1,1,"Y","","Y","BackboneElement {[]} {[]}
+"Parameters.parameter:APRESENTACAO_36","Parameters.parameter","APRESENTACAO_36","","",0,1,"Y","","Y","BackboneElement {[]} {[]}
 ","Operation Parameter","A parameter passed to or received from the operation.","","","","","","","","","",,,,,"",,,,"Parameters.parameter",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 inv-1:A parameter must have one and only one of (value, resource, part) {(part.exists() and value.empty() and resource.empty()) or (part.empty() and (value.exists() xor resource.exists()))}"
 "Parameters.parameter:APRESENTACAO_36.id","Parameters.parameter.id","","","",0,1,"","","","string {[]} {[]}
@@ -822,7 +822,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ",""
 "Parameters.parameter:APRESENTACAO_36.part","Parameters.parameter.part","","","",0,*,"","","Y","","Named part of a multi-part parameter","A named part of a multi-part parameter.","Only one level of nested parameters is allowed.","","","","","","","","",,,,,"",,,,"Parameters.parameter.part",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"Parameters.parameter:ESTIMATIVA_PESO_ECO_37","Parameters.parameter","ESTIMATIVA_PESO_ECO_37","","",1,1,"Y","","Y","BackboneElement {[]} {[]}
+"Parameters.parameter:ESTIMATIVA_PESO_ECO_37","Parameters.parameter","ESTIMATIVA_PESO_ECO_37","","",0,1,"Y","","Y","BackboneElement {[]} {[]}
 ","Operation Parameter","A parameter passed to or received from the operation.","","","","","","","","","",,,,,"",,,,"Parameters.parameter",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 inv-1:A parameter must have one and only one of (value, resource, part) {(part.exists() and value.empty() and resource.empty()) or (part.empty() and (value.exists() xor resource.exists()))}"
 "Parameters.parameter:ESTIMATIVA_PESO_ECO_37.id","Parameters.parameter.id","","","",0,1,"","","","string {[]} {[]}
@@ -849,7 +849,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ",""
 "Parameters.parameter:ESTIMATIVA_PESO_ECO_37.part","Parameters.parameter.part","","","",0,*,"","","Y","","Named part of a multi-part parameter","A named part of a multi-part parameter.","Only one level of nested parameters is allowed.","","","","","","","","",,,,,"",,,,"Parameters.parameter.part",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"Parameters.parameter:TRAB_PARTO_ENTRADA_ESPONTANEO","Parameters.parameter","TRAB_PARTO_ENTRADA_ESPONTANEO","","",1,1,"Y","","Y","BackboneElement {[]} {[]}
+"Parameters.parameter:TRAB_PARTO_ENTRADA_ESPONTANEO","Parameters.parameter","TRAB_PARTO_ENTRADA_ESPONTANEO","","",0,1,"Y","","Y","BackboneElement {[]} {[]}
 ","Operation Parameter","A parameter passed to or received from the operation.","","","","","","","","","",,,,,"",,,,"Parameters.parameter",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 inv-1:A parameter must have one and only one of (value, resource, part) {(part.exists() and value.empty() and resource.empty()) or (part.empty() and (value.exists() xor resource.exists()))}"
 "Parameters.parameter:TRAB_PARTO_ENTRADA_ESPONTANEO.id","Parameters.parameter.id","","","",0,1,"","","","string {[]} {[]}
@@ -876,7 +876,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ",""
 "Parameters.parameter:TRAB_PARTO_ENTRADA_ESPONTANEO.part","Parameters.parameter.part","","","",0,*,"","","Y","","Named part of a multi-part parameter","A named part of a multi-part parameter.","Only one level of nested parameters is allowed.","","","","","","","","",,,,,"",,,,"Parameters.parameter.part",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"Parameters.parameter:ESTIMATIVA_PESO_ECO_38","Parameters.parameter","ESTIMATIVA_PESO_ECO_38","","",1,1,"Y","","Y","BackboneElement {[]} {[]}
+"Parameters.parameter:ESTIMATIVA_PESO_ECO_38","Parameters.parameter","ESTIMATIVA_PESO_ECO_38","","",0,1,"Y","","Y","BackboneElement {[]} {[]}
 ","Operation Parameter","A parameter passed to or received from the operation.","","","","","","","","","",,,,,"",,,,"Parameters.parameter",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 inv-1:A parameter must have one and only one of (value, resource, part) {(part.exists() and value.empty() and resource.empty()) or (part.empty() and (value.exists() xor resource.exists()))}"
 "Parameters.parameter:ESTIMATIVA_PESO_ECO_38.id","Parameters.parameter.id","","","",0,1,"","","","string {[]} {[]}
@@ -903,7 +903,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ",""
 "Parameters.parameter:ESTIMATIVA_PESO_ECO_38.part","Parameters.parameter.part","","","",0,*,"","","Y","","Named part of a multi-part parameter","A named part of a multi-part parameter.","Only one level of nested parameters is allowed.","","","","","","","","",,,,,"",,,,"Parameters.parameter.part",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"Parameters.parameter:part_mcdt_ctgs","Parameters.parameter","part_mcdt_ctgs","","",1,1,"Y","","Y","BackboneElement {[]} {[]}
+"Parameters.parameter:part_mcdt_ctgs","Parameters.parameter","part_mcdt_ctgs","","",0,1,"Y","","Y","BackboneElement {[]} {[]}
 ","Operation Parameter","A parameter passed to or received from the operation.","","","","","","","","","",,,,,"",,,,"Parameters.parameter",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 inv-1:A parameter must have one and only one of (value, resource, part) {(part.exists() and value.empty() and resource.empty()) or (part.empty() and (value.exists() xor resource.exists()))}"
 "Parameters.parameter:part_mcdt_ctgs.id","Parameters.parameter.id","","","",0,1,"","","","string {[]} {[]}
@@ -930,7 +930,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ",""
 "Parameters.parameter:part_mcdt_ctgs.part","Parameters.parameter.part","","","",0,*,"","","Y","","Named part of a multi-part parameter","A named part of a multi-part parameter.","Only one level of nested parameters is allowed.","","","","","","","","",,,,,"",,,,"Parameters.parameter.part",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"Parameters.parameter:apres_feto_34","Parameters.parameter","apres_feto_34","","",1,1,"Y","","Y","BackboneElement {[]} {[]}
+"Parameters.parameter:apres_feto_34","Parameters.parameter","apres_feto_34","","",0,1,"Y","","Y","BackboneElement {[]} {[]}
 ","Operation Parameter","A parameter passed to or received from the operation.","","","","","","","","","",,,,,"",,,,"Parameters.parameter",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 inv-1:A parameter must have one and only one of (value, resource, part) {(part.exists() and value.empty() and resource.empty()) or (part.empty() and (value.exists() xor resource.exists()))}"
 "Parameters.parameter:apres_feto_34.id","Parameters.parameter.id","","","",0,1,"","","","string {[]} {[]}
@@ -957,7 +957,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ",""
 "Parameters.parameter:apres_feto_34.part","Parameters.parameter.part","","","",0,*,"","","Y","","Named part of a multi-part parameter","A named part of a multi-part parameter.","Only one level of nested parameters is allowed.","","","","","","","","",,,,,"",,,,"Parameters.parameter.part",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"Parameters.parameter:tparto_rpm","Parameters.parameter","tparto_rpm","","",1,1,"Y","","Y","BackboneElement {[]} {[]}
+"Parameters.parameter:tparto_rpm","Parameters.parameter","tparto_rpm","","",0,1,"Y","","Y","BackboneElement {[]} {[]}
 ","Operation Parameter","A parameter passed to or received from the operation.","","","","","","","","","",,,,,"",,,,"Parameters.parameter",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 inv-1:A parameter must have one and only one of (value, resource, part) {(part.exists() and value.empty() and resource.empty()) or (part.empty() and (value.exists() xor resource.exists()))}"
 "Parameters.parameter:tparto_rpm.id","Parameters.parameter.id","","","",0,1,"","","","string {[]} {[]}
@@ -984,7 +984,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ",""
 "Parameters.parameter:tparto_rpm.part","Parameters.parameter.part","","","",0,*,"","","Y","","Named part of a multi-part parameter","A named part of a multi-part parameter.","Only one level of nested parameters is allowed.","","","","","","","","",,,,,"",,,,"Parameters.parameter.part",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"Parameters.parameter:rn_ucin","Parameters.parameter","rn_ucin","","",1,1,"Y","","Y","BackboneElement {[]} {[]}
+"Parameters.parameter:rn_ucin","Parameters.parameter","rn_ucin","","",0,1,"Y","","Y","BackboneElement {[]} {[]}
 ","Operation Parameter","A parameter passed to or received from the operation.","","","","","","","","","",,,,,"",,,,"Parameters.parameter",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 inv-1:A parameter must have one and only one of (value, resource, part) {(part.exists() and value.empty() and resource.empty()) or (part.empty() and (value.exists() xor resource.exists()))}"
 "Parameters.parameter:rn_ucin.id","Parameters.parameter.id","","","",0,1,"","","","string {[]} {[]}
@@ -1011,7 +1011,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ",""
 "Parameters.parameter:rn_ucin.part","Parameters.parameter.part","","","",0,*,"","","Y","","Named part of a multi-part parameter","A named part of a multi-part parameter.","Only one level of nested parameters is allowed.","","","","","","","","",,,,,"",,,,"Parameters.parameter.part",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"Parameters.parameter:part_vig","Parameters.parameter","part_vig","","",1,1,"Y","","Y","BackboneElement {[]} {[]}
+"Parameters.parameter:part_vig","Parameters.parameter","part_vig","","",0,1,"Y","","Y","BackboneElement {[]} {[]}
 ","Operation Parameter","A parameter passed to or received from the operation.","","","","","","","","","",,,,,"",,,,"Parameters.parameter",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 inv-1:A parameter must have one and only one of (value, resource, part) {(part.exists() and value.empty() and resource.empty()) or (part.empty() and (value.exists() xor resource.exists()))}"
 "Parameters.parameter:part_vig.id","Parameters.parameter.id","","","",0,1,"","","","string {[]} {[]}
@@ -1038,7 +1038,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ",""
 "Parameters.parameter:part_vig.part","Parameters.parameter.part","","","",0,*,"","","Y","","Named part of a multi-part parameter","A named part of a multi-part parameter.","Only one level of nested parameters is allowed.","","","","","","","","",,,,,"",,,,"Parameters.parameter.part",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"Parameters.parameter:grav_feto_altcf","Parameters.parameter","grav_feto_altcf","","",1,1,"Y","","Y","BackboneElement {[]} {[]}
+"Parameters.parameter:grav_feto_altcf","Parameters.parameter","grav_feto_altcf","","",0,1,"Y","","Y","BackboneElement {[]} {[]}
 ","Operation Parameter","A parameter passed to or received from the operation.","","","","","","","","","",,,,,"",,,,"Parameters.parameter",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 inv-1:A parameter must have one and only one of (value, resource, part) {(part.exists() and value.empty() and resource.empty()) or (part.empty() and (value.exists() xor resource.exists()))}"
 "Parameters.parameter:grav_feto_altcf.id","Parameters.parameter.id","","","",0,1,"","","","string {[]} {[]}
@@ -1065,7 +1065,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ",""
 "Parameters.parameter:grav_feto_altcf.part","Parameters.parameter.part","","","",0,*,"","","Y","","Named part of a multi-part parameter","A named part of a multi-part parameter.","Only one level of nested parameters is allowed.","","","","","","","","",,,,,"",,,,"Parameters.parameter.part",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"Parameters.parameter:tparto_esp","Parameters.parameter","tparto_esp","","",1,1,"Y","","Y","BackboneElement {[]} {[]}
+"Parameters.parameter:tparto_esp","Parameters.parameter","tparto_esp","","",0,1,"Y","","Y","BackboneElement {[]} {[]}
 ","Operation Parameter","A parameter passed to or received from the operation.","","","","","","","","","",,,,,"",,,,"Parameters.parameter",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 inv-1:A parameter must have one and only one of (value, resource, part) {(part.exists() and value.empty() and resource.empty()) or (part.empty() and (value.exists() xor resource.exists()))}"
 "Parameters.parameter:tparto_esp.id","Parameters.parameter.id","","","",0,1,"","","","string {[]} {[]}
@@ -1092,7 +1092,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ",""
 "Parameters.parameter:tparto_esp.part","Parameters.parameter.part","","","",0,*,"","","Y","","Named part of a multi-part parameter","A named part of a multi-part parameter.","Only one level of nested parameters is allowed.","","","","","","","","",,,,,"",,,,"Parameters.parameter.part",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"Parameters.parameter:apres_feto_34_pelve","Parameters.parameter","apres_feto_34_pelve","","",1,1,"Y","","Y","BackboneElement {[]} {[]}
+"Parameters.parameter:apres_feto_34_pelve","Parameters.parameter","apres_feto_34_pelve","","",0,1,"Y","","Y","BackboneElement {[]} {[]}
 ","Operation Parameter","A parameter passed to or received from the operation.","","","","","","","","","",,,,,"",,,,"Parameters.parameter",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 inv-1:A parameter must have one and only one of (value, resource, part) {(part.exists() and value.empty() and resource.empty()) or (part.empty() and (value.exists() xor resource.exists()))}"
 "Parameters.parameter:apres_feto_34_pelve.id","Parameters.parameter.id","","","",0,1,"","","","string {[]} {[]}
@@ -1119,7 +1119,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ",""
 "Parameters.parameter:apres_feto_34_pelve.part","Parameters.parameter.part","","","",0,*,"","","Y","","Named part of a multi-part parameter","A named part of a multi-part parameter.","Only one level of nested parameters is allowed.","","","","","","","","",,,,,"",,,,"Parameters.parameter.part",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"Parameters.parameter:parto_comp","Parameters.parameter","parto_comp","","",1,1,"Y","","Y","BackboneElement {[]} {[]}
+"Parameters.parameter:parto_comp","Parameters.parameter","parto_comp","","",0,1,"Y","","Y","BackboneElement {[]} {[]}
 ","Operation Parameter","A parameter passed to or received from the operation.","","","","","","","","","",,,,,"",,,,"Parameters.parameter",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 inv-1:A parameter must have one and only one of (value, resource, part) {(part.exists() and value.empty() and resource.empty()) or (part.empty() and (value.exists() xor resource.exists()))}"
 "Parameters.parameter:parto_comp.id","Parameters.parameter.id","","","",0,1,"","","","string {[]} {[]}
@@ -1146,7 +1146,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ",""
 "Parameters.parameter:parto_comp.part","Parameters.parameter.part","","","",0,*,"","","Y","","Named part of a multi-part parameter","A named part of a multi-part parameter.","Only one level of nested parameters is allowed.","","","","","","","","",,,,,"",,,,"Parameters.parameter.part",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"Parameters.parameter:ciru_laqt","Parameters.parameter","ciru_laqt","","",1,1,"Y","","Y","BackboneElement {[]} {[]}
+"Parameters.parameter:ciru_laqt","Parameters.parameter","ciru_laqt","","",0,1,"Y","","Y","BackboneElement {[]} {[]}
 ","Operation Parameter","A parameter passed to or received from the operation.","","","","","","","","","",,,,,"",,,,"Parameters.parameter",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 inv-1:A parameter must have one and only one of (value, resource, part) {(part.exists() and value.empty() and resource.empty()) or (part.empty() and (value.exists() xor resource.exists()))}"
 "Parameters.parameter:ciru_laqt.id","Parameters.parameter.id","","","",0,1,"","","","string {[]} {[]}
@@ -1173,7 +1173,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ",""
 "Parameters.parameter:ciru_laqt.part","Parameters.parameter.part","","","",0,*,"","","Y","","Named part of a multi-part parameter","A named part of a multi-part parameter.","Only one level of nested parameters is allowed.","","","","","","","","",,,,,"",,,,"Parameters.parameter.part",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"Parameters.parameter:puer_comp_cica","Parameters.parameter","puer_comp_cica","","",1,1,"Y","","Y","BackboneElement {[]} {[]}
+"Parameters.parameter:puer_comp_cica","Parameters.parameter","puer_comp_cica","","",0,1,"Y","","Y","BackboneElement {[]} {[]}
 ","Operation Parameter","A parameter passed to or received from the operation.","","","","","","","","","",,,,,"",,,,"Parameters.parameter",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 inv-1:A parameter must have one and only one of (value, resource, part) {(part.exists() and value.empty() and resource.empty()) or (part.empty() and (value.exists() xor resource.exists()))}"
 "Parameters.parameter:puer_comp_cica.id","Parameters.parameter.id","","","",0,1,"","","","string {[]} {[]}
@@ -1200,7 +1200,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ",""
 "Parameters.parameter:puer_comp_cica.part","Parameters.parameter.part","","","",0,*,"","","Y","","Named part of a multi-part parameter","A named part of a multi-part parameter.","Only one level of nested parameters is allowed.","","","","","","","","",,,,,"",,,,"Parameters.parameter.part",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"Parameters.parameter:tparto_rpm_espo","Parameters.parameter","tparto_rpm_espo","","",1,1,"Y","","Y","BackboneElement {[]} {[]}
+"Parameters.parameter:tparto_rpm_espo","Parameters.parameter","tparto_rpm_espo","","",0,1,"Y","","Y","BackboneElement {[]} {[]}
 ","Operation Parameter","A parameter passed to or received from the operation.","","","","","","","","","",,,,,"",,,,"Parameters.parameter",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 inv-1:A parameter must have one and only one of (value, resource, part) {(part.exists() and value.empty() and resource.empty()) or (part.empty() and (value.exists() xor resource.exists()))}"
 "Parameters.parameter:tparto_rpm_espo.id","Parameters.parameter.id","","","",0,1,"","","","string {[]} {[]}
@@ -1227,7 +1227,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ",""
 "Parameters.parameter:tparto_rpm_espo.part","Parameters.parameter.part","","","",0,*,"","","Y","","Named part of a multi-part parameter","A named part of a multi-part parameter.","Only one level of nested parameters is allowed.","","","","","","","","",,,,,"",,,,"Parameters.parameter.part",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"Parameters.parameter:grav_plac","Parameters.parameter","grav_plac","","",1,1,"Y","","Y","BackboneElement {[]} {[]}
+"Parameters.parameter:grav_plac","Parameters.parameter","grav_plac","","",0,1,"Y","","Y","BackboneElement {[]} {[]}
 ","Operation Parameter","A parameter passed to or received from the operation.","","","","","","","","","",,,,,"",,,,"Parameters.parameter",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 inv-1:A parameter must have one and only one of (value, resource, part) {(part.exists() and value.empty() and resource.empty()) or (part.empty() and (value.exists() xor resource.exists()))}"
 "Parameters.parameter:grav_plac.id","Parameters.parameter.id","","","",0,1,"","","","string {[]} {[]}
@@ -1254,7 +1254,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ",""
 "Parameters.parameter:grav_plac.part","Parameters.parameter.part","","","",0,*,"","","Y","","Named part of a multi-part parameter","A named part of a multi-part parameter.","Only one level of nested parameters is allowed.","","","","","","","","",,,,,"",,,,"Parameters.parameter.part",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"Parameters.parameter:parto_23P","Parameters.parameter","parto_23P","","",1,1,"Y","","Y","BackboneElement {[]} {[]}
+"Parameters.parameter:parto_23P","Parameters.parameter","parto_23P","","",0,1,"Y","","Y","BackboneElement {[]} {[]}
 ","Operation Parameter","A parameter passed to or received from the operation.","","","","","","","","","",,,,,"",,,,"Parameters.parameter",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 inv-1:A parameter must have one and only one of (value, resource, part) {(part.exists() and value.empty() and resource.empty()) or (part.empty() and (value.exists() xor resource.exists()))}"
 "Parameters.parameter:parto_23P.id","Parameters.parameter.id","","","",0,1,"","","","string {[]} {[]}
@@ -1281,7 +1281,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ",""
 "Parameters.parameter:parto_23P.part","Parameters.parameter.part","","","",0,*,"","","Y","","Named part of a multi-part parameter","A named part of a multi-part parameter.","Only one level of nested parameters is allowed.","","","","","","","","",,,,,"",,,,"Parameters.parameter.part",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"Parameters.parameter:card_dhta","Parameters.parameter","card_dhta","","",1,1,"Y","","Y","BackboneElement {[]} {[]}
+"Parameters.parameter:card_dhta","Parameters.parameter","card_dhta","","",0,1,"Y","","Y","BackboneElement {[]} {[]}
 ","Operation Parameter","A parameter passed to or received from the operation.","","","","","","","","","",,,,,"",,,,"Parameters.parameter",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 inv-1:A parameter must have one and only one of (value, resource, part) {(part.exists() and value.empty() and resource.empty()) or (part.empty() and (value.exists() xor resource.exists()))}"
 "Parameters.parameter:card_dhta.id","Parameters.parameter.id","","","",0,1,"","","","string {[]} {[]}
@@ -1308,7 +1308,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ",""
 "Parameters.parameter:card_dhta.part","Parameters.parameter.part","","","",0,*,"","","Y","","Named part of a multi-part parameter","A named part of a multi-part parameter.","Only one level of nested parameters is allowed.","","","","","","","","",,,,,"",,,,"Parameters.parameter.part",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"Parameters.parameter:parto_comp_cervical","Parameters.parameter","parto_comp_cervical","","",1,1,"Y","","Y","BackboneElement {[]} {[]}
+"Parameters.parameter:parto_comp_cervical","Parameters.parameter","parto_comp_cervical","","",0,1,"Y","","Y","BackboneElement {[]} {[]}
 ","Operation Parameter","A parameter passed to or received from the operation.","","","","","","","","","",,,,,"",,,,"Parameters.parameter",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 inv-1:A parameter must have one and only one of (value, resource, part) {(part.exists() and value.empty() and resource.empty()) or (part.empty() and (value.exists() xor resource.exists()))}"
 "Parameters.parameter:parto_comp_cervical.id","Parameters.parameter.id","","","",0,1,"","","","string {[]} {[]}
@@ -1335,7 +1335,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ",""
 "Parameters.parameter:parto_comp_cervical.part","Parameters.parameter.part","","","",0,*,"","","Y","","Named part of a multi-part parameter","A named part of a multi-part parameter.","Only one level of nested parameters is allowed.","","","","","","","","",,,,,"",,,,"Parameters.parameter.part",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"Parameters.parameter:part_aep","Parameters.parameter","part_aep","","",1,1,"Y","","Y","BackboneElement {[]} {[]}
+"Parameters.parameter:part_aep","Parameters.parameter","part_aep","","",0,1,"Y","","Y","BackboneElement {[]} {[]}
 ","Operation Parameter","A parameter passed to or received from the operation.","","","","","","","","","",,,,,"",,,,"Parameters.parameter",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 inv-1:A parameter must have one and only one of (value, resource, part) {(part.exists() and value.empty() and resource.empty()) or (part.empty() and (value.exists() xor resource.exists()))}"
 "Parameters.parameter:part_aep.id","Parameters.parameter.id","","","",0,1,"","","","string {[]} {[]}
