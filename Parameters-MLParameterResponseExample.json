@@ -15,9 +15,7 @@
     },
     {
       "name": "outcome",
-      "valueCoding": {
-        "code": "None"
-      }
+      "valueString": "{'Cesariana': '37.23 %', 'Vaginal': '62.77 %'}"
     },
     {
       "name": "decision",

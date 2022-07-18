@@ -31,7 +31,7 @@
        ];
        fhir:DomainResource.text [
          fhir:Narrative.status [ fhir:value "generated" ];
-         fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"MessageHeaderCDSSExampleResponse\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-MessageHeaderCDSS.html\">Message for response</a></p></div><p><b>event</b>: obs-cds (Details: [not stated] code obs-cds = 'obs-cds', stated as 'null')</p><h3>Destinations</h3><table class=\"grid\"><tr><td>-</td><td><b>Name</b></td><td><b>Endpoint</b></td></tr><tr><td>*</td><td>Requester</td><td><code>127.0.0.1</code></td></tr></table><h3>Sources</h3><table class=\"grid\"><tr><td>-</td><td><b>Name</b></td><td><b>Endpoint</b></td></tr><tr><td>*</td><td>CDSS-system</td><td><code>127.0.0.1</code></td></tr></table></div>"
+         fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"MessageHeaderCDSSExampleResponse\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-MessageHeaderCDSS.html\">Message Header for request and response</a></p></div><p><b>event</b>: obs-cds (Details: [not stated] code obs-cds = 'obs-cds', stated as 'null')</p><h3>Destinations</h3><table class=\"grid\"><tr><td>-</td><td><b>Name</b></td><td><b>Endpoint</b></td></tr><tr><td>*</td><td>Requester</td><td><code>127.0.0.1</code></td></tr></table><h3>Sources</h3><table class=\"grid\"><tr><td>-</td><td><b>Name</b></td><td><b>Endpoint</b></td></tr><tr><td>*</td><td>CDSS-system</td><td><code>127.0.0.1</code></td></tr></table></div>"
        ];
        fhir:MessageHeader.eventCoding [
          fhir:Coding.code [ fhir:value "obs-cds" ]
@@ -60,7 +60,7 @@
        ];
        fhir:DomainResource.text [
          fhir:Narrative.status [ fhir:value "generated" ];
-         fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"sss\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-OBSCDSSFinalizer.html\">Prediction</a></p></div><p><b>status</b>: completed</p><p><b>category</b>: instruction <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#instruction)</span></p><p><b>sent</b>: 2020-01-01 12:00:00+0000</p><p><b>received</b>: 2020-01-01 12:00:00+0000</p><p><b>sender</b>: <a href=\"Device-sss.html\">Device/sss</a></p><h3>Payloads</h3><table class=\"grid\"><tr><td>-</td><td><b>Content[x]</b></td></tr><tr><td>*</td><td><a href=\"#Parameters_MLParameterResponseExample\">See above (Parameters/MLParameterResponseExample)</a></td></tr></table></div>"
+         fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource \"sss\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-OBSCDSSFinalizer.html\">Prediction Meta Information</a></p></div><p><b>status</b>: completed</p><p><b>category</b>: instruction <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#instruction)</span></p><p><b>sent</b>: 2020-01-01 12:00:00+0000</p><p><b>received</b>: 2020-01-01 12:00:00+0000</p><p><b>sender</b>: <a href=\"Device-sss.html\">Device/sss</a></p><h3>Payloads</h3><table class=\"grid\"><tr><td>-</td><td><b>Content[x]</b></td></tr><tr><td>*</td><td><a href=\"#Parameters_MLParameterResponseExample\">See above (Parameters/MLParameterResponseExample)</a></td></tr></table></div>"
        ];
        fhir:Communication.status [ fhir:value "completed" ];
        fhir:Communication.category [
@@ -105,9 +105,7 @@
        ], [
          fhir:index 1;
          fhir:Parameters.parameter.name [ fhir:value "outcome" ];
-         fhir:Parameters.parameter.valueCoding [
-           fhir:Coding.code [ fhir:value "None" ]
-         ]
+         fhir:Parameters.parameter.valueString [ fhir:value "{'Cesariana': '37.23 %', 'Vaginal': '62.77 %'}" ]
        ], [
          fhir:index 2;
          fhir:Parameters.parameter.name [ fhir:value "decision" ];

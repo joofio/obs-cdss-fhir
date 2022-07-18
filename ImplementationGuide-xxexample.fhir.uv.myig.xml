@@ -12,7 +12,7 @@
   <title value="Obstetrics CDSS IG"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2022-07-15T07:33:23+00:00"/>
+  <date value="2022-07-18T07:59:46+00:00"/>
   <publisher value="xxxYour Work Group"/>
   <contact>
     <telecom>
@@ -264,16 +264,6 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/MessageForRequest"/>
-      </reference>
-      <name value="Message for request"/>
-      <description value="The message for requesting a certain CDSS case"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="MessageHeader"/>
       </extension>
       <reference>
@@ -287,8 +277,8 @@
       <reference>
         <reference value="StructureDefinition/MessageForCDSS"/>
       </reference>
-      <name value="Message for response"/>
-      <description value="The message for response"/>
+      <name value="Message bundle for request or response "/>
+      <description value="The message for response or request, containing the prediction/input parameters and Communication/CommunicationRequest"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -333,7 +323,7 @@
       <reference>
         <reference value="StructureDefinition/OBSCDSSInitializer"/>
       </reference>
-      <name value="Request for prediction"/>
+      <name value="Prediction Request Meta Information"/>
       <description value="The profile for asking for input for a certian CDSS case"/>
     </resource>
     <resource>
@@ -361,7 +351,7 @@
       <reference>
         <reference value="StructureDefinition/OBSCDSSFinalizer"/>
       </reference>
-      <name value="Prediction"/>
+      <name value="Prediction Meta Information"/>
       <description value="The profile for sending the response for a certain CDSS case"/>
     </resource>
     <resource>
@@ -371,8 +361,8 @@
       <reference>
         <reference value="StructureDefinition/MessageHeaderCDSS"/>
       </reference>
-      <name value="Message for response"/>
-      <description value="The message for response"/>
+      <name value="Message Header for request and response"/>
+      <description value="Message Header for request and response"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -417,7 +407,7 @@
       <reference>
         <reference value="StructureDefinition/MLParameterResponse"/>
       </reference>
-      <name value="Machine Learning Parameters for obstetrics"/>
+      <name value="Machine Learning CDSS Response parameters"/>
       <description value="Outputs for machine learning model"/>
     </resource>
     <resource>

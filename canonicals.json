@@ -49,13 +49,6 @@
     "name": "MessageForCDSS"
   },
   {
-    "id": "MessageForRequest",
-    "type": "StructureDefinition",
-    "url": "https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageForRequest",
-    "version": "0.1.0-test",
-    "name": "MessageForRequest"
-  },
-  {
     "id": "MessageHeaderCDSS",
     "type": "StructureDefinition",
     "url": "https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageHeaderCDSS",

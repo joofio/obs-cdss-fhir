@@ -24,9 +24,9 @@
   fhir:StructureDefinition.url [ fhir:value "https://joofio.github.io/obs-cdss-fhir/StructureDefinition/OBSCDSSFinalizer"];
   fhir:StructureDefinition.version [ fhir:value "0.1.0-test"];
   fhir:StructureDefinition.name [ fhir:value "OBSCDSSFinalizer"];
-  fhir:StructureDefinition.title [ fhir:value "Prediction"];
+  fhir:StructureDefinition.title [ fhir:value "Prediction Meta Information"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2022-07-15T07:33:23+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-07-18T07:59:46+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "xxxYour Work Group"];
   fhir:StructureDefinition.contact [
      fhir:index 0;

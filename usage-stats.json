@@ -18,35 +18,31 @@
       },
       {
         "url": "https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MLParameterResponse",
-        "title": "Machine Learning Parameters for obstetrics"
+        "title": "Machine Learning CDSS Response parameters"
       }
     ],
     "Bundle": [
       {
         "url": "https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageForCDSS",
-        "title": "Message for response"
-      },
-      {
-        "url": "https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageForRequest",
-        "title": "Message for request"
+        "title": "Message bundle for request or response "
       }
     ],
     "MessageHeader": [
       {
         "url": "https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageHeaderCDSS",
-        "title": "Message for response"
+        "title": "Message Header for request and response"
       }
     ],
     "Communication": [
       {
         "url": "https://joofio.github.io/obs-cdss-fhir/StructureDefinition/OBSCDSSFinalizer",
-        "title": "Prediction"
+        "title": "Prediction Meta Information"
       }
     ],
     "CommunicationRequest": [
       {
         "url": "https://joofio.github.io/obs-cdss-fhir/StructureDefinition/OBSCDSSInitializer",
-        "title": "Request for prediction"
+        "title": "Prediction Request Meta Information"
       }
     ]
   },
