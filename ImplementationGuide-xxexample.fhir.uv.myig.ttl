@@ -18,7 +18,7 @@
   fhir:ImplementationGuide.title [ fhir:value "Obstetrics CDSS IG"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
   fhir:ImplementationGuide.experimental [ fhir:value "false"^^xsd:boolean];
-  fhir:ImplementationGuide.date [ fhir:value "2022-07-18T07:59:46+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2022-08-18T10:28:24+00:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "xxxYour Work Group"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -360,126 +360,6 @@
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "Communication" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://xxsomewhere.org/fhir/myig/Communication/sss>;
-         fhir:Reference.reference [ fhir:value "Communication/sss" ]
-       ]
-     ], [
-       fhir:index 1;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "Bundle" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://xxsomewhere.org/fhir/myig/Bundle/MessageForCDSSRequest>;
-         fhir:Reference.reference [ fhir:value "Bundle/MessageForCDSSRequest" ]
-       ]
-     ], [
-       fhir:index 2;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://xxsomewhere.org/fhir/myig/StructureDefinition/MLParameterRequest>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/MLParameterRequest" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Machine Learning Parameters for obstetrics" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Inputs for machine learning model" ]
-     ], [
-       fhir:index 3;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "MessageHeader" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://xxsomewhere.org/fhir/myig/MessageHeader/MessageHeaderCDSSExampleResponse>;
-         fhir:Reference.reference [ fhir:value "MessageHeader/MessageHeaderCDSSExampleResponse" ]
-       ]
-     ], [
-       fhir:index 4;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://xxsomewhere.org/fhir/myig/StructureDefinition/MessageForCDSS>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/MessageForCDSS" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Message bundle for request or response " ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "The message for response or request, containing the prediction/input parameters and Communication/CommunicationRequest" ]
-     ], [
-       fhir:index 5;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "ValueSet" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://xxsomewhere.org/fhir/myig/ValueSet/ml-type-vs>;
-         fhir:Reference.reference [ fhir:value "ValueSet/ml-type-vs" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Machine Learning Models value set" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Machine Learning Models value set" ]
-     ], [
-       fhir:index 6;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://xxsomewhere.org/fhir/myig/CodeSystem/ml-response-cs>;
-         fhir:Reference.reference [ fhir:value "CodeSystem/ml-response-cs" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Model Responses Code System" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Model Responses Code System" ]
-     ], [
-       fhir:index 7;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "Parameters" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://xxsomewhere.org/fhir/myig/Parameters/MLParameterResponseExample>;
-         fhir:Reference.reference [ fhir:value "Parameters/MLParameterResponseExample" ]
-       ]
-     ], [
-       fhir:index 8;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "Bundle" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://xxsomewhere.org/fhir/myig/Bundle/MessageForCDSSResponse>;
-         fhir:Reference.reference [ fhir:value "Bundle/MessageForCDSSResponse" ]
-       ]
-     ], [
-       fhir:index 9;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://xxsomewhere.org/fhir/myig/StructureDefinition/OBSCDSSInitializer>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/OBSCDSSInitializer" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Prediction Request Meta Information" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "The profile for asking for input for a certian CDSS case" ]
-     ], [
-       fhir:index 10;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
          fhir:Extension.valueString [ fhir:value "MessageHeader" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
@@ -487,7 +367,7 @@
          fhir:Reference.reference [ fhir:value "MessageHeader/MessageHeaderCDSSExampleRequest" ]
        ]
      ], [
-       fhir:index 11;
+       fhir:index 1;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -500,7 +380,64 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Model Responses value set" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Model Responses value set" ]
      ], [
-       fhir:index 12;
+       fhir:index 2;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Parameters" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://xxsomewhere.org/fhir/myig/Parameters/MLParameterResponseExample>;
+         fhir:Reference.reference [ fhir:value "Parameters/MLParameterResponseExample" ]
+       ]
+     ], [
+       fhir:index 3;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CommunicationRequest" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://xxsomewhere.org/fhir/myig/CommunicationRequest/OBSCDSSInitializerExample>;
+         fhir:Reference.reference [ fhir:value "CommunicationRequest/OBSCDSSInitializerExample" ]
+       ]
+     ], [
+       fhir:index 4;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Bundle" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://xxsomewhere.org/fhir/myig/Bundle/MessageForCDSSRequest>;
+         fhir:Reference.reference [ fhir:value "Bundle/MessageForCDSSRequest" ]
+       ]
+     ], [
+       fhir:index 5;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Communication" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://xxsomewhere.org/fhir/myig/Communication/sss>;
+         fhir:Reference.reference [ fhir:value "Communication/sss" ]
+       ]
+     ], [
+       fhir:index 6;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://xxsomewhere.org/fhir/myig/StructureDefinition/MLParameterRequest>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/MLParameterRequest" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Machine Learning Parameters for obstetrics" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Inputs for machine learning model" ]
+     ], [
+       fhir:index 7;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -513,20 +450,7 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Prediction Meta Information" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "The profile for sending the response for a certain CDSS case" ]
      ], [
-       fhir:index 13;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://xxsomewhere.org/fhir/myig/StructureDefinition/MessageHeaderCDSS>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/MessageHeaderCDSS" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Message Header for request and response" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Message Header for request and response" ]
-     ], [
-       fhir:index 14;
+       fhir:index 8;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -539,7 +463,18 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Machine Learning Model" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "The profile for Defining Machine Learning Models for CDSS" ]
      ], [
-       fhir:index 15;
+       fhir:index 9;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Parameters" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://xxsomewhere.org/fhir/myig/Parameters/MLParameterRequestExample>;
+         fhir:Reference.reference [ fhir:value "Parameters/MLParameterRequestExample" ]
+       ]
+     ], [
+       fhir:index 10;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -552,29 +487,104 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Machine Learning Models code system" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Machine Learning Models code system" ]
      ], [
+       fhir:index 11;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Questionnaire" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://xxsomewhere.org/fhir/myig/Questionnaire/questionnaire-ipsx>;
+         fhir:Reference.reference [ fhir:value "Questionnaire/questionnaire-ipsx" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "OBS CDS Form" ]
+     ], [
+       fhir:index 12;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://xxsomewhere.org/fhir/myig/StructureDefinition/MessageForCDSS>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/MessageForCDSS" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Message bundle for request or response " ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "The message for response or request, containing the prediction/input parameters and Communication/CommunicationRequest" ]
+     ], [
+       fhir:index 13;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://xxsomewhere.org/fhir/myig/StructureDefinition/OBSCDSSInitializer>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/OBSCDSSInitializer" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Prediction Request Meta Information" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "The profile for asking for input for a certian CDSS case" ]
+     ], [
+       fhir:index 14;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Device" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://xxsomewhere.org/fhir/myig/Device/sss>;
+         fhir:Reference.reference [ fhir:value "Device/sss" ]
+       ]
+     ], [
+       fhir:index 15;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://xxsomewhere.org/fhir/myig/CodeSystem/ml-response-cs>;
+         fhir:Reference.reference [ fhir:value "CodeSystem/ml-response-cs" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Model Responses Code System" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Model Responses Code System" ]
+     ], [
        fhir:index 16;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "Parameters" ]
+         fhir:Extension.valueString [ fhir:value "MessageHeader" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://xxsomewhere.org/fhir/myig/Parameters/MLParameterRequestExample>;
-         fhir:Reference.reference [ fhir:value "Parameters/MLParameterRequestExample" ]
+         fhir:link <http://xxsomewhere.org/fhir/myig/MessageHeader/MessageHeaderCDSSExampleResponse>;
+         fhir:Reference.reference [ fhir:value "MessageHeader/MessageHeaderCDSSExampleResponse" ]
        ]
      ], [
        fhir:index 17;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "CommunicationRequest" ]
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://xxsomewhere.org/fhir/myig/CommunicationRequest/OBSCDSSInitializerExample>;
-         fhir:Reference.reference [ fhir:value "CommunicationRequest/OBSCDSSInitializerExample" ]
-       ]
+         fhir:link <http://xxsomewhere.org/fhir/myig/ValueSet/ml-type-vs>;
+         fhir:Reference.reference [ fhir:value "ValueSet/ml-type-vs" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Machine Learning Models value set" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Machine Learning Models value set" ]
      ], [
        fhir:index 18;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Bundle" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <http://xxsomewhere.org/fhir/myig/Bundle/MessageForCDSSResponse>;
+         fhir:Reference.reference [ fhir:value "Bundle/MessageForCDSSResponse" ]
+       ]
+     ], [
+       fhir:index 19;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -587,16 +597,18 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Machine Learning CDSS Response parameters" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Outputs for machine learning model" ]
      ], [
-       fhir:index 19;
+       fhir:index 20;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "Device" ]
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://xxsomewhere.org/fhir/myig/Device/sss>;
-         fhir:Reference.reference [ fhir:value "Device/sss" ]
-       ]
+         fhir:link <http://xxsomewhere.org/fhir/myig/StructureDefinition/MessageHeaderCDSS>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/MessageHeaderCDSS" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Message Header for request and response" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Message Header for request and response" ]
      ];
      fhir:ImplementationGuide.definition.page [
        fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "toc.html" ];

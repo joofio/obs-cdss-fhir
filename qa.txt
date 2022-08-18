@@ -1,10 +1,10 @@
 ﻿obs-cds-ig : Validation Results
 =========================================
 
-err = 71, warn = 105, info = 10
-IG Publisher Version: 1.1.125
-Generated Mon Jul 18 08:00:30 UTC 2022. FHIR version 4.0.1 for OBSCDSS.fhir.uv.myig#0.1.0-test (canonical = http://xxsomewhere.org/fhir/myig)
- Build Errors : 135 / 10 / 0
+err = 71, warn = 107, info = 10
+IG Publisher Version: 1.1.128
+Generated Thu Aug 18 10:29:00 UTC 2022. FHIR version 4.0.1 for OBSCDSS.fhir.uv.myig#0.1.0-test (canonical = http://xxsomewhere.org/fhir/myig)
+ Build Errors : 140 / 11 / 0
  /github/workspace/fsh-generated/resources/Bundle-MessageForCDSSRequest : 15 / 40 / 10
  /github/workspace/fsh-generated/resources/Bundle-MessageForCDSSResponse : 19 / 6 / 10
  /github/workspace/fsh-generated/resources/CodeSystem-ml-response-cs : 2 / 0 / 2
@@ -16,6 +16,7 @@ Generated Mon Jul 18 08:00:30 UTC 2022. FHIR version 4.0.1 for OBSCDSS.fhir.uv.m
  /github/workspace/fsh-generated/resources/MessageHeader-MessageHeaderCDSSExampleResponse : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/Parameters-MLParameterRequestExample : 0 / 36 / 1
  /github/workspace/fsh-generated/resources/Parameters-MLParameterResponseExample : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/Questionnaire-questionnaire-ipsx : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-MLModel : 2 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-MLParameterRequest : 2 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-MLParameterResponse : 2 / 0 / 1
@@ -29,24 +30,25 @@ Generated Mon Jul 18 08:00:30 UTC 2022. FHIR version 4.0.1 for OBSCDSS.fhir.uv.m
 </table>
 == n/a ==
 WARNING: ImplementationGuide.id: The Implementation Guide Resource id should be OBSCDSS.fhir.uv.myig
-ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Communication/sss.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Communication/sss.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Bundle/MessageForCDSSRequest.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Bundle/MessageForCDSSRequest.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource MessageHeader/MessageHeaderCDSSExampleResponse.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MessageHeader/MessageHeaderCDSSExampleResponse.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Parameters/MLParameterResponseExample.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Parameters/MLParameterResponseExample.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Bundle/MessageForCDSSResponse.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Bundle/MessageForCDSSResponse.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource MessageHeader/MessageHeaderCDSSExampleRequest.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MessageHeader/MessageHeaderCDSSExampleRequest.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Parameters/MLParameterRequestExample.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Parameters/MLParameterRequestExample.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Parameters/MLParameterResponseExample.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Parameters/MLParameterResponseExample.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource CommunicationRequest/OBSCDSSInitializerExample.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CommunicationRequest/OBSCDSSInitializerExample.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Bundle/MessageForCDSSRequest.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Bundle/MessageForCDSSRequest.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Communication/sss.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Communication/sss.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Parameters/MLParameterRequestExample.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Parameters/MLParameterRequestExample.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Questionnaire/questionnaire-ipsx.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Device/sss.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Device/sss.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource MessageHeader/MessageHeaderCDSSExampleResponse.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MessageHeader/MessageHeaderCDSSExampleResponse.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Bundle/MessageForCDSSResponse.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Bundle/MessageForCDSSResponse.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 ERROR: /github/workspace/output/Bundle-MessageForCDSSRequest.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
 ERROR: /github/workspace/output/Bundle-MessageForCDSSRequest.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 139, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
 ERROR: /github/workspace/output/Bundle-MessageForCDSSRequest.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 141, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
@@ -102,6 +104,11 @@ ERROR: /github/workspace/output/Parameters-MLParameterResponseExample.html#/html
 ERROR: /github/workspace/output/Parameters-MLParameterResponseExample.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 141, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
 ERROR: /github/workspace/output/Parameters-MLParameterResponseExample.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 141, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
 ERROR: /github/workspace/output/Parameters-MLParameterResponseExample.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 141, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/Questionnaire-questionnaire-ipsx.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/Questionnaire-questionnaire-ipsx.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 139, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/Questionnaire-questionnaire-ipsx.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 141, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/Questionnaire-questionnaire-ipsx.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 141, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/Questionnaire-questionnaire-ipsx.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 141, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-MLModel-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-MLModel-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-MLModel-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
@@ -324,6 +331,8 @@ WARNING: Parameters/MLParameterRequestExample: Parameters.parameter[39].value.of
 == fsh-generated/resources/Parameters-MLParameterResponseExample.json ==
 WARNING: Parameters/MLParameterResponseExample: Parameters.parameter[0].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
 WARNING: Parameters/MLParameterResponseExample: Parameters.parameter[2].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
+== fsh-generated/resources/Questionnaire-questionnaire-ipsx.json ==
+WARNING: Questionnaire/questionnaire-ipsx: Questionnaire: Rule que-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
 == fsh-generated/resources/StructureDefinition-MLModel.json ==
 ERROR: StructureDefinition.where(url = 'https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MLModel'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-MLModel.json - the canonical URL (http://xxsomewhere.org/fhir/myig/StructureDefinition/MLModel) does not match the URL (https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MLModel)
 ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-MLModel: URL Mismatch http://xxsomewhere.org/fhir/myig/StructureDefinition/MLModel vs https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MLModel
@@ -359,5 +368,5 @@ ERROR: /github/workspace/fsh-generated/resources/ValueSet-ml-response-vs: URL Mi
 ERROR: ValueSet.where(url = 'https://joofio.github.io/obs-cdss-fhir/ValueSet/ml-type-vs'): Conformance resource /github/workspace/fsh-generated/resources/ValueSet-ml-type-vs.json - the canonical URL (http://xxsomewhere.org/fhir/myig/ValueSet/ml-type-vs) does not match the URL (https://joofio.github.io/obs-cdss-fhir/ValueSet/ml-type-vs)
 ERROR: /github/workspace/fsh-generated/resources/ValueSet-ml-type-vs: URL Mismatch http://xxsomewhere.org/fhir/myig/ValueSet/ml-type-vs vs https://joofio.github.io/obs-cdss-fhir/ValueSet/ml-type-vs
 == input/myig.xml ==
-WARNING: ImplementationGuide/xxexample.fhir.uv.myig: ImplementationGuide: ig-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Rule 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
-WARNING: ImplementationGuide/xxexample.fhir.uv.myig: ImplementationGuide.definition.resource[4].name: value should not start or finish with whitespace 'Message...response '
+WARNING: ImplementationGuide/xxexample.fhir.uv.myig: ImplementationGuide: Rule ig-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+WARNING: ImplementationGuide/xxexample.fhir.uv.myig: ImplementationGuide.definition.resource[12].name: value should not start or finish with whitespace 'Message...response '
