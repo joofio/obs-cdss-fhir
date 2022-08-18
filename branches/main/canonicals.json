@@ -7,6 +7,13 @@
     "name": "obs-cds-ig"
   },
   {
+    "id": "questionnaire-ipsx",
+    "type": "Questionnaire",
+    "url": "http://xxsomewhere.org/fhir/myig/Questionnaire/questionnaire-ipsx",
+    "version": "0.1.0-test",
+    "name": "questionnaire--obs-cdss"
+  },
+  {
     "id": "ml-response-cs",
     "type": "CodeSystem",
     "url": "https://joofio.github.io/obs-cdss-fhir/CodeSystem/ml-response-cs",
