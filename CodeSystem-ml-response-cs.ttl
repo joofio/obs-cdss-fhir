@@ -5,60 +5,48 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://xxsomewhere.org/fhir/myig/CodeSystem/ml-response-cs> a fhir:CodeSystem;
-  fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "ml-response-cs"];
-  fhir:DomainResource.text [
-     fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system https://joofio.github.io/obs-cdss-fhir/CodeSystem/ml-response-cs defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">OK<a name=\"ml-response-cs-OK\"> </a></td><td>Level Ok</td><td>Level Ok</td></tr><tr><td style=\"white-space:nowrap\">WARN<a name=\"ml-response-cs-WARN\"> </a></td><td>Warning level 1</td><td>Warning level 1</td></tr><tr><td style=\"white-space:nowrap\">NOK<a name=\"ml-response-cs-NOK\"> </a></td><td>Error level</td><td>Error level</td></tr></table></div>"
-  ];
-  fhir:CodeSystem.url [ fhir:value "https://joofio.github.io/obs-cdss-fhir/CodeSystem/ml-response-cs"];
-  fhir:CodeSystem.version [ fhir:value "0.1.0-test"];
-  fhir:CodeSystem.name [ fhir:value "MLResponseCS"];
-  fhir:CodeSystem.title [ fhir:value "Model Responses Code System"];
-  fhir:CodeSystem.status [ fhir:value "active"];
-  fhir:CodeSystem.date [ fhir:value "2022-08-18T10:28:24+00:00"^^xsd:dateTime];
-  fhir:CodeSystem.publisher [ fhir:value "xxxYour Work Group"];
-  fhir:CodeSystem.contact [
-     fhir:index 0;
-     fhir:ContactDetail.telecom [
-       fhir:index 0;
-       fhir:ContactPoint.system [ fhir:value "url" ];
-       fhir:ContactPoint.value [ fhir:value "http://xxhl7.org/Special/committees/[something]" ]
-     ]
-  ];
-  fhir:CodeSystem.description [ fhir:value "Model Responses Code System"];
-  fhir:CodeSystem.jurisdiction [
-     fhir:index 0;
-     fhir:CodeableConcept.coding [
-       fhir:index 0;
-       fhir:Coding.system [ fhir:value "http://unstats.un.org/unsd/methods/m49/m49.htm" ];
-       fhir:Coding.code [ fhir:value "001" ]
-     ]
-  ];
-  fhir:CodeSystem.content [ fhir:value "complete"];
-  fhir:CodeSystem.count [ fhir:value "3"^^xsd:nonNegativeInteger];
-  fhir:CodeSystem.concept [
-     fhir:index 0;
-     fhir:CodeSystem.concept.code [ fhir:value "OK" ];
-     fhir:CodeSystem.concept.display [ fhir:value "Level Ok" ];
-     fhir:CodeSystem.concept.definition [ fhir:value "Level Ok" ]
-  ], [
-     fhir:index 1;
-     fhir:CodeSystem.concept.code [ fhir:value "WARN" ];
-     fhir:CodeSystem.concept.display [ fhir:value "Warning level 1" ];
-     fhir:CodeSystem.concept.definition [ fhir:value "Warning level 1" ]
-  ], [
-     fhir:index 2;
-     fhir:CodeSystem.concept.code [ fhir:value "NOK" ];
-     fhir:CodeSystem.concept.display [ fhir:value "Error level" ];
-     fhir:CodeSystem.concept.definition [ fhir:value "Error level" ]
-  ] .
-
-# - ontology header ------------------------------------------------------------
-
-<http://xxsomewhere.org/fhir/myig/CodeSystem/ml-response-cs.ttl> a owl:Ontology;
-  owl:imports fhir:fhir.ttl .
+<http://xxsomewhere.org/fhir/myig/CodeSystem/ml-response-cs> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ml-response-cs"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>https://joofio.github.io/obs-cdss-fhir/CodeSystem/ml-response-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">OK<a name=\"ml-response-cs-OK\"> </a></td><td>Level Ok</td><td>Level Ok</td></tr><tr><td style=\"white-space:nowrap\">WARN<a name=\"ml-response-cs-WARN\"> </a></td><td>Warning level 1</td><td>Warning level 1</td></tr><tr><td style=\"white-space:nowrap\">NOK<a name=\"ml-response-cs-NOK\"> </a></td><td>Error level</td><td>Error level</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://joofio.github.io/obs-cdss-fhir/CodeSystem/ml-response-cs"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0-test"] ; # 
+  fhir:name [ fhir:v "MLResponseCS"] ; # 
+  fhir:title [ fhir:v "Model Responses Code System"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2023-05-26T10:36:36+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "xxxYour Work Group"] ; # 
+  fhir:contact ( [
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://xxhl7.org/Special/committees/[something]" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Model Responses Code System"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://unstats.un.org/unsd/methods/m49/m49.htm"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "001" ]
+     ] )
+  ] ) ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "3"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "OK" ] ;
+     fhir:display [ fhir:v "Level Ok" ] ;
+     fhir:definition [ fhir:v "Level Ok" ]
+  ] [
+     fhir:code [ fhir:v "WARN" ] ;
+     fhir:display [ fhir:v "Warning level 1" ] ;
+     fhir:definition [ fhir:v "Warning level 1" ]
+  ] [
+     fhir:code [ fhir:v "NOK" ] ;
+     fhir:display [ fhir:v "Error level" ] ;
+     fhir:definition [ fhir:v "Error level" ]
+  ] ) . # 
 
 # -------------------------------------------------------------------------------------
 
