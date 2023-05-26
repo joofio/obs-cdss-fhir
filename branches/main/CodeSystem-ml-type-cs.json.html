@@ -32,18 +32,18 @@
     <![endif] -->
 
       <!-- Favicons -->
-    <link sizes="144x144" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
-    <link sizes="114x114" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
-    <link sizes="72x72" rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
-    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link sizes="144x144" rel="fhir-logo" href="assets/ico/icon-fhir-144.png"/>
+    <link sizes="114x114" rel="fhir-logo" href="assets/ico/icon-fhir-114.png"/>
+    <link sizes="72x72" rel="fhir-logo" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
     <link rel="shortcut icon" href="assets/ico/favicon.png"/>
   </head>
   <body onload="document.body.style.opacity='1'">
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"4.11"}
-    h3,h4,h5,h6{--heading-prefix:"4.11"}</style>
+    <style type="text/css">h2{--heading-prefix:"4.5"}
+    h3,h4,h5,h6{--heading-prefix:"4.5"}</style>
     <div id="segment-header" class="segment">    <!-- segment-header -->
       <div class="container">    <!-- container -->
           <!-- Placeholder for child template header declarations -->
@@ -177,6 +177,7 @@
   </li>
 
 
+
   
     <li>
       <a href="CodeSystem-ml-type-cs.xml.html">XML</a>
@@ -213,7 +214,7 @@
         
           Active
           
-            as of 2022-08-18
+            as of 2023-05-26
           
         
       </td>
@@ -229,20 +230,20 @@
 
 
 
-  <pre class="json"><code class="language-json">
+  <pre style="white-space: pre; overflow: hidden" class="json"><code class="language-json">
 {
   "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem">resourceType</a>" : "CodeSystem",
   "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.id">id</a>" : "ml-type-cs",
   "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.text">text</a>" : {
     "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;p&gt;This code system https://joofio.github.io/obs-cdss-fhir/CodeSystem/ml-type-cs defines the following codes:&lt;/p&gt;&lt;table class=\"codes\"&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Definition&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;DT&lt;a name=\"ml-type-cs-DT\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Decision Trees&lt;/td&gt;&lt;td&gt;Decision Trees&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;RF&lt;a name=\"ml-type-cs-RF\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Random Forests&lt;/td&gt;&lt;td&gt;Random Forests&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;XGBOOST&lt;a name=\"ml-type-cs-XGBOOST\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Extreme Gradient Boosting&lt;/td&gt;&lt;td&gt;Extreme Gradient Boosting&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;LGBM&lt;a name=\"ml-type-cs-LGBM\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Light Gradient Boosting&lt;/td&gt;&lt;td&gt;Light Gradient Boosting&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;BAYES&lt;a name=\"ml-type-cs-BAYES\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Bayesian&lt;/td&gt;&lt;td&gt;Bayesian&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;p&gt;This code system &lt;code&gt;https://joofio.github.io/obs-cdss-fhir/CodeSystem/ml-type-cs&lt;/code&gt; defines the following codes:&lt;/p&gt;&lt;table class=\"codes\"&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Definition&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;DT&lt;a name=\"ml-type-cs-DT\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Decision Trees&lt;/td&gt;&lt;td&gt;Decision Trees&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;RF&lt;a name=\"ml-type-cs-RF\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Random Forests&lt;/td&gt;&lt;td&gt;Random Forests&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;XGBOOST&lt;a name=\"ml-type-cs-XGBOOST\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Extreme Gradient Boosting&lt;/td&gt;&lt;td&gt;Extreme Gradient Boosting&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;LGBM&lt;a name=\"ml-type-cs-LGBM\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Light Gradient Boosting&lt;/td&gt;&lt;td&gt;Light Gradient Boosting&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;BAYES&lt;a name=\"ml-type-cs-BAYES\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Bayesian&lt;/td&gt;&lt;td&gt;Bayesian&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
   },
   "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.url">url</a>" : "https://joofio.github.io/obs-cdss-fhir/CodeSystem/ml-type-cs",
   "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.version">version</a>" : "0.1.0-test",
   "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.name">name</a>" : "MlTypesCS",
   "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.title">title</a>" : "Machine Learning Models code system",
   "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.status">status</a>" : "active",
-  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.date">date</a>" : "2022-08-18T10:28:24+00:00",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.date">date</a>" : "2023-05-26T10:36:36+00:00",
   "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.publisher">publisher</a>" : "xxxYour Work Group",
   "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.contact">contact</a>" : [
     {
@@ -324,14 +325,14 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="http://xxhl7.org/Special/committees/[something]">xxxYour Work Group</a>.  Package OBSCDSS.fhir.uv.myig#0.1.0-test based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Aug 18, 2022 10:28+0000">2022-08-18</span>
+          IG &copy; 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="http://xxhl7.org/Special/committees/[something]">xxxYour Work Group</a>.  Package OBSCDSS.fhir.uv.myig#0.1.0-test based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, May 26, 2023 10:36+0000">2023-05-26</span>
           <br/>
-          <span style="color: var(--footer-highlight-text-color)"></span>
+          <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
                  <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
                  
                 
-          
+          </span>
         </p>
       </div>    <!-- /inner-wrapper -->
     </div>    <!-- /container -->

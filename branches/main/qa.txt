@@ -1,175 +1,55 @@
 ﻿obs-cds-ig : Validation Results
 =========================================
 
-err = 71, warn = 107, info = 10
-IG Publisher Version: 1.1.128
-Generated Thu Aug 18 10:29:00 UTC 2022. FHIR version 4.0.1 for OBSCDSS.fhir.uv.myig#0.1.0-test (canonical = http://xxsomewhere.org/fhir/myig)
- Build Errors : 140 / 11 / 0
- /github/workspace/fsh-generated/resources/Bundle-MessageForCDSSRequest : 15 / 40 / 10
- /github/workspace/fsh-generated/resources/Bundle-MessageForCDSSResponse : 19 / 6 / 10
- /github/workspace/fsh-generated/resources/CodeSystem-ml-response-cs : 2 / 0 / 2
- /github/workspace/fsh-generated/resources/CodeSystem-ml-type-cs : 2 / 0 / 2
- /github/workspace/fsh-generated/resources/Communication-sss : 4 / 1 / 1
- /github/workspace/fsh-generated/resources/CommunicationRequest-OBSCDSSInitializerExample : 1 / 1 / 1
- /github/workspace/fsh-generated/resources/Device-sss : 1 / 0 / 1
- /github/workspace/fsh-generated/resources/MessageHeader-MessageHeaderCDSSExampleRequest : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/MessageHeader-MessageHeaderCDSSExampleResponse : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/Parameters-MLParameterRequestExample : 0 / 36 / 1
- /github/workspace/fsh-generated/resources/Parameters-MLParameterResponseExample : 0 / 2 / 1
- /github/workspace/fsh-generated/resources/Questionnaire-questionnaire-ipsx : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-MLModel : 2 / 0 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-MLParameterRequest : 2 / 0 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-MLParameterResponse : 2 / 0 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-MessageForCDSS : 2 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-MessageHeaderCDSS : 2 / 0 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-OBSCDSSFinalizer : 2 / 2 / 2
- /github/workspace/fsh-generated/resources/StructureDefinition-OBSCDSSInitializer : 2 / 2 / 2
- /github/workspace/fsh-generated/resources/ValueSet-ml-response-vs : 2 / 0 / 1
- /github/workspace/fsh-generated/resources/ValueSet-ml-type-vs : 2 / 0 / 1
- /github/workspace/input/myig : 0 / 2 / 1
+err = 13, warn = 15, info = 2
+IG Publisher Version: 1.3.12
+Generated Fri May 26 10:37:05 UTC 2023. FHIR version 4.0.1 for OBSCDSS.fhir.uv.myig#0.1.0-test (canonical = http://xxsomewhere.org/fhir/myig)
+ Build Errors : 44 / 6 / 0
+ /github/workspace/fsh-generated/resources/CodeSystem-ml-response-cs : 2 / 2 / 2
+ /github/workspace/fsh-generated/resources/CodeSystem-ml-type-cs : 2 / 2 / 2
+ /github/workspace/fsh-generated/resources/OperationDefinition-predict : 2 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-MLModel : 3 / 1 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-ml-response-vs : 2 / 1 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-ml-type-vs : 2 / 1 / 1
+ /github/workspace/input/myig : 0 / 1 / 1
 </table>
 == n/a ==
 WARNING: ImplementationGuide.id: The Implementation Guide Resource id should be OBSCDSS.fhir.uv.myig
-ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource MessageHeader/MessageHeaderCDSSExampleRequest.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MessageHeader/MessageHeaderCDSSExampleRequest.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Parameters/MLParameterResponseExample.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Parameters/MLParameterResponseExample.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource CommunicationRequest/OBSCDSSInitializerExample.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource CommunicationRequest/OBSCDSSInitializerExample.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Bundle/MessageForCDSSRequest.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Bundle/MessageForCDSSRequest.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Communication/sss.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Communication/sss.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Parameters/MLParameterRequestExample.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Parameters/MLParameterRequestExample.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Questionnaire/questionnaire-ipsx.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Device/sss.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Device/sss.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource MessageHeader/MessageHeaderCDSSExampleResponse.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource MessageHeader/MessageHeaderCDSSExampleResponse.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-ERROR: Unable to find ImplementationGuide.definition.resource.name for the resource Bundle/MessageForCDSSResponse.  Name is mandatory if it cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Bundle/MessageForCDSSResponse.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-ERROR: /github/workspace/output/Bundle-MessageForCDSSRequest.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/Bundle-MessageForCDSSRequest.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 139, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/Bundle-MessageForCDSSRequest.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 141, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/Bundle-MessageForCDSSRequest.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 141, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/Bundle-MessageForCDSSRequest.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 141, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/Bundle-MessageForCDSSResponse.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/Bundle-MessageForCDSSResponse.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 139, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/Bundle-MessageForCDSSResponse.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 141, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/Bundle-MessageForCDSSResponse.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 141, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/Bundle-MessageForCDSSResponse.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 141, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource OperationDefinition/predict.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: /github/workspace/output/CodeSystem-ml-response-cs-testing.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 139, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
 ERROR: /github/workspace/output/CodeSystem-ml-response-cs.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
 ERROR: /github/workspace/output/CodeSystem-ml-response-cs.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 139, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
 ERROR: /github/workspace/output/CodeSystem-ml-response-cs.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 141, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
 ERROR: /github/workspace/output/CodeSystem-ml-response-cs.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 141, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
 ERROR: /github/workspace/output/CodeSystem-ml-response-cs.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 141, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/CodeSystem-ml-type-cs-testing.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 139, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
 ERROR: /github/workspace/output/CodeSystem-ml-type-cs.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
 ERROR: /github/workspace/output/CodeSystem-ml-type-cs.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 139, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
 ERROR: /github/workspace/output/CodeSystem-ml-type-cs.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 141, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
 ERROR: /github/workspace/output/CodeSystem-ml-type-cs.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 141, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
 ERROR: /github/workspace/output/CodeSystem-ml-type-cs.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 141, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/Communication-sss.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/Communication-sss.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 139, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/Communication-sss.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 141, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/Communication-sss.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 141, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/Communication-sss.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 141, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/CommunicationRequest-OBSCDSSInitializerExample.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/CommunicationRequest-OBSCDSSInitializerExample.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 139, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/CommunicationRequest-OBSCDSSInitializerExample.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 141, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/CommunicationRequest-OBSCDSSInitializerExample.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 141, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/CommunicationRequest-OBSCDSSInitializerExample.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 141, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/Device-sss.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/Device-sss.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 139, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/Device-sss.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 141, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/Device-sss.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 141, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/Device-sss.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 141, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/MessageHeader-MessageHeaderCDSSExampleRequest.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/MessageHeader-MessageHeaderCDSSExampleRequest.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 139, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/MessageHeader-MessageHeaderCDSSExampleRequest.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 141, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/MessageHeader-MessageHeaderCDSSExampleRequest.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 141, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/MessageHeader-MessageHeaderCDSSExampleRequest.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 141, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/MessageHeader-MessageHeaderCDSSExampleResponse.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/MessageHeader-MessageHeaderCDSSExampleResponse.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 139, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/MessageHeader-MessageHeaderCDSSExampleResponse.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 141, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/MessageHeader-MessageHeaderCDSSExampleResponse.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 141, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/MessageHeader-MessageHeaderCDSSExampleResponse.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 141, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/Parameters-MLParameterRequestExample.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/Parameters-MLParameterRequestExample.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 139, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/Parameters-MLParameterRequestExample.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 141, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/Parameters-MLParameterRequestExample.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 141, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/Parameters-MLParameterRequestExample.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 141, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/Parameters-MLParameterResponseExample.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/Parameters-MLParameterResponseExample.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 139, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/Parameters-MLParameterResponseExample.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 141, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/Parameters-MLParameterResponseExample.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 141, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/Parameters-MLParameterResponseExample.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 141, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/Questionnaire-questionnaire-ipsx.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/Questionnaire-questionnaire-ipsx.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 139, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/Questionnaire-questionnaire-ipsx.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 141, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/Questionnaire-questionnaire-ipsx.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 141, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/Questionnaire-questionnaire-ipsx.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 141, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/OperationDefinition-predict-testing.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 139, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/OperationDefinition-predict.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/OperationDefinition-predict.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 139, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/OperationDefinition-predict.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 141, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/OperationDefinition-predict.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 141, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/OperationDefinition-predict.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 141, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-MLModel-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-MLModel-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-MLModel-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-MLModel-testing.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-MLModel.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-MLModel.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-MLModel.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 147, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-MLModel.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 147, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
 ERROR: /github/workspace/output/StructureDefinition-MLModel.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 147, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-MLParameterRequest-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-MLParameterRequest-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-MLParameterRequest-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-MLParameterRequest.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-MLParameterRequest.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-MLParameterRequest.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 147, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-MLParameterRequest.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 147, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-MLParameterRequest.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 147, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-MLParameterResponse-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-MLParameterResponse-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-MLParameterResponse-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-MLParameterResponse.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-MLParameterResponse.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-MLParameterResponse.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 147, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-MLParameterResponse.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 147, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-MLParameterResponse.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 147, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-MessageForCDSS-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-MessageForCDSS-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-MessageForCDSS-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-MessageForCDSS.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-MessageForCDSS.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-MessageForCDSS.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 147, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-MessageForCDSS.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 147, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-MessageForCDSS.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 147, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-MessageHeaderCDSS-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-MessageHeaderCDSS-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-MessageHeaderCDSS-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-MessageHeaderCDSS.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-MessageHeaderCDSS.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-MessageHeaderCDSS.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 147, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-MessageHeaderCDSS.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 147, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-MessageHeaderCDSS.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 147, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-OBSCDSSFinalizer-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-OBSCDSSFinalizer-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-OBSCDSSFinalizer-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-OBSCDSSFinalizer.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-OBSCDSSFinalizer.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-OBSCDSSFinalizer.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 147, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-OBSCDSSFinalizer.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 147, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-OBSCDSSFinalizer.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 147, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-OBSCDSSInitializer-definitions.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-OBSCDSSInitializer-examples.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-OBSCDSSInitializer-mappings.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-OBSCDSSInitializer.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-OBSCDSSInitializer.profile.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-OBSCDSSInitializer.profile.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 147, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-OBSCDSSInitializer.profile.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 147, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/StructureDefinition-OBSCDSSInitializer.profile.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 147, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-ml-response-vs-testing.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 139, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-ml-response-vs.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-ml-response-vs.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 139, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-ml-response-vs.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 141, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-ml-response-vs.ttl.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 141, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-ml-response-vs.xml.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 141, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
+ERROR: /github/workspace/output/ValueSet-ml-type-vs-testing.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 139, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-ml-type-vs.change.history.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 143, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-ml-type-vs.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 139, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
 ERROR: /github/workspace/output/ValueSet-ml-type-vs.json.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 141, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
@@ -178,195 +58,40 @@ ERROR: /github/workspace/output/ValueSet-ml-type-vs.xml.html#/html/body/div/div/
 ERROR: /github/workspace/output/artifacts.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 139, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
 ERROR: /github/workspace/output/index.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 139, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
 ERROR: /github/workspace/output/toc.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 139, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-ERROR: /github/workspace/output/toc.html#/html/body/div/div/div/div/div/div/table/tbody/tr/td/a at Line 179, column 2425: The link 'downloads.html' for "3 Downloads" cannot be resolved
+ERROR: /github/workspace/output/toc.html#/html/body/div/div/div/div/div/div/table/tbody/tr/td/a at Line 179, column 2583: The link 'downloads.html' for "3 Downloads" cannot be resolved
 ERROR: /github/workspace/output/workflow.html#/html/body/div/div/nav/div/div/ul/li/ul/li/a at Line 139, column 9: The link 'downloads.html' for "Downloads" cannot be resolved
-== fsh-generated/resources/Bundle-MessageForCDSSRequest.json ==
-ERROR: Bundle/MessageForCDSSRequest: Bundle.entry[0]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: name in profile https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageForCDSS on element Bundle.entry:messageheader, looking in profile https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageForCDSS (@char 1)
-ERROR: Bundle/MessageForCDSSRequest: Bundle.entry[1]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: name in profile https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageForCDSS on element Bundle.entry:messageheader, looking in profile https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageForCDSS (@char 1)
-ERROR: Bundle/MessageForCDSSRequest: Bundle.entry[2]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: name in profile https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageForCDSS on element Bundle.entry:messageheader, looking in profile https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageForCDSS (@char 1)
-ERROR: Bundle/MessageForCDSSRequest: Bundle.entry[0]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: name in profile https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageForCDSS on element Bundle.entry:content, looking in profile https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageForCDSS (@char 1)
-ERROR: Bundle/MessageForCDSSRequest: Bundle.entry[1]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: name in profile https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageForCDSS on element Bundle.entry:content, looking in profile https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageForCDSS (@char 1)
-ERROR: Bundle/MessageForCDSSRequest: Bundle.entry[2]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: name in profile https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageForCDSS on element Bundle.entry:content, looking in profile https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageForCDSS (@char 1)
-ERROR: Bundle/MessageForCDSSRequest: Bundle.entry[0]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: name in profile https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageForCDSS on element Bundle.entry:parameter, looking in profile https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageForCDSS (@char 1)
-ERROR: Bundle/MessageForCDSSRequest: Bundle.entry[1]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: name in profile https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageForCDSS on element Bundle.entry:parameter, looking in profile https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageForCDSS (@char 1)
-ERROR: Bundle/MessageForCDSSRequest: Bundle.entry[2]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: name in profile https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageForCDSS on element Bundle.entry:parameter, looking in profile https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageForCDSS (@char 1)
-INFORMATION: Bundle/MessageForCDSSRequest: Bundle: Bundle.entry:messageheader: Unable to check minimum required (Bundle.entry) due to lack of slicing validation (from https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageForCDSS)
-INFORMATION: Bundle/MessageForCDSSRequest: Bundle: Bundle.entry:content: Unable to check minimum required (Bundle.entry) due to lack of slicing validation (from https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageForCDSS)
-INFORMATION: Bundle/MessageForCDSSRequest: Bundle: Bundle.entry:parameter: Unable to check minimum required (Bundle.entry) due to lack of slicing validation (from https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageForCDSS)
-WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[0].resource.ofType(MessageHeader).event.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-ERROR: Bundle/MessageForCDSSRequest: Bundle.entry[1].resource.ofType(CommunicationRequest).meta.profile[1]: Canonical URL 'http://hl7.org/fhir/StructureDefinition/obscdss-initializer' does not resolve
-ERROR: Bundle/MessageForCDSSRequest: Bundle.entry[1]: Bundle entry missing fullUrl
-ERROR: Bundle/MessageForCDSSRequest: Bundle.entry[1].resource.ofType(CommunicationRequest).payload[0].content.ofType(Reference): Relative Reference appears inside Bundle whose entry is missing a fullUrl
-WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[1].resource.ofType(CommunicationRequest).meta.profile[1]: Profile reference 'http://hl7.org/fhir/StructureDefinition/obscdss-initializer' has not been checked because it is unknown, and the validator is set to not fetch unknown profiles
-WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[2].resource.ofType(Parameters).parameter[0].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[2].resource.ofType(Parameters).parameter[1].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[2].resource.ofType(Parameters).parameter[2].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[2].resource.ofType(Parameters).parameter[3].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[2].resource.ofType(Parameters).parameter[4].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[2].resource.ofType(Parameters).parameter[5].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[2].resource.ofType(Parameters).parameter[8].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[2].resource.ofType(Parameters).parameter[10].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[2].resource.ofType(Parameters).parameter[11].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[2].resource.ofType(Parameters).parameter[12].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[2].resource.ofType(Parameters).parameter[13].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[2].resource.ofType(Parameters).parameter[14].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[2].resource.ofType(Parameters).parameter[16].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[2].resource.ofType(Parameters).parameter[17].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[2].resource.ofType(Parameters).parameter[18].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[2].resource.ofType(Parameters).parameter[19].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[2].resource.ofType(Parameters).parameter[20].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[2].resource.ofType(Parameters).parameter[21].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[2].resource.ofType(Parameters).parameter[22].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[2].resource.ofType(Parameters).parameter[23].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[2].resource.ofType(Parameters).parameter[24].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[2].resource.ofType(Parameters).parameter[25].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[2].resource.ofType(Parameters).parameter[26].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[2].resource.ofType(Parameters).parameter[27].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[2].resource.ofType(Parameters).parameter[28].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[2].resource.ofType(Parameters).parameter[29].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[2].resource.ofType(Parameters).parameter[30].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[2].resource.ofType(Parameters).parameter[31].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[2].resource.ofType(Parameters).parameter[32].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[2].resource.ofType(Parameters).parameter[33].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[2].resource.ofType(Parameters).parameter[34].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[2].resource.ofType(Parameters).parameter[35].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[2].resource.ofType(Parameters).parameter[36].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[2].resource.ofType(Parameters).parameter[37].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[2].resource.ofType(Parameters).parameter[38].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[2].resource.ofType(Parameters).parameter[39].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[2]: Entry  isn't reachable by traversing from first Bundle entry
-WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[3]: Entry  isn't reachable by traversing from first Bundle entry
-ERROR: Bundle/MessageForCDSSRequest: Bundle.entry[0]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry  
-ERROR: Bundle/MessageForCDSSRequest: Bundle.entry[1]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry  
-ERROR: Bundle/MessageForCDSSRequest: Bundle.entry[2]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry  
-== fsh-generated/resources/Bundle-MessageForCDSSResponse.json ==
-ERROR: Bundle/MessageForCDSSResponse: Bundle.entry[0]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: name in profile https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageForCDSS on element Bundle.entry:messageheader, looking in profile https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageForCDSS (@char 1)
-ERROR: Bundle/MessageForCDSSResponse: Bundle.entry[1]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: name in profile https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageForCDSS on element Bundle.entry:messageheader, looking in profile https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageForCDSS (@char 1)
-ERROR: Bundle/MessageForCDSSResponse: Bundle.entry[2]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: name in profile https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageForCDSS on element Bundle.entry:messageheader, looking in profile https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageForCDSS (@char 1)
-ERROR: Bundle/MessageForCDSSResponse: Bundle.entry[0]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: name in profile https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageForCDSS on element Bundle.entry:content, looking in profile https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageForCDSS (@char 1)
-ERROR: Bundle/MessageForCDSSResponse: Bundle.entry[1]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: name in profile https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageForCDSS on element Bundle.entry:content, looking in profile https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageForCDSS (@char 1)
-ERROR: Bundle/MessageForCDSSResponse: Bundle.entry[2]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: name in profile https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageForCDSS on element Bundle.entry:content, looking in profile https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageForCDSS (@char 1)
-ERROR: Bundle/MessageForCDSSResponse: Bundle.entry[0]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: name in profile https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageForCDSS on element Bundle.entry:parameter, looking in profile https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageForCDSS (@char 1)
-ERROR: Bundle/MessageForCDSSResponse: Bundle.entry[1]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: name in profile https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageForCDSS on element Bundle.entry:parameter, looking in profile https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageForCDSS (@char 1)
-ERROR: Bundle/MessageForCDSSResponse: Bundle.entry[2]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: name in profile https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageForCDSS on element Bundle.entry:parameter, looking in profile https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageForCDSS (@char 1)
-INFORMATION: Bundle/MessageForCDSSResponse: Bundle: Bundle.entry:messageheader: Unable to check minimum required (Bundle.entry) due to lack of slicing validation (from https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageForCDSS)
-INFORMATION: Bundle/MessageForCDSSResponse: Bundle: Bundle.entry:content: Unable to check minimum required (Bundle.entry) due to lack of slicing validation (from https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageForCDSS)
-INFORMATION: Bundle/MessageForCDSSResponse: Bundle: Bundle.entry:parameter: Unable to check minimum required (Bundle.entry) due to lack of slicing validation (from https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageForCDSS)
-WARNING: Bundle/MessageForCDSSResponse: Bundle.entry[0].resource.ofType(MessageHeader).event.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-WARNING: Bundle/MessageForCDSSResponse: Bundle.entry[1].resource.ofType(Communication).category[0].coding[0]: A code with no system has no defined meaning. A system should be provided
-ERROR: Bundle/MessageForCDSSResponse: Bundle.entry[1]: Bundle entry missing fullUrl
-ERROR: Bundle/MessageForCDSSResponse: Bundle.entry[1].resource.ofType(Communication).sender: Relative Reference appears inside Bundle whose entry is missing a fullUrl
-ERROR: Bundle/MessageForCDSSResponse: Bundle.entry[1].resource.ofType(Communication).payload[0].content.ofType(Reference): Relative Reference appears inside Bundle whose entry is missing a fullUrl
-ERROR: Bundle/MessageForCDSSResponse: Bundle.entry[1].resource.ofType(Communication).payload[0].content.ofType(Reference): This element does not match any known slice  defined in the profile https://joofio.github.io/obs-cdss-fhir/StructureDefinition/OBSCDSSFinalizer and slicing is CLOSED: Bundle.entry[1].resource.ofType(Communication).payload[0].content.ofType(Reference): Does not match slice 'contentString' (discriminator: ($this is string))
-ERROR: Bundle/MessageForCDSSResponse: Bundle.entry[1].resource.ofType(Communication).payload[0]: Communication.payload.content[x]:contentString: minimum required = 1, but only found 0 (from https://joofio.github.io/obs-cdss-fhir/StructureDefinition/OBSCDSSFinalizer)
-ERROR: Bundle/MessageForCDSSResponse: Bundle.entry[1].resource.ofType(Communication).payload[0].content.ofType(Reference): The Profile 'https://joofio.github.io/obs-cdss-fhir/StructureDefinition/OBSCDSSFinalizer' definition allows for the type string but found type Reference
-ERROR: Bundle/MessageForCDSSResponse: Bundle.entry[1].resource.ofType(Communication).payload[0].content.ofType(Reference).reference: This element is not allowed by the profile http://hl7.org/fhir/StructureDefinition/string
-WARNING: Bundle/MessageForCDSSResponse: Bundle.entry[2].resource.ofType(Parameters).parameter[0].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-WARNING: Bundle/MessageForCDSSResponse: Bundle.entry[2].resource.ofType(Parameters).parameter[2].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-WARNING: Bundle/MessageForCDSSResponse: Bundle.entry[2]: Entry  isn't reachable by traversing from first Bundle entry
-WARNING: Bundle/MessageForCDSSResponse: Bundle.entry[3]: Entry  isn't reachable by traversing from first Bundle entry
-ERROR: Bundle/MessageForCDSSResponse: Bundle.entry[0]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry  
-ERROR: Bundle/MessageForCDSSResponse: Bundle.entry[1]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry  
-ERROR: Bundle/MessageForCDSSResponse: Bundle.entry[2]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry  
+WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
+WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
 == fsh-generated/resources/CodeSystem-ml-response-cs.json ==
 ERROR: CodeSystem.where(url = 'https://joofio.github.io/obs-cdss-fhir/CodeSystem/ml-response-cs'): Conformance resource /github/workspace/fsh-generated/resources/CodeSystem-ml-response-cs.json - the canonical URL (http://xxsomewhere.org/fhir/myig/CodeSystem/ml-response-cs) does not match the URL (https://joofio.github.io/obs-cdss-fhir/CodeSystem/ml-response-cs)
 INFORMATION: CodeSystem/ml-response-cs: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/ml-response-cs: CodeSystem: The ShareableCodeSystem profile says that the experimental element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
+WARNING: CodeSystem/ml-response-cs: CodeSystem: The ShareableCodeSystem profile says that the caseSensitive element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
 ERROR: /github/workspace/fsh-generated/resources/CodeSystem-ml-response-cs: URL Mismatch http://xxsomewhere.org/fhir/myig/CodeSystem/ml-response-cs vs https://joofio.github.io/obs-cdss-fhir/CodeSystem/ml-response-cs
 == fsh-generated/resources/CodeSystem-ml-type-cs.json ==
 ERROR: CodeSystem.where(url = 'https://joofio.github.io/obs-cdss-fhir/CodeSystem/ml-type-cs'): Conformance resource /github/workspace/fsh-generated/resources/CodeSystem-ml-type-cs.json - the canonical URL (http://xxsomewhere.org/fhir/myig/CodeSystem/ml-type-cs) does not match the URL (https://joofio.github.io/obs-cdss-fhir/CodeSystem/ml-type-cs)
 INFORMATION: CodeSystem/ml-type-cs: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/ml-type-cs: CodeSystem: The ShareableCodeSystem profile says that the experimental element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
+WARNING: CodeSystem/ml-type-cs: CodeSystem: The ShareableCodeSystem profile says that the caseSensitive element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile
 ERROR: /github/workspace/fsh-generated/resources/CodeSystem-ml-type-cs: URL Mismatch http://xxsomewhere.org/fhir/myig/CodeSystem/ml-type-cs vs https://joofio.github.io/obs-cdss-fhir/CodeSystem/ml-type-cs
-== fsh-generated/resources/Communication-sss.json ==
-WARNING: Communication/sss: Communication.category[0].coding[0]: A code with no system has no defined meaning. A system should be provided
-ERROR: Communication/sss: Communication.payload[0].content.ofType(Reference): This element does not match any known slice  defined in the profile https://joofio.github.io/obs-cdss-fhir/StructureDefinition/OBSCDSSFinalizer and slicing is CLOSED: Communication.payload[0].content.ofType(Reference): Does not match slice 'contentString' (discriminator: ($this is string))
-ERROR: Communication/sss: Communication.payload[0]: Communication.payload.content[x]:contentString: minimum required = 1, but only found 0 (from https://joofio.github.io/obs-cdss-fhir/StructureDefinition/OBSCDSSFinalizer)
-ERROR: Communication/sss: Communication.payload[0].content.ofType(Reference): The Profile 'https://joofio.github.io/obs-cdss-fhir/StructureDefinition/OBSCDSSFinalizer' definition allows for the type string but found type Reference
-ERROR: Communication/sss: Communication.payload[0].content.ofType(Reference).reference: This element is not allowed by the profile http://hl7.org/fhir/StructureDefinition/string
-== fsh-generated/resources/CommunicationRequest-OBSCDSSInitializerExample.json ==
-ERROR: CommunicationRequest/OBSCDSSInitializerExample: CommunicationRequest.meta.profile[1]: Canonical URL 'http://hl7.org/fhir/StructureDefinition/obscdss-initializer' does not resolve
-WARNING: CommunicationRequest/OBSCDSSInitializerExample: CommunicationRequest.meta.profile[1]: Profile reference 'http://hl7.org/fhir/StructureDefinition/obscdss-initializer' has not been checked because it is unknown, and the validator is set to not fetch unknown profiles
-== fsh-generated/resources/Device-sss.json ==
-ERROR: Device/sss: Device.status: The value provided ('completed') is not in the value set 'FHIRDeviceStatus' (http://hl7.org/fhir/ValueSet/device-status|4.0.1), and a code is required from this value set) (error message = Unknown Code http://hl7.org/fhir/device-status#completed in http://hl7.org/fhir/device-status)
-== fsh-generated/resources/MessageHeader-MessageHeaderCDSSExampleRequest.json ==
-WARNING: MessageHeader/MessageHeaderCDSSExampleRequest: MessageHeader.event.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-== fsh-generated/resources/MessageHeader-MessageHeaderCDSSExampleResponse.json ==
-WARNING: MessageHeader/MessageHeaderCDSSExampleResponse: MessageHeader.event.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-== fsh-generated/resources/Parameters-MLParameterRequestExample.json ==
-WARNING: Parameters/MLParameterRequestExample: Parameters.parameter[0].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-WARNING: Parameters/MLParameterRequestExample: Parameters.parameter[1].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-WARNING: Parameters/MLParameterRequestExample: Parameters.parameter[2].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-WARNING: Parameters/MLParameterRequestExample: Parameters.parameter[3].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-WARNING: Parameters/MLParameterRequestExample: Parameters.parameter[4].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-WARNING: Parameters/MLParameterRequestExample: Parameters.parameter[5].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-WARNING: Parameters/MLParameterRequestExample: Parameters.parameter[8].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-WARNING: Parameters/MLParameterRequestExample: Parameters.parameter[10].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-WARNING: Parameters/MLParameterRequestExample: Parameters.parameter[11].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-WARNING: Parameters/MLParameterRequestExample: Parameters.parameter[12].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-WARNING: Parameters/MLParameterRequestExample: Parameters.parameter[13].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-WARNING: Parameters/MLParameterRequestExample: Parameters.parameter[14].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-WARNING: Parameters/MLParameterRequestExample: Parameters.parameter[16].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-WARNING: Parameters/MLParameterRequestExample: Parameters.parameter[17].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-WARNING: Parameters/MLParameterRequestExample: Parameters.parameter[18].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-WARNING: Parameters/MLParameterRequestExample: Parameters.parameter[19].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-WARNING: Parameters/MLParameterRequestExample: Parameters.parameter[20].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-WARNING: Parameters/MLParameterRequestExample: Parameters.parameter[21].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-WARNING: Parameters/MLParameterRequestExample: Parameters.parameter[22].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-WARNING: Parameters/MLParameterRequestExample: Parameters.parameter[23].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-WARNING: Parameters/MLParameterRequestExample: Parameters.parameter[24].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-WARNING: Parameters/MLParameterRequestExample: Parameters.parameter[25].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-WARNING: Parameters/MLParameterRequestExample: Parameters.parameter[26].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-WARNING: Parameters/MLParameterRequestExample: Parameters.parameter[27].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-WARNING: Parameters/MLParameterRequestExample: Parameters.parameter[28].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-WARNING: Parameters/MLParameterRequestExample: Parameters.parameter[29].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-WARNING: Parameters/MLParameterRequestExample: Parameters.parameter[30].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-WARNING: Parameters/MLParameterRequestExample: Parameters.parameter[31].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-WARNING: Parameters/MLParameterRequestExample: Parameters.parameter[32].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-WARNING: Parameters/MLParameterRequestExample: Parameters.parameter[33].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-WARNING: Parameters/MLParameterRequestExample: Parameters.parameter[34].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-WARNING: Parameters/MLParameterRequestExample: Parameters.parameter[35].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-WARNING: Parameters/MLParameterRequestExample: Parameters.parameter[36].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-WARNING: Parameters/MLParameterRequestExample: Parameters.parameter[37].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-WARNING: Parameters/MLParameterRequestExample: Parameters.parameter[38].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-WARNING: Parameters/MLParameterRequestExample: Parameters.parameter[39].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-== fsh-generated/resources/Parameters-MLParameterResponseExample.json ==
-WARNING: Parameters/MLParameterResponseExample: Parameters.parameter[0].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-WARNING: Parameters/MLParameterResponseExample: Parameters.parameter[2].value.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-== fsh-generated/resources/Questionnaire-questionnaire-ipsx.json ==
-WARNING: Questionnaire/questionnaire-ipsx: Questionnaire: Rule que-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+== fsh-generated/resources/OperationDefinition-predict.json ==
+ERROR: OperationDefinition.where(url = 'http://hl7.eu/fhir/ig/gravitate-health/OperationDefinition/focus'): Conformance resource /github/workspace/fsh-generated/resources/OperationDefinition-predict.json - the canonical URL (http://xxsomewhere.org/fhir/myig/OperationDefinition/predict) does not match the URL (http://hl7.eu/fhir/ig/gravitate-health/OperationDefinition/focus)
+WARNING: OperationDefinition/predict: OperationDefinition: Rule opd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+ERROR: /github/workspace/fsh-generated/resources/OperationDefinition-predict: URL Mismatch http://xxsomewhere.org/fhir/myig/OperationDefinition/predict vs http://hl7.eu/fhir/ig/gravitate-health/OperationDefinition/focus
 == fsh-generated/resources/StructureDefinition-MLModel.json ==
 ERROR: StructureDefinition.where(url = 'https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MLModel'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-MLModel.json - the canonical URL (http://xxsomewhere.org/fhir/myig/StructureDefinition/MLModel) does not match the URL (https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MLModel)
+ERROR: StructureDefinition/MLModel: StructureDefinition.mapping[2].uri: URL value 'http://hl7.org/fhir/interface' does not resolve
+WARNING: StructureDefinition.where(url = 'https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MLModel'): The Implementation Guide contains no examples for this profile
 ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-MLModel: URL Mismatch http://xxsomewhere.org/fhir/myig/StructureDefinition/MLModel vs https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MLModel
-== fsh-generated/resources/StructureDefinition-MLParameterRequest.json ==
-ERROR: StructureDefinition.where(url = 'https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MLParameterRequest'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-MLParameterRequest.json - the canonical URL (http://xxsomewhere.org/fhir/myig/StructureDefinition/MLParameterRequest) does not match the URL (https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MLParameterRequest)
-ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-MLParameterRequest: URL Mismatch http://xxsomewhere.org/fhir/myig/StructureDefinition/MLParameterRequest vs https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MLParameterRequest
-== fsh-generated/resources/StructureDefinition-MLParameterResponse.json ==
-ERROR: StructureDefinition.where(url = 'https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MLParameterResponse'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-MLParameterResponse.json - the canonical URL (http://xxsomewhere.org/fhir/myig/StructureDefinition/MLParameterResponse) does not match the URL (https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MLParameterResponse)
-ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-MLParameterResponse: URL Mismatch http://xxsomewhere.org/fhir/myig/StructureDefinition/MLParameterResponse vs https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MLParameterResponse
-== fsh-generated/resources/StructureDefinition-MessageForCDSS.json ==
-ERROR: StructureDefinition.where(url = 'https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageForCDSS'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-MessageForCDSS.json - the canonical URL (http://xxsomewhere.org/fhir/myig/StructureDefinition/MessageForCDSS) does not match the URL (https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageForCDSS)
-WARNING: StructureDefinition/MessageForCDSS: StructureDefinition.title: value should not start or finish with whitespace 'Message...response '
-ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-MessageForCDSS: URL Mismatch http://xxsomewhere.org/fhir/myig/StructureDefinition/MessageForCDSS vs https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageForCDSS
-== fsh-generated/resources/StructureDefinition-MessageHeaderCDSS.json ==
-ERROR: StructureDefinition.where(url = 'https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageHeaderCDSS'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-MessageHeaderCDSS.json - the canonical URL (http://xxsomewhere.org/fhir/myig/StructureDefinition/MessageHeaderCDSS) does not match the URL (https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageHeaderCDSS)
-ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-MessageHeaderCDSS: URL Mismatch http://xxsomewhere.org/fhir/myig/StructureDefinition/MessageHeaderCDSS vs https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageHeaderCDSS
-== fsh-generated/resources/StructureDefinition-OBSCDSSFinalizer.json ==
-ERROR: StructureDefinition.where(url = 'https://joofio.github.io/obs-cdss-fhir/StructureDefinition/OBSCDSSFinalizer'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-OBSCDSSFinalizer.json - the canonical URL (http://xxsomewhere.org/fhir/myig/StructureDefinition/OBSCDSSFinalizer) does not match the URL (https://joofio.github.io/obs-cdss-fhir/StructureDefinition/OBSCDSSFinalizer)
-WARNING: StructureDefinition/OBSCDSSFinalizer: StructureDefinition.snapshot.element[25].pattern.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided
-WARNING: StructureDefinition/OBSCDSSFinalizer: StructureDefinition.differential.element[4].pattern.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided
-INFORMATION: StructureDefinition/OBSCDSSFinalizer: StructureDefinition.snapshot.element[25].pattern.ofType(CodeableConcept): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users) 
-ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-OBSCDSSFinalizer: URL Mismatch http://xxsomewhere.org/fhir/myig/StructureDefinition/OBSCDSSFinalizer vs https://joofio.github.io/obs-cdss-fhir/StructureDefinition/OBSCDSSFinalizer
-== fsh-generated/resources/StructureDefinition-OBSCDSSInitializer.json ==
-ERROR: StructureDefinition.where(url = 'https://joofio.github.io/obs-cdss-fhir/StructureDefinition/OBSCDSSInitializer'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-OBSCDSSInitializer.json - the canonical URL (http://xxsomewhere.org/fhir/myig/StructureDefinition/OBSCDSSInitializer) does not match the URL (https://joofio.github.io/obs-cdss-fhir/StructureDefinition/OBSCDSSInitializer)
-WARNING: StructureDefinition/OBSCDSSInitializer: StructureDefinition.snapshot.element[23].pattern.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided
-WARNING: StructureDefinition/OBSCDSSInitializer: StructureDefinition.differential.element[3].pattern.ofType(CodeableConcept).coding[0]: A code with no system has no defined meaning. A system should be provided
-INFORMATION: StructureDefinition/OBSCDSSInitializer: StructureDefinition.snapshot.element[23].pattern.ofType(CodeableConcept): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users) 
-ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-OBSCDSSInitializer: URL Mismatch http://xxsomewhere.org/fhir/myig/StructureDefinition/OBSCDSSInitializer vs https://joofio.github.io/obs-cdss-fhir/StructureDefinition/OBSCDSSInitializer
 == fsh-generated/resources/ValueSet-ml-response-vs.json ==
 ERROR: ValueSet.where(url = 'https://joofio.github.io/obs-cdss-fhir/ValueSet/ml-response-vs'): Conformance resource /github/workspace/fsh-generated/resources/ValueSet-ml-response-vs.json - the canonical URL (http://xxsomewhere.org/fhir/myig/ValueSet/ml-response-vs) does not match the URL (https://joofio.github.io/obs-cdss-fhir/ValueSet/ml-response-vs)
+WARNING: ValueSet/ml-response-vs: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
 ERROR: /github/workspace/fsh-generated/resources/ValueSet-ml-response-vs: URL Mismatch http://xxsomewhere.org/fhir/myig/ValueSet/ml-response-vs vs https://joofio.github.io/obs-cdss-fhir/ValueSet/ml-response-vs
 == fsh-generated/resources/ValueSet-ml-type-vs.json ==
 ERROR: ValueSet.where(url = 'https://joofio.github.io/obs-cdss-fhir/ValueSet/ml-type-vs'): Conformance resource /github/workspace/fsh-generated/resources/ValueSet-ml-type-vs.json - the canonical URL (http://xxsomewhere.org/fhir/myig/ValueSet/ml-type-vs) does not match the URL (https://joofio.github.io/obs-cdss-fhir/ValueSet/ml-type-vs)
+WARNING: ValueSet/ml-type-vs: ValueSet: The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile
 ERROR: /github/workspace/fsh-generated/resources/ValueSet-ml-type-vs: URL Mismatch http://xxsomewhere.org/fhir/myig/ValueSet/ml-type-vs vs https://joofio.github.io/obs-cdss-fhir/ValueSet/ml-type-vs
 == input/myig.xml ==
 WARNING: ImplementationGuide/xxexample.fhir.uv.myig: ImplementationGuide: Rule ig-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
-WARNING: ImplementationGuide/xxexample.fhir.uv.myig: ImplementationGuide.definition.resource[12].name: value should not start or finish with whitespace 'Message...response '
