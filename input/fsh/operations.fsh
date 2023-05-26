@@ -10,7 +10,7 @@ Usage: #definition
 
 
 * affectsState = false
-* code = #focus
+* code = #predict
 * system = true
 * type = false
 * instance = false
