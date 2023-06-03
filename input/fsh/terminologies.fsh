@@ -49,3 +49,18 @@ Description:  "Model Responses value set"
 * include codes from system ml-response-cs
 
 
+CodeSystem: MyCS
+Id:         my-cs
+Title:     "Code system"
+Description: "Code system"
+
+* #IDADE_MATERNA
+    "IDADE_MATERNA"
+    "IDADE_MATERNA"
+
+
+ValueSet: MyVS
+Id: my-vs
+Title: "value set"
+Description:  "value set"
+* include codes from system   my-cs
