@@ -41,7 +41,7 @@ Title: "Example of Request for MessageForRequest"
 Usage: #example
 
 * identifier.value = "1"
-* status = #completed
+* status = #active
 * type = MlTypesCS#LGBM
 * version.value = "1"
 
