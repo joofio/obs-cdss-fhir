@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-    <title>XXEXAMPLE.FHIR.UV.MYIG\Machine Learning Model - Mappings - FHIR v4.0.1</title>
+    <title>OBS.CDSS.IG\Machine Learning Model - Mappings - FHIR v5.0.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -56,13 +56,9 @@
 </div>
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">Obstetrics CDSS IG</span>
+          <p><span style="font-size:12pt;font-weight:bold"></span>
             <br/>
-            <span style="display:inline-block;">0.1.0-test - CI Build
-
-
-
-  <img src="assets/images/001.svg" alt="International flag" title="International" height="16"/>
+            <span style="display:inline-block;">0.1.0 - ci-build
 
 
             </span>
@@ -84,7 +80,7 @@
               <span class="icon-bar"> </span>
               <span class="icon-bar"> </span>
             </button>
-            <a href="http://hl7.org/fhir/R4/index.html" class="navbar-brand hidden">FHIR</a>
+            <a href="http://hl7.org/fhir/R5/index.html" class="navbar-brand hidden">FHIR</a>
             <div class="nav-collapse collapse navbar-inverse-collapse">
               <ul class="nav navbar-nav">
 	<li>
@@ -130,7 +126,7 @@
 		<ul class="dropdown-menu">
   <!-- <li><a target="_blank" href="openapi.html">OpenAPI</a></li>
 			<li><a href="testservers.html">Test Servers</a></li> -->
-			<li><a name="l191">​</a><a href="downloads.html">Downloads</a></li>
+			<li><a name="l188">​</a><a href="downloads.html">Downloads</a></li>
 		</ul>
 	</li>
 </ul>      
@@ -158,7 +154,7 @@
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 5" class="col-12">
-    <!-- ReleaseHeader --><p id="publish-box">Obstetrics CDSS IG - Local Development build (v0.1.0-test). See the <a href="http://xxsomewhere.org/fhir/myig/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+    <!-- ReleaseHeader --><p id="publish-box">OBSCDSS - Local Development build (v0.1.0). See the <a href="https://joofio.github.io/obs-cdss-fhir/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
   
 
 
@@ -196,6 +192,16 @@
 
 
 
+  
+    
+      <li>
+        <a href="StructureDefinition-MLModel-examples.html">Examples</a>
+      </li>
+    
+  
+
+
+
 
   
     <li>
@@ -230,7 +236,7 @@
         
           Active
           
-            as of 2023-05-26
+            as of 2023-06-03
           
         
       </td>
@@ -248,27 +254,26 @@
 
   <a name="w5"> </a><h3>Mappings for FiveWs Pattern Mapping (http://hl7.org/fhir/fivews)</h3><table class="grid">
  <tr><td colspan="3"><b>MLModel</b></td></tr>
- <tr><td>Device</td><td></td> </tr>
+ <tr><td>Device</td><td>administrative.device</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;identifier</td><td>FiveWs.identifier</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;udiCarrier</td><td>FiveWs.identifier</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;deviceIdentifier</td><td>FiveWs.what[x]</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;status</td><td>FiveWs.status</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;statusReason</td><td>FiveWs.status</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;distinctIdentifier</td><td>FiveWs.what[x]</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;availabilityStatus</td><td>FiveWs.status</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;biologicalSourceEvent</td><td>FiveWs.what[x]</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;manufacturer</td><td>FiveWs.what[x]</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;manufactureDate</td><td>FiveWs.what[x]</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;expirationDate</td><td>FiveWs.what[x]</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;lotNumber</td><td>FiveWs.what[x]</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;serialNumber</td><td>FiveWs.what[x]</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;deviceName</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;name</td><td></td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;type</td><td>FiveWs.what[x]</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;display</td><td>FiveWs.status</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;modelNumber</td><td>FiveWs.what[x]</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;partNumber</td><td>FiveWs.what[x]</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;specialization</td><td></td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;version</td><td>FiveWs.what[x]</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;version</td><td></td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;component</td><td>FiveWs.what[x]</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;patient</td><td>FiveWs.subject[x], FiveWs.subject</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;installDate</td><td>FiveWs.what[x]</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;owner</td><td>FiveWs.source</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;contact</td><td>FiveWs.source</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;location</td><td>FiveWs.where[x]</td> </tr>
@@ -276,7 +281,7 @@
 </table>
 <a name="rim"> </a><h3>Mappings for RIM Mapping (<a href="http://hl7.org/comparison-v3.html">http://hl7.org/v3</a>)</h3><table class="grid">
  <tr><td colspan="3"><b>MLModel</b></td></tr>
- <tr><td>Device</td><td>Entity. Role, or Act, Device</td> </tr>
+ <tr><td>Device</td><td>Entity, Role, or Act,Device</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;meta</td><td></td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;extension</td><td>n/a</td> </tr>
@@ -296,24 +301,24 @@
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;carrierHRF</td><td>Role.id.extension</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;entryType</td><td>NA</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;status</td><td>.statusCode</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;distinctIdentifier</td><td>.lotNumberText</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;manufacturer</td><td>.playedRole[typeCode=MANU].scoper.name</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;manufactureDate</td><td>.existenceTime.low</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;expirationDate</td><td>.expirationTime</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;lotNumber</td><td>.lotNumberText</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;serialNumber</td><td>.playedRole[typeCode=MANU].id</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;deviceName</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;name</td><td></td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;extension</td><td>n/a</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;modifierExtension</td><td>N/A</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;type</td><td>.playedRole[typeCode=MANU].code</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;display</td><td>statusCode</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;modelNumber</td><td>.softwareName (included as part)</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;partNumber</td><td>.playedRole[typeCode=MANU].id</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;specialization</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;version</td><td></td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;extension</td><td>n/a</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;modifierExtension</td><td>N/A</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;version</td><td></td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;conformsTo</td><td></td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;extension</td><td>n/a</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;modifierExtension</td><td>N/A</td> </tr>
@@ -321,13 +326,20 @@
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;id</td><td>n/a</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;extension</td><td>n/a</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;modifierExtension</td><td>N/A</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;patient</td><td>.playedRole[typeCode=USED].scoper.playedRole[typeCode=PAT]</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;owner</td><td>.playedRole[typeCode=OWN].scoper</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;contact</td><td>.scopedRole[typeCode=CON].player</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;location</td><td>.playedRole[typeCode=LOCE].scoper</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;url</td><td>.telecom</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;endpoint</td><td>n/a</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;note</td><td>.text</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;safety</td><td>NA</td> </tr>
+</table>
+<a name="interface"> </a><h3>Mappings for Interface Pattern (<a href="http://hl7.org/fhir/patterns.html">http://hl7.org/fhir/interface</a>)</h3><table class="grid">
+ <tr><td colspan="3"><b>MLModel</b></td></tr>
+ <tr><td>Device</td><td>Participant</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;identifier</td><td>Participant.identifier</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;status</td><td>Participant.active</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;name</td><td>Participant.name</td> </tr>
 </table>
 <a name="udi"> </a><h3>Mappings for UDI Mapping (http://fda.gov/UDI)</h3><table class="grid">
  <tr><td colspan="3"><b>MLModel</b></td></tr>
@@ -346,7 +358,6 @@ ICCBA DIs for other devices:
  http://hl7.org/fhir/NamingSystem/iccbba-other</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;carrierAIDC</td><td>A unique device identifier (UDI) on a device label a form that uses automatic identification and data capture (AIDC) technology.</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;carrierHRF</td><td>A unique device identifier (UDI) on a device label in plain text</td> </tr>
- <tr><td>&nbsp;&nbsp;&nbsp;distinctIdentifier</td><td>The lot or batch number within which a device was manufactured - which is a component of the production identifier (PI), a conditional, variable portion of a UDI.</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;manufacturer</td><td>N/A</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;manufactureDate</td><td>The date a specific device was manufactured - which is a component of the production identifier (PI), a conditional, variable portion of a UDI.  For FHIR, The datetime syntax must converted to YYYY-MM-DD[THH:MM:SS].  If hour is present, the minutes and seconds should both be set to “00”.</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;expirationDate</td><td>the expiration date of a specific device -  which is a component of the production identifier (PI), a conditional, variable portion of a UDI.  For FHIR, The datetime syntax must converted to YYYY-MM-DD[THH:MM:SS].  If hour is present, the minutes and seconds should both be set to “00”.</td> </tr>
@@ -405,7 +416,7 @@ ICCBA DIs for other devices:
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="http://xxhl7.org/Special/committees/[something]">xxxYour Work Group</a>.  Package OBSCDSS.fhir.uv.myig#0.1.0-test based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, May 26, 2023 10:57+0000">2023-05-26</span>
+          IG &copy; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="null"></a>.  Package obs.cdss.ig#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Sat, Jun 3, 2023 17:27+0000">2023-06-03</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

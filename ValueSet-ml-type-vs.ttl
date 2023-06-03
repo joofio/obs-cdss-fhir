@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://xxsomewhere.org/fhir/myig/ValueSet/ml-type-vs> a fhir:ValueSet ;
+<https://joofio.github.io/obs-cdss-fhir/ValueSet/ml-type-vs> a fhir:ValueSet ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "ml-type-vs"] ; # 
   fhir:text [
@@ -13,25 +13,12 @@
      fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-ml-type-cs.html\"><code>https://joofio.github.io/obs-cdss-fhir/CodeSystem/ml-type-cs</code></a></li></ul></div>"
   ] ; # 
   fhir:url [ fhir:v "https://joofio.github.io/obs-cdss-fhir/ValueSet/ml-type-vs"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "0.1.0-test"] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
   fhir:name [ fhir:v "MlTypesVS"] ; # 
   fhir:title [ fhir:v "Machine Learning Models value set"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2023-05-26T10:57:36+00:00"^^xsd:dateTime] ; # 
-  fhir:publisher [ fhir:v "xxxYour Work Group"] ; # 
-  fhir:contact ( [
-     fhir:telecom ( [
-       fhir:system [ fhir:v "url" ] ;
-       fhir:value [ fhir:v "http://xxhl7.org/Special/committees/[something]" ]
-     ] )
-  ] ) ; # 
+  fhir:date [ fhir:v "2023-06-03T17:27:06+00:00"^^xsd:dateTime] ; # 
   fhir:description [ fhir:v "Machine Learning Models value set"] ; # 
-  fhir:jurisdiction ( [
-     fhir:coding ( [
-       fhir:system [ fhir:v "http://unstats.un.org/unsd/methods/m49/m49.htm"^^xsd:anyURI ] ;
-       fhir:code [ fhir:v "001" ]
-     ] )
-  ] ) ; # 
   fhir:compose [
      fhir:include ( [
        fhir:system [ fhir:v "https://joofio.github.io/obs-cdss-fhir/CodeSystem/ml-type-cs"^^xsd:anyURI ]

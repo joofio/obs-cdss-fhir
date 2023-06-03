@@ -5,33 +5,20 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://xxsomewhere.org/fhir/myig/OperationDefinition/predict> a fhir:OperationDefinition ;
+<https://joofio.github.io/obs-cdss-fhir/OperationDefinition/predict> a fhir:OperationDefinition ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "predict"] ; # 
   fhir:text [
      fhir:status [ fhir:v "extensions" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>URL: [base]/$predict</p><p>Parameters</p><table class=\"grid\"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Scope</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>IN</td><td>parameters</td><td/><td>0..1</td><td><a href=\"http://hl7.org/fhir/R4/bundle.html\">Bundle</a></td><td/><td><div><p>Set of parameters</p>\n</div></td></tr><tr><td>OUT</td><td>prediction</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/bundle.html\">Bundle</a></td><td/><td><div><p>Prediction</p>\n</div></td></tr></table></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>URL: [base]/$predict</p><p>Parameters</p><table class=\"grid\"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Scope</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>IN</td><td>parameters</td><td/><td>0..1</td><td><a href=\"http://hl7.org/fhir/R5/bundle.html\">Bundle</a></td><td/><td><div><p>Set of parameters</p>\n</div></td></tr><tr><td>OUT</td><td>prediction</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R5/bundle.html\">Bundle</a></td><td/><td><div><p>Prediction</p>\n</div></td></tr></table></div>"
   ] ; # 
   fhir:url [ fhir:v "http://hl7.eu/fhir/ig/gravitate-health/OperationDefinition/focus"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "0.1.0-test"] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
   fhir:name [ fhir:v "predict"] ; # 
   fhir:title [ fhir:v "predict"] ; # 
   fhir:status [ fhir:v "active"] ; # 
   fhir:kind [ fhir:v "operation"] ; # 
-  fhir:date [ fhir:v "2023-05-26T10:57:36+00:00"^^xsd:dateTime] ; # 
-  fhir:publisher [ fhir:v "xxxYour Work Group"] ; # 
-  fhir:contact ( [
-     fhir:telecom ( [
-       fhir:system [ fhir:v "url" ] ;
-       fhir:value [ fhir:v "http://xxhl7.org/Special/committees/[something]" ]
-     ] )
-  ] ) ; # 
-  fhir:jurisdiction ( [
-     fhir:coding ( [
-       fhir:system [ fhir:v "http://unstats.un.org/unsd/methods/m49/m49.htm"^^xsd:anyURI ] ;
-       fhir:code [ fhir:v "001" ]
-     ] )
-  ] ) ; # 
+  fhir:date [ fhir:v "2023-06-03T17:27:06+00:00"^^xsd:dateTime] ; # 
   fhir:affectsState [ fhir:v "false"^^xsd:boolean] ; # 
   fhir:code [ fhir:v "predict"] ; # 
   fhir:system [ fhir:v "true"^^xsd:boolean] ; # 

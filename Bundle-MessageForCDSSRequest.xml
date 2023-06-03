@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="MessageForCDSSRequest"/>
+  <meta>
+    <profile value="https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageForCDSS"/>
+  </meta>
+  <type value="message"/>
+  <timestamp value="2023-01-01T00:00:00Z"/>
+  <entry>
+    <resource>
+      <MessageHeader>
+        <id value="MessageHeaderCDSSExampleRequest"/>
+        <meta>
+          <profile value="https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageHeaderCDSS"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: MessageHeader</b><a name="MessageHeaderCDSSExampleRequest"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource MessageHeader &quot;MessageHeaderCDSSExampleRequest&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-MessageHeaderCDSS.html">Message Header for request and response</a></p></div><p><b>event</b>: obs-cds (Details: [not stated] code obs-cds = 'obs-cds', stated as 'null')</p><h3>Destinations</h3><table class="grid"><tr><td>-</td><td><b>Name</b></td></tr><tr><td>*</td><td>CDSS-System</td></tr></table><h3>Sources</h3><table class="grid"><tr><td>-</td><td><b>Name</b></td></tr><tr><td>*</td><td>request-system</td></tr></table></div>
+        </text>
+        <eventCoding>
+          <code value="obs-cds"/>
+        </eventCoding>
+        <destination>
+          <name value="CDSS-System"/>
+        </destination>
+        <source>
+          <name value="request-system"/>
+        </source>
+      </MessageHeader>
+    </resource>
+  </entry>
+  <entry>
+    <resource>
+      <Observation>
+        <id value="Obs1"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="Obs1"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;Obs1&quot; </p></div><p><b>status</b>: final</p><p><b>code</b>: IDADE_MATERNA <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-my-cs.html">Code system</a>#IDADE_MATERNA)</span></p><p><b>value</b>: 37</p></div>
+        </text>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="https://joofio.github.io/obs-cdss-fhir/CodeSystem/my-cs"/>
+            <code value="IDADE_MATERNA"/>
+          </coding>
+        </code>
+        <valueInteger value="37"/>
+      </Observation>
+    </resource>
+  </entry>
+</Bundle>

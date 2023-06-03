@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-    <title>XXEXAMPLE.FHIR.UV.MYIG\Artifacts Summary - FHIR v4.0.1</title>
+    <title>OBS.CDSS.IG\Artifacts Summary - FHIR v5.0.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -56,13 +56,9 @@
 </div>
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">Obstetrics CDSS IG</span>
+          <p><span style="font-size:12pt;font-weight:bold"></span>
             <br/>
-            <span style="display:inline-block;">0.1.0-test - CI Build
-
-
-
-  <img src="assets/images/001.svg" alt="International flag" title="International" height="16"/>
+            <span style="display:inline-block;">0.1.0 - ci-build
 
 
             </span>
@@ -84,7 +80,7 @@
               <span class="icon-bar"> </span>
               <span class="icon-bar"> </span>
             </button>
-            <a href="http://hl7.org/fhir/R4/index.html" class="navbar-brand hidden">FHIR</a>
+            <a href="http://hl7.org/fhir/R5/index.html" class="navbar-brand hidden">FHIR</a>
             <div class="nav-collapse collapse navbar-inverse-collapse">
               <ul class="nav navbar-nav">
 	<li>
@@ -130,7 +126,7 @@
 		<ul class="dropdown-menu">
   <!-- <li><a target="_blank" href="openapi.html">OpenAPI</a></li>
 			<li><a href="testservers.html">Test Servers</a></li> -->
-			<li><a name="l190">​</a><a href="downloads.html">Downloads</a></li>
+			<li><a name="l187">​</a><a href="downloads.html">Downloads</a></li>
 		</ul>
 	</li>
 </ul>      
@@ -165,7 +161,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-    <!-- ReleaseHeader --><p id="publish-box">Obstetrics CDSS IG - Local Development build (v0.1.0-test). See the <a href="http://xxsomewhere.org/fhir/myig/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+    <!-- ReleaseHeader --><p id="publish-box">OBSCDSS - Local Development build (v0.1.0). See the <a href="https://joofio.github.io/obs-cdss-fhir/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
   <h2>Artifacts Summary</h2>
   
   
@@ -184,6 +180,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       </li>
       <li>
          <a href="#4">Terminology: Code Systems</a>
+      </li>
+      <li>
+         <a href="#5">Example: Example Instances</a>
       </li>
    </ul>
 </div>
@@ -223,6 +222,30 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <p>The profile for Defining Machine Learning Models for CDSS</p>
 </td>
             </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-MessageForCDSS.html" title="StructureDefinition/MessageForCDSS">Message bundle for request or response</a>
+               </td>
+               <td>
+<p>The message for response or request, containing the prediction/input</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-MessageHeaderCDSS.html" title="StructureDefinition/MessageHeaderCDSS">Message Header for request and response</a>
+               </td>
+               <td>
+<p>Message Header for request and response</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-ObsResult.html" title="StructureDefinition/ObsResult">Machine Learning Model</a>
+               </td>
+               <td>
+<p>The profile for Defining Machine Learning Models for CDSS</p>
+</td>
+            </tr>
          </tbody>
       </table>
    </p>
@@ -237,6 +260,14 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tbody>
             <tr>
                <td style="column-width:30%">
+                  <a href="ValueSet-ml-response-vs.html" title="ValueSet/ml-response-vs">Model Responses value set</a>
+               </td>
+               <td>
+<p>Model Responses value set</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
                   <a href="ValueSet-ml-type-vs.html" title="ValueSet/ml-type-vs">Machine Learning Models value set</a>
                </td>
                <td>
@@ -245,10 +276,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="ValueSet-ml-response-vs.html" title="ValueSet/ml-response-vs">Model Responses value set</a>
+                  <a href="ValueSet-my-vs.html" title="ValueSet/my-vs">value set</a>
                </td>
                <td>
-<p>Model Responses value set</p>
+<p>value set</p>
 </td>
             </tr>
          </tbody>
@@ -265,6 +296,14 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tbody>
             <tr>
                <td style="column-width:30%">
+                  <a href="CodeSystem-ml-response-cs.html" title="CodeSystem/ml-response-cs">Model Responses Code System</a>
+               </td>
+               <td>
+<p>Model Responses Code System</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
                   <a href="CodeSystem-ml-type-cs.html" title="CodeSystem/ml-type-cs">Machine Learning Models code system</a>
                </td>
                <td>
@@ -273,10 +312,70 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="CodeSystem-ml-response-cs.html" title="CodeSystem/ml-response-cs">Model Responses Code System</a>
+                  <a href="CodeSystem-my-cs.html" title="CodeSystem/my-cs">Code system</a>
                </td>
                <td>
-<p>Model Responses Code System</p>
+<p>Code system</p>
+</td>
+            </tr>
+         </tbody>
+      </table>
+   </p>
+   <a name="5"> </a>
+   <h3>Example: Example Instances </h3>
+   <p>
+    <p>These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like.</p>
+</p>
+   <p>
+      <table class="grid">
+         <col style="width:20%"/>
+         <tbody>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Device-MLModelExample.html" title="Device/MLModelExample">Example of Request for MessageForRequest</a>
+               </td>
+               <td>
+<p>Example of Request for MessageForRequest</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Bundle-MessageForCDSSRequest.html" title="Bundle/MessageForCDSSRequest">Example of Request for MessageForRequest</a>
+               </td>
+               <td>
+<p>Example of Request for MessageForRequest</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Bundle-MessageForCDSSResponse.html" title="Bundle/MessageForCDSSResponse">Example of Request for MessageForRequest</a>
+               </td>
+               <td>
+<p>Example of Request for MessageForRequest</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="MessageHeader-MessageHeaderCDSSExampleRequest.html" title="MessageHeader/MessageHeaderCDSSExampleRequest">Example of Request for MessageForRequest</a>
+               </td>
+               <td>
+<p>Example of Request for MessageForRequest</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="MessageHeader-MessageHeaderCDSSExampleResponse.html" title="MessageHeader/MessageHeaderCDSSExampleResponse">Example of response for CDSS</a>
+               </td>
+               <td>
+<p>Example of response for MessageForRequest</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-Obs1.html" title="Observation/Obs1">Example of Request for MessageForRequest</a>
+               </td>
+               <td>
+<p>Example of Request for MessageForRequest</p>
 </td>
             </tr>
          </tbody>
@@ -306,7 +405,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="http://xxhl7.org/Special/committees/[something]">xxxYour Work Group</a>.  Package OBSCDSS.fhir.uv.myig#0.1.0-test based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, May 26, 2023 10:57+0000">2023-05-26</span>
+          IG &copy; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="null"></a>.  Package obs.cdss.ig#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Sat, Jun 3, 2023 17:27+0000">2023-06-03</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://xxsomewhere.org/fhir/myig/CodeSystem/ml-response-cs> a fhir:CodeSystem ;
+<https://joofio.github.io/obs-cdss-fhir/CodeSystem/ml-response-cs> a fhir:CodeSystem ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "ml-response-cs"] ; # 
   fhir:text [
@@ -13,25 +13,12 @@
      fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>https://joofio.github.io/obs-cdss-fhir/CodeSystem/ml-response-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">OK<a name=\"ml-response-cs-OK\"> </a></td><td>Level Ok</td><td>Level Ok</td></tr><tr><td style=\"white-space:nowrap\">WARN<a name=\"ml-response-cs-WARN\"> </a></td><td>Warning level 1</td><td>Warning level 1</td></tr><tr><td style=\"white-space:nowrap\">NOK<a name=\"ml-response-cs-NOK\"> </a></td><td>Error level</td><td>Error level</td></tr></table></div>"
   ] ; # 
   fhir:url [ fhir:v "https://joofio.github.io/obs-cdss-fhir/CodeSystem/ml-response-cs"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "0.1.0-test"] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
   fhir:name [ fhir:v "MLResponseCS"] ; # 
   fhir:title [ fhir:v "Model Responses Code System"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2023-05-26T10:57:36+00:00"^^xsd:dateTime] ; # 
-  fhir:publisher [ fhir:v "xxxYour Work Group"] ; # 
-  fhir:contact ( [
-     fhir:telecom ( [
-       fhir:system [ fhir:v "url" ] ;
-       fhir:value [ fhir:v "http://xxhl7.org/Special/committees/[something]" ]
-     ] )
-  ] ) ; # 
+  fhir:date [ fhir:v "2023-06-03T17:27:06+00:00"^^xsd:dateTime] ; # 
   fhir:description [ fhir:v "Model Responses Code System"] ; # 
-  fhir:jurisdiction ( [
-     fhir:coding ( [
-       fhir:system [ fhir:v "http://unstats.un.org/unsd/methods/m49/m49.htm"^^xsd:anyURI ] ;
-       fhir:code [ fhir:v "001" ]
-     ] )
-  ] ) ; # 
   fhir:content [ fhir:v "complete"] ; # 
   fhir:count [ fhir:v "3"^^xsd:nonNegativeInteger] ; # 
   fhir:concept ( [
