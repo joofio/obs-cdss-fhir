@@ -5,333 +5,60 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://xxsomewhere.org/fhir/myig/Bundle/MessageForCDSSRequest> a fhir:Bundle;
-  fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "MessageForCDSSRequest"];
-  fhir:Resource.meta [
-     fhir:Meta.profile [
-       fhir:value "https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageForCDSS";
-       fhir:index 0;
+<https://joofio.github.io/obs-cdss-fhir/Bundle/MessageForCDSSRequest> a fhir:Bundle ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "MessageForCDSSRequest"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageForCDSS"^^xsd:anyURI ;
        fhir:link <https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageForCDSS>
-     ]
-  ];
-  fhir:Bundle.type [ fhir:value "message"];
-  fhir:Bundle.timestamp [ fhir:value "2020-01-01T00:00:00Z"^^xsd:dateTime];
-  fhir:Bundle.entry [
-     fhir:index 0;
-     fhir:Bundle.entry.resource [
-       a fhir:MessageHeader;
-       fhir:Resource.id [ fhir:value "MessageHeaderCDSSExampleRequest" ];
-       fhir:Resource.meta [
-         fhir:Meta.profile [
-           fhir:value "https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageHeaderCDSS";
-           fhir:index 0;
+     ] )
+  ] ; # 
+  fhir:type [ fhir:v "message"] ; # 
+  fhir:timestamp [ fhir:v "2023-01-01T00:00:00Z"^^xsd:dateTime] ; # 
+  fhir:entry ( [
+     fhir:resource ( [
+       a fhir:MessageHeader ;
+       fhir:id [ fhir:v "MessageHeaderCDSSExampleRequest" ] ;
+       fhir:meta [
+         fhir:profile ( [
+           fhir:v "https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageHeaderCDSS"^^xsd:anyURI ;
            fhir:link <https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageHeaderCDSS>
-         ]
-       ];
-       fhir:DomainResource.text [
-         fhir:Narrative.status [ fhir:value "generated" ];
-         fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: MessageHeader</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource MessageHeader \"MessageHeaderCDSSExampleRequest\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-MessageHeaderCDSS.html\">Message Header for request and response</a></p></div><p><b>event</b>: obs-cds (Details: [not stated] code obs-cds = 'obs-cds', stated as 'null')</p><h3>Destinations</h3><table class=\"grid\"><tr><td>-</td><td><b>Name</b></td><td><b>Endpoint</b></td></tr><tr><td>*</td><td>CDSS-System</td><td><code>127.0.0.1</code></td></tr></table><h3>Sources</h3><table class=\"grid\"><tr><td>-</td><td><b>Name</b></td><td><b>Endpoint</b></td></tr><tr><td>*</td><td>request-system</td><td><code>127.0.0.1</code></td></tr></table></div>"
-       ];
-       fhir:MessageHeader.eventCoding [
-         fhir:Coding.code [ fhir:value "obs-cds" ]
-       ];
-       fhir:MessageHeader.destination [
-         fhir:index 0;
-         fhir:MessageHeader.destination.name [ fhir:value "CDSS-System" ];
-         fhir:MessageHeader.destination.endpoint [ fhir:value "127.0.0.1" ]
-       ];
-       fhir:MessageHeader.source [
-         fhir:MessageHeader.source.name [ fhir:value "request-system" ];
-         fhir:MessageHeader.source.endpoint [ fhir:value "127.0.0.1" ]
+         ] )
+       ] ;
+       fhir:text [
+         fhir:status [ fhir:v "generated" ] ;
+         fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: MessageHeader</b><a name=\"MessageHeaderCDSSExampleRequest\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource MessageHeader &quot;MessageHeaderCDSSExampleRequest&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-MessageHeaderCDSS.html\">Message Header for request and response</a></p></div><p><b>event</b>: obs-cds (Details: [not stated] code obs-cds = 'obs-cds', stated as 'null')</p><h3>Destinations</h3><table class=\"grid\"><tr><td>-</td><td><b>Name</b></td></tr><tr><td>*</td><td>CDSS-System</td></tr></table><h3>Sources</h3><table class=\"grid\"><tr><td>-</td><td><b>Name</b></td></tr><tr><td>*</td><td>request-system</td></tr></table></div>"
+       ] ;
+       fhir:event [
+         a fhir:Coding ;
+         fhir:code [ fhir:v "obs-cds" ]
+       ] ;
+       fhir:destination ( [
+         fhir:name [ fhir:v "CDSS-System" ]
+       ] ) ;
+       fhir:source [
+         fhir:name [ fhir:v "request-system" ]
        ]
-     ]
-  ], [
-     fhir:index 1;
-     fhir:Bundle.entry.resource [
-       a fhir:CommunicationRequest;
-       fhir:Resource.id [ fhir:value "OBSCDSSInitializerExample" ];
-       fhir:Resource.meta [
-         fhir:Meta.profile [
-           fhir:value "https://joofio.github.io/obs-cdss-fhir/StructureDefinition/OBSCDSSInitializer";
-           fhir:index 0;
-           fhir:link <https://joofio.github.io/obs-cdss-fhir/StructureDefinition/OBSCDSSInitializer>
-         ], [
-           fhir:value "http://hl7.org/fhir/StructureDefinition/obscdss-initializer";
-           fhir:index 1;
-           fhir:link <http://hl7.org/fhir/StructureDefinition/obscdss-initializer>
-         ]
-       ];
-       fhir:DomainResource.text [
-         fhir:Narrative.status [ fhir:value "generated" ];
-         fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: CommunicationRequest</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource CommunicationRequest \"OBSCDSSInitializerExample\" </p><p style=\"margin-bottom: 0px\">Profiles: <a href=\"StructureDefinition-OBSCDSSInitializer.html\">Prediction Request Meta Information</a>, <code>http://hl7.org/fhir/StructureDefinition/obscdss-initializer</code></p></div><p><b>identifier</b>: id: OBSCDSSInitializerExample</p><p><b>status</b>: active</p><h3>Payloads</h3><table class=\"grid\"><tr><td>-</td><td><b>Content[x]</b></td></tr><tr><td>*</td><td><a href=\"#Parameters_MLParameterRequestExample\">See above (Parameters/MLParameterRequestExample)</a></td></tr></table><p><b>occurrence</b>: 2020-01-01 12:00:00+0000</p></div>"
-       ];
-       fhir:CommunicationRequest.identifier [
-         fhir:index 0;
-         fhir:Identifier.value [ fhir:value "OBSCDSSInitializerExample" ]
-       ];
-       fhir:CommunicationRequest.status [ fhir:value "active" ];
-       fhir:CommunicationRequest.payload [
-         fhir:index 0;
-         fhir:CommunicationRequest.payload.contentReference [
-           fhir:link <http://xxsomewhere.org/fhir/myig/Parameters/MLParameterRequestExample>;
-           fhir:Reference.reference [ fhir:value "Parameters/MLParameterRequestExample" ]
-         ]
-       ];
-       fhir:CommunicationRequest.occurrenceDateTime [ fhir:value "2020-01-01T00:00:00Z"^^xsd:dateTime ]
-     ]
-  ], [
-     fhir:index 2;
-     fhir:Bundle.entry.resource [
-       a fhir:Parameters;
-       fhir:Resource.id [ fhir:value "MLParameterRequestExample" ];
-       fhir:Resource.meta [
-         fhir:Meta.profile [
-           fhir:value "https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MLParameterRequest";
-           fhir:index 0;
-           fhir:link <https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MLParameterRequest>
-         ]
-       ];
-       fhir:Parameters.parameter [
-         fhir:index 0;
-         fhir:Parameters.parameter.name [ fhir:value "APRESENTACAO_31" ];
-         fhir:Parameters.parameter.valueCoding [
-           fhir:Coding.code [ fhir:value "cefálica" ]
-         ]
-       ], [
-         fhir:index 1;
-         fhir:Parameters.parameter.name [ fhir:value "APRESENTACAO_28" ];
-         fhir:Parameters.parameter.valueCoding [
-           fhir:Coding.code [ fhir:value "None" ]
-         ]
-       ], [
-         fhir:index 2;
-         fhir:Parameters.parameter.name [ fhir:value "APRESENTACAO_30" ];
-         fhir:Parameters.parameter.valueCoding [
-           fhir:Coding.code [ fhir:value "None" ]
-         ]
-       ], [
-         fhir:index 3;
-         fhir:Parameters.parameter.name [ fhir:value "APRESENTACAO_37" ];
-         fhir:Parameters.parameter.valueCoding [
-           fhir:Coding.code [ fhir:value "None" ]
-         ]
-       ], [
-         fhir:index 4;
-         fhir:Parameters.parameter.name [ fhir:value "GRUPO_ROBSON" ];
-         fhir:Parameters.parameter.valueCoding [
-           fhir:Coding.code [ fhir:value "1" ]
-         ]
-       ], [
-         fhir:index 5;
-         fhir:Parameters.parameter.name [ fhir:value "BISHOP_SCORE" ];
-         fhir:Parameters.parameter.valueCoding [
-           fhir:Coding.code [ fhir:value "None" ]
-         ]
-       ], [
-         fhir:index 6;
-         fhir:Parameters.parameter.name [ fhir:value "PESO_INICIAL" ];
-         fhir:Parameters.parameter.valueInteger [ fhir:value "57"^^xsd:integer ]
-       ], [
-         fhir:index 7;
-         fhir:Parameters.parameter.name [ fhir:value "IDADE_MATERNA" ];
-         fhir:Parameters.parameter.valueInteger [ fhir:value "36"^^xsd:integer ]
-       ], [
-         fhir:index 8;
-         fhir:Parameters.parameter.name [ fhir:value "APRESENTACAO_35" ];
-         fhir:Parameters.parameter.valueCoding [
-           fhir:Coding.code [ fhir:value "None" ]
-         ]
-       ], [
-         fhir:index 9;
-         fhir:Parameters.parameter.name [ fhir:value "IMC" ];
-         fhir:Parameters.parameter.valueDecimal [ fhir:value "19.7"^^xsd:decimal ]
-       ], [
-         fhir:index 10;
-         fhir:Parameters.parameter.name [ fhir:value "APRESENTACAO_32" ];
-         fhir:Parameters.parameter.valueCoding [
-           fhir:Coding.code [ fhir:value "None" ]
-         ]
-       ], [
-         fhir:index 11;
-         fhir:Parameters.parameter.name [ fhir:value "APRESENTACAO_26" ];
-         fhir:Parameters.parameter.valueCoding [
-           fhir:Coding.code [ fhir:value "None" ]
-         ]
-       ], [
-         fhir:index 12;
-         fhir:Parameters.parameter.name [ fhir:value "APRESENTACAO_34" ];
-         fhir:Parameters.parameter.valueCoding [
-           fhir:Coding.code [ fhir:value "None" ]
-         ]
-       ], [
-         fhir:index 13;
-         fhir:Parameters.parameter.name [ fhir:value "APRESENTACAO_33" ];
-         fhir:Parameters.parameter.valueCoding [
-           fhir:Coding.code [ fhir:value "None" ]
-         ]
-       ], [
-         fhir:index 14;
-         fhir:Parameters.parameter.name [ fhir:value "APRESENTACAO_NO_PARTO" ];
-         fhir:Parameters.parameter.valueCoding [
-           fhir:Coding.code [ fhir:value "Cefálica de vértice" ]
-         ]
-       ], [
-         fhir:index 15;
-         fhir:Parameters.parameter.name [ fhir:value "NUMERO_CONSULTAS_PRE_NATAL" ];
-         fhir:Parameters.parameter.valueInteger [ fhir:value "14"^^xsd:integer ]
-       ], [
-         fhir:index 16;
-         fhir:Parameters.parameter.name [ fhir:value "APRESENTACAO_38" ];
-         fhir:Parameters.parameter.valueCoding [
-           fhir:Coding.code [ fhir:value "None" ]
-         ]
-       ], [
-         fhir:index 17;
-         fhir:Parameters.parameter.name [ fhir:value "APRESENTACAO_29" ];
-         fhir:Parameters.parameter.valueCoding [
-           fhir:Coding.code [ fhir:value "None" ]
-         ]
-       ], [
-         fhir:index 18;
-         fhir:Parameters.parameter.name [ fhir:value "APRESENTACAO_ADMISSAO" ];
-         fhir:Parameters.parameter.valueCoding [
-           fhir:Coding.code [ fhir:value "-1" ]
-         ]
-       ], [
-         fhir:index 19;
-         fhir:Parameters.parameter.name [ fhir:value "BISHOP_EXTINCAO" ];
-         fhir:Parameters.parameter.valueCoding [
-           fhir:Coding.code [ fhir:value "None" ]
-         ]
-       ], [
-         fhir:index 20;
-         fhir:Parameters.parameter.name [ fhir:value "APRESENTACAO_27" ];
-         fhir:Parameters.parameter.valueCoding [
-           fhir:Coding.code [ fhir:value "None" ]
-         ]
-       ], [
-         fhir:index 21;
-         fhir:Parameters.parameter.name [ fhir:value "APRESENTACAO_36" ];
-         fhir:Parameters.parameter.valueCoding [
-           fhir:Coding.code [ fhir:value "None" ]
-         ]
-       ], [
-         fhir:index 22;
-         fhir:Parameters.parameter.name [ fhir:value "TRAB_PARTO_ENTRADA_ESPONTANEO" ];
-         fhir:Parameters.parameter.valueCoding [
-           fhir:Coding.code [ fhir:value "None" ]
-         ]
-       ], [
-         fhir:index 23;
-         fhir:Parameters.parameter.name [ fhir:value "part.mcdt.ctgs" ];
-         fhir:Parameters.parameter.valueCoding [
-           fhir:Coding.code [ fhir:value "0" ]
-         ]
-       ], [
-         fhir:index 24;
-         fhir:Parameters.parameter.name [ fhir:value "apres.feto.34" ];
-         fhir:Parameters.parameter.valueCoding [
-           fhir:Coding.code [ fhir:value "0" ]
-         ]
-       ], [
-         fhir:index 25;
-         fhir:Parameters.parameter.name [ fhir:value "tparto.rpm" ];
-         fhir:Parameters.parameter.valueCoding [
-           fhir:Coding.code [ fhir:value "0" ]
-         ]
-       ], [
-         fhir:index 26;
-         fhir:Parameters.parameter.name [ fhir:value "rn.ucin" ];
-         fhir:Parameters.parameter.valueCoding [
-           fhir:Coding.code [ fhir:value "0" ]
-         ]
-       ], [
-         fhir:index 27;
-         fhir:Parameters.parameter.name [ fhir:value "part.vig" ];
-         fhir:Parameters.parameter.valueCoding [
-           fhir:Coding.code [ fhir:value "0" ]
-         ]
-       ], [
-         fhir:index 28;
-         fhir:Parameters.parameter.name [ fhir:value "grav.feto.altcf" ];
-         fhir:Parameters.parameter.valueCoding [
-           fhir:Coding.code [ fhir:value "0" ]
-         ]
-       ], [
-         fhir:index 29;
-         fhir:Parameters.parameter.name [ fhir:value "tparto.esp" ];
-         fhir:Parameters.parameter.valueCoding [
-           fhir:Coding.code [ fhir:value "1" ]
-         ]
-       ], [
-         fhir:index 30;
-         fhir:Parameters.parameter.name [ fhir:value "apres.feto.34.pelve" ];
-         fhir:Parameters.parameter.valueCoding [
-           fhir:Coding.code [ fhir:value "0" ]
-         ]
-       ], [
-         fhir:index 31;
-         fhir:Parameters.parameter.name [ fhir:value "parto.comp" ];
-         fhir:Parameters.parameter.valueCoding [
-           fhir:Coding.code [ fhir:value "0" ]
-         ]
-       ], [
-         fhir:index 32;
-         fhir:Parameters.parameter.name [ fhir:value "ciru.laqt" ];
-         fhir:Parameters.parameter.valueCoding [
-           fhir:Coding.code [ fhir:value "0" ]
-         ]
-       ], [
-         fhir:index 33;
-         fhir:Parameters.parameter.name [ fhir:value "puer.comp.cica" ];
-         fhir:Parameters.parameter.valueCoding [
-           fhir:Coding.code [ fhir:value "0" ]
-         ]
-       ], [
-         fhir:index 34;
-         fhir:Parameters.parameter.name [ fhir:value "tparto.rpm.espo" ];
-         fhir:Parameters.parameter.valueCoding [
-           fhir:Coding.code [ fhir:value "0" ]
-         ]
-       ], [
-         fhir:index 35;
-         fhir:Parameters.parameter.name [ fhir:value "grav.plac" ];
-         fhir:Parameters.parameter.valueCoding [
-           fhir:Coding.code [ fhir:value "0" ]
-         ]
-       ], [
-         fhir:index 36;
-         fhir:Parameters.parameter.name [ fhir:value "parto.23P" ];
-         fhir:Parameters.parameter.valueCoding [
-           fhir:Coding.code [ fhir:value "0" ]
-         ]
-       ], [
-         fhir:index 37;
-         fhir:Parameters.parameter.name [ fhir:value "card.dhta" ];
-         fhir:Parameters.parameter.valueCoding [
-           fhir:Coding.code [ fhir:value "0" ]
-         ]
-       ], [
-         fhir:index 38;
-         fhir:Parameters.parameter.name [ fhir:value "parto.comp.cervical" ];
-         fhir:Parameters.parameter.valueCoding [
-           fhir:Coding.code [ fhir:value "0" ]
-         ]
-       ], [
-         fhir:index 39;
-         fhir:Parameters.parameter.name [ fhir:value "part.aep" ];
-         fhir:Parameters.parameter.valueCoding [
-           fhir:Coding.code [ fhir:value "1" ]
-         ]
-       ]
-     ]
-  ] .
-
-# - ontology header ------------------------------------------------------------
-
-<http://xxsomewhere.org/fhir/myig/Bundle/MessageForCDSSRequest.ttl> a owl:Ontology;
-  owl:imports fhir:fhir.ttl .
+     ] )
+  ] [
+     fhir:resource ( [
+       a fhir:Observation ;
+       fhir:id [ fhir:v "Obs1" ] ;
+       fhir:text [
+         fhir:status [ fhir:v "generated" ] ;
+         fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"Obs1\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;Obs1&quot; </p></div><p><b>status</b>: final</p><p><b>code</b>: IDADE_MATERNA <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-my-cs.html\">Code system</a>#IDADE_MATERNA)</span></p><p><b>value</b>: 37</p></div>"
+       ] ;
+       fhir:status [ fhir:v "final" ] ;
+       fhir:code [
+         fhir:coding ( [
+           fhir:system [ fhir:v "https://joofio.github.io/obs-cdss-fhir/CodeSystem/my-cs"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "IDADE_MATERNA" ]
+         ] )
+       ] ;
+       fhir:value [ fhir:v "37"^^xsd:integer ]
+     ] )
+  ] ) . # 
 
 # -------------------------------------------------------------------------------------
 

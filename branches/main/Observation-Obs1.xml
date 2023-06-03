@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="Obs1"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="Obs1"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;Obs1&quot; </p></div><p><b>status</b>: final</p><p><b>code</b>: IDADE_MATERNA <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-my-cs.html">Code system</a>#IDADE_MATERNA)</span></p><p><b>value</b>: 37</p></div>
+  </text>
+  <status value="final"/>
+  <code>
+    <coding>
+      <system value="https://joofio.github.io/obs-cdss-fhir/CodeSystem/my-cs"/>
+      <code value="IDADE_MATERNA"/>
+    </coding>
+  </code>
+  <valueInteger value="37"/>
+</Observation>

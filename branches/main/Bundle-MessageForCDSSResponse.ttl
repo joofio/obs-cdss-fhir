@@ -5,121 +5,60 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://xxsomewhere.org/fhir/myig/Bundle/MessageForCDSSResponse> a fhir:Bundle;
-  fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "MessageForCDSSResponse"];
-  fhir:Resource.meta [
-     fhir:Meta.profile [
-       fhir:value "https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageForCDSS";
-       fhir:index 0;
+<https://joofio.github.io/obs-cdss-fhir/Bundle/MessageForCDSSResponse> a fhir:Bundle ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "MessageForCDSSResponse"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageForCDSS"^^xsd:anyURI ;
        fhir:link <https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageForCDSS>
-     ]
-  ];
-  fhir:Bundle.type [ fhir:value "message"];
-  fhir:Bundle.timestamp [ fhir:value "2020-01-01T00:00:00Z"^^xsd:dateTime];
-  fhir:Bundle.entry [
-     fhir:index 0;
-     fhir:Bundle.entry.resource [
-       a fhir:MessageHeader;
-       fhir:Resource.id [ fhir:value "MessageHeaderCDSSExampleResponse" ];
-       fhir:Resource.meta [
-         fhir:Meta.profile [
-           fhir:value "https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageHeaderCDSS";
-           fhir:index 0;
+     ] )
+  ] ; # 
+  fhir:type [ fhir:v "message"] ; # 
+  fhir:timestamp [ fhir:v "2020-01-01T00:00:00Z"^^xsd:dateTime] ; # 
+  fhir:entry ( [
+     fhir:resource ( [
+       a fhir:MessageHeader ;
+       fhir:id [ fhir:v "MessageHeaderCDSSExampleResponse" ] ;
+       fhir:meta [
+         fhir:profile ( [
+           fhir:v "https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageHeaderCDSS"^^xsd:anyURI ;
            fhir:link <https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageHeaderCDSS>
-         ]
-       ];
-       fhir:DomainResource.text [
-         fhir:Narrative.status [ fhir:value "generated" ];
-         fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: MessageHeader</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource MessageHeader \"MessageHeaderCDSSExampleResponse\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-MessageHeaderCDSS.html\">Message Header for request and response</a></p></div><p><b>event</b>: obs-cds (Details: [not stated] code obs-cds = 'obs-cds', stated as 'null')</p><h3>Destinations</h3><table class=\"grid\"><tr><td>-</td><td><b>Name</b></td><td><b>Endpoint</b></td></tr><tr><td>*</td><td>Requester</td><td><code>127.0.0.1</code></td></tr></table><h3>Sources</h3><table class=\"grid\"><tr><td>-</td><td><b>Name</b></td><td><b>Endpoint</b></td></tr><tr><td>*</td><td>CDSS-system</td><td><code>127.0.0.1</code></td></tr></table></div>"
-       ];
-       fhir:MessageHeader.eventCoding [
-         fhir:Coding.code [ fhir:value "obs-cds" ]
-       ];
-       fhir:MessageHeader.destination [
-         fhir:index 0;
-         fhir:MessageHeader.destination.name [ fhir:value "Requester" ];
-         fhir:MessageHeader.destination.endpoint [ fhir:value "127.0.0.1" ]
-       ];
-       fhir:MessageHeader.source [
-         fhir:MessageHeader.source.name [ fhir:value "CDSS-system" ];
-         fhir:MessageHeader.source.endpoint [ fhir:value "127.0.0.1" ]
+         ] )
+       ] ;
+       fhir:text [
+         fhir:status [ fhir:v "generated" ] ;
+         fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: MessageHeader</b><a name=\"MessageHeaderCDSSExampleResponse\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource MessageHeader &quot;MessageHeaderCDSSExampleResponse&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-MessageHeaderCDSS.html\">Message Header for request and response</a></p></div><p><b>event</b>: obs-cds (Details: [not stated] code obs-cds = 'obs-cds', stated as 'null')</p><h3>Destinations</h3><table class=\"grid\"><tr><td>-</td><td><b>Name</b></td></tr><tr><td>*</td><td>Requester</td></tr></table><h3>Sources</h3><table class=\"grid\"><tr><td>-</td><td><b>Name</b></td></tr><tr><td>*</td><td>CDSS-system</td></tr></table></div>"
+       ] ;
+       fhir:event [
+         a fhir:Coding ;
+         fhir:code [ fhir:v "obs-cds" ]
+       ] ;
+       fhir:destination ( [
+         fhir:name [ fhir:v "Requester" ]
+       ] ) ;
+       fhir:source [
+         fhir:name [ fhir:v "CDSS-system" ]
        ]
-     ]
-  ], [
-     fhir:index 1;
-     fhir:Bundle.entry.resource [
-       a fhir:Communication;
-       fhir:Resource.id [ fhir:value "sss" ];
-       fhir:Resource.meta [
-         fhir:Meta.profile [
-           fhir:value "https://joofio.github.io/obs-cdss-fhir/StructureDefinition/OBSCDSSFinalizer";
-           fhir:index 0;
-           fhir:link <https://joofio.github.io/obs-cdss-fhir/StructureDefinition/OBSCDSSFinalizer>
-         ]
-       ];
-       fhir:DomainResource.text [
-         fhir:Narrative.status [ fhir:value "generated" ];
-         fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Communication</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Communication \"sss\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-OBSCDSSFinalizer.html\">Prediction Meta Information</a></p></div><p><b>status</b>: completed</p><p><b>category</b>: instruction <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated]#instruction)</span></p><p><b>sent</b>: 2020-01-01 12:00:00+0000</p><p><b>received</b>: 2020-01-01 12:00:00+0000</p><p><b>sender</b>: <a href=\"Device-sss.html\">Device/sss</a></p><h3>Payloads</h3><table class=\"grid\"><tr><td>-</td><td><b>Content[x]</b></td></tr><tr><td>*</td><td><a href=\"#Parameters_MLParameterResponseExample\">See above (Parameters/MLParameterResponseExample)</a></td></tr></table></div>"
-       ];
-       fhir:Communication.status [ fhir:value "completed" ];
-       fhir:Communication.category [
-         fhir:index 0;
-         fhir:CodeableConcept.coding [
-           fhir:index 0;
-           fhir:Coding.code [ fhir:value "instruction" ]
-         ]
-       ];
-       fhir:Communication.sent [ fhir:value "2020-01-01T00:00:00Z"^^xsd:dateTime ];
-       fhir:Communication.received [ fhir:value "2020-01-01T00:00:00Z"^^xsd:dateTime ];
-       fhir:Communication.sender [
-         fhir:link <http://xxsomewhere.org/fhir/myig/Device/sss>;
-         fhir:Reference.reference [ fhir:value "Device/sss" ]
-       ];
-       fhir:Communication.payload [
-         fhir:index 0;
-         fhir:Communication.payload.contentReference [
-           fhir:link <http://xxsomewhere.org/fhir/myig/Parameters/MLParameterResponseExample>;
-           fhir:Reference.reference [ fhir:value "Parameters/MLParameterResponseExample" ]
-         ]
-       ]
-     ]
-  ], [
-     fhir:index 2;
-     fhir:Bundle.entry.resource [
-       a fhir:Parameters;
-       fhir:Resource.id [ fhir:value "MLParameterResponseExample" ];
-       fhir:Resource.meta [
-         fhir:Meta.profile [
-           fhir:value "https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MLParameterResponse";
-           fhir:index 0;
-           fhir:link <https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MLParameterResponse>
-         ]
-       ];
-       fhir:Parameters.parameter [
-         fhir:index 0;
-         fhir:Parameters.parameter.name [ fhir:value "result" ];
-         fhir:Parameters.parameter.valueCoding [
-           fhir:Coding.code [ fhir:value "Vaginal" ]
-         ]
-       ], [
-         fhir:index 1;
-         fhir:Parameters.parameter.name [ fhir:value "outcome" ];
-         fhir:Parameters.parameter.valueString [ fhir:value "{'Cesariana': '37.23 %', 'Vaginal': '62.77 %'}" ]
-       ], [
-         fhir:index 2;
-         fhir:Parameters.parameter.name [ fhir:value "decision" ];
-         fhir:Parameters.parameter.valueCoding [
-           fhir:Coding.code [ fhir:value "None" ]
-         ]
-       ]
-     ]
-  ] .
-
-# - ontology header ------------------------------------------------------------
-
-<http://xxsomewhere.org/fhir/myig/Bundle/MessageForCDSSResponse.ttl> a owl:Ontology;
-  owl:imports fhir:fhir.ttl .
+     ] )
+  ] [
+     fhir:resource ( [
+       a fhir:Observation ;
+       fhir:id [ fhir:v "Obs1" ] ;
+       fhir:text [
+         fhir:status [ fhir:v "generated" ] ;
+         fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"Obs1\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;Obs1&quot; </p></div><p><b>status</b>: final</p><p><b>code</b>: IDADE_MATERNA <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-my-cs.html\">Code system</a>#IDADE_MATERNA)</span></p><p><b>value</b>: 37</p></div>"
+       ] ;
+       fhir:status [ fhir:v "final" ] ;
+       fhir:code [
+         fhir:coding ( [
+           fhir:system [ fhir:v "https://joofio.github.io/obs-cdss-fhir/CodeSystem/my-cs"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "IDADE_MATERNA" ]
+         ] )
+       ] ;
+       fhir:value [ fhir:v "37"^^xsd:integer ]
+     ] )
+  ] ) . # 
 
 # -------------------------------------------------------------------------------------
 

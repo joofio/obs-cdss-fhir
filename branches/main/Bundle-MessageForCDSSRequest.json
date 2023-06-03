@@ -1,316 +1,49 @@
 {
-  "resourceType": "Bundle",
-  "id": "MessageForCDSSRequest",
-  "meta": {
-    "profile": [
-      "https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageForCDSS"
-    ]
+  "resourceType" : "Bundle",
+  "id" : "MessageForCDSSRequest",
+  "meta" : {
+    "profile" : ["https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageForCDSS"]
   },
-  "type": "message",
-  "timestamp": "2020-01-01T00:00:00Z",
-  "entry": [
-    {
-      "resource": {
-        "resourceType": "MessageHeader",
-        "id": "MessageHeaderCDSSExampleRequest",
-        "meta": {
-          "profile": [
-            "https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageHeaderCDSS"
-          ]
-        },
-        "text": {
-          "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: MessageHeader</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource MessageHeader \"MessageHeaderCDSSExampleRequest\" </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-MessageHeaderCDSS.html\">Message Header for request and response</a></p></div><p><b>event</b>: obs-cds (Details: [not stated] code obs-cds = 'obs-cds', stated as 'null')</p><h3>Destinations</h3><table class=\"grid\"><tr><td>-</td><td><b>Name</b></td><td><b>Endpoint</b></td></tr><tr><td>*</td><td>CDSS-System</td><td><code>127.0.0.1</code></td></tr></table><h3>Sources</h3><table class=\"grid\"><tr><td>-</td><td><b>Name</b></td><td><b>Endpoint</b></td></tr><tr><td>*</td><td>request-system</td><td><code>127.0.0.1</code></td></tr></table></div>"
-        },
-        "eventCoding": {
-          "code": "obs-cds"
-        },
-        "destination": [
-          {
-            "name": "CDSS-System",
-            "endpoint": "127.0.0.1"
-          }
-        ],
-        "source": {
-          "name": "request-system",
-          "endpoint": "127.0.0.1"
-        }
-      }
-    },
-    {
-      "resource": {
-        "resourceType": "CommunicationRequest",
-        "id": "OBSCDSSInitializerExample",
-        "meta": {
-          "profile": [
-            "https://joofio.github.io/obs-cdss-fhir/StructureDefinition/OBSCDSSInitializer",
-            "http://hl7.org/fhir/StructureDefinition/obscdss-initializer"
-          ]
-        },
-        "text": {
-          "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: CommunicationRequest</b></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource CommunicationRequest \"OBSCDSSInitializerExample\" </p><p style=\"margin-bottom: 0px\">Profiles: <a href=\"StructureDefinition-OBSCDSSInitializer.html\">Prediction Request Meta Information</a>, <code>http://hl7.org/fhir/StructureDefinition/obscdss-initializer</code></p></div><p><b>identifier</b>: id: OBSCDSSInitializerExample</p><p><b>status</b>: active</p><h3>Payloads</h3><table class=\"grid\"><tr><td>-</td><td><b>Content[x]</b></td></tr><tr><td>*</td><td><a href=\"#Parameters_MLParameterRequestExample\">See above (Parameters/MLParameterRequestExample)</a></td></tr></table><p><b>occurrence</b>: 2020-01-01 12:00:00+0000</p></div>"
-        },
-        "identifier": [
-          {
-            "value": "OBSCDSSInitializerExample"
-          }
-        ],
-        "status": "active",
-        "payload": [
-          {
-            "contentReference": {
-              "reference": "Parameters/MLParameterRequestExample"
-            }
-          }
-        ],
-        "occurrenceDateTime": "2020-01-01T00:00:00Z"
-      }
-    },
-    {
-      "resource": {
-        "resourceType": "Parameters",
-        "id": "MLParameterRequestExample",
-        "meta": {
-          "profile": [
-            "https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MLParameterRequest"
-          ]
-        },
-        "parameter": [
-          {
-            "name": "APRESENTACAO_31",
-            "valueCoding": {
-              "code": "cefálica"
-            }
-          },
-          {
-            "name": "APRESENTACAO_28",
-            "valueCoding": {
-              "code": "None"
-            }
-          },
-          {
-            "name": "APRESENTACAO_30",
-            "valueCoding": {
-              "code": "None"
-            }
-          },
-          {
-            "name": "APRESENTACAO_37",
-            "valueCoding": {
-              "code": "None"
-            }
-          },
-          {
-            "name": "GRUPO_ROBSON",
-            "valueCoding": {
-              "code": "1"
-            }
-          },
-          {
-            "name": "BISHOP_SCORE",
-            "valueCoding": {
-              "code": "None"
-            }
-          },
-          {
-            "name": "PESO_INICIAL",
-            "valueInteger": 57
-          },
-          {
-            "name": "IDADE_MATERNA",
-            "valueInteger": 36
-          },
-          {
-            "name": "APRESENTACAO_35",
-            "valueCoding": {
-              "code": "None"
-            }
-          },
-          {
-            "name": "IMC",
-            "valueDecimal": 19.7
-          },
-          {
-            "name": "APRESENTACAO_32",
-            "valueCoding": {
-              "code": "None"
-            }
-          },
-          {
-            "name": "APRESENTACAO_26",
-            "valueCoding": {
-              "code": "None"
-            }
-          },
-          {
-            "name": "APRESENTACAO_34",
-            "valueCoding": {
-              "code": "None"
-            }
-          },
-          {
-            "name": "APRESENTACAO_33",
-            "valueCoding": {
-              "code": "None"
-            }
-          },
-          {
-            "name": "APRESENTACAO_NO_PARTO",
-            "valueCoding": {
-              "code": "Cefálica de vértice"
-            }
-          },
-          {
-            "name": "NUMERO_CONSULTAS_PRE_NATAL",
-            "valueInteger": 14
-          },
-          {
-            "name": "APRESENTACAO_38",
-            "valueCoding": {
-              "code": "None"
-            }
-          },
-          {
-            "name": "APRESENTACAO_29",
-            "valueCoding": {
-              "code": "None"
-            }
-          },
-          {
-            "name": "APRESENTACAO_ADMISSAO",
-            "valueCoding": {
-              "code": "-1"
-            }
-          },
-          {
-            "name": "BISHOP_EXTINCAO",
-            "valueCoding": {
-              "code": "None"
-            }
-          },
-          {
-            "name": "APRESENTACAO_27",
-            "valueCoding": {
-              "code": "None"
-            }
-          },
-          {
-            "name": "APRESENTACAO_36",
-            "valueCoding": {
-              "code": "None"
-            }
-          },
-          {
-            "name": "TRAB_PARTO_ENTRADA_ESPONTANEO",
-            "valueCoding": {
-              "code": "None"
-            }
-          },
-          {
-            "name": "part.mcdt.ctgs",
-            "valueCoding": {
-              "code": "0"
-            }
-          },
-          {
-            "name": "apres.feto.34",
-            "valueCoding": {
-              "code": "0"
-            }
-          },
-          {
-            "name": "tparto.rpm",
-            "valueCoding": {
-              "code": "0"
-            }
-          },
-          {
-            "name": "rn.ucin",
-            "valueCoding": {
-              "code": "0"
-            }
-          },
-          {
-            "name": "part.vig",
-            "valueCoding": {
-              "code": "0"
-            }
-          },
-          {
-            "name": "grav.feto.altcf",
-            "valueCoding": {
-              "code": "0"
-            }
-          },
-          {
-            "name": "tparto.esp",
-            "valueCoding": {
-              "code": "1"
-            }
-          },
-          {
-            "name": "apres.feto.34.pelve",
-            "valueCoding": {
-              "code": "0"
-            }
-          },
-          {
-            "name": "parto.comp",
-            "valueCoding": {
-              "code": "0"
-            }
-          },
-          {
-            "name": "ciru.laqt",
-            "valueCoding": {
-              "code": "0"
-            }
-          },
-          {
-            "name": "puer.comp.cica",
-            "valueCoding": {
-              "code": "0"
-            }
-          },
-          {
-            "name": "tparto.rpm.espo",
-            "valueCoding": {
-              "code": "0"
-            }
-          },
-          {
-            "name": "grav.plac",
-            "valueCoding": {
-              "code": "0"
-            }
-          },
-          {
-            "name": "parto.23P",
-            "valueCoding": {
-              "code": "0"
-            }
-          },
-          {
-            "name": "card.dhta",
-            "valueCoding": {
-              "code": "0"
-            }
-          },
-          {
-            "name": "parto.comp.cervical",
-            "valueCoding": {
-              "code": "0"
-            }
-          },
-          {
-            "name": "part.aep",
-            "valueCoding": {
-              "code": "1"
-            }
-          }
-        ]
+  "type" : "message",
+  "timestamp" : "2023-01-01T00:00:00Z",
+  "entry" : [{
+    "resource" : {
+      "resourceType" : "MessageHeader",
+      "id" : "MessageHeaderCDSSExampleRequest",
+      "meta" : {
+        "profile" : ["https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageHeaderCDSS"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: MessageHeader</b><a name=\"MessageHeaderCDSSExampleRequest\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource MessageHeader &quot;MessageHeaderCDSSExampleRequest&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-MessageHeaderCDSS.html\">Message Header for request and response</a></p></div><p><b>event</b>: obs-cds (Details: [not stated] code obs-cds = 'obs-cds', stated as 'null')</p><h3>Destinations</h3><table class=\"grid\"><tr><td>-</td><td><b>Name</b></td></tr><tr><td>*</td><td>CDSS-System</td></tr></table><h3>Sources</h3><table class=\"grid\"><tr><td>-</td><td><b>Name</b></td></tr><tr><td>*</td><td>request-system</td></tr></table></div>"
+      },
+      "eventCoding" : {
+        "code" : "obs-cds"
+      },
+      "destination" : [{
+        "name" : "CDSS-System"
+      }],
+      "source" : {
+        "name" : "request-system"
       }
     }
-  ]
+  },
+  {
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "Obs1",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"Obs1\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;Obs1&quot; </p></div><p><b>status</b>: final</p><p><b>code</b>: IDADE_MATERNA <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-my-cs.html\">Code system</a>#IDADE_MATERNA)</span></p><p><b>value</b>: 37</p></div>"
+      },
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "https://joofio.github.io/obs-cdss-fhir/CodeSystem/my-cs",
+          "code" : "IDADE_MATERNA"
+        }]
+      },
+      "valueInteger" : 37
+    }
+  }]
 }

@@ -6,25 +6,12 @@
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system <code>https://joofio.github.io/obs-cdss-fhir/CodeSystem/ml-response-cs</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">OK<a name="ml-response-cs-OK"> </a></td><td>Level Ok</td><td>Level Ok</td></tr><tr><td style="white-space:nowrap">WARN<a name="ml-response-cs-WARN"> </a></td><td>Warning level 1</td><td>Warning level 1</td></tr><tr><td style="white-space:nowrap">NOK<a name="ml-response-cs-NOK"> </a></td><td>Error level</td><td>Error level</td></tr></table></div>
   </text>
   <url value="https://joofio.github.io/obs-cdss-fhir/CodeSystem/ml-response-cs"/>
-  <version value="0.1.0-test"/>
+  <version value="0.1.0"/>
   <name value="MLResponseCS"/>
   <title value="Model Responses Code System"/>
   <status value="active"/>
-  <date value="2023-05-26T10:57:36+00:00"/>
-  <publisher value="xxxYour Work Group"/>
-  <contact>
-    <telecom>
-      <system value="url"/>
-      <value value="http://xxhl7.org/Special/committees/[something]"/>
-    </telecom>
-  </contact>
+  <date value="2023-06-03T17:27:06+00:00"/>
   <description value="Model Responses Code System"/>
-  <jurisdiction>
-    <coding>
-      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
-      <code value="001"/>
-    </coding>
-  </jurisdiction>
   <content value="complete"/>
   <count value="3"/>
   <concept>

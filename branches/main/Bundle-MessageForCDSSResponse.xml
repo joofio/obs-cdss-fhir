@@ -15,75 +15,36 @@
           <profile value="https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageHeaderCDSS"/>
         </meta>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: MessageHeader</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource MessageHeader "MessageHeaderCDSSExampleResponse" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-MessageHeaderCDSS.html">Message Header for request and response</a></p></div><p><b>event</b>: obs-cds (Details: [not stated] code obs-cds = 'obs-cds', stated as 'null')</p><h3>Destinations</h3><table class="grid"><tr><td>-</td><td><b>Name</b></td><td><b>Endpoint</b></td></tr><tr><td>*</td><td>Requester</td><td><code>127.0.0.1</code></td></tr></table><h3>Sources</h3><table class="grid"><tr><td>-</td><td><b>Name</b></td><td><b>Endpoint</b></td></tr><tr><td>*</td><td>CDSS-system</td><td><code>127.0.0.1</code></td></tr></table></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: MessageHeader</b><a name="MessageHeaderCDSSExampleResponse"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource MessageHeader &quot;MessageHeaderCDSSExampleResponse&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-MessageHeaderCDSS.html">Message Header for request and response</a></p></div><p><b>event</b>: obs-cds (Details: [not stated] code obs-cds = 'obs-cds', stated as 'null')</p><h3>Destinations</h3><table class="grid"><tr><td>-</td><td><b>Name</b></td></tr><tr><td>*</td><td>Requester</td></tr></table><h3>Sources</h3><table class="grid"><tr><td>-</td><td><b>Name</b></td></tr><tr><td>*</td><td>CDSS-system</td></tr></table></div>
         </text>
         <eventCoding>
           <code value="obs-cds"/>
         </eventCoding>
         <destination>
           <name value="Requester"/>
-          <endpoint value="127.0.0.1"/>
         </destination>
         <source>
           <name value="CDSS-system"/>
-          <endpoint value="127.0.0.1"/>
         </source>
       </MessageHeader>
     </resource>
   </entry>
   <entry>
     <resource>
-      <Communication>
-        <id value="sss"/>
-        <meta>
-          <profile value="https://joofio.github.io/obs-cdss-fhir/StructureDefinition/OBSCDSSFinalizer"/>
-        </meta>
+      <Observation>
+        <id value="Obs1"/>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Communication</b></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Communication "sss" </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-OBSCDSSFinalizer.html">Prediction Meta Information</a></p></div><p><b>status</b>: completed</p><p><b>category</b>: instruction <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> ([not stated]#instruction)</span></p><p><b>sent</b>: 2020-01-01 12:00:00+0000</p><p><b>received</b>: 2020-01-01 12:00:00+0000</p><p><b>sender</b>: <a href="Device-sss.html">Device/sss</a></p><h3>Payloads</h3><table class="grid"><tr><td>-</td><td><b>Content[x]</b></td></tr><tr><td>*</td><td><a href="#Parameters_MLParameterResponseExample">See above (Parameters/MLParameterResponseExample)</a></td></tr></table></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="Obs1"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;Obs1&quot; </p></div><p><b>status</b>: final</p><p><b>code</b>: IDADE_MATERNA <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-my-cs.html">Code system</a>#IDADE_MATERNA)</span></p><p><b>value</b>: 37</p></div>
         </text>
-        <status value="completed"/>
-        <category>
+        <status value="final"/>
+        <code>
           <coding>
-            <code value="instruction"/>
+            <system value="https://joofio.github.io/obs-cdss-fhir/CodeSystem/my-cs"/>
+            <code value="IDADE_MATERNA"/>
           </coding>
-        </category>
-        <sent value="2020-01-01T00:00:00Z"/>
-        <received value="2020-01-01T00:00:00Z"/>
-        <sender>
-          <reference value="Device/sss"/>
-        </sender>
-        <payload>
-          <contentReference>
-            <reference value="Parameters/MLParameterResponseExample"/>
-          </contentReference>
-        </payload>
-      </Communication>
-    </resource>
-  </entry>
-  <entry>
-    <resource>
-      <Parameters>
-        <id value="MLParameterResponseExample"/>
-        <meta>
-          <profile value="https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MLParameterResponse"/>
-        </meta>
-        <parameter>
-          <name value="result"/>
-          <valueCoding>
-            <code value="Vaginal"/>
-          </valueCoding>
-        </parameter>
-        <parameter>
-          <name value="outcome"/>
-          <valueString value="{'Cesariana': '37.23 %', 'Vaginal': '62.77 %'}"/>
-        </parameter>
-        <parameter>
-          <name value="decision"/>
-          <valueCoding>
-            <code value="None"/>
-          </valueCoding>
-        </parameter>
-      </Parameters>
+        </code>
+        <valueInteger value="37"/>
+      </Observation>
     </resource>
   </entry>
 </Bundle>
