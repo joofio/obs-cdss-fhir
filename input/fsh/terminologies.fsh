@@ -64,3 +64,5 @@ Id: my-vs
 Title: "value set"
 Description:  "value set"
 * include codes from system   my-cs
+
+Alias: $my-cs = http://example.org/CodeSystem/my-cs
