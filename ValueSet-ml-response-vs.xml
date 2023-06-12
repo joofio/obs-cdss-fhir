@@ -9,8 +9,8 @@
   <version value="0.1.0"/>
   <name value="MLResponseVS"/>
   <title value="Model Responses value set"/>
-  <status value="active"/>
-  <date value="2023-06-03T17:27:06+00:00"/>
+  <status value="draft"/>
+  <date value="2023-06-12T12:03:44+00:00"/>
   <description value="Model Responses value set"/>
   <compose>
     <include>

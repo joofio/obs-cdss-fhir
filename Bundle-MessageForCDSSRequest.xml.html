@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-    <title>OBS.CDSS.IG\Example of Request for MessageForRequest - XML Representation - FHIR v5.0.0</title>
+    <title>OBS.CDSS.IG\MessageForCDSSRequest - XML Representation - FHIR v5.0.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -40,8 +40,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"4.13"}
-    h3,h4,h5,h6{--heading-prefix:"4.13"}</style>
+    <style type="text/css">h2{--heading-prefix:"4.14"}
+    h3,h4,h5,h6{--heading-prefix:"4.14"}</style>
     <div id="segment-header" class="segment">    <!-- segment-header -->
       <div class="container">    <!-- container -->
           <!-- Placeholder for child template header declarations -->
@@ -141,7 +141,7 @@
     <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
       <div class="container">    <!-- container -->
         <ul class="breadcrumb">
-          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="artifacts.html"><b>Artifacts Summary</b></a></li><li><b>Example of Request for MessageForRequest</b></li>
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="artifacts.html"><b>Artifacts Summary</b></a></li><li><b>MessageForCDSSRequest</b></li>
 
         </ul>
       </div>    <!-- /container -->
@@ -200,7 +200,7 @@
 <a name="root"> </a>
 
 
-<h2 id="root">: Example of Request for MessageForRequest - XML Representation</h2>
+<h2 id="root">: MessageForCDSSRequest - XML Representation</h2>
   <table class="null">
     <tr>
 
@@ -222,7 +222,7 @@
 
 
 
-  <pre style="white-space: pre; overflow: hidden" class="xml"><code class="language-xml">
+  <pre style="white-space: pre; overflow: hidden" class="xml"><code>
 
 &lt;<a href="http://hl7.org/fhir/R5/bundle.html#Bundle">Bundle</a> xmlns="http://hl7.org/fhir"&gt;
   &lt;<a href="http://hl7.org/fhir/R5/bundle.html#Bundle.id">id</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>="MessageForCDSSRequest"/&gt;
@@ -262,17 +262,622 @@
         &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation.id">id</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>="Obs1"/&gt;
         &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation.text">text</a>&gt;
           &lt;<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="generated"/&gt;
-          &lt;div xmlns="http://www.w3.org/1999/xhtml"&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: Observation&lt;/b&gt;&lt;a name="Obs1"&gt; &lt;/a&gt;&lt;/p&gt;&lt;div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"&gt;&lt;p style="margin-bottom: 0px"&gt;Resource Observation &amp;quot;Obs1&amp;quot; &lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: final&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: IDADE_MATERNA &lt;span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"&gt; (&lt;a href="CodeSystem-my-cs.html"&gt;Code system&lt;/a&gt;#IDADE_MATERNA)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: 37&lt;/p&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+          &lt;div xmlns="http://www.w3.org/1999/xhtml"&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: Observation&lt;/b&gt;&lt;a name="Obs1"&gt; &lt;/a&gt;&lt;/p&gt;&lt;div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"&gt;&lt;p style="margin-bottom: 0px"&gt;Resource Observation &amp;quot;Obs1&amp;quot; &lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: final&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: IDENTIFICADOR &lt;span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"&gt; (my-cs#IDENTIFICADOR)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: 106401&lt;/p&gt;&lt;/div&gt;<a name="end-xhtml"></a>
         &lt;/text&gt;
         &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation.status">status</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="final"/&gt;
         &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation.code">code</a>&gt;
           &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
-            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a>
-                    <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>="https://joofio.github.io/obs-cdss-fhir/CodeSystem/my-cs"/&gt;
-            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="IDADE_MATERNA"/&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>="http://example.org/CodeSystem/my-cs"/&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="IDENTIFICADOR"/&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="IDENTIFICADOR"/&gt;
           &lt;/coding&gt;
         &lt;/code&gt;
-        &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation.value[x]">valueInteger</a> <a href="http://hl7.org/fhir/R5/datatypes.html#integer">value</a>="37"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation.value[x]">valueInteger</a> <a href="http://hl7.org/fhir/R5/datatypes.html#integer">value</a>="106401"/&gt;
+      &lt;/Observation&gt;
+    &lt;/resource&gt;
+  &lt;/entry&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/bundle.html#Bundle.entry">entry</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation">resource</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation">Observation</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation.id">id</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>="Obs2"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation.text">text</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="generated"/&gt;
+          &lt;div xmlns="http://www.w3.org/1999/xhtml"&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: Observation&lt;/b&gt;&lt;a name="Obs2"&gt; &lt;/a&gt;&lt;/p&gt;&lt;div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"&gt;&lt;p style="margin-bottom: 0px"&gt;Resource Observation &amp;quot;Obs2&amp;quot; &lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: final&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: DATA PARTO &lt;span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"&gt; (my-cs#DATA_PARTO)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: 10/10/2022&lt;/p&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+        &lt;/text&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation.status">status</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="final"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation.code">code</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>="http://example.org/CodeSystem/my-cs"/&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="DATA_PARTO"/&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="DATA PARTO"/&gt;
+          &lt;/coding&gt;
+        &lt;/code&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation.value[x]">valueString</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="10/10/2022"/&gt;
+      &lt;/Observation&gt;
+    &lt;/resource&gt;
+  &lt;/entry&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/bundle.html#Bundle.entry">entry</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation">resource</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation">Observation</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation.id">id</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>="Obs3"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation.text">text</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="generated"/&gt;
+          &lt;div xmlns="http://www.w3.org/1999/xhtml"&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: Observation&lt;/b&gt;&lt;a name="Obs3"&gt; &lt;/a&gt;&lt;/p&gt;&lt;div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"&gt;&lt;p style="margin-bottom: 0px"&gt;Resource Observation &amp;quot;Obs3&amp;quot; &lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: final&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: IDADE MATERNA &lt;span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"&gt; (my-cs#IDADE_MATERNA)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: 32&lt;/p&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+        &lt;/text&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation.status">status</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="final"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation.code">code</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>="http://example.org/CodeSystem/my-cs"/&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="IDADE_MATERNA"/&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="IDADE MATERNA"/&gt;
+          &lt;/coding&gt;
+        &lt;/code&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation.value[x]">valueQuantity</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#Quantity.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#decimal">value</a>="32"/&gt;
+        &lt;/valueQuantity&gt;
+      &lt;/Observation&gt;
+    &lt;/resource&gt;
+  &lt;/entry&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/bundle.html#Bundle.entry">entry</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation">resource</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation">Observation</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation.id">id</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>="Obs4"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation.text">text</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="generated"/&gt;
+          &lt;div xmlns="http://www.w3.org/1999/xhtml"&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: Observation&lt;/b&gt;&lt;a name="Obs4"&gt; &lt;/a&gt;&lt;/p&gt;&lt;div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"&gt;&lt;p style="margin-bottom: 0px"&gt;Resource Observation &amp;quot;Obs4&amp;quot; &lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: final&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: GS &lt;span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"&gt; (my-cs#GS)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: B,RH_POSITIVO&lt;/p&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+        &lt;/text&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation.status">status</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="final"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation.code">code</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>="http://example.org/CodeSystem/my-cs"/&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="GS"/&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="GS"/&gt;
+          &lt;/coding&gt;
+        &lt;/code&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation.value[x]">valueString</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="B,RH_POSITIVO"/&gt;
+      &lt;/Observation&gt;
+    &lt;/resource&gt;
+  &lt;/entry&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/bundle.html#Bundle.entry">entry</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation">resource</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation">Observation</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation.id">id</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>="Obs5"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation.text">text</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="generated"/&gt;
+          &lt;div xmlns="http://www.w3.org/1999/xhtml"&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: Observation&lt;/b&gt;&lt;a name="Obs5"&gt; &lt;/a&gt;&lt;/p&gt;&lt;div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"&gt;&lt;p style="margin-bottom: 0px"&gt;Resource Observation &amp;quot;Obs5&amp;quot; &lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: final&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: PESO INICIAL &lt;span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"&gt; (my-cs#PESO_INICIAL)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: 45&lt;/p&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+        &lt;/text&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation.status">status</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="final"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation.code">code</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>="http://example.org/CodeSystem/my-cs"/&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="PESO_INICIAL"/&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="PESO INICIAL"/&gt;
+          &lt;/coding&gt;
+        &lt;/code&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation.value[x]">valueQuantity</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#Quantity.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#decimal">value</a>="45"/&gt;
+        &lt;/valueQuantity&gt;
+      &lt;/Observation&gt;
+    &lt;/resource&gt;
+  &lt;/entry&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/bundle.html#Bundle.entry">entry</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation">resource</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation">Observation</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation.id">id</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>="Obs6"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation.text">text</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="generated"/&gt;
+          &lt;div xmlns="http://www.w3.org/1999/xhtml"&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: Observation&lt;/b&gt;&lt;a name="Obs6"&gt; &lt;/a&gt;&lt;/p&gt;&lt;div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"&gt;&lt;p style="margin-bottom: 0px"&gt;Resource Observation &amp;quot;Obs6&amp;quot; &lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: final&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: IMC &lt;span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"&gt; (my-cs#IMC)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: 17.6&lt;/p&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+        &lt;/text&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation.status">status</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="final"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation.code">code</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>="http://example.org/CodeSystem/my-cs"/&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="IMC"/&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="IMC"/&gt;
+          &lt;/coding&gt;
+        &lt;/code&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation.value[x]">valueQuantity</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#Quantity.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#decimal">value</a>="17.6"/&gt;
+        &lt;/valueQuantity&gt;
+      &lt;/Observation&gt;
+    &lt;/resource&gt;
+  &lt;/entry&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/bundle.html#Bundle.entry">entry</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation">resource</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation">Observation</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation.id">id</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>="Obs7"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation.text">text</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="generated"/&gt;
+          &lt;div xmlns="http://www.w3.org/1999/xhtml"&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: Observation&lt;/b&gt;&lt;a name="Obs7"&gt; &lt;/a&gt;&lt;/p&gt;&lt;div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"&gt;&lt;p style="margin-bottom: 0px"&gt;Resource Observation &amp;quot;Obs7&amp;quot; &lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: final&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: CIGARROS &lt;span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"&gt; (my-cs#CIGARROS)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: SIM&lt;/p&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+        &lt;/text&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation.status">status</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="final"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation.code">code</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>="http://example.org/CodeSystem/my-cs"/&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="CIGARROS"/&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="CIGARROS"/&gt;
+          &lt;/coding&gt;
+        &lt;/code&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation.value[x]">valueString</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="SIM"/&gt;
+      &lt;/Observation&gt;
+    &lt;/resource&gt;
+  &lt;/entry&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/bundle.html#Bundle.entry">entry</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation">resource</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation">Observation</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation.id">id</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>="Obs8"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation.text">text</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="generated"/&gt;
+          &lt;div xmlns="http://www.w3.org/1999/xhtml"&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: Observation&lt;/b&gt;&lt;a name="Obs8"&gt; &lt;/a&gt;&lt;/p&gt;&lt;div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"&gt;&lt;p style="margin-bottom: 0px"&gt;Resource Observation &amp;quot;Obs8&amp;quot; &lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: final&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: A GESTA &lt;span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"&gt; (my-cs#A_GESTA)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: 1&lt;/p&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+        &lt;/text&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation.status">status</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="final"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation.code">code</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>="http://example.org/CodeSystem/my-cs"/&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="A_GESTA"/&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="A GESTA"/&gt;
+          &lt;/coding&gt;
+        &lt;/code&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation.value[x]">valueInteger</a> <a href="http://hl7.org/fhir/R5/datatypes.html#integer">value</a>="1"/&gt;
+      &lt;/Observation&gt;
+    &lt;/resource&gt;
+  &lt;/entry&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/bundle.html#Bundle.entry">entry</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation">resource</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation">Observation</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation.id">id</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>="Obs9"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation.text">text</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="generated"/&gt;
+          &lt;div xmlns="http://www.w3.org/1999/xhtml"&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: Observation&lt;/b&gt;&lt;a name="Obs9"&gt; &lt;/a&gt;&lt;/p&gt;&lt;div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"&gt;&lt;p style="margin-bottom: 0px"&gt;Resource Observation &amp;quot;Obs9&amp;quot; &lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: final&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: TIPO GRAVIDEZ &lt;span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"&gt; (my-cs#TIPO_GRAVIDEZ)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: ESPONTANEA&lt;/p&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+        &lt;/text&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation.status">status</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="final"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation.code">code</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>="http://example.org/CodeSystem/my-cs"/&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="TIPO_GRAVIDEZ"/&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="TIPO GRAVIDEZ"/&gt;
+          &lt;/coding&gt;
+        &lt;/code&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation.value[x]">valueString</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="ESPONTANEA"/&gt;
+      &lt;/Observation&gt;
+    &lt;/resource&gt;
+  &lt;/entry&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/bundle.html#Bundle.entry">entry</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation">resource</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation">Observation</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation.id">id</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>="Obs10"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation.text">text</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="generated"/&gt;
+          &lt;div xmlns="http://www.w3.org/1999/xhtml"&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: Observation&lt;/b&gt;&lt;a name="Obs10"&gt; &lt;/a&gt;&lt;/p&gt;&lt;div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"&gt;&lt;p style="margin-bottom: 0px"&gt;Resource Observation &amp;quot;Obs10&amp;quot; &lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: final&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: VIGIADA &lt;span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"&gt; (my-cs#VIGIADA)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: S&lt;/p&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+        &lt;/text&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation.status">status</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="final"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation.code">code</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>="http://example.org/CodeSystem/my-cs"/&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="VIGIADA"/&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="VIGIADA"/&gt;
+          &lt;/coding&gt;
+        &lt;/code&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation.value[x]">valueString</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="S"/&gt;
+      &lt;/Observation&gt;
+    &lt;/resource&gt;
+  &lt;/entry&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/bundle.html#Bundle.entry">entry</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation">resource</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation">Observation</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation.id">id</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>="Obs11"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation.text">text</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="generated"/&gt;
+          &lt;div xmlns="http://www.w3.org/1999/xhtml"&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: Observation&lt;/b&gt;&lt;a name="Obs11"&gt; &lt;/a&gt;&lt;/p&gt;&lt;div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"&gt;&lt;p style="margin-bottom: 0px"&gt;Resource Observation &amp;quot;Obs11&amp;quot; &lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: final&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: NUMERO CONSULTAS PRE NATAL &lt;span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"&gt; (my-cs#NUMERO_CONSULTAS_PRE_NATAL)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: 11&lt;/p&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+        &lt;/text&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation.status">status</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="final"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation.code">code</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>="http://example.org/CodeSystem/my-cs"/&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="NUMERO_CONSULTAS_PRE_NATAL"/&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="NUMERO CONSULTAS PRE NATAL"/&gt;
+          &lt;/coding&gt;
+        &lt;/code&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation.value[x]">valueQuantity</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#Quantity.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#decimal">value</a>="11"/&gt;
+        &lt;/valueQuantity&gt;
+      &lt;/Observation&gt;
+    &lt;/resource&gt;
+  &lt;/entry&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/bundle.html#Bundle.entry">entry</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation">resource</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation">Observation</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation.id">id</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>="Obs12"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation.text">text</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="generated"/&gt;
+          &lt;div xmlns="http://www.w3.org/1999/xhtml"&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: Observation&lt;/b&gt;&lt;a name="Obs12"&gt; &lt;/a&gt;&lt;/p&gt;&lt;div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"&gt;&lt;p style="margin-bottom: 0px"&gt;Resource Observation &amp;quot;Obs12&amp;quot; &lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: final&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: VIGIADA HOSPITAL &lt;span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"&gt; (my-cs#VIGIADA_HOSPITAL)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: Sim&lt;/p&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+        &lt;/text&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation.status">status</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="final"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation.code">code</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>="http://example.org/CodeSystem/my-cs"/&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="VIGIADA_HOSPITAL"/&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="VIGIADA HOSPITAL"/&gt;
+          &lt;/coding&gt;
+        &lt;/code&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation.value[x]">valueString</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="Sim"/&gt;
+      &lt;/Observation&gt;
+    &lt;/resource&gt;
+  &lt;/entry&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/bundle.html#Bundle.entry">entry</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation">resource</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation">Observation</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation.id">id</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>="Obs13"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation.text">text</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="generated"/&gt;
+          &lt;div xmlns="http://www.w3.org/1999/xhtml"&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: Observation&lt;/b&gt;&lt;a name="Obs13"&gt; &lt;/a&gt;&lt;/p&gt;&lt;div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"&gt;&lt;p style="margin-bottom: 0px"&gt;Resource Observation &amp;quot;Obs13&amp;quot; &lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: final&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: VIGIADA CENTRO SAUDE &lt;span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"&gt; (my-cs#VIGIADA_CENTRO_SAUDE)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: Sim&lt;/p&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+        &lt;/text&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation.status">status</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="final"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation.code">code</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>="http://example.org/CodeSystem/my-cs"/&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="VIGIADA_CENTRO_SAUDE"/&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="VIGIADA CENTRO SAUDE"/&gt;
+          &lt;/coding&gt;
+        &lt;/code&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation.value[x]">valueString</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="Sim"/&gt;
+      &lt;/Observation&gt;
+    &lt;/resource&gt;
+  &lt;/entry&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/bundle.html#Bundle.entry">entry</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation">resource</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation">Observation</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation.id">id</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>="Obs14"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation.text">text</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="generated"/&gt;
+          &lt;div xmlns="http://www.w3.org/1999/xhtml"&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: Observation&lt;/b&gt;&lt;a name="Obs14"&gt; &lt;/a&gt;&lt;/p&gt;&lt;div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"&gt;&lt;p style="margin-bottom: 0px"&gt;Resource Observation &amp;quot;Obs14&amp;quot; &lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: final&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: VIGIADA NESTE HOSPITAL &lt;span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"&gt; (my-cs#VIGIADA_NESTE_HOSPITAL)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: Sim&lt;/p&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+        &lt;/text&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation.status">status</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="final"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation.code">code</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>="http://example.org/CodeSystem/my-cs"/&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="VIGIADA_NESTE_HOSPITAL"/&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="VIGIADA NESTE HOSPITAL"/&gt;
+          &lt;/coding&gt;
+        &lt;/code&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation.value[x]">valueString</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="Sim"/&gt;
+      &lt;/Observation&gt;
+    &lt;/resource&gt;
+  &lt;/entry&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/bundle.html#Bundle.entry">entry</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation">resource</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation">Observation</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation.id">id</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>="Obs15"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation.text">text</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="generated"/&gt;
+          &lt;div xmlns="http://www.w3.org/1999/xhtml"&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: Observation&lt;/b&gt;&lt;a name="Obs15"&gt; &lt;/a&gt;&lt;/p&gt;&lt;div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"&gt;&lt;p style="margin-bottom: 0px"&gt;Resource Observation &amp;quot;Obs15&amp;quot; &lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: final&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: ESTIMATIVA PESO ECO 31 &lt;span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"&gt; (my-cs#ESTIMATIVA_PESO_ECO_31)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: 1533&lt;/p&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+        &lt;/text&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation.status">status</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="final"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation.code">code</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>="http://example.org/CodeSystem/my-cs"/&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="ESTIMATIVA_PESO_ECO_31"/&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="ESTIMATIVA PESO ECO 31"/&gt;
+          &lt;/coding&gt;
+        &lt;/code&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation.value[x]">valueQuantity</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#Quantity.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#decimal">value</a>="1533"/&gt;
+        &lt;/valueQuantity&gt;
+      &lt;/Observation&gt;
+    &lt;/resource&gt;
+  &lt;/entry&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/bundle.html#Bundle.entry">entry</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation">resource</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation">Observation</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation.id">id</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>="Obs16"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation.text">text</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="generated"/&gt;
+          &lt;div xmlns="http://www.w3.org/1999/xhtml"&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: Observation&lt;/b&gt;&lt;a name="Obs16"&gt; &lt;/a&gt;&lt;/p&gt;&lt;div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"&gt;&lt;p style="margin-bottom: 0px"&gt;Resource Observation &amp;quot;Obs16&amp;quot; &lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: final&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: ESTIMATIVA PESO ECO 35 &lt;span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"&gt; (my-cs#ESTIMATIVA_PESO_ECO_35)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: 2214&lt;/p&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+        &lt;/text&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation.status">status</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="final"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation.code">code</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>="http://example.org/CodeSystem/my-cs"/&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="ESTIMATIVA_PESO_ECO_35"/&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="ESTIMATIVA PESO ECO 35"/&gt;
+          &lt;/coding&gt;
+        &lt;/code&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation.value[x]">valueQuantity</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#Quantity.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#decimal">value</a>="2214"/&gt;
+        &lt;/valueQuantity&gt;
+      &lt;/Observation&gt;
+    &lt;/resource&gt;
+  &lt;/entry&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/bundle.html#Bundle.entry">entry</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation">resource</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation">Observation</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation.id">id</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>="Obs17"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation.text">text</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="generated"/&gt;
+          &lt;div xmlns="http://www.w3.org/1999/xhtml"&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: Observation&lt;/b&gt;&lt;a name="Obs17"&gt; &lt;/a&gt;&lt;/p&gt;&lt;div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"&gt;&lt;p style="margin-bottom: 0px"&gt;Resource Observation &amp;quot;Obs17&amp;quot; &lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: final&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: ESTIMATIVA PESO ECO 37 &lt;span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"&gt; (my-cs#ESTIMATIVA_PESO_ECO_37)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: 2743&lt;/p&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+        &lt;/text&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation.status">status</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="final"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation.code">code</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>="http://example.org/CodeSystem/my-cs"/&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="ESTIMATIVA_PESO_ECO_37"/&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="ESTIMATIVA PESO ECO 37"/&gt;
+          &lt;/coding&gt;
+        &lt;/code&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation.value[x]">valueQuantity</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#Quantity.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#decimal">value</a>="2743"/&gt;
+        &lt;/valueQuantity&gt;
+      &lt;/Observation&gt;
+    &lt;/resource&gt;
+  &lt;/entry&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/bundle.html#Bundle.entry">entry</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation">resource</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation">Observation</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation.id">id</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>="Obs18"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation.text">text</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="generated"/&gt;
+          &lt;div xmlns="http://www.w3.org/1999/xhtml"&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: Observation&lt;/b&gt;&lt;a name="Obs18"&gt; &lt;/a&gt;&lt;/p&gt;&lt;div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"&gt;&lt;p style="margin-bottom: 0px"&gt;Resource Observation &amp;quot;Obs18&amp;quot; &lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: final&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: APRESENTACAO 37 &lt;span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"&gt; (my-cs#APRESENTACAO_37)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: 1&lt;/p&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+        &lt;/text&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation.status">status</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="final"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation.code">code</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>="http://example.org/CodeSystem/my-cs"/&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="APRESENTACAO_37"/&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="APRESENTACAO 37"/&gt;
+          &lt;/coding&gt;
+        &lt;/code&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation.value[x]">valueQuantity</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#Quantity.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#decimal">value</a>="1"/&gt;
+        &lt;/valueQuantity&gt;
+      &lt;/Observation&gt;
+    &lt;/resource&gt;
+  &lt;/entry&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/bundle.html#Bundle.entry">entry</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation">resource</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation">Observation</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation.id">id</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>="Obs19"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation.text">text</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="generated"/&gt;
+          &lt;div xmlns="http://www.w3.org/1999/xhtml"&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: Observation&lt;/b&gt;&lt;a name="Obs19"&gt; &lt;/a&gt;&lt;/p&gt;&lt;div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"&gt;&lt;p style="margin-bottom: 0px"&gt;Resource Observation &amp;quot;Obs19&amp;quot; &lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: final&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: APRESENTACAO 35 &lt;span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"&gt; (my-cs#APRESENTACAO_35)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: 1&lt;/p&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+        &lt;/text&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation.status">status</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="final"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation.code">code</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>="http://example.org/CodeSystem/my-cs"/&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="APRESENTACAO_35"/&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="APRESENTACAO 35"/&gt;
+          &lt;/coding&gt;
+        &lt;/code&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation.value[x]">valueQuantity</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#Quantity.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#decimal">value</a>="1"/&gt;
+        &lt;/valueQuantity&gt;
+      &lt;/Observation&gt;
+    &lt;/resource&gt;
+  &lt;/entry&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/bundle.html#Bundle.entry">entry</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation">resource</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation">Observation</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation.id">id</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>="Obs20"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation.text">text</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="generated"/&gt;
+          &lt;div xmlns="http://www.w3.org/1999/xhtml"&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: Observation&lt;/b&gt;&lt;a name="Obs20"&gt; &lt;/a&gt;&lt;/p&gt;&lt;div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"&gt;&lt;p style="margin-bottom: 0px"&gt;Resource Observation &amp;quot;Obs20&amp;quot; &lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: final&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: APRESENTACAO 31 &lt;span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"&gt; (my-cs#APRESENTACAO_31)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: 1&lt;/p&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+        &lt;/text&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation.status">status</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="final"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation.code">code</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>="http://example.org/CodeSystem/my-cs"/&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="APRESENTACAO_31"/&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="APRESENTACAO 31"/&gt;
+          &lt;/coding&gt;
+        &lt;/code&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation.value[x]">valueQuantity</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#Quantity.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#decimal">value</a>="1"/&gt;
+        &lt;/valueQuantity&gt;
+      &lt;/Observation&gt;
+    &lt;/resource&gt;
+  &lt;/entry&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/bundle.html#Bundle.entry">entry</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation">resource</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation">Observation</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation.id">id</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>="Obs21"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation.text">text</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="generated"/&gt;
+          &lt;div xmlns="http://www.w3.org/1999/xhtml"&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: Observation&lt;/b&gt;&lt;a name="Obs21"&gt; &lt;/a&gt;&lt;/p&gt;&lt;div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"&gt;&lt;p style="margin-bottom: 0px"&gt;Resource Observation &amp;quot;Obs21&amp;quot; &lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: final&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: G TERAPEUTICA &lt;span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"&gt; (my-cs#G_TERAPEUTICA)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: Ferrum-fol 1-&amp;gt; 1+1, iodo; sal iodado,, sal iodado; Inicia voltrex (1000)  1 cp 8/8 horas;  Ferro EV 300+ 300- venofer&lt;/p&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+        &lt;/text&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation.status">status</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="final"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation.code">code</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>="http://example.org/CodeSystem/my-cs"/&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="G_TERAPEUTICA"/&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="G TERAPEUTICA"/&gt;
+          &lt;/coding&gt;
+        &lt;/code&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation.value[x]">valueString</a>
+                     <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="Ferrum-fol 1-&amp;gt; 1+1, iodo; sal iodado,, sal iodado; Inicia voltrex (1000)  1 cp 8/8 horas;  Ferro EV 300+ 300- venofer"/&gt;
+      &lt;/Observation&gt;
+    &lt;/resource&gt;
+  &lt;/entry&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/bundle.html#Bundle.entry">entry</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation">resource</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation">Observation</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation.id">id</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>="Obs22"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation.text">text</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="generated"/&gt;
+          &lt;div xmlns="http://www.w3.org/1999/xhtml"&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: Observation&lt;/b&gt;&lt;a name="Obs22"&gt; &lt;/a&gt;&lt;/p&gt;&lt;div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"&gt;&lt;p style="margin-bottom: 0px"&gt;Resource Observation &amp;quot;Obs22&amp;quot; &lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: final&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: NUM RN &lt;span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"&gt; (my-cs#NUM_RN)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: 1&lt;/p&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+        &lt;/text&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation.status">status</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="final"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation.code">code</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>="http://example.org/CodeSystem/my-cs"/&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="NUM_RN"/&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="NUM RN"/&gt;
+          &lt;/coding&gt;
+        &lt;/code&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation.value[x]">valueInteger</a> <a href="http://hl7.org/fhir/R5/datatypes.html#integer">value</a>="1"/&gt;
+      &lt;/Observation&gt;
+    &lt;/resource&gt;
+  &lt;/entry&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/bundle.html#Bundle.entry">entry</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation">resource</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation">Observation</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation.id">id</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>="Obs23"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation.text">text</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="generated"/&gt;
+          &lt;div xmlns="http://www.w3.org/1999/xhtml"&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: Observation&lt;/b&gt;&lt;a name="Obs23"&gt; &lt;/a&gt;&lt;/p&gt;&lt;div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"&gt;&lt;p style="margin-bottom: 0px"&gt;Resource Observation &amp;quot;Obs23&amp;quot; &lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: final&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: APRESENTACAO ADMISSAO &lt;span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"&gt; (my-cs#APRESENTACAO_ADMISSAO)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: -1&lt;/p&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+        &lt;/text&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation.status">status</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="final"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation.code">code</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>="http://example.org/CodeSystem/my-cs"/&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="APRESENTACAO_ADMISSAO"/&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="APRESENTACAO ADMISSAO"/&gt;
+          &lt;/coding&gt;
+        &lt;/code&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation.value[x]">valueString</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="-1"/&gt;
+      &lt;/Observation&gt;
+    &lt;/resource&gt;
+  &lt;/entry&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/bundle.html#Bundle.entry">entry</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation">resource</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation">Observation</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation.id">id</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>="Obs24"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation.text">text</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="generated"/&gt;
+          &lt;div xmlns="http://www.w3.org/1999/xhtml"&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: Observation&lt;/b&gt;&lt;a name="Obs24"&gt; &lt;/a&gt;&lt;/p&gt;&lt;div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"&gt;&lt;p style="margin-bottom: 0px"&gt;Resource Observation &amp;quot;Obs24&amp;quot; &lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: final&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: IDADE GESTACIONAL ADMISSAO &lt;span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"&gt; (my-cs#IDADE_GESTACIONAL_ADMISSAO)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: 39.4&lt;/p&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+        &lt;/text&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation.status">status</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="final"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation.code">code</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>="http://example.org/CodeSystem/my-cs"/&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="IDADE_GESTACIONAL_ADMISSAO"/&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="IDADE GESTACIONAL ADMISSAO"/&gt;
+          &lt;/coding&gt;
+        &lt;/code&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation.value[x]">valueQuantity</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#Quantity.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#decimal">value</a>="39.4"/&gt;
+        &lt;/valueQuantity&gt;
+      &lt;/Observation&gt;
+    &lt;/resource&gt;
+  &lt;/entry&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/bundle.html#Bundle.entry">entry</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation">resource</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation">Observation</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation.id">id</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>="Obs25"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation.text">text</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="generated"/&gt;
+          &lt;div xmlns="http://www.w3.org/1999/xhtml"&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: Observation&lt;/b&gt;&lt;a name="Obs25"&gt; &lt;/a&gt;&lt;/p&gt;&lt;div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"&gt;&lt;p style="margin-bottom: 0px"&gt;Resource Observation &amp;quot;Obs25&amp;quot; &lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: final&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: TRAB PARTO ENTRADA ESPONTANEO &lt;span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"&gt; (my-cs#TRAB_PARTO_ENTRADA_ESPONTANEO)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: SIM&lt;/p&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+        &lt;/text&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation.status">status</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="final"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation.code">code</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>="http://example.org/CodeSystem/my-cs"/&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="TRAB_PARTO_ENTRADA_ESPONTANEO"/&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="TRAB PARTO ENTRADA ESPONTANEO"/&gt;
+          &lt;/coding&gt;
+        &lt;/code&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation.value[x]">valueString</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="SIM"/&gt;
+      &lt;/Observation&gt;
+    &lt;/resource&gt;
+  &lt;/entry&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/bundle.html#Bundle.entry">entry</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation">resource</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation">Observation</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation.id">id</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>="Obs26"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation.text">text</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="generated"/&gt;
+          &lt;div xmlns="http://www.w3.org/1999/xhtml"&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: Observation&lt;/b&gt;&lt;a name="Obs26"&gt; &lt;/a&gt;&lt;/p&gt;&lt;div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"&gt;&lt;p style="margin-bottom: 0px"&gt;Resource Observation &amp;quot;Obs26&amp;quot; &lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: final&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: TIPO PARTO &lt;span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"&gt; (my-cs#TIPO_PARTO)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: Parto eutócico cefálico&lt;/p&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+        &lt;/text&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation.status">status</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="final"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation.code">code</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>="http://example.org/CodeSystem/my-cs"/&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="TIPO_PARTO"/&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="TIPO PARTO"/&gt;
+          &lt;/coding&gt;
+        &lt;/code&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation.value[x]">valueString</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="Parto eutócico cefálico"/&gt;
+      &lt;/Observation&gt;
+    &lt;/resource&gt;
+  &lt;/entry&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/bundle.html#Bundle.entry">entry</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation">resource</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation">Observation</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation.id">id</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>="Obs27"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation.text">text</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="generated"/&gt;
+          &lt;div xmlns="http://www.w3.org/1999/xhtml"&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: Observation&lt;/b&gt;&lt;a name="Obs27"&gt; &lt;/a&gt;&lt;/p&gt;&lt;div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"&gt;&lt;p style="margin-bottom: 0px"&gt;Resource Observation &amp;quot;Obs27&amp;quot; &lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: final&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: APRESENTACAO NO PARTO &lt;span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"&gt; (my-cs#APRESENTACAO_NO_PARTO)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: Cefálica de vértice&lt;/p&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+        &lt;/text&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation.status">status</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="final"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation.code">code</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>="http://example.org/CodeSystem/my-cs"/&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="APRESENTACAO_NO_PARTO"/&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="APRESENTACAO NO PARTO"/&gt;
+          &lt;/coding&gt;
+        &lt;/code&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation.value[x]">valueString</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="Cefálica de vértice"/&gt;
+      &lt;/Observation&gt;
+    &lt;/resource&gt;
+  &lt;/entry&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/bundle.html#Bundle.entry">entry</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation">resource</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation">Observation</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation.id">id</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>="Obs28"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation.text">text</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="generated"/&gt;
+          &lt;div xmlns="http://www.w3.org/1999/xhtml"&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: Observation&lt;/b&gt;&lt;a name="Obs28"&gt; &lt;/a&gt;&lt;/p&gt;&lt;div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"&gt;&lt;p style="margin-bottom: 0px"&gt;Resource Observation &amp;quot;Obs28&amp;quot; &lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: final&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: TRAB PARTO NO PARTO &lt;span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"&gt; (my-cs#TRAB_PARTO_NO_PARTO)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: Espontâneo&lt;/p&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+        &lt;/text&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation.status">status</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="final"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation.code">code</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>="http://example.org/CodeSystem/my-cs"/&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="TRAB_PARTO_NO_PARTO"/&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="TRAB PARTO NO PARTO"/&gt;
+          &lt;/coding&gt;
+        &lt;/code&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation.value[x]">valueString</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="Espontâneo"/&gt;
+      &lt;/Observation&gt;
+    &lt;/resource&gt;
+  &lt;/entry&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/bundle.html#Bundle.entry">entry</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation">resource</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation">Observation</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation.id">id</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>="Obs29"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation.text">text</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="generated"/&gt;
+          &lt;div xmlns="http://www.w3.org/1999/xhtml"&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: Observation&lt;/b&gt;&lt;a name="Obs29"&gt; &lt;/a&gt;&lt;/p&gt;&lt;div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"&gt;&lt;p style="margin-bottom: 0px"&gt;Resource Observation &amp;quot;Obs29&amp;quot; &lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: final&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: SEMANAS GESTACAO PARTO &lt;span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"&gt; (my-cs#SEMANAS_GESTACAO_PARTO)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: 39.4&lt;/p&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+        &lt;/text&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation.status">status</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="final"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation.code">code</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>="http://example.org/CodeSystem/my-cs"/&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="SEMANAS_GESTACAO_PARTO"/&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="SEMANAS GESTACAO PARTO"/&gt;
+          &lt;/coding&gt;
+        &lt;/code&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation.value[x]">valueQuantity</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Quantity#Quantity.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#decimal">value</a>="39.4"/&gt;
+        &lt;/valueQuantity&gt;
+      &lt;/Observation&gt;
+    &lt;/resource&gt;
+  &lt;/entry&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/bundle.html#Bundle.entry">entry</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation">resource</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation">Observation</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation.id">id</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>="Obs30"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation.text">text</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="generated"/&gt;
+          &lt;div xmlns="http://www.w3.org/1999/xhtml"&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: Observation&lt;/b&gt;&lt;a name="Obs30"&gt; &lt;/a&gt;&lt;/p&gt;&lt;div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"&gt;&lt;p style="margin-bottom: 0px"&gt;Resource Observation &amp;quot;Obs30&amp;quot; &lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: final&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: GRUPO ROBSON &lt;span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"&gt; (my-cs#GRUPO_ROBSON)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: 1&lt;/p&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+        &lt;/text&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation.status">status</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="final"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation.code">code</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>="http://example.org/CodeSystem/my-cs"/&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="GRUPO_ROBSON"/&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.display">display</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="GRUPO ROBSON"/&gt;
+          &lt;/coding&gt;
+        &lt;/code&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/observation.html#Observation.value[x]">valueString</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="1"/&gt;
       &lt;/Observation&gt;
     &lt;/resource&gt;
   &lt;/entry&gt;
@@ -306,7 +911,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="null"></a>.  Package obs.cdss.ig#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Sat, Jun 3, 2023 17:27+0000">2023-06-03</span>
+          IG &copy; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="null"></a>.  Package obs.cdss.ig#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Mon, Jun 12, 2023 12:03+0000">2023-06-12</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

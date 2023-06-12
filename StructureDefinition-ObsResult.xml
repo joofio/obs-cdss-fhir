@@ -12,8 +12,8 @@
   <version value="0.1.0"/>
   <name value="ObsResult"/>
   <title value="Machine Learning Model"/>
-  <status value="active"/>
-  <date value="2023-06-03T17:27:06+00:00"/>
+  <status value="draft"/>
+  <date value="2023-06-12T12:03:44+00:00"/>
   <description value="The profile for Defining Machine Learning Models for CDSS"/>
   <fhirVersion value="5.0.0"/>
   <mapping>
