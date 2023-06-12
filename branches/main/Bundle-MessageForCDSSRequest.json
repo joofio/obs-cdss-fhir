@@ -34,16 +34,592 @@
       "id" : "Obs1",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"Obs1\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;Obs1&quot; </p></div><p><b>status</b>: final</p><p><b>code</b>: IDADE_MATERNA <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-my-cs.html\">Code system</a>#IDADE_MATERNA)</span></p><p><b>value</b>: 37</p></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"Obs1\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;Obs1&quot; </p></div><p><b>status</b>: final</p><p><b>code</b>: IDENTIFICADOR <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (my-cs#IDENTIFICADOR)</span></p><p><b>value</b>: 106401</p></div>"
       },
       "status" : "final",
       "code" : {
         "coding" : [{
-          "system" : "https://joofio.github.io/obs-cdss-fhir/CodeSystem/my-cs",
-          "code" : "IDADE_MATERNA"
+          "system" : "http://example.org/CodeSystem/my-cs",
+          "code" : "IDENTIFICADOR",
+          "display" : "IDENTIFICADOR"
         }]
       },
-      "valueInteger" : 37
+      "valueInteger" : 106401
+    }
+  },
+  {
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "Obs2",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"Obs2\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;Obs2&quot; </p></div><p><b>status</b>: final</p><p><b>code</b>: DATA PARTO <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (my-cs#DATA_PARTO)</span></p><p><b>value</b>: 10/10/2022</p></div>"
+      },
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://example.org/CodeSystem/my-cs",
+          "code" : "DATA_PARTO",
+          "display" : "DATA PARTO"
+        }]
+      },
+      "valueString" : "10/10/2022"
+    }
+  },
+  {
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "Obs3",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"Obs3\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;Obs3&quot; </p></div><p><b>status</b>: final</p><p><b>code</b>: IDADE MATERNA <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (my-cs#IDADE_MATERNA)</span></p><p><b>value</b>: 32</p></div>"
+      },
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://example.org/CodeSystem/my-cs",
+          "code" : "IDADE_MATERNA",
+          "display" : "IDADE MATERNA"
+        }]
+      },
+      "valueQuantity" : {
+        "value" : 32
+      }
+    }
+  },
+  {
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "Obs4",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"Obs4\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;Obs4&quot; </p></div><p><b>status</b>: final</p><p><b>code</b>: GS <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (my-cs#GS)</span></p><p><b>value</b>: B,RH_POSITIVO</p></div>"
+      },
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://example.org/CodeSystem/my-cs",
+          "code" : "GS",
+          "display" : "GS"
+        }]
+      },
+      "valueString" : "B,RH_POSITIVO"
+    }
+  },
+  {
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "Obs5",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"Obs5\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;Obs5&quot; </p></div><p><b>status</b>: final</p><p><b>code</b>: PESO INICIAL <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (my-cs#PESO_INICIAL)</span></p><p><b>value</b>: 45</p></div>"
+      },
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://example.org/CodeSystem/my-cs",
+          "code" : "PESO_INICIAL",
+          "display" : "PESO INICIAL"
+        }]
+      },
+      "valueQuantity" : {
+        "value" : 45
+      }
+    }
+  },
+  {
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "Obs6",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"Obs6\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;Obs6&quot; </p></div><p><b>status</b>: final</p><p><b>code</b>: IMC <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (my-cs#IMC)</span></p><p><b>value</b>: 17.6</p></div>"
+      },
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://example.org/CodeSystem/my-cs",
+          "code" : "IMC",
+          "display" : "IMC"
+        }]
+      },
+      "valueQuantity" : {
+        "value" : 17.6
+      }
+    }
+  },
+  {
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "Obs7",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"Obs7\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;Obs7&quot; </p></div><p><b>status</b>: final</p><p><b>code</b>: CIGARROS <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (my-cs#CIGARROS)</span></p><p><b>value</b>: SIM</p></div>"
+      },
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://example.org/CodeSystem/my-cs",
+          "code" : "CIGARROS",
+          "display" : "CIGARROS"
+        }]
+      },
+      "valueString" : "SIM"
+    }
+  },
+  {
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "Obs8",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"Obs8\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;Obs8&quot; </p></div><p><b>status</b>: final</p><p><b>code</b>: A GESTA <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (my-cs#A_GESTA)</span></p><p><b>value</b>: 1</p></div>"
+      },
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://example.org/CodeSystem/my-cs",
+          "code" : "A_GESTA",
+          "display" : "A GESTA"
+        }]
+      },
+      "valueInteger" : 1
+    }
+  },
+  {
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "Obs9",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"Obs9\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;Obs9&quot; </p></div><p><b>status</b>: final</p><p><b>code</b>: TIPO GRAVIDEZ <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (my-cs#TIPO_GRAVIDEZ)</span></p><p><b>value</b>: ESPONTANEA</p></div>"
+      },
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://example.org/CodeSystem/my-cs",
+          "code" : "TIPO_GRAVIDEZ",
+          "display" : "TIPO GRAVIDEZ"
+        }]
+      },
+      "valueString" : "ESPONTANEA"
+    }
+  },
+  {
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "Obs10",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"Obs10\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;Obs10&quot; </p></div><p><b>status</b>: final</p><p><b>code</b>: VIGIADA <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (my-cs#VIGIADA)</span></p><p><b>value</b>: S</p></div>"
+      },
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://example.org/CodeSystem/my-cs",
+          "code" : "VIGIADA",
+          "display" : "VIGIADA"
+        }]
+      },
+      "valueString" : "S"
+    }
+  },
+  {
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "Obs11",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"Obs11\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;Obs11&quot; </p></div><p><b>status</b>: final</p><p><b>code</b>: NUMERO CONSULTAS PRE NATAL <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (my-cs#NUMERO_CONSULTAS_PRE_NATAL)</span></p><p><b>value</b>: 11</p></div>"
+      },
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://example.org/CodeSystem/my-cs",
+          "code" : "NUMERO_CONSULTAS_PRE_NATAL",
+          "display" : "NUMERO CONSULTAS PRE NATAL"
+        }]
+      },
+      "valueQuantity" : {
+        "value" : 11
+      }
+    }
+  },
+  {
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "Obs12",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"Obs12\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;Obs12&quot; </p></div><p><b>status</b>: final</p><p><b>code</b>: VIGIADA HOSPITAL <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (my-cs#VIGIADA_HOSPITAL)</span></p><p><b>value</b>: Sim</p></div>"
+      },
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://example.org/CodeSystem/my-cs",
+          "code" : "VIGIADA_HOSPITAL",
+          "display" : "VIGIADA HOSPITAL"
+        }]
+      },
+      "valueString" : "Sim"
+    }
+  },
+  {
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "Obs13",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"Obs13\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;Obs13&quot; </p></div><p><b>status</b>: final</p><p><b>code</b>: VIGIADA CENTRO SAUDE <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (my-cs#VIGIADA_CENTRO_SAUDE)</span></p><p><b>value</b>: Sim</p></div>"
+      },
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://example.org/CodeSystem/my-cs",
+          "code" : "VIGIADA_CENTRO_SAUDE",
+          "display" : "VIGIADA CENTRO SAUDE"
+        }]
+      },
+      "valueString" : "Sim"
+    }
+  },
+  {
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "Obs14",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"Obs14\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;Obs14&quot; </p></div><p><b>status</b>: final</p><p><b>code</b>: VIGIADA NESTE HOSPITAL <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (my-cs#VIGIADA_NESTE_HOSPITAL)</span></p><p><b>value</b>: Sim</p></div>"
+      },
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://example.org/CodeSystem/my-cs",
+          "code" : "VIGIADA_NESTE_HOSPITAL",
+          "display" : "VIGIADA NESTE HOSPITAL"
+        }]
+      },
+      "valueString" : "Sim"
+    }
+  },
+  {
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "Obs15",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"Obs15\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;Obs15&quot; </p></div><p><b>status</b>: final</p><p><b>code</b>: ESTIMATIVA PESO ECO 31 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (my-cs#ESTIMATIVA_PESO_ECO_31)</span></p><p><b>value</b>: 1533</p></div>"
+      },
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://example.org/CodeSystem/my-cs",
+          "code" : "ESTIMATIVA_PESO_ECO_31",
+          "display" : "ESTIMATIVA PESO ECO 31"
+        }]
+      },
+      "valueQuantity" : {
+        "value" : 1533
+      }
+    }
+  },
+  {
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "Obs16",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"Obs16\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;Obs16&quot; </p></div><p><b>status</b>: final</p><p><b>code</b>: ESTIMATIVA PESO ECO 35 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (my-cs#ESTIMATIVA_PESO_ECO_35)</span></p><p><b>value</b>: 2214</p></div>"
+      },
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://example.org/CodeSystem/my-cs",
+          "code" : "ESTIMATIVA_PESO_ECO_35",
+          "display" : "ESTIMATIVA PESO ECO 35"
+        }]
+      },
+      "valueQuantity" : {
+        "value" : 2214
+      }
+    }
+  },
+  {
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "Obs17",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"Obs17\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;Obs17&quot; </p></div><p><b>status</b>: final</p><p><b>code</b>: ESTIMATIVA PESO ECO 37 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (my-cs#ESTIMATIVA_PESO_ECO_37)</span></p><p><b>value</b>: 2743</p></div>"
+      },
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://example.org/CodeSystem/my-cs",
+          "code" : "ESTIMATIVA_PESO_ECO_37",
+          "display" : "ESTIMATIVA PESO ECO 37"
+        }]
+      },
+      "valueQuantity" : {
+        "value" : 2743
+      }
+    }
+  },
+  {
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "Obs18",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"Obs18\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;Obs18&quot; </p></div><p><b>status</b>: final</p><p><b>code</b>: APRESENTACAO 37 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (my-cs#APRESENTACAO_37)</span></p><p><b>value</b>: 1</p></div>"
+      },
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://example.org/CodeSystem/my-cs",
+          "code" : "APRESENTACAO_37",
+          "display" : "APRESENTACAO 37"
+        }]
+      },
+      "valueQuantity" : {
+        "value" : 1
+      }
+    }
+  },
+  {
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "Obs19",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"Obs19\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;Obs19&quot; </p></div><p><b>status</b>: final</p><p><b>code</b>: APRESENTACAO 35 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (my-cs#APRESENTACAO_35)</span></p><p><b>value</b>: 1</p></div>"
+      },
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://example.org/CodeSystem/my-cs",
+          "code" : "APRESENTACAO_35",
+          "display" : "APRESENTACAO 35"
+        }]
+      },
+      "valueQuantity" : {
+        "value" : 1
+      }
+    }
+  },
+  {
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "Obs20",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"Obs20\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;Obs20&quot; </p></div><p><b>status</b>: final</p><p><b>code</b>: APRESENTACAO 31 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (my-cs#APRESENTACAO_31)</span></p><p><b>value</b>: 1</p></div>"
+      },
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://example.org/CodeSystem/my-cs",
+          "code" : "APRESENTACAO_31",
+          "display" : "APRESENTACAO 31"
+        }]
+      },
+      "valueQuantity" : {
+        "value" : 1
+      }
+    }
+  },
+  {
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "Obs21",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"Obs21\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;Obs21&quot; </p></div><p><b>status</b>: final</p><p><b>code</b>: G TERAPEUTICA <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (my-cs#G_TERAPEUTICA)</span></p><p><b>value</b>: Ferrum-fol 1-&gt; 1+1, iodo; sal iodado,, sal iodado; Inicia voltrex (1000)  1 cp 8/8 horas;  Ferro EV 300+ 300- venofer</p></div>"
+      },
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://example.org/CodeSystem/my-cs",
+          "code" : "G_TERAPEUTICA",
+          "display" : "G TERAPEUTICA"
+        }]
+      },
+      "valueString" : "Ferrum-fol 1-> 1+1, iodo; sal iodado,, sal iodado; Inicia voltrex (1000)  1 cp 8/8 horas;  Ferro EV 300+ 300- venofer"
+    }
+  },
+  {
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "Obs22",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"Obs22\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;Obs22&quot; </p></div><p><b>status</b>: final</p><p><b>code</b>: NUM RN <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (my-cs#NUM_RN)</span></p><p><b>value</b>: 1</p></div>"
+      },
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://example.org/CodeSystem/my-cs",
+          "code" : "NUM_RN",
+          "display" : "NUM RN"
+        }]
+      },
+      "valueInteger" : 1
+    }
+  },
+  {
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "Obs23",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"Obs23\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;Obs23&quot; </p></div><p><b>status</b>: final</p><p><b>code</b>: APRESENTACAO ADMISSAO <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (my-cs#APRESENTACAO_ADMISSAO)</span></p><p><b>value</b>: -1</p></div>"
+      },
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://example.org/CodeSystem/my-cs",
+          "code" : "APRESENTACAO_ADMISSAO",
+          "display" : "APRESENTACAO ADMISSAO"
+        }]
+      },
+      "valueString" : "-1"
+    }
+  },
+  {
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "Obs24",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"Obs24\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;Obs24&quot; </p></div><p><b>status</b>: final</p><p><b>code</b>: IDADE GESTACIONAL ADMISSAO <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (my-cs#IDADE_GESTACIONAL_ADMISSAO)</span></p><p><b>value</b>: 39.4</p></div>"
+      },
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://example.org/CodeSystem/my-cs",
+          "code" : "IDADE_GESTACIONAL_ADMISSAO",
+          "display" : "IDADE GESTACIONAL ADMISSAO"
+        }]
+      },
+      "valueQuantity" : {
+        "value" : 39.4
+      }
+    }
+  },
+  {
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "Obs25",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"Obs25\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;Obs25&quot; </p></div><p><b>status</b>: final</p><p><b>code</b>: TRAB PARTO ENTRADA ESPONTANEO <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (my-cs#TRAB_PARTO_ENTRADA_ESPONTANEO)</span></p><p><b>value</b>: SIM</p></div>"
+      },
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://example.org/CodeSystem/my-cs",
+          "code" : "TRAB_PARTO_ENTRADA_ESPONTANEO",
+          "display" : "TRAB PARTO ENTRADA ESPONTANEO"
+        }]
+      },
+      "valueString" : "SIM"
+    }
+  },
+  {
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "Obs26",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"Obs26\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;Obs26&quot; </p></div><p><b>status</b>: final</p><p><b>code</b>: TIPO PARTO <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (my-cs#TIPO_PARTO)</span></p><p><b>value</b>: Parto eutócico cefálico</p></div>"
+      },
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://example.org/CodeSystem/my-cs",
+          "code" : "TIPO_PARTO",
+          "display" : "TIPO PARTO"
+        }]
+      },
+      "valueString" : "Parto eutócico cefálico"
+    }
+  },
+  {
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "Obs27",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"Obs27\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;Obs27&quot; </p></div><p><b>status</b>: final</p><p><b>code</b>: APRESENTACAO NO PARTO <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (my-cs#APRESENTACAO_NO_PARTO)</span></p><p><b>value</b>: Cefálica de vértice</p></div>"
+      },
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://example.org/CodeSystem/my-cs",
+          "code" : "APRESENTACAO_NO_PARTO",
+          "display" : "APRESENTACAO NO PARTO"
+        }]
+      },
+      "valueString" : "Cefálica de vértice"
+    }
+  },
+  {
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "Obs28",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"Obs28\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;Obs28&quot; </p></div><p><b>status</b>: final</p><p><b>code</b>: TRAB PARTO NO PARTO <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (my-cs#TRAB_PARTO_NO_PARTO)</span></p><p><b>value</b>: Espontâneo</p></div>"
+      },
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://example.org/CodeSystem/my-cs",
+          "code" : "TRAB_PARTO_NO_PARTO",
+          "display" : "TRAB PARTO NO PARTO"
+        }]
+      },
+      "valueString" : "Espontâneo"
+    }
+  },
+  {
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "Obs29",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"Obs29\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;Obs29&quot; </p></div><p><b>status</b>: final</p><p><b>code</b>: SEMANAS GESTACAO PARTO <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (my-cs#SEMANAS_GESTACAO_PARTO)</span></p><p><b>value</b>: 39.4</p></div>"
+      },
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://example.org/CodeSystem/my-cs",
+          "code" : "SEMANAS_GESTACAO_PARTO",
+          "display" : "SEMANAS GESTACAO PARTO"
+        }]
+      },
+      "valueQuantity" : {
+        "value" : 39.4
+      }
+    }
+  },
+  {
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "Obs30",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"Obs30\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;Obs30&quot; </p></div><p><b>status</b>: final</p><p><b>code</b>: GRUPO ROBSON <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (my-cs#GRUPO_ROBSON)</span></p><p><b>value</b>: 1</p></div>"
+      },
+      "status" : "final",
+      "code" : {
+        "coding" : [{
+          "system" : "http://example.org/CodeSystem/my-cs",
+          "code" : "GRUPO_ROBSON",
+          "display" : "GRUPO ROBSON"
+        }]
+      },
+      "valueString" : "1"
     }
   }]
 }

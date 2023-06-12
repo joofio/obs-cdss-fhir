@@ -3,9 +3,9 @@
   "name" : "OBSCDSS",
   "package-id" : "obs.cdss.ig",
   "ig-ver" : "0.1.0",
-  "date" : "Sat, 03 Jun, 2023 17:27:06 +0000",
-  "errs" : 20,
-  "warnings" : 21,
+  "date" : "Mon, 12 Jun, 2023 12:03:44 +0000",
+  "errs" : 127,
+  "warnings" : 53,
   "hints" : 5,
   "version" : "5.0.0",
   "tool" : "5.0.0 (3)"

@@ -9,7 +9,7 @@
   "version" : "0.1.0",
   "name" : "OBSCDSS",
   "status" : "draft",
-  "date" : "2023-06-03T17:27:06+00:00",
+  "date" : "2023-06-12T12:03:44+00:00",
   "packageId" : "obs.cdss.ig",
   "license" : "CC0-1.0",
   "fhirVersion" : ["5.0.0"],
@@ -305,110 +305,13 @@
     "resource" : [{
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
+        "valueString" : "Bundle"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/MLModel"
+        "reference" : "Bundle/448492b8-0911-11ee-8a5c-2e8ac521fb46"
       },
-      "name" : "Machine Learning Model",
-      "description" : "The profile for Defining Machine Learning Models for CDSS",
-      "isExample" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/MessageForCDSS"
-      },
-      "name" : "Message bundle for request or response",
-      "description" : "The message for response or request, containing the prediction/input",
-      "isExample" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/MessageHeaderCDSS"
-      },
-      "name" : "Message Header for request and response",
-      "description" : "Message Header for request and response",
-      "isExample" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/ObsResult"
-      },
-      "name" : "Machine Learning Model",
-      "description" : "The profile for Defining Machine Learning Models for CDSS",
-      "isExample" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/ml-response-vs"
-      },
-      "name" : "Model Responses value set",
-      "description" : "Model Responses value set",
-      "isExample" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/ml-type-vs"
-      },
-      "name" : "Machine Learning Models value set",
-      "description" : "Machine Learning Models value set",
-      "isExample" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/my-vs"
-      },
-      "name" : "value set",
-      "description" : "value set",
-      "isExample" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/ml-response-cs"
-      },
-      "name" : "Model Responses Code System",
-      "description" : "Model Responses Code System",
-      "isExample" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/ml-type-cs"
-      },
-      "name" : "Machine Learning Models code system",
-      "description" : "Machine Learning Models code system",
-      "isExample" : false
+      "name" : "448492b8-0911-11ee-8a5c-2e8ac521fb46",
+      "isExample" : true
     },
     {
       "extension" : [{
@@ -438,13 +341,84 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/MLModel"
+      },
+      "name" : "Machine Learning Model",
+      "description" : "The profile for Defining Machine Learning Models for CDSS",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/ObsResult"
+      },
+      "name" : "Machine Learning Model",
+      "description" : "The profile for Defining Machine Learning Models for CDSS",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/ml-type-cs"
+      },
+      "name" : "Machine Learning Models code system",
+      "description" : "Machine Learning Models code system",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/ml-type-vs"
+      },
+      "name" : "Machine Learning Models value set",
+      "description" : "Machine Learning Models value set",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/MessageForCDSS"
+      },
+      "name" : "Message bundle for request or response",
+      "description" : "The message for response or request, containing the prediction/input",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/MessageHeaderCDSS"
+      },
+      "name" : "Message Header for request and response",
+      "description" : "Message Header for request and response",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "Bundle"
       }],
       "reference" : {
         "reference" : "Bundle/MessageForCDSSRequest"
       },
-      "name" : "Example of Request for MessageForRequest",
-      "description" : "Example of Request for MessageForRequest",
+      "name" : "MessageForCDSSRequest",
       "profile" : ["https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageForCDSS",
       "https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageForCDSS",
       "https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageHeaderCDSS"]
@@ -452,54 +426,26 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Bundle"
+        "valueString" : "CodeSystem"
       }],
       "reference" : {
-        "reference" : "Bundle/MessageForCDSSResponse"
+        "reference" : "CodeSystem/ml-response-cs"
       },
-      "name" : "Example of Request for MessageForRequest",
-      "description" : "Example of Request for MessageForRequest",
-      "profile" : ["https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageForCDSS",
-      "https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageForCDSS",
-      "https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageHeaderCDSS"]
+      "name" : "Model Responses Code System",
+      "description" : "Model Responses Code System",
+      "isExample" : false
     },
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "MessageHeader"
+        "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "MessageHeader/MessageHeaderCDSSExampleRequest"
+        "reference" : "ValueSet/ml-response-vs"
       },
-      "name" : "Example of Request for MessageForRequest",
-      "description" : "Example of Request for MessageForRequest",
-      "profile" : ["https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageHeaderCDSS",
-      "https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageHeaderCDSS"]
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "MessageHeader"
-      }],
-      "reference" : {
-        "reference" : "MessageHeader/MessageHeaderCDSSExampleResponse"
-      },
-      "name" : "Example of response for CDSS",
-      "description" : "Example of response for MessageForRequest",
-      "profile" : ["https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageHeaderCDSS",
-      "https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageHeaderCDSS"]
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
-      }],
-      "reference" : {
-        "reference" : "Observation/Obs1"
-      },
-      "name" : "Example of Request for MessageForRequest",
-      "description" : "Example of Request for MessageForRequest",
-      "isExample" : true
+      "name" : "Model Responses value set",
+      "description" : "Model Responses value set",
+      "isExample" : false
     },
     {
       "extension" : [{
@@ -510,6 +456,18 @@
         "reference" : "OperationDefinition/predict"
       },
       "name" : "predict",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/my-vs"
+      },
+      "name" : "value set",
+      "description" : "value set",
       "isExample" : false
     }],
     "page" : {

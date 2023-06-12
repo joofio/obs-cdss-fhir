@@ -1,0 +1,116 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://joofio.github.io/obs-cdss-fhir/Bundle/448492b8-0911-11ee-8a5c-2e8ac521fb46> a fhir:Bundle ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "448492b8-0911-11ee-8a5c-2e8ac521fb46"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageForRequest"^^xsd:anyURI ;
+       fhir:link <https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageForRequest>
+     ] )
+  ] ; # 
+  fhir:type [ fhir:v "message"] ; # 
+  fhir:entry ( [
+     fhir:fullUrl [ fhir:v "http://localhost:8080/fhir/MessageHeader/44849290-0911-11ee-8a5c-2e8ac521fb46"^^xsd:anyURI ] ;
+     fhir:resource ( <http://localhost:8080/fhir/MessageHeader/44849290-0911-11ee-8a5c-2e8ac521fb46> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://localhost:8080/fhir/Observation/44849114-0911-11ee-8a5c-2e8ac521fb46"^^xsd:anyURI ] ;
+     fhir:resource ( <http://localhost:8080/fhir/Observation/44849114-0911-11ee-8a5c-2e8ac521fb46> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://localhost:8080/fhir/Observation/448491f0-0911-11ee-8a5c-2e8ac521fb46"^^xsd:anyURI ] ;
+     fhir:resource ( <http://localhost:8080/fhir/Observation/448491f0-0911-11ee-8a5c-2e8ac521fb46> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://localhost:8080/fhir/Observation/4484920e-0911-11ee-8a5c-2e8ac521fb46"^^xsd:anyURI ] ;
+     fhir:resource ( <http://localhost:8080/fhir/Observation/4484920e-0911-11ee-8a5c-2e8ac521fb46> )
+  ] ) . # 
+
+<http://localhost:8080/fhir/MessageHeader/44849290-0911-11ee-8a5c-2e8ac521fb46> a fhir:MessageHeader ;
+  fhir:id [ fhir:v "44849290-0911-11ee-8a5c-2e8ac521fb46"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageHeaderCDSS"^^xsd:anyURI ;
+       fhir:link <https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageHeaderCDSS>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: MessageHeader</b><a name=\"44849290-0911-11ee-8a5c-2e8ac521fb46\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource MessageHeader &quot;44849290-0911-11ee-8a5c-2e8ac521fb46&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-MessageHeaderCDSS.html\">Message Header for request and response</a></p></div><p><b>event</b>: obs-cds (Details: [not stated] code obs-cds = 'obs-cds', stated as 'null')</p><h3>Destinations</h3><table class=\"grid\"><tr><td>-</td><td><b>Name</b></td></tr><tr><td>*</td><td>Requester</td></tr></table><h3>Sources</h3><table class=\"grid\"><tr><td>-</td><td><b>Name</b></td></tr><tr><td>*</td><td>CDSS-system</td></tr></table></div>"
+  ] ; # 
+  fhir:event [
+     a fhir:Coding ;
+     fhir:code [ fhir:v "obs-cds" ]
+  ] ; # 
+  fhir:destination ( [
+     fhir:name [ fhir:v "Requester" ]
+  ] ) ; # 
+  fhir:source [
+     fhir:name [ fhir:v "CDSS-system" ]
+  ] . # 
+
+<http://localhost:8080/fhir/Observation/44849114-0911-11ee-8a5c-2e8ac521fb46> a fhir:Observation ;
+  fhir:id [ fhir:v "44849114-0911-11ee-8a5c-2e8ac521fb46"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"44849114-0911-11ee-8a5c-2e8ac521fb46\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;44849114-0911-11ee-8a5c-2e8ac521fb46&quot; </p></div><p><b>status</b>: final</p><p><b>code</b>: PREDICTION <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (my-cs#PREDICTION)</span></p><p><b>value</b>: Vaginal <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (my-cs#Vaginal)</span></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://example.org/CodeSystem/my-cs"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "PREDICTION" ] ;
+       fhir:display [ fhir:v "PREDICTION" ]
+     ] )
+  ] ; # 
+  fhir:value [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://example.org/CodeSystem/my-cs"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "Vaginal" ]
+     ] )
+  ] . # 
+
+<http://localhost:8080/fhir/Observation/448491f0-0911-11ee-8a5c-2e8ac521fb46> a fhir:Observation ;
+  fhir:id [ fhir:v "448491f0-0911-11ee-8a5c-2e8ac521fb46"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"448491f0-0911-11ee-8a5c-2e8ac521fb46\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;448491f0-0911-11ee-8a5c-2e8ac521fb46&quot; </p></div><p><b>status</b>: final</p><p><b>code</b>: Percentage Vaginal <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (my-cs#Pvag)</span></p><p><b>value</b>: 84</p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://example.org/CodeSystem/my-cs"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "Pvag" ] ;
+       fhir:display [ fhir:v "Percentage Vaginal" ]
+     ] )
+  ] ; # 
+  fhir:value [
+     a fhir:Quantity ;
+     fhir:value [ fhir:v "84"^^xsd:decimal ]
+  ] . # 
+
+<http://localhost:8080/fhir/Observation/4484920e-0911-11ee-8a5c-2e8ac521fb46> a fhir:Observation ;
+  fhir:id [ fhir:v "4484920e-0911-11ee-8a5c-2e8ac521fb46"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"4484920e-0911-11ee-8a5c-2e8ac521fb46\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;4484920e-0911-11ee-8a5c-2e8ac521fb46&quot; </p></div><p><b>status</b>: final</p><p><b>code</b>: Percentage C-section <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (my-cs#Pcsec)</span></p><p><b>value</b>: 16</p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://example.org/CodeSystem/my-cs"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "Pcsec" ] ;
+       fhir:display [ fhir:v "Percentage C-section" ]
+     ] )
+  ] ; # 
+  fhir:value [
+     a fhir:Quantity ;
+     fhir:value [ fhir:v "16"^^xsd:decimal ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

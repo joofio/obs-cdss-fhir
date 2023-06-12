@@ -16,7 +16,7 @@
   fhir:version [ fhir:v "0.1.0"] ; # 
   fhir:name [ fhir:v "OBSCDSS"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2023-06-03T17:27:06+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-06-12T12:03:44+00:00"^^xsd:dateTime] ; # 
   fhir:packageId [ fhir:v "obs.cdss.ig"] ; # 
   fhir:license [ fhir:v "CC0-1.0"] ; # 
   fhir:fhirVersion ( [ fhir:v "5.0.0"] ) ; # 
@@ -269,111 +269,14 @@
      fhir:resource ( [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "StructureDefinition:resource" ]
+         fhir:value [ fhir:v "Bundle" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MLModel> ;
-         fhir:reference [ fhir:v "StructureDefinition/MLModel" ]
+         fhir:link <https://joofio.github.io/obs-cdss-fhir/Bundle/448492b8-0911-11ee-8a5c-2e8ac521fb46> ;
+         fhir:reference [ fhir:v "Bundle/448492b8-0911-11ee-8a5c-2e8ac521fb46" ]
        ] ;
-       fhir:name [ fhir:v "Machine Learning Model" ] ;
-       fhir:description [ fhir:v "The profile for Defining Machine Learning Models for CDSS" ] ;
-       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "StructureDefinition:resource" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageForCDSS> ;
-         fhir:reference [ fhir:v "StructureDefinition/MessageForCDSS" ]
-       ] ;
-       fhir:name [ fhir:v "Message bundle for request or response" ] ;
-       fhir:description [ fhir:v "The message for response or request, containing the prediction/input" ] ;
-       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "StructureDefinition:resource" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageHeaderCDSS> ;
-         fhir:reference [ fhir:v "StructureDefinition/MessageHeaderCDSS" ]
-       ] ;
-       fhir:name [ fhir:v "Message Header for request and response" ] ;
-       fhir:description [ fhir:v "Message Header for request and response" ] ;
-       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "StructureDefinition:resource" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://joofio.github.io/obs-cdss-fhir/StructureDefinition/ObsResult> ;
-         fhir:reference [ fhir:v "StructureDefinition/ObsResult" ]
-       ] ;
-       fhir:name [ fhir:v "Machine Learning Model" ] ;
-       fhir:description [ fhir:v "The profile for Defining Machine Learning Models for CDSS" ] ;
-       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "ValueSet" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://joofio.github.io/obs-cdss-fhir/ValueSet/ml-response-vs> ;
-         fhir:reference [ fhir:v "ValueSet/ml-response-vs" ]
-       ] ;
-       fhir:name [ fhir:v "Model Responses value set" ] ;
-       fhir:description [ fhir:v "Model Responses value set" ] ;
-       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "ValueSet" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://joofio.github.io/obs-cdss-fhir/ValueSet/ml-type-vs> ;
-         fhir:reference [ fhir:v "ValueSet/ml-type-vs" ]
-       ] ;
-       fhir:name [ fhir:v "Machine Learning Models value set" ] ;
-       fhir:description [ fhir:v "Machine Learning Models value set" ] ;
-       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "ValueSet" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://joofio.github.io/obs-cdss-fhir/ValueSet/my-vs> ;
-         fhir:reference [ fhir:v "ValueSet/my-vs" ]
-       ] ;
-       fhir:name [ fhir:v "value set" ] ;
-       fhir:description [ fhir:v "value set" ] ;
-       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "CodeSystem" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://joofio.github.io/obs-cdss-fhir/CodeSystem/ml-response-cs> ;
-         fhir:reference [ fhir:v "CodeSystem/ml-response-cs" ]
-       ] ;
-       fhir:name [ fhir:v "Model Responses Code System" ] ;
-       fhir:description [ fhir:v "Model Responses Code System" ] ;
-       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "CodeSystem" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://joofio.github.io/obs-cdss-fhir/CodeSystem/ml-type-cs> ;
-         fhir:reference [ fhir:v "CodeSystem/ml-type-cs" ]
-       ] ;
-       fhir:name [ fhir:v "Machine Learning Models code system" ] ;
-       fhir:description [ fhir:v "Machine Learning Models code system" ] ;
-       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+       fhir:name [ fhir:v "448492b8-0911-11ee-8a5c-2e8ac521fb46" ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
@@ -407,14 +310,85 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MLModel> ;
+         fhir:reference [ fhir:v "StructureDefinition/MLModel" ]
+       ] ;
+       fhir:name [ fhir:v "Machine Learning Model" ] ;
+       fhir:description [ fhir:v "The profile for Defining Machine Learning Models for CDSS" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://joofio.github.io/obs-cdss-fhir/StructureDefinition/ObsResult> ;
+         fhir:reference [ fhir:v "StructureDefinition/ObsResult" ]
+       ] ;
+       fhir:name [ fhir:v "Machine Learning Model" ] ;
+       fhir:description [ fhir:v "The profile for Defining Machine Learning Models for CDSS" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://joofio.github.io/obs-cdss-fhir/CodeSystem/ml-type-cs> ;
+         fhir:reference [ fhir:v "CodeSystem/ml-type-cs" ]
+       ] ;
+       fhir:name [ fhir:v "Machine Learning Models code system" ] ;
+       fhir:description [ fhir:v "Machine Learning Models code system" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://joofio.github.io/obs-cdss-fhir/ValueSet/ml-type-vs> ;
+         fhir:reference [ fhir:v "ValueSet/ml-type-vs" ]
+       ] ;
+       fhir:name [ fhir:v "Machine Learning Models value set" ] ;
+       fhir:description [ fhir:v "Machine Learning Models value set" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageForCDSS> ;
+         fhir:reference [ fhir:v "StructureDefinition/MessageForCDSS" ]
+       ] ;
+       fhir:name [ fhir:v "Message bundle for request or response" ] ;
+       fhir:description [ fhir:v "The message for response or request, containing the prediction/input" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageHeaderCDSS> ;
+         fhir:reference [ fhir:v "StructureDefinition/MessageHeaderCDSS" ]
+       ] ;
+       fhir:name [ fhir:v "Message Header for request and response" ] ;
+       fhir:description [ fhir:v "Message Header for request and response" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "Bundle" ]
        ] ) ;
        fhir:reference [
          fhir:link <https://joofio.github.io/obs-cdss-fhir/Bundle/MessageForCDSSRequest> ;
          fhir:reference [ fhir:v "Bundle/MessageForCDSSRequest" ]
        ] ;
-       fhir:name [ fhir:v "Example of Request for MessageForRequest" ] ;
-       fhir:description [ fhir:v "Example of Request for MessageForRequest" ] ;
+       fhir:name [ fhir:v "MessageForCDSSRequest" ] ;
        fhir:profile ( [
          fhir:v "https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageForCDSS"^^xsd:anyURI ;
          fhir:link <https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageForCDSS>
@@ -428,72 +402,27 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "Bundle" ]
+         fhir:value [ fhir:v "CodeSystem" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://joofio.github.io/obs-cdss-fhir/Bundle/MessageForCDSSResponse> ;
-         fhir:reference [ fhir:v "Bundle/MessageForCDSSResponse" ]
+         fhir:link <https://joofio.github.io/obs-cdss-fhir/CodeSystem/ml-response-cs> ;
+         fhir:reference [ fhir:v "CodeSystem/ml-response-cs" ]
        ] ;
-       fhir:name [ fhir:v "Example of Request for MessageForRequest" ] ;
-       fhir:description [ fhir:v "Example of Request for MessageForRequest" ] ;
-       fhir:profile ( [
-         fhir:v "https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageForCDSS"^^xsd:anyURI ;
-         fhir:link <https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageForCDSS>
-       ] [
-         fhir:v "https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageForCDSS"^^xsd:anyURI ;
-         fhir:link <https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageForCDSS>
-       ] [
-         fhir:v "https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageHeaderCDSS"^^xsd:anyURI ;
-         fhir:link <https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageHeaderCDSS>
-       ] )
+       fhir:name [ fhir:v "Model Responses Code System" ] ;
+       fhir:description [ fhir:v "Model Responses Code System" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "MessageHeader" ]
+         fhir:value [ fhir:v "ValueSet" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://joofio.github.io/obs-cdss-fhir/MessageHeader/MessageHeaderCDSSExampleRequest> ;
-         fhir:reference [ fhir:v "MessageHeader/MessageHeaderCDSSExampleRequest" ]
+         fhir:link <https://joofio.github.io/obs-cdss-fhir/ValueSet/ml-response-vs> ;
+         fhir:reference [ fhir:v "ValueSet/ml-response-vs" ]
        ] ;
-       fhir:name [ fhir:v "Example of Request for MessageForRequest" ] ;
-       fhir:description [ fhir:v "Example of Request for MessageForRequest" ] ;
-       fhir:profile ( [
-         fhir:v "https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageHeaderCDSS"^^xsd:anyURI ;
-         fhir:link <https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageHeaderCDSS>
-       ] [
-         fhir:v "https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageHeaderCDSS"^^xsd:anyURI ;
-         fhir:link <https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageHeaderCDSS>
-       ] )
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "MessageHeader" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://joofio.github.io/obs-cdss-fhir/MessageHeader/MessageHeaderCDSSExampleResponse> ;
-         fhir:reference [ fhir:v "MessageHeader/MessageHeaderCDSSExampleResponse" ]
-       ] ;
-       fhir:name [ fhir:v "Example of response for CDSS" ] ;
-       fhir:description [ fhir:v "Example of response for MessageForRequest" ] ;
-       fhir:profile ( [
-         fhir:v "https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageHeaderCDSS"^^xsd:anyURI ;
-         fhir:link <https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageHeaderCDSS>
-       ] [
-         fhir:v "https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageHeaderCDSS"^^xsd:anyURI ;
-         fhir:link <https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageHeaderCDSS>
-       ] )
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "Observation" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://joofio.github.io/obs-cdss-fhir/Observation/Obs1> ;
-         fhir:reference [ fhir:v "Observation/Obs1" ]
-       ] ;
-       fhir:name [ fhir:v "Example of Request for MessageForRequest" ] ;
-       fhir:description [ fhir:v "Example of Request for MessageForRequest" ] ;
-       fhir:isExample [ fhir:v "true"^^xsd:boolean ]
+       fhir:name [ fhir:v "Model Responses value set" ] ;
+       fhir:description [ fhir:v "Model Responses value set" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
@@ -504,6 +433,18 @@
          fhir:reference [ fhir:v "OperationDefinition/predict" ]
        ] ;
        fhir:name [ fhir:v "predict" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://joofio.github.io/obs-cdss-fhir/ValueSet/my-vs> ;
+         fhir:reference [ fhir:v "ValueSet/my-vs" ]
+       ] ;
+       fhir:name [ fhir:v "value set" ] ;
+       fhir:description [ fhir:v "value set" ] ;
        fhir:isExample [ fhir:v "false"^^xsd:boolean ]
      ] ) ;
      fhir:page [

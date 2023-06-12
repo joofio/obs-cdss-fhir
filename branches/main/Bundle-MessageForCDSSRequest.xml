@@ -34,16 +34,592 @@
       <Observation>
         <id value="Obs1"/>
         <text>
-          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="Obs1"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;Obs1&quot; </p></div><p><b>status</b>: final</p><p><b>code</b>: IDADE_MATERNA <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="CodeSystem-my-cs.html">Code system</a>#IDADE_MATERNA)</span></p><p><b>value</b>: 37</p></div>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="Obs1"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;Obs1&quot; </p></div><p><b>status</b>: final</p><p><b>code</b>: IDENTIFICADOR <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (my-cs#IDENTIFICADOR)</span></p><p><b>value</b>: 106401</p></div>
         </text>
         <status value="final"/>
         <code>
           <coding>
-            <system value="https://joofio.github.io/obs-cdss-fhir/CodeSystem/my-cs"/>
-            <code value="IDADE_MATERNA"/>
+            <system value="http://example.org/CodeSystem/my-cs"/>
+            <code value="IDENTIFICADOR"/>
+            <display value="IDENTIFICADOR"/>
           </coding>
         </code>
-        <valueInteger value="37"/>
+        <valueInteger value="106401"/>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <resource>
+      <Observation>
+        <id value="Obs2"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="Obs2"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;Obs2&quot; </p></div><p><b>status</b>: final</p><p><b>code</b>: DATA PARTO <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (my-cs#DATA_PARTO)</span></p><p><b>value</b>: 10/10/2022</p></div>
+        </text>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://example.org/CodeSystem/my-cs"/>
+            <code value="DATA_PARTO"/>
+            <display value="DATA PARTO"/>
+          </coding>
+        </code>
+        <valueString value="10/10/2022"/>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <resource>
+      <Observation>
+        <id value="Obs3"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="Obs3"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;Obs3&quot; </p></div><p><b>status</b>: final</p><p><b>code</b>: IDADE MATERNA <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (my-cs#IDADE_MATERNA)</span></p><p><b>value</b>: 32</p></div>
+        </text>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://example.org/CodeSystem/my-cs"/>
+            <code value="IDADE_MATERNA"/>
+            <display value="IDADE MATERNA"/>
+          </coding>
+        </code>
+        <valueQuantity>
+          <value value="32"/>
+        </valueQuantity>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <resource>
+      <Observation>
+        <id value="Obs4"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="Obs4"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;Obs4&quot; </p></div><p><b>status</b>: final</p><p><b>code</b>: GS <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (my-cs#GS)</span></p><p><b>value</b>: B,RH_POSITIVO</p></div>
+        </text>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://example.org/CodeSystem/my-cs"/>
+            <code value="GS"/>
+            <display value="GS"/>
+          </coding>
+        </code>
+        <valueString value="B,RH_POSITIVO"/>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <resource>
+      <Observation>
+        <id value="Obs5"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="Obs5"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;Obs5&quot; </p></div><p><b>status</b>: final</p><p><b>code</b>: PESO INICIAL <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (my-cs#PESO_INICIAL)</span></p><p><b>value</b>: 45</p></div>
+        </text>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://example.org/CodeSystem/my-cs"/>
+            <code value="PESO_INICIAL"/>
+            <display value="PESO INICIAL"/>
+          </coding>
+        </code>
+        <valueQuantity>
+          <value value="45"/>
+        </valueQuantity>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <resource>
+      <Observation>
+        <id value="Obs6"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="Obs6"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;Obs6&quot; </p></div><p><b>status</b>: final</p><p><b>code</b>: IMC <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (my-cs#IMC)</span></p><p><b>value</b>: 17.6</p></div>
+        </text>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://example.org/CodeSystem/my-cs"/>
+            <code value="IMC"/>
+            <display value="IMC"/>
+          </coding>
+        </code>
+        <valueQuantity>
+          <value value="17.6"/>
+        </valueQuantity>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <resource>
+      <Observation>
+        <id value="Obs7"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="Obs7"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;Obs7&quot; </p></div><p><b>status</b>: final</p><p><b>code</b>: CIGARROS <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (my-cs#CIGARROS)</span></p><p><b>value</b>: SIM</p></div>
+        </text>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://example.org/CodeSystem/my-cs"/>
+            <code value="CIGARROS"/>
+            <display value="CIGARROS"/>
+          </coding>
+        </code>
+        <valueString value="SIM"/>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <resource>
+      <Observation>
+        <id value="Obs8"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="Obs8"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;Obs8&quot; </p></div><p><b>status</b>: final</p><p><b>code</b>: A GESTA <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (my-cs#A_GESTA)</span></p><p><b>value</b>: 1</p></div>
+        </text>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://example.org/CodeSystem/my-cs"/>
+            <code value="A_GESTA"/>
+            <display value="A GESTA"/>
+          </coding>
+        </code>
+        <valueInteger value="1"/>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <resource>
+      <Observation>
+        <id value="Obs9"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="Obs9"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;Obs9&quot; </p></div><p><b>status</b>: final</p><p><b>code</b>: TIPO GRAVIDEZ <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (my-cs#TIPO_GRAVIDEZ)</span></p><p><b>value</b>: ESPONTANEA</p></div>
+        </text>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://example.org/CodeSystem/my-cs"/>
+            <code value="TIPO_GRAVIDEZ"/>
+            <display value="TIPO GRAVIDEZ"/>
+          </coding>
+        </code>
+        <valueString value="ESPONTANEA"/>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <resource>
+      <Observation>
+        <id value="Obs10"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="Obs10"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;Obs10&quot; </p></div><p><b>status</b>: final</p><p><b>code</b>: VIGIADA <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (my-cs#VIGIADA)</span></p><p><b>value</b>: S</p></div>
+        </text>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://example.org/CodeSystem/my-cs"/>
+            <code value="VIGIADA"/>
+            <display value="VIGIADA"/>
+          </coding>
+        </code>
+        <valueString value="S"/>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <resource>
+      <Observation>
+        <id value="Obs11"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="Obs11"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;Obs11&quot; </p></div><p><b>status</b>: final</p><p><b>code</b>: NUMERO CONSULTAS PRE NATAL <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (my-cs#NUMERO_CONSULTAS_PRE_NATAL)</span></p><p><b>value</b>: 11</p></div>
+        </text>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://example.org/CodeSystem/my-cs"/>
+            <code value="NUMERO_CONSULTAS_PRE_NATAL"/>
+            <display value="NUMERO CONSULTAS PRE NATAL"/>
+          </coding>
+        </code>
+        <valueQuantity>
+          <value value="11"/>
+        </valueQuantity>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <resource>
+      <Observation>
+        <id value="Obs12"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="Obs12"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;Obs12&quot; </p></div><p><b>status</b>: final</p><p><b>code</b>: VIGIADA HOSPITAL <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (my-cs#VIGIADA_HOSPITAL)</span></p><p><b>value</b>: Sim</p></div>
+        </text>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://example.org/CodeSystem/my-cs"/>
+            <code value="VIGIADA_HOSPITAL"/>
+            <display value="VIGIADA HOSPITAL"/>
+          </coding>
+        </code>
+        <valueString value="Sim"/>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <resource>
+      <Observation>
+        <id value="Obs13"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="Obs13"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;Obs13&quot; </p></div><p><b>status</b>: final</p><p><b>code</b>: VIGIADA CENTRO SAUDE <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (my-cs#VIGIADA_CENTRO_SAUDE)</span></p><p><b>value</b>: Sim</p></div>
+        </text>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://example.org/CodeSystem/my-cs"/>
+            <code value="VIGIADA_CENTRO_SAUDE"/>
+            <display value="VIGIADA CENTRO SAUDE"/>
+          </coding>
+        </code>
+        <valueString value="Sim"/>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <resource>
+      <Observation>
+        <id value="Obs14"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="Obs14"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;Obs14&quot; </p></div><p><b>status</b>: final</p><p><b>code</b>: VIGIADA NESTE HOSPITAL <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (my-cs#VIGIADA_NESTE_HOSPITAL)</span></p><p><b>value</b>: Sim</p></div>
+        </text>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://example.org/CodeSystem/my-cs"/>
+            <code value="VIGIADA_NESTE_HOSPITAL"/>
+            <display value="VIGIADA NESTE HOSPITAL"/>
+          </coding>
+        </code>
+        <valueString value="Sim"/>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <resource>
+      <Observation>
+        <id value="Obs15"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="Obs15"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;Obs15&quot; </p></div><p><b>status</b>: final</p><p><b>code</b>: ESTIMATIVA PESO ECO 31 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (my-cs#ESTIMATIVA_PESO_ECO_31)</span></p><p><b>value</b>: 1533</p></div>
+        </text>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://example.org/CodeSystem/my-cs"/>
+            <code value="ESTIMATIVA_PESO_ECO_31"/>
+            <display value="ESTIMATIVA PESO ECO 31"/>
+          </coding>
+        </code>
+        <valueQuantity>
+          <value value="1533"/>
+        </valueQuantity>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <resource>
+      <Observation>
+        <id value="Obs16"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="Obs16"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;Obs16&quot; </p></div><p><b>status</b>: final</p><p><b>code</b>: ESTIMATIVA PESO ECO 35 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (my-cs#ESTIMATIVA_PESO_ECO_35)</span></p><p><b>value</b>: 2214</p></div>
+        </text>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://example.org/CodeSystem/my-cs"/>
+            <code value="ESTIMATIVA_PESO_ECO_35"/>
+            <display value="ESTIMATIVA PESO ECO 35"/>
+          </coding>
+        </code>
+        <valueQuantity>
+          <value value="2214"/>
+        </valueQuantity>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <resource>
+      <Observation>
+        <id value="Obs17"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="Obs17"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;Obs17&quot; </p></div><p><b>status</b>: final</p><p><b>code</b>: ESTIMATIVA PESO ECO 37 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (my-cs#ESTIMATIVA_PESO_ECO_37)</span></p><p><b>value</b>: 2743</p></div>
+        </text>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://example.org/CodeSystem/my-cs"/>
+            <code value="ESTIMATIVA_PESO_ECO_37"/>
+            <display value="ESTIMATIVA PESO ECO 37"/>
+          </coding>
+        </code>
+        <valueQuantity>
+          <value value="2743"/>
+        </valueQuantity>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <resource>
+      <Observation>
+        <id value="Obs18"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="Obs18"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;Obs18&quot; </p></div><p><b>status</b>: final</p><p><b>code</b>: APRESENTACAO 37 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (my-cs#APRESENTACAO_37)</span></p><p><b>value</b>: 1</p></div>
+        </text>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://example.org/CodeSystem/my-cs"/>
+            <code value="APRESENTACAO_37"/>
+            <display value="APRESENTACAO 37"/>
+          </coding>
+        </code>
+        <valueQuantity>
+          <value value="1"/>
+        </valueQuantity>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <resource>
+      <Observation>
+        <id value="Obs19"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="Obs19"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;Obs19&quot; </p></div><p><b>status</b>: final</p><p><b>code</b>: APRESENTACAO 35 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (my-cs#APRESENTACAO_35)</span></p><p><b>value</b>: 1</p></div>
+        </text>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://example.org/CodeSystem/my-cs"/>
+            <code value="APRESENTACAO_35"/>
+            <display value="APRESENTACAO 35"/>
+          </coding>
+        </code>
+        <valueQuantity>
+          <value value="1"/>
+        </valueQuantity>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <resource>
+      <Observation>
+        <id value="Obs20"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="Obs20"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;Obs20&quot; </p></div><p><b>status</b>: final</p><p><b>code</b>: APRESENTACAO 31 <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (my-cs#APRESENTACAO_31)</span></p><p><b>value</b>: 1</p></div>
+        </text>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://example.org/CodeSystem/my-cs"/>
+            <code value="APRESENTACAO_31"/>
+            <display value="APRESENTACAO 31"/>
+          </coding>
+        </code>
+        <valueQuantity>
+          <value value="1"/>
+        </valueQuantity>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <resource>
+      <Observation>
+        <id value="Obs21"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="Obs21"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;Obs21&quot; </p></div><p><b>status</b>: final</p><p><b>code</b>: G TERAPEUTICA <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (my-cs#G_TERAPEUTICA)</span></p><p><b>value</b>: Ferrum-fol 1-&gt; 1+1, iodo; sal iodado,, sal iodado; Inicia voltrex (1000)  1 cp 8/8 horas;  Ferro EV 300+ 300- venofer</p></div>
+        </text>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://example.org/CodeSystem/my-cs"/>
+            <code value="G_TERAPEUTICA"/>
+            <display value="G TERAPEUTICA"/>
+          </coding>
+        </code>
+        <valueString value="Ferrum-fol 1-&gt; 1+1, iodo; sal iodado,, sal iodado; Inicia voltrex (1000)  1 cp 8/8 horas;  Ferro EV 300+ 300- venofer"/>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <resource>
+      <Observation>
+        <id value="Obs22"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="Obs22"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;Obs22&quot; </p></div><p><b>status</b>: final</p><p><b>code</b>: NUM RN <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (my-cs#NUM_RN)</span></p><p><b>value</b>: 1</p></div>
+        </text>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://example.org/CodeSystem/my-cs"/>
+            <code value="NUM_RN"/>
+            <display value="NUM RN"/>
+          </coding>
+        </code>
+        <valueInteger value="1"/>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <resource>
+      <Observation>
+        <id value="Obs23"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="Obs23"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;Obs23&quot; </p></div><p><b>status</b>: final</p><p><b>code</b>: APRESENTACAO ADMISSAO <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (my-cs#APRESENTACAO_ADMISSAO)</span></p><p><b>value</b>: -1</p></div>
+        </text>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://example.org/CodeSystem/my-cs"/>
+            <code value="APRESENTACAO_ADMISSAO"/>
+            <display value="APRESENTACAO ADMISSAO"/>
+          </coding>
+        </code>
+        <valueString value="-1"/>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <resource>
+      <Observation>
+        <id value="Obs24"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="Obs24"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;Obs24&quot; </p></div><p><b>status</b>: final</p><p><b>code</b>: IDADE GESTACIONAL ADMISSAO <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (my-cs#IDADE_GESTACIONAL_ADMISSAO)</span></p><p><b>value</b>: 39.4</p></div>
+        </text>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://example.org/CodeSystem/my-cs"/>
+            <code value="IDADE_GESTACIONAL_ADMISSAO"/>
+            <display value="IDADE GESTACIONAL ADMISSAO"/>
+          </coding>
+        </code>
+        <valueQuantity>
+          <value value="39.4"/>
+        </valueQuantity>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <resource>
+      <Observation>
+        <id value="Obs25"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="Obs25"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;Obs25&quot; </p></div><p><b>status</b>: final</p><p><b>code</b>: TRAB PARTO ENTRADA ESPONTANEO <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (my-cs#TRAB_PARTO_ENTRADA_ESPONTANEO)</span></p><p><b>value</b>: SIM</p></div>
+        </text>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://example.org/CodeSystem/my-cs"/>
+            <code value="TRAB_PARTO_ENTRADA_ESPONTANEO"/>
+            <display value="TRAB PARTO ENTRADA ESPONTANEO"/>
+          </coding>
+        </code>
+        <valueString value="SIM"/>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <resource>
+      <Observation>
+        <id value="Obs26"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="Obs26"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;Obs26&quot; </p></div><p><b>status</b>: final</p><p><b>code</b>: TIPO PARTO <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (my-cs#TIPO_PARTO)</span></p><p><b>value</b>: Parto eutócico cefálico</p></div>
+        </text>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://example.org/CodeSystem/my-cs"/>
+            <code value="TIPO_PARTO"/>
+            <display value="TIPO PARTO"/>
+          </coding>
+        </code>
+        <valueString value="Parto eutócico cefálico"/>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <resource>
+      <Observation>
+        <id value="Obs27"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="Obs27"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;Obs27&quot; </p></div><p><b>status</b>: final</p><p><b>code</b>: APRESENTACAO NO PARTO <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (my-cs#APRESENTACAO_NO_PARTO)</span></p><p><b>value</b>: Cefálica de vértice</p></div>
+        </text>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://example.org/CodeSystem/my-cs"/>
+            <code value="APRESENTACAO_NO_PARTO"/>
+            <display value="APRESENTACAO NO PARTO"/>
+          </coding>
+        </code>
+        <valueString value="Cefálica de vértice"/>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <resource>
+      <Observation>
+        <id value="Obs28"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="Obs28"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;Obs28&quot; </p></div><p><b>status</b>: final</p><p><b>code</b>: TRAB PARTO NO PARTO <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (my-cs#TRAB_PARTO_NO_PARTO)</span></p><p><b>value</b>: Espontâneo</p></div>
+        </text>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://example.org/CodeSystem/my-cs"/>
+            <code value="TRAB_PARTO_NO_PARTO"/>
+            <display value="TRAB PARTO NO PARTO"/>
+          </coding>
+        </code>
+        <valueString value="Espontâneo"/>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <resource>
+      <Observation>
+        <id value="Obs29"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="Obs29"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;Obs29&quot; </p></div><p><b>status</b>: final</p><p><b>code</b>: SEMANAS GESTACAO PARTO <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (my-cs#SEMANAS_GESTACAO_PARTO)</span></p><p><b>value</b>: 39.4</p></div>
+        </text>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://example.org/CodeSystem/my-cs"/>
+            <code value="SEMANAS_GESTACAO_PARTO"/>
+            <display value="SEMANAS GESTACAO PARTO"/>
+          </coding>
+        </code>
+        <valueQuantity>
+          <value value="39.4"/>
+        </valueQuantity>
+      </Observation>
+    </resource>
+  </entry>
+  <entry>
+    <resource>
+      <Observation>
+        <id value="Obs30"/>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="Obs30"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;Obs30&quot; </p></div><p><b>status</b>: final</p><p><b>code</b>: GRUPO ROBSON <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (my-cs#GRUPO_ROBSON)</span></p><p><b>value</b>: 1</p></div>
+        </text>
+        <status value="final"/>
+        <code>
+          <coding>
+            <system value="http://example.org/CodeSystem/my-cs"/>
+            <code value="GRUPO_ROBSON"/>
+            <display value="GRUPO ROBSON"/>
+          </coding>
+        </code>
+        <valueString value="1"/>
       </Observation>
     </resource>
   </entry>
