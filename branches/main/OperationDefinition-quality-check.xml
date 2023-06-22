@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<OperationDefinition xmlns="http://hl7.org/fhir">
+  <id value="quality-check"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p>URL: [base]/$quality_check</p><p>Parameters</p><table class="grid"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Scope</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>IN</td><td>parameters</td><td/><td>1..1</td><td><a href="http://hl7.org/fhir/R5/bundle.html">Bundle</a></td><td/><td><div><p>Set of parameters</p>
+</div></td></tr><tr><td>OUT</td><td>score</td><td/><td>1..1</td><td><a href="http://hl7.org/fhir/R5/bundle.html">Bundle</a></td><td/><td><div><p>Prediction</p>
+</div></td></tr></table></div>
+  </text>
+  <url value="http://hl7.pt/fhir/OperationDefinition/quality_check"/>
+  <version value="0.1.0"/>
+  <name value="quality_check"/>
+  <title value="quality_check"/>
+  <status value="active"/>
+  <kind value="operation"/>
+  <date value="2023-06-22T10:40:10+00:00"/>
+  <affectsState value="false"/>
+  <code value="quality_check"/>
+  <system value="true"/>
+  <type value="false"/>
+  <instance value="false"/>
+  <parameter>
+    <name value="parameters"/>
+    <use value="in"/>
+    <min value="1"/>
+    <max value="1"/>
+    <documentation value="Set of parameters"/>
+    <type value="Bundle"/>
+  </parameter>
+  <parameter>
+    <name value="score"/>
+    <use value="out"/>
+    <min value="1"/>
+    <max value="1"/>
+    <documentation value="Prediction"/>
+    <type value="Bundle"/>
+  </parameter>
+</OperationDefinition>

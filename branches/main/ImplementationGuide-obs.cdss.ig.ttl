@@ -16,7 +16,7 @@
   fhir:version [ fhir:v "0.1.0"] ; # 
   fhir:name [ fhir:v "OBSCDSS"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2023-06-12T12:03:44+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-06-22T10:40:10+00:00"^^xsd:dateTime] ; # 
   fhir:packageId [ fhir:v "obs.cdss.ig"] ; # 
   fhir:license [ fhir:v "CC0-1.0"] ; # 
   fhir:fhirVersion ( [ fhir:v "5.0.0"] ) ; # 
@@ -292,41 +292,11 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "Device" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://joofio.github.io/obs-cdss-fhir/Device/MLModelExample> ;
-         fhir:reference [ fhir:v "Device/MLModelExample" ]
-       ] ;
-       fhir:name [ fhir:v "Example of Request for MessageForRequest" ] ;
-       fhir:description [ fhir:v "Example of Request for MessageForRequest" ] ;
-       fhir:profile ( [
-         fhir:v "https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MLModel"^^xsd:anyURI ;
-         fhir:link <https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MLModel>
-       ] [
-         fhir:v "https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MLModel"^^xsd:anyURI ;
-         fhir:link <https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MLModel>
-       ] )
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
          fhir:link <https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MLModel> ;
          fhir:reference [ fhir:v "StructureDefinition/MLModel" ]
-       ] ;
-       fhir:name [ fhir:v "Machine Learning Model" ] ;
-       fhir:description [ fhir:v "The profile for Defining Machine Learning Models for CDSS" ] ;
-       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "StructureDefinition:resource" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://joofio.github.io/obs-cdss-fhir/StructureDefinition/ObsResult> ;
-         fhir:reference [ fhir:v "StructureDefinition/ObsResult" ]
        ] ;
        fhir:name [ fhir:v "Machine Learning Model" ] ;
        fhir:description [ fhir:v "The profile for Defining Machine Learning Models for CDSS" ] ;
@@ -433,6 +403,17 @@
          fhir:reference [ fhir:v "OperationDefinition/predict" ]
        ] ;
        fhir:name [ fhir:v "predict" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "OperationDefinition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://joofio.github.io/obs-cdss-fhir/OperationDefinition/quality-check> ;
+         fhir:reference [ fhir:v "OperationDefinition/quality-check" ]
+       ] ;
+       fhir:name [ fhir:v "quality-check" ] ;
        fhir:isExample [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [

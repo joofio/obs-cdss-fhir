@@ -27,6 +27,9 @@
   ] [
      fhir:fullUrl [ fhir:v "http://localhost:8080/fhir/Observation/4484920e-0911-11ee-8a5c-2e8ac521fb46"^^xsd:anyURI ] ;
      fhir:resource ( <http://localhost:8080/fhir/Observation/4484920e-0911-11ee-8a5c-2e8ac521fb46> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://localhost:8080/fhir/Device/MLModelExample"^^xsd:anyURI ] ;
+     fhir:resource ( <http://localhost:8080/fhir/Device/MLModelExample> )
   ] ) . # 
 
 <http://localhost:8080/fhir/MessageHeader/44849290-0911-11ee-8a5c-2e8ac521fb46> a fhir:MessageHeader ;
@@ -111,6 +114,32 @@
      a fhir:Quantity ;
      fhir:value [ fhir:v "16"^^xsd:decimal ]
   ] . # 
+
+<http://localhost:8080/fhir/Device/MLModelExample> a fhir:Device ;
+  fhir:id [ fhir:v "MLModelExample"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MLModel"^^xsd:anyURI ;
+       fhir:link <https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MLModel>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Device</b><a name=\"MLModelExample\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Device &quot;MLModelExample&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-MLModel.html\">Machine Learning Model</a></p></div><p><b>identifier</b>: id: 1</p><p><b>status</b>: active</p><p><b>type</b>: Light Gradient Boosting <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-ml-type-cs.html\">Machine Learning Models code system</a>#LGBM)</span></p><h3>Versions</h3><table class=\"grid\"><tr><td>-</td><td><b>Value</b></td></tr><tr><td>*</td><td>1</td></tr></table></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:value [ fhir:v "1" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:type ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "https://joofio.github.io/obs-cdss-fhir/CodeSystem/ml-type-cs"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "LGBM" ]
+     ] )
+  ] ) ; # 
+  fhir:version ( [
+     fhir:value [ fhir:v "1" ]
+  ] ) . # 
 
 # -------------------------------------------------------------------------------------
 

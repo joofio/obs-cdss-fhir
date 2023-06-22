@@ -9,7 +9,7 @@
   <version value="0.1.0"/>
   <name value="OBSCDSS"/>
   <status value="draft"/>
-  <date value="2023-06-12T12:03:44+00:00"/>
+  <date value="2023-06-22T10:40:10+00:00"/>
   <packageId value="obs.cdss.ig"/>
   <license value="CC0-1.0"/>
   <fhirVersion value="5.0.0"/>
@@ -248,33 +248,10 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Device"/>
-      </extension>
-      <reference>
-        <reference value="Device/MLModelExample"/>
-      </reference>
-      <name value="Example of Request for MessageForRequest"/>
-      <description value="Example of Request for MessageForRequest"/>
-      <profile value="https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MLModel"/>
-      <profile value="https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MLModel"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
         <reference value="StructureDefinition/MLModel"/>
-      </reference>
-      <name value="Machine Learning Model"/>
-      <description value="The profile for Defining Machine Learning Models for CDSS"/>
-      <isExample value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/ObsResult"/>
       </reference>
       <name value="Machine Learning Model"/>
       <description value="The profile for Defining Machine Learning Models for CDSS"/>
@@ -366,6 +343,16 @@
         <reference value="OperationDefinition/predict"/>
       </reference>
       <name value="predict"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="OperationDefinition"/>
+      </extension>
+      <reference>
+        <reference value="OperationDefinition/quality-check"/>
+      </reference>
+      <name value="quality-check"/>
       <isExample value="false"/>
     </resource>
     <resource>
