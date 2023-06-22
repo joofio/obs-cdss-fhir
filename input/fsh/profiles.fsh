@@ -12,11 +12,7 @@ Parent: Device
 
 
 
-Profile: ObsResult
-Title: "Machine Learning Model"
-Description: "The profile for Defining Machine Learning Models for CDSS"
-Parent: Observation
-* meta.profile 1..*
+
 
 
 
@@ -40,10 +36,10 @@ Description: "The message for response or request, containing the prediction/inp
 * entry ^slicing.discriminator.type = #value
 * entry ^slicing.discriminator.path = "name"
 * entry ^slicing.rules = #open
-* entry contains messageheader 1..1 MS     and  data 0..1 MS  
+* entry contains messageheader 1..1 MS     and  data 1..* MS  
 
 * entry[messageheader].resource only MessageHeaderCDSS
-* entry[data].resource only Observation or ObsResult
+* entry[data].resource only Observation or MLModel
 
 
 

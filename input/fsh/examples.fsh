@@ -1,70 +1,3 @@
-
-Instance: 448492b8-0911-11ee-8a5c-2e8ac521fb46
-InstanceOf: Bundle
-Usage: #example
-* meta.profile = "https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageForRequest"
-* type = #message
-* entry[0].fullUrl = "http://localhost:8080/fhir/MessageHeader/44849290-0911-11ee-8a5c-2e8ac521fb46"
-* entry[=].resource = Inline-Instance-for-448492b8-0911-11ee-8a5c-2e8ac521fb46-1
-* entry[+].fullUrl = "http://localhost:8080/fhir/Observation/44849114-0911-11ee-8a5c-2e8ac521fb46"
-* entry[=].resource = Inline-Instance-for-448492b8-0911-11ee-8a5c-2e8ac521fb46-2
-* entry[+].fullUrl = "http://localhost:8080/fhir/Observation/448491f0-0911-11ee-8a5c-2e8ac521fb46"
-* entry[=].resource = Inline-Instance-for-448492b8-0911-11ee-8a5c-2e8ac521fb46-3
-* entry[+].fullUrl = "http://localhost:8080/fhir/Observation/4484920e-0911-11ee-8a5c-2e8ac521fb46"
-* entry[=].resource = Inline-Instance-for-448492b8-0911-11ee-8a5c-2e8ac521fb46-4
-
-Instance: Inline-Instance-for-448492b8-0911-11ee-8a5c-2e8ac521fb46-1
-InstanceOf: MessageHeaderCDSS
-Usage: #inline
-* id = "44849290-0911-11ee-8a5c-2e8ac521fb46"
-* eventCoding.code = #obs-cds
-* destination.name = "Requester"
-* source.name = "CDSS-system"
-
-Instance: Inline-Instance-for-448492b8-0911-11ee-8a5c-2e8ac521fb46-2
-InstanceOf: Observation
-Usage: #inline
-* id = "44849114-0911-11ee-8a5c-2e8ac521fb46"
-* status = #final
-* code = $my-cs#PREDICTION "PREDICTION"
-* valueCodeableConcept = $my-cs#Vaginal
-
-Instance: Inline-Instance-for-448492b8-0911-11ee-8a5c-2e8ac521fb46-3
-InstanceOf: Observation
-Usage: #inline
-* id = "448491f0-0911-11ee-8a5c-2e8ac521fb46"
-* status = #final
-* code = $my-cs#Pvag "Percentage Vaginal"
-* valueQuantity.value = 84
-
-Instance: Inline-Instance-for-448492b8-0911-11ee-8a5c-2e8ac521fb46-4
-InstanceOf: Observation
-Usage: #inline
-* id = "4484920e-0911-11ee-8a5c-2e8ac521fb46"
-* status = #final
-* code = $my-cs#Pcsec "Percentage C-section"
-* valueQuantity.value = 16
-
-
-
-
-
-////////
-
-
-
-Instance: MLModelExample
-InstanceOf: MLModel
-Description: "Example of Request for MessageForRequest"
-Title: "Example of Request for MessageForRequest"
-Usage: #example
-
-* identifier.value = "1"
-* status = #active
-* type = MlTypesCS#LGBM
-* version.value = "1"
-
-
 Instance: MessageForCDSSRequest
 InstanceOf: MessageForCDSS
 Usage: #example
@@ -320,3 +253,69 @@ Usage: #inline
 * status = #final
 * code = $my-cs#GRUPO_ROBSON "GRUPO ROBSON"
 * valueString = "1"
+
+
+
+/////////////////// Response ///////////
+
+
+Instance: 448492b8-0911-11ee-8a5c-2e8ac521fb46
+InstanceOf: Bundle
+Usage: #example
+* meta.profile = "https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageForRequest"
+* type = #message
+* entry[0].fullUrl = "http://localhost:8080/fhir/MessageHeader/44849290-0911-11ee-8a5c-2e8ac521fb46"
+* entry[=].resource = Inline-Instance-for-448492b8-0911-11ee-8a5c-2e8ac521fb46-1
+* entry[+].fullUrl = "http://localhost:8080/fhir/Observation/44849114-0911-11ee-8a5c-2e8ac521fb46"
+* entry[=].resource = Inline-Instance-for-448492b8-0911-11ee-8a5c-2e8ac521fb46-2
+* entry[+].fullUrl = "http://localhost:8080/fhir/Observation/448491f0-0911-11ee-8a5c-2e8ac521fb46"
+* entry[=].resource = Inline-Instance-for-448492b8-0911-11ee-8a5c-2e8ac521fb46-3
+* entry[+].fullUrl = "http://localhost:8080/fhir/Observation/4484920e-0911-11ee-8a5c-2e8ac521fb46"
+* entry[=].resource = Inline-Instance-for-448492b8-0911-11ee-8a5c-2e8ac521fb46-4
+* entry[+].fullUrl = "http://localhost:8080/fhir/Device/MLModelExample"
+* entry[=].resource = MLModelExample
+
+
+Instance: Inline-Instance-for-448492b8-0911-11ee-8a5c-2e8ac521fb46-1
+InstanceOf: MessageHeaderCDSS
+Usage: #inline
+* id = "44849290-0911-11ee-8a5c-2e8ac521fb46"
+* eventCoding.code = #obs-cds
+* destination.name = "Requester"
+* source.name = "CDSS-system"
+
+Instance: Inline-Instance-for-448492b8-0911-11ee-8a5c-2e8ac521fb46-2
+InstanceOf: Observation
+Usage: #inline
+* id = "44849114-0911-11ee-8a5c-2e8ac521fb46"
+* status = #final
+* code = $my-cs#PREDICTION "PREDICTION"
+* valueCodeableConcept = $my-cs#Vaginal
+
+Instance: Inline-Instance-for-448492b8-0911-11ee-8a5c-2e8ac521fb46-3
+InstanceOf: Observation
+Usage: #inline
+* id = "448491f0-0911-11ee-8a5c-2e8ac521fb46"
+* status = #final
+* code = $my-cs#Pvag "Percentage Vaginal"
+* valueQuantity.value = 84
+
+Instance: Inline-Instance-for-448492b8-0911-11ee-8a5c-2e8ac521fb46-4
+InstanceOf: Observation
+Usage: #inline
+* id = "4484920e-0911-11ee-8a5c-2e8ac521fb46"
+* status = #final
+* code = $my-cs#Pcsec "Percentage C-section"
+* valueQuantity.value = 16
+
+
+Instance: MLModelExample
+InstanceOf: MLModel
+Description: "Example of Request for MessageForRequest"
+Title: "Example of Request for MessageForRequest"
+Usage: #inline
+
+* identifier.value = "1"
+* status = #active
+* type = MlTypesCS#LGBM
+* version.value = "1"
