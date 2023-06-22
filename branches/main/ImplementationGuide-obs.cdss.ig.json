@@ -9,7 +9,7 @@
   "version" : "0.1.0",
   "name" : "OBSCDSS",
   "status" : "draft",
-  "date" : "2023-06-22T10:40:10+00:00",
+  "date" : "2023-06-22T11:40:33+00:00",
   "packageId" : "obs.cdss.ig",
   "license" : "CC0-1.0",
   "fhirVersion" : ["5.0.0"],
@@ -324,6 +324,17 @@
       "name" : "Code system",
       "description" : "Code system",
       "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Bundle"
+      }],
+      "reference" : {
+        "reference" : "Bundle/f879270e-10ee-11ee-afc7-2e8ac521fb46"
+      },
+      "name" : "f879270e-10ee-11ee-afc7-2e8ac521fb46",
+      "isExample" : true
     },
     {
       "extension" : [{

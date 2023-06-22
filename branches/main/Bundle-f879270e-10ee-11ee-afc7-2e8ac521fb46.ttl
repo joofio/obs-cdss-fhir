@@ -1,0 +1,286 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://joofio.github.io/obs-cdss-fhir/Bundle/f879270e-10ee-11ee-afc7-2e8ac521fb46> a fhir:Bundle ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "f879270e-10ee-11ee-afc7-2e8ac521fb46"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageForRequest"^^xsd:anyURI ;
+       fhir:link <https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageForRequest>
+     ] )
+  ] ; # 
+  fhir:type [ fhir:v "message"] ; # 
+  fhir:entry ( [
+     fhir:fullUrl [ fhir:v "http://localhost:8080/fhir/MessageHeader/f8791700-10ee-11ee-afc7-2e8ac521fb46"^^xsd:anyURI ] ;
+     fhir:resource ( <http://localhost:8080/fhir/MessageHeader/f8791700-10ee-11ee-afc7-2e8ac521fb46> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://localhost:8080/fhir/Device/mlmodel"^^xsd:anyURI ] ;
+     fhir:resource ( <http://localhost:8080/fhir/Device/mlmodel> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://localhost:8080/fhir/Observation/f8791246-10ee-11ee-afc7-2e8ac521fb46"^^xsd:anyURI ] ;
+     fhir:resource ( <http://localhost:8080/fhir/Observation/f8791246-10ee-11ee-afc7-2e8ac521fb46> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://localhost:8080/fhir/Observation/f87914b2-10ee-11ee-afc7-2e8ac521fb46"^^xsd:anyURI ] ;
+     fhir:resource ( <http://localhost:8080/fhir/Observation/f87914b2-10ee-11ee-afc7-2e8ac521fb46> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://localhost:8080/fhir/Observation/f879150c-10ee-11ee-afc7-2e8ac521fb46"^^xsd:anyURI ] ;
+     fhir:resource ( <http://localhost:8080/fhir/Observation/f879150c-10ee-11ee-afc7-2e8ac521fb46> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://localhost:8080/fhir/Observation/f8791552-10ee-11ee-afc7-2e8ac521fb46"^^xsd:anyURI ] ;
+     fhir:resource ( <http://localhost:8080/fhir/Observation/f8791552-10ee-11ee-afc7-2e8ac521fb46> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://localhost:8080/fhir/Observation/f87915c0-10ee-11ee-afc7-2e8ac521fb46"^^xsd:anyURI ] ;
+     fhir:resource ( <http://localhost:8080/fhir/Observation/f87915c0-10ee-11ee-afc7-2e8ac521fb46> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://localhost:8080/fhir/Observation/f8791606-10ee-11ee-afc7-2e8ac521fb46"^^xsd:anyURI ] ;
+     fhir:resource ( <http://localhost:8080/fhir/Observation/f8791606-10ee-11ee-afc7-2e8ac521fb46> )
+  ] [
+     fhir:fullUrl [ fhir:v "http://localhost:8080/fhir/Observation/f879164c-10ee-11ee-afc7-2e8ac521fb46"^^xsd:anyURI ] ;
+     fhir:resource ( <http://localhost:8080/fhir/Observation/f879164c-10ee-11ee-afc7-2e8ac521fb46> )
+  ] ) . # 
+
+<http://localhost:8080/fhir/MessageHeader/f8791700-10ee-11ee-afc7-2e8ac521fb46> a fhir:MessageHeader ;
+  fhir:id [ fhir:v "f8791700-10ee-11ee-afc7-2e8ac521fb46"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: MessageHeader</b><a name=\"f8791700-10ee-11ee-afc7-2e8ac521fb46\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource MessageHeader &quot;f8791700-10ee-11ee-afc7-2e8ac521fb46&quot; </p></div><p><b>event</b>: obs-dq (Details: [not stated] code obs-dq = 'obs-dq', stated as 'null')</p><h3>Destinations</h3><table class=\"grid\"><tr><td>-</td><td><b>Name</b></td></tr><tr><td>*</td><td>Requester</td></tr></table><h3>Sources</h3><table class=\"grid\"><tr><td>-</td><td><b>Name</b></td></tr><tr><td>*</td><td>DQ-system</td></tr></table></div>"
+  ] ; # 
+  fhir:event [
+     a fhir:Coding ;
+     fhir:code [ fhir:v "obs-dq" ]
+  ] ; # 
+  fhir:destination ( [
+     fhir:name [ fhir:v "Requester" ]
+  ] ) ; # 
+  fhir:source [
+     fhir:name [ fhir:v "DQ-system" ]
+  ] . # 
+
+<http://localhost:8080/fhir/Device/mlmodel> a fhir:Device ;
+  fhir:id [ fhir:v "mlmodel"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MLModel"^^xsd:anyURI ;
+       fhir:link <https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MLModel>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Device</b><a name=\"mlmodel\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Device &quot;mlmodel&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-MLModel.html\">Machine Learning Model</a></p></div><p><b>identifier</b>: id: 1</p><p><b>status</b>: active</p><blockquote><p><b>version</b></p><p><b>type</b>: IQR <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated])</span></p><p><b>value</b>: 0.1</p></blockquote><blockquote><p><b>version</b></p><p><b>type</b>: Missing <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated])</span></p><p><b>value</b>: 0.1</p></blockquote><blockquote><p><b>version</b></p><p><b>type</b>: Correctness <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated])</span></p><p><b>value</b>: 0.1</p></blockquote><blockquote><p><b>version</b></p><p><b>type</b>: expecations <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated])</span></p><p><b>value</b>: 0.1</p></blockquote><blockquote><p><b>version</b></p><p><b>type</b>: lof <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated])</span></p><p><b>value</b>: 0.1</p></blockquote><blockquote><p><b>version</b></p><p><b>type</b>: elliptic <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> ([not stated])</span></p><p><b>value</b>: 0.1</p></blockquote></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:value [ fhir:v "1" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:version ( [
+     fhir:type [
+       fhir:coding ( [
+         fhir:display [ fhir:v "IQR" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "0.1" ]
+  ] [
+     fhir:type [
+       fhir:coding ( [
+         fhir:display [ fhir:v "Missing" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "0.1" ]
+  ] [
+     fhir:type [
+       fhir:coding ( [
+         fhir:display [ fhir:v "Correctness" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "0.1" ]
+  ] [
+     fhir:type [
+       fhir:coding ( [
+         fhir:display [ fhir:v "expecations" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "0.1" ]
+  ] [
+     fhir:type [
+       fhir:coding ( [
+         fhir:display [ fhir:v "lof" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "0.1" ]
+  ] [
+     fhir:type [
+       fhir:coding ( [
+         fhir:display [ fhir:v "elliptic" ]
+       ] )
+     ] ;
+     fhir:value [ fhir:v "0.1" ]
+  ] ) . # 
+
+<http://localhost:8080/fhir/Observation/f8791246-10ee-11ee-afc7-2e8ac521fb46> a fhir:Observation ;
+  fhir:id [ fhir:v "f8791246-10ee-11ee-afc7-2e8ac521fb46"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"f8791246-10ee-11ee-afc7-2e8ac521fb46\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;f8791246-10ee-11ee-afc7-2e8ac521fb46&quot; </p></div><p><b>status</b>: final</p><p><b>code</b>: final_score <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (my-cs#final_score)</span></p><p><b>value</b>: 0.03</p><p><b>device</b>: <a href=\"#Device_mlmodel\">See above (Device/mlmodel)</a></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://example.org/CodeSystem/my-cs"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "final_score" ] ;
+       fhir:display [ fhir:v "final_score" ]
+     ] )
+  ] ; # 
+  fhir:value [
+     a fhir:Quantity ;
+     fhir:value [ fhir:v "0.03"^^xsd:decimal ]
+  ] ; # 
+  fhir:device [
+     fhir:link <https://joofio.github.io/obs-cdss-fhir/Device/mlmodel> ;
+     fhir:reference [ fhir:v "Device/mlmodel" ]
+  ] . # 
+
+<http://localhost:8080/fhir/Observation/f87914b2-10ee-11ee-afc7-2e8ac521fb46> a fhir:Observation ;
+  fhir:id [ fhir:v "f87914b2-10ee-11ee-afc7-2e8ac521fb46"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"f87914b2-10ee-11ee-afc7-2e8ac521fb46\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;f87914b2-10ee-11ee-afc7-2e8ac521fb46&quot; </p></div><p><b>status</b>: final</p><p><b>code</b>: missing_score <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (my-cs#missing_score)</span></p><p><b>value</b>: 0.12999999999999992</p><p><b>device</b>: <a href=\"#Device_mlmodel\">See above (Device/mlmodel)</a></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://example.org/CodeSystem/my-cs"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "missing_score" ] ;
+       fhir:display [ fhir:v "missing_score" ]
+     ] )
+  ] ; # 
+  fhir:value [
+     a fhir:Quantity ;
+     fhir:value [ fhir:v "0.12999999999999992"^^xsd:decimal ]
+  ] ; # 
+  fhir:device [
+     fhir:link <https://joofio.github.io/obs-cdss-fhir/Device/mlmodel> ;
+     fhir:reference [ fhir:v "Device/mlmodel" ]
+  ] . # 
+
+<http://localhost:8080/fhir/Observation/f879150c-10ee-11ee-afc7-2e8ac521fb46> a fhir:Observation ;
+  fhir:id [ fhir:v "f879150c-10ee-11ee-afc7-2e8ac521fb46"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"f879150c-10ee-11ee-afc7-2e8ac521fb46\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;f879150c-10ee-11ee-afc7-2e8ac521fb46&quot; </p></div><p><b>status</b>: final</p><p><b>code</b>: correctness_score <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (my-cs#correctness_score)</span></p><p><b>value</b>: 0.07204233316502665</p><p><b>device</b>: <a href=\"#Device_mlmodel\">See above (Device/mlmodel)</a></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://example.org/CodeSystem/my-cs"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "correctness_score" ] ;
+       fhir:display [ fhir:v "correctness_score" ]
+     ] )
+  ] ; # 
+  fhir:value [
+     a fhir:Quantity ;
+     fhir:value [ fhir:v "0.07204233316502665"^^xsd:decimal ]
+  ] ; # 
+  fhir:device [
+     fhir:link <https://joofio.github.io/obs-cdss-fhir/Device/mlmodel> ;
+     fhir:reference [ fhir:v "Device/mlmodel" ]
+  ] . # 
+
+<http://localhost:8080/fhir/Observation/f8791552-10ee-11ee-afc7-2e8ac521fb46> a fhir:Observation ;
+  fhir:id [ fhir:v "f8791552-10ee-11ee-afc7-2e8ac521fb46"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"f8791552-10ee-11ee-afc7-2e8ac521fb46\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;f8791552-10ee-11ee-afc7-2e8ac521fb46&quot; </p></div><p><b>status</b>: final</p><p><b>code</b>: iqr_score <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (my-cs#iqr_score)</span></p><p><b>value</b>: 0</p><p><b>device</b>: <a href=\"#Device_mlmodel\">See above (Device/mlmodel)</a></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://example.org/CodeSystem/my-cs"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "iqr_score" ] ;
+       fhir:display [ fhir:v "iqr_score" ]
+     ] )
+  ] ; # 
+  fhir:value [
+     a fhir:Quantity ;
+     fhir:value [ fhir:v "0"^^xsd:decimal ]
+  ] ; # 
+  fhir:device [
+     fhir:link <https://joofio.github.io/obs-cdss-fhir/Device/mlmodel> ;
+     fhir:reference [ fhir:v "Device/mlmodel" ]
+  ] . # 
+
+<http://localhost:8080/fhir/Observation/f87915c0-10ee-11ee-afc7-2e8ac521fb46> a fhir:Observation ;
+  fhir:id [ fhir:v "f87915c0-10ee-11ee-afc7-2e8ac521fb46"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"f87915c0-10ee-11ee-afc7-2e8ac521fb46\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;f87915c0-10ee-11ee-afc7-2e8ac521fb46&quot; </p></div><p><b>status</b>: final</p><p><b>code</b>: expectations_score <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (my-cs#expectations_score)</span></p><p><b>value</b>: 0</p><p><b>device</b>: <a href=\"#Device_mlmodel\">See above (Device/mlmodel)</a></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://example.org/CodeSystem/my-cs"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "expectations_score" ] ;
+       fhir:display [ fhir:v "expectations_score" ]
+     ] )
+  ] ; # 
+  fhir:value [
+     a fhir:Quantity ;
+     fhir:value [ fhir:v "0"^^xsd:decimal ]
+  ] ; # 
+  fhir:device [
+     fhir:link <https://joofio.github.io/obs-cdss-fhir/Device/mlmodel> ;
+     fhir:reference [ fhir:v "Device/mlmodel" ]
+  ] . # 
+
+<http://localhost:8080/fhir/Observation/f8791606-10ee-11ee-afc7-2e8ac521fb46> a fhir:Observation ;
+  fhir:id [ fhir:v "f8791606-10ee-11ee-afc7-2e8ac521fb46"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"f8791606-10ee-11ee-afc7-2e8ac521fb46\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;f8791606-10ee-11ee-afc7-2e8ac521fb46&quot; </p></div><p><b>status</b>: final</p><p><b>code</b>: lof_outlier <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (my-cs#lof_outlier)</span></p><p><b>value</b>: 0</p><p><b>device</b>: <a href=\"#Device_mlmodel\">See above (Device/mlmodel)</a></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://example.org/CodeSystem/my-cs"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "lof_outlier" ] ;
+       fhir:display [ fhir:v "lof_outlier" ]
+     ] )
+  ] ; # 
+  fhir:value [
+     a fhir:Quantity ;
+     fhir:value [ fhir:v "0"^^xsd:decimal ]
+  ] ; # 
+  fhir:device [
+     fhir:link <https://joofio.github.io/obs-cdss-fhir/Device/mlmodel> ;
+     fhir:reference [ fhir:v "Device/mlmodel" ]
+  ] . # 
+
+<http://localhost:8080/fhir/Observation/f879164c-10ee-11ee-afc7-2e8ac521fb46> a fhir:Observation ;
+  fhir:id [ fhir:v "f879164c-10ee-11ee-afc7-2e8ac521fb46"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"f879164c-10ee-11ee-afc7-2e8ac521fb46\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;f879164c-10ee-11ee-afc7-2e8ac521fb46&quot; </p></div><p><b>status</b>: final</p><p><b>code</b>: elliptic_outlier <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (my-cs#elliptic_outlier)</span></p><p><b>value</b>: 0</p><p><b>device</b>: <a href=\"#Device_mlmodel\">See above (Device/mlmodel)</a></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://example.org/CodeSystem/my-cs"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "elliptic_outlier" ] ;
+       fhir:display [ fhir:v "elliptic_outlier" ]
+     ] )
+  ] ; # 
+  fhir:value [
+     a fhir:Quantity ;
+     fhir:value [ fhir:v "0"^^xsd:decimal ]
+  ] ; # 
+  fhir:device [
+     fhir:link <https://joofio.github.io/obs-cdss-fhir/Device/mlmodel> ;
+     fhir:reference [ fhir:v "Device/mlmodel" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

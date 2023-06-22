@@ -9,7 +9,7 @@
   <version value="0.1.0"/>
   <name value="OBSCDSS"/>
   <status value="draft"/>
-  <date value="2023-06-22T10:40:10+00:00"/>
+  <date value="2023-06-22T11:40:33+00:00"/>
   <packageId value="obs.cdss.ig"/>
   <license value="CC0-1.0"/>
   <fhirVersion value="5.0.0"/>
@@ -245,6 +245,16 @@
       <name value="Code system"/>
       <description value="Code system"/>
       <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/f879270e-10ee-11ee-afc7-2e8ac521fb46"/>
+      </reference>
+      <name value="f879270e-10ee-11ee-afc7-2e8ac521fb46"/>
+      <isExample value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
