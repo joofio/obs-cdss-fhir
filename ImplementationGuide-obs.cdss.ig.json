@@ -9,7 +9,7 @@
   "version" : "0.1.0",
   "name" : "OBSCDSS",
   "status" : "draft",
-  "date" : "2023-06-12T12:03:44+00:00",
+  "date" : "2023-06-22T10:40:10+00:00",
   "packageId" : "obs.cdss.ig",
   "license" : "CC0-1.0",
   "fhirVersion" : ["5.0.0"],
@@ -328,35 +328,10 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Device"
-      }],
-      "reference" : {
-        "reference" : "Device/MLModelExample"
-      },
-      "name" : "Example of Request for MessageForRequest",
-      "description" : "Example of Request for MessageForRequest",
-      "profile" : ["https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MLModel",
-      "https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MLModel"]
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
         "reference" : "StructureDefinition/MLModel"
-      },
-      "name" : "Machine Learning Model",
-      "description" : "The profile for Defining Machine Learning Models for CDSS",
-      "isExample" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:resource"
-      }],
-      "reference" : {
-        "reference" : "StructureDefinition/ObsResult"
       },
       "name" : "Machine Learning Model",
       "description" : "The profile for Defining Machine Learning Models for CDSS",
@@ -456,6 +431,17 @@
         "reference" : "OperationDefinition/predict"
       },
       "name" : "predict",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "OperationDefinition"
+      }],
+      "reference" : {
+        "reference" : "OperationDefinition/quality-check"
+      },
+      "name" : "quality-check",
       "isExample" : false
     },
     {

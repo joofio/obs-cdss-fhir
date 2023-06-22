@@ -332,6 +332,36 @@
       &lt;/Observation&gt;
     &lt;/resource&gt;
   &lt;/entry&gt;
+  &lt;<a href="http://hl7.org/fhir/R5/bundle.html#Bundle.entry">entry</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/bundle.html#Bundle.entry.fullUrl">fullUrl</a> <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>="http://localhost:8080/fhir/Device/MLModelExample"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R5/device.html#Device">resource</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R5/device.html#Device">Device</a>&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/device.html#Device.id">id</a> <a href="http://hl7.org/fhir/R5/datatypes.html#id">value</a>="MLModelExample"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/device.html#Device.meta">meta</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/resource.html#Meta#Meta.profile">profile</a>
+                   <a href="http://hl7.org/fhir/R5/datatypes.html#canonical">value</a>="https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MLModel"/&gt;
+        &lt;/meta&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/device.html#Device.text">text</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="generated"/&gt;
+          &lt;div xmlns="http://www.w3.org/1999/xhtml"&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: Device&lt;/b&gt;&lt;a name="MLModelExample"&gt; &lt;/a&gt;&lt;/p&gt;&lt;div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"&gt;&lt;p style="margin-bottom: 0px"&gt;Resource Device &amp;quot;MLModelExample&amp;quot; &lt;/p&gt;&lt;p style="margin-bottom: 0px"&gt;Profile: &lt;a href="StructureDefinition-MLModel.html"&gt;Machine Learning Model&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: id:&nbsp;1&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: active&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: Light Gradient Boosting &lt;span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"&gt; (&lt;a href="CodeSystem-ml-type-cs.html"&gt;Machine Learning Models code system&lt;/a&gt;#LGBM)&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;Versions&lt;/h3&gt;&lt;table class="grid"&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Value&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+        &lt;/text&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/device.html#Device.identifier">identifier</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Identifier#Identifier.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="1"/&gt;
+        &lt;/identifier&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/device.html#Device.status">status</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="active"/&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/device.html#Device.type">type</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">system</a>
+                    <a href="http://hl7.org/fhir/R5/datatypes.html#uri">value</a>="https://joofio.github.io/obs-cdss-fhir/CodeSystem/ml-type-cs"/&gt;
+            &lt;<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">code</a> <a href="http://hl7.org/fhir/R5/datatypes.html#code">value</a>="LGBM"/&gt;
+          &lt;/coding&gt;
+        &lt;/type&gt;
+        &lt;<a href="http://hl7.org/fhir/R5/device.html#Device.version">version</a>&gt;
+          &lt;<a href="http://hl7.org/fhir/R5/device.html#Device.version.value">value</a> <a href="http://hl7.org/fhir/R5/datatypes.html#string">value</a>="1"/&gt;
+        &lt;/version&gt;
+      &lt;/Device&gt;
+    &lt;/resource&gt;
+  &lt;/entry&gt;
 &lt;/Bundle&gt;</code></pre>
 
 
@@ -362,7 +392,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="null"></a>.  Package obs.cdss.ig#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Mon, Jun 12, 2023 12:03+0000">2023-06-12</span>
+          IG &copy; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="null"></a>.  Package obs.cdss.ig#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Thu, Jun 22, 2023 10:40+0000">2023-06-22</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

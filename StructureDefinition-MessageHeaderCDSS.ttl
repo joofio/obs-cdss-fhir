@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "MessageHeaderCDSS"] ; # 
   fhir:title [ fhir:v "Message Header for request and response"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2023-06-12T12:03:44+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-06-22T10:40:10+00:00"^^xsd:dateTime] ; # 
   fhir:description [ fhir:v "Message Header for request and response"] ; # 
   fhir:fhirVersion [ fhir:v "5.0.0"] ; # 
   fhir:mapping ( [
@@ -834,7 +834,7 @@
        fhir:path [ fhir:v "MessageHeader.author" ] ;
        fhir:short [ fhir:v "The source of the decision" ] ;
        fhir:definition [ fhir:v "The logical author of the message - the personor device that decided the described event should happen. When there is more than one candidate, pick the most proximal to the MessageHeader. Can provide other authors in extensions." ] ;
-       fhir:comment [ fhir:v "Usually only for the request but can be used in a response.Proposing to remove and rely on Task to convey this information. " ] ;
+       fhir:comment [ fhir:v "Usually only for the request but can be used in a response.Proposing to remove and rely on Task to convey this information." ] ;
        fhir:requirements [ fhir:v "Need to know for audit/traceback requirements and possibly for authorization." ] ;
        fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
        fhir:max [ fhir:v "1" ] ;

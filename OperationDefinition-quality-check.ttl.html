@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-    <title>OBS.CDSS.IG\predict - FHIR v5.0.0</title>
+    <title>OBS.CDSS.IG\quality-check - TTL Representation - FHIR v5.0.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -40,8 +40,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"4.1"}
-    h3,h4,h5,h6{--heading-prefix:"4.1"}</style>
+    <style type="text/css">h2{--heading-prefix:"4.2"}
+    h3,h4,h5,h6{--heading-prefix:"4.2"}</style>
     <div id="segment-header" class="segment">    <!-- segment-header -->
       <div class="container">    <!-- container -->
           <!-- Placeholder for child template header declarations -->
@@ -141,7 +141,7 @@
     <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
       <div class="container">    <!-- container -->
         <ul class="breadcrumb">
-          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="artifacts.html"><b>Artifacts Summary</b></a></li><li><b>predict</b></li>
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="artifacts.html"><b>Artifacts Summary</b></a></li><li><b>quality-check</b></li>
 
         </ul>
       </div>    <!-- /container -->
@@ -153,9 +153,9 @@
         <div class="row">
           <div class="inner-wrapper">
 
-<div class="col-12">
-    <!-- ReleaseHeader --><p id="publish-box">OBSCDSS - Local Development build (v0.1.0). See the <a href="https://joofio.github.io/obs-cdss-fhir/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
-  
+<div style="counter-reset: section 9" class="col-12">
+  <!-- ReleaseHeader --><p id="publish-box">OBSCDSS - Local Development build (v0.1.0). See the <a href="https://joofio.github.io/obs-cdss-fhir/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+
 
 
 
@@ -166,29 +166,29 @@
 
 <ul class="nav nav-tabs">
 
-  <li class="active">
-    <a href="#">Narrative Content</a>
+  <li>
+    <a href="OperationDefinition-quality-check.html">Narrative Content</a>
   </li>
 
 
 
   
     <li>
-      <a href="OperationDefinition-predict.xml.html">XML</a>
+      <a href="OperationDefinition-quality-check.xml.html">XML</a>
     </li>
   
 
 
   
     <li>
-      <a href="OperationDefinition-predict.json.html">JSON</a>
+      <a href="OperationDefinition-quality-check.json.html">JSON</a>
     </li>
   
 
 
   
-    <li>
-      <a href="OperationDefinition-predict.ttl.html">TTL</a>
+    <li class="active">
+      <a href="#">TTL</a>
     </li>
   
 
@@ -196,31 +196,15 @@
 
 </ul>
 
-  <a name="root"> </a>
 
-  <h2 id="root">OperationDefinition: predict
+<a name="root"> </a>
 
-  </h2>
 
+<h2 id="root">: quality-check - TTL Representation</h2>
   <table class="colsi">
-
-    <tr>
-      <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://hl7.pt/fhir/OperationDefinition/predict<button data-clipboard-text="http://hl7.pt/fhir/OperationDefinition/predict" title="Click to copy URL" class="btn-copy"/></span>
-      </td>
-      <td><i>Version</i>:
-      <span class="copy-text">0.1.0<button data-clipboard-text="http://hl7.pt/fhir/OperationDefinition/predict|0.1.0" title="Click to copy versioned URL" class="btn-copy"/></span>
-      </td>
-    </tr>
-
     <tr>
 
-
-
-
-
-
-
-      <td colspan="4">
+      <td colspan="2">
         
           Active
           
@@ -229,40 +213,68 @@
         
       </td>
 
-
-
-      <td><i>Computable Name</i>: <span style="font-family: monospace;">predict</span></td>
     </tr>
-
-
-
-
   </table>
 
 
+<p><a href="OperationDefinition-quality-check.ttl" no-download="true">Raw ttl</a> | <a download="null" href="OperationDefinition-quality-check.ttl">Download</a></p>
 
     <!-- insert intro if present -->
   
 
 
 
-  <!-- <p>
-  Formats: <a href="OperationDefinition-predict.xml.html">XML</a>, <a href="OperationDefinition-predict.json.html">JSON</a>, <a href="OperationDefinition-predict.ttl.html">Turtle</a>
-  </p> -->
+  <pre style="white-space: pre; overflow: hidden" class="rdf"><code class="language-turtle">
+@prefix fhir: &lt;http://hl7.org/fhir/&gt; .
+@prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
 
-  
+# - resource -------------------------------------------------------------------
+
+ a fhir:OperationDefinition ;
+  <a href="http://hl7.org/fhir/R5/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot ;
+  <a href="http://hl7.org/fhir/R5/operationdefinition.html#OperationDefinition.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#id">fhir:v</a> "quality-check"] ; # 
+  <a href="http://hl7.org/fhir/R5/operationdefinition.html#OperationDefinition.text">fhir:text</a> [
+<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#Narrative.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> "extensions" ] ;
+fhir:div "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;p&gt;URL: [base]/$quality_check&lt;/p&gt;&lt;p&gt;Parameters&lt;/p&gt;&lt;table class=\"grid\"&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Use&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Name&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Scope&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Cardinality&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Type&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Binding&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Documentation&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;IN&lt;/td&gt;&lt;td&gt;parameters&lt;/td&gt;&lt;td/&gt;&lt;td&gt;1..1&lt;/td&gt;&lt;td&gt;&lt;a href=\"http://hl7.org/fhir/R5/bundle.html\"&gt;Bundle&lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Set of parameters&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OUT&lt;/td&gt;&lt;td&gt;score&lt;/td&gt;&lt;td/&gt;&lt;td&gt;1..1&lt;/td&gt;&lt;td&gt;&lt;a href=\"http://hl7.org/fhir/R5/bundle.html\"&gt;Bundle&lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Prediction&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"
+  ] ; # 
+  <a href="http://hl7.org/fhir/R5/operationdefinition.html#OperationDefinition.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> "http://hl7.pt/fhir/OperationDefinition/quality_check"^^xsd:anyURI] ; # 
+  <a href="http://hl7.org/fhir/R5/operationdefinition.html#OperationDefinition.version">fhir:version</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> "0.1.0"] ; # 
+  <a href="http://hl7.org/fhir/R5/operationdefinition.html#OperationDefinition.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> "quality_check"] ; # 
+  <a href="http://hl7.org/fhir/R5/operationdefinition.html#OperationDefinition.title">fhir:title</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> "quality_check"] ; # 
+  <a href="http://hl7.org/fhir/R5/operationdefinition.html#OperationDefinition.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> "active"] ; # 
+  <a href="http://hl7.org/fhir/R5/operationdefinition.html#OperationDefinition.kind">fhir:kind</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> "operation"] ; # 
+  <a href="http://hl7.org/fhir/R5/operationdefinition.html#OperationDefinition.date">fhir:date</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#dateTime">fhir:v</a> "2023-06-22T10:40:10+00:00"^^xsd:dateTime] ; # 
+  <a href="http://hl7.org/fhir/R5/operationdefinition.html#OperationDefinition.affectsState">fhir:affectsState</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#boolean">fhir:v</a> "false"^^xsd:boolean] ; # 
+  <a href="http://hl7.org/fhir/R5/operationdefinition.html#OperationDefinition.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> "quality_check"] ; # 
+  <a href="http://hl7.org/fhir/R5/operationdefinition.html#OperationDefinition.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#boolean">fhir:v</a> "true"^^xsd:boolean] ; # 
+  <a href="http://hl7.org/fhir/R5/operationdefinition.html#OperationDefinition.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#boolean">fhir:v</a> "false"^^xsd:boolean] ; # 
+  <a href="http://hl7.org/fhir/R5/operationdefinition.html#OperationDefinition.instance">fhir:instance</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#boolean">fhir:v</a> "false"^^xsd:boolean] ; # 
+  <a href="http://hl7.org/fhir/R5/operationdefinition.html#OperationDefinition.parameter">fhir:parameter</a> ( [
+<a href="http://hl7.org/fhir/R5/operationdefinition.html#OperationDefinition.parameter.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> "parameters" ] ;
+<a href="http://hl7.org/fhir/R5/operationdefinition.html#OperationDefinition.parameter.use">fhir:use</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> "in" ] ;
+<a href="http://hl7.org/fhir/R5/operationdefinition.html#OperationDefinition.parameter.min">fhir:min</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#integer">fhir:v</a> "1"^^xsd:integer ] ;
+<a href="http://hl7.org/fhir/R5/operationdefinition.html#OperationDefinition.parameter.max">fhir:max</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> "1" ] ;
+<a href="http://hl7.org/fhir/R5/operationdefinition.html#OperationDefinition.parameter.documentation">fhir:documentation</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#markdown">fhir:v</a> "Set of parameters" ] ;
+<a href="http://hl7.org/fhir/R5/operationdefinition.html#OperationDefinition.parameter.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> "Bundle" ]
+  ] [
+<a href="http://hl7.org/fhir/R5/operationdefinition.html#OperationDefinition.parameter.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> "score" ] ;
+<a href="http://hl7.org/fhir/R5/operationdefinition.html#OperationDefinition.parameter.use">fhir:use</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> "out" ] ;
+<a href="http://hl7.org/fhir/R5/operationdefinition.html#OperationDefinition.parameter.min">fhir:min</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#integer">fhir:v</a> "1"^^xsd:integer ] ;
+<a href="http://hl7.org/fhir/R5/operationdefinition.html#OperationDefinition.parameter.max">fhir:max</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> "1" ] ;
+<a href="http://hl7.org/fhir/R5/operationdefinition.html#OperationDefinition.parameter.documentation">fhir:documentation</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#markdown">fhir:v</a> "Prediction" ] ;
+<a href="http://hl7.org/fhir/R5/operationdefinition.html#OperationDefinition.parameter.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> "Bundle" ]
+  ] ) . # 
+
+</code></pre>
 
 
-  <div><p>URL: [base]/$predict</p><p>Parameters</p><table class="grid"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Scope</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>IN</td><td>parameters</td><td/><td>1..1</td><td><a href="http://hl7.org/fhir/R5/bundle.html">Bundle</a></td><td/><td><div><p>Set of parameters</p>
-</div></td></tr><tr><td>OUT</td><td>prediction</td><td/><td>1..1</td><td><a href="http://hl7.org/fhir/R5/bundle.html">Bundle</a></td><td/><td><div><p>Prediction</p>
-</div></td></tr></table></div>
 
     <!-- insert notes if present -->
   
 
 
-
-  
 
 </div>
         </div>    <!-- /inner-wrapper -->

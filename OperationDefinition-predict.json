@@ -3,15 +3,15 @@
   "id" : "predict",
   "text" : {
     "status" : "extensions",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>URL: [base]/$predict</p><p>Parameters</p><table class=\"grid\"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Scope</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>IN</td><td>parameters</td><td/><td>0..1</td><td><a href=\"http://hl7.org/fhir/R5/bundle.html\">Bundle</a></td><td/><td><div><p>Set of parameters</p>\n</div></td></tr><tr><td>OUT</td><td>prediction</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R5/bundle.html\">Bundle</a></td><td/><td><div><p>Prediction</p>\n</div></td></tr></table></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>URL: [base]/$predict</p><p>Parameters</p><table class=\"grid\"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Scope</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>IN</td><td>parameters</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R5/bundle.html\">Bundle</a></td><td/><td><div><p>Set of parameters</p>\n</div></td></tr><tr><td>OUT</td><td>prediction</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R5/bundle.html\">Bundle</a></td><td/><td><div><p>Prediction</p>\n</div></td></tr></table></div>"
   },
-  "url" : "http://hl7.eu/fhir/ig/gravitate-health/OperationDefinition/focus",
+  "url" : "http://hl7.pt/fhir/OperationDefinition/predict",
   "version" : "0.1.0",
   "name" : "predict",
   "title" : "predict",
   "status" : "active",
   "kind" : "operation",
-  "date" : "2023-06-12T12:03:44+00:00",
+  "date" : "2023-06-22T10:40:10+00:00",
   "affectsState" : false,
   "code" : "predict",
   "system" : true,
@@ -20,7 +20,7 @@
   "parameter" : [{
     "name" : "parameters",
     "use" : "in",
-    "min" : 0,
+    "min" : 1,
     "max" : "1",
     "documentation" : "Set of parameters",
     "type" : "Bundle"

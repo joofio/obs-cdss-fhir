@@ -21,12 +21,6 @@
         "url": "https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageHeaderCDSS",
         "title": "Message Header for request and response"
       }
-    ],
-    "Observation": [
-      {
-        "url": "https://joofio.github.io/obs-cdss-fhir/StructureDefinition/ObsResult",
-        "title": "Machine Learning Model"
-      }
     ]
   },
   "usage": {
@@ -41,9 +35,6 @@
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding": [
       "StructureDefinition.snapshot.element.binding"
-    ],
-    "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint": [
-      "StructureDefinition.snapshot.element"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name": [
       "StructureDefinition.snapshot.element"

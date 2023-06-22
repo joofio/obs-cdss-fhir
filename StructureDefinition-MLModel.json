@@ -10,7 +10,7 @@
   "name" : "MLModel",
   "title" : "Machine Learning Model",
   "status" : "draft",
-  "date" : "2023-06-12T12:03:44+00:00",
+  "date" : "2023-06-22T10:40:10+00:00",
   "description" : "The profile for Defining Machine Learning Models for CDSS",
   "fhirVersion" : "5.0.0",
   "mapping" : [{
@@ -751,7 +751,7 @@
       "path" : "Device.udiCarrier",
       "short" : "Unique Device Identifier (UDI) Barcode string",
       "definition" : "Unique device identifier (UDI) assigned to device label or package.  Note that the Device may include multiple udiCarriers as it either may include just the udiCarrier for the jurisdiction it is sold, or for multiple jurisdictions it could have been sold.",
-      "comment" : "UDI may identify an unique instance of a device, or it may only identify the type of the device.  See [UDI mappings](device-mappings.html#udi) for a complete mapping of UDI parts to Device.",
+      "comment" : "UDI may identify an unique instance of a device, or it may only identify the type of the device.  See [UDI mappings](http://hl7.org/fhir/R5/device-mappings.html#udi) for a complete mapping of UDI parts to Device.",
       "min" : 0,
       "max" : "*",
       "base" : {

@@ -2,9 +2,16 @@
   {
     "id" : "predict",
     "type" : "OperationDefinition",
-    "url" : "http://hl7.eu/fhir/ig/gravitate-health/OperationDefinition/focus",
+    "url" : "http://hl7.pt/fhir/OperationDefinition/predict",
     "version" : "0.1.0",
     "name" : "predict"
+  },
+  {
+    "id" : "quality-check",
+    "type" : "OperationDefinition",
+    "url" : "http://hl7.pt/fhir/OperationDefinition/quality_check",
+    "version" : "0.1.0",
+    "name" : "quality_check"
   },
   {
     "id" : "ml-response-cs",
@@ -54,13 +61,6 @@
     "url" : "https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageHeaderCDSS",
     "version" : "0.1.0",
     "name" : "MessageHeaderCDSS"
-  },
-  {
-    "id" : "ObsResult",
-    "type" : "StructureDefinition",
-    "url" : "https://joofio.github.io/obs-cdss-fhir/StructureDefinition/ObsResult",
-    "version" : "0.1.0",
-    "name" : "ObsResult"
   },
   {
     "id" : "ml-response-vs",

@@ -5,22 +5,22 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://joofio.github.io/obs-cdss-fhir/OperationDefinition/predict> a fhir:OperationDefinition ;
+<https://joofio.github.io/obs-cdss-fhir/OperationDefinition/quality-check> a fhir:OperationDefinition ;
   fhir:nodeRole fhir:treeRoot ;
-  fhir:id [ fhir:v "predict"] ; # 
+  fhir:id [ fhir:v "quality-check"] ; # 
   fhir:text [
      fhir:status [ fhir:v "extensions" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>URL: [base]/$predict</p><p>Parameters</p><table class=\"grid\"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Scope</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>IN</td><td>parameters</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R5/bundle.html\">Bundle</a></td><td/><td><div><p>Set of parameters</p>\n</div></td></tr><tr><td>OUT</td><td>prediction</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R5/bundle.html\">Bundle</a></td><td/><td><div><p>Prediction</p>\n</div></td></tr></table></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>URL: [base]/$quality_check</p><p>Parameters</p><table class=\"grid\"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Scope</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>IN</td><td>parameters</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R5/bundle.html\">Bundle</a></td><td/><td><div><p>Set of parameters</p>\n</div></td></tr><tr><td>OUT</td><td>score</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R5/bundle.html\">Bundle</a></td><td/><td><div><p>Prediction</p>\n</div></td></tr></table></div>"
   ] ; # 
-  fhir:url [ fhir:v "http://hl7.pt/fhir/OperationDefinition/predict"^^xsd:anyURI] ; # 
+  fhir:url [ fhir:v "http://hl7.pt/fhir/OperationDefinition/quality_check"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "0.1.0"] ; # 
-  fhir:name [ fhir:v "predict"] ; # 
-  fhir:title [ fhir:v "predict"] ; # 
+  fhir:name [ fhir:v "quality_check"] ; # 
+  fhir:title [ fhir:v "quality_check"] ; # 
   fhir:status [ fhir:v "active"] ; # 
   fhir:kind [ fhir:v "operation"] ; # 
   fhir:date [ fhir:v "2023-06-22T10:40:10+00:00"^^xsd:dateTime] ; # 
   fhir:affectsState [ fhir:v "false"^^xsd:boolean] ; # 
-  fhir:code [ fhir:v "predict"] ; # 
+  fhir:code [ fhir:v "quality_check"] ; # 
   fhir:system [ fhir:v "true"^^xsd:boolean] ; # 
   fhir:type [ fhir:v "false"^^xsd:boolean] ; # 
   fhir:instance [ fhir:v "false"^^xsd:boolean] ; # 
@@ -32,7 +32,7 @@
      fhir:documentation [ fhir:v "Set of parameters" ] ;
      fhir:type [ fhir:v "Bundle" ]
   ] [
-     fhir:name [ fhir:v "prediction" ] ;
+     fhir:name [ fhir:v "score" ] ;
      fhir:use [ fhir:v "out" ] ;
      fhir:min [ fhir:v "1"^^xsd:integer ] ;
      fhir:max [ fhir:v "1" ] ;

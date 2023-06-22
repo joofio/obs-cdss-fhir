@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-    <title>OBS.CDSS.IG\Example of Request for MessageForRequest - TTL Representation - FHIR v5.0.0</title>
+    <title>OBS.CDSS.IG\quality-check - JSON Representation - FHIR v5.0.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -40,8 +40,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"4.13"}
-    h3,h4,h5,h6{--heading-prefix:"4.13"}</style>
+    <style type="text/css">h2{--heading-prefix:"4.2"}
+    h3,h4,h5,h6{--heading-prefix:"4.2"}</style>
     <div id="segment-header" class="segment">    <!-- segment-header -->
       <div class="container">    <!-- container -->
           <!-- Placeholder for child template header declarations -->
@@ -141,7 +141,7 @@
     <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
       <div class="container">    <!-- container -->
         <ul class="breadcrumb">
-          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="artifacts.html"><b>Artifacts Summary</b></a></li><li><b>Example of Request for MessageForRequest</b></li>
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="artifacts.html"><b>Artifacts Summary</b></a></li><li><b>quality-check</b></li>
 
         </ul>
       </div>    <!-- /container -->
@@ -153,7 +153,7 @@
         <div class="row">
           <div class="inner-wrapper">
 
-<div style="counter-reset: section 9" class="col-12">
+<div style="counter-reset: section 8" class="col-12">
   <!-- ReleaseHeader --><p id="publish-box">OBSCDSS - Local Development build (v0.1.0). See the <a href="https://joofio.github.io/obs-cdss-fhir/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
 
 
@@ -167,28 +167,28 @@
 <ul class="nav nav-tabs">
 
   <li>
-    <a href="Device-MLModelExample.html">Narrative Content</a>
+    <a href="OperationDefinition-quality-check.html">Narrative Content</a>
   </li>
 
 
 
   
     <li>
-      <a href="Device-MLModelExample.xml.html">XML</a>
-    </li>
-  
-
-
-  
-    <li>
-      <a href="Device-MLModelExample.json.html">JSON</a>
+      <a href="OperationDefinition-quality-check.xml.html">XML</a>
     </li>
   
 
 
   
     <li class="active">
-      <a href="#">TTL</a>
+      <a href="#">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="OperationDefinition-quality-check.ttl.html">TTL</a>
     </li>
   
 
@@ -200,13 +200,15 @@
 <a name="root"> </a>
 
 
-<h2 id="root">: Example of Request for MessageForRequest - TTL Representation</h2>
+<h2 id="root">: quality-check - JSON Representation</h2>
   <table class="colsi">
     <tr>
 
       <td colspan="2">
         
+          Active
           
+            as of 2023-06-22
           
         
       </td>
@@ -215,48 +217,52 @@
   </table>
 
 
-<p><a href="Device-MLModelExample.ttl" no-download="true">Raw ttl</a> | <a download="null" href="Device-MLModelExample.ttl">Download</a></p>
+<p><a href="OperationDefinition-quality-check.json" no-download="true">Raw json</a> | <a download="null" href="OperationDefinition-quality-check.json">Download</a></p>
 
     <!-- insert intro if present -->
   
 
 
 
-  <pre style="white-space: pre; overflow: hidden" class="rdf"><code class="language-turtle">
-@prefix fhir: &lt;http://hl7.org/fhir/&gt; .
-@prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
-@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
-@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
-
-# - resource -------------------------------------------------------------------
-
- a fhir:Device ;
-  <a href="http://hl7.org/fhir/R5/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot ;
-  <a href="http://hl7.org/fhir/R5/device.html#Device.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#id">fhir:v</a> "MLModelExample"] ; # 
-  <a href="http://hl7.org/fhir/R5/device.html#Device.meta">fhir:meta</a> [
-    ( <a href="http://hl7.org/fhir/R5/resource.html#Meta#Meta.profile">fhir:profile</a> [
-<a href="http://hl7.org/fhir/R5/datatypes.html#canonical">fhir:v</a> "https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MLModel"^^xsd:anyURI ;
-<a href="http://hl7.org/fhir/R5/rdf.html#reference">fhir:link</a> &lt;https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MLModel&gt;     ] )
-  ] ; # 
-  <a href="http://hl7.org/fhir/R5/device.html#Device.text">fhir:text</a> [
-<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#Narrative.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> "generated" ] ;
-fhir:div "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;p&gt;&lt;b&gt;Generated Narrative: Device&lt;/b&gt;&lt;a name=\"MLModelExample\"&gt; &lt;/a&gt;&lt;/p&gt;&lt;div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"&gt;&lt;p style=\"margin-bottom: 0px\"&gt;Resource Device &amp;quot;MLModelExample&amp;quot; &lt;/p&gt;&lt;p style=\"margin-bottom: 0px\"&gt;Profile: &lt;a href=\"StructureDefinition-MLModel.html\"&gt;Machine Learning Model&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: id:&nbsp;1&lt;/p&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: active&lt;/p&gt;&lt;p&gt;&lt;b&gt;type&lt;/b&gt;: Light Gradient Boosting &lt;span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"&gt; (&lt;a href=\"CodeSystem-ml-type-cs.html\"&gt;Machine Learning Models code system&lt;/a&gt;#LGBM)&lt;/span&gt;&lt;/p&gt;&lt;h3&gt;Versions&lt;/h3&gt;&lt;table class=\"grid\"&gt;&lt;tr&gt;&lt;td&gt;-&lt;/td&gt;&lt;td&gt;&lt;b&gt;Value&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;*&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"
-  ] ; # 
-  <a href="http://hl7.org/fhir/R5/device.html#Device.identifier">fhir:identifier</a> ( [
-<a href="http://hl7.org/fhir/R5/datatypes.html#Identifier#Identifier.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> "1" ]
-  ] ) ; # 
-  <a href="http://hl7.org/fhir/R5/device.html#Device.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> "active"] ; # 
-  <a href="http://hl7.org/fhir/R5/device.html#Device.type">fhir:type</a> ( [
-    ( <a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept#CodeableConcept.coding">fhir:coding</a> [
-<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#uri">fhir:v</a> "https://joofio.github.io/obs-cdss-fhir/CodeSystem/ml-type-cs"^^xsd:anyURI ] ;
-<a href="http://hl7.org/fhir/R5/datatypes.html#Coding#Coding.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#code">fhir:v</a> "LGBM" ]     ] )
-  ] ) ; # 
-  <a href="http://hl7.org/fhir/R5/device.html#Device.version">fhir:version</a> ( [
-<a href="http://hl7.org/fhir/R5/device.html#Device.version.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R5/datatypes.html#string">fhir:v</a> "1" ]
-  ] ) . # 
-
-</code></pre>
-
+  <pre style="white-space: pre; overflow: hidden" class="json"><code class="language-json">
+{
+  "<a href="http://hl7.org/fhir/R5/operationdefinition.html#OperationDefinition">resourceType</a>" : "OperationDefinition",
+  "<a href="http://hl7.org/fhir/R5/operationdefinition.html#OperationDefinition.id">id</a>" : "quality-check",
+  "<a href="http://hl7.org/fhir/R5/operationdefinition.html#OperationDefinition.text">text</a>" : {
+    "<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#Narrative.status">status</a>" : "extensions",
+    "<a href="http://hl7.org/fhir/R5/narrative.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;p&gt;URL: [base]/$quality_check&lt;/p&gt;&lt;p&gt;Parameters&lt;/p&gt;&lt;table class=\"grid\"&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Use&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Name&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Scope&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Cardinality&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Type&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Binding&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Documentation&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;IN&lt;/td&gt;&lt;td&gt;parameters&lt;/td&gt;&lt;td/&gt;&lt;td&gt;1..1&lt;/td&gt;&lt;td&gt;&lt;a href=\"http://hl7.org/fhir/R5/bundle.html\"&gt;Bundle&lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Set of parameters&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OUT&lt;/td&gt;&lt;td&gt;score&lt;/td&gt;&lt;td/&gt;&lt;td&gt;1..1&lt;/td&gt;&lt;td&gt;&lt;a href=\"http://hl7.org/fhir/R5/bundle.html\"&gt;Bundle&lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Prediction&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+  },
+  "<a href="http://hl7.org/fhir/R5/operationdefinition.html#OperationDefinition.url">url</a>" : "http://hl7.pt/fhir/OperationDefinition/quality_check",
+  "<a href="http://hl7.org/fhir/R5/operationdefinition.html#OperationDefinition.version">version</a>" : "0.1.0",
+  "<a href="http://hl7.org/fhir/R5/operationdefinition.html#OperationDefinition.name">name</a>" : "quality_check",
+  "<a href="http://hl7.org/fhir/R5/operationdefinition.html#OperationDefinition.title">title</a>" : "quality_check",
+  "<a href="http://hl7.org/fhir/R5/operationdefinition.html#OperationDefinition.status">status</a>" : "active",
+  "<a href="http://hl7.org/fhir/R5/operationdefinition.html#OperationDefinition.kind">kind</a>" : "operation",
+  "<a href="http://hl7.org/fhir/R5/operationdefinition.html#OperationDefinition.date">date</a>" : "2023-06-22T10:40:10+00:00",
+  "<a href="http://hl7.org/fhir/R5/operationdefinition.html#OperationDefinition.affectsState">affectsState</a>" : false,
+  "<a href="http://hl7.org/fhir/R5/operationdefinition.html#OperationDefinition.code">code</a>" : "quality_check",
+  "<a href="http://hl7.org/fhir/R5/operationdefinition.html#OperationDefinition.system">system</a>" : true,
+  "<a href="http://hl7.org/fhir/R5/operationdefinition.html#OperationDefinition.type">type</a>" : false,
+  "<a href="http://hl7.org/fhir/R5/operationdefinition.html#OperationDefinition.instance">instance</a>" : false,
+  "<a href="http://hl7.org/fhir/R5/operationdefinition.html#OperationDefinition.parameter">parameter</a>" : [
+    {
+      "<a href="http://hl7.org/fhir/R5/operationdefinition.html#OperationDefinition.parameter.name">name</a>" : "parameters",
+      "<a href="http://hl7.org/fhir/R5/operationdefinition.html#OperationDefinition.parameter.use">use</a>" : "in",
+      "<a href="http://hl7.org/fhir/R5/operationdefinition.html#OperationDefinition.parameter.min">min</a>" : 1,
+      "<a href="http://hl7.org/fhir/R5/operationdefinition.html#OperationDefinition.parameter.max">max</a>" : "1",
+      "<a href="http://hl7.org/fhir/R5/operationdefinition.html#OperationDefinition.parameter.documentation">documentation</a>" : "Set of parameters",
+      "<a href="http://hl7.org/fhir/R5/operationdefinition.html#OperationDefinition.parameter.type">type</a>" : "Bundle"
+    },
+    {
+      "<a href="http://hl7.org/fhir/R5/operationdefinition.html#OperationDefinition.parameter.name">name</a>" : "score",
+      "<a href="http://hl7.org/fhir/R5/operationdefinition.html#OperationDefinition.parameter.use">use</a>" : "out",
+      "<a href="http://hl7.org/fhir/R5/operationdefinition.html#OperationDefinition.parameter.min">min</a>" : 1,
+      "<a href="http://hl7.org/fhir/R5/operationdefinition.html#OperationDefinition.parameter.max">max</a>" : "1",
+      "<a href="http://hl7.org/fhir/R5/operationdefinition.html#OperationDefinition.parameter.documentation">documentation</a>" : "Prediction",
+      "<a href="http://hl7.org/fhir/R5/operationdefinition.html#OperationDefinition.parameter.type">type</a>" : "Bundle"
+    }
+  ]
+}</code></pre>
 
 
     <!-- insert notes if present -->
@@ -286,7 +292,7 @@ fhir:div "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;p&gt;&lt;b&gt;Ge
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="null"></a>.  Package obs.cdss.ig#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Mon, Jun 12, 2023 12:03+0000">2023-06-12</span>
+          IG &copy; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="null"></a>.  Package obs.cdss.ig#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Thu, Jun 22, 2023 10:40+0000">2023-06-22</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

@@ -10,7 +10,7 @@
   "name" : "MessageHeaderCDSS",
   "title" : "Message Header for request and response",
   "status" : "draft",
-  "date" : "2023-06-12T12:03:44+00:00",
+  "date" : "2023-06-22T10:40:10+00:00",
   "description" : "Message Header for request and response",
   "fhirVersion" : "5.0.0",
   "mapping" : [{
@@ -784,7 +784,7 @@
       "path" : "MessageHeader.author",
       "short" : "The source of the decision",
       "definition" : "The logical author of the message - the personor device that decided the described event should happen. When there is more than one candidate, pick the most proximal to the MessageHeader. Can provide other authors in extensions.",
-      "comment" : "Usually only for the request but can be used in a response.Proposing to remove and rely on Task to convey this information. ",
+      "comment" : "Usually only for the request but can be used in a response.Proposing to remove and rely on Task to convey this information.",
       "requirements" : "Need to know for audit/traceback requirements and possibly for authorization.",
       "min" : 0,
       "max" : "1",
