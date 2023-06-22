@@ -10,7 +10,7 @@
   "name" : "MessageForCDSS",
   "title" : "Message bundle for request or response",
   "status" : "draft",
-  "date" : "2023-06-22T10:40:10+00:00",
+  "date" : "2023-06-22T11:40:33+00:00",
   "description" : "The message for response or request, containing the prediction/input",
   "fhirVersion" : "5.0.0",
   "mapping" : [{

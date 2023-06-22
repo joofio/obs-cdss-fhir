@@ -16,7 +16,7 @@
   fhir:version [ fhir:v "0.1.0"] ; # 
   fhir:name [ fhir:v "OBSCDSS"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2023-06-22T10:40:10+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-06-22T11:40:33+00:00"^^xsd:dateTime] ; # 
   fhir:packageId [ fhir:v "obs.cdss.ig"] ; # 
   fhir:license [ fhir:v "CC0-1.0"] ; # 
   fhir:fhirVersion ( [ fhir:v "5.0.0"] ) ; # 
@@ -289,6 +289,17 @@
        fhir:name [ fhir:v "Code system" ] ;
        fhir:description [ fhir:v "Code system" ] ;
        fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Bundle" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://joofio.github.io/obs-cdss-fhir/Bundle/f879270e-10ee-11ee-afc7-2e8ac521fb46> ;
+         fhir:reference [ fhir:v "Bundle/f879270e-10ee-11ee-afc7-2e8ac521fb46" ]
+       ] ;
+       fhir:name [ fhir:v "f879270e-10ee-11ee-afc7-2e8ac521fb46" ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
