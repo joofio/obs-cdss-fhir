@@ -319,3 +319,115 @@ Usage: #inline
 * status = #active
 * type = MlTypesCS#LGBM
 * version.value = "1"
+
+
+
+////////DQ ////////
+
+
+
+Instance: f879270e-10ee-11ee-afc7-2e8ac521fb46
+InstanceOf: Bundle
+Usage: #example
+* meta.profile = "https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageForRequest"
+* type = #message
+* entry[0].fullUrl = "http://localhost:8080/fhir/MessageHeader/f8791700-10ee-11ee-afc7-2e8ac521fb46"
+* entry[=].resource = f8791700-10ee-11ee-afc7-2e8ac521fb46
+* entry[+].fullUrl = "http://localhost:8080/fhir/Device/mlmodel"
+* entry[=].resource = mlmodel
+* entry[+].fullUrl = "http://localhost:8080/fhir/Observation/f8791246-10ee-11ee-afc7-2e8ac521fb46"
+* entry[=].resource = f8791246-10ee-11ee-afc7-2e8ac521fb46
+* entry[+].fullUrl = "http://localhost:8080/fhir/Observation/f87914b2-10ee-11ee-afc7-2e8ac521fb46"
+* entry[=].resource = f87914b2-10ee-11ee-afc7-2e8ac521fb46
+* entry[+].fullUrl = "http://localhost:8080/fhir/Observation/f879150c-10ee-11ee-afc7-2e8ac521fb46"
+* entry[=].resource = f879150c-10ee-11ee-afc7-2e8ac521fb46
+* entry[+].fullUrl = "http://localhost:8080/fhir/Observation/f8791552-10ee-11ee-afc7-2e8ac521fb46"
+* entry[=].resource = f8791552-10ee-11ee-afc7-2e8ac521fb46
+* entry[+].fullUrl = "http://localhost:8080/fhir/Observation/f87915c0-10ee-11ee-afc7-2e8ac521fb46"
+* entry[=].resource = f87915c0-10ee-11ee-afc7-2e8ac521fb46
+* entry[+].fullUrl = "http://localhost:8080/fhir/Observation/f8791606-10ee-11ee-afc7-2e8ac521fb46"
+* entry[=].resource = f8791606-10ee-11ee-afc7-2e8ac521fb46
+* entry[+].fullUrl = "http://localhost:8080/fhir/Observation/f879164c-10ee-11ee-afc7-2e8ac521fb46"
+* entry[=].resource = f879164c-10ee-11ee-afc7-2e8ac521fb46
+
+Instance: f8791700-10ee-11ee-afc7-2e8ac521fb46
+InstanceOf: MessageHeader
+Usage: #inline
+* eventCoding.code = #obs-dq
+* destination.name = "Requester"
+* source.name = "DQ-system"
+
+Instance: mlmodel
+InstanceOf: Device
+Usage: #inline
+* meta.profile = "https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MLModel"
+* identifier.value = "1"
+* status = #active
+* version[0].type.coding.display = "IQR"
+* version[=].value = "0.1"
+* version[+].type.coding.display = "Missing"
+* version[=].value = "0.1"
+* version[+].type.coding.display = "Correctness"
+* version[=].value = "0.1"
+* version[+].type.coding.display = "expecations"
+* version[=].value = "0.1"
+* version[+].type.coding.display = "lof"
+* version[=].value = "0.1"
+* version[+].type.coding.display = "elliptic"
+* version[=].value = "0.1"
+
+Instance: f8791246-10ee-11ee-afc7-2e8ac521fb46
+InstanceOf: Observation
+Usage: #inline
+* status = #final
+* code = $my-cs#final_score "final_score"
+* valueQuantity.value = 0.03
+* device = Reference(mlmodel)
+
+Instance: f87914b2-10ee-11ee-afc7-2e8ac521fb46
+InstanceOf: Observation
+Usage: #inline
+* status = #final
+* code = $my-cs#missing_score "missing_score"
+* valueQuantity.value = 0.12999999999999992
+* device = Reference(mlmodel)
+
+Instance: f879150c-10ee-11ee-afc7-2e8ac521fb46
+InstanceOf: Observation
+Usage: #inline
+* status = #final
+* code = $my-cs#correctness_score "correctness_score"
+* valueQuantity.value = 0.07204233316502665
+* device = Reference(mlmodel)
+
+Instance: f8791552-10ee-11ee-afc7-2e8ac521fb46
+InstanceOf: Observation
+Usage: #inline
+* status = #final
+* code = $my-cs#iqr_score "iqr_score"
+* valueQuantity.value = 0
+* device = Reference(mlmodel)
+
+Instance: f87915c0-10ee-11ee-afc7-2e8ac521fb46
+InstanceOf: Observation
+Usage: #inline
+* status = #final
+* code = $my-cs#expectations_score "expectations_score"
+* valueQuantity.value = 0
+* device = Reference(mlmodel)
+
+Instance: f8791606-10ee-11ee-afc7-2e8ac521fb46
+InstanceOf: Observation
+Usage: #inline
+* status = #final
+* code = $my-cs#lof_outlier "lof_outlier"
+* valueQuantity.value = 0
+* device = Reference(mlmodel)
+
+Instance: f879164c-10ee-11ee-afc7-2e8ac521fb46
+InstanceOf: Observation
+Usage: #inline
+* status = #final
+* code = $my-cs#elliptic_outlier "elliptic_outlier"
+* valueQuantity.value = 0
+* device = Reference(mlmodel)
