@@ -3,14 +3,14 @@
   "id" : "ml-type-vs",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-ml-type-cs.html\"><code>https://joofio.github.io/obs-cdss-fhir/CodeSystem/ml-type-cs</code></a></li></ul></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
   },
   "url" : "https://joofio.github.io/obs-cdss-fhir/ValueSet/ml-type-vs",
   "version" : "0.1.0",
   "name" : "MlTypesVS",
   "title" : "Machine Learning Models value set",
   "status" : "draft",
-  "date" : "2023-06-22T11:40:33+00:00",
+  "date" : "2023-09-10T21:33:21+00:00",
   "description" : "Machine Learning Models value set",
   "compose" : {
     "include" : [{

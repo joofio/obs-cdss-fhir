@@ -3,14 +3,14 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
   <id value="ml-type-cs"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system <code>https://joofio.github.io/obs-cdss-fhir/CodeSystem/ml-type-cs</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">DT<a name="ml-type-cs-DT"> </a></td><td>Decision Trees</td><td>Decision Trees</td></tr><tr><td style="white-space:nowrap">RF<a name="ml-type-cs-RF"> </a></td><td>Random Forests</td><td>Random Forests</td></tr><tr><td style="white-space:nowrap">XGBOOST<a name="ml-type-cs-XGBOOST"> </a></td><td>Extreme Gradient Boosting</td><td>Extreme Gradient Boosting</td></tr><tr><td style="white-space:nowrap">LGBM<a name="ml-type-cs-LGBM"> </a></td><td>Light Gradient Boosting</td><td>Light Gradient Boosting</td></tr><tr><td style="white-space:nowrap">BAYES<a name="ml-type-cs-BAYES"> </a></td><td>Bayesian</td><td>Bayesian</td></tr></table></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">Placeholder</div>
   </text>
   <url value="https://joofio.github.io/obs-cdss-fhir/CodeSystem/ml-type-cs"/>
   <version value="0.1.0"/>
   <name value="MlTypesCS"/>
   <title value="Machine Learning Models code system"/>
   <status value="draft"/>
-  <date value="2023-06-22T11:40:33+00:00"/>
+  <date value="2023-09-10T21:33:21+00:00"/>
   <description value="Machine Learning Models code system"/>
   <content value="complete"/>
   <count value="5"/>

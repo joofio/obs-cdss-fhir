@@ -3,14 +3,14 @@
   "id" : "my-cs",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>https://joofio.github.io/obs-cdss-fhir/CodeSystem/my-cs</code> defines the following code:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">IDADE_MATERNA<a name=\"my-cs-IDADE_MATERNA\"> </a></td><td>IDADE_MATERNA</td></tr></table></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
   },
   "url" : "https://joofio.github.io/obs-cdss-fhir/CodeSystem/my-cs",
   "version" : "0.1.0",
   "name" : "MyCS",
   "title" : "Code system",
   "status" : "draft",
-  "date" : "2023-06-22T11:40:33+00:00",
+  "date" : "2023-09-10T21:33:21+00:00",
   "description" : "Code system",
   "content" : "complete",
   "count" : 1,

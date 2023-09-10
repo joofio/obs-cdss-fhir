@@ -3,14 +3,14 @@
   "id" : "my-vs",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-my-cs.html\"><code>https://joofio.github.io/obs-cdss-fhir/CodeSystem/my-cs</code></a></li></ul></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
   },
   "url" : "https://joofio.github.io/obs-cdss-fhir/ValueSet/my-vs",
   "version" : "0.1.0",
   "name" : "MyVS",
   "title" : "value set",
   "status" : "draft",
-  "date" : "2023-06-22T11:40:33+00:00",
+  "date" : "2023-09-10T21:33:21+00:00",
   "description" : "value set",
   "compose" : {
     "include" : [{

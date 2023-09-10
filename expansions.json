@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "52736069-f317-4a45-83a6-987d49dbb042",
+  "id" : "b8fb3ea0-0366-49d5-a57f-b61a175f04d7",
   "meta" : {
-    "lastUpdated" : "2023-06-22T11:40:33.410+00:00"
+    "lastUpdated" : "2023-09-10T21:33:21.112+00:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -11,24 +11,24 @@
       "resourceType" : "ValueSet",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 5 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-ml-type-cs.html\">Machine Learning Models code system v0.1.0 (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---joofio.github.io-obs-cdss-fhir-CodeSystem-ml-type-cs-DT\"> </a>\u00a0\u00a0<a href=\"CodeSystem-ml-type-cs.html#ml-type-cs-DT\">DT</a></td><td>https://joofio.github.io/obs-cdss-fhir/CodeSystem/ml-type-cs</td><td>Decision Trees</td><td><div><p>Decision Trees</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---joofio.github.io-obs-cdss-fhir-CodeSystem-ml-type-cs-RF\"> </a>\u00a0\u00a0<a href=\"CodeSystem-ml-type-cs.html#ml-type-cs-RF\">RF</a></td><td>https://joofio.github.io/obs-cdss-fhir/CodeSystem/ml-type-cs</td><td>Random Forests</td><td><div><p>Random Forests</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---joofio.github.io-obs-cdss-fhir-CodeSystem-ml-type-cs-XGBOOST\"> </a>\u00a0\u00a0<a href=\"CodeSystem-ml-type-cs.html#ml-type-cs-XGBOOST\">XGBOOST</a></td><td>https://joofio.github.io/obs-cdss-fhir/CodeSystem/ml-type-cs</td><td>Extreme Gradient Boosting</td><td><div><p>Extreme Gradient Boosting</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---joofio.github.io-obs-cdss-fhir-CodeSystem-ml-type-cs-LGBM\"> </a>\u00a0\u00a0<a href=\"CodeSystem-ml-type-cs.html#ml-type-cs-LGBM\">LGBM</a></td><td>https://joofio.github.io/obs-cdss-fhir/CodeSystem/ml-type-cs</td><td>Light Gradient Boosting</td><td><div><p>Light Gradient Boosting</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---joofio.github.io-obs-cdss-fhir-CodeSystem-ml-type-cs-BAYES\"> </a>\u00a0\u00a0<a href=\"CodeSystem-ml-type-cs.html#ml-type-cs-BAYES\">BAYES</a></td><td>https://joofio.github.io/obs-cdss-fhir/CodeSystem/ml-type-cs</td><td>Bayesian</td><td><div><p>Bayesian</p>\n</div></td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 5 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-ml-type-cs.html\">codesystem Machine Learning Models code system v0.1.0 (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---joofio.github.io-obs-cdss-fhir-CodeSystem-ml-type-cs-DT\"> </a>\u00a0\u00a0<a href=\"CodeSystem-ml-type-cs.html#ml-type-cs-DT\">DT</a></td><td>https://joofio.github.io/obs-cdss-fhir/CodeSystem/ml-type-cs</td><td>Decision Trees</td><td><div><p>Decision Trees</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---joofio.github.io-obs-cdss-fhir-CodeSystem-ml-type-cs-RF\"> </a>\u00a0\u00a0<a href=\"CodeSystem-ml-type-cs.html#ml-type-cs-RF\">RF</a></td><td>https://joofio.github.io/obs-cdss-fhir/CodeSystem/ml-type-cs</td><td>Random Forests</td><td><div><p>Random Forests</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---joofio.github.io-obs-cdss-fhir-CodeSystem-ml-type-cs-XGBOOST\"> </a>\u00a0\u00a0<a href=\"CodeSystem-ml-type-cs.html#ml-type-cs-XGBOOST\">XGBOOST</a></td><td>https://joofio.github.io/obs-cdss-fhir/CodeSystem/ml-type-cs</td><td>Extreme Gradient Boosting</td><td><div><p>Extreme Gradient Boosting</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---joofio.github.io-obs-cdss-fhir-CodeSystem-ml-type-cs-LGBM\"> </a>\u00a0\u00a0<a href=\"CodeSystem-ml-type-cs.html#ml-type-cs-LGBM\">LGBM</a></td><td>https://joofio.github.io/obs-cdss-fhir/CodeSystem/ml-type-cs</td><td>Light Gradient Boosting</td><td><div><p>Light Gradient Boosting</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---joofio.github.io-obs-cdss-fhir-CodeSystem-ml-type-cs-BAYES\"> </a>\u00a0\u00a0<a href=\"CodeSystem-ml-type-cs.html#ml-type-cs-BAYES\">BAYES</a></td><td>https://joofio.github.io/obs-cdss-fhir/CodeSystem/ml-type-cs</td><td>Bayesian</td><td><div><p>Bayesian</p>\n</div></td></tr></table></div>"
       },
       "url" : "https://joofio.github.io/obs-cdss-fhir/ValueSet/ml-type-vs",
       "version" : "0.1.0",
       "name" : "MlTypesVS",
       "title" : "Machine Learning Models value set",
       "status" : "draft",
-      "date" : "2023-06-22T11:40:33+00:00",
+      "date" : "2023-09-10T21:33:21+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:545a6457-f33d-4736-b9d7-7a2e2c49f252",
-        "timestamp" : "2023-06-22T11:40:52+00:00",
+        "identifier" : "urn:uuid:7eb8667f-4355-4e23-8b8a-150deabe9f1c",
+        "timestamp" : "2023-09-10T21:33:52+00:00",
         "total" : 5,
         "parameter" : [{
           "name" : "excludeNested",
           "valueBoolean" : false
         },
         {
-          "name" : "version",
+          "name" : "used-codesystem",
           "valueUri" : "https://joofio.github.io/obs-cdss-fhir/CodeSystem/ml-type-cs|0.1.0"
         }],
         "contains" : [{
@@ -60,29 +60,63 @@
     }
   },
   {
+    "fullUrl" : "https://joofio.github.io/obs-cdss-fhir/ValueSet/my-vs",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 1 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-my-cs.html\">codesystem Code system v0.1.0 (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---joofio.github.io-obs-cdss-fhir-CodeSystem-my-cs-IDADE-MATERNA\"> </a>\u00a0\u00a0<a href=\"CodeSystem-my-cs.html#my-cs-IDADE_MATERNA\">IDADE_MATERNA</a></td><td>https://joofio.github.io/obs-cdss-fhir/CodeSystem/my-cs</td><td>IDADE_MATERNA</td><td><div><p>IDADE_MATERNA</p>\n</div></td></tr></table></div>"
+      },
+      "url" : "https://joofio.github.io/obs-cdss-fhir/ValueSet/my-vs",
+      "version" : "0.1.0",
+      "name" : "MyVS",
+      "title" : "value set",
+      "status" : "draft",
+      "date" : "2023-09-10T21:33:21+00:00",
+      "expansion" : {
+        "identifier" : "urn:uuid:6da0b3bd-63fc-4a0d-9d62-df2bc1244749",
+        "timestamp" : "2023-09-10T21:33:53+00:00",
+        "total" : 1,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "https://joofio.github.io/obs-cdss-fhir/CodeSystem/my-cs|0.1.0"
+        }],
+        "contains" : [{
+          "system" : "https://joofio.github.io/obs-cdss-fhir/CodeSystem/my-cs",
+          "code" : "IDADE_MATERNA",
+          "display" : "IDADE_MATERNA"
+        }]
+      }
+    }
+  },
+  {
     "fullUrl" : "https://joofio.github.io/obs-cdss-fhir/ValueSet/ml-response-vs",
     "resource" : {
       "resourceType" : "ValueSet",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 3 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-ml-response-cs.html\">Model Responses Code System v0.1.0 (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---joofio.github.io-obs-cdss-fhir-CodeSystem-ml-response-cs-OK\"> </a>\u00a0\u00a0<a href=\"CodeSystem-ml-response-cs.html#ml-response-cs-OK\">OK</a></td><td>https://joofio.github.io/obs-cdss-fhir/CodeSystem/ml-response-cs</td><td>Level Ok</td><td><div><p>Level Ok</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---joofio.github.io-obs-cdss-fhir-CodeSystem-ml-response-cs-WARN\"> </a>\u00a0\u00a0<a href=\"CodeSystem-ml-response-cs.html#ml-response-cs-WARN\">WARN</a></td><td>https://joofio.github.io/obs-cdss-fhir/CodeSystem/ml-response-cs</td><td>Warning level 1</td><td><div><p>Warning level 1</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---joofio.github.io-obs-cdss-fhir-CodeSystem-ml-response-cs-NOK\"> </a>\u00a0\u00a0<a href=\"CodeSystem-ml-response-cs.html#ml-response-cs-NOK\">NOK</a></td><td>https://joofio.github.io/obs-cdss-fhir/CodeSystem/ml-response-cs</td><td>Error level</td><td><div><p>Error level</p>\n</div></td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 3 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-ml-response-cs.html\">codesystem Model Responses Code System v0.1.0 (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---joofio.github.io-obs-cdss-fhir-CodeSystem-ml-response-cs-OK\"> </a>\u00a0\u00a0<a href=\"CodeSystem-ml-response-cs.html#ml-response-cs-OK\">OK</a></td><td>https://joofio.github.io/obs-cdss-fhir/CodeSystem/ml-response-cs</td><td>Level Ok</td><td><div><p>Level Ok</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---joofio.github.io-obs-cdss-fhir-CodeSystem-ml-response-cs-WARN\"> </a>\u00a0\u00a0<a href=\"CodeSystem-ml-response-cs.html#ml-response-cs-WARN\">WARN</a></td><td>https://joofio.github.io/obs-cdss-fhir/CodeSystem/ml-response-cs</td><td>Warning level 1</td><td><div><p>Warning level 1</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---joofio.github.io-obs-cdss-fhir-CodeSystem-ml-response-cs-NOK\"> </a>\u00a0\u00a0<a href=\"CodeSystem-ml-response-cs.html#ml-response-cs-NOK\">NOK</a></td><td>https://joofio.github.io/obs-cdss-fhir/CodeSystem/ml-response-cs</td><td>Error level</td><td><div><p>Error level</p>\n</div></td></tr></table></div>"
       },
       "url" : "https://joofio.github.io/obs-cdss-fhir/ValueSet/ml-response-vs",
       "version" : "0.1.0",
       "name" : "MLResponseVS",
       "title" : "Model Responses value set",
       "status" : "draft",
-      "date" : "2023-06-22T11:40:33+00:00",
+      "date" : "2023-09-10T21:33:21+00:00",
       "expansion" : {
-        "identifier" : "urn:uuid:2a7352d3-09fe-4bfd-acfe-5d83dbe5c5d4",
-        "timestamp" : "2023-06-22T11:40:55+00:00",
+        "identifier" : "urn:uuid:74cd62dc-b634-4140-a4eb-79191e3f94f7",
+        "timestamp" : "2023-09-10T21:33:53+00:00",
         "total" : 3,
         "parameter" : [{
           "name" : "excludeNested",
           "valueBoolean" : false
         },
         {
-          "name" : "version",
+          "name" : "used-codesystem",
           "valueUri" : "https://joofio.github.io/obs-cdss-fhir/CodeSystem/ml-response-cs|0.1.0"
         }],
         "contains" : [{
@@ -99,40 +133,6 @@
           "system" : "https://joofio.github.io/obs-cdss-fhir/CodeSystem/ml-response-cs",
           "code" : "NOK",
           "display" : "Error level"
-        }]
-      }
-    }
-  },
-  {
-    "fullUrl" : "https://joofio.github.io/obs-cdss-fhir/ValueSet/my-vs",
-    "resource" : {
-      "resourceType" : "ValueSet",
-      "text" : {
-        "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 1 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on <a href=\"CodeSystem-my-cs.html\">Code system v0.1.0 (CodeSystem)</a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"https---joofio.github.io-obs-cdss-fhir-CodeSystem-my-cs-IDADE-MATERNA\"> </a>\u00a0\u00a0<a href=\"CodeSystem-my-cs.html#my-cs-IDADE_MATERNA\">IDADE_MATERNA</a></td><td>https://joofio.github.io/obs-cdss-fhir/CodeSystem/my-cs</td><td>IDADE_MATERNA</td><td><div><p>IDADE_MATERNA</p>\n</div></td></tr></table></div>"
-      },
-      "url" : "https://joofio.github.io/obs-cdss-fhir/ValueSet/my-vs",
-      "version" : "0.1.0",
-      "name" : "MyVS",
-      "title" : "value set",
-      "status" : "draft",
-      "date" : "2023-06-22T11:40:33+00:00",
-      "expansion" : {
-        "identifier" : "urn:uuid:7cc78e21-952c-4723-a23b-b5228e241916",
-        "timestamp" : "2023-06-22T11:40:58+00:00",
-        "total" : 1,
-        "parameter" : [{
-          "name" : "excludeNested",
-          "valueBoolean" : false
-        },
-        {
-          "name" : "version",
-          "valueUri" : "https://joofio.github.io/obs-cdss-fhir/CodeSystem/my-cs|0.1.0"
-        }],
-        "contains" : [{
-          "system" : "https://joofio.github.io/obs-cdss-fhir/CodeSystem/my-cs",
-          "code" : "IDADE_MATERNA",
-          "display" : "IDADE_MATERNA"
         }]
       }
     }
