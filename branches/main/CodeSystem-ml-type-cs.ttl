@@ -10,14 +10,14 @@
   fhir:id [ fhir:v "ml-type-cs"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>https://joofio.github.io/obs-cdss-fhir/CodeSystem/ml-type-cs</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">DT<a name=\"ml-type-cs-DT\"> </a></td><td>Decision Trees</td><td>Decision Trees</td></tr><tr><td style=\"white-space:nowrap\">RF<a name=\"ml-type-cs-RF\"> </a></td><td>Random Forests</td><td>Random Forests</td></tr><tr><td style=\"white-space:nowrap\">XGBOOST<a name=\"ml-type-cs-XGBOOST\"> </a></td><td>Extreme Gradient Boosting</td><td>Extreme Gradient Boosting</td></tr><tr><td style=\"white-space:nowrap\">LGBM<a name=\"ml-type-cs-LGBM\"> </a></td><td>Light Gradient Boosting</td><td>Light Gradient Boosting</td></tr><tr><td style=\"white-space:nowrap\">BAYES<a name=\"ml-type-cs-BAYES\"> </a></td><td>Bayesian</td><td>Bayesian</td></tr></table></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
   ] ; # 
   fhir:url [ fhir:v "https://joofio.github.io/obs-cdss-fhir/CodeSystem/ml-type-cs"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "0.1.0"] ; # 
   fhir:name [ fhir:v "MlTypesCS"] ; # 
   fhir:title [ fhir:v "Machine Learning Models code system"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2023-06-22T11:40:33+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-09-10T21:33:21+00:00"^^xsd:dateTime] ; # 
   fhir:description [ fhir:v "Machine Learning Models code system"] ; # 
   fhir:content [ fhir:v "complete"] ; # 
   fhir:count [ fhir:v "5"^^xsd:nonNegativeInteger] ; # 

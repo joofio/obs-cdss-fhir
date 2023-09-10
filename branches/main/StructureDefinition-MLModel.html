@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-    <title>OBS.CDSS.IG\Machine Learning Model - FHIR v5.0.0</title>
+    <title>Machine Learning Model -  v0.1.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -250,7 +250,7 @@
         
           Draft
           
-            as of 2023-06-22
+            as of 2023-09-10
           
         
       </td>
@@ -542,6 +542,12 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
             <h4>Constraints</h4>
 <table class="list">
 <tr><td width="60"><b>Id</b></td><td><b>Grade</b></td><td><b>Path(s)</b></td><td><b>Details</b></td><td><b>Requirements</b></td></tr>
+<tr><td>dev-1</td><td>error</td><td>Device</td><td>only one Device.name.display SHALL be true when there is more than one Device.name<br/>: name.where(display=true).count() &lt;= 1</td><td></td></tr>
+<tr><td>dom-2</td><td>error</td><td>Device</td><td>If the resource is contained in another resource, it SHALL NOT contain nested Resources<br/>: contained.contained.empty()</td><td></td></tr>
+<tr><td>dom-3</td><td>error</td><td>Device</td><td>If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource<br/>: contained.where((('#'+id in (%resource.descendants().reference | %resource.descendants().ofType(canonical) | %resource.descendants().ofType(uri) | %resource.descendants().ofType(url))) or descendants().where(reference = '#').exists() or descendants().where(ofType(canonical) = '#').exists() or descendants().where(ofType(canonical) = '#').exists()).not()).trace('unmatched', id).empty()</td><td></td></tr>
+<tr><td>dom-4</td><td>error</td><td>Device</td><td>If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated<br/>: contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()</td><td></td></tr>
+<tr><td>dom-5</td><td>error</td><td>Device</td><td>If a resource is contained in another resource, it SHALL NOT have a security label<br/>: contained.meta.security.empty()</td><td></td></tr>
+<tr><td>dom-6</td><td>best practice</td><td>Device</td><td>A resource should have narrative for robust management<br/>: text.`div`.exists()</td><td></td></tr>
 <tr><td>ele-1</td><td>error</td><td>**ALL** elements</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
 <tr><td>ext-1</td><td>error</td><td>**ALL** extensions</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
 </table>
@@ -622,7 +628,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
     "<a href="StructureDefinition-MLModel.html#Device.partNumber" title="The part number or catalog number of the device" class="dict"><span style="text-decoration: underline">partNumber</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></span>&gt;", <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">The part number or catalog number of the device</span>
     "<a href="StructureDefinition-MLModel.html#Device.category" title="Devices may be associated with one or more categories" class="dict"><span style="text-decoration: underline">category</span></a>" : [{<span style="color: darkgreen"><a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept">CodeableConcept</a></span>}], <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8"><a href="http://hl7.org/fhir/R5/null.html" style="color: navy">Indicates a high-level grouping of the device</a></span>
     "<a href="StructureDefinition-MLModel.html#Device.type" title="The kind or type of device. A device instance may have more than one type - in which case those are the types that apply to the specific instance of the device (this element must be supported)" class="dict"><span style="text-decoration: underline">type</span></a>" : [{<span style="color: darkgreen"><a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept">CodeableConcept</a></span>}], <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: brown" title="This element is required"><b>R!</b></span> <span style="color: brown" title="This element is an array in the base standard, but the profile only allows on element"><b>Only One!</b></span>  <span style="color: navy; opacity: 0.8"><a href="http://hl7.org/fhir/R5/null.html" style="color: navy">The kind or type of device</a></span>
-    "<a href="StructureDefinition-MLModel.html#Device.version" title="The actual design of the device or software version running on the device" class="dict"><span style="text-decoration: underline">version</span></a>" : [{ <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8">The actual design of the device or software version running on the device</span>
+    "<a href="StructureDefinition-MLModel.html#Device.version" title="The actual design of the device or software version running on the device" class="dict"><span style="text-decoration: underline">version</span></a>" : [{ <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">The actual design of the device or software version running on the device</span>
       "extension": [
       ],
       "<a href="StructureDefinition-MLModel.html#Device.version.type" title="The type of the device version, e.g. manufacturer, approved, internal" class="dict"><span style="text-decoration: underline">type</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept">CodeableConcept</a></span>}, <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8"><a href="http://hl7.org/fhir/R5/null.html" style="color: navy">The type of the device version, e.g. manufacturer, approved, internal</a></span>
@@ -916,6 +922,12 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
             <h4>Constraints</h4>
 <table class="list">
 <tr><td width="60"><b>Id</b></td><td><b>Grade</b></td><td><b>Path(s)</b></td><td><b>Details</b></td><td><b>Requirements</b></td></tr>
+<tr><td>dev-1</td><td>error</td><td>Device</td><td>only one Device.name.display SHALL be true when there is more than one Device.name<br/>: name.where(display=true).count() &lt;= 1</td><td></td></tr>
+<tr><td>dom-2</td><td>error</td><td>Device</td><td>If the resource is contained in another resource, it SHALL NOT contain nested Resources<br/>: contained.contained.empty()</td><td></td></tr>
+<tr><td>dom-3</td><td>error</td><td>Device</td><td>If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource<br/>: contained.where((('#'+id in (%resource.descendants().reference | %resource.descendants().ofType(canonical) | %resource.descendants().ofType(uri) | %resource.descendants().ofType(url))) or descendants().where(reference = '#').exists() or descendants().where(ofType(canonical) = '#').exists() or descendants().where(ofType(canonical) = '#').exists()).not()).trace('unmatched', id).empty()</td><td></td></tr>
+<tr><td>dom-4</td><td>error</td><td>Device</td><td>If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated<br/>: contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()</td><td></td></tr>
+<tr><td>dom-5</td><td>error</td><td>Device</td><td>If a resource is contained in another resource, it SHALL NOT have a security label<br/>: contained.meta.security.empty()</td><td></td></tr>
+<tr><td>dom-6</td><td>best practice</td><td>Device</td><td>A resource should have narrative for robust management<br/>: text.`div`.exists()</td><td></td></tr>
 <tr><td>ele-1</td><td>error</td><td>**ALL** elements</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
 <tr><td>ext-1</td><td>error</td><td>**ALL** extensions</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
 </table>
@@ -996,7 +1008,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
     "<a href="StructureDefinition-MLModel.html#Device.partNumber" title="The part number or catalog number of the device" class="dict"><span style="text-decoration: underline">partNumber</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></span>&gt;", <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">The part number or catalog number of the device</span>
     "<a href="StructureDefinition-MLModel.html#Device.category" title="Devices may be associated with one or more categories" class="dict"><span style="text-decoration: underline">category</span></a>" : [{<span style="color: darkgreen"><a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept">CodeableConcept</a></span>}], <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8"><a href="http://hl7.org/fhir/R5/null.html" style="color: navy">Indicates a high-level grouping of the device</a></span>
     "<a href="StructureDefinition-MLModel.html#Device.type" title="The kind or type of device. A device instance may have more than one type - in which case those are the types that apply to the specific instance of the device (this element must be supported)" class="dict"><span style="text-decoration: underline">type</span></a>" : [{<span style="color: darkgreen"><a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept">CodeableConcept</a></span>}], <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: brown" title="This element is required"><b>R!</b></span> <span style="color: brown" title="This element is an array in the base standard, but the profile only allows on element"><b>Only One!</b></span>  <span style="color: navy; opacity: 0.8"><a href="http://hl7.org/fhir/R5/null.html" style="color: navy">The kind or type of device</a></span>
-    "<a href="StructureDefinition-MLModel.html#Device.version" title="The actual design of the device or software version running on the device" class="dict"><span style="text-decoration: underline">version</span></a>" : [{ <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8">The actual design of the device or software version running on the device</span>
+    "<a href="StructureDefinition-MLModel.html#Device.version" title="The actual design of the device or software version running on the device" class="dict"><span style="text-decoration: underline">version</span></a>" : [{ <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">The actual design of the device or software version running on the device</span>
       "extension": [
       ],
       "<a href="StructureDefinition-MLModel.html#Device.version.type" title="The type of the device version, e.g. manufacturer, approved, internal" class="dict"><span style="text-decoration: underline">type</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept">CodeableConcept</a></span>}, <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8"><a href="http://hl7.org/fhir/R5/null.html" style="color: navy">The type of the device version, e.g. manufacturer, approved, internal</a></span>
@@ -1123,7 +1135,7 @@ Summary
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="null"></a>.  Package obs.cdss.ig#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Thu, Jun 22, 2023 11:40+0000">2023-06-22</span>
+          IG &copy; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="null"></a>.  Package obs.cdss.ig#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Sun, Sep 10, 2023 21:33+0000">2023-09-10</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

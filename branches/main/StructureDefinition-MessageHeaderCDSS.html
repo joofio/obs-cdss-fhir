@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-    <title>OBS.CDSS.IG\Message Header for request and response - FHIR v5.0.0</title>
+    <title>Message Header for request and response -  v0.1.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -260,7 +260,7 @@
         
           Draft
           
-            as of 2023-06-22
+            as of 2023-09-10
           
         
       </td>
@@ -482,6 +482,11 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
             <h4>Constraints</h4>
 <table class="list">
 <tr><td width="60"><b>Id</b></td><td><b>Grade</b></td><td><b>Path(s)</b></td><td><b>Details</b></td><td><b>Requirements</b></td></tr>
+<tr><td>dom-2</td><td>error</td><td>MessageHeader</td><td>If the resource is contained in another resource, it SHALL NOT contain nested Resources<br/>: contained.contained.empty()</td><td></td></tr>
+<tr><td>dom-3</td><td>error</td><td>MessageHeader</td><td>If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource<br/>: contained.where((('#'+id in (%resource.descendants().reference | %resource.descendants().ofType(canonical) | %resource.descendants().ofType(uri) | %resource.descendants().ofType(url))) or descendants().where(reference = '#').exists() or descendants().where(ofType(canonical) = '#').exists() or descendants().where(ofType(canonical) = '#').exists()).not()).trace('unmatched', id).empty()</td><td></td></tr>
+<tr><td>dom-4</td><td>error</td><td>MessageHeader</td><td>If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated<br/>: contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()</td><td></td></tr>
+<tr><td>dom-5</td><td>error</td><td>MessageHeader</td><td>If a resource is contained in another resource, it SHALL NOT have a security label<br/>: contained.meta.security.empty()</td><td></td></tr>
+<tr><td>dom-6</td><td>best practice</td><td>MessageHeader</td><td>A resource should have narrative for robust management<br/>: text.`div`.exists()</td><td></td></tr>
 <tr><td>ele-1</td><td>error</td><td>**ALL** elements</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
 <tr><td>ext-1</td><td>error</td><td>**ALL** extensions</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
 </table>
@@ -518,7 +523,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
     "extension": [
     ],
     "<a href="StructureDefinition-MessageHeaderCDSS.html#MessageHeader.eventCoding" title="Code that identifies the event this message represents and connects it with its definition. Events defined as part of the FHIR specification are defined by the implementation.  Alternatively a canonical uri to the EventDefinition" class="dict"><span style="text-decoration: underline">eventCoding</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R5/datatypes.html#Coding">Coding</a></span>}, <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: brown" title="This element is required"><b>R!</b></span> <span style="color: navy; opacity: 0.8">Event code or link to EventDefinition</span>
-    "<a href="StructureDefinition-MessageHeaderCDSS.html#MessageHeader.destination" title="The destination application which the message is intended for" class="dict"><span style="text-decoration: underline">destination</span></a>" : [{ <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8">Message destination application(s)</span>
+    "<a href="StructureDefinition-MessageHeaderCDSS.html#MessageHeader.destination" title="The destination application which the message is intended for" class="dict"><span style="text-decoration: underline">destination</span></a>" : [{ <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">Message destination application(s)</span>
       "extension": [
       ],
 <span style="color: Gray">// value[x]: <span style="color: navy; opacity: 0.8">Actual destination address or Endpoint resource</span>. One of these 2:</span>
@@ -530,7 +535,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
     }],
     "<a href="StructureDefinition-MessageHeaderCDSS.html#MessageHeader.sender" title="Identifies the sending system to allow the use of a trust relationship" class="dict"><span style="text-decoration: underline">sender</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R5/references.html#Reference">Reference</a></span>(<span style="color: darkgreen"><a href="http://hl7.org/fhir/R5/practitioner.html">Practitioner</a></span>)}, <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">Real world sender of the message</span>
     "<a href="StructureDefinition-MessageHeaderCDSS.html#MessageHeader.author" title="The logical author of the message - the personor device that decided the described event should happen. When there is more than one candidate, pick the most proximal to the MessageHeader. Can provide other authors in extensions" class="dict"><span style="text-decoration: underline">author</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R5/references.html#Reference">Reference</a></span>(<span style="color: darkgreen"><a href="http://hl7.org/fhir/R5/practitioner.html">Practitioner</a></span>)}, <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">The source of the decision</span>
-    "<a href="StructureDefinition-MessageHeaderCDSS.html#MessageHeader.source" title="The source application from which this message originated" class="dict"><span style="text-decoration: underline">source</span></a>" : { <span style="color: Gray">//</span> <span style="color: brown" title="This element is required"><b>R!</b></span> <span style="color: navy; opacity: 0.8">Message source application</span>
+    "<a href="StructureDefinition-MessageHeaderCDSS.html#MessageHeader.source" title="The source application from which this message originated" class="dict"><span style="text-decoration: underline">source</span></a>" : { <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: brown" title="This element is required"><b>R!</b></span> <span style="color: navy; opacity: 0.8">Message source application</span>
       "extension": [
       ],
 <span style="color: Gray">// value[x]: <span style="color: navy; opacity: 0.8">Actual source address or Endpoint resource</span>. One of these 2:</span>
@@ -736,6 +741,11 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
             <h4>Constraints</h4>
 <table class="list">
 <tr><td width="60"><b>Id</b></td><td><b>Grade</b></td><td><b>Path(s)</b></td><td><b>Details</b></td><td><b>Requirements</b></td></tr>
+<tr><td>dom-2</td><td>error</td><td>MessageHeader</td><td>If the resource is contained in another resource, it SHALL NOT contain nested Resources<br/>: contained.contained.empty()</td><td></td></tr>
+<tr><td>dom-3</td><td>error</td><td>MessageHeader</td><td>If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource<br/>: contained.where((('#'+id in (%resource.descendants().reference | %resource.descendants().ofType(canonical) | %resource.descendants().ofType(uri) | %resource.descendants().ofType(url))) or descendants().where(reference = '#').exists() or descendants().where(ofType(canonical) = '#').exists() or descendants().where(ofType(canonical) = '#').exists()).not()).trace('unmatched', id).empty()</td><td></td></tr>
+<tr><td>dom-4</td><td>error</td><td>MessageHeader</td><td>If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated<br/>: contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()</td><td></td></tr>
+<tr><td>dom-5</td><td>error</td><td>MessageHeader</td><td>If a resource is contained in another resource, it SHALL NOT have a security label<br/>: contained.meta.security.empty()</td><td></td></tr>
+<tr><td>dom-6</td><td>best practice</td><td>MessageHeader</td><td>A resource should have narrative for robust management<br/>: text.`div`.exists()</td><td></td></tr>
 <tr><td>ele-1</td><td>error</td><td>**ALL** elements</td><td>All FHIR elements must have a @value or children<br/>: hasValue() or (children().count() &gt; id.count())</td><td></td></tr>
 <tr><td>ext-1</td><td>error</td><td>**ALL** extensions</td><td>Must have either extensions or value[x], not both<br/>: extension.exists() != value.exists()</td><td></td></tr>
 </table>
@@ -772,7 +782,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
     "extension": [
     ],
     "<a href="StructureDefinition-MessageHeaderCDSS.html#MessageHeader.eventCoding" title="Code that identifies the event this message represents and connects it with its definition. Events defined as part of the FHIR specification are defined by the implementation.  Alternatively a canonical uri to the EventDefinition" class="dict"><span style="text-decoration: underline">eventCoding</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R5/datatypes.html#Coding">Coding</a></span>}, <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: brown" title="This element is required"><b>R!</b></span> <span style="color: navy; opacity: 0.8">Event code or link to EventDefinition</span>
-    "<a href="StructureDefinition-MessageHeaderCDSS.html#MessageHeader.destination" title="The destination application which the message is intended for" class="dict"><span style="text-decoration: underline">destination</span></a>" : [{ <span style="color: Gray">//</span> <span style="color: navy; opacity: 0.8">Message destination application(s)</span>
+    "<a href="StructureDefinition-MessageHeaderCDSS.html#MessageHeader.destination" title="The destination application which the message is intended for" class="dict"><span style="text-decoration: underline">destination</span></a>" : [{ <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">Message destination application(s)</span>
       "extension": [
       ],
 <span style="color: Gray">// value[x]: <span style="color: navy; opacity: 0.8">Actual destination address or Endpoint resource</span>. One of these 2:</span>
@@ -784,7 +794,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
     }],
     "<a href="StructureDefinition-MessageHeaderCDSS.html#MessageHeader.sender" title="Identifies the sending system to allow the use of a trust relationship" class="dict"><span style="text-decoration: underline">sender</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R5/references.html#Reference">Reference</a></span>(<span style="color: darkgreen"><a href="http://hl7.org/fhir/R5/practitioner.html">Practitioner</a></span>)}, <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">Real world sender of the message</span>
     "<a href="StructureDefinition-MessageHeaderCDSS.html#MessageHeader.author" title="The logical author of the message - the personor device that decided the described event should happen. When there is more than one candidate, pick the most proximal to the MessageHeader. Can provide other authors in extensions" class="dict"><span style="text-decoration: underline">author</span></a>" : {<span style="color: darkgreen"><a href="http://hl7.org/fhir/R5/references.html#Reference">Reference</a></span>(<span style="color: darkgreen"><a href="http://hl7.org/fhir/R5/practitioner.html">Practitioner</a></span>)}, <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">The source of the decision</span>
-    "<a href="StructureDefinition-MessageHeaderCDSS.html#MessageHeader.source" title="The source application from which this message originated" class="dict"><span style="text-decoration: underline">source</span></a>" : { <span style="color: Gray">//</span> <span style="color: brown" title="This element is required"><b>R!</b></span> <span style="color: navy; opacity: 0.8">Message source application</span>
+    "<a href="StructureDefinition-MessageHeaderCDSS.html#MessageHeader.source" title="The source application from which this message originated" class="dict"><span style="text-decoration: underline">source</span></a>" : { <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: brown" title="This element is required"><b>R!</b></span> <span style="color: navy; opacity: 0.8">Message source application</span>
       "extension": [
       ],
 <span style="color: Gray">// value[x]: <span style="color: navy; opacity: 0.8">Actual source address or Endpoint resource</span>. One of these 2:</span>
@@ -893,7 +903,7 @@ Summary
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="null"></a>.  Package obs.cdss.ig#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Thu, Jun 22, 2023 11:40+0000">2023-06-22</span>
+          IG &copy; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="null"></a>.  Package obs.cdss.ig#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Sun, Sep 10, 2023 21:33+0000">2023-09-10</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
