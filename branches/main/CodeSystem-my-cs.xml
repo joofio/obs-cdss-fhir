@@ -3,14 +3,14 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
   <id value="my-cs"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">Placeholder</div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This  code system <code>https://joofio.github.io/obs-cdss-fhir/CodeSystem/my-cs</code> defines the following code:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">IDADE_MATERNA<a name="my-cs-IDADE_MATERNA"> </a></td><td>IDADE_MATERNA</td></tr></table></div>
   </text>
   <url value="https://joofio.github.io/obs-cdss-fhir/CodeSystem/my-cs"/>
   <version value="0.1.0"/>
   <name value="MyCS"/>
   <title value="Code system"/>
   <status value="draft"/>
-  <date value="2023-09-10T21:33:21+00:00"/>
+  <date value="2024-03-26T13:57:12+00:00"/>
   <description value="Code system"/>
   <content value="complete"/>
   <count value="1"/>

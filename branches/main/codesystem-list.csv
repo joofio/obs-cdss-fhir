@@ -1,0 +1,4 @@
+URL,Version,Status,OIDs,Name,Title,Descriptino,Used
+https://joofio.github.io/obs-cdss-fhir/CodeSystem/ml-response-cs,0.1.0,draft,,MLResponseCS,Model Responses Code System,"Model Responses Code System",
+https://joofio.github.io/obs-cdss-fhir/CodeSystem/ml-type-cs,0.1.0,draft,,MlTypesCS,Machine Learning Models code system,"Machine Learning Models code system",
+https://joofio.github.io/obs-cdss-fhir/CodeSystem/my-cs,0.1.0,draft,,MyCS,Code system,"Code system",

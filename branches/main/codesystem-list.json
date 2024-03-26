@@ -1,0 +1,28 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "https://joofio.github.io/obs-cdss-fhir/CodeSystem/ml-response-cs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "MLResponseCS",
+      "title" : "Model Responses Code System",
+      "description" : "Model Responses Code System"
+    },
+    {
+      "url" : "https://joofio.github.io/obs-cdss-fhir/CodeSystem/ml-type-cs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "MlTypesCS",
+      "title" : "Machine Learning Models code system",
+      "description" : "Machine Learning Models code system"
+    },
+    {
+      "url" : "https://joofio.github.io/obs-cdss-fhir/CodeSystem/my-cs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "MyCS",
+      "title" : "Code system",
+      "description" : "Code system"
+    }
+  ]
+}
