@@ -1,11 +1,128 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="b8fb3ea0-0366-49d5-a57f-b61a175f04d7"/>
+  <id value="36a5cb03-40db-4bc9-9acd-af193773afac"/>
   <meta>
-    <lastUpdated value="2023-09-10T21:33:21.112+00:00"/>
+    <lastUpdated value="2024-03-26T13:57:12.759+00:00"/>
   </meta>
   <type value="collection"/>
+  <entry>
+    <fullUrl value="https://joofio.github.io/obs-cdss-fhir/ValueSet/ml-response-vs"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-ml-response-cs.html">codesystem Model Responses Code System v0.1.0 (CodeSystem)</a>
+            </p>
+            <p>This value set contains 3 concepts.</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---joofio.github.io-obs-cdss-fhir-CodeSystem-ml-response-cs-OK"> </a>  
+                  <a href="CodeSystem-ml-response-cs.html#ml-response-cs-OK">OK</a>
+                </td>
+                <td>https://joofio.github.io/obs-cdss-fhir/CodeSystem/ml-response-cs</td>
+                <td>Level Ok</td>
+                <td>
+                  <div>
+                    <p>Level Ok</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---joofio.github.io-obs-cdss-fhir-CodeSystem-ml-response-cs-WARN"> </a>  
+                  <a href="CodeSystem-ml-response-cs.html#ml-response-cs-WARN">WARN</a>
+                </td>
+                <td>https://joofio.github.io/obs-cdss-fhir/CodeSystem/ml-response-cs</td>
+                <td>Warning level 1</td>
+                <td>
+                  <div>
+                    <p>Warning level 1</p>
+
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---joofio.github.io-obs-cdss-fhir-CodeSystem-ml-response-cs-NOK"> </a>  
+                  <a href="CodeSystem-ml-response-cs.html#ml-response-cs-NOK">NOK</a>
+                </td>
+                <td>https://joofio.github.io/obs-cdss-fhir/CodeSystem/ml-response-cs</td>
+                <td>Error level</td>
+                <td>
+                  <div>
+                    <p>Error level</p>
+
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://joofio.github.io/obs-cdss-fhir/ValueSet/ml-response-vs"/>
+        <version value="0.1.0"/>
+        <name value="MLResponseVS"/>
+        <title value="Model Responses value set"/>
+        <status value="draft"/>
+        <date value="2024-03-26T13:57:12+00:00"/>
+        <expansion>
+          <identifier value="urn:uuid:e2864073-8288-4297-a31b-8b97a5b0d444"/>
+          <timestamp value="2024-03-26T13:57:26+00:00"/>
+          <total value="3"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="https://joofio.github.io/obs-cdss-fhir/CodeSystem/ml-response-cs|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="https://joofio.github.io/obs-cdss-fhir/CodeSystem/ml-response-cs"/>
+            <code value="OK"/>
+            <display value="Level Ok"/>
+          </contains>
+          <contains>
+            <system value="https://joofio.github.io/obs-cdss-fhir/CodeSystem/ml-response-cs"/>
+            <code value="WARN"/>
+            <display value="Warning level 1"/>
+          </contains>
+          <contains>
+            <system value="https://joofio.github.io/obs-cdss-fhir/CodeSystem/ml-response-cs"/>
+            <code value="NOK"/>
+            <display value="Error level"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
   <entry>
     <fullUrl value="https://joofio.github.io/obs-cdss-fhir/ValueSet/ml-type-vs"/>
     <resource>
@@ -13,10 +130,10 @@
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 5 concepts</p>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
               <a href="CodeSystem-ml-type-cs.html">codesystem Machine Learning Models code system v0.1.0 (CodeSystem)</a>
             </p>
+            <p>This value set contains 5 concepts.</p>
             <table class="codes">
               <tr>
                 <td style="white-space:nowrap">
@@ -110,11 +227,20 @@
         <name value="MlTypesVS"/>
         <title value="Machine Learning Models value set"/>
         <status value="draft"/>
-        <date value="2023-09-10T21:33:21+00:00"/>
+        <date value="2024-03-26T13:57:12+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:7eb8667f-4355-4e23-8b8a-150deabe9f1c"/>
-          <timestamp value="2023-09-10T21:33:52+00:00"/>
+          <identifier value="urn:uuid:b7e8e837-b819-4a0d-a85a-b0c7cae7a889"/>
+          <timestamp value="2024-03-26T13:57:26+00:00"/>
           <total value="5"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
@@ -159,10 +285,10 @@
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 1 concepts</p>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
               <a href="CodeSystem-my-cs.html">codesystem Code system v0.1.0 (CodeSystem)</a>
             </p>
+            <p>This value set contains 1 concepts.</p>
             <table class="codes">
               <tr>
                 <td style="white-space:nowrap">
@@ -200,11 +326,20 @@
         <name value="MyVS"/>
         <title value="value set"/>
         <status value="draft"/>
-        <date value="2023-09-10T21:33:21+00:00"/>
+        <date value="2024-03-26T13:57:12+00:00"/>
         <expansion>
-          <identifier value="urn:uuid:6da0b3bd-63fc-4a0d-9d62-df2bc1244749"/>
-          <timestamp value="2023-09-10T21:33:53+00:00"/>
+          <identifier value="urn:uuid:accb1ae2-ba62-42d2-b3a8-9b02983f4d48"/>
+          <timestamp value="2024-03-26T13:57:26+00:00"/>
           <total value="1"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
@@ -217,114 +352,6 @@
             <system value="https://joofio.github.io/obs-cdss-fhir/CodeSystem/my-cs"/>
             <code value="IDADE_MATERNA"/>
             <display value="IDADE_MATERNA"/>
-          </contains>
-        </expansion>
-      </ValueSet>
-    </resource>
-  </entry>
-  <entry>
-    <fullUrl value="https://joofio.github.io/obs-cdss-fhir/ValueSet/ml-response-vs"/>
-    <resource>
-      <ValueSet>
-        <text>
-          <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 3 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-ml-response-cs.html">codesystem Model Responses Code System v0.1.0 (CodeSystem)</a>
-            </p>
-            <table class="codes">
-              <tr>
-                <td style="white-space:nowrap">
-                  <b>Code</b>
-                </td>
-                <td>
-                  <b>System</b>
-                </td>
-                <td>
-                  <b>Display</b>
-                </td>
-                <td>
-                  <b>Definition</b>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---joofio.github.io-obs-cdss-fhir-CodeSystem-ml-response-cs-OK"> </a>  
-                  <a href="CodeSystem-ml-response-cs.html#ml-response-cs-OK">OK</a>
-                </td>
-                <td>https://joofio.github.io/obs-cdss-fhir/CodeSystem/ml-response-cs</td>
-                <td>Level Ok</td>
-                <td>
-                  <div>
-                    <p>Level Ok</p>
-
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---joofio.github.io-obs-cdss-fhir-CodeSystem-ml-response-cs-WARN"> </a>  
-                  <a href="CodeSystem-ml-response-cs.html#ml-response-cs-WARN">WARN</a>
-                </td>
-                <td>https://joofio.github.io/obs-cdss-fhir/CodeSystem/ml-response-cs</td>
-                <td>Warning level 1</td>
-                <td>
-                  <div>
-                    <p>Warning level 1</p>
-
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---joofio.github.io-obs-cdss-fhir-CodeSystem-ml-response-cs-NOK"> </a>  
-                  <a href="CodeSystem-ml-response-cs.html#ml-response-cs-NOK">NOK</a>
-                </td>
-                <td>https://joofio.github.io/obs-cdss-fhir/CodeSystem/ml-response-cs</td>
-                <td>Error level</td>
-                <td>
-                  <div>
-                    <p>Error level</p>
-
-                  </div>
-                </td>
-              </tr>
-            </table>
-          </div>
-        </text>
-        <url value="https://joofio.github.io/obs-cdss-fhir/ValueSet/ml-response-vs"/>
-        <version value="0.1.0"/>
-        <name value="MLResponseVS"/>
-        <title value="Model Responses value set"/>
-        <status value="draft"/>
-        <date value="2023-09-10T21:33:21+00:00"/>
-        <expansion>
-          <identifier value="urn:uuid:74cd62dc-b634-4140-a4eb-79191e3f94f7"/>
-          <timestamp value="2023-09-10T21:33:53+00:00"/>
-          <total value="3"/>
-          <parameter>
-            <name value="excludeNested"/>
-            <valueBoolean value="false"/>
-          </parameter>
-          <parameter>
-            <name value="used-codesystem"/>
-            <valueUri value="https://joofio.github.io/obs-cdss-fhir/CodeSystem/ml-response-cs|0.1.0"/>
-          </parameter>
-          <contains>
-            <system value="https://joofio.github.io/obs-cdss-fhir/CodeSystem/ml-response-cs"/>
-            <code value="OK"/>
-            <display value="Level Ok"/>
-          </contains>
-          <contains>
-            <system value="https://joofio.github.io/obs-cdss-fhir/CodeSystem/ml-response-cs"/>
-            <code value="WARN"/>
-            <display value="Warning level 1"/>
-          </contains>
-          <contains>
-            <system value="https://joofio.github.io/obs-cdss-fhir/CodeSystem/ml-response-cs"/>
-            <code value="NOK"/>
-            <display value="Error level"/>
           </contains>
         </expansion>
       </ValueSet>

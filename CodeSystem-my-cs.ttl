@@ -10,14 +10,14 @@
   fhir:id [ fhir:v "my-cs"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This  code system <code>https://joofio.github.io/obs-cdss-fhir/CodeSystem/my-cs</code> defines the following code:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">IDADE_MATERNA<a name=\"my-cs-IDADE_MATERNA\"> </a></td><td>IDADE_MATERNA</td></tr></table></div>"
   ] ; # 
   fhir:url [ fhir:v "https://joofio.github.io/obs-cdss-fhir/CodeSystem/my-cs"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "0.1.0"] ; # 
   fhir:name [ fhir:v "MyCS"] ; # 
   fhir:title [ fhir:v "Code system"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2023-09-10T21:33:21+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-03-26T13:57:12+00:00"^^xsd:dateTime] ; # 
   fhir:description [ fhir:v "Code system"] ; # 
   fhir:content [ fhir:v "complete"] ; # 
   fhir:count [ fhir:v "1"^^xsd:nonNegativeInteger] ; # 

@@ -1,0 +1,265 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://hl7.org/fhir/CodeSystem/iana-link-relations",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "LinkRelationTypes",
+      "title" : "Link Relation Types",
+      "description" : "Link Relation Types defined at https://www.iana.org/assignments/link-relations/link-relations.xhtml#link-relations-1",
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-iana-link-relations.html" : "Link Relation Types"
+    },
+    {
+      "url" : "http://hl7.org/fhir/bundle-type",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "BundleType",
+      "title" : "Bundle Type",
+      "description" : "Indicates the purpose of a bundle - how it is intended to be used.",
+      "oids" : [
+        "2.16.840.1.113883.4.642.2.327",
+        "2.16.840.1.113883.4.642.1.613",
+        "2.16.840.1.113883.4.642.4.621"
+      ],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-bundle-type.html" : "Bundle Type"
+    },
+    {
+      "url" : "http://hl7.org/fhir/device-availability-status",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "FHIRDeviceAvailabilityStatus",
+      "title" : "FHIR Device Availability Status",
+      "description" : "The record status of the device.",
+      "oids" : ["2.16.840.1.113883.4.642.4.2048"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-device-availability-status.html" : "FHIR Device Availability Status"
+    },
+    {
+      "url" : "http://hl7.org/fhir/device-category",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "FHIRDeviceCategory",
+      "title" : "FHIR Device Category",
+      "description" : "The category of the device.",
+      "oids" : ["2.16.840.1.113883.4.642.4.2105"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-device-category.html" : "FHIR Device Category"
+    },
+    {
+      "url" : "http://hl7.org/fhir/device-nametype",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "DeviceNameType",
+      "title" : "Device Name Type",
+      "description" : "The type of name the device is referred by.",
+      "oids" : ["2.16.840.1.113883.4.642.4.1084"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-device-nametype.html" : "Device Name Type"
+    },
+    {
+      "url" : "http://hl7.org/fhir/device-operation-mode",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "FHIRDeviceOperationMode",
+      "title" : "FHIR Device Operation Mode",
+      "description" : "The operation mode of the device.",
+      "oids" : ["2.16.840.1.113883.4.642.4.2107"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-device-operation-mode.html" : "FHIR Device Operation Mode"
+    },
+    {
+      "url" : "http://hl7.org/fhir/device-specification-category",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "FHIRDeviceSpecializationCategory",
+      "title" : "FHIR Device Specialization Category",
+      "description" : "The kind of standards used by the device.",
+      "oids" : ["2.16.840.1.113883.4.642.4.2054"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-device-specification-category.html" : "Device Specification Category"
+    },
+    {
+      "url" : "http://hl7.org/fhir/device-status",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "FHIRDeviceStatus",
+      "title" : "FHIR Device Status",
+      "description" : "The status of the Device record.",
+      "oids" : [
+        "2.16.840.1.113883.4.642.4.210",
+        "2.16.840.1.113883.4.642.1.200"
+      ],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-device-status.html" : "FHIR Device Status"
+    },
+    {
+      "url" : "http://hl7.org/fhir/http-verb",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "HTTPVerb",
+      "title" : "H T T P Verb",
+      "description" : "HTTP verbs (in the HTTP command line). See [HTTP rfc](https://tools.ietf.org/html/rfc7231) for details.",
+      "oids" : [
+        "2.16.840.1.113883.4.642.4.625",
+        "2.16.840.1.113883.4.642.2.329",
+        "2.16.840.1.113883.4.642.1.617"
+      ],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-http-verb.html" : "H T T P Verb"
+    },
+    {
+      "url" : "http://hl7.org/fhir/response-code",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "ResponseType",
+      "title" : "Response Type",
+      "description" : "The kind of response to a message.",
+      "oids" : [
+        "2.16.840.1.113883.4.642.1.368",
+        "2.16.840.1.113883.4.642.2.203",
+        "2.16.840.1.113883.4.642.4.381"
+      ],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-response-code.html" : "Response Type"
+    },
+    {
+      "url" : "http://hl7.org/fhir/search-entry-mode",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "SearchEntryMode",
+      "title" : "Search Entry Mode",
+      "description" : "Why an entry is in the result set - whether it's included as a match or because of an _include requirement, or to convey information or warning information about the search process.",
+      "oids" : [
+        "2.16.840.1.113883.4.642.1.615",
+        "2.16.840.1.113883.4.642.2.328",
+        "2.16.840.1.113883.4.642.4.623"
+      ],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-search-entry-mode.html" : "Search Entry Mode"
+    },
+    {
+      "url" : "http://hl7.org/fhir/udi-entry-type",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "UDIEntryType",
+      "title" : "UDI Entry Type",
+      "description" : "Codes to identify how UDI data was entered.",
+      "oids" : [
+        "2.16.840.1.113883.4.642.4.212",
+        "2.16.840.1.113883.4.642.1.202"
+      ],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-udi-entry-type.html" : "UDI Entry Type"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/common-tags",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "CommonTags",
+      "title" : "Common Tags",
+      "description" : "Common Tag Codes defined by FHIR project",
+      "oids" : ["2.16.840.1.113883.4.642.1.1067"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-common-tags.html" : "Common Tags"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/message-reasons-encounter",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ExampleMessageReasonCodes",
+      "title" : "Example Message Reason Codes",
+      "description" : "Example Message Reasons. These are the set of codes that might be used an updating an encounter using admin-update.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1122"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-message-reason-encounter.html" : "Example Message Reason Codes"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+      "version" : "2.1.0",
+      "status" : "draft",
+      "name" : "ObservationValue",
+      "title" : "ObservationValue",
+      "description" : "This code system covers all concepts of HL7-defined values for the Observation value element, when it has a coded datatype.",
+      "oids" : ["2.16.840.1.113883.5.1063"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-common-tags.html" : "Common Tags"
+    },
+    {
+      "url" : "https://joofio.github.io/obs-cdss-fhir/CodeSystem/ml-response-cs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "MLResponseCS",
+      "title" : "Model Responses Code System",
+      "description" : "Model Responses Code System",
+      "uses" : {
+      },
+      "ValueSet-ml-response-vs.html" : "Model Responses value set"
+    },
+    {
+      "url" : "https://joofio.github.io/obs-cdss-fhir/CodeSystem/ml-type-cs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "MlTypesCS",
+      "title" : "Machine Learning Models code system",
+      "description" : "Machine Learning Models code system",
+      "uses" : {
+      },
+      "ValueSet-ml-type-vs.html" : "Machine Learning Models value set"
+    },
+    {
+      "url" : "https://joofio.github.io/obs-cdss-fhir/CodeSystem/my-cs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "MyCS",
+      "title" : "Code system",
+      "description" : "Code system",
+      "uses" : {
+      },
+      "ValueSet-my-vs.html" : "value set"
+    },
+    {
+      "url" : "urn:ietf:bcp:47",
+      "version" : "2.0.1",
+      "status" : "active",
+      "name" : "Ietf3066",
+      "title" : "Tags for the Identification of Languages",
+      "description" : "Older value from OID registry.  Superceded; see recommendations in BCP-47.",
+      "oids" : ["2.16.840.1.113883.6.121"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-languages.html" : "Common Languages",
+      "http://hl7.org/fhir/R5/valueset-all-languages.html" : "All Languages"
+    },
+    {
+      "url" : "urn:iso:std:iso:11073:10101",
+      "version" : "2.0.1",
+      "status" : "active",
+      "name" : "Mdc",
+      "title" : "ISO 11073-10101 Health informatics - Point-of-care",
+      "description" : "The nomenclature relates primarily to vital signs monitoring, but also includes semantics of other medical devices that are commonly used in acute care settings. There are multiple coding partitions each of which has a systematic name consisting of a set of base concepts and differentiating criteria.",
+      "oids" : ["2.16.840.1.113883.6.24"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-device-versiontype.html" : "Device Version Type",
+      "http://hl7.org/fhir/R5/valueset-device-property-type.html" : "Device Property Type",
+      "http://hl7.org/fhir/R5/valueset-device-specification-type.html" : "Device Specification Type"
+    }
+  ]
+}

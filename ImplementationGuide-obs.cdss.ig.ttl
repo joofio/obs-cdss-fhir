@@ -10,13 +10,13 @@
   fhir:id [ fhir:v "obs.cdss.ig"] ; # 
   fhir:text [
      fhir:status [ fhir:v "extensions" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>OBSCDSS</h2><p>The official URL for this implementation guide is: </p><pre>https://joofio.github.io/obs-cdss-fhir/ImplementationGuide/obs.cdss.ig</pre></div>"
   ] ; # 
   fhir:url [ fhir:v "https://joofio.github.io/obs-cdss-fhir/ImplementationGuide/obs.cdss.ig"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "0.1.0"] ; # 
   fhir:name [ fhir:v "OBSCDSS"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2023-09-10T21:33:21+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-03-26T13:57:12+00:00"^^xsd:dateTime] ; # 
   fhir:packageId [ fhir:v "obs.cdss.ig"] ; # 
   fhir:license [ fhir:v "CC0-1.0"] ; # 
   fhir:fhirVersion ( [ fhir:v "5.0.0"] ) ; # 
@@ -31,7 +31,7 @@
        fhir:link <http://terminology.hl7.org/ImplementationGuide/hl7.terminology>
      ] ;
      fhir:packageId [ fhir:v "hl7.terminology.r5" ] ;
-     fhir:version [ fhir:v "5.2.0" ]
+     fhir:version [ fhir:v "5.3.0" ]
   ] [
      fhir:id [ fhir:v "hl7ext" ] ;
      fhir:extension ( [
@@ -48,7 +48,7 @@
   fhir:definition [
      fhir:extension ( [
        fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency"^^xsd:anyURI ] ;
-       fhir:value [ fhir:v "hl7.fhir.uv.tools#current" ]
+       fhir:value [ fhir:v "hl7.fhir.uv.tools#0.1.0" ]
      ] ) ;
      fhir:resource ( [
        fhir:extension ( [
@@ -154,15 +154,10 @@
          fhir:reference [ fhir:v "Bundle/MessageForCDSSRequest" ]
        ] ;
        fhir:name [ fhir:v "MessageForCDSSRequest" ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
        fhir:profile ( [
          fhir:v "https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageForCDSS"^^xsd:anyURI ;
          fhir:link <https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageForCDSS>
-       ] [
-         fhir:v "https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageForCDSS"^^xsd:anyURI ;
-         fhir:link <https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageForCDSS>
-       ] [
-         fhir:v "https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageHeaderCDSS"^^xsd:anyURI ;
-         fhir:link <https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageHeaderCDSS>
        ] )
      ] [
        fhir:extension ( [
@@ -208,7 +203,7 @@
          fhir:link <https://joofio.github.io/obs-cdss-fhir/OperationDefinition/quality-check> ;
          fhir:reference [ fhir:v "OperationDefinition/quality-check" ]
        ] ;
-       fhir:name [ fhir:v "quality-check" ] ;
+       fhir:name [ fhir:v "quality_check" ] ;
        fhir:isExample [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -447,6 +442,12 @@
        fhir:code [
          fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
          fhir:code [ fhir:v "apply-version" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "apply-wg" ]
        ] ;
        fhir:value [ fhir:v "true" ]
      ] [

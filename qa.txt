@@ -1,13 +1,13 @@
-﻿OBSCDSS : Validation Results
+OBSCDSS : Validation Results
 =========================================
 
-err = 131, warn = 192, info = 16
-IG Publisher Version: 1.4.4
-Generated Sun Sep 10 21:34:08 UTC 2023. FHIR version 5.0.0 for obs.cdss.ig#0.1.0 (canonical = https://joofio.github.io/obs-cdss-fhir)
+err = 131, warn = 318, info = 56
+IG Publisher Version: 1.6.3
+Generated Tue Mar 26 13:57:34 UTC 2024. FHIR version 5.0.0 for obs.cdss.ig#0.1.0 (canonical = https://joofio.github.io/obs-cdss-fhir)
  Build Errors : 95 / 8 / 0
- /github/workspace/fsh-generated/resources/Bundle-448492b8-0911-11ee-8a5c-2e8ac521fb46 : 0 / 15 / 8
- /github/workspace/fsh-generated/resources/Bundle-MessageForCDSSRequest : 125 / 121 / 35
- /github/workspace/fsh-generated/resources/Bundle-f879270e-10ee-11ee-afc7-2e8ac521fb46 : 1 / 37 / 18
+ /github/workspace/fsh-generated/resources/Bundle-448492b8-0911-11ee-8a5c-2e8ac521fb46 : 0 / 24 / 13
+ /github/workspace/fsh-generated/resources/Bundle-MessageForCDSSRequest : 125 / 211 / 65
+ /github/workspace/fsh-generated/resources/Bundle-f879270e-10ee-11ee-afc7-2e8ac521fb46 : 1 / 64 / 25
  /github/workspace/fsh-generated/resources/CodeSystem-ml-response-cs : 0 / 2 / 2
  /github/workspace/fsh-generated/resources/CodeSystem-ml-type-cs : 0 / 2 / 2
  /github/workspace/fsh-generated/resources/CodeSystem-my-cs : 0 / 2 / 2
@@ -15,7 +15,7 @@ Generated Sun Sep 10 21:34:08 UTC 2023. FHIR version 5.0.0 for obs.cdss.ig#0.1.0
  /github/workspace/fsh-generated/resources/OperationDefinition-predict : 2 / 1 / 1
  /github/workspace/fsh-generated/resources/OperationDefinition-quality-check : 2 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-MLModel : 0 / 0 / 2
- /github/workspace/fsh-generated/resources/StructureDefinition-MessageForCDSS : 1 / 0 / 3
+ /github/workspace/fsh-generated/resources/StructureDefinition-MessageForCDSS : 1 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-MessageHeaderCDSS : 0 / 0 / 2
  /github/workspace/fsh-generated/resources/ValueSet-ml-response-vs : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/ValueSet-ml-type-vs : 0 / 1 / 1
@@ -126,23 +126,36 @@ WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in 
 WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
 == fsh-generated/resources/Bundle-448492b8-0911-11ee-8a5c-2e8ac521fb46.json ==
-WARNING: Bundle/448492b8-0911-11ee-8a5c-2e8ac521fb46: Bundle.entry[0].resource/*MessageHeader/44849290-0911-11ee-8a5c-2e8ac521fb46*/.event.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-WARNING: Bundle/448492b8-0911-11ee-8a5c-2e8ac521fb46: Bundle.entry[1].resource/*Observation/44849114-0911-11ee-8a5c-2e8ac521fb46*/: All observations should have a subject
-WARNING: Bundle/448492b8-0911-11ee-8a5c-2e8ac521fb46: Bundle.entry[1].resource/*Observation/44849114-0911-11ee-8a5c-2e8ac521fb46*/: All observations should have a performer
-WARNING: Bundle/448492b8-0911-11ee-8a5c-2e8ac521fb46: Bundle.entry[1].resource/*Observation/44849114-0911-11ee-8a5c-2e8ac521fb46*/: All observations should have an effectiveDateTime or an effectivePeriod
-WARNING: Bundle/448492b8-0911-11ee-8a5c-2e8ac521fb46: Bundle.entry[2].resource/*Observation/448491f0-0911-11ee-8a5c-2e8ac521fb46*/: All observations should have a subject
-WARNING: Bundle/448492b8-0911-11ee-8a5c-2e8ac521fb46: Bundle.entry[2].resource/*Observation/448491f0-0911-11ee-8a5c-2e8ac521fb46*/: All observations should have a performer
-WARNING: Bundle/448492b8-0911-11ee-8a5c-2e8ac521fb46: Bundle.entry[2].resource/*Observation/448491f0-0911-11ee-8a5c-2e8ac521fb46*/: All observations should have an effectiveDateTime or an effectivePeriod
-WARNING: Bundle/448492b8-0911-11ee-8a5c-2e8ac521fb46: Bundle.entry[3].resource/*Observation/4484920e-0911-11ee-8a5c-2e8ac521fb46*/: All observations should have a subject
-WARNING: Bundle/448492b8-0911-11ee-8a5c-2e8ac521fb46: Bundle.entry[3].resource/*Observation/4484920e-0911-11ee-8a5c-2e8ac521fb46*/: All observations should have a performer
-WARNING: Bundle/448492b8-0911-11ee-8a5c-2e8ac521fb46: Bundle.entry[3].resource/*Observation/4484920e-0911-11ee-8a5c-2e8ac521fb46*/: All observations should have an effectiveDateTime or an effectivePeriod
+WARNING: Bundle/448492b8-0911-11ee-8a5c-2e8ac521fb46: Bundle.entry[0].resource/*MessageHeader/44849290-0911-11ee-8a5c-2e8ac521fb46*/.event.ofType(Coding): A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: Bundle/448492b8-0911-11ee-8a5c-2e8ac521fb46: Bundle.entry[1].resource/*Observation/44849114-0911-11ee-8a5c-2e8ac521fb46*/: Best Practice Recommendation: In general, all observations should have a subject
+WARNING: Bundle/448492b8-0911-11ee-8a5c-2e8ac521fb46: Bundle.entry[1].resource/*Observation/44849114-0911-11ee-8a5c-2e8ac521fb46*/: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/448492b8-0911-11ee-8a5c-2e8ac521fb46: Bundle.entry[1].resource/*Observation/44849114-0911-11ee-8a5c-2e8ac521fb46*/: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+INFORMATION: Bundle/448492b8-0911-11ee-8a5c-2e8ac521fb46: Bundle.entry[1].resource/*Observation/44849114-0911-11ee-8a5c-2e8ac521fb46*/.code.coding[0]: A definition for CodeSystem 'http://example.org/CodeSystem/my-cs' could not be found, so the code cannot be validated
+INFORMATION: Bundle/448492b8-0911-11ee-8a5c-2e8ac521fb46: Bundle.entry[1].resource/*Observation/44849114-0911-11ee-8a5c-2e8ac521fb46*/.value.ofType(CodeableConcept).coding[0]: A definition for CodeSystem 'http://example.org/CodeSystem/my-cs' could not be found, so the code cannot be validated
+WARNING: Bundle/448492b8-0911-11ee-8a5c-2e8ac521fb46: Bundle.entry[2].resource/*Observation/448491f0-0911-11ee-8a5c-2e8ac521fb46*/: Best Practice Recommendation: In general, all observations should have a subject
+WARNING: Bundle/448492b8-0911-11ee-8a5c-2e8ac521fb46: Bundle.entry[2].resource/*Observation/448491f0-0911-11ee-8a5c-2e8ac521fb46*/: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/448492b8-0911-11ee-8a5c-2e8ac521fb46: Bundle.entry[2].resource/*Observation/448491f0-0911-11ee-8a5c-2e8ac521fb46*/: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+INFORMATION: Bundle/448492b8-0911-11ee-8a5c-2e8ac521fb46: Bundle.entry[2].resource/*Observation/448491f0-0911-11ee-8a5c-2e8ac521fb46*/.code.coding[0]: A definition for CodeSystem 'http://example.org/CodeSystem/my-cs' could not be found, so the code cannot be validated
+WARNING: Bundle/448492b8-0911-11ee-8a5c-2e8ac521fb46: Bundle.entry[3].resource/*Observation/4484920e-0911-11ee-8a5c-2e8ac521fb46*/: Best Practice Recommendation: In general, all observations should have a subject
+WARNING: Bundle/448492b8-0911-11ee-8a5c-2e8ac521fb46: Bundle.entry[3].resource/*Observation/4484920e-0911-11ee-8a5c-2e8ac521fb46*/: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/448492b8-0911-11ee-8a5c-2e8ac521fb46: Bundle.entry[3].resource/*Observation/4484920e-0911-11ee-8a5c-2e8ac521fb46*/: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+INFORMATION: Bundle/448492b8-0911-11ee-8a5c-2e8ac521fb46: Bundle.entry[3].resource/*Observation/4484920e-0911-11ee-8a5c-2e8ac521fb46*/.code.coding[0]: A definition for CodeSystem 'http://example.org/CodeSystem/my-cs' could not be found, so the code cannot be validated
+INFORMATION: Bundle/448492b8-0911-11ee-8a5c-2e8ac521fb46: Bundle.entry[4].resource/*Device/MLModelExample*/.type[0]: Reference to draft CodeSystem https://joofio.github.io/obs-cdss-fhir/CodeSystem/ml-type-cs|0.1.0
 WARNING: Bundle/448492b8-0911-11ee-8a5c-2e8ac521fb46: Bundle.entry[2]: Entry 'http://localhost:8080/fhir/Observation/44849114-0911-11ee-8a5c-2e8ac521fb46' isn't reachable by traversing links (forward or backward) from the MessageHeader, so its presence should be reviewed (is it needed to process the message?)
 WARNING: Bundle/448492b8-0911-11ee-8a5c-2e8ac521fb46: Bundle.entry[3]: Entry 'http://localhost:8080/fhir/Observation/448491f0-0911-11ee-8a5c-2e8ac521fb46' isn't reachable by traversing links (forward or backward) from the MessageHeader, so its presence should be reviewed (is it needed to process the message?)
 WARNING: Bundle/448492b8-0911-11ee-8a5c-2e8ac521fb46: Bundle.entry[4]: Entry 'http://localhost:8080/fhir/Observation/4484920e-0911-11ee-8a5c-2e8ac521fb46' isn't reachable by traversing links (forward or backward) from the MessageHeader, so its presence should be reviewed (is it needed to process the message?)
 WARNING: Bundle/448492b8-0911-11ee-8a5c-2e8ac521fb46: Bundle.entry[5]: Entry 'http://localhost:8080/fhir/Device/MLModelExample' isn't reachable by traversing links (forward or backward) from the MessageHeader, so its presence should be reviewed (is it needed to process the message?)
-WARNING: Bundle/448492b8-0911-11ee-8a5c-2e8ac521fb46: Bundle.meta.profile[0]: Profile reference 'https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageForRequest' has not been checked because it is unknown, and the validator is set to not fetch unknown profiles
+WARNING: Bundle/448492b8-0911-11ee-8a5c-2e8ac521fb46: Bundle.entry[1].resource: Best Practice Recommendation: In general, all observations should have a subject
+WARNING: Bundle/448492b8-0911-11ee-8a5c-2e8ac521fb46: Bundle.entry[1].resource: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/448492b8-0911-11ee-8a5c-2e8ac521fb46: Bundle.entry[1].resource: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+WARNING: Bundle/448492b8-0911-11ee-8a5c-2e8ac521fb46: Bundle.entry[2].resource: Best Practice Recommendation: In general, all observations should have a subject
+WARNING: Bundle/448492b8-0911-11ee-8a5c-2e8ac521fb46: Bundle.entry[2].resource: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/448492b8-0911-11ee-8a5c-2e8ac521fb46: Bundle.entry[2].resource: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+WARNING: Bundle/448492b8-0911-11ee-8a5c-2e8ac521fb46: Bundle.entry[3].resource: Best Practice Recommendation: In general, all observations should have a subject
+WARNING: Bundle/448492b8-0911-11ee-8a5c-2e8ac521fb46: Bundle.entry[3].resource: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/448492b8-0911-11ee-8a5c-2e8ac521fb46: Bundle.entry[3].resource: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+WARNING: Bundle/448492b8-0911-11ee-8a5c-2e8ac521fb46: Bundle.meta.profile[0]: Profile reference 'https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageForRequest' has not been checked because it could not be found, and the validator is set to not fetch unknown profiles
 == fsh-generated/resources/Bundle-MessageForCDSSRequest.json ==
-ERROR: Bundle/MessageForCDSSRequest: Bundle: Rule bdl-15: 'Bundle resources where type is not transaction, transaction-response, batch, or batch-response or when the request is a POST SHALL have Bundle.entry.fullUrl populated' Failed
 ERROR: Bundle/MessageForCDSSRequest: Bundle.entry[0]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: name in profile https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageForCDSS on element Bundle.entry:messageheader, looking in profile https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageForCDSS (@char 1)
 ERROR: Bundle/MessageForCDSSRequest: Bundle.entry[1]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: name in profile https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageForCDSS on element Bundle.entry:messageheader, looking in profile https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageForCDSS (@char 1)
 ERROR: Bundle/MessageForCDSSRequest: Bundle.entry[2]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: name in profile https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageForCDSS on element Bundle.entry:messageheader, looking in profile https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageForCDSS (@char 1)
@@ -207,128 +220,159 @@ ERROR: Bundle/MessageForCDSSRequest: Bundle.entry[29]: Slicing cannot be evaluat
 ERROR: Bundle/MessageForCDSSRequest: Bundle.entry[30]: Slicing cannot be evaluated: Unable to resolve discriminator in definitions: name in profile https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageForCDSS on element Bundle.entry:data, looking in profile https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageForCDSS (@char 1)
 INFORMATION: Bundle/MessageForCDSSRequest: Bundle: Bundle.entry:messageheader: Found 0 matches, but unable to check minimum required (Bundle.entry) due to lack of slicing validation (from https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageForCDSS|0.1.0)
 INFORMATION: Bundle/MessageForCDSSRequest: Bundle: Bundle.entry:data: Found 0 matches, but unable to check minimum required (Bundle.entry) due to lack of slicing validation (from https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageForCDSS|0.1.0)
-ERROR: Bundle/MessageForCDSSRequest: Bundle.entry[0]: Rule msg-core-1: 'Patient.name.given or Patient.name.family or both SHALL be present' Failed
-WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[0].resource/*MessageHeader/MessageHeaderCDSSExampleRequest*/.event.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-ERROR: Bundle/MessageForCDSSRequest: Bundle.entry[1]: Rule msg-core-1: 'Patient.name.given or Patient.name.family or both SHALL be present' Failed
-WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[1].resource/*Observation/Obs1*/: All observations should have a subject
-WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[1].resource/*Observation/Obs1*/: All observations should have a performer
-WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[1].resource/*Observation/Obs1*/: All observations should have an effectiveDateTime or an effectivePeriod
-ERROR: Bundle/MessageForCDSSRequest: Bundle.entry[2]: Rule msg-core-1: 'Patient.name.given or Patient.name.family or both SHALL be present' Failed
-WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[2].resource/*Observation/Obs2*/: All observations should have a subject
-WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[2].resource/*Observation/Obs2*/: All observations should have a performer
-WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[2].resource/*Observation/Obs2*/: All observations should have an effectiveDateTime or an effectivePeriod
-ERROR: Bundle/MessageForCDSSRequest: Bundle.entry[3]: Rule msg-core-1: 'Patient.name.given or Patient.name.family or both SHALL be present' Failed
-WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[3].resource/*Observation/Obs3*/: All observations should have a subject
-WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[3].resource/*Observation/Obs3*/: All observations should have a performer
-WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[3].resource/*Observation/Obs3*/: All observations should have an effectiveDateTime or an effectivePeriod
-ERROR: Bundle/MessageForCDSSRequest: Bundle.entry[4]: Rule msg-core-1: 'Patient.name.given or Patient.name.family or both SHALL be present' Failed
-WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[4].resource/*Observation/Obs4*/: All observations should have a subject
-WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[4].resource/*Observation/Obs4*/: All observations should have a performer
-WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[4].resource/*Observation/Obs4*/: All observations should have an effectiveDateTime or an effectivePeriod
-ERROR: Bundle/MessageForCDSSRequest: Bundle.entry[5]: Rule msg-core-1: 'Patient.name.given or Patient.name.family or both SHALL be present' Failed
-WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[5].resource/*Observation/Obs5*/: All observations should have a subject
-WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[5].resource/*Observation/Obs5*/: All observations should have a performer
-WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[5].resource/*Observation/Obs5*/: All observations should have an effectiveDateTime or an effectivePeriod
-ERROR: Bundle/MessageForCDSSRequest: Bundle.entry[6]: Rule msg-core-1: 'Patient.name.given or Patient.name.family or both SHALL be present' Failed
-WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[6].resource/*Observation/Obs6*/: All observations should have a subject
-WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[6].resource/*Observation/Obs6*/: All observations should have a performer
-WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[6].resource/*Observation/Obs6*/: All observations should have an effectiveDateTime or an effectivePeriod
-ERROR: Bundle/MessageForCDSSRequest: Bundle.entry[7]: Rule msg-core-1: 'Patient.name.given or Patient.name.family or both SHALL be present' Failed
-WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[7].resource/*Observation/Obs7*/: All observations should have a subject
-WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[7].resource/*Observation/Obs7*/: All observations should have a performer
-WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[7].resource/*Observation/Obs7*/: All observations should have an effectiveDateTime or an effectivePeriod
-ERROR: Bundle/MessageForCDSSRequest: Bundle.entry[8]: Rule msg-core-1: 'Patient.name.given or Patient.name.family or both SHALL be present' Failed
-WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[8].resource/*Observation/Obs8*/: All observations should have a subject
-WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[8].resource/*Observation/Obs8*/: All observations should have a performer
-WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[8].resource/*Observation/Obs8*/: All observations should have an effectiveDateTime or an effectivePeriod
-ERROR: Bundle/MessageForCDSSRequest: Bundle.entry[9]: Rule msg-core-1: 'Patient.name.given or Patient.name.family or both SHALL be present' Failed
-WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[9].resource/*Observation/Obs9*/: All observations should have a subject
-WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[9].resource/*Observation/Obs9*/: All observations should have a performer
-WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[9].resource/*Observation/Obs9*/: All observations should have an effectiveDateTime or an effectivePeriod
-ERROR: Bundle/MessageForCDSSRequest: Bundle.entry[10]: Rule msg-core-1: 'Patient.name.given or Patient.name.family or both SHALL be present' Failed
-WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[10].resource/*Observation/Obs10*/: All observations should have a subject
-WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[10].resource/*Observation/Obs10*/: All observations should have a performer
-WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[10].resource/*Observation/Obs10*/: All observations should have an effectiveDateTime or an effectivePeriod
-ERROR: Bundle/MessageForCDSSRequest: Bundle.entry[11]: Rule msg-core-1: 'Patient.name.given or Patient.name.family or both SHALL be present' Failed
-WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[11].resource/*Observation/Obs11*/: All observations should have a subject
-WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[11].resource/*Observation/Obs11*/: All observations should have a performer
-WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[11].resource/*Observation/Obs11*/: All observations should have an effectiveDateTime or an effectivePeriod
-ERROR: Bundle/MessageForCDSSRequest: Bundle.entry[12]: Rule msg-core-1: 'Patient.name.given or Patient.name.family or both SHALL be present' Failed
-WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[12].resource/*Observation/Obs12*/: All observations should have a subject
-WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[12].resource/*Observation/Obs12*/: All observations should have a performer
-WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[12].resource/*Observation/Obs12*/: All observations should have an effectiveDateTime or an effectivePeriod
-ERROR: Bundle/MessageForCDSSRequest: Bundle.entry[13]: Rule msg-core-1: 'Patient.name.given or Patient.name.family or both SHALL be present' Failed
-WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[13].resource/*Observation/Obs13*/: All observations should have a subject
-WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[13].resource/*Observation/Obs13*/: All observations should have a performer
-WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[13].resource/*Observation/Obs13*/: All observations should have an effectiveDateTime or an effectivePeriod
-ERROR: Bundle/MessageForCDSSRequest: Bundle.entry[14]: Rule msg-core-1: 'Patient.name.given or Patient.name.family or both SHALL be present' Failed
-WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[14].resource/*Observation/Obs14*/: All observations should have a subject
-WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[14].resource/*Observation/Obs14*/: All observations should have a performer
-WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[14].resource/*Observation/Obs14*/: All observations should have an effectiveDateTime or an effectivePeriod
-ERROR: Bundle/MessageForCDSSRequest: Bundle.entry[15]: Rule msg-core-1: 'Patient.name.given or Patient.name.family or both SHALL be present' Failed
-WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[15].resource/*Observation/Obs15*/: All observations should have a subject
-WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[15].resource/*Observation/Obs15*/: All observations should have a performer
-WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[15].resource/*Observation/Obs15*/: All observations should have an effectiveDateTime or an effectivePeriod
-ERROR: Bundle/MessageForCDSSRequest: Bundle.entry[16]: Rule msg-core-1: 'Patient.name.given or Patient.name.family or both SHALL be present' Failed
-WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[16].resource/*Observation/Obs16*/: All observations should have a subject
-WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[16].resource/*Observation/Obs16*/: All observations should have a performer
-WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[16].resource/*Observation/Obs16*/: All observations should have an effectiveDateTime or an effectivePeriod
-ERROR: Bundle/MessageForCDSSRequest: Bundle.entry[17]: Rule msg-core-1: 'Patient.name.given or Patient.name.family or both SHALL be present' Failed
-WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[17].resource/*Observation/Obs17*/: All observations should have a subject
-WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[17].resource/*Observation/Obs17*/: All observations should have a performer
-WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[17].resource/*Observation/Obs17*/: All observations should have an effectiveDateTime or an effectivePeriod
-ERROR: Bundle/MessageForCDSSRequest: Bundle.entry[18]: Rule msg-core-1: 'Patient.name.given or Patient.name.family or both SHALL be present' Failed
-WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[18].resource/*Observation/Obs18*/: All observations should have a subject
-WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[18].resource/*Observation/Obs18*/: All observations should have a performer
-WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[18].resource/*Observation/Obs18*/: All observations should have an effectiveDateTime or an effectivePeriod
-ERROR: Bundle/MessageForCDSSRequest: Bundle.entry[19]: Rule msg-core-1: 'Patient.name.given or Patient.name.family or both SHALL be present' Failed
-WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[19].resource/*Observation/Obs19*/: All observations should have a subject
-WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[19].resource/*Observation/Obs19*/: All observations should have a performer
-WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[19].resource/*Observation/Obs19*/: All observations should have an effectiveDateTime or an effectivePeriod
-ERROR: Bundle/MessageForCDSSRequest: Bundle.entry[20]: Rule msg-core-1: 'Patient.name.given or Patient.name.family or both SHALL be present' Failed
-WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[20].resource/*Observation/Obs20*/: All observations should have a subject
-WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[20].resource/*Observation/Obs20*/: All observations should have a performer
-WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[20].resource/*Observation/Obs20*/: All observations should have an effectiveDateTime or an effectivePeriod
-ERROR: Bundle/MessageForCDSSRequest: Bundle.entry[21]: Rule msg-core-1: 'Patient.name.given or Patient.name.family or both SHALL be present' Failed
-WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[21].resource/*Observation/Obs21*/: All observations should have a subject
-WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[21].resource/*Observation/Obs21*/: All observations should have a performer
-WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[21].resource/*Observation/Obs21*/: All observations should have an effectiveDateTime or an effectivePeriod
-ERROR: Bundle/MessageForCDSSRequest: Bundle.entry[22]: Rule msg-core-1: 'Patient.name.given or Patient.name.family or both SHALL be present' Failed
-WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[22].resource/*Observation/Obs22*/: All observations should have a subject
-WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[22].resource/*Observation/Obs22*/: All observations should have a performer
-WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[22].resource/*Observation/Obs22*/: All observations should have an effectiveDateTime or an effectivePeriod
-ERROR: Bundle/MessageForCDSSRequest: Bundle.entry[23]: Rule msg-core-1: 'Patient.name.given or Patient.name.family or both SHALL be present' Failed
-WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[23].resource/*Observation/Obs23*/: All observations should have a subject
-WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[23].resource/*Observation/Obs23*/: All observations should have a performer
-WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[23].resource/*Observation/Obs23*/: All observations should have an effectiveDateTime or an effectivePeriod
-ERROR: Bundle/MessageForCDSSRequest: Bundle.entry[24]: Rule msg-core-1: 'Patient.name.given or Patient.name.family or both SHALL be present' Failed
-WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[24].resource/*Observation/Obs24*/: All observations should have a subject
-WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[24].resource/*Observation/Obs24*/: All observations should have a performer
-WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[24].resource/*Observation/Obs24*/: All observations should have an effectiveDateTime or an effectivePeriod
-ERROR: Bundle/MessageForCDSSRequest: Bundle.entry[25]: Rule msg-core-1: 'Patient.name.given or Patient.name.family or both SHALL be present' Failed
-WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[25].resource/*Observation/Obs25*/: All observations should have a subject
-WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[25].resource/*Observation/Obs25*/: All observations should have a performer
-WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[25].resource/*Observation/Obs25*/: All observations should have an effectiveDateTime or an effectivePeriod
-ERROR: Bundle/MessageForCDSSRequest: Bundle.entry[26]: Rule msg-core-1: 'Patient.name.given or Patient.name.family or both SHALL be present' Failed
-WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[26].resource/*Observation/Obs26*/: All observations should have a subject
-WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[26].resource/*Observation/Obs26*/: All observations should have a performer
-WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[26].resource/*Observation/Obs26*/: All observations should have an effectiveDateTime or an effectivePeriod
-ERROR: Bundle/MessageForCDSSRequest: Bundle.entry[27]: Rule msg-core-1: 'Patient.name.given or Patient.name.family or both SHALL be present' Failed
-WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[27].resource/*Observation/Obs27*/: All observations should have a subject
-WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[27].resource/*Observation/Obs27*/: All observations should have a performer
-WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[27].resource/*Observation/Obs27*/: All observations should have an effectiveDateTime or an effectivePeriod
-ERROR: Bundle/MessageForCDSSRequest: Bundle.entry[28]: Rule msg-core-1: 'Patient.name.given or Patient.name.family or both SHALL be present' Failed
-WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[28].resource/*Observation/Obs28*/: All observations should have a subject
-WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[28].resource/*Observation/Obs28*/: All observations should have a performer
-WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[28].resource/*Observation/Obs28*/: All observations should have an effectiveDateTime or an effectivePeriod
-ERROR: Bundle/MessageForCDSSRequest: Bundle.entry[29]: Rule msg-core-1: 'Patient.name.given or Patient.name.family or both SHALL be present' Failed
-WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[29].resource/*Observation/Obs29*/: All observations should have a subject
-WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[29].resource/*Observation/Obs29*/: All observations should have a performer
-WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[29].resource/*Observation/Obs29*/: All observations should have an effectiveDateTime or an effectivePeriod
-ERROR: Bundle/MessageForCDSSRequest: Bundle.entry[30]: Rule msg-core-1: 'Patient.name.given or Patient.name.family or both SHALL be present' Failed
-WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[30].resource/*Observation/Obs30*/: All observations should have a subject
-WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[30].resource/*Observation/Obs30*/: All observations should have a performer
-WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[30].resource/*Observation/Obs30*/: All observations should have an effectiveDateTime or an effectivePeriod
+ERROR: Bundle/MessageForCDSSRequest: Bundle.entry[0]: Constraint failed: msg-core-1: 'Patient.name.given or Patient.name.family or both SHALL be present' (defined in https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageForCDSS)
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[0].resource/*MessageHeader/MessageHeaderCDSSExampleRequest*/.event.ofType(Coding): A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+ERROR: Bundle/MessageForCDSSRequest: Bundle.entry[1]: Constraint failed: msg-core-1: 'Patient.name.given or Patient.name.family or both SHALL be present' (defined in https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageForCDSS)
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[1].resource/*Observation/Obs1*/: Best Practice Recommendation: In general, all observations should have a subject
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[1].resource/*Observation/Obs1*/: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[1].resource/*Observation/Obs1*/: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+INFORMATION: Bundle/MessageForCDSSRequest: Bundle.entry[1].resource/*Observation/Obs1*/.code.coding[0]: A definition for CodeSystem 'http://example.org/CodeSystem/my-cs' could not be found, so the code cannot be validated
+ERROR: Bundle/MessageForCDSSRequest: Bundle.entry[2]: Constraint failed: msg-core-1: 'Patient.name.given or Patient.name.family or both SHALL be present' (defined in https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageForCDSS)
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[2].resource/*Observation/Obs2*/: Best Practice Recommendation: In general, all observations should have a subject
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[2].resource/*Observation/Obs2*/: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[2].resource/*Observation/Obs2*/: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+INFORMATION: Bundle/MessageForCDSSRequest: Bundle.entry[2].resource/*Observation/Obs2*/.code.coding[0]: A definition for CodeSystem 'http://example.org/CodeSystem/my-cs' could not be found, so the code cannot be validated
+ERROR: Bundle/MessageForCDSSRequest: Bundle.entry[3]: Constraint failed: msg-core-1: 'Patient.name.given or Patient.name.family or both SHALL be present' (defined in https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageForCDSS)
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[3].resource/*Observation/Obs3*/: Best Practice Recommendation: In general, all observations should have a subject
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[3].resource/*Observation/Obs3*/: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[3].resource/*Observation/Obs3*/: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+INFORMATION: Bundle/MessageForCDSSRequest: Bundle.entry[3].resource/*Observation/Obs3*/.code.coding[0]: A definition for CodeSystem 'http://example.org/CodeSystem/my-cs' could not be found, so the code cannot be validated
+ERROR: Bundle/MessageForCDSSRequest: Bundle.entry[4]: Constraint failed: msg-core-1: 'Patient.name.given or Patient.name.family or both SHALL be present' (defined in https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageForCDSS)
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[4].resource/*Observation/Obs4*/: Best Practice Recommendation: In general, all observations should have a subject
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[4].resource/*Observation/Obs4*/: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[4].resource/*Observation/Obs4*/: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+INFORMATION: Bundle/MessageForCDSSRequest: Bundle.entry[4].resource/*Observation/Obs4*/.code.coding[0]: A definition for CodeSystem 'http://example.org/CodeSystem/my-cs' could not be found, so the code cannot be validated
+ERROR: Bundle/MessageForCDSSRequest: Bundle.entry[5]: Constraint failed: msg-core-1: 'Patient.name.given or Patient.name.family or both SHALL be present' (defined in https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageForCDSS)
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[5].resource/*Observation/Obs5*/: Best Practice Recommendation: In general, all observations should have a subject
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[5].resource/*Observation/Obs5*/: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[5].resource/*Observation/Obs5*/: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+INFORMATION: Bundle/MessageForCDSSRequest: Bundle.entry[5].resource/*Observation/Obs5*/.code.coding[0]: A definition for CodeSystem 'http://example.org/CodeSystem/my-cs' could not be found, so the code cannot be validated
+ERROR: Bundle/MessageForCDSSRequest: Bundle.entry[6]: Constraint failed: msg-core-1: 'Patient.name.given or Patient.name.family or both SHALL be present' (defined in https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageForCDSS)
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[6].resource/*Observation/Obs6*/: Best Practice Recommendation: In general, all observations should have a subject
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[6].resource/*Observation/Obs6*/: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[6].resource/*Observation/Obs6*/: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+INFORMATION: Bundle/MessageForCDSSRequest: Bundle.entry[6].resource/*Observation/Obs6*/.code.coding[0]: A definition for CodeSystem 'http://example.org/CodeSystem/my-cs' could not be found, so the code cannot be validated
+ERROR: Bundle/MessageForCDSSRequest: Bundle.entry[7]: Constraint failed: msg-core-1: 'Patient.name.given or Patient.name.family or both SHALL be present' (defined in https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageForCDSS)
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[7].resource/*Observation/Obs7*/: Best Practice Recommendation: In general, all observations should have a subject
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[7].resource/*Observation/Obs7*/: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[7].resource/*Observation/Obs7*/: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+INFORMATION: Bundle/MessageForCDSSRequest: Bundle.entry[7].resource/*Observation/Obs7*/.code.coding[0]: A definition for CodeSystem 'http://example.org/CodeSystem/my-cs' could not be found, so the code cannot be validated
+ERROR: Bundle/MessageForCDSSRequest: Bundle.entry[8]: Constraint failed: msg-core-1: 'Patient.name.given or Patient.name.family or both SHALL be present' (defined in https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageForCDSS)
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[8].resource/*Observation/Obs8*/: Best Practice Recommendation: In general, all observations should have a subject
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[8].resource/*Observation/Obs8*/: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[8].resource/*Observation/Obs8*/: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+INFORMATION: Bundle/MessageForCDSSRequest: Bundle.entry[8].resource/*Observation/Obs8*/.code.coding[0]: A definition for CodeSystem 'http://example.org/CodeSystem/my-cs' could not be found, so the code cannot be validated
+ERROR: Bundle/MessageForCDSSRequest: Bundle.entry[9]: Constraint failed: msg-core-1: 'Patient.name.given or Patient.name.family or both SHALL be present' (defined in https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageForCDSS)
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[9].resource/*Observation/Obs9*/: Best Practice Recommendation: In general, all observations should have a subject
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[9].resource/*Observation/Obs9*/: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[9].resource/*Observation/Obs9*/: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+INFORMATION: Bundle/MessageForCDSSRequest: Bundle.entry[9].resource/*Observation/Obs9*/.code.coding[0]: A definition for CodeSystem 'http://example.org/CodeSystem/my-cs' could not be found, so the code cannot be validated
+ERROR: Bundle/MessageForCDSSRequest: Bundle.entry[10]: Constraint failed: msg-core-1: 'Patient.name.given or Patient.name.family or both SHALL be present' (defined in https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageForCDSS)
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[10].resource/*Observation/Obs10*/: Best Practice Recommendation: In general, all observations should have a subject
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[10].resource/*Observation/Obs10*/: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[10].resource/*Observation/Obs10*/: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+INFORMATION: Bundle/MessageForCDSSRequest: Bundle.entry[10].resource/*Observation/Obs10*/.code.coding[0]: A definition for CodeSystem 'http://example.org/CodeSystem/my-cs' could not be found, so the code cannot be validated
+ERROR: Bundle/MessageForCDSSRequest: Bundle.entry[11]: Constraint failed: msg-core-1: 'Patient.name.given or Patient.name.family or both SHALL be present' (defined in https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageForCDSS)
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[11].resource/*Observation/Obs11*/: Best Practice Recommendation: In general, all observations should have a subject
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[11].resource/*Observation/Obs11*/: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[11].resource/*Observation/Obs11*/: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+INFORMATION: Bundle/MessageForCDSSRequest: Bundle.entry[11].resource/*Observation/Obs11*/.code.coding[0]: A definition for CodeSystem 'http://example.org/CodeSystem/my-cs' could not be found, so the code cannot be validated
+ERROR: Bundle/MessageForCDSSRequest: Bundle.entry[12]: Constraint failed: msg-core-1: 'Patient.name.given or Patient.name.family or both SHALL be present' (defined in https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageForCDSS)
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[12].resource/*Observation/Obs12*/: Best Practice Recommendation: In general, all observations should have a subject
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[12].resource/*Observation/Obs12*/: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[12].resource/*Observation/Obs12*/: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+INFORMATION: Bundle/MessageForCDSSRequest: Bundle.entry[12].resource/*Observation/Obs12*/.code.coding[0]: A definition for CodeSystem 'http://example.org/CodeSystem/my-cs' could not be found, so the code cannot be validated
+ERROR: Bundle/MessageForCDSSRequest: Bundle.entry[13]: Constraint failed: msg-core-1: 'Patient.name.given or Patient.name.family or both SHALL be present' (defined in https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageForCDSS)
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[13].resource/*Observation/Obs13*/: Best Practice Recommendation: In general, all observations should have a subject
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[13].resource/*Observation/Obs13*/: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[13].resource/*Observation/Obs13*/: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+INFORMATION: Bundle/MessageForCDSSRequest: Bundle.entry[13].resource/*Observation/Obs13*/.code.coding[0]: A definition for CodeSystem 'http://example.org/CodeSystem/my-cs' could not be found, so the code cannot be validated
+ERROR: Bundle/MessageForCDSSRequest: Bundle.entry[14]: Constraint failed: msg-core-1: 'Patient.name.given or Patient.name.family or both SHALL be present' (defined in https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageForCDSS)
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[14].resource/*Observation/Obs14*/: Best Practice Recommendation: In general, all observations should have a subject
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[14].resource/*Observation/Obs14*/: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[14].resource/*Observation/Obs14*/: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+INFORMATION: Bundle/MessageForCDSSRequest: Bundle.entry[14].resource/*Observation/Obs14*/.code.coding[0]: A definition for CodeSystem 'http://example.org/CodeSystem/my-cs' could not be found, so the code cannot be validated
+ERROR: Bundle/MessageForCDSSRequest: Bundle.entry[15]: Constraint failed: msg-core-1: 'Patient.name.given or Patient.name.family or both SHALL be present' (defined in https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageForCDSS)
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[15].resource/*Observation/Obs15*/: Best Practice Recommendation: In general, all observations should have a subject
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[15].resource/*Observation/Obs15*/: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[15].resource/*Observation/Obs15*/: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+INFORMATION: Bundle/MessageForCDSSRequest: Bundle.entry[15].resource/*Observation/Obs15*/.code.coding[0]: A definition for CodeSystem 'http://example.org/CodeSystem/my-cs' could not be found, so the code cannot be validated
+ERROR: Bundle/MessageForCDSSRequest: Bundle.entry[16]: Constraint failed: msg-core-1: 'Patient.name.given or Patient.name.family or both SHALL be present' (defined in https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageForCDSS)
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[16].resource/*Observation/Obs16*/: Best Practice Recommendation: In general, all observations should have a subject
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[16].resource/*Observation/Obs16*/: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[16].resource/*Observation/Obs16*/: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+INFORMATION: Bundle/MessageForCDSSRequest: Bundle.entry[16].resource/*Observation/Obs16*/.code.coding[0]: A definition for CodeSystem 'http://example.org/CodeSystem/my-cs' could not be found, so the code cannot be validated
+ERROR: Bundle/MessageForCDSSRequest: Bundle.entry[17]: Constraint failed: msg-core-1: 'Patient.name.given or Patient.name.family or both SHALL be present' (defined in https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageForCDSS)
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[17].resource/*Observation/Obs17*/: Best Practice Recommendation: In general, all observations should have a subject
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[17].resource/*Observation/Obs17*/: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[17].resource/*Observation/Obs17*/: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+INFORMATION: Bundle/MessageForCDSSRequest: Bundle.entry[17].resource/*Observation/Obs17*/.code.coding[0]: A definition for CodeSystem 'http://example.org/CodeSystem/my-cs' could not be found, so the code cannot be validated
+ERROR: Bundle/MessageForCDSSRequest: Bundle.entry[18]: Constraint failed: msg-core-1: 'Patient.name.given or Patient.name.family or both SHALL be present' (defined in https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageForCDSS)
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[18].resource/*Observation/Obs18*/: Best Practice Recommendation: In general, all observations should have a subject
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[18].resource/*Observation/Obs18*/: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[18].resource/*Observation/Obs18*/: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+INFORMATION: Bundle/MessageForCDSSRequest: Bundle.entry[18].resource/*Observation/Obs18*/.code.coding[0]: A definition for CodeSystem 'http://example.org/CodeSystem/my-cs' could not be found, so the code cannot be validated
+ERROR: Bundle/MessageForCDSSRequest: Bundle.entry[19]: Constraint failed: msg-core-1: 'Patient.name.given or Patient.name.family or both SHALL be present' (defined in https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageForCDSS)
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[19].resource/*Observation/Obs19*/: Best Practice Recommendation: In general, all observations should have a subject
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[19].resource/*Observation/Obs19*/: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[19].resource/*Observation/Obs19*/: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+INFORMATION: Bundle/MessageForCDSSRequest: Bundle.entry[19].resource/*Observation/Obs19*/.code.coding[0]: A definition for CodeSystem 'http://example.org/CodeSystem/my-cs' could not be found, so the code cannot be validated
+ERROR: Bundle/MessageForCDSSRequest: Bundle.entry[20]: Constraint failed: msg-core-1: 'Patient.name.given or Patient.name.family or both SHALL be present' (defined in https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageForCDSS)
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[20].resource/*Observation/Obs20*/: Best Practice Recommendation: In general, all observations should have a subject
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[20].resource/*Observation/Obs20*/: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[20].resource/*Observation/Obs20*/: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+INFORMATION: Bundle/MessageForCDSSRequest: Bundle.entry[20].resource/*Observation/Obs20*/.code.coding[0]: A definition for CodeSystem 'http://example.org/CodeSystem/my-cs' could not be found, so the code cannot be validated
+ERROR: Bundle/MessageForCDSSRequest: Bundle.entry[21]: Constraint failed: msg-core-1: 'Patient.name.given or Patient.name.family or both SHALL be present' (defined in https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageForCDSS)
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[21].resource/*Observation/Obs21*/: Best Practice Recommendation: In general, all observations should have a subject
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[21].resource/*Observation/Obs21*/: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[21].resource/*Observation/Obs21*/: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+INFORMATION: Bundle/MessageForCDSSRequest: Bundle.entry[21].resource/*Observation/Obs21*/.code.coding[0]: A definition for CodeSystem 'http://example.org/CodeSystem/my-cs' could not be found, so the code cannot be validated
+ERROR: Bundle/MessageForCDSSRequest: Bundle.entry[22]: Constraint failed: msg-core-1: 'Patient.name.given or Patient.name.family or both SHALL be present' (defined in https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageForCDSS)
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[22].resource/*Observation/Obs22*/: Best Practice Recommendation: In general, all observations should have a subject
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[22].resource/*Observation/Obs22*/: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[22].resource/*Observation/Obs22*/: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+INFORMATION: Bundle/MessageForCDSSRequest: Bundle.entry[22].resource/*Observation/Obs22*/.code.coding[0]: A definition for CodeSystem 'http://example.org/CodeSystem/my-cs' could not be found, so the code cannot be validated
+ERROR: Bundle/MessageForCDSSRequest: Bundle.entry[23]: Constraint failed: msg-core-1: 'Patient.name.given or Patient.name.family or both SHALL be present' (defined in https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageForCDSS)
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[23].resource/*Observation/Obs23*/: Best Practice Recommendation: In general, all observations should have a subject
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[23].resource/*Observation/Obs23*/: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[23].resource/*Observation/Obs23*/: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+INFORMATION: Bundle/MessageForCDSSRequest: Bundle.entry[23].resource/*Observation/Obs23*/.code.coding[0]: A definition for CodeSystem 'http://example.org/CodeSystem/my-cs' could not be found, so the code cannot be validated
+ERROR: Bundle/MessageForCDSSRequest: Bundle.entry[24]: Constraint failed: msg-core-1: 'Patient.name.given or Patient.name.family or both SHALL be present' (defined in https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageForCDSS)
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[24].resource/*Observation/Obs24*/: Best Practice Recommendation: In general, all observations should have a subject
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[24].resource/*Observation/Obs24*/: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[24].resource/*Observation/Obs24*/: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+INFORMATION: Bundle/MessageForCDSSRequest: Bundle.entry[24].resource/*Observation/Obs24*/.code.coding[0]: A definition for CodeSystem 'http://example.org/CodeSystem/my-cs' could not be found, so the code cannot be validated
+ERROR: Bundle/MessageForCDSSRequest: Bundle.entry[25]: Constraint failed: msg-core-1: 'Patient.name.given or Patient.name.family or both SHALL be present' (defined in https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageForCDSS)
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[25].resource/*Observation/Obs25*/: Best Practice Recommendation: In general, all observations should have a subject
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[25].resource/*Observation/Obs25*/: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[25].resource/*Observation/Obs25*/: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+INFORMATION: Bundle/MessageForCDSSRequest: Bundle.entry[25].resource/*Observation/Obs25*/.code.coding[0]: A definition for CodeSystem 'http://example.org/CodeSystem/my-cs' could not be found, so the code cannot be validated
+ERROR: Bundle/MessageForCDSSRequest: Bundle.entry[26]: Constraint failed: msg-core-1: 'Patient.name.given or Patient.name.family or both SHALL be present' (defined in https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageForCDSS)
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[26].resource/*Observation/Obs26*/: Best Practice Recommendation: In general, all observations should have a subject
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[26].resource/*Observation/Obs26*/: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[26].resource/*Observation/Obs26*/: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+INFORMATION: Bundle/MessageForCDSSRequest: Bundle.entry[26].resource/*Observation/Obs26*/.code.coding[0]: A definition for CodeSystem 'http://example.org/CodeSystem/my-cs' could not be found, so the code cannot be validated
+ERROR: Bundle/MessageForCDSSRequest: Bundle.entry[27]: Constraint failed: msg-core-1: 'Patient.name.given or Patient.name.family or both SHALL be present' (defined in https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageForCDSS)
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[27].resource/*Observation/Obs27*/: Best Practice Recommendation: In general, all observations should have a subject
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[27].resource/*Observation/Obs27*/: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[27].resource/*Observation/Obs27*/: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+INFORMATION: Bundle/MessageForCDSSRequest: Bundle.entry[27].resource/*Observation/Obs27*/.code.coding[0]: A definition for CodeSystem 'http://example.org/CodeSystem/my-cs' could not be found, so the code cannot be validated
+ERROR: Bundle/MessageForCDSSRequest: Bundle.entry[28]: Constraint failed: msg-core-1: 'Patient.name.given or Patient.name.family or both SHALL be present' (defined in https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageForCDSS)
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[28].resource/*Observation/Obs28*/: Best Practice Recommendation: In general, all observations should have a subject
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[28].resource/*Observation/Obs28*/: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[28].resource/*Observation/Obs28*/: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+INFORMATION: Bundle/MessageForCDSSRequest: Bundle.entry[28].resource/*Observation/Obs28*/.code.coding[0]: A definition for CodeSystem 'http://example.org/CodeSystem/my-cs' could not be found, so the code cannot be validated
+ERROR: Bundle/MessageForCDSSRequest: Bundle.entry[29]: Constraint failed: msg-core-1: 'Patient.name.given or Patient.name.family or both SHALL be present' (defined in https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageForCDSS)
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[29].resource/*Observation/Obs29*/: Best Practice Recommendation: In general, all observations should have a subject
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[29].resource/*Observation/Obs29*/: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[29].resource/*Observation/Obs29*/: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+INFORMATION: Bundle/MessageForCDSSRequest: Bundle.entry[29].resource/*Observation/Obs29*/.code.coding[0]: A definition for CodeSystem 'http://example.org/CodeSystem/my-cs' could not be found, so the code cannot be validated
+ERROR: Bundle/MessageForCDSSRequest: Bundle.entry[30]: Constraint failed: msg-core-1: 'Patient.name.given or Patient.name.family or both SHALL be present' (defined in https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageForCDSS)
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[30].resource/*Observation/Obs30*/: Best Practice Recommendation: In general, all observations should have a subject
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[30].resource/*Observation/Obs30*/: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[30].resource/*Observation/Obs30*/: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+INFORMATION: Bundle/MessageForCDSSRequest: Bundle.entry[30].resource/*Observation/Obs30*/.code.coding[0]: A definition for CodeSystem 'http://example.org/CodeSystem/my-cs' could not be found, so the code cannot be validated
+ERROR: Bundle/MessageForCDSSRequest: Bundle: Constraint failed: bdl-15: 'Bundle resources where type is not transaction, transaction-response, batch, or batch-response or when the request is a POST SHALL have Bundle.entry.fullUrl populated' (defined in http://hl7.org/fhir/StructureDefinition/Bundle)
 WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[2]: Entry  isn't reachable by traversing links (forward or backward) from the MessageHeader, so its presence should be reviewed (is it needed to process the message?)
 WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[3]: Entry  isn't reachable by traversing links (forward or backward) from the MessageHeader, so its presence should be reviewed (is it needed to process the message?)
 WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[4]: Entry  isn't reachable by traversing links (forward or backward) from the MessageHeader, so its presence should be reviewed (is it needed to process the message?)
@@ -361,72 +405,175 @@ WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[30]: Entry  isn't reachable 
 WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[31]: Entry  isn't reachable by traversing links (forward or backward) from the MessageHeader, so its presence should be reviewed (is it needed to process the message?)
 ERROR: Bundle/MessageForCDSSRequest: Bundle.entry[0]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry
 ERROR: Bundle/MessageForCDSSRequest: Bundle.entry[1]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[1].resource: Best Practice Recommendation: In general, all observations should have a subject
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[1].resource: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[1].resource: Best Practice Recommendation: In general, all observations should have an effective[x] ()
 ERROR: Bundle/MessageForCDSSRequest: Bundle.entry[2]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[2].resource: Best Practice Recommendation: In general, all observations should have a subject
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[2].resource: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[2].resource: Best Practice Recommendation: In general, all observations should have an effective[x] ()
 ERROR: Bundle/MessageForCDSSRequest: Bundle.entry[3]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[3].resource: Best Practice Recommendation: In general, all observations should have a subject
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[3].resource: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[3].resource: Best Practice Recommendation: In general, all observations should have an effective[x] ()
 ERROR: Bundle/MessageForCDSSRequest: Bundle.entry[4]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[4].resource: Best Practice Recommendation: In general, all observations should have a subject
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[4].resource: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[4].resource: Best Practice Recommendation: In general, all observations should have an effective[x] ()
 ERROR: Bundle/MessageForCDSSRequest: Bundle.entry[5]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[5].resource: Best Practice Recommendation: In general, all observations should have a subject
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[5].resource: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[5].resource: Best Practice Recommendation: In general, all observations should have an effective[x] ()
 ERROR: Bundle/MessageForCDSSRequest: Bundle.entry[6]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[6].resource: Best Practice Recommendation: In general, all observations should have a subject
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[6].resource: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[6].resource: Best Practice Recommendation: In general, all observations should have an effective[x] ()
 ERROR: Bundle/MessageForCDSSRequest: Bundle.entry[7]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[7].resource: Best Practice Recommendation: In general, all observations should have a subject
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[7].resource: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[7].resource: Best Practice Recommendation: In general, all observations should have an effective[x] ()
 ERROR: Bundle/MessageForCDSSRequest: Bundle.entry[8]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[8].resource: Best Practice Recommendation: In general, all observations should have a subject
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[8].resource: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[8].resource: Best Practice Recommendation: In general, all observations should have an effective[x] ()
 ERROR: Bundle/MessageForCDSSRequest: Bundle.entry[9]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[9].resource: Best Practice Recommendation: In general, all observations should have a subject
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[9].resource: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[9].resource: Best Practice Recommendation: In general, all observations should have an effective[x] ()
 ERROR: Bundle/MessageForCDSSRequest: Bundle.entry[10]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[10].resource: Best Practice Recommendation: In general, all observations should have a subject
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[10].resource: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[10].resource: Best Practice Recommendation: In general, all observations should have an effective[x] ()
 ERROR: Bundle/MessageForCDSSRequest: Bundle.entry[11]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[11].resource: Best Practice Recommendation: In general, all observations should have a subject
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[11].resource: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[11].resource: Best Practice Recommendation: In general, all observations should have an effective[x] ()
 ERROR: Bundle/MessageForCDSSRequest: Bundle.entry[12]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[12].resource: Best Practice Recommendation: In general, all observations should have a subject
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[12].resource: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[12].resource: Best Practice Recommendation: In general, all observations should have an effective[x] ()
 ERROR: Bundle/MessageForCDSSRequest: Bundle.entry[13]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[13].resource: Best Practice Recommendation: In general, all observations should have a subject
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[13].resource: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[13].resource: Best Practice Recommendation: In general, all observations should have an effective[x] ()
 ERROR: Bundle/MessageForCDSSRequest: Bundle.entry[14]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[14].resource: Best Practice Recommendation: In general, all observations should have a subject
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[14].resource: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[14].resource: Best Practice Recommendation: In general, all observations should have an effective[x] ()
 ERROR: Bundle/MessageForCDSSRequest: Bundle.entry[15]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[15].resource: Best Practice Recommendation: In general, all observations should have a subject
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[15].resource: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[15].resource: Best Practice Recommendation: In general, all observations should have an effective[x] ()
 ERROR: Bundle/MessageForCDSSRequest: Bundle.entry[16]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[16].resource: Best Practice Recommendation: In general, all observations should have a subject
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[16].resource: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[16].resource: Best Practice Recommendation: In general, all observations should have an effective[x] ()
 ERROR: Bundle/MessageForCDSSRequest: Bundle.entry[17]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[17].resource: Best Practice Recommendation: In general, all observations should have a subject
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[17].resource: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[17].resource: Best Practice Recommendation: In general, all observations should have an effective[x] ()
 ERROR: Bundle/MessageForCDSSRequest: Bundle.entry[18]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[18].resource: Best Practice Recommendation: In general, all observations should have a subject
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[18].resource: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[18].resource: Best Practice Recommendation: In general, all observations should have an effective[x] ()
 ERROR: Bundle/MessageForCDSSRequest: Bundle.entry[19]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[19].resource: Best Practice Recommendation: In general, all observations should have a subject
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[19].resource: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[19].resource: Best Practice Recommendation: In general, all observations should have an effective[x] ()
 ERROR: Bundle/MessageForCDSSRequest: Bundle.entry[20]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[20].resource: Best Practice Recommendation: In general, all observations should have a subject
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[20].resource: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[20].resource: Best Practice Recommendation: In general, all observations should have an effective[x] ()
 ERROR: Bundle/MessageForCDSSRequest: Bundle.entry[21]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[21].resource: Best Practice Recommendation: In general, all observations should have a subject
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[21].resource: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[21].resource: Best Practice Recommendation: In general, all observations should have an effective[x] ()
 ERROR: Bundle/MessageForCDSSRequest: Bundle.entry[22]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[22].resource: Best Practice Recommendation: In general, all observations should have a subject
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[22].resource: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[22].resource: Best Practice Recommendation: In general, all observations should have an effective[x] ()
 ERROR: Bundle/MessageForCDSSRequest: Bundle.entry[23]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[23].resource: Best Practice Recommendation: In general, all observations should have a subject
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[23].resource: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[23].resource: Best Practice Recommendation: In general, all observations should have an effective[x] ()
 ERROR: Bundle/MessageForCDSSRequest: Bundle.entry[24]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[24].resource: Best Practice Recommendation: In general, all observations should have a subject
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[24].resource: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[24].resource: Best Practice Recommendation: In general, all observations should have an effective[x] ()
 ERROR: Bundle/MessageForCDSSRequest: Bundle.entry[25]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[25].resource: Best Practice Recommendation: In general, all observations should have a subject
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[25].resource: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[25].resource: Best Practice Recommendation: In general, all observations should have an effective[x] ()
 ERROR: Bundle/MessageForCDSSRequest: Bundle.entry[26]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[26].resource: Best Practice Recommendation: In general, all observations should have a subject
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[26].resource: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[26].resource: Best Practice Recommendation: In general, all observations should have an effective[x] ()
 ERROR: Bundle/MessageForCDSSRequest: Bundle.entry[27]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[27].resource: Best Practice Recommendation: In general, all observations should have a subject
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[27].resource: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[27].resource: Best Practice Recommendation: In general, all observations should have an effective[x] ()
 ERROR: Bundle/MessageForCDSSRequest: Bundle.entry[28]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[28].resource: Best Practice Recommendation: In general, all observations should have a subject
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[28].resource: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[28].resource: Best Practice Recommendation: In general, all observations should have an effective[x] ()
 ERROR: Bundle/MessageForCDSSRequest: Bundle.entry[29]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[29].resource: Best Practice Recommendation: In general, all observations should have a subject
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[29].resource: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[29].resource: Best Practice Recommendation: In general, all observations should have an effective[x] ()
 ERROR: Bundle/MessageForCDSSRequest: Bundle.entry[30]: Except for transactions and batches, each entry in a Bundle must have a fullUrl which is the identity of the resource in the entry
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[30].resource: Best Practice Recommendation: In general, all observations should have a subject
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[30].resource: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/MessageForCDSSRequest: Bundle.entry[30].resource: Best Practice Recommendation: In general, all observations should have an effective[x] ()
 == fsh-generated/resources/Bundle-f879270e-10ee-11ee-afc7-2e8ac521fb46.json ==
-WARNING: Bundle/f879270e-10ee-11ee-afc7-2e8ac521fb46: Bundle.entry[0].resource/*MessageHeader/f8791700-10ee-11ee-afc7-2e8ac521fb46*/.event.ofType(Coding): A code with no system has no defined meaning. A system should be provided
-WARNING: Bundle/f879270e-10ee-11ee-afc7-2e8ac521fb46: Bundle.entry[1].resource/*Device/mlmodel*/.version[0].type.coding[0]: Rule cod-1: 'A Coding SHOULD NOT have a display unless a code is also present.  Computation on Coding.display alone is generally unsafe.  Consider using CodeableConcept.text' Failed
-WARNING: Bundle/f879270e-10ee-11ee-afc7-2e8ac521fb46: Bundle.entry[1].resource/*Device/mlmodel*/.version[1].type.coding[0]: Rule cod-1: 'A Coding SHOULD NOT have a display unless a code is also present.  Computation on Coding.display alone is generally unsafe.  Consider using CodeableConcept.text' Failed
-WARNING: Bundle/f879270e-10ee-11ee-afc7-2e8ac521fb46: Bundle.entry[1].resource/*Device/mlmodel*/.version[2].type.coding[0]: Rule cod-1: 'A Coding SHOULD NOT have a display unless a code is also present.  Computation on Coding.display alone is generally unsafe.  Consider using CodeableConcept.text' Failed
-WARNING: Bundle/f879270e-10ee-11ee-afc7-2e8ac521fb46: Bundle.entry[1].resource/*Device/mlmodel*/.version[3].type.coding[0]: Rule cod-1: 'A Coding SHOULD NOT have a display unless a code is also present.  Computation on Coding.display alone is generally unsafe.  Consider using CodeableConcept.text' Failed
-WARNING: Bundle/f879270e-10ee-11ee-afc7-2e8ac521fb46: Bundle.entry[1].resource/*Device/mlmodel*/.version[4].type.coding[0]: Rule cod-1: 'A Coding SHOULD NOT have a display unless a code is also present.  Computation on Coding.display alone is generally unsafe.  Consider using CodeableConcept.text' Failed
-WARNING: Bundle/f879270e-10ee-11ee-afc7-2e8ac521fb46: Bundle.entry[1].resource/*Device/mlmodel*/.version[5].type.coding[0]: Rule cod-1: 'A Coding SHOULD NOT have a display unless a code is also present.  Computation on Coding.display alone is generally unsafe.  Consider using CodeableConcept.text' Failed
+WARNING: Bundle/f879270e-10ee-11ee-afc7-2e8ac521fb46: Bundle.entry[0].resource/*MessageHeader/f8791700-10ee-11ee-afc7-2e8ac521fb46*/.event.ofType(Coding): A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: Bundle/f879270e-10ee-11ee-afc7-2e8ac521fb46: Bundle.entry[1].resource/*Device/mlmodel*/.version[0].type.coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: Bundle/f879270e-10ee-11ee-afc7-2e8ac521fb46: Bundle.entry[1].resource/*Device/mlmodel*/.version[0].type.coding[0]: Constraint failed: cod-1: 'A Coding SHOULD NOT have a display unless a code is also present.  Computation on Coding.display alone is generally unsafe.  Consider using CodeableConcept.text' (defined in http://hl7.org/fhir/StructureDefinition/Coding)
+WARNING: Bundle/f879270e-10ee-11ee-afc7-2e8ac521fb46: Bundle.entry[1].resource/*Device/mlmodel*/.version[1].type.coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: Bundle/f879270e-10ee-11ee-afc7-2e8ac521fb46: Bundle.entry[1].resource/*Device/mlmodel*/.version[1].type.coding[0]: Constraint failed: cod-1: 'A Coding SHOULD NOT have a display unless a code is also present.  Computation on Coding.display alone is generally unsafe.  Consider using CodeableConcept.text' (defined in http://hl7.org/fhir/StructureDefinition/Coding)
+WARNING: Bundle/f879270e-10ee-11ee-afc7-2e8ac521fb46: Bundle.entry[1].resource/*Device/mlmodel*/.version[2].type.coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: Bundle/f879270e-10ee-11ee-afc7-2e8ac521fb46: Bundle.entry[1].resource/*Device/mlmodel*/.version[2].type.coding[0]: Constraint failed: cod-1: 'A Coding SHOULD NOT have a display unless a code is also present.  Computation on Coding.display alone is generally unsafe.  Consider using CodeableConcept.text' (defined in http://hl7.org/fhir/StructureDefinition/Coding)
+WARNING: Bundle/f879270e-10ee-11ee-afc7-2e8ac521fb46: Bundle.entry[1].resource/*Device/mlmodel*/.version[3].type.coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: Bundle/f879270e-10ee-11ee-afc7-2e8ac521fb46: Bundle.entry[1].resource/*Device/mlmodel*/.version[3].type.coding[0]: Constraint failed: cod-1: 'A Coding SHOULD NOT have a display unless a code is also present.  Computation on Coding.display alone is generally unsafe.  Consider using CodeableConcept.text' (defined in http://hl7.org/fhir/StructureDefinition/Coding)
+WARNING: Bundle/f879270e-10ee-11ee-afc7-2e8ac521fb46: Bundle.entry[1].resource/*Device/mlmodel*/.version[4].type.coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: Bundle/f879270e-10ee-11ee-afc7-2e8ac521fb46: Bundle.entry[1].resource/*Device/mlmodel*/.version[4].type.coding[0]: Constraint failed: cod-1: 'A Coding SHOULD NOT have a display unless a code is also present.  Computation on Coding.display alone is generally unsafe.  Consider using CodeableConcept.text' (defined in http://hl7.org/fhir/StructureDefinition/Coding)
+WARNING: Bundle/f879270e-10ee-11ee-afc7-2e8ac521fb46: Bundle.entry[1].resource/*Device/mlmodel*/.version[5].type.coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+WARNING: Bundle/f879270e-10ee-11ee-afc7-2e8ac521fb46: Bundle.entry[1].resource/*Device/mlmodel*/.version[5].type.coding[0]: Constraint failed: cod-1: 'A Coding SHOULD NOT have a display unless a code is also present.  Computation on Coding.display alone is generally unsafe.  Consider using CodeableConcept.text' (defined in http://hl7.org/fhir/StructureDefinition/Coding)
 ERROR: Bundle/f879270e-10ee-11ee-afc7-2e8ac521fb46: Bundle.entry[1].resource/*Device/mlmodel*/: Device.type: minimum required = 1, but only found 0 (from https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MLModel|0.1.0)
+WARNING: Bundle/f879270e-10ee-11ee-afc7-2e8ac521fb46: Bundle.entry[2].resource/*Observation/f8791246-10ee-11ee-afc7-2e8ac521fb46*/: Best Practice Recommendation: In general, all observations should have a subject
+WARNING: Bundle/f879270e-10ee-11ee-afc7-2e8ac521fb46: Bundle.entry[2].resource/*Observation/f8791246-10ee-11ee-afc7-2e8ac521fb46*/: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/f879270e-10ee-11ee-afc7-2e8ac521fb46: Bundle.entry[2].resource/*Observation/f8791246-10ee-11ee-afc7-2e8ac521fb46*/: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+INFORMATION: Bundle/f879270e-10ee-11ee-afc7-2e8ac521fb46: Bundle.entry[2].resource/*Observation/f8791246-10ee-11ee-afc7-2e8ac521fb46*/.code.coding[0]: A definition for CodeSystem 'http://example.org/CodeSystem/my-cs' could not be found, so the code cannot be validated
 INFORMATION: Bundle/f879270e-10ee-11ee-afc7-2e8ac521fb46: Bundle.entry[2].resource/*Observation/f8791246-10ee-11ee-afc7-2e8ac521fb46*/.device: Details for Device/mlmodel matching against profile http://hl7.org/fhir/StructureDefinition/Device|5.0.0
-WARNING: Bundle/f879270e-10ee-11ee-afc7-2e8ac521fb46: Bundle.entry[2].resource/*Observation/f8791246-10ee-11ee-afc7-2e8ac521fb46*/: All observations should have a subject
-WARNING: Bundle/f879270e-10ee-11ee-afc7-2e8ac521fb46: Bundle.entry[2].resource/*Observation/f8791246-10ee-11ee-afc7-2e8ac521fb46*/: All observations should have a performer
-WARNING: Bundle/f879270e-10ee-11ee-afc7-2e8ac521fb46: Bundle.entry[2].resource/*Observation/f8791246-10ee-11ee-afc7-2e8ac521fb46*/: All observations should have an effectiveDateTime or an effectivePeriod
+WARNING: Bundle/f879270e-10ee-11ee-afc7-2e8ac521fb46: Bundle.entry[3].resource/*Observation/f87914b2-10ee-11ee-afc7-2e8ac521fb46*/: Best Practice Recommendation: In general, all observations should have a subject
+WARNING: Bundle/f879270e-10ee-11ee-afc7-2e8ac521fb46: Bundle.entry[3].resource/*Observation/f87914b2-10ee-11ee-afc7-2e8ac521fb46*/: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/f879270e-10ee-11ee-afc7-2e8ac521fb46: Bundle.entry[3].resource/*Observation/f87914b2-10ee-11ee-afc7-2e8ac521fb46*/: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+INFORMATION: Bundle/f879270e-10ee-11ee-afc7-2e8ac521fb46: Bundle.entry[3].resource/*Observation/f87914b2-10ee-11ee-afc7-2e8ac521fb46*/.code.coding[0]: A definition for CodeSystem 'http://example.org/CodeSystem/my-cs' could not be found, so the code cannot be validated
 INFORMATION: Bundle/f879270e-10ee-11ee-afc7-2e8ac521fb46: Bundle.entry[3].resource/*Observation/f87914b2-10ee-11ee-afc7-2e8ac521fb46*/.device: Details for Device/mlmodel matching against profile http://hl7.org/fhir/StructureDefinition/Device|5.0.0
-WARNING: Bundle/f879270e-10ee-11ee-afc7-2e8ac521fb46: Bundle.entry[3].resource/*Observation/f87914b2-10ee-11ee-afc7-2e8ac521fb46*/: All observations should have a subject
-WARNING: Bundle/f879270e-10ee-11ee-afc7-2e8ac521fb46: Bundle.entry[3].resource/*Observation/f87914b2-10ee-11ee-afc7-2e8ac521fb46*/: All observations should have a performer
-WARNING: Bundle/f879270e-10ee-11ee-afc7-2e8ac521fb46: Bundle.entry[3].resource/*Observation/f87914b2-10ee-11ee-afc7-2e8ac521fb46*/: All observations should have an effectiveDateTime or an effectivePeriod
+WARNING: Bundle/f879270e-10ee-11ee-afc7-2e8ac521fb46: Bundle.entry[4].resource/*Observation/f879150c-10ee-11ee-afc7-2e8ac521fb46*/: Best Practice Recommendation: In general, all observations should have a subject
+WARNING: Bundle/f879270e-10ee-11ee-afc7-2e8ac521fb46: Bundle.entry[4].resource/*Observation/f879150c-10ee-11ee-afc7-2e8ac521fb46*/: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/f879270e-10ee-11ee-afc7-2e8ac521fb46: Bundle.entry[4].resource/*Observation/f879150c-10ee-11ee-afc7-2e8ac521fb46*/: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+INFORMATION: Bundle/f879270e-10ee-11ee-afc7-2e8ac521fb46: Bundle.entry[4].resource/*Observation/f879150c-10ee-11ee-afc7-2e8ac521fb46*/.code.coding[0]: A definition for CodeSystem 'http://example.org/CodeSystem/my-cs' could not be found, so the code cannot be validated
 INFORMATION: Bundle/f879270e-10ee-11ee-afc7-2e8ac521fb46: Bundle.entry[4].resource/*Observation/f879150c-10ee-11ee-afc7-2e8ac521fb46*/.device: Details for Device/mlmodel matching against profile http://hl7.org/fhir/StructureDefinition/Device|5.0.0
-WARNING: Bundle/f879270e-10ee-11ee-afc7-2e8ac521fb46: Bundle.entry[4].resource/*Observation/f879150c-10ee-11ee-afc7-2e8ac521fb46*/: All observations should have a subject
-WARNING: Bundle/f879270e-10ee-11ee-afc7-2e8ac521fb46: Bundle.entry[4].resource/*Observation/f879150c-10ee-11ee-afc7-2e8ac521fb46*/: All observations should have a performer
-WARNING: Bundle/f879270e-10ee-11ee-afc7-2e8ac521fb46: Bundle.entry[4].resource/*Observation/f879150c-10ee-11ee-afc7-2e8ac521fb46*/: All observations should have an effectiveDateTime or an effectivePeriod
+WARNING: Bundle/f879270e-10ee-11ee-afc7-2e8ac521fb46: Bundle.entry[5].resource/*Observation/f8791552-10ee-11ee-afc7-2e8ac521fb46*/: Best Practice Recommendation: In general, all observations should have a subject
+WARNING: Bundle/f879270e-10ee-11ee-afc7-2e8ac521fb46: Bundle.entry[5].resource/*Observation/f8791552-10ee-11ee-afc7-2e8ac521fb46*/: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/f879270e-10ee-11ee-afc7-2e8ac521fb46: Bundle.entry[5].resource/*Observation/f8791552-10ee-11ee-afc7-2e8ac521fb46*/: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+INFORMATION: Bundle/f879270e-10ee-11ee-afc7-2e8ac521fb46: Bundle.entry[5].resource/*Observation/f8791552-10ee-11ee-afc7-2e8ac521fb46*/.code.coding[0]: A definition for CodeSystem 'http://example.org/CodeSystem/my-cs' could not be found, so the code cannot be validated
 INFORMATION: Bundle/f879270e-10ee-11ee-afc7-2e8ac521fb46: Bundle.entry[5].resource/*Observation/f8791552-10ee-11ee-afc7-2e8ac521fb46*/.device: Details for Device/mlmodel matching against profile http://hl7.org/fhir/StructureDefinition/Device|5.0.0
-WARNING: Bundle/f879270e-10ee-11ee-afc7-2e8ac521fb46: Bundle.entry[5].resource/*Observation/f8791552-10ee-11ee-afc7-2e8ac521fb46*/: All observations should have a subject
-WARNING: Bundle/f879270e-10ee-11ee-afc7-2e8ac521fb46: Bundle.entry[5].resource/*Observation/f8791552-10ee-11ee-afc7-2e8ac521fb46*/: All observations should have a performer
-WARNING: Bundle/f879270e-10ee-11ee-afc7-2e8ac521fb46: Bundle.entry[5].resource/*Observation/f8791552-10ee-11ee-afc7-2e8ac521fb46*/: All observations should have an effectiveDateTime or an effectivePeriod
+WARNING: Bundle/f879270e-10ee-11ee-afc7-2e8ac521fb46: Bundle.entry[6].resource/*Observation/f87915c0-10ee-11ee-afc7-2e8ac521fb46*/: Best Practice Recommendation: In general, all observations should have a subject
+WARNING: Bundle/f879270e-10ee-11ee-afc7-2e8ac521fb46: Bundle.entry[6].resource/*Observation/f87915c0-10ee-11ee-afc7-2e8ac521fb46*/: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/f879270e-10ee-11ee-afc7-2e8ac521fb46: Bundle.entry[6].resource/*Observation/f87915c0-10ee-11ee-afc7-2e8ac521fb46*/: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+INFORMATION: Bundle/f879270e-10ee-11ee-afc7-2e8ac521fb46: Bundle.entry[6].resource/*Observation/f87915c0-10ee-11ee-afc7-2e8ac521fb46*/.code.coding[0]: A definition for CodeSystem 'http://example.org/CodeSystem/my-cs' could not be found, so the code cannot be validated
 INFORMATION: Bundle/f879270e-10ee-11ee-afc7-2e8ac521fb46: Bundle.entry[6].resource/*Observation/f87915c0-10ee-11ee-afc7-2e8ac521fb46*/.device: Details for Device/mlmodel matching against profile http://hl7.org/fhir/StructureDefinition/Device|5.0.0
-WARNING: Bundle/f879270e-10ee-11ee-afc7-2e8ac521fb46: Bundle.entry[6].resource/*Observation/f87915c0-10ee-11ee-afc7-2e8ac521fb46*/: All observations should have a subject
-WARNING: Bundle/f879270e-10ee-11ee-afc7-2e8ac521fb46: Bundle.entry[6].resource/*Observation/f87915c0-10ee-11ee-afc7-2e8ac521fb46*/: All observations should have a performer
-WARNING: Bundle/f879270e-10ee-11ee-afc7-2e8ac521fb46: Bundle.entry[6].resource/*Observation/f87915c0-10ee-11ee-afc7-2e8ac521fb46*/: All observations should have an effectiveDateTime or an effectivePeriod
+WARNING: Bundle/f879270e-10ee-11ee-afc7-2e8ac521fb46: Bundle.entry[7].resource/*Observation/f8791606-10ee-11ee-afc7-2e8ac521fb46*/: Best Practice Recommendation: In general, all observations should have a subject
+WARNING: Bundle/f879270e-10ee-11ee-afc7-2e8ac521fb46: Bundle.entry[7].resource/*Observation/f8791606-10ee-11ee-afc7-2e8ac521fb46*/: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/f879270e-10ee-11ee-afc7-2e8ac521fb46: Bundle.entry[7].resource/*Observation/f8791606-10ee-11ee-afc7-2e8ac521fb46*/: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+INFORMATION: Bundle/f879270e-10ee-11ee-afc7-2e8ac521fb46: Bundle.entry[7].resource/*Observation/f8791606-10ee-11ee-afc7-2e8ac521fb46*/.code.coding[0]: A definition for CodeSystem 'http://example.org/CodeSystem/my-cs' could not be found, so the code cannot be validated
 INFORMATION: Bundle/f879270e-10ee-11ee-afc7-2e8ac521fb46: Bundle.entry[7].resource/*Observation/f8791606-10ee-11ee-afc7-2e8ac521fb46*/.device: Details for Device/mlmodel matching against profile http://hl7.org/fhir/StructureDefinition/Device|5.0.0
-WARNING: Bundle/f879270e-10ee-11ee-afc7-2e8ac521fb46: Bundle.entry[7].resource/*Observation/f8791606-10ee-11ee-afc7-2e8ac521fb46*/: All observations should have a subject
-WARNING: Bundle/f879270e-10ee-11ee-afc7-2e8ac521fb46: Bundle.entry[7].resource/*Observation/f8791606-10ee-11ee-afc7-2e8ac521fb46*/: All observations should have a performer
-WARNING: Bundle/f879270e-10ee-11ee-afc7-2e8ac521fb46: Bundle.entry[7].resource/*Observation/f8791606-10ee-11ee-afc7-2e8ac521fb46*/: All observations should have an effectiveDateTime or an effectivePeriod
+WARNING: Bundle/f879270e-10ee-11ee-afc7-2e8ac521fb46: Bundle.entry[8].resource/*Observation/f879164c-10ee-11ee-afc7-2e8ac521fb46*/: Best Practice Recommendation: In general, all observations should have a subject
+WARNING: Bundle/f879270e-10ee-11ee-afc7-2e8ac521fb46: Bundle.entry[8].resource/*Observation/f879164c-10ee-11ee-afc7-2e8ac521fb46*/: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/f879270e-10ee-11ee-afc7-2e8ac521fb46: Bundle.entry[8].resource/*Observation/f879164c-10ee-11ee-afc7-2e8ac521fb46*/: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+INFORMATION: Bundle/f879270e-10ee-11ee-afc7-2e8ac521fb46: Bundle.entry[8].resource/*Observation/f879164c-10ee-11ee-afc7-2e8ac521fb46*/.code.coding[0]: A definition for CodeSystem 'http://example.org/CodeSystem/my-cs' could not be found, so the code cannot be validated
 INFORMATION: Bundle/f879270e-10ee-11ee-afc7-2e8ac521fb46: Bundle.entry[8].resource/*Observation/f879164c-10ee-11ee-afc7-2e8ac521fb46*/.device: Details for Device/mlmodel matching against profile http://hl7.org/fhir/StructureDefinition/Device|5.0.0
-WARNING: Bundle/f879270e-10ee-11ee-afc7-2e8ac521fb46: Bundle.entry[8].resource/*Observation/f879164c-10ee-11ee-afc7-2e8ac521fb46*/: All observations should have a subject
-WARNING: Bundle/f879270e-10ee-11ee-afc7-2e8ac521fb46: Bundle.entry[8].resource/*Observation/f879164c-10ee-11ee-afc7-2e8ac521fb46*/: All observations should have a performer
-WARNING: Bundle/f879270e-10ee-11ee-afc7-2e8ac521fb46: Bundle.entry[8].resource/*Observation/f879164c-10ee-11ee-afc7-2e8ac521fb46*/: All observations should have an effectiveDateTime or an effectivePeriod
 WARNING: Bundle/f879270e-10ee-11ee-afc7-2e8ac521fb46: Bundle.entry[2]: Entry 'http://localhost:8080/fhir/Device/mlmodel' isn't reachable by traversing links (forward or backward) from the MessageHeader, so its presence should be reviewed (is it needed to process the message?)
 WARNING: Bundle/f879270e-10ee-11ee-afc7-2e8ac521fb46: Bundle.entry[3]: Entry 'http://localhost:8080/fhir/Observation/f8791246-10ee-11ee-afc7-2e8ac521fb46' isn't reachable by traversing links (forward or backward) from the MessageHeader, so its presence should be reviewed (is it needed to process the message?)
 WARNING: Bundle/f879270e-10ee-11ee-afc7-2e8ac521fb46: Bundle.entry[4]: Entry 'http://localhost:8080/fhir/Observation/f87914b2-10ee-11ee-afc7-2e8ac521fb46' isn't reachable by traversing links (forward or backward) from the MessageHeader, so its presence should be reviewed (is it needed to process the message?)
@@ -435,7 +582,28 @@ WARNING: Bundle/f879270e-10ee-11ee-afc7-2e8ac521fb46: Bundle.entry[6]: Entry 'ht
 WARNING: Bundle/f879270e-10ee-11ee-afc7-2e8ac521fb46: Bundle.entry[7]: Entry 'http://localhost:8080/fhir/Observation/f87915c0-10ee-11ee-afc7-2e8ac521fb46' isn't reachable by traversing links (forward or backward) from the MessageHeader, so its presence should be reviewed (is it needed to process the message?)
 WARNING: Bundle/f879270e-10ee-11ee-afc7-2e8ac521fb46: Bundle.entry[8]: Entry 'http://localhost:8080/fhir/Observation/f8791606-10ee-11ee-afc7-2e8ac521fb46' isn't reachable by traversing links (forward or backward) from the MessageHeader, so its presence should be reviewed (is it needed to process the message?)
 WARNING: Bundle/f879270e-10ee-11ee-afc7-2e8ac521fb46: Bundle.entry[9]: Entry 'http://localhost:8080/fhir/Observation/f879164c-10ee-11ee-afc7-2e8ac521fb46' isn't reachable by traversing links (forward or backward) from the MessageHeader, so its presence should be reviewed (is it needed to process the message?)
-WARNING: Bundle/f879270e-10ee-11ee-afc7-2e8ac521fb46: Bundle.meta.profile[0]: Profile reference 'https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageForRequest' has not been checked because it is unknown, and the validator is set to not fetch unknown profiles
+WARNING: Bundle/f879270e-10ee-11ee-afc7-2e8ac521fb46: Bundle.entry[2].resource: Best Practice Recommendation: In general, all observations should have a subject
+WARNING: Bundle/f879270e-10ee-11ee-afc7-2e8ac521fb46: Bundle.entry[2].resource: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/f879270e-10ee-11ee-afc7-2e8ac521fb46: Bundle.entry[2].resource: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+WARNING: Bundle/f879270e-10ee-11ee-afc7-2e8ac521fb46: Bundle.entry[3].resource: Best Practice Recommendation: In general, all observations should have a subject
+WARNING: Bundle/f879270e-10ee-11ee-afc7-2e8ac521fb46: Bundle.entry[3].resource: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/f879270e-10ee-11ee-afc7-2e8ac521fb46: Bundle.entry[3].resource: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+WARNING: Bundle/f879270e-10ee-11ee-afc7-2e8ac521fb46: Bundle.entry[4].resource: Best Practice Recommendation: In general, all observations should have a subject
+WARNING: Bundle/f879270e-10ee-11ee-afc7-2e8ac521fb46: Bundle.entry[4].resource: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/f879270e-10ee-11ee-afc7-2e8ac521fb46: Bundle.entry[4].resource: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+WARNING: Bundle/f879270e-10ee-11ee-afc7-2e8ac521fb46: Bundle.entry[5].resource: Best Practice Recommendation: In general, all observations should have a subject
+WARNING: Bundle/f879270e-10ee-11ee-afc7-2e8ac521fb46: Bundle.entry[5].resource: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/f879270e-10ee-11ee-afc7-2e8ac521fb46: Bundle.entry[5].resource: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+WARNING: Bundle/f879270e-10ee-11ee-afc7-2e8ac521fb46: Bundle.entry[6].resource: Best Practice Recommendation: In general, all observations should have a subject
+WARNING: Bundle/f879270e-10ee-11ee-afc7-2e8ac521fb46: Bundle.entry[6].resource: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/f879270e-10ee-11ee-afc7-2e8ac521fb46: Bundle.entry[6].resource: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+WARNING: Bundle/f879270e-10ee-11ee-afc7-2e8ac521fb46: Bundle.entry[7].resource: Best Practice Recommendation: In general, all observations should have a subject
+WARNING: Bundle/f879270e-10ee-11ee-afc7-2e8ac521fb46: Bundle.entry[7].resource: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/f879270e-10ee-11ee-afc7-2e8ac521fb46: Bundle.entry[7].resource: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+WARNING: Bundle/f879270e-10ee-11ee-afc7-2e8ac521fb46: Bundle.entry[8].resource: Best Practice Recommendation: In general, all observations should have a subject
+WARNING: Bundle/f879270e-10ee-11ee-afc7-2e8ac521fb46: Bundle.entry[8].resource: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Bundle/f879270e-10ee-11ee-afc7-2e8ac521fb46: Bundle.entry[8].resource: Best Practice Recommendation: In general, all observations should have an effective[x] ()
+WARNING: Bundle/f879270e-10ee-11ee-afc7-2e8ac521fb46: Bundle.meta.profile[0]: Profile reference 'https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageForRequest' has not been checked because it could not be found, and the validator is set to not fetch unknown profiles
 == fsh-generated/resources/CodeSystem-ml-response-cs.json ==
 INFORMATION: CodeSystem/ml-response-cs: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
 WARNING: CodeSystem/ml-response-cs: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
@@ -451,18 +619,16 @@ WARNING: CodeSystem/my-cs: CodeSystem: Published code systems SHOULD conform to 
 == fsh-generated/resources/ImplementationGuide-obs.cdss.ig.json ==
 == fsh-generated/resources/OperationDefinition-predict.json ==
 ERROR: OperationDefinition.where(url = 'http://hl7.pt/fhir/OperationDefinition/predict'): Conformance resource /github/workspace/fsh-generated/resources/OperationDefinition-predict.json - the canonical URL (https://joofio.github.io/obs-cdss-fhir/OperationDefinition/predict) does not match the URL (http://hl7.pt/fhir/OperationDefinition/predict)
-WARNING: OperationDefinition/predict: OperationDefinition: Rule cnl-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+WARNING: OperationDefinition/predict: OperationDefinition: Constraint failed: cnl-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' (defined in http://hl7.org/fhir/StructureDefinition/OperationDefinition)
 ERROR: /github/workspace/fsh-generated/resources/OperationDefinition-predict: URL Mismatch https://joofio.github.io/obs-cdss-fhir/OperationDefinition/predict vs http://hl7.pt/fhir/OperationDefinition/predict
 == fsh-generated/resources/OperationDefinition-quality-check.json ==
 ERROR: OperationDefinition.where(url = 'http://hl7.pt/fhir/OperationDefinition/quality_check'): Conformance resource /github/workspace/fsh-generated/resources/OperationDefinition-quality-check.json - the canonical URL (https://joofio.github.io/obs-cdss-fhir/OperationDefinition/quality-check) does not match the URL (http://hl7.pt/fhir/OperationDefinition/quality_check)
-WARNING: OperationDefinition/quality-check: OperationDefinition: Rule cnl-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' Failed
+WARNING: OperationDefinition/quality-check: OperationDefinition: Constraint failed: cnl-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation' (defined in http://hl7.org/fhir/StructureDefinition/OperationDefinition)
 ERROR: /github/workspace/fsh-generated/resources/OperationDefinition-quality-check: URL Mismatch https://joofio.github.io/obs-cdss-fhir/OperationDefinition/quality-check vs http://hl7.pt/fhir/OperationDefinition/quality_check
 == fsh-generated/resources/StructureDefinition-MLModel.json ==
 INFORMATION: StructureDefinition.where(url = 'https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MLModel'): The Implementation Guide contains no explicitly linked examples for this profile
 == fsh-generated/resources/StructureDefinition-MessageForCDSS.json ==
-INFORMATION: StructureDefinition/MessageForCDSS: StructureDefinition.snapshot.element[111].extension[0].value.ofType(code): Reference to draft item http://hl7.org/fhir/standards-status|1.0.0
-INFORMATION: StructureDefinition/MessageForCDSS: StructureDefinition.snapshot.element[112].extension[0].value.ofType(code): Reference to draft item http://hl7.org/fhir/standards-status|1.0.0
-ERROR: StructureDefinition/MessageForCDSS: StructureDefinition.snapshot.element[15].constraint[3]: Error in constraint 'msg-core-1' with expression 'Bundle.entry.where(resource.resourceType='Observation').exists() and Bundle.entry.where(resource.resourceType='MessageHeader').exists()': Error evaluating FHIRPath expression: The name 'Bundle' is not valid for any of the possible types: [http://hl7.org/fhir/StructureDefinition/Bundle#Bundle.entry] (@char 3)
+ERROR: StructureDefinition/MessageForCDSS: StructureDefinition.snapshot.element[15].constraint[3]: Error in constraint 'msg-core-1' with expression 'Bundle.entry.where(resource.resourceType='Observation').exists() and Bundle.entry.where(resource.resourceType='MessageHeader').exists()': Error evaluating FHIRPath expression: The name 'entry' is not valid for any of the possible types: [http://hl7.org/fhir/StructureDefinition/Bundle#Bundle.entry] (@char 3)
 == fsh-generated/resources/StructureDefinition-MessageHeaderCDSS.json ==
 INFORMATION: StructureDefinition.where(url = 'https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageHeaderCDSS'): The Implementation Guide contains no explicitly linked examples for this profile
 == fsh-generated/resources/ValueSet-ml-response-vs.json ==

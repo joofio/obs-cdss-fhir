@@ -1,0 +1,38 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "https://joofio.github.io/obs-cdss-fhir/ValueSet/ml-response-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "MLResponseVS",
+      "title" : "Model Responses value set",
+      "description" : "Model Responses value set",
+      "systems" : [
+        "https://joofio.github.io/obs-cdss-fhir/CodeSystem/ml-response-cs"
+      ]
+    },
+    {
+      "url" : "https://joofio.github.io/obs-cdss-fhir/ValueSet/ml-type-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "MlTypesVS",
+      "title" : "Machine Learning Models value set",
+      "description" : "Machine Learning Models value set",
+      "systems" : [
+        "https://joofio.github.io/obs-cdss-fhir/CodeSystem/ml-type-cs"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-MLModel.html" : "Machine Learning Model"
+    },
+    {
+      "url" : "https://joofio.github.io/obs-cdss-fhir/ValueSet/my-vs",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "MyVS",
+      "title" : "value set",
+      "description" : "value set",
+      "systems" : ["https://joofio.github.io/obs-cdss-fhir/CodeSystem/my-cs"]
+    }
+  ]
+}

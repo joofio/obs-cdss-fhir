@@ -3,13 +3,13 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="obs.cdss.ig"/>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml">Placeholder</div>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>OBSCDSS</h2><p>The official URL for this implementation guide is: </p><pre>https://joofio.github.io/obs-cdss-fhir/ImplementationGuide/obs.cdss.ig</pre></div>
   </text>
   <url value="https://joofio.github.io/obs-cdss-fhir/ImplementationGuide/obs.cdss.ig"/>
   <version value="0.1.0"/>
   <name value="OBSCDSS"/>
   <status value="draft"/>
-  <date value="2023-09-10T21:33:21+00:00"/>
+  <date value="2024-03-26T13:57:12+00:00"/>
   <packageId value="obs.cdss.ig"/>
   <license value="CC0-1.0"/>
   <fhirVersion value="5.0.0"/>
@@ -19,7 +19,7 @@
     </extension>
     <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
     <packageId value="hl7.terminology.r5"/>
-    <version value="5.2.0"/>
+    <version value="5.3.0"/>
   </dependsOn>
   <dependsOn id="hl7ext">
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
@@ -31,7 +31,7 @@
   </dependsOn>
   <definition>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency">
-      <valueCode value="hl7.fhir.uv.tools#current"/>
+      <valueCode value="hl7.fhir.uv.tools#0.1.0"/>
     </extension>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -127,9 +127,8 @@
         <reference value="Bundle/MessageForCDSSRequest"/>
       </reference>
       <name value="MessageForCDSSRequest"/>
+      <isExample value="true"/>
       <profile value="https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageForCDSS"/>
-      <profile value="https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageForCDSS"/>
-      <profile value="https://joofio.github.io/obs-cdss-fhir/StructureDefinition/MessageHeaderCDSS"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -170,7 +169,7 @@
       <reference>
         <reference value="OperationDefinition/quality-check"/>
       </reference>
-      <name value="quality-check"/>
+      <name value="quality_check"/>
       <isExample value="false"/>
     </resource>
     <resource>
@@ -443,6 +442,13 @@
       <code>
         <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
         <code value="apply-version"/>
+      </code>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="apply-wg"/>
       </code>
       <value value="true"/>
     </parameter>
